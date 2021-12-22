@@ -1,1 +1,28 @@
 /* Here is your custom css styles. */
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3043916 */
+  src: url('//at.alicdn.com/t/font_3043916_sspm80ifglc.woff2?t=1640093561634') format('woff2'),
+       url('//at.alicdn.com/t/font_3043916_sspm80ifglc.woff?t=1640093561634') format('woff'),
+       url('//at.alicdn.com/t/font_3043916_sspm80ifglc.ttf?t=1640093561634') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telegram:before {
+  content: "\e715";
+}
+
+.icon-telegram1:before {
+  content: "\e8c7";
+}
+
+.icon-bilibili-fill:before {
+  content: "\e93e";
+}
