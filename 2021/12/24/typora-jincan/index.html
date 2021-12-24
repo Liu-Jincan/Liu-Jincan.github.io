@@ -1,0 +1,1418 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Typora, Jincan">
+    <meta name="description" content="一款 markdown 编辑软件，个人主要用于写博客～">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Typora | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Typora</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Typora/">
+                                <span class="chip bg-color">Typora</span>
+                            </a>
+                        
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">博客搭建</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                博客搭建
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-12-24
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2021-12-24
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    6.2k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Typora（配合hexo-matery使用）"><a href="#Typora（配合hexo-matery使用）" class="headerlink" title="Typora（配合hexo-matery使用）"></a>Typora（配合hexo-<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">matery</a>使用）</h1><h2 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h2><h3 id="方法1：从ubuntu的软件中下载"><a href="#方法1：从ubuntu的软件中下载" class="headerlink" title="方法1：从ubuntu的软件中下载"></a>方法1：从ubuntu的软件中下载</h3><p>简单高效，强力推荐。</p>
+<p>我下载的是 1.0.3。</p>
+<h3 id="方法2：从官网下载tar-gz进行安装"><a href="#方法2：从官网下载tar-gz进行安装" class="headerlink" title="方法2：从官网下载tar.gz进行安装"></a>方法2：从官网下载tar.gz进行安装</h3><p>这种安装方法需要额外添加快捷方式，还需要对md文件打开方式进行设置。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/y_universe/article/details/107184300">Linux安装及美化Typora详细步骤</a></p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:/etc/apt$</span> <span class="string">cd</span> <span class="string">/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/typora</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="string">ls</span></span><br><span class="line"><span class="string">typora_1.0.3_amd64.deb</span>  <span class="string">Typora-linux-x64-1.0.3.tar.gz</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="string">chmod</span> <span class="number">777</span> <span class="string">Typora-linux-x64-1.0.3.tar.gz</span> </span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="string">ls</span></span><br><span class="line"><span class="string">typora_1.0.3_amd64.deb</span>  <span class="string">Typora-linux-x64-1.0.3.tar.gz</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="comment">#        Linux安装及美化Typora详细步骤</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="comment">#        https://blog.csdn.net/y_universe/article/details/107184300</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="comment"># 解压</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="string">tar</span> <span class="string">-zxvf</span> <span class="string">Typora-linux-x64-1.0.3.tar.gz</span> </span><br><span class="line"><span class="string">bin/Typora-linux-x64/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ta.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/tr.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/nl.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ru.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/vi.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/pt-BR.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/fa.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/fi.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/et.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ar.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/fil.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ml.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/sw.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/am.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/hu.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/uk.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/lt.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/hr.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/sk.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/pl.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/zh-TW.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/sl.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/es-419.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/kn.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/es.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/he.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/fr.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/bg.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/en-US.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/cs.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/bn.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/hi.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/el.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/de.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/it.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ms.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/sr.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/te.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ca.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/pt-PT.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/en-GB.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/sv.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/th.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/id.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/nb.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ro.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/da.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/lv.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ko.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/zh-CN.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/mr.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/gu.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/locales/ja.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/LICENSE</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/vk_swiftshader_icd.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/LICENSES.chromium.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/libvulkan.so.1</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/swiftshader/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/swiftshader/libGLESv2.so</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/swiftshader/libEGL.so</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/version</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/libGLESv2.so</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/table-edit.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/sshot-2.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/sshot-1.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/pandoc-win.PNG</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/ipic.jpg</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/general.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/drag-img.gif</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Touch</span> <span class="string">Bar</span> <span class="string">Shot</span> <span class="number">2017-02-28 </span><span class="string">at</span> <span class="number">00.40</span><span class="number">.32</span><span class="string">.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20161117_6.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20161117_2.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20161027_2.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160921_2.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160921_1.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160816_5.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160816_4.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160816_3.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160816_2.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160816_1.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160814_7.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160814_5.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160814_1.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/Snip20160502_1.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/img/1.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Use</span> <span class="string">Typora</span> <span class="string">From</span> <span class="string">Shell</span> <span class="string">or</span> <span class="string">cmd.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Use</span> <span class="string">Images</span> <span class="string">in</span> <span class="string">Typora.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Table</span> <span class="string">Editing.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Quick</span> <span class="string">Start.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Privacy</span> <span class="string">Policy.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/More</span> <span class="string">Documents.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Markdown</span> <span class="string">Reference.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/License</span> <span class="string">Agreement.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Install</span> <span class="string">and</span> <span class="string">Use</span> <span class="string">Pandoc.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Draw</span> <span class="string">Diagrams</span> <span class="string">With</span> <span class="string">Markdown.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/DO</span> <span class="string">NOT</span> <span class="string">ADD</span> <span class="string">FILES</span> <span class="string">HERE</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Custom</span> <span class="string">Themes.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Custom</span> <span class="string">Shortcut</span> <span class="string">Keys.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Custom</span> <span class="string">Font.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Credits.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Code</span> <span class="string">Fences</span> <span class="string">Language</span> <span class="string">Support.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Change</span> <span class="string">Log.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/Docs/Auto</span> <span class="string">Save,</span> <span class="string">Version</span> <span class="string">Control</span> <span class="string">and</span> <span class="string">Recovery.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/app.asar</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/app.asar.unpacked/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/app.asar.unpacked/main.node</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/appsrc/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/appsrc/window/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/appsrc/window/frame.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/appsrc/finder-worker.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/appsrc/editor/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/appsrc/editor/EmojiSearchMap.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/installer.ico</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_70.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_512x512@2x.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_512x512.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_32x32@2x.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_32x32.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_256x256@2x.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_256x256.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_16x16@2x.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_16x16.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_150.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_128x128@2x.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/icon/icon_128x128.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/file.ico</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/app.ico</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/assets/Typora.VisualElementsManifest.xml</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/conf.default.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/html/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/html/preview.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/html/content.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/lib.asar</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hant.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hant.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hant.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hant.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hant.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hans.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hans.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hans.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hans.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/zh-Hans.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/vi-VN.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/vi-VN.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/vi-VN.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/vi-VN.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/vi-VN.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/uk-UA.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/uk-UA.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/uk-UA.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/uk-UA.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/uk-UA.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/tr-TR.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/tr-TR.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/tr-TR.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/tr-TR.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/tr-TR.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sv-SE.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sv-SE.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sv-SE.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sv-SE.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sv-SE.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sk-SK.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sk-SK.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sk-SK.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sk-SK.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/sk-SK.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ru-RU.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ru-RU.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ru-RU.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ru-RU.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ru-RU.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ro-RO.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ro-RO.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ro-RO.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ro-RO.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ro-RO.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-PT.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-PT.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-PT.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-PT.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-PT.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-BR.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-BR.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-BR.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-BR.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pt-BR.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pl-PL.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pl-PL.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pl-PL.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pl-PL.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/pl-PL.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/nl-NL.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/nl-NL.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/nl-NL.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/nl-NL.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/nl-NL.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ko-KR.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ko-KR.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ko-KR.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ko-KR.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ko-KR.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ja-JP.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ja-JP.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ja-JP.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ja-JP.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ja-JP.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/it-IT.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/it-IT.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/it-IT.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/it-IT.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/it-IT.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/id-ID.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/id-ID.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/id-ID.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/id-ID.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/id-ID.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hu-HU.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hu-HU.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hu-HU.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hu-HU.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hu-HU.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hr-HR.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hr-HR.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hr-HR.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hr-HR.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/hr-HR.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/he-IL.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/he-IL.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/he-IL.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/he-IL.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/he-IL.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/gl-ES.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/gl-ES.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/gl-ES.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/gl-ES.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/gl-ES.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fr-FR.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fr-FR.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fr-FR.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fr-FR.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fr-FR.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fa-IR.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fa-IR.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fa-IR.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fa-IR.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/fa-IR.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/es-ES.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/es-ES.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/es-ES.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/es-ES.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/es-ES.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/el-GR.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/el-GR.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/el-GR.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/el-GR.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/el-GR.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-DE.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-DE.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-DE.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-DE.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-DE.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-CH.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-CH.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-CH.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-CH.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/de-CH.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/da-DK.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/da-DK.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/da-DK.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/da-DK.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/da-DK.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/cs-CZ.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/cs-CZ.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/cs-CZ.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/cs-CZ.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/cs-CZ.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ca-ES.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ca-ES.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ca-ES.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ca-ES.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ca-ES.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ar-SA.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ar-SA.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ar-SA.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ar-SA.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/ar-SA.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/Base.lproj/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/Base.lproj/Welcome.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/Base.lproj/Panel.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/Base.lproj/Menu.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/locales/Base.lproj/Front.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/vscode-ripgrep/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/vscode-ripgrep/bin/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/vscode-ripgrep/bin/rg</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/vendor/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/vendor/hunspell_dictionaries/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/vendor/hunspell_dictionaries/en_US.dic</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/vendor/hunspell_dictionaries/en_US.aff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/node_modules/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/node_modules/cld/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/node_modules/cld/build/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/node_modules/cld/build/Release/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/node_modules/cld/build/Release/cld.node</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/build/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/build/Release/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules/spellchecker/build/Release/spellchecker.node</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/node_modules.asar</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/package.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/welcome.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/media/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/media/photon-entypo.bf614256.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/media/photon-entypo.2614e058.eot</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/media/photon-entypo.1382c29c.ttf</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/media/icon.06a6aa23.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/runtime-main.97d0b459.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/runtime-localSettingIndex.a2c75cbd.6f0fb930.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/runtime-WelcomeIndex.63db304f.ab2b23b4.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/runtime-Preferences.962926a4.285eabb5.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/runtime-LicenseIndex.180dd4c7.f7c007dd.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/main.ff8bdafd.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/localSettingIndex.a2c75cbd.f3fb0661.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/WelcomeIndex.63db304f.79951ff4.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/Preferences.962926a4.dec82ef4.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/LicenseIndex.180dd4c7.0caabd31.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/12.021a5484.chunk.js.LICENSE.txt</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/12.021a5484.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/1.aeb5eddb.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/0.89d73924.chunk.js.LICENSE.txt</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/js/0.89d73924.chunk.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/css/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/css/localSettingIndex.a2c75cbd.4722268f.chunk.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/css/WelcomeIndex.63db304f.d1afefe8.chunk.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/css/Preferences.962926a4.31c77180.chunk.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/static/css/LicenseIndex.180dd4c7.18b25fe4.chunk.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/setting.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/service-worker.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/precache-manifest.8394a013f456401d3012acb6eb11c386.js</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/local-setting.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/license.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/index.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/electron.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/cocoa.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/page-dist/asset-manifest.json</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/windows-folder-icon.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/window.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/style.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/fonts/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/fonts/typora-icon.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/fonts/typora-icon.ttf</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/fonts/typora-icon.svg</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/fonts/typora-icon.eot</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-icon/Read</span> <span class="string">Me.txt</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon@2x.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/style.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/fonts/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/fonts/ty-file.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/fonts/ty-file.ttf</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/fonts/ty-file.svg</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/demo-files/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/demo-files/demo.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/typora-file-icon/Read</span> <span class="string">Me.txt</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/whitey.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/merriweather-v19-latin-700italic.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/merriweather-v19-latin-700.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/merriweather-v19-latin-300italic.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/merriweather-v19-latin-300.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/lato-v14-latin-900italic.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/lato-v14-latin-900.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/lato-v14-latin-300italic.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/pixyll/lato-v14-latin-300.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night/sourcemode.dark.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night/mermaid.dark.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night/cursor@2x.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night/cursor.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night/credit.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/night/codeblock.dark.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/newsprint.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/newsprint/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/newsprint/pt-serif-v11-latin-regular.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/newsprint/pt-serif-v11-latin-italic.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/newsprint/pt-serif-v11-latin-700italic.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/newsprint/pt-serif-v11-latin-700.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/github.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/github/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/github/open-sans-v17-latin-ext_latin-regular.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/github/open-sans-v17-latin-ext_latin-italic.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/github/open-sans-v17-latin-ext_latin-700italic.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/github/open-sans-v17-latin-ext_latin-700.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/themes/Readme.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/megamenu.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/mac.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/readme.md</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/fonts/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/fonts/ionicons.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/css/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/css/ionicons.min.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/css/ionicons.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/ionicons-2.0.1/LICENSE</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/font-awesome-4.1.0/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/font-awesome-4.1.0/fonts/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/font-awesome-4.1.0/fonts/fontawesome-webfont.woff</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/font-awesome-4.1.0/css/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/font-awesome-4.1.0/css/font-awesome.min.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/font-awesome-4.1.0/css/font-awesome.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/cubes.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/codemirror.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/bg.png</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/base.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/base-control.css</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/Raleway-latin.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/style/Raleway-latin-ext.woff2</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/updater/</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/updater/updater.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/resources/window.html</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/chrome_200_percent.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/chrome-sandbox</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/snapshot_blob.bin</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/libEGL.so</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/chrome_100_percent.pak</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/libffmpeg.so</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/icudtl.dat</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/v8_context_snapshot.bin</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/libvk_swiftshader.so</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/Typora</span></span><br><span class="line"><span class="string">bin/Typora-linux-x64/DO</span> <span class="string">NOT</span> <span class="string">ADD</span> <span class="string">FILES</span> <span class="string">HERE.md</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora$</span> <span class="string">cd</span> <span class="string">bin/</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin$</span> <span class="string">ls</span></span><br><span class="line"><span class="string">Typora-linux-x64</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin$</span> <span class="comment"># 02 将Typora-linux-x64文件夹复制到默认用来存放软件的/opt目录</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin$</span> <span class="string">sudo</span> <span class="string">cp</span> <span class="string">-ar</span> <span class="string">Typora-linux-x64</span> <span class="string">/opt</span></span><br><span class="line">[<span class="string">sudo</span>] <span class="string">jincanliu</span> <span class="string">的密码：</span> </span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin$</span> <span class="string">cd</span> <span class="string">Typora-linux-x64/</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">ls</span></span><br><span class="line"> <span class="string">chrome_100_percent.pak</span>  <span class="string">'DO NOT ADD FILES HERE.md'</span>   <span class="string">libffmpeg.so</span>           <span class="string">libvulkan.so.1</span>           <span class="string">locales</span>         <span class="string">snapshot_blob.bin</span>   <span class="string">v8_context_snapshot.bin</span></span><br><span class="line"> <span class="string">chrome_200_percent.pak</span>   <span class="string">icudtl.dat</span>                  <span class="string">libGLESv2.so</span>           <span class="string">LICENSE</span>                  <span class="string">resources</span>       <span class="string">swiftshader</span>         <span class="string">version</span></span><br><span class="line"> <span class="string">chrome-sandbox</span>           <span class="string">libEGL.so</span>                   <span class="string">libvk_swiftshader.so</span>   <span class="string">LICENSES.chromium.html</span>   <span class="string">resources.pak</span>   <span class="string">Typora</span>              <span class="string">vk_swiftshader_icd.json</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">./Typora</span> </span><br><span class="line"><span class="string">^C(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="comment"># 03 添加快捷方式</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">touch</span> <span class="string">typora.desktop</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">nano</span> <span class="string">typora.desktop</span> </span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">cat</span> <span class="string">typora.desktop</span> </span><br><span class="line">[<span class="string">Desktop</span> <span class="string">Entry</span>]</span><br><span class="line"><span class="string">Name=Typora</span></span><br><span class="line"><span class="string">Exec=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64/Typora</span></span><br><span class="line"><span class="string">Type=Application</span></span><br><span class="line"><span class="string">Icon=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64/resources/asserts/icon/icon_512x512.png</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">sudo</span> <span class="string">cp</span> <span class="string">typora.desktop</span> <span class="string">/usr/share/applications/</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">nano</span> <span class="string">typora.desktop</span> </span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">cat</span> <span class="string">typora.desktop</span> </span><br><span class="line">[<span class="string">Desktop</span> <span class="string">Entry</span>]</span><br><span class="line"><span class="string">Name=Typora</span></span><br><span class="line"><span class="string">Exec=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64/Typora</span></span><br><span class="line"><span class="string">Type=Application</span></span><br><span class="line"><span class="string">Icon=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64/resources/assets/icon/icon_512x512.png</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">^C</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="comment">#不知道为什么图像还是没出来</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">nano</span> <span class="string">typora.desktop</span> </span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="string">cat</span> <span class="string">typora.desktop</span> </span><br><span class="line">[<span class="string">Desktop</span> <span class="string">Entry</span>]</span><br><span class="line"><span class="string">Name=Typora</span></span><br><span class="line"><span class="string">Exec=/opt/Typora-linux-x64/Typora</span></span><br><span class="line"><span class="string">Type=Application</span></span><br><span class="line"><span class="string">Icon=/opt/Typora-linux-x64/resources/assets/icon/icon_512x512.png</span></span><br><span class="line"></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="comment"># https://www.cnblogs.com/hxzkh/p/7827777.html</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="comment"># Linux创建桌面快捷方式的三种方法</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> </span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="comment"># 04 typora主题（猜测是css）</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="comment"># https://theme.typora.io/</span></span><br><span class="line"><span class="string">(base)</span> <span class="string">jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Program_SetupPosition/typora/bin/Typora-linux-x64$</span> <span class="comment"># 具体操作看博客</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h2 id="Todo：使用快捷键-技巧"><a href="#Todo：使用快捷键-技巧" class="headerlink" title="Todo：使用快捷键+技巧"></a>Todo：使用快捷键+技巧</h2><h3 id="大学生写博客，做笔记请你不要忘了Typora工具｜带你从零开始认识和使用"><a href="#大学生写博客，做笔记请你不要忘了Typora工具｜带你从零开始认识和使用" class="headerlink" title="大学生写博客，做笔记请你不要忘了Typora工具｜带你从零开始认识和使用"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ka4y1E7WB">大学生写博客，做笔记请你不要忘了Typora工具｜带你从零开始认识和使用</a></h3><p>00:01<br>00:27  typora：<br>00:37  目录<br>-——————————-<br>00:39  优势篇：做笔记，写博客，简洁舒适；</p>
+<p>01:07  对比，富文本编辑器，传统md编辑器，所见即所得；</p>
+<p>01:29  浏览器，审查元素；<br>-——————————-<br>01:41  下载篇：官网 typora.io，系统，x64，安装路径选择；<br>-——————————-<br>02:43  使用篇：文件扩展名为md；<br>03:33  一级标题，crtl+1，总共6级标题；<br>04:17  自动生成目录<br>04:50  <strong>引用，+空格</strong>；退出引用，回车+shift+tab<br>05:17  无序列表，crtl+shift+]；子列表，tab；回去，shift+tab；有序列表，crtl+shift+[；<br>06:10  链接，【】()；<br>06:31  图片，偏好设置；<br>07:56  高亮，==高亮==；<br>08:33  加粗，crtl+B；<br>08:49  重点？，``;<br>09:01  表格，crtl+T；<br>09:35  代码块，```+enter，选择语言；<br>10:10  删除线；<br>10:49  不适用拼写检查；<br>-——————————–<br>11:06  技巧篇，偏好设置-自动保存、开启调试模式；<br>12:00  样式的问题，css；<br>12:48  background-color；<br>13:10  height；lineheight，居中；font-size；border-size<br>14:13  行内代码块颜色<br>16:04  永久更改，偏好设置-外观-打开主题文件夹，主题文件，css修改；<br>[给心心]</p>
+<h3 id="Markdown小技巧之空格输入"><a href="#Markdown小技巧之空格输入" class="headerlink" title="Markdown小技巧之空格输入"></a>Markdown小技巧之空格输入</h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110419183">添加空格</a></p>
+<p>在使用Markdown写文字的时候，有时候会与到这样的场景——为Markdown添加空格。跟word等其他编辑器不同，Markdown只能识  别一个空格（在半角输入状态下）。通过搜寻资料找到了两个解决方案。</p>
+<blockquote>
+<ol>
+<li>手动输入空格 （<code>&amp;nbsp;</code>）。<strong>注意！此时的分号为英文分号</strong>。</li>
+<li>使用<code>半角空格</code>。即：在<strong>半角字母</strong>输入状态下直接使用空格键就ok了。(推荐)</li>
+</ol>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/1539747081581601307.html">半角字母、符号，全角字母、符号的切换</a></p>
+<p>可以自己设置，我设置的是，<code>crtl+.</code>是全角/半角符号的切换，<code>shift+c</code>是全角/半角字母的切换。</p>
+<h3 id="Markdown小技巧之注释符号"><a href="#Markdown小技巧之注释符号" class="headerlink" title="Markdown小技巧之注释符号"></a>Markdown小技巧之注释符号</h3><p>   <code> &lt;!-- --&gt;</code> </p>
+<h3 id="Typora简明使用手册"><a href="#Typora简明使用手册" class="headerlink" title="Typora简明使用手册"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39533052/article/details/111115263">Typora简明使用手册</a></h3><h3 id="typora字体大小可以在偏好设置更改"><a href="#typora字体大小可以在偏好设置更改" class="headerlink" title="typora字体大小可以在偏好设置更改"></a>typora字体大小可以在偏好设置更改</h3><h2 id="文章密码，SHA256-加密"><a href="#文章密码，SHA256-加密" class="headerlink" title="文章密码，SHA256 加密"></a>文章密码，SHA256 加密</h2><p>SHA256 加密后的密码，如何制作？用<a target="_blank" rel="noopener" href="https://www.cmd5.com/hash.aspx?s=123456">网站</a>制作</p>
+<ol>
+<li>在pass输入你想的密码；</li>
+<li>下面有sha256对应的密码，复制即可；</li>
+</ol>
+<p>如果你想要破解，这个网站也许也可以，<a target="_blank" rel="noopener" href="https://www.cmd5.com/">页面</a></p>
+<ol>
+<li>在密文添加密码；</li>
+<li>查询结果；</li>
+</ol>
+<p>例子：</p>
+<p>​        123456，                8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="typora官网主题"><a href="#typora官网主题" class="headerlink" title="typora官网主题"></a><a target="_blank" rel="noopener" href="https://theme.typora.io/">typora官网主题</a></h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/y_universe/article/details/107184300">下载和导入主题</a></p>
+<h2 id="向hexo中添加图片"><a href="#向hexo中添加图片" class="headerlink" title="向hexo中添加图片"></a>向hexo中添加图片</h2><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv12633102">2021最全hexo搭建博客+matery美化+使用（保姆级教程）</a>，7.如何向hexo博客中插入图片 </p>
+<h3 id="使用相对路径的方式"><a href="#使用相对路径的方式" class="headerlink" title="使用相对路径的方式"></a>使用相对路径的方式</h3><p>由于我们的博客是要部署在网站上，部署后会生成新的文件目录，所以我们选择使用相对路径的方式。 </p>
+<p>在hexo中使用文章资源文件夹需要在hexo的config.yaml文件中更改一下配置： </p>
+<p><code>post_asset_folder: true </code></p>
+<p>当该配置被应用后，使用hexo new命令创建新文章时，会生成相同名字的文件夹，也就是文章资源文件夹。 </p>
+<img src="/2021/12/24/typora-jincan/01.png" class="">
+
+<p>在Typora编辑器中，普通的md文件使用<code>![](1/image.jpg)</code>能在编辑器中正常显示图片。</p>
+<p>在hexo中，按理说应该是使用<code>![](image.jpg)</code>，但网页中却无法正常显示。</p>
+<p>此时应该使用这样的方式来引入图片：<code>{% asset_img image.jpg 这是一张图片 %}</code></p>
+<img src="/2021/12/24/typora-jincan/01.png" class="" title="这是一张图片">
+
+<p>虽然可以正常引用图片了，但是这种引用图片的方式只有一句话能形容，wtf。 </p>
+<h3 id="hexo-renderer-marked插件的安装与配置"><a href="#hexo-renderer-marked插件的安装与配置" class="headerlink" title="hexo-renderer-marked插件的安装与配置"></a>hexo-renderer-marked插件的安装与配置</h3><p>插件hexo-renderer-marked解决了这个问题</p>
+<p>安装： <code>npm install hexo-renderer-marked --save </code>  ，之后在hexo的config.yaml中添加配置即可</p>
+<blockquote>
+<p>marked:</p>
+<p>　　prependRoot: true</p>
+<p>　　postAsset: true</p>
+</blockquote>
+<p>之后就可以在使用 <code>![](image.jpg) </code> 的方式愉快的插入图片了。</p>
+<p>我们做了这么多都是为了方便，那么为什么不再方便一点呢。 <!----></p>
+<!-- ![](01.png) -->
+
+<h3 id="hexo-renderer-marked插件与Typora的完美结合"><a href="#hexo-renderer-marked插件与Typora的完美结合" class="headerlink" title="hexo-renderer-marked插件与Typora的完美结合"></a>hexo-renderer-marked插件与Typora的完美结合</h3><p>如果图片数量众多的话，一张一张的放很影响效率。但是不用怕，我们有很方便的解决方法。</p>
+<p>Typora对于插入图片的支持做得非常好，在<code>文件-&gt;偏好设置</code>或者直接&lt;C-,&gt;进入设置。 </p>
+<p><img src="/2021/12/24/typora-jincan/image-20211224214414635.png"></p>
+<p>使用该配置后，可以直接复制网页中的图片地址，粘贴到Typora中后，会直接复制该图片到文章资源文件夹，同时自动更改路径（<code>ps：typora导入hexo图片的优点所在</code>）。如复制网络路径的图片https://…../image.jpg粘贴到Typora中叫文章名的文章后，图片会自动变为<code>![](文章名/image.jpg)</code>。 </p>
+<p>但我们知道部署后，文件路径是不同的，所以当我们插入完所有的图片后，我们还需要删除每个图片路径中的文件名/。不慌，也很简单。在Typora编辑器中，使用<code>&lt;C-f&gt;</code>快捷键，将所有的<code>文章名/</code>替换为空即可删除（<code>ps：这种替换必须要求，&lt;文章名/&gt;，在整个markdown文本中具有唯一指定性，所以命名加上自己的名字拼音是个不错的选择</code>）。然后再将博客上传，图片就会随着文章一起打包。在网页中就可以看到正常显示的图片，大功告成。 </p>
+<blockquote>
+<p>缺点：使用这种方法的时候，切换文件的时候，必须进行一次[文件-&gt;偏好设置]路径的设置；如果不小心忘记了，图片导入错文件夹了，网页肯定不显示图片，这时候设置路径，重新拉进取即可</p>
+</blockquote>
+<h2 id="Todo：图床"><a href="#Todo：图床" class="headerlink" title="Todo：图床"></a>Todo：图床</h2><h2 id="Todo：如何把typora的样式传递给博客？"><a href="#Todo：如何把typora的样式传递给博客？" class="headerlink" title="Todo：如何把typora的样式传递给博客？"></a>Todo：如何把typora的样式传递给博客？</h2><h2 id="Todo：博客代码格式调整？代码复制问题？"><a href="#Todo：博客代码格式调整？代码复制问题？" class="headerlink" title="Todo：博客代码格式调整？代码复制问题？"></a>Todo：博客代码格式调整？代码复制问题？</h2>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2021/12/24/typora-jincan/">https://Liu-Jincan.github.io/2021/12/24/typora-jincan/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Typora/">
+                                    <span class="chip bg-color">Typora</span>
+                                </a>
+                            
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">博客搭建</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2021/12/24/typora-jincan/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Typora">
+                        
+                        <span class="card-title">Typora</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            一款 markdown 编辑软件，个人主要用于写博客～
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                    博客搭建
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">博客搭建</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/12/20/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Jincan Liu
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">6.3k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
