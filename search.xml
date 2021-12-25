@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>wavewatch3</title>
+      <link href="/2021/12/25/wavewatch3/"/>
+      <url>/2021/12/25/wavewatch3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="WaveWatch3"><a href="#WaveWatch3" class="headerlink" title="WaveWatch3"></a>WaveWatch3</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> 海浪数值模型 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WW3 </tag>
+            
+            <tag> 海浪数值模型 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux&amp;ubuntu</title>
       <link href="/2021/12/25/linux-ubuntu/"/>
       <url>/2021/12/25/linux-ubuntu/</url>
@@ -74,11 +101,11 @@
       
         <tags>
             
+            <tag> 博客搭建 </tag>
+            
             <tag> Typora </tag>
             
             <tag> Markdown </tag>
-            
-            <tag> 博客搭建 </tag>
             
         </tags>
       
@@ -103,9 +130,9 @@
       
         <tags>
             
-            <tag> 博客搭建 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 博客搭建 </tag>
             
         </tags>
       
@@ -130,9 +157,9 @@
       
         <tags>
             
-            <tag> 博客搭建 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 博客搭建 </tag>
             
         </tags>
       
