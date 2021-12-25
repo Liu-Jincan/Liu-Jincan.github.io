@@ -1,0 +1,2342 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="matery-jincan, Jincan">
+    <meta name="description" content="基于hexo的一个主题">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>matery-jincan | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225175823.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">matery-jincan</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                            <a href="/tags/matery/">
+                                <span class="chip bg-color">matery</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                博客搭建
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-12-24
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2021-12-25
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    6.8k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Hexo-theme-matery"><a href="#Hexo-theme-matery" class="headerlink" title="Hexo-theme-matery"></a>Hexo-theme-matery</h1><h2 id="matery：下载-使用-hexo的yml配置-标签页添加"><a href="#matery：下载-使用-hexo的yml配置-标签页添加" class="headerlink" title="matery：下载+使用+hexo的yml配置+标签页添加"></a>matery：下载+使用+hexo的yml配置+标签页添加</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考资料 </span>
+<span class="token comment">############################</span>
+<span class="token comment">#&lt;1,https://www.bilibili.com/read/cv12633102, 5.更换主题&gt;</span>
+<span class="token comment">#&lt;2,https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md, matery的github连接中文说明&gt;</span>
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="token comment">##	下载和使用主题</span>
+ <span class="token comment">###########################</span>
+ <span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo -v
+INFO  Validating config
+hexo: <span class="token number">5.4</span>.0
+hexo-cli: <span class="token number">4.3</span>.0
+os: linux <span class="token number">5.11</span>.0-41-generic Ubuntu <span class="token number">20.04</span>.3 LTS <span class="token punctuation">(</span>Focal Fossa<span class="token punctuation">)</span>
+node: <span class="token number">16.13</span>.1
+v8: <span class="token number">9.4</span>.146.24-node.14
+uv: <span class="token number">1.42</span>.0
+zlib: <span class="token number">1.2</span>.11
+brotli: <span class="token number">1.0</span>.9
+ares: <span class="token number">1.18</span>.1
+modules: <span class="token number">93</span>
+nghttp2: <span class="token number">1.45</span>.1
+napi: <span class="token number">8</span>
+llhttp: <span class="token number">6.0</span>.4
+openssl: <span class="token number">1.1</span>.1l+quic
+cldr: <span class="token number">39.0</span>
+icu: <span class="token number">69.1</span>
+tz: 2021a
+unicode: <span class="token number">13.0</span>
+ngtcp2: <span class="token number">0.1</span>.0-DEV
+nghttp3: <span class="token number">0.1</span>.0-DEV
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># hexo 版本 5.4.0, 大于5, ok</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># 下载主题</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">ls</span>
+_config.landscape.yml  _config.yml  _config.yml.save  db.json  node_modules  package.json  package-lock.json  public  scaffolds  <span class="token builtin class-name">source</span>  themes
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git themes/matery
+正克隆到 <span class="token string">'themes/matery'</span><span class="token punctuation">..</span>.
+remote: Enumerating objects: <span class="token number">5275</span>, done.
+remote: Counting objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">326</span>/326<span class="token punctuation">)</span>, done.
+remote: Compressing objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">208</span>/208<span class="token punctuation">)</span>, done.
+remote: Total <span class="token number">5275</span> <span class="token punctuation">(</span>delta <span class="token number">158</span><span class="token punctuation">)</span>, reused <span class="token number">253</span> <span class="token punctuation">(</span>delta <span class="token number">113</span><span class="token punctuation">)</span>, pack-reused <span class="token number">4949</span>
+接收对象中: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">5275</span>/5275<span class="token punctuation">)</span>, <span class="token number">18.47</span> MiB <span class="token operator">|</span> <span class="token number">9.22</span> MiB/s, 完成.
+处理 delta 中: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">3368</span>/3368<span class="token punctuation">)</span>, 完成.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># 使用主题</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">ls</span>
+_config.landscape.yml  _config.yml  _config.yml.save  db.json  node_modules  package.json  package-lock.json  public  scaffolds  <span class="token builtin class-name">source</span>  themes
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token builtin class-name">cd</span> themes
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes$ <span class="token function">ls</span>
+matery
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes$ <span class="token builtin class-name">cd</span> matery/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token function">ls</span>
+CHANGELOG.md  _config.yml  languages  layout  LICENSE  README_CN.md  README.md  <span class="token builtin class-name">source</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">ls</span>
+_config.landscape.yml  _config.yml  _config.yml.save  db.json  node_modules  package.json  package-lock.json  public  scaffolds  <span class="token builtin class-name">source</span>  themes
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># 找到theme: landscape改为自己的下载主题</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo clean
+INFO  Validating config
+INFO  Deleted database.
+INFO  Deleted public folder.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo s
+INFO  Validating config
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000 <span class="token builtin class-name">.</span> Press Ctrl+C to stop.
+
+
+
+
+
+
+
+
+
+<span class="token comment">##	简单修改hexo的yml文件</span>
+<span class="token comment">#################################</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># url修改http://xxx.github.io</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">ls</span>
+_config.landscape.yml  _config.yml  _config.yml.save  db.json  node_modules  package.json  package-lock.json  scaffolds  <span class="token builtin class-name">source</span>  themes
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">nano</span> _config.yml
+
+
+使用 <span class="token string">"fg"</span> 返回 nano。
+
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>+  已停止               <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">nano</span> _config.yml
+
+
+使用 <span class="token string">"fg"</span> 返回 nano。
+
+<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span>+  已停止               <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># 上面实现的是url, per page, language的修改</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo s
+INFO  Validating config
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000 <span class="token builtin class-name">.</span> Press Ctrl+C to stop.
+^CINFO  Catch you later
+
+
+
+
+
+
+
+
+
+
+<span class="token comment">##	添加标签页</span>
+<span class="token comment">######################################</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># 新建分类category</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">ls</span>
+_config.landscape.yml  _config.yml  _config.yml.save  db.json  node_modules  package.json  package-lock.json  scaffolds  <span class="token builtin class-name">source</span>  themes
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token builtin class-name">cd</span> source/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source$ <span class="token function">ls</span>
+_posts
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source$ hexo new page categories
+INFO  Validating config
+INFO  Created: ~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories/index.md
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source$ <span class="token builtin class-name">cd</span> categories/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ <span class="token function">ls</span>
+index.md
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ <span class="token function">nano</span> index.md 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ <span class="token comment"># type: "categories"</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ <span class="token comment"># layout: "categories"</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ <span class="token function">cat</span> index.md 
+---
+title: categories
+date: <span class="token number">2021</span>-12-20 <span class="token number">19</span>:24:33
+type: <span class="token string">"categories"</span>
+layout: <span class="token string">"categories"</span>
+---
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ <span class="token comment"># 新建标签页tags</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ hexo new page <span class="token string">"tags"</span>
+INFO  Validating config
+INFO  Created: ~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/tags/index.md
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/categories$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/tags/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/tags$ <span class="token function">nano</span> index.md 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/tags$ <span class="token function">cat</span> index.md 
+---
+title: tags
+date: <span class="token number">2021</span>-12-20 <span class="token number">19</span>:28:07
+type: <span class="token string">"tags"</span>
+layout: <span class="token string">"tags"</span>
+---
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/tags$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/tags$ <span class="token comment"># 新建关于我about页</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/tags$ hexo new page <span class="token string">"about"</span>
+INFO  Validating config
+INFO  Created: ~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/about/index.md
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/tags$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/about/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/about$ <span class="token function">nano</span> index.md 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/about$ <span class="token function">cat</span> index.md 
+---
+title: about
+date: <span class="token number">2021</span>-12-20 <span class="token number">19</span>:30:01
+type: <span class="token string">"about"</span>
+layout: <span class="token string">"about"</span>
+---
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/about$ <span class="token comment"># 新建留言板contact页(可选)</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/about$ hexo new page <span class="token string">"contact"</span>
+INFO  Validating config
+INFO  Created: ~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact/index.md
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/about$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/contact/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact$ <span class="token function">nano</span> index.md 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact$ <span class="token function">cat</span> index.md 
+---
+title: contact
+date: <span class="token number">2021</span>-12-20 <span class="token number">19</span>:32:54
+type: <span class="token string">"contact"</span>
+layout: <span class="token string">"contact"</span>
+---
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact$ <span class="token comment"># 注：本留言板功能依赖于第三方评论系统，请激活你的评论系统才有效果。并且在主题的 _config.yml 文件中，第 19 至 21 行的“菜单”配置，取消关于留言板的注释即可。</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact$ <span class="token comment"># 新建友情链接friends页(可选的)</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact$ hexo new page <span class="token string">"friends"</span>
+INFO  Validating config
+INFO  Created: ~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/friends/index.md
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/contact$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/friends/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/friends$ <span class="token function">nano</span> index.md 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/friends$ <span class="token function">cat</span> index.md 
+---
+title: friends
+date: <span class="token number">2021</span>-12-20 <span class="token number">19</span>:34:50
+type: <span class="token string">"friends"</span>
+layout: <span class="token string">"friends"</span>
+---
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/friends$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source$ <span class="token function">mkdir</span> _data
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source$ <span class="token function">ls</span>
+about  categories  contact  _data  friends  _posts  tags
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source$ <span class="token builtin class-name">cd</span> _data/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/_data$ <span class="token function">touch</span> friends.json
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/_data$ <span class="token function">nano</span> friends.json 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/_data$ <span class="token function">cat</span> friends.json 
+<span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token string">"avatar"</span><span class="token builtin class-name">:</span> <span class="token string">"http://image.luokangyuan.com/1_qq_27922023.jpg"</span>,
+    <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"码酱"</span>,
+    <span class="token string">"introduction"</span><span class="token builtin class-name">:</span> <span class="token string">"我不是大佬，只是在追寻大佬的脚步"</span>,
+    <span class="token string">"url"</span><span class="token builtin class-name">:</span> <span class="token string">"http://luokangyuan.com/"</span>,
+    <span class="token string">"title"</span><span class="token builtin class-name">:</span> <span class="token string">"前去学习"</span>
+<span class="token punctuation">}</span>, <span class="token punctuation">{</span>
+    <span class="token string">"avatar"</span><span class="token builtin class-name">:</span> <span class="token string">"http://image.luokangyuan.com/4027734.jpeg"</span>,
+    <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"闪烁之狐"</span>,
+    <span class="token string">"introduction"</span><span class="token builtin class-name">:</span> <span class="token string">"编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬"</span>,
+    <span class="token string">"url"</span><span class="token builtin class-name">:</span> <span class="token string">"https://blinkfox.github.io/"</span>,
+    <span class="token string">"title"</span><span class="token builtin class-name">:</span> <span class="token string">"前去学习"</span>
+<span class="token punctuation">}</span>, <span class="token punctuation">{</span>
+    <span class="token string">"avatar"</span><span class="token builtin class-name">:</span> <span class="token string">"http://image.luokangyuan.com/avatar.jpg"</span>,
+    <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"ja_rome"</span>,
+    <span class="token string">"introduction"</span><span class="token builtin class-name">:</span> <span class="token string">"平凡的脚步也可以走出伟大的行程"</span>,
+    <span class="token string">"url"</span><span class="token builtin class-name">:</span> <span class="token string">"https://me.csdn.net/jlh912008548"</span>,
+    <span class="token string">"title"</span><span class="token builtin class-name">:</span> <span class="token string">"前去学习"</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/_data$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/_data$ <span class="token comment"># 新建404页</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/_data$ hexo new page <span class="token number">404</span>
+INFO  Validating config
+INFO  Created: ~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/404/index.md
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/_data$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/404/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/404$ <span class="token function">nano</span> index.md 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/404$ <span class="token function">cat</span> index.md 
+---
+title: <span class="token number">404</span>
+date: <span class="token number">2021</span>-12-20 <span class="token number">19</span>:37:33
+type: <span class="token string">"404"</span>
+layout: <span class="token string">"404"</span>
+description: <span class="token string">"Oops～，我崩溃了！找不到你想要的页面 :("</span>
+---
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/404$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/404$ hexo s
+INFO  Validating config
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000 <span class="token builtin class-name">.</span> Press Ctrl+C to stop.
+^CINFO  Catch you later
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/source/404$ <span class="token comment">#     good job!~~~</span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="二级菜单-搜索-中文链接转拼音-文章字数统计插件"><a href="#二级菜单-搜索-中文链接转拼音-文章字数统计插件" class="headerlink" title="二级菜单+搜索+中文链接转拼音+文章字数统计插件"></a>二级菜单+搜索+中文链接转拼音+文章字数统计插件</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考资料 </span>
+<span class="token comment">############################</span>
+<span class="token comment">#&lt;1,https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md, matery的github连接中文说明&gt;</span>
+
+
+
+
+
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">##		二级菜单</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token builtin class-name">cd</span> themes/matery/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token function">ls</span>
+CHANGELOG.md  _config.yml  languages  layout  LICENSE  README_CN.md  README.md  <span class="token builtin class-name">source</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token function">nano</span> _config.yml 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token comment"># 修改了menu部分</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ hexo clean
+INFO  Validating config
+INFO  Deleted database.
+INFO  Deleted public folder.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ hexo g
+INFO  Validating config
+INFO  Start processing
+INFO  Files loaded <span class="token keyword">in</span> <span class="token number">172</span> ms
+INFO  Generated: <span class="token number">404</span>/index.html
+INFO  Generated: categories/index.html
+INFO  Generated: about/index.html
+INFO  Generated: contact/index.html
+INFO  Generated: friends/index.html
+INFO  Generated: tags/index.html
+INFO  Generated: archives/index.html
+INFO  Generated: archives/2021/index.html
+INFO  Generated: archives/2021/12/index.html
+INFO  Generated: index.html
+INFO  Generated: medias/avatar.jpg
+INFO  Generated: medias/featureimages/10.jpg
+INFO  Generated: medias/barrager/0.png
+INFO  Generated: medias/reward/alipay.jpg
+INFO  Generated: medias/icp.png
+INFO  Generated: favicon.png
+INFO  Generated: medias/logo.png
+INFO  Generated: medias/barrager/1.png
+INFO  Generated: medias/barrager/2.png
+INFO  Generated: medias/barrager/close.png
+INFO  Generated: medias/comment_bg.png
+INFO  Generated: medias/featureimages/16.jpg
+INFO  Generated: medias/featureimages/13.jpg
+INFO  Generated: medias/featureimages/15.jpg
+INFO  Generated: medias/featureimages/2.jpg
+INFO  Generated: medias/featureimages/23.jpg
+INFO  Generated: medias/featureimages/22.jpg
+INFO  Generated: medias/featureimages/21.jpg
+INFO  Generated: medias/reward/wechat.png
+INFO  Generated: medias/featureimages/3.jpg
+INFO  Generated: medias/featureimages/5.jpg
+INFO  Generated: medias/featureimages/7.jpg
+INFO  Generated: medias/featureimages/8.jpg
+INFO  Generated: medias/banner/0.jpg
+INFO  Generated: libs/share/fonts/iconfont.eot
+INFO  Generated: medias/featureimages/0.jpg
+INFO  Generated: libs/lightGallery/fonts/lg.svg
+INFO  Generated: medias/banner/2.jpg
+INFO  Generated: medias/banner/3.jpg
+INFO  Generated: medias/featureimages/1.jpg
+INFO  Generated: medias/featureimages/11.jpg
+INFO  Generated: medias/featureimages/14.jpg
+INFO  Generated: medias/featureimages/17.jpg
+INFO  Generated: medias/featureimages/12.jpg
+INFO  Generated: medias/featureimages/19.jpg
+INFO  Generated: medias/featureimages/18.jpg
+INFO  Generated: medias/featureimages/20.jpg
+INFO  Generated: medias/featureimages/6.jpg
+INFO  Generated: libs/twikoo/twikoo.all.min.js.LICENSE.txt
+INFO  Generated: medias/featureimages/4.jpg
+INFO  Generated: js/gallery-encrypt.js
+INFO  Generated: css/bb.css
+INFO  Generated: libs/aos/aos.js
+INFO  Generated: libs/background/canvas-nest.js
+INFO  Generated: libs/aplayer/APlayer.min.css
+INFO  Generated: medias/featureimages/9.jpg
+INFO  Generated: libs/codeBlock/codeCopy.js
+INFO  Generated: libs/jqcloud/jqcloud.css
+INFO  Generated: libs/instantpage/instantpage.js
+INFO  Generated: libs/others/TencentCaptcha.js
+INFO  Generated: libs/fancybox/jquery.fancybox.css
+INFO  Generated: libs/justifiedGallery/justifiedGallery.min.css
+INFO  Generated: libs/mermaid/mermaid.min.css
+INFO  Generated: libs/scrollprogress/scrollProgress.min.js
+INFO  Generated: libs/minivaline/MiniValine.js
+INFO  Generated: libs/prism/prism.css
+INFO  Generated: libs/share/css/share.min.css
+INFO  Generated: libs/tocbot/tocbot.css
+INFO  Generated: libs/gitalk/gitalk.css
+INFO  Generated: libs/animate/animate.min.css
+INFO  Generated: libs/dplayer/DPlayer.min.css
+INFO  Generated: libs/cryptojs/crypto-js.min.js
+INFO  Generated: libs/valine/Valine.min.js
+INFO  Generated: libs/gitment/gitment.js
+INFO  Generated: libs/lightGallery/css/lightgallery.min.css
+INFO  Generated: libs/awesome/css/all.css
+INFO  Generated: libs/lightGallery/js/lightgallery-all.min.js
+INFO  Generated: libs/materialize/materialize.min.js
+INFO  Generated: libs/awesome/webfonts/fa-brands-400.eot
+INFO  Generated: libs/jquery/jquery-3.6.0.min.js
+INFO  Generated: libs/share/js/social-share.min.js
+INFO  Generated: libs/lightGallery/img/loading.gif
+INFO  Generated: libs/masonry/masonry.pkgd.min.js
+INFO  Generated: css/gallery.css
+INFO  Generated: css/my.css
+INFO  Generated: js/jquery.barrager.js
+INFO  Generated: medias/images/02.jpg
+INFO  Generated: css/my-gitalk.css
+INFO  Generated: js/matery.js
+INFO  Generated: css/barrager.css
+INFO  Generated: js/search.js
+INFO  Generated: libs/aplayer/Meting.min.js
+INFO  Generated: css/gitment.css
+INFO  Generated: libs/background/ribbon.min.js
+INFO  Generated: libs/background/ribbon-dynamic.js
+INFO  Generated: libs/codeBlock/codeBlockFuction.js
+INFO  Generated: libs/background/ribbon-refresh.min.js
+INFO  Generated: libs/codeBlock/codeLang.js
+INFO  Generated: libs/others/busuanzi.pure.mini.js
+INFO  Generated: libs/jqcloud/jqcloud-1.0.4.min.js
+INFO  Generated: libs/codeBlock/codeShrink.js
+INFO  Generated: libs/others/clicklove.js
+INFO  Generated: libs/others/snow.js
+INFO  Generated: libs/others/star.js
+INFO  Generated: css/matery.css
+INFO  Generated: libs/tocbot/tocbot.min.js
+INFO  Generated: libs/aos/aos.css
+INFO  Generated: libs/justifiedGallery/justifiedGallery.min.js
+INFO  Generated: libs/aplayer/APlayer.min.js
+INFO  Generated: libs/dplayer/DPlayer.min.js
+INFO  Generated: js/crypto-js.js
+INFO  Generated: libs/others/sakura-reduce.js
+INFO  Generated: libs/echarts/echarts.min.js
+INFO  Generated: libs/others/sakura.js
+INFO  Generated: libs/materialize/materialize.min.css
+INFO  Generated: libs/others/sakura-half.js
+INFO  Generated: libs/others/sakura-small.js
+INFO  Generated: libs/gitment/gitment-default.css
+INFO  Generated: libs/awesome/css/all.min.css
+INFO  Generated: libs/fancybox/fancybox.js
+INFO  Generated: libs/valine/av-min.js
+INFO  Generated: medias/cover.jpg
+INFO  Generated: medias/banner/1.jpg
+INFO  Generated: medias/banner/5.jpg
+INFO  Generated: medias/banner/6.jpg
+INFO  Generated: libs/awesome/webfonts/fa-brands-400.ttf
+INFO  Generated: libs/lightGallery/fonts/lg.ttf
+INFO  Generated: libs/share/js/jquery.share.min.js
+INFO  Generated: libs/lightGallery/fonts/lg.woff
+INFO  Generated: libs/lightGallery/img/vimeo-play.png
+INFO  Generated: libs/share/fonts/iconfont.svg
+INFO  Generated: libs/awesome/webfonts/fa-regular-400.svg
+INFO  Generated: libs/lightGallery/img/video-play.png
+INFO  Generated: libs/lightGallery/img/youtube-play.png
+INFO  Generated: libs/share/fonts/iconfont.ttf
+INFO  Generated: libs/twikoo/twikoo.all.min.js
+INFO  Generated: libs/awesome/webfonts/fa-solid-900.ttf
+INFO  Generated: libs/awesome/webfonts/fa-solid-900.eot
+INFO  Generated: libs/awesome/webfonts/fa-brands-400.woff
+INFO  Generated: libs/share/fonts/iconfont.woff
+INFO  Generated: <span class="token number">2021</span>/12/20/hello-world/index.html
+INFO  Generated: libs/awesome/webfonts/fa-solid-900.woff2
+INFO  Generated: libs/awesome/webfonts/fa-solid-900.woff
+INFO  Generated: libs/awesome/webfonts/fa-brands-400.woff2
+INFO  Generated: medias/banner/4.jpg
+INFO  Generated: medias/images/03.jpg
+INFO  Generated: libs/gitalk/gitalk.min.js
+INFO  Generated: libs/mermaid/mermaid.min.js
+INFO  Generated: libs/awesome/webfonts/fa-regular-400.eot
+INFO  Generated: libs/awesome/webfonts/fa-regular-400.woff2
+INFO  Generated: libs/awesome/webfonts/fa-regular-400.woff
+INFO  Generated: libs/awesome/webfonts/fa-regular-400.ttf
+INFO  Generated: medias/images/01.jpg
+INFO  Generated: libs/awesome/webfonts/fa-brands-400.svg
+INFO  Generated: libs/awesome/webfonts/fa-solid-900.svg
+INFO  Generated: libs/mermaid/mermaid.js
+INFO  <span class="token number">156</span> files generated <span class="token keyword">in</span> <span class="token number">135</span> ms
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ hexo d
+INFO  Validating config
+INFO  Deploying: <span class="token function">git</span>
+INFO  Clearing .deploy_git folder<span class="token punctuation">..</span>.
+INFO  Copying files from public folder<span class="token punctuation">..</span>.
+INFO  Copying files from extend dirs<span class="token punctuation">..</span>.
+<span class="token punctuation">[</span>master 413e728<span class="token punctuation">]</span> Site updated: <span class="token number">2021</span>-12-21 08:41:25
+ <span class="token number">11</span> files changed, <span class="token number">1183</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">6</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+Username <span class="token keyword">for</span> <span class="token string">'https://github.com'</span><span class="token builtin class-name">:</span> Liu-Jincan
+Password <span class="token keyword">for</span> <span class="token string">'https://Liu-Jincan@github.com'</span><span class="token builtin class-name">:</span> 
+枚举对象中: <span class="token number">50</span>, 完成.
+对象计数中: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">50</span>/50<span class="token punctuation">)</span>, 完成.
+使用 <span class="token number">16</span> 个线程进行压缩
+压缩对象中: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">15</span>/15<span class="token punctuation">)</span>, 完成.
+写入对象中: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">26</span>/26<span class="token punctuation">)</span>, <span class="token number">6.05</span> KiB <span class="token operator">|</span> <span class="token number">2.02</span> MiB/s, 完成.
+总共 <span class="token number">26</span> （差异 <span class="token number">11</span>），复用 <span class="token number">0</span> （差异 <span class="token number">0</span>）
+remote: Resolving deltas: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">11</span>/11<span class="token punctuation">)</span>, completed with <span class="token number">6</span> <span class="token builtin class-name">local</span> objects.
+To https://github.com/Liu-Jincan/Liu-Jincan.github.io.git
+   258af2d<span class="token punctuation">..</span>413e728  HEAD -<span class="token operator">&gt;</span> main
+分支 <span class="token string">'master'</span> 设置为跟踪来自 <span class="token string">'https://github.com/Liu-Jincan/Liu-Jincan.github.io.git'</span> 的远程分支 <span class="token string">'main'</span>。
+INFO  Deploy done: <span class="token function">git</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token comment"># good job~~</span>
+
+
+
+
+
+
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token comment">## 		代码高亮???</span>
+
+
+
+
+
+
+
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token comment">##    	搜索</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">npm</span> <span class="token function">install</span> hexo-generator-search --save
+
+added <span class="token number">1</span> package, and audited <span class="token number">251</span> packages <span class="token keyword">in</span> 3s
+
+<span class="token number">15</span> packages are looking <span class="token keyword">for</span> funding
+  run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> fund<span class="token variable">`</span></span> <span class="token keyword">for</span> details
+
+<span class="token number">1</span> moderate severity vulnerability
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> audit<span class="token variable">`</span></span> <span class="token keyword">for</span> details.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">ls</span>
+_config.landscape.yml  _config.yml  _config.yml.save  _config.yml.save.1  db.json  node_modules  package.json  package-lock.json  public  scaffolds  <span class="token builtin class-name">source</span>  themes
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$  <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">#添加了search部分的内容</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo d
+INFO  Validating config
+INFO  Deploying: <span class="token function">git</span>
+INFO  Clearing .deploy_git folder<span class="token punctuation">..</span>.
+INFO  Copying files from public folder<span class="token punctuation">..</span>.
+INFO  Copying files from extend dirs<span class="token punctuation">..</span>.
+位于分支 master
+无文件要提交，干净的工作区
+Username <span class="token keyword">for</span> <span class="token string">'https://github.com'</span><span class="token builtin class-name">:</span> Liu-Jincan            
+Password <span class="token keyword">for</span> <span class="token string">'https://Liu-Jincan@github.com'</span><span class="token builtin class-name">:</span> 
+分支 <span class="token string">'master'</span> 设置为跟踪来自 <span class="token string">'https://github.com/Liu-Jincan/Liu-Jincan.github.io.git'</span> 的远程分支 <span class="token string">'main'</span>。
+Everything up-to-date
+INFO  Deploy done: <span class="token function">git</span>
+
+
+
+
+
+
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">##		中文连接转拼音(建议安装)</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">npm</span> i hexo-permalink-pinyin --save
+<span class="token function">npm</span> ERR<span class="token operator">!</span> code ECONNRESET
+<span class="token function">npm</span> ERR<span class="token operator">!</span> syscall <span class="token builtin class-name">read</span>
+<span class="token function">npm</span> ERR<span class="token operator">!</span> errno ECONNRESET
+<span class="token function">npm</span> ERR<span class="token operator">!</span> network Invalid response body <span class="token keyword">while</span> trying to fetch https://registry.npmjs.org/lcid: <span class="token builtin class-name">read</span> ECONNRESET
+<span class="token function">npm</span> ERR<span class="token operator">!</span> network This is a problem related to network connectivity.
+<span class="token function">npm</span> ERR<span class="token operator">!</span> network In <span class="token function">most</span> cases you are behind a proxy or have bad network settings.
+<span class="token function">npm</span> ERR<span class="token operator">!</span> network 
+<span class="token function">npm</span> ERR<span class="token operator">!</span> network If you are behind a proxy, please <span class="token function">make</span> sure that the
+<span class="token function">npm</span> ERR<span class="token operator">!</span> network <span class="token string">'proxy'</span> config is <span class="token builtin class-name">set</span> properly.  See: <span class="token string">'npm help config'</span>
+
+<span class="token function">npm</span> ERR<span class="token operator">!</span> A complete log of this run can be found in:
+<span class="token function">npm</span> ERR<span class="token operator">!</span>     /home/jincanliu/.npm/_logs/2021-12-21T00_56_47_444Z-debug.log
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">npm</span> <span class="token function">install</span> hexo-permalink-pinyin --save
+
+added <span class="token number">57</span> packages, and audited <span class="token number">308</span> packages <span class="token keyword">in</span> 2s
+
+<span class="token number">16</span> packages are looking <span class="token keyword">for</span> funding
+  run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> fund<span class="token variable">`</span></span> <span class="token keyword">for</span> details
+
+<span class="token number">9</span> moderate severity vulnerabilities
+
+To address issues that <span class="token keyword">do</span> not require attention, run:
+  <span class="token function">npm</span> audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> audit<span class="token variable">`</span></span> <span class="token keyword">for</span> details.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># 添加了permalink-pinyin的配置内容</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">cat</span> _config.yml <span class="token operator">|</span> <span class="token function">head</span> -n <span class="token number">124</span> <span class="token operator">|</span> <span class="token function">tail</span> -n +120
+<span class="token comment"># permalink-pinyin</span>
+<span class="token comment">## npm install hexo-permalink-pinyin --save</span>
+permalink_pinyin:
+  enable: <span class="token boolean">true</span>
+  separator: <span class="token string">'-'</span> <span class="token comment"># default: '-'</span>
+
+
+
+
+
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">##        文章字数统计插件(建议安装)</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">npm</span> <span class="token function">install</span> --save hexo-wordcount
+
+added <span class="token number">1</span> package, and audited <span class="token number">309</span> packages <span class="token keyword">in</span> 6s
+
+<span class="token number">16</span> packages are looking <span class="token keyword">for</span> funding
+  run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> fund<span class="token variable">`</span></span> <span class="token keyword">for</span> details
+
+<span class="token number">9</span> moderate severity vulnerabilities
+
+To address issues that <span class="token keyword">do</span> not require attention, run:
+  <span class="token function">npm</span> audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> audit<span class="token variable">`</span></span> <span class="token keyword">for</span> details.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token builtin class-name">cd</span> themes/matery/
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token function">ls</span>
+CHANGELOG.md  _config.yml  languages  layout  LICENSE  README_CN.md  README.md  <span class="token builtin class-name">source</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token function">nano</span> _config.yml 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io/themes/matery$ <span class="token function">cat</span> _config.yml <span class="token operator">|</span> <span class="token function">head</span> -n <span class="token number">204</span> <span class="token operator">|</span> <span class="token function">tail</span> -n +193
+<span class="token comment"># Post word count, reading duration, site total word count.</span>
+<span class="token comment"># Before you activate, please confirm that you have installed the hexo-wordcount plugin,</span>
+<span class="token comment"># install the plugin command: `npm i --save hexo-wordcount`.</span>
+<span class="token comment"># 文章字数统计、阅读时长、总字数统计等</span>
+<span class="token comment"># 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`</span>
+postInfo:
+  date: <span class="token boolean">true</span> <span class="token comment"># 发布日期</span>
+  update: <span class="token boolean">true</span> <span class="token comment"># 更新日期</span>
+  wordCount: <span class="token boolean">true</span> <span class="token comment"># 文章字数统计</span>
+  totalCount: <span class="token boolean">false</span> <span class="token comment"># 站点总文章字数</span>
+  min2read: <span class="token boolean">false</span> <span class="token comment"># 文章阅读时长</span>
+  readCount: <span class="token boolean">false</span> <span class="token comment"># 文章阅读次数</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo d
+INFO  Validating config
+INFO  Deploying: <span class="token function">git</span>
+INFO  Clearing .deploy_git folder<span class="token punctuation">..</span>.
+INFO  Copying files from public folder<span class="token punctuation">..</span>.
+INFO  Copying files from extend dirs<span class="token punctuation">..</span>.
+位于分支 master
+无文件要提交，干净的工作区
+Username <span class="token keyword">for</span> <span class="token string">'https://github.com'</span><span class="token builtin class-name">:</span> Liu-Jincan
+Password <span class="token keyword">for</span> <span class="token string">'https://Liu-Jincan@github.com'</span><span class="token builtin class-name">:</span> 
+分支 <span class="token string">'master'</span> 设置为跟踪来自 <span class="token string">'https://github.com/Liu-Jincan/Liu-Jincan.github.io.git'</span> 的远程分支 <span class="token string">'main'</span>。
+Everything up-to-date
+INFO  Deploy done: <span class="token function">git</span>
+
+ 
+ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+<h2 id="emo表情"><a href="#emo表情" class="headerlink" title="emo表情"></a>emo表情</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考资料 </span>
+<span class="token comment">############################</span>
+<span class="token comment">#&lt;1,	https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md, 	matery的github连接中文说明</span>
+
+
+<span class="token comment">##	对应代码(仅仅包含 emoji表情支持内容, fooster文件的修改在下面 )</span>
+<span class="token comment">#############################</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">##        emoji表情支持</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">npm</span> <span class="token function">install</span> hexo-filter-github-emojis --save
+
+added <span class="token number">6</span> packages, and audited <span class="token number">315</span> packages <span class="token keyword">in</span> 7s
+
+<span class="token number">16</span> packages are looking <span class="token keyword">for</span> funding
+  run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> fund<span class="token variable">`</span></span> <span class="token keyword">for</span> details
+
+<span class="token number">9</span> moderate severity vulnerabilities
+
+To address issues that <span class="token keyword">do</span> not require attention, run:
+  <span class="token function">npm</span> audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> audit<span class="token variable">`</span></span> <span class="token keyword">for</span> details.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">nano</span> _config.yml
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token function">cat</span> _config.yml <span class="token operator">|</span> <span class="token function">tail</span> -n +126
+<span class="token comment"># emojis</span>
+<span class="token comment">## npm install hexo-filter-github-emojis --save</span>
+githubEmojis:
+  enable: <span class="token boolean">true</span>
+  className: github-emoji
+  inject: <span class="token boolean">true</span>
+  styles:
+  customEmojis:
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo clean
+INFO  Validating config
+INFO  Deleted database.
+INFO  Deleted public folder.
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ hexo g <span class="token operator">&gt;</span>/dev/null
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment"># 标准输出1,重定向到"黑洞"</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ 
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">##        RSS订阅(可选)</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">##        DaoVoice在线聊天(可选)</span>
+<span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/Liu-Jincan.github.io$ <span class="token comment">##        Tido在线聊天(可选)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="fooster文件解析"><a href="#fooster文件解析" class="headerlink" title="fooster文件解析"></a>fooster文件解析</h2><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">##	参考资料 </span>
+<span class="token comment">############################</span>
+<span class="token comment">#&lt;1,	https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md, 	matery的github连接中文说明</span>
+<span class="token comment">#&lt;2,	https://ask.zol.com.cn/x/4606848.html, 					网站下面有 Copyright 是什么意思?</span>
+<span class="token comment">#&lt;3,	https://zhidao.baidu.com/question/2267553860261429228.html, 			网站底部的Copyright © 2015 是什么意思？</span>
+<span class="token comment">#&lt;4,	https://creativecommons.org/licenses/by/4.0/deed.zh, 			CC BY 4.0 许可协议</span>
+<span class="token comment">#&lt;5,	https://www.w3school.com.cn/tags/tag_div.asp, 				&lt;div&gt;,&lt;p&gt;,&lt;body&gt;,&lt;html&gt; </span>
+<span class="token comment">#&lt;6,	https://www.w3school.com.cn/tiy/t.asp?f=eg_html_footer,			&lt;footer&gt;,&lt;a href&gt; </span>
+<span class="token comment">#&lt;7,	https://www.runoob.com/try/try.php?filename=tryhtml5_global_class		class样式的创建和应用</span>
+
+
+
+
+<span class="token comment">##	对应的 themes/matery/layout/_partial/footer.ejs 文件内容</span>
+<span class="token comment">#ps:可以不用 hexo clean&amp;&amp;hexo g 进行更新,直接改 fooster内容,hexo s 网页端能实施实现.</span>
+<span class="token comment">############################  </span>
+
+ &lt;footer class="page<span class="token punctuation">-</span>footer bg<span class="token punctuation">-</span>color"<span class="token punctuation">&gt;</span>
+    &lt;<span class="token tag">!--</span> 音乐  <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+    &lt;% if (theme.music.enable &amp;&amp; theme.music.fixed) { %&gt;
+        &lt;%- partial('_widget/music') %&gt;
+    &lt;% } %&gt;</span>
+
+    &lt;div class="container row center<span class="token punctuation">-</span>align"
+	<span class="token key atrule">style="margin-bottom</span><span class="token punctuation">:</span> &lt;% if (theme.time.enable) <span class="token punctuation">{</span> %<span class="token punctuation">&gt;</span>15&lt;% <span class="token punctuation">}</span> else <span class="token punctuation">{</span> %<span class="token punctuation">&gt;</span>0&lt;% <span class="token punctuation">}</span> %<span class="token punctuation">&gt;</span>px <span class="token tag">!important;</span>"<span class="token punctuation">&gt;</span>
+	
+	
+	
+	
+	
+	&lt;<span class="token tag">!--</span>  copyright那本分的div <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+	&lt;div class="col s12 m8 l8 copy-right"&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 这里是 Copyright @<span class="token punctuation">,</span> <span class="token important">&amp;nbsp是空格</span><span class="token punctuation">,</span> <span class="token important">&amp;copy是那个符号哟</span> <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&amp;nbsp”是什么意思, 转义符号  --&gt;
+            Copyright&amp;nbsp;&amp;copy;</span>
+            
+            &lt;<span class="token tag">!--</span> 这里是2021<span class="token punctuation">,</span> 默认的theme.time.year是2019<span class="token punctuation">,</span>在这里我指定为2021<span class="token punctuation">,</span>因为我是2021<span class="token punctuation">-</span>12月份创建的博客<span class="token punctuation">,</span>good job <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;% theme.time.year = 2021 %&gt;
+            &lt;% if (theme.time.year !== new Date().getFullYear()) { %&gt;
+                &lt;span id="year"&gt;&lt;%- theme.time.year %&gt;-&lt;%- new Date().getFullYear() %&gt;&lt;/span&gt;
+            &lt;% } else { %&gt;
+                &lt;span id="year"&gt;&lt;%- theme.time.year %&gt;&lt;/span&gt;
+            &lt;% } %&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 这里是Jincan Liu<span class="token punctuation">,</span> 还包括了对应的超链接哦 <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;a href="&lt;%- url_for('/about') %&gt;" target="_blank"&gt;&lt;%- config.author %&gt;&lt;/a&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 这里是关于 Hexo <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            |&amp;nbsp;Powered by&amp;nbsp;&lt;a href="https://hexo.io/" target="_blank"&gt;Hexo&lt;/a&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 这里是关于 matery <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            |&amp;nbsp;Theme&amp;nbsp;&lt;a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank"&gt;Matery&lt;/a&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> br表示换行<span class="token punctuation">,</span> https<span class="token punctuation">:</span>//zhidao.baidu.com/question/187056327.html <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;br&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 这里是为了显示站点总字数 <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;% if (theme.postInfo.totalCount) { %&gt;
+            	&lt;!-- &lt;i&gt;标签是斜体作用, 这里是为了显示图形? --&gt;
+            	&lt;!-- &lt;span&gt;是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 --&gt;
+                &amp;nbsp;&lt;i class="fas fa-chart-area"&gt;&lt;/i&gt;&amp;nbsp;&lt;%- __('siteTotalWords') %&gt;:&amp;nbsp;&lt;span
+                        class="white-color"&gt;&lt;%= totalcount(site) %&gt;&lt;/span&gt;
+            &lt;% } %&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 不蒜子计数器的使用<span class="token punctuation">,</span> https<span class="token punctuation">:</span>//blog.csdn.net/weixin_46247581/article/details/105848853<span class="token punctuation">,</span> hexo s 中显示的不是正确的<span class="token punctuation">,</span> 不用担心<span class="token punctuation">,</span> 看 hexo d 上的即可 <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;% let socialClass = '' %&gt;
+            &lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.enable) { %&gt;
+                &lt;% socialClass = 'social-statis' %&gt;
+            &lt;% } %&gt;
+                            
+            &lt;!-- 这显示总访问量 --&gt;    &lt;!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 --&gt;
+            &lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;
+                &lt;span id="busuanzi_container_site_pv"&gt;
+                &amp;nbsp;|&amp;nbsp;&lt;i class="far fa-eye"&gt;&lt;/i&gt;&amp;nbsp;&lt;%- __('siteTotalVisits') %&gt;:&amp;nbsp;
+                    &lt;span id="busuanzi_value_site_pv" class="white-color"&gt;&lt;/span&gt;
+            &lt;/span&gt;
+            &lt;% } %&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 这里显示总访问人数 <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;
+                &lt;span id="busuanzi_container_site_uv"&gt;
+                &amp;nbsp;|&amp;nbsp;&lt;i class="fas fa-users"&gt;&lt;/i&gt;&amp;nbsp;&lt;%- __('siteTotalVisitors') %&gt;:&amp;nbsp;
+                    &lt;span id="busuanzi_value_site_uv" class="white-color"&gt;&lt;/span&gt;
+            &lt;/span&gt;
+            &lt;% } %&gt;
+                         
+            &lt;br&gt;</span>
+
+            &lt;<span class="token tag">!--</span> 运行天数提醒. <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;% if (theme.time.enable) { %&gt;
+                &lt;span id="sitetime"&gt; Loading ...&lt;/span&gt;
+                &lt;script&gt;
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "&lt;%- theme.time.year %&gt;";
+                        var startMonth = "&lt;%- theme.time.month %&gt;";
+                        var startDate = "&lt;%- theme.time.date %&gt;";
+                        var startHour = "&lt;%- theme.time.hour %&gt;";
+                        var startMinute = "&lt;%- theme.time.minute %&gt;";
+                        var startSecond = "&lt;%- theme.time.second %&gt;";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);</span>
+
+                        // 区分是否有年份.
+                        var language = '&lt;%<span class="token punctuation">-</span> config.language %<span class="token punctuation">&gt;</span>';
+                        if (startYear === String(todayYear)) <span class="token punctuation">{</span>
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh<span class="token punctuation">-</span>CN') <span class="token punctuation">{</span>
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            <span class="token punctuation">}</span> else if (language === 'zh<span class="token punctuation">-</span>HK') <span class="token punctuation">{</span>
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            <span class="token punctuation">}</span>
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        <span class="token punctuation">}</span> else <span class="token punctuation">{</span>
+                            document.getElementById("year").innerHTML = startYear + " <span class="token punctuation">-</span> " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh<span class="token punctuation">-</span>CN') <span class="token punctuation">{</span>
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            <span class="token punctuation">}</span> else if (language === 'zh<span class="token punctuation">-</span>HK') <span class="token punctuation">{</span>
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            <span class="token punctuation">}</span>
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+
+                    calcSiteTime();
+                &lt;/script<span class="token punctuation">&gt;</span>
+            &lt;% <span class="token punctuation">}</span> %<span class="token punctuation">&gt;</span>
+            &lt;br<span class="token punctuation">&gt;</span>
+            
+            &lt;<span class="token tag">!--</span> 不知道干什么 <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+            &lt;% if (theme.icp.enable) { %&gt;
+                &lt;span id="icp"&gt;&lt;img src="&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for('/medias/icp.png') %&gt;"
+                                    style="vertical-align: text-bottom;"/&gt;
+                &lt;a href="&lt;%- url_for(theme.icp.url) %&gt;" target="_blank"&gt;&lt;%= theme.icp.text %&gt;&lt;/a&gt;
+            &lt;/span&gt;
+            &lt;% } %&gt;</span>
+        &lt;/div<span class="token punctuation">&gt;</span>
+	
+	
+	
+	
+		
+	
+	&lt;<span class="token tag">!--</span> 联系图标的 div <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span><span class="token scalar string">
+        &lt;div class="col s12 m4 l4 social-link &lt;%- socialClass %&gt;"&gt;&lt;%- partial('_partial/social-link') %&gt;&lt;/div&gt;        </span>
+        
+
+    &lt;/div<span class="token punctuation">&gt;</span>
+&lt;/footer<span class="token punctuation">&gt;</span>
+
+
+&lt;<span class="token tag">!--</span> 回到顶部的div <span class="token punctuation">-</span><span class="token punctuation">-</span><span class="token punctuation">&gt;</span>
+&lt;div class="progress<span class="token punctuation">-</span>bar"<span class="token punctuation">&gt;</span>&lt;/div<span class="token punctuation">&gt;</span>
+ 
+ 
+ 
+ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="添加社交图标"><a href="#添加社交图标" class="headerlink" title="添加社交图标"></a>添加社交图标</h2><pre class="line-numbers language-none"><code class="language-none">##	参考资料 
+############################
+# 图标的选取网站 Font Awesome: https://fontawesome.com/v5.15/icons?d=gallery&amp;p=2&amp;q=research				（可以用）
+# 图标的选取网站 Font Awesome: https://fontawesome.com/v6.0/icons/bilibili?s=brands   (用不了,版本是需要 Font Awesome 6.0,而本版本的matery的是 5.11)
+# 图标的选取网站 aliyun 图片导入教程：https://www.bilibili.com/video/BV1GK4y1p7xA/?spm_id_from=autoNext,		（可以用，good job）
+
+
+
+
+
+
+## https://fontawesome.com/v5.15/icons?d=gallery&amp;p=2&amp;q=research
+#############################
+准备图标
+1. 进入网站，在research下，进行搜索，例如 researchgate
+2. 点击搜索结果，获取标识，&lt;i class="fab fa-researchgate"&gt;&lt;/i&gt;
+
+图标插入
+3. 编辑matery/_config.yml，socialLink类别下新建researchgate，填上对应网站，即
+socialLink:
+  researchgate: https://www.researchgate.net/profile/Jincan-Liu
+4. 编辑matery/layout/_partial/social-link.ejs，添加标识，即
+&lt;% if (theme.socialLink.researchgate) { %&gt;
+    &lt;a href="&lt;%= theme.socialLink.researchgate %&gt;" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate: &lt;%= theme.socialLink.zhihu %&gt;" data-position="top" data-delay="50"&gt;
+        &lt;i class="fab fa-researchgate"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;% } %&gt;
+
+x. 猜测 Font Awesome 应该也是以 css 文件形式导入的，因为在 matery/_config.yml 中 libs.css 属性有 fontAwesome，即
+		libs:
+		  css:
+		    matery: /css/matery.css
+		    mycss: /css/my.css
+		    gallery: /css/gallery.css
+		    fontAwesome: /libs/awesome/css/all.min.css # V5.15.4 20211109
+   如果想用 v6 的，应该也是需要导入一个这样的 css，对了，导入后还需要在 &lt;head&gt; 后创建 link 连接。
+
+
+
+
+
+## https://www.bilibili.com/video/BV1GK4y1p7xA/?spm_id_from=autoNext
+#############################
+准备图标
+1. 根据视频拷贝对应.css文件内容，编辑matery/source/css/my.css，粘贴对应内容。
+（ps：my.css 是在matery/_config.yml的lib.css中定义的，包括路径的定义）
+（ps：my.css 对应的link语句在 matery/layout/_partial/head.ejs 的&lt;head&gt;标签下）
+2. 根据视频获取标识
+图标插入
+3.
+4.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h2 id="微信支付宝二维码-配置音乐播放器"><a href="#微信支付宝二维码-配置音乐播放器" class="headerlink" title="微信支付宝二维码+配置音乐播放器"></a>微信支付宝二维码+配置音乐播放器</h2><pre class="line-numbers language-none"><code class="language-none">##	参考资料 
+############################
+#&lt;1,	https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md, 	matery的github连接中文说明
+
+
+
+
+
+## reward,微信支付宝二维码修改
+#############################
+1. 图片准备
+2. 图片放进matery/source/medias/reward/
+3. 如果不行，需编辑matery/_config.yml文件内容，修改reward属性
+（具体调用这些参数的代码不知道在那里）
+
+
+
+
+
+
+## 配置音乐播放器
+##############################
+编辑matery/_config.yml文件内容，修改music属性
+（具体调用这些参数的代码不知道在那里）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="对首页index进行大修改（需要学习html-ejs-css-java）"><a href="#对首页index进行大修改（需要学习html-ejs-css-java）" class="headerlink" title="对首页index进行大修改（需要学习html, ejs, css , java）"></a>对首页index进行大修改（需要学习html, ejs, css , java）</h2><pre class="line-numbers language-none"><code class="language-none">##	参考资料 
+############################
+&lt; CSS3最新教程快速入门通俗易懂1-5课程,	https://www.bilibili.com/video/BV1YJ411a7dy?p=5,	狂神
+
+
+
+
+##	hexo 博客 matery 主题的首页在哪里修改
+############################
+&lt; CSS3最新教程快速入门通俗易懂1-5课程,	https://www.bilibili.com/video/BV1YJ411a7dy?p=5,	狂神<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+<h2 id="Todo：代码样式"><a href="#Todo：代码样式" class="headerlink" title="Todo：代码样式"></a>Todo：代码样式</h2><h3 id="开启matery代码样式"><a href="#开启matery代码样式" class="headerlink" title="开启matery代码样式"></a>开启matery代码样式</h3><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a> 代码高亮部分尝试</p>
+<blockquote>
+<p>从 Hexo5.0 版本开始自带了 <code>prismjs</code> 代码语法高亮的支持，本主题对此进行了改造支持。</p>
+<p>如果你的博客中曾经安装过 <code>hexo-prism-plugin</code> 的插件，那么你须要执行 <code>npm uninstall hexo-prism-plugin</code> 来卸载掉它，否则生成的代码中会有 <code>{</code> 和 <code>}</code> 的转义字符。</p>
+<p>然后，修改 Hexo 根目录下 <code>_config.yml</code> 文件中 <code>highlight.enable</code> 的值为 <code>false</code>，并将 <code>prismjs.enable</code> 的值设置为 <code>true</code>，主要配置如下：</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">highlight</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">auto_detect</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token key atrule">wrap</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">hljs</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">prismjs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">preprocess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">tab_replace</span><span class="token punctuation">:</span> <span class="token string">''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<p>成功</p>
+<p>bash样式</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225182643.png"></p>
+<blockquote>
+<p>主题中默认的 <code>prismjs</code> 主题是 <code>Tomorrow Night</code>。</p>
+</blockquote>
+<p>-</p>
+<p>-</p>
+<h3 id="Todo：如何修改matery代码样式？"><a href="#Todo：如何修改matery代码样式？" class="headerlink" title="Todo：如何修改matery代码样式？"></a>Todo：如何修改matery代码样式？</h3><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a> 代码高亮部分尝试</p>
+<blockquote>
+<p>如果你想定制自己的主题，可以前往 <a target="_blank" rel="noopener" href="https://prismjs.com/download.html">prismjs 下载页面</a> 定制下载自己喜欢的主题 <code>css</code> 文件，然后将此 css 主题文件取名为 <code>prism.css</code>，替换掉 <code>hexo-theme-matery</code> 主题文件夹中的 <code>source/libs/prism/prism.css</code> 文件即可。</p>
+</blockquote>
+<h3 id="Todo：如何在matery增添代码样式，针对不同类型的代码。"><a href="#Todo：如何在matery增添代码样式，针对不同类型的代码。" class="headerlink" title="Todo：如何在matery增添代码样式，针对不同类型的代码。"></a>Todo：如何在matery增添代码样式，针对不同类型的代码。</h3>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2021/12/24/matery/">https://Liu-Jincan.github.io/2021/12/24/matery/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
+                                </a>
+                            
+                                <a href="/tags/matery/">
+                                    <span class="chip bg-color">matery</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2021/12/25/linux-ubuntu/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225114416.png" class="responsive-img" alt="linux&amp;ubuntu">
+                        
+                        <span class="card-title">linux&amp;ubuntu</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            对自己遇到的一些linux&ubuntu问题的总结
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/ubuntu/">
+                        <span class="chip bg-color">ubuntu</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/12/24/typora-jincan/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Typora">
+                        
+                        <span class="card-title">Typora</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            一款 markdown 编辑软件，个人主要用于写博客～
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-category">
+                                    博客搭建
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">博客搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">103.5k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
