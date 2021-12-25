@@ -415,7 +415,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    6.8k
+                    14.5k
                 </div>
                 
 
@@ -435,7 +435,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo-theme-matery"><a href="#Hexo-theme-matery" class="headerlink" title="Hexo-theme-matery"></a>Hexo-theme-matery</h1><h2 id="matery：下载-使用-hexo的yml配置-标签页添加"><a href="#matery：下载-使用-hexo的yml配置-标签页添加" class="headerlink" title="matery：下载+使用+hexo的yml配置+标签页添加"></a>matery：下载+使用+hexo的yml配置+标签页添加</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考资料 </span>
+                <h1 id="Hexo-theme-matery"><a href="#Hexo-theme-matery" class="headerlink" title="Hexo-theme-matery"></a>Hexo-theme-matery</h1><h2 id="下载-使用-hexo的yml配置-标签页添加"><a href="#下载-使用-hexo的yml配置-标签页添加" class="headerlink" title="下载+使用+hexo的yml配置+标签页添加"></a>下载+使用+hexo的yml配置+标签页添加</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考资料 </span>
 <span class="token comment">############################</span>
 <span class="token comment">#&lt;1,https://www.bilibili.com/read/cv12633102, 5.更换主题&gt;</span>
 <span class="token comment">#&lt;2,https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md, matery的github连接中文说明&gt;</span>
@@ -1371,7 +1371,7 @@ x. 猜测 Font Awesome 应该也是以 css 文件形式导入的，因为在 mat
 
 
 
-<h2 id="对首页index进行大修改（需要学习html-ejs-css-java）"><a href="#对首页index进行大修改（需要学习html-ejs-css-java）" class="headerlink" title="对首页index进行大修改（需要学习html, ejs, css , java）"></a>对首页index进行大修改（需要学习html, ejs, css , java）</h2><pre class="line-numbers language-none"><code class="language-none">##	参考资料 
+<h2 id="～～Todo：对首页index进行大修改（需要学习html-ejs-css-java）"><a href="#～～Todo：对首页index进行大修改（需要学习html-ejs-css-java）" class="headerlink" title="～～Todo：对首页index进行大修改（需要学习html, ejs, css , java）"></a>～～Todo：对首页index进行大修改（需要学习html, ejs, css , java）</h2><pre class="line-numbers language-none"><code class="language-none">##	参考资料 
 ############################
 &lt; CSS3最新教程快速入门通俗易懂1-5课程,	https://www.bilibili.com/video/BV1YJ411a7dy?p=5,	狂神
 
@@ -1388,7 +1388,1115 @@ x. 猜测 Font Awesome 应该也是以 css 文件形式导入的，因为在 mat
 
 
 
-<h2 id="Todo：代码样式"><a href="#Todo：代码样式" class="headerlink" title="Todo：代码样式"></a>Todo：代码样式</h2><h3 id="开启matery代码样式"><a href="#开启matery代码样式" class="headerlink" title="开启matery代码样式"></a>开启matery代码样式</h3><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a> 代码高亮部分尝试</p>
+
+
+<h2 id="对主题的-config-yml进行一个大致的了解"><a href="#对主题的-config-yml进行一个大致的了解" class="headerlink" title="对主题的_config.yml进行一个大致的了解"></a>对主题的_config.yml进行一个大致的了解</h2><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># 0 主题，github，		https://github.com/blinkfox/hexo-theme-matery</span>
+<span class="token comment"># 0 主题，blankfox搭建的网站，	http://blinkfox.com/</span>
+<span class="token comment"># Liu-Jincan</span>
+<span class="token comment"># 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</span>
+
+
+
+<span class="token comment"># main menu navigation url and icon</span>
+<span class="token comment"># 1 配置菜单导航的名称、路径和图标icon.		～1</span>
+<span class="token key atrule">menu</span><span class="token punctuation">:</span>
+  <span class="token key atrule">Index</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>home
+  <span class="token key atrule">Tags</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /tags
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>tags
+  <span class="token key atrule">Categories</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /categories
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>bookmark
+  <span class="token key atrule">Archives</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /archives
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>archive
+  <span class="token key atrule">About</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /about
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>user<span class="token punctuation">-</span>circle
+  <span class="token comment">#Contact:</span>
+    <span class="token comment">#url: /contact</span>
+    <span class="token comment">#icon: fas fa-comments</span>
+  <span class="token key atrule">Friends</span><span class="token punctuation">:</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> /friends
+    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>address<span class="token punctuation">-</span>book
+  <span class="token comment"># 二级菜单写法如下</span>
+  <span class="token comment">#Medias:</span>
+  <span class="token comment">#  icon: fas fa-list</span>
+  <span class="token comment">#  children:</span>
+  <span class="token comment">#    - name: Musics</span>
+  <span class="token comment">#      url: /musics</span>
+  <span class="token comment">#      icon: fas fa-music</span>
+  <span class="token comment">#    - name: Movies</span>
+  <span class="token comment">#      url: /movies</span>
+  <span class="token comment">#      icon: fas fa-film</span>
+  <span class="token comment">#    - name: Books</span>
+  <span class="token comment">#      url: /books</span>
+  <span class="token comment">#      icon: fas fa-book</span>
+  <span class="token comment">#    - name: Galleries</span>
+  <span class="token comment">#      url: /galleries</span>
+  <span class="token comment">#      icon: fas fa-image</span>
+
+
+
+
+
+<span class="token comment"># Website start time.</span>
+<span class="token comment"># 2 站点运行开始时间.				～1</span>
+<span class="token key atrule">time</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token comment">## true  ##false</span>
+  <span class="token key atrule">year</span><span class="token punctuation">:</span> <span class="token number">2021</span> <span class="token comment"># 年份</span>
+  <span class="token key atrule">month</span><span class="token punctuation">:</span> <span class="token number">12</span> <span class="token comment"># 月份</span>
+  <span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token number">20</span> <span class="token comment"># 日期</span>
+  <span class="token key atrule">hour</span><span class="token punctuation">:</span> <span class="token number">00</span> <span class="token comment"># 小时</span>
+  <span class="token key atrule">minute</span><span class="token punctuation">:</span> <span class="token number">00</span> <span class="token comment"># 分钟</span>
+  <span class="token key atrule">second</span><span class="token punctuation">:</span> <span class="token number">00</span> <span class="token comment"># 秒</span>
+
+
+
+
+
+<span class="token comment"># Index cover carousel configuration.</span>
+<span class="token comment"># 3 首页封面轮播图的相关配置.</span>
+<span class="token key atrule">cover</span><span class="token punctuation">:</span>
+  <span class="token key atrule">showPrevNext</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.</span>
+  <span class="token key atrule">showIndicators</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true # 是否显示指示器. # Whether to display the indicators</span>
+  <span class="token key atrule">autoLoop</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># true # 是否自动轮播. Whether it is automatically rotated.</span>
+  <span class="token key atrule">duration</span><span class="token punctuation">:</span> <span class="token number">120</span> <span class="token comment"># 切换延迟时间. Switching delay time.</span>
+  <span class="token key atrule">intervalTime</span><span class="token punctuation">:</span> <span class="token number">5000</span> <span class="token comment"># 自动切换下一张的间隔时间. Automatically switch the interval of the next one.</span>
+  <span class="token key atrule">useConfig</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg</span>
+  <span class="token comment"># useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可</span>
+  <span class="token key atrule">video</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>    <span class="token comment">#true   #false</span>
+    <span class="token key atrule">src</span><span class="token punctuation">:</span> 
+      <span class="token punctuation">-</span> https<span class="token punctuation">:</span>//txmov2.a.yximgs.com/upic/2021/04/09/22/BMjAyMTA0MDkyMjMwMDhfMTg1ODk2MDg4N180NzUyOTMyMjA4Nl8xXzM=_b_B8e080d7ede19e6674d48a9f12545007b.mp4<span class="token punctuation">?</span>pkey=AAVAfNhi5_f<span class="token punctuation">-</span>HGkIPXrY5w6nyf4JibwOY<span class="token punctuation">-</span>WwdHgSJ2aSoi<span class="token punctuation">-</span>2WQLpiYDunLbRZQuESz875eMdsepRlVFtXg9nuQY58uRc<span class="token punctuation">-</span>7AsF0kEMNR6QYBj56g9JFFMSGdsoKK2<span class="token punctuation">-</span>SV27u8<span class="token important">&amp;tag=1-1617978682-xpcwebprofile-0-lcvipceuti-9e40072f87531f1a&amp;clientCacheKey=3xbbtbrfxqpccp4_b.mp4</span>
+      <span class="token punctuation">-</span> https<span class="token punctuation">:</span>//txmov2.a.yximgs.com/upic/2021/04/09/21/BMjAyMTA0MDkyMTQyNDRfMTg1ODk2MDg4N180NzUyNjAyMzA0N18xXzM=_b_B83b004b85aba8eca3ded270637616575.mp4
+      <span class="token punctuation">-</span> https<span class="token punctuation">:</span>//txmov2.a.yximgs.com/upic/2021/04/09/21/BMjAyMTA0MDkyMTU4MDNfMTg1ODk2MDg4N180NzUyNzE0MzkyNV8xXzM=_b_Bf94cee6bd181efeaca64049bd2e4e276.mp4
+
+
+
+
+
+
+
+<span class="token comment"># index page dream text,</span>
+<span class="token comment"># 4 配置首页显示"梦想"的语句.			～1</span>
+<span class="token key atrule">dream</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> teue
+  <span class="token key atrule">showTitle</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> 回忆相伴，慢慢前行
+  <span class="token key atrule">text</span><span class="token punctuation">:</span> 
+
+
+
+
+
+
+
+<span class="token comment"># Whether to display the musics.</span>
+<span class="token comment"># 5 是否在首页显示音乐.				～1</span>
+<span class="token key atrule">music</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token comment">#非吸底模式有效</span>
+    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">show</span><span class="token punctuation">:</span> 听听音乐
+  <span class="token key atrule">autoHide</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>    <span class="token comment"># hide automaticaly</span>
+  <span class="token key atrule">server</span><span class="token punctuation">:</span> netease   <span class="token comment"># require music platform, netease, tencent, kugou, xiami, baidu</span>
+                    <span class="token comment">#                         网易云，腾讯，酷狗，虾米，百度</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> playlist    <span class="token comment">#require song, playlist, album, search, artist</span>
+                    <span class="token comment">#        歌曲，歌单，    专辑，  搜索，  艺术家</span>
+  <span class="token key atrule">id</span><span class="token punctuation">:</span> <span class="token number">6992203508</span>     <span class="token comment">#require	song id / playlist id / album id / search keyword</span>
+                    <span class="token comment">#获取方法示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，浏览器地址栏后面会有一串数字，playlist的id即为这串数字。</span>
+  <span class="token key atrule">fixed</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>       <span class="token comment"># 开启吸底模式</span>
+  <span class="token key atrule">autoplay</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>   <span class="token comment"># 是否自动播放</span>
+  <span class="token key atrule">theme</span><span class="token punctuation">:</span> <span class="token string">'#42b983'</span>
+  <span class="token key atrule">loop</span><span class="token punctuation">:</span> <span class="token string">'all'</span>       <span class="token comment"># 音频循环播放, 可选值: 'all', 'one', 'none'</span>
+  <span class="token key atrule">order</span><span class="token punctuation">:</span> <span class="token string">'random'</span>   <span class="token comment"># 音频循环顺序, 可选值: 'list', 'random'</span>
+  <span class="token key atrule">preload</span><span class="token punctuation">:</span> <span class="token string">'auto'</span>   <span class="token comment"># 预加载，可选值: 'none', 'metadata', 'auto'</span>
+  <span class="token key atrule">volume</span><span class="token punctuation">:</span> <span class="token number">0.7</span>       <span class="token comment"># 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span>
+  <span class="token key atrule">listFolded</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token comment"># 列表默认折叠</span>
+  <span class="token key atrule">hideLrc</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>     <span class="token comment"># 隐藏歌词</span>
+
+
+
+
+
+
+<span class="token comment"># Whether to display the videos.</span>
+<span class="token comment"># 6 是否在首页显示视频.				～1</span>
+<span class="token key atrule">video</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">showTitle</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> 精彩视频
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token comment"># url和iframeUrl其中一个必填</span>
+  <span class="token key atrule">iframeUrl</span><span class="token punctuation">:</span>  //player.bilibili.com/player.html<span class="token punctuation">?</span>aid=669520137<span class="token important">&amp;bvid=BV1oa4y1L7mw&amp;cid=234543483&amp;page=1</span>
+        <span class="token comment">#在bilibili或者爱奇艺分享时选择iframe，然后填那个url来这里，sample: //player.bilibili.com/player.html?aid=669520137&amp;bvid=BV1oa4y1L7mw&amp;cid=234543483&amp;page=1</span>
+  <span class="token key atrule">pic</span><span class="token punctuation">:</span>
+  <span class="token key atrule">thumbnails</span><span class="token punctuation">:</span>
+  <span class="token key atrule">height</span><span class="token punctuation">:</span> <span class="token number">600</span> <span class="token comment"># 如：400</span>
+  <span class="token key atrule">autoplay</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 是否自动播放</span>
+  <span class="token key atrule">theme</span><span class="token punctuation">:</span> <span class="token string">'#42b983'</span>
+  <span class="token key atrule">loop</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 是否循环播放</span>
+  <span class="token key atrule">preload</span><span class="token punctuation">:</span> <span class="token string">'auto'</span> <span class="token comment"># 预加载，可选值: 'none', 'metadata', 'auto'</span>
+  <span class="token key atrule">volume</span><span class="token punctuation">:</span> <span class="token number">0.7</span> <span class="token comment">#0.7 </span>
+
+
+
+
+
+
+<span class="token comment"># Whether to display the title of the recommended posts</span>
+<span class="token comment"># 7 是否显示推荐文章的标题			～1</span>
+<span class="token key atrule">recommend</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">showTitle</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">useConfig</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性</span>
+  <span class="token comment"># useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可</span>
+
+
+
+
+<span class="token comment"># Configure website favicon and LOGO</span>
+<span class="token comment"># 8 配置网站favicon和网站LOGO			～1</span>
+<span class="token key atrule">favicon</span><span class="token punctuation">:</span> /favicon_hua.png <span class="token comment"># themes/matery/source/favicon.png   </span>
+			<span class="token comment"># 更改了之后，hexo s，可能不会显示，但上传后，在其他电脑打开，显示是正常的。</span>
+<span class="token key atrule">logo</span><span class="token punctuation">:</span> /medias/logo_hua.png
+
+
+
+
+
+<span class="token comment"># The configuration of the second button in the home banner,</span>
+<span class="token comment"># including the display name of the button, the font awesome icon, and the hyperlink to the button.</span>
+<span class="token comment"># 9 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.	～？？？</span>
+<span class="token key atrule">indexbtn</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token comment">#false  #true</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token comment">#Github</span>
+  <span class="token key atrule">icon</span><span class="token punctuation">:</span> <span class="token comment">#fab fa-github-alt</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token comment">#https://github.com/blinkfox/hexo-theme-matery</span>
+
+
+
+
+<span class="token comment"># The configurations of the second line of home banner</span>
+<span class="token comment"># icon/button will not show up if you leave the corresponding socialLink empty</span>
+<span class="token comment"># 10～～首页 banner 中的第二行个人信息配置，留空即不启用						～</span>
+<span class="token comment"># 图标的选取网站 Font Awesome: https://fontawesome.com/v5.15/icons?d=gallery&amp;p=2&amp;q=research</span>
+<span class="token comment"># 图标的选取网站 Font Awesome: https://fontawesome.com/v6.0/icons/bilibili?s=brands   (用不了,版本是需要 Font Awesome 6.0,而我的是 5.11)</span>
+<span class="token comment"># 图标的选取网站 aliyun 图片导入教程：https://www.bilibili.com/video/BV1GK4y1p7xA/?spm_id_from=autoNext</span>
+<span class="token key atrule">socialLink</span><span class="token punctuation">:</span>
+  <span class="token key atrule">github</span><span class="token punctuation">:</span>  https<span class="token punctuation">:</span>//github.com/Liu<span class="token punctuation">-</span>Jincan 
+  <span class="token key atrule">facebook</span><span class="token punctuation">:</span> <span class="token comment"># https://www.facebook.com/xxx</span>
+  <span class="token key atrule">twitter</span><span class="token punctuation">:</span> <span class="token comment"># https://twitter.com/xxx</span>
+  <span class="token key atrule">qq</span><span class="token punctuation">:</span> <span class="token number">3079779149</span>
+  <span class="token key atrule">email</span><span class="token punctuation">:</span> 3079779149@qq.com
+  <span class="token key atrule">weibo</span><span class="token punctuation">:</span> <span class="token comment"># https://weibo.com/xxx</span>
+  <span class="token key atrule">zhihu</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//www.zhihu.com/people/JincanLiu <span class="token comment"># https://www.zhihu.com/xxx</span>
+  <span class="token key atrule">researchgate</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//www.researchgate.net/profile/Jincan<span class="token punctuation">-</span>Liu
+  <span class="token key atrule">bilibili</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//space.bilibili.com/341192538
+  <span class="token key atrule">rss</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># true、false</span>
+
+
+
+
+<span class="token comment"># Whether to activate the Post TOC, and Configure which title types are supported by TOC support.</span>
+<span class="token comment"># You can add `toc: false` to the Front-matter of a post to turn off the TOC.</span>
+<span class="token comment"># 11～～是否激活文章 TOC 功能，并配置TOC支持选中哪些标题类型，这是全局配置。			～？？？</span>
+<span class="token comment"># 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能</span>
+<span class="token key atrule">toc</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">heading</span><span class="token punctuation">:</span> h2<span class="token punctuation">,</span> h3<span class="token punctuation">,</span> h4
+  <span class="token key atrule">collapseDepth</span><span class="token punctuation">:</span> <span class="token number">0</span> <span class="token comment"># 目录默认展开层级</span>
+  <span class="token key atrule">showToggleBtn</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 是否显示切换TOC目录展开收缩的按钮</span>
+
+
+
+
+<span class="token comment"># 12～～代码块相关										～？？？</span>
+<span class="token key atrule">code</span><span class="token punctuation">:</span>
+  <span class="token key atrule">lang</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 代码块是否显示名称</span>
+  <span class="token key atrule">copy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 代码块是否可复制</span>
+  <span class="token key atrule">shrink</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 代码块是否可以收缩</span>
+  <span class="token key atrule">break</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 代码是否折行</span>
+
+
+
+
+<span class="token comment"># 13～～是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.	～1</span>
+<span class="token key atrule">reward</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> Thanks for your reward
+  <span class="token key atrule">wechat</span><span class="token punctuation">:</span> /medias/reward/wechat.png
+  <span class="token key atrule">alipay</span><span class="token punctuation">:</span> /medias/reward/alipay.png
+
+
+
+<span class="token comment"># Whether to activate the copyright information of the blog and author when copying the post content.</span>
+<span class="token comment"># minCharNumber: Approve copyright information by copying at least how many characters.</span>
+<span class="token comment"># 14～～是否激活复制文章时追加博客和作者的版权信息.						～？？？</span>
+<span class="token key atrule">copyright</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">minCharNumber</span><span class="token punctuation">:</span> <span class="token number">120</span> <span class="token comment"># 至少复制多少个字符就追加版权信息.</span>
+  <span class="token key atrule">description</span><span class="token punctuation">:</span> 本文章著作权归作者所有，任何形式的转载都请注明出处。
+
+
+
+
+<span class="token comment"># Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.</span>
+<span class="token comment"># Considering that the mathjax loading is time consuming,</span>
+<span class="token comment"># you also need to add `mathjax: true` to the Front-matter of the post that needs to be rendered.</span>
+<span class="token comment"># 15～～是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，		～？？？</span>
+<span class="token comment"># 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.</span>
+<span class="token comment"># &lt;MathJax是什么，https://mathjax-chinese-doc.readthedocs.io/en/latest/mathjax.html&gt;</span>
+<span class="token key atrule">mathjax</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">cdn</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//cdn.bootcss.com/mathjax/2.7.5/MathJax.js<span class="token punctuation">?</span>config=TeX<span class="token punctuation">-</span>AMS<span class="token punctuation">-</span>MML_HTMLorMML
+
+
+
+
+<span class="token comment"># Post word count, reading duration, site total word count.</span>
+<span class="token comment"># Before you activate, please confirm that you have installed the hexo-wordcount plugin,</span>
+<span class="token comment"># install the plugin command: `npm i --save hexo-wordcount`.</span>
+<span class="token comment"># 16～～文章字数统计、阅读时长、总字数统计等							～1</span>
+<span class="token comment"># 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`</span>
+<span class="token key atrule">postInfo</span><span class="token punctuation">:</span>
+  <span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 发布日期</span>
+  <span class="token key atrule">update</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 更新日期</span>
+  <span class="token key atrule">wordCount</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 文章字数统计</span>
+  <span class="token key atrule">totalCount</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 站点总文章字数</span>
+  <span class="token key atrule">min2read</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 文章阅读时长</span>
+  <span class="token key atrule">readCount</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment"># 文章阅读次数</span>
+
+
+
+
+<span class="token comment"># Whether to activate the 'love' effect of clicking on the page.</span>
+<span class="token comment"># 17～～是否激活点击页面的'爱心'效果，默认激活.							～1</span>
+<span class="token key atrule">clicklove</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true</span>
+
+
+
+<span class="token comment"># | 文件名             | 说明                   |</span>
+<span class="token comment"># | :----------------- | :--------------------- |</span>
+<span class="token comment"># | sakura-small.js    | 少量樱花               |</span>
+<span class="token comment"># | sakura-half.js     | 樱花相对原效果数量减半 |</span>
+<span class="token comment"># | sakura-reduce.js   | 樱花相对原效果减少1/4  |</span>
+<span class="token comment"># | sakura.js          | 樱花数量不变（原效果） |</span>
+<span class="token comment"># 默认事sakura.js，如需修改，请到下面地址修改</span>
+<span class="token comment"># libs</span>
+<span class="token comment">#   js:</span>
+<span class="token comment">#     sakura: /libs/others/sakura-reduce.js</span>
+<span class="token comment"># 18～～是否激活页面樱花效果, 只在桌面版网页启用特效						～？？？</span>
+<span class="token comment"># 下面三种特效建议选择一种就够了，</span>
+<span class="token key atrule">sakura</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+
+
+<span class="token comment"># 19～～是否激活页面鼠标星星跟随效果, 只在桌面版网页启用特效					～？？？</span>
+<span class="token key atrule">mouseStar</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+
+
+<span class="token comment"># 20～～是否激活页面飘雪效果, 只在桌面版网页启用特效						～1</span>
+<span class="token key atrule">snowdown</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+
+
+<span class="token comment"># profile in about page, including avatars, career, and personal introductions.</span>
+<span class="token comment"># 21～～在”关于”页面中配置个人信息，包括头像、职业和个人介绍.					～1</span>
+<span class="token key atrule">profile</span><span class="token punctuation">:</span>
+  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> /medias/avatar_green3.jpg <span class="token comment">#_green.jpg</span>
+  <span class="token key atrule">career</span><span class="token punctuation">:</span> Graduate Student
+  <span class="token key atrule">introduction</span><span class="token punctuation">:</span> 目前在学习海洋数值模式 WaveWatchIII、数据同化（Data Assimilation）、深度学习（Deep Learning）相关内容，对计算机相关的知识也很感兴趣，慢慢进步吧～～
+
+
+
+
+<span class="token comment"># config my projects informations in about page.</span>
+<span class="token comment"># If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.</span>
+<span class="token comment"># 22～～在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.	～1</span>
+<span class="token key atrule">myProjects</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">data</span><span class="token punctuation">:</span>
+    <span class="token key atrule">hexo-theme-matery</span><span class="token punctuation">:</span>
+      <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>file<span class="token punctuation">-</span>alt
+      <span class="token key atrule">iconBackground</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'</span>
+      <span class="token key atrule">url</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//github.com/blinkfox/hexo<span class="token punctuation">-</span>theme<span class="token punctuation">-</span>matery
+      <span class="token key atrule">desc</span><span class="token punctuation">:</span> This is a Hexo blog theme with 'Material Design' and responsive design.
+    <span class="token key atrule">Fenix</span><span class="token punctuation">:</span>
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>database
+        <span class="token key atrule">iconBackground</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'</span>
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/blinkfox/fenix
+        <span class="token key atrule">desc</span><span class="token punctuation">:</span> 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
+    <span class="token key atrule">typora-vue-theme</span><span class="token punctuation">:</span>
+        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>file<span class="token punctuation">-</span>alt
+        <span class="token key atrule">iconBackground</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'</span>
+        <span class="token key atrule">url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/blinkfox/typora<span class="token punctuation">-</span>vue<span class="token punctuation">-</span>theme
+        <span class="token key atrule">desc</span><span class="token punctuation">:</span> This is a typora theme inspired by Vue document style.
+
+
+
+
+<span class="token comment"># config my skills informations in about page.</span>
+<span class="token comment"># If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.</span>
+<span class="token comment"># 23～～在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.	～1</span>
+<span class="token key atrule">mySkills</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">data</span><span class="token punctuation">:</span>
+    <span class="token key atrule">Java</span><span class="token punctuation">:</span>
+      <span class="token key atrule">background</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'</span>
+      <span class="token key atrule">percent</span><span class="token punctuation">:</span> 85%
+    <span class="token key atrule">JavaScript</span><span class="token punctuation">:</span>
+      <span class="token key atrule">background</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'</span>
+      <span class="token key atrule">percent</span><span class="token punctuation">:</span> 80%
+    <span class="token key atrule">HTML5</span><span class="token punctuation">:</span>
+      <span class="token key atrule">background</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'</span>
+      <span class="token key atrule">percent</span><span class="token punctuation">:</span> 80%
+    <span class="token key atrule">CSS</span><span class="token punctuation">:</span>
+      <span class="token key atrule">background</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'</span>
+      <span class="token key atrule">percent</span><span class="token punctuation">:</span> 70%
+    <span class="token key atrule">SQL</span><span class="token punctuation">:</span>
+      <span class="token key atrule">background</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'</span>
+      <span class="token key atrule">percent</span><span class="token punctuation">:</span> 90%
+    <span class="token key atrule">程序设计</span><span class="token punctuation">:</span>
+      <span class="token key atrule">background</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'</span>
+      <span class="token key atrule">percent</span><span class="token punctuation">:</span> 75%
+
+
+
+
+<span class="token comment"># config gallery of my photos in about page.</span>
+<span class="token comment"># If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.</span>
+<span class="token comment"># 24～～在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.	～1</span>
+<span class="token key atrule">myGallery</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">data</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> /medias/featureimages/0.jpg
+    <span class="token punctuation">-</span> /medias/featureimages/1.jpg
+    <span class="token punctuation">-</span> /medias/featureimages/2.jpg
+
+
+
+
+<span class="token comment"># Whether to display post-calender in the `archive` page</span>
+<span class="token comment"># 25～～设置在归档页面中是否显示'文章日历'控件							～1</span>
+<span class="token key atrule">postCalendar</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+
+
+
+<span class="token comment"># xx～～特别注意～～</span>
+<span class="token comment"># 不建议使用gittalk,gitment这样权限过高的oauth app,因为它们能够 读写 授权者 所有的公共仓库 ，也就是说拿到你的授权 Token 的人，可以将你的 GitHub 公共仓库删空（这是github权限分的不够细的锅），如果恶意攻击者想获取使用者的 AccessToken，只需要在代码中加上一个 ajax 请求即可。原贴地址:https://www.v2ex.com/t/535608。建议大家看完。（我没有在用gittalk/gitment的网站上评论过，但根据v2ex网友的提示，如果网站自行修改了 gitalk.js 脚本 或者反代了 github api，就很容易拿到你的 Token ）</span>
+
+<span class="token comment"># https://github.com/utterance/utterances 是个 GitHub App，它的权限仅限于某个仓库。像 hugo hexo 这种静态页面类型的博客，clientID/clientSecret 泄露是不可避免的。我认为较好的解决方式是像 utteras 这种 GitHubApp，只有一个仓库的读写权限，将破坏降到最小。</span>
+
+<span class="token comment"># valine是使用的免费的leancloud开发版资源，即使数据丢了leancloud也不用负任何的责任。此外valine的src目录已在1.4.0后停止更新。。。薛定谔的开源。</span>
+
+<span class="token comment"># 当初多说国内最大都倒了，livere不一定靠谱。</span>
+
+<span class="token comment"># disqus被墙了。</span>
+
+<span class="token comment"># 畅言需要备案。</span>
+
+<span class="token comment"># the Gitalk config，default disabled</span>
+<span class="token comment"># 26～～Gitalk 评论模块的配置，默认为不激活							～不建议激活</span>
+<span class="token key atrule">gitalk</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">owner</span><span class="token punctuation">:</span>
+  <span class="token key atrule">repo</span><span class="token punctuation">:</span>
+  <span class="token key atrule">oauth</span><span class="token punctuation">:</span>
+    <span class="token key atrule">clientId</span><span class="token punctuation">:</span>
+    <span class="token key atrule">clientSecret</span><span class="token punctuation">:</span>
+  <span class="token key atrule">admin</span><span class="token punctuation">:</span>
+
+<span class="token comment"># the Gitment config，default disabled</span>
+<span class="token comment"># 27～～Gitment 评论模块的配置，默认为不激活							～不建议激活</span>
+<span class="token key atrule">gitment</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">owner</span><span class="token punctuation">:</span>
+  <span class="token key atrule">repo</span><span class="token punctuation">:</span>
+  <span class="token key atrule">oauth</span><span class="token punctuation">:</span>
+    <span class="token key atrule">clientId</span><span class="token punctuation">:</span>
+    <span class="token key atrule">clientSecret</span><span class="token punctuation">:</span>
+
+
+
+
+<span class="token comment"># disqus config, default disabled</span>
+<span class="token comment"># 28～～Disqus评论模块的配置，默认为不激活							～？？？</span>
+<span class="token key atrule">disqus</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">shortname</span><span class="token punctuation">:</span>
+
+
+
+<span class="token comment"># Livere comment configuration, the default is not activated</span>
+<span class="token comment"># 29～～Livere 来必力评论模块的配置，默认为不激活						～？？？</span>
+<span class="token key atrule">livere</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">uid</span><span class="token punctuation">:</span>
+
+
+
+
+<span class="token comment"># 30～～腾讯人机验证										～？？？</span>
+<span class="token comment"># 注意：目前只适配和测试了valine，其它评论系统未调试验证！</span>
+<span class="token comment"># 介绍: https://cloud.tencent.com/document/product/1110/36841</span>
+<span class="token comment"># 管理验证码: https://console.cloud.tencent.com/captcha/graphical</span>
+<span class="token key atrule">tcaptcha</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">appid</span><span class="token punctuation">:</span> xxxxxxxxxx <span class="token comment"># 你的appid</span>
+
+
+
+
+
+<span class="token comment"># The configuration of the Valine comment module is not activated by default.</span>
+<span class="token comment"># To use it, activate the configuration item and set appId and appKey.</span>
+<span class="token comment"># 31～～Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.	～？？？</span>
+<span class="token key atrule">valine</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">appId</span><span class="token punctuation">:</span>
+  <span class="token key atrule">appKey</span><span class="token punctuation">:</span>
+  <span class="token key atrule">notify</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">verify</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">visitor</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">avatar</span><span class="token punctuation">:</span> <span class="token string">'mm'</span> <span class="token comment"># Gravatar style : mm/identicon/monsterid/wavatar/retro/hide</span>
+  <span class="token key atrule">pageSize</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token key atrule">placeholder</span><span class="token punctuation">:</span> <span class="token string">'just go go'</span> <span class="token comment"># Comment Box placeholder</span>
+  <span class="token key atrule">background</span><span class="token punctuation">:</span> /medias/comment_bg.png
+  <span class="token key atrule">coolpushkey</span><span class="token punctuation">:</span> 
+
+
+
+
+<span class="token comment"># The configuration of the MiniValine comment module is not activated by default.</span>
+<span class="token comment"># To use it, activate the configuration item.</span>
+<span class="token comment"># 32～～MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项				～？？？</span>
+<span class="token comment"># See: https://github.com/MiniValine/MiniValine</span>
+<span class="token key atrule">minivaline</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）  </span>
+  <span class="token comment"># emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline</span>
+  <span class="token comment"># 下面是一个例子：</span>
+  <span class="token key atrule">serverURL</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//minivaline.your<span class="token punctuation">-</span>domain.top
+
+
+
+<span class="token comment"># 33～～												～？？？</span>
+<span class="token key atrule">changyan</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">appId</span><span class="token punctuation">:</span>
+  <span class="token key atrule">conf</span><span class="token punctuation">:</span>
+  
+  
+  
+<span class="token comment"># Whether to display fork me on github icon and link, default true, You can change it to your repo address</span>
+<span class="token comment"># 34～～配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.	～1</span>
+<span class="token key atrule">githubLink</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/blinkfox/hexo<span class="token punctuation">-</span>theme<span class="token punctuation">-</span>matery
+  <span class="token key atrule">title</span><span class="token punctuation">:</span> Fork Me
+
+
+
+<span class="token comment"># The configuration of the Twikoo comment module is not activated by default.</span>
+<span class="token comment"># To use it, activate the configuration item and set envId.</span>
+<span class="token comment"># 35～～Twikoo 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置环境 ID envId.		～？？？</span>
+<span class="token comment"># See: https://twikoo.js.org</span>
+<span class="token key atrule">twikoo</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">envId</span><span class="token punctuation">:</span> twikoo<span class="token punctuation">-</span>1gs9l0fb17e7897a <span class="token comment"># 环境 ID，搭建教程：https://twikoo.js.org/quick-start.html</span>
+  <span class="token comment"># region: ap-guangzhou # 环境地域，默认为 ap-shanghai</span>
+  <span class="token comment"># path: 'window.location.pathname' # 自定义文章路径</span>
+
+
+
+
+<span class="token comment"># The password verification feature of read post. To use this feature,</span>
+<span class="token comment"># activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.</span>
+<span class="token comment"># Note: In order to ensure that the original password will not be leaked to the web page,</span>
+<span class="token comment"># the password of the article must be encrypted by 'SHA256' so that it will not be cracked.</span>
+<span class="token comment"># 36～～阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.	～？？？</span>
+<span class="token comment"># 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.</span>
+<span class="token key atrule">verifyPassword</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">promptMessage</span><span class="token punctuation">:</span> 请输入访问本文章的密码
+  <span class="token key atrule">errorMessage</span><span class="token punctuation">:</span> 密码错误，将返回主页！
+
+
+
+
+<span class="token comment"># busuanzi(http://busuanzi.ibruce.info/) website statistics</span>
+<span class="token comment"># 37～～不蒜子(http://busuanzi.ibruce.info/) 网站统计							～1</span>
+<span class="token key atrule">busuanziStatistics</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">totalTraffic</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 总访问量</span>
+  <span class="token key atrule">totalNumberOfvisitors</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 总人次</span>
+
+
+
+<span class="token comment"># Add google analytics configuration</span>
+<span class="token comment"># 38～～添加 Google Analytics 配置									～？？？</span>
+<span class="token key atrule">googleAnalytics</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">id</span><span class="token punctuation">:</span>
+
+
+
+
+<span class="token comment"># Add baidu analytics configuration</span>
+<span class="token comment"># 39～～添加 baidu Analytics 配置									～？？？</span>
+<span class="token key atrule">baiduAnalytics</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">id</span><span class="token punctuation">:</span>
+
+
+
+<span class="token comment"># 40～～百度搜索资源平台提交链接									～？？？</span>
+<span class="token key atrule">baiduPush</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+
+
+
+
+<span class="token comment"># The used front-end library can be replaced with the corresponding CDN address as needed,</span>
+<span class="token comment"># If the specific version is not specified below, you can use the latest version.</span>
+<span class="token comment"># 41～～使用到的前端库，可按需替换成对应的CDN地址，如果下面未指定具体的版本号，使用最新的版本即可.	～？？？</span>
+<span class="token comment"># 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx</span>
+<span class="token key atrule">libs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">css</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matery</span><span class="token punctuation">:</span> /css/matery.css
+    <span class="token key atrule">mycss</span><span class="token punctuation">:</span> /css/my.css
+    <span class="token key atrule">gallery</span><span class="token punctuation">:</span> /css/gallery.css
+    <span class="token key atrule">fontAwesome</span><span class="token punctuation">:</span> /libs/awesome/css/all.min.css <span class="token comment"># V5.15.4 20211109</span>
+    <span class="token key atrule">materialize</span><span class="token punctuation">:</span> /libs/materialize/materialize.min.css <span class="token comment"># 1.0.0 20211109</span>
+    <span class="token key atrule">aos</span><span class="token punctuation">:</span> /libs/aos/aos.css
+    <span class="token key atrule">animate</span><span class="token punctuation">:</span> /libs/animate/animate.min.css <span class="token comment"># V3.5.1</span>
+    <span class="token key atrule">lightgallery</span><span class="token punctuation">:</span> /libs/lightGallery/css/lightgallery.min.css <span class="token comment"># V1.10.0</span>
+    <span class="token key atrule">aplayer</span><span class="token punctuation">:</span> /libs/aplayer/APlayer.min.css
+    <span class="token key atrule">dplayer</span><span class="token punctuation">:</span> /libs/dplayer/DPlayer.min.css
+    <span class="token key atrule">gitalk</span><span class="token punctuation">:</span> /libs/gitalk/gitalk.css
+    <span class="token key atrule">jqcloud</span><span class="token punctuation">:</span> /libs/jqcloud/jqcloud.css
+    <span class="token key atrule">tocbot</span><span class="token punctuation">:</span> /libs/tocbot/tocbot.css
+    <span class="token key atrule">prism</span><span class="token punctuation">:</span> /libs/prism/prism.css
+    <span class="token key atrule">mermaid</span><span class="token punctuation">:</span> /libs/mermaid/mermaid.min.css
+    <span class="token key atrule">fancybox</span><span class="token punctuation">:</span> /libs/fancybox/jquery.fancybox.css
+    <span class="token key atrule">justifiedGallery</span><span class="token punctuation">:</span> /libs/justifiedGallery/justifiedGallery.min.css
+  <span class="token key atrule">js</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matery</span><span class="token punctuation">:</span> /js/matery.js
+    <span class="token key atrule">jquery</span><span class="token punctuation">:</span> /libs/jquery/jquery<span class="token punctuation">-</span>3.6.0.min.js  <span class="token comment">#3.6.0 20211109</span>
+    <span class="token key atrule">materialize</span><span class="token punctuation">:</span> /libs/materialize/materialize.min.js <span class="token comment"># 1.0.0</span>
+    <span class="token key atrule">masonry</span><span class="token punctuation">:</span> /libs/masonry/masonry.pkgd.min.js <span class="token comment"># v4.0.0</span>
+    <span class="token key atrule">aos</span><span class="token punctuation">:</span> /libs/aos/aos.js
+    <span class="token key atrule">scrollProgress</span><span class="token punctuation">:</span> /libs/scrollprogress/scrollProgress.min.js
+    <span class="token key atrule">lightgallery</span><span class="token punctuation">:</span> /libs/lightGallery/js/lightgallery<span class="token punctuation">-</span>all.min.js <span class="token comment"># V1.10.0</span>
+    <span class="token key atrule">clicklove</span><span class="token punctuation">:</span> /libs/others/clicklove.js
+    <span class="token key atrule">sakura</span><span class="token punctuation">:</span> /libs/others/sakura.js
+    <span class="token key atrule">star</span><span class="token punctuation">:</span> /libs/others/star.js
+    <span class="token key atrule">snow</span><span class="token punctuation">:</span> /libs/others/snow.js
+    <span class="token key atrule">tcaptcha</span><span class="token punctuation">:</span> /libs/others/TencentCaptcha.js
+    <span class="token key atrule">busuanzi</span><span class="token punctuation">:</span> /libs/others/busuanzi.pure.mini.js
+    <span class="token key atrule">aplayer</span><span class="token punctuation">:</span> /libs/aplayer/APlayer.min.js
+    <span class="token key atrule">meting</span><span class="token punctuation">:</span> /libs/aplayer/Meting.min.js
+    <span class="token key atrule">dplayer</span><span class="token punctuation">:</span> /libs/dplayer/DPlayer.min.js
+    <span class="token key atrule">crypto</span><span class="token punctuation">:</span> /libs/cryptojs/crypto<span class="token punctuation">-</span>js.min.js
+    <span class="token key atrule">echarts</span><span class="token punctuation">:</span> /libs/echarts/echarts.min.js
+    <span class="token key atrule">gitalk</span><span class="token punctuation">:</span> /libs/gitalk/gitalk.min.js
+    <span class="token key atrule">valine</span><span class="token punctuation">:</span> /libs/valine/Valine.min.js <span class="token comment"># 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js</span>
+    <span class="token key atrule">minivaline</span><span class="token punctuation">:</span> /libs/minivaline/MiniValine.js <span class="token comment"># latest</span>
+    <span class="token key atrule">twikoo</span><span class="token punctuation">:</span> /libs/twikoo/twikoo.all.min.js <span class="token comment"># 若想保持最新版，请替换为 https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js  默认为 /libs/twikoo/twikoo.all.min.js</span>
+    <span class="token key atrule">jqcloud</span><span class="token punctuation">:</span> /libs/jqcloud/jqcloud<span class="token punctuation">-</span>1.0.4.min.js
+    <span class="token key atrule">tocbot</span><span class="token punctuation">:</span> /libs/tocbot/tocbot.min.js
+    <span class="token key atrule">canvas_nest</span><span class="token punctuation">:</span> /libs/background/canvas<span class="token punctuation">-</span>nest.js
+    <span class="token key atrule">ribbon</span><span class="token punctuation">:</span> /libs/background/ribbon.min.js
+    <span class="token key atrule">ribbonRefresh</span><span class="token punctuation">:</span> /libs/background/ribbon<span class="token punctuation">-</span>refresh.min.js
+    <span class="token key atrule">ribbon_dynamic</span><span class="token punctuation">:</span> /libs/background/ribbon<span class="token punctuation">-</span>dynamic.js
+    <span class="token key atrule">instantpage</span><span class="token punctuation">:</span> /libs/instantpage/instantpage.js
+    <span class="token key atrule">mermaid</span><span class="token punctuation">:</span> /libs/mermaid/mermaid.min.js
+    <span class="token key atrule">fancybox</span><span class="token punctuation">:</span> /libs/fancybox/fancybox.js
+    <span class="token key atrule">justifiedGallery</span><span class="token punctuation">:</span> /libs/justifiedGallery/justifiedGallery.min.js
+    <span class="token key atrule">codeblock</span><span class="token punctuation">:</span> /libs/codeBlock/codeBlockFuction.js
+    <span class="token key atrule">codelang</span><span class="token punctuation">:</span> /libs/codeBlock/codeLang.js
+    <span class="token key atrule">codecopy</span><span class="token punctuation">:</span> /libs/codeBlock/codeCopy.js
+    <span class="token key atrule">codeshrink</span><span class="token punctuation">:</span> /libs/codeBlock/codeShrink.js
+
+
+
+
+
+<span class="token comment"># The post featured images that needs to be displayed when there is no image.</span>
+<span class="token comment"># 42～～无文章特色图片时需要显示的文章特色图片.								～？？？</span>
+<span class="token key atrule">featureImages</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> /medias/featureimages/0.jpg
+<span class="token punctuation">-</span> /medias/featureimages/1.jpg
+<span class="token punctuation">-</span> /medias/featureimages/2.jpg
+<span class="token punctuation">-</span> /medias/featureimages/3.jpg
+<span class="token punctuation">-</span> /medias/featureimages/4.jpg
+<span class="token punctuation">-</span> /medias/featureimages/5.jpg
+<span class="token punctuation">-</span> /medias/featureimages/6.jpg
+<span class="token punctuation">-</span> /medias/featureimages/7.jpg
+<span class="token punctuation">-</span> /medias/featureimages/8.jpg
+<span class="token punctuation">-</span> /medias/featureimages/9.jpg
+<span class="token punctuation">-</span> /medias/featureimages/10.jpg
+<span class="token punctuation">-</span> /medias/featureimages/11.jpg
+<span class="token punctuation">-</span> /medias/featureimages/12.jpg
+<span class="token punctuation">-</span> /medias/featureimages/13.jpg
+<span class="token punctuation">-</span> /medias/featureimages/14.jpg
+<span class="token punctuation">-</span> /medias/featureimages/15.jpg
+<span class="token punctuation">-</span> /medias/featureimages/16.jpg
+<span class="token punctuation">-</span> /medias/featureimages/17.jpg
+<span class="token punctuation">-</span> /medias/featureimages/18.jpg
+<span class="token punctuation">-</span> /medias/featureimages/19.jpg
+<span class="token punctuation">-</span> /medias/featureimages/20.jpg
+<span class="token punctuation">-</span> /medias/featureimages/21.jpg
+<span class="token punctuation">-</span> /medias/featureimages/22.jpg
+<span class="token punctuation">-</span> /medias/featureimages/23.jpg
+
+<span class="token comment"># default configs that the default policy for every articles/posts</span>
+<span class="token comment"># 43～～default 配置文章的默认转载规则									～1</span>
+
+<span class="token comment"># you can define reprint policy for a single article in the front-matter of the specific md file using this key: reprintPolicy</span>
+<span class="token comment"># 您可以使用在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则</span>
+
+<span class="token comment"># 可用的转载规则有（available reprint policies are）：</span>
+<span class="token comment"># 这些转载规则的意义请参考(you can refer to this link FMI)：https://creativecommons.org/choose/?lang=zh</span>
+<span class="token comment"># cc_by（知识共享署名 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）</span>
+<span class="token comment"># cc_by_nd（知识共享署名-禁止演绎 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）</span>
+<span class="token comment"># cc_by_sa（知识共享署名-相同方式共享 4.0 国际许可协议 Creative Commons Attribution-ShareAlike 4.0 International License）</span>
+<span class="token comment"># cc_by_nc（知识共享署名-非商业性使用 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）</span>
+<span class="token comment"># cc_by_nc_nd（知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License）</span>
+<span class="token comment"># cc_by_nc_sa（知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License）</span>
+<span class="token comment"># cc0（CC0 1.0 通用 (CC0 1.0) 公共领域贡献 CC0 1.0 Universal (CC0 1.0) Public Domain Dedication） https://creativecommons.org/publicdomain/zero/1.0/deed.zh</span>
+<span class="token comment"># noreprint（不允许转载 not allowed to reprint）</span>
+<span class="token comment"># pay（付费转载 pay for reprinting）								～？？？</span>
+<span class="token key atrule">reprint</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># whether enable reprint section 是否启用“转载规则限定模块”</span>
+  <span class="token key atrule">default</span><span class="token punctuation">:</span> cc_by <span class="token comment">#pay</span>
+
+
+
+
+<span class="token comment"># 44～～DaoVoice online contact								～？？？</span>
+<span class="token key atrule">daovoice</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">app_id</span><span class="token punctuation">:</span>
+
+
+
+<span class="token comment"># 45～～Tidio online contact									～？？？</span>
+<span class="token key atrule">tidio</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">public_key</span><span class="token punctuation">:</span>
+
+
+
+<span class="token comment"># 46～～腾讯兔小巢，见https://txc.qq.com/							～？？？</span>
+<span class="token key atrule">tuxiaochao</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">productId</span><span class="token punctuation">:</span>
+  
+  
+  
+  
+<span class="token comment"># 47～～背景canvas-nest，	线条和节点，玩起来还是蛮有意思的～～				～1 </span>
+<span class="token key atrule">canvas_nest</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true #false</span>
+  <span class="token key atrule">color</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">255</span> <span class="token comment"># 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割</span>
+  <span class="token key atrule">pointColor</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">255</span> <span class="token comment"># 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割</span>
+  <span class="token key atrule">opacity</span><span class="token punctuation">:</span> <span class="token number">0.7</span> <span class="token comment"># 线条透明度（0~1）, 默认: 0.5</span>
+  <span class="token key atrule">zIndex</span><span class="token punctuation">:</span> <span class="token number">-1</span> <span class="token comment"># 背景的 z-index 属性，css 属性用于控制所在层的位置, 默认: -1.</span>
+  <span class="token key atrule">count</span><span class="token punctuation">:</span> <span class="token number">99</span> <span class="token comment"># 线条的总数量, 默认: 99</span>
+
+
+
+
+<span class="token comment"># 48～～背景静止彩带.										～1</span>
+<span class="token key atrule">ribbon</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true #false</span>
+  <span class="token key atrule">size</span><span class="token punctuation">:</span> <span class="token number">150</span> <span class="token comment"># 彩带大小, 默认: 90.</span>
+  <span class="token key atrule">alpha</span><span class="token punctuation">:</span> <span class="token number">0.6</span> <span class="token comment"># 彩带透明度 (0 ~ 1), 默认: 0.6.</span>
+  <span class="token key atrule">zIndex</span><span class="token punctuation">:</span> <span class="token number">-1</span> <span class="token comment"># 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.</span>
+  <span class="token key atrule">clickChange</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>  <span class="token comment"># 设置是否每次点击都更换彩带.</span>
+
+
+
+
+<span class="token comment"># 49～～背景动态彩带										～1</span>
+<span class="token comment"># 	别说还挺好看的</span>
+<span class="token key atrule">ribbon_dynamic</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true #false</span>
+
+
+
+
+<span class="token comment"># 50～～sharejs文章分享模块.									～？？？</span>
+<span class="token comment"># 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.</span>
+<span class="token key atrule">sharejs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">sites</span><span class="token punctuation">:</span> twitter<span class="token punctuation">,</span>facebook<span class="token punctuation">,</span>google<span class="token punctuation">,</span>qq<span class="token punctuation">,</span>qzone<span class="token punctuation">,</span>wechat<span class="token punctuation">,</span>weibo<span class="token punctuation">,</span>douban<span class="token punctuation">,</span>linkedin
+
+
+
+<span class="token comment"># 51～～addthis文章分享模块.									～？？？</span>
+<span class="token key atrule">addthis</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">pubid</span><span class="token punctuation">:</span>  <span class="token comment"># 前往https://www.addthis.com/获取</span>
+
+
+
+
+<span class="token comment"># 52～～打字效果副标题.										～1</span>
+<span class="token comment"># 如果有符号 ‘ ，请在 ’ 前面加上 \</span>
+<span class="token key atrule">subtitle</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true										～如何删除副标题？？？</span>
+  <span class="token key atrule">loop</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true # 是否循环</span>
+  <span class="token key atrule">showCursor</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true # 是否显示光标</span>
+  <span class="token key atrule">startDelay</span><span class="token punctuation">:</span> <span class="token number">300</span> <span class="token comment"># 开始延迟</span>
+  <span class="token key atrule">typeSpeed</span><span class="token punctuation">:</span> <span class="token number">100</span> <span class="token comment"># 打字速度</span>
+  <span class="token key atrule">backSpeed</span><span class="token punctuation">:</span> <span class="token number">50</span> <span class="token comment"># 删除速度</span>
+  <span class="token key atrule">sub</span><span class="token punctuation">:</span>
+     <span class="token punctuation">-</span> Never really desperate<span class="token punctuation">,</span> only the lost of the soul
+    <span class="token comment">#- 从来没有真正的绝境, 只有心灵的迷途</span>
+    
+
+
+
+
+<span class="token comment"># 53～～手机二级菜单.										～？？？</span>
+<span class="token key atrule">navMenu</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mleft</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true #false # 二级侧栏子菜单是否对齐左边</span>
+  <span class="token key atrule">bgColor</span><span class="token punctuation">:</span> <span class="token string">" "</span> <span class="token comment"># 二级侧栏子菜单背景颜色,留空即为全局背景色</span>
+
+
+
+<span class="token comment"># 54～～网页预加载.										～？？？</span>
+<span class="token key atrule">instantpage</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+
+
+<span class="token comment"># 55～～banner 是否每日切换.									～？？？</span>
+<span class="token comment">#	banner 是背景～～？</span>
+<span class="token comment"># 若为 false, 则 banner 默认为 /medias/banner/0.jpg</span>
+<span class="token key atrule">banner</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+
+
+<span class="token comment"># 56～～ICP备案信息尾部显示									～？？？</span>
+<span class="token key atrule">icp</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token comment"># 备案链接</span>
+  <span class="token key atrule">text</span><span class="token punctuation">:</span> <span class="token comment"># 备案信息</span>
+
+
+
+
+<span class="token comment"># 57～～CDN访问加速										～？？？</span>
+<span class="token comment"># 第一次使用本功能，一定要先配置url，再`hexo cl &amp;&amp; hexo g &amp;&amp; hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！</span>
+<span class="token comment"># 如果必须要使用国内的coding或者gitee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）</span>
+<span class="token comment"># URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名</span>
+<span class="token comment"># 如果想关闭此功能，将 url地址 注释或删除即可！</span>
+<span class="token comment">#</span>
+<span class="token comment"># 注：配置了此项，就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），本地调试的时候记得将 此项配置 注释或者删除掉</span>
+<span class="token comment"># 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html</span>
+<span class="token comment"># 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在上面设置js及css路径中可以直接写.min.xxx</span>
+<span class="token key atrule">jsDelivr</span><span class="token punctuation">:</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token comment"># https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io</span>
+  
+  
+  
+<span class="token comment"># 58～～网站背景图										～1</span>
+<span class="token key atrule">background</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span> <span class="token comment">#true #false</span>
+  <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">"https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"</span>
+
+
+<span class="token comment"># 59～～说说 https://artitalk.js.org/								～？？？</span>
+<span class="token key atrule">artitalk</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">appId</span><span class="token punctuation">:</span> <span class="token comment"># xxxxx</span>
+  <span class="token key atrule">appKey</span><span class="token punctuation">:</span> <span class="token comment"># xxxxxx</span>
+
+
+
+
+<span class="token comment"># 60～～哔哔功能配置										～？？？</span>
+<span class="token comment"># 登陆leancloud创建应用。进入应用后，点击创建 Class，将「 Class 名称」命名为 content</span>
+<span class="token comment"># 点击刚刚创建的content Class，点击添加列并创建名称为content的列，类型为String，注意列注释也要填写（随意填）</span>
+<span class="token comment"># 记录appid，masterkey，api域名</span>
+<span class="token comment"># 输入:hexo new page bb</span>
+<span class="token comment"># hexo就在source文件夹下创建了bb/index.md。</span>
+<span class="token comment"># 修改index.md的frontmater下的layout为bb：</span>
+<span class="token comment"># ---</span>
+<span class="token comment"># title: 黑石说</span>
+<span class="token comment"># layout: bb</span>
+<span class="token comment"># ---</span>
+<span class="token comment"># 里面的文字可以自己随意加，会显示在哔哔的上方。</span>
+<span class="token comment"># 关注公众号 "黑石哔哔"，发送: //bindCurrentUser:你的APPID,你的MASTERKEY,你的RESTAPI</span>
+<span class="token comment"># 可用leancloud国际版，国际版api为 https://appid前八位.api.lncldglobal.com</span>
+<span class="token key atrule">bbtime</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">appId</span><span class="token punctuation">:</span> <span class="token comment"># 你的appId</span>
+  <span class="token key atrule">appKey</span><span class="token punctuation">:</span> <span class="token comment"># 你的appKey</span>
+  <span class="token key atrule">serverURLs</span><span class="token punctuation">:</span> <span class="token comment"># https://你的api</span>
+
+
+
+
+<span class="token comment"># 61～～图表绘制插件										～？？？</span>
+<span class="token comment"># 建议更换更换hexo-renderer-markdown-it引擎。参考下面链接</span>
+<span class="token comment"># https://github.com/hexojs/hexo-renderer-markdown-it</span>
+<span class="token comment"># https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Advanced-Configuration</span>
+<span class="token comment"># 安装配置方法</span>
+<span class="token comment"># yarn remove hexo-renderer-marked</span>
+<span class="token comment"># yarn add hexo-renderer-markdown-it hexo-tag-mermaid</span>
+<span class="token comment"># 注意：hexo-renderer-markdown-it 比默认引擎更快，可选择插件较多，请认真看上面两个链接教程。</span>
+<span class="token comment"># mermaid语法教程 https://mermaid-js.github.io/mermaid/#/</span>
+<span class="token comment"># 使用方法：</span>
+<span class="token comment"># 在post文章中填写mermaid语句，需要使用{% mermaid %} 包裹</span>
+<span class="token comment"># {% mermaid %}</span>
+<span class="token comment"># [mermaid 语句正文]</span>
+<span class="token comment"># {% endmermaid %}</span>
+<span class="token comment"># 样例如下所示：</span>
+<span class="token comment"># {% mermaid %}</span>
+<span class="token comment"># graph TD</span>
+<span class="token comment">#     A[Christmas] --&gt;|Get money| B(Go shopping)</span>
+<span class="token comment">#     B --&gt; C{Let me think}</span>
+<span class="token comment">#     C --&gt;|One| D[Laptop]</span>
+<span class="token comment">#     C --&gt;|Two| E[iPhone]</span>
+<span class="token comment">#     C --&gt;|Three| F[Car]</span>
+<span class="token comment"># {% endmermaid %}</span>
+<span class="token comment"># mermaid chart。 依赖hexo-tag-mermaid</span>
+<span class="token key atrule">mermaid</span><span class="token punctuation">:</span> <span class="token comment">## mermaid url https://github.com/knsv/mermaid</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>  <span class="token comment"># default false</span>
+  <span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">"latest"</span> <span class="token comment"># default v7.1.2</span>
+  <span class="token key atrule">options</span><span class="token punctuation">:</span>  <span class="token comment"># find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js</span>
+    <span class="token comment">#startOnload: true  // default true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="对主题的layout-ejs进行一个大致的了解"><a href="#对主题的layout-ejs进行一个大致的了解" class="headerlink" title="对主题的layout.ejs进行一个大致的了解"></a>对主题的layout.ejs进行一个大致的了解</h2><p>layout.ejs在matery/layout/layout.ejs</p>
+<p>它包含了大致的布局</p>
+<pre class="line-numbers language-ejs" data-language="ejs"><code class="language-ejs"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">HTML</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- 01 语言选择 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%=</span><span class="token language-javascript"> config<span class="token punctuation">.</span>language </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 02 head是哪里？ok~~，首页，分类～～ --&gt;</span>
+<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/head'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+<span class="token comment">&lt;!-- 03 background是什么？网站背景图 --&gt;</span>
+<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>background<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+   <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/background'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!--04 header是什么？logo，navigation，githublink --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/header'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> body </span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 05 footer是什么？页脚 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/footer'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 06 search是什么？搜索遮照栏 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/search'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 07 back-top是什么？回到顶部按钮 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/back-top'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 08 ??? --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>materialize<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>masonry<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>aos<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>scrollProgress<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>lightgallery<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>matery<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 09 图标绘制工具 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>mermaid<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+        <span class="token comment">&lt;!-- &lt;script src='https://unpkg.com/mermaid@<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%=</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>mermaid<span class="token punctuation">.</span>version </span><span class="token delimiter punctuation">%&gt;</span></span>/dist/mermaid.min.js'&gt;&lt;/script&gt; --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>mermaid<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>mermaid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            mermaid<span class="token punctuation">.</span><span class="token function">initialize</span><span class="token punctuation">(</span><span class="token punctuation">{</span>theme<span class="token operator">:</span> <span class="token string">'forest'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 10 ???--&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>sakura<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+        
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+            <span class="token comment">// 只在桌面版网页启用特效</span>
+            <span class="token keyword">var</span> windowWidth <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>windowWidth <span class="token operator">&gt;</span> <span class="token number">768</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'&lt;script type="text/javascript" src="<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>sakura<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>"&gt;&lt;\/script&gt;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 11 雪花特效 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>snowdown<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+            <span class="token comment">// 只在桌面版网页启用特效</span>
+            <span class="token keyword">var</span> windowWidth <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>windowWidth <span class="token operator">&gt;</span> <span class="token number">768</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'&lt;script type="text/javascript" src="<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>snow<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>"&gt;&lt;\/script&gt;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 12 鼠标星星特效 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>mouseStar<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+            <span class="token comment">// 只在桌面版网页启用特效</span>
+            <span class="token keyword">var</span> windowWidth <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>windowWidth <span class="token operator">&gt;</span> <span class="token number">768</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'&lt;script type="text/javascript" src="<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>star<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>"&gt;&lt;\/script&gt;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+
+    <span class="token comment">&lt;!-- 13 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>tcaptcha<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://ssl.captcha.qq.com/TCaptcha.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>tcaptcha<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>TencentCaptcha<span class="token punctuation">"</span></span> <span class="token attr-name">data-appid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>tcaptcha<span class="token punctuation">.</span>appid </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">data-cbfn</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>callback<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">hidden</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 14 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/baidu-analytics'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 15 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_partial/baidu-push'</span><span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 16 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>clicklove<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>clicklove<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">async</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>async<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 17 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">async</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>busuanzi<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+
+    <span class="token comment">&lt;!-- 18 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>tidio<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>//code.tidio.co/<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>tidio<span class="token punctuation">.</span>public_key </span><span class="token delimiter punctuation">%&gt;</span></span>.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+            <span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">setInterval</span><span class="token punctuation">(</span>change_Tidio<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">function</span> <span class="token function">change_Tidio</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">var</span> tidio<span class="token operator">=</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#tidio-chat iframe"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"display"</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string">"block"</span><span class="token operator">&amp;&amp;</span> <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">977</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>bottom<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div#backTop.top-scroll"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"display"</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string">"none"</span> <span class="token operator">&amp;&amp;</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">977</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token operator">?</span> <span class="token string">"-40px"</span> <span class="token operator">:</span> <span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div.toc-title"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token operator">&amp;&amp;</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">977</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token operator">?</span><span class="token string">"<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>toc<span class="token punctuation">.</span>showToggleBtn<span class="token punctuation">)</span><span class="token punctuation">{</span></span><span class="token delimiter punctuation">%&gt;</span></span>85px<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"><span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span></span><span class="token delimiter punctuation">%&gt;</span></span>20px<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"><span class="token punctuation">}</span></span><span class="token delimiter punctuation">%&gt;</span></span>"</span><span class="token operator">:</span><span class="token string">"20px"</span><span class="token punctuation">;</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>right<span class="token operator">=</span><span class="token string">"-15px"</span><span class="token punctuation">;</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>height<span class="token operator">=</span><span class="token function">parseInt</span><span class="token punctuation">(</span>tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"height"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&gt;=</span><span class="token number">520</span><span class="token operator">?</span><span class="token string">"520px"</span><span class="token operator">:</span>tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"height"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>zIndex<span class="token operator">=</span><span class="token string">"997"</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"display"</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string">"block"</span><span class="token operator">&amp;&amp;</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">601</span> <span class="token operator">&amp;&amp;</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">992</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>bottom<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div#backTop.top-scroll"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"display"</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string">"none"</span> <span class="token operator">&amp;&amp;</span> <span class="token number">601</span><span class="token operator">&lt;</span> <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">992</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token operator">?</span> <span class="token string">"-40px"</span><span class="token operator">:</span><span class="token string">"20px"</span> <span class="token punctuation">;</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>right<span class="token operator">=</span><span class="token string">"-15px"</span><span class="token punctuation">;</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>zIndex<span class="token operator">=</span><span class="token string">"997"</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"display"</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string">"block"</span><span class="token operator">&amp;&amp;</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">601</span> <span class="token operator">&amp;&amp;</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"height"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">230</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>bottom<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div#backTop.top-scroll"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"display"</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string">"none"</span> <span class="token operator">&amp;&amp;</span> <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">601</span><span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token operator">?</span> <span class="token string">"-10px"</span><span class="token operator">:</span><span class="token string">"45px"</span> <span class="token punctuation">;</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>zIndex<span class="token operator">=</span><span class="token string">"997"</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span> tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"display"</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token string">"block"</span><span class="token operator">&amp;&amp;</span><span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">601</span> <span class="token operator">&amp;&amp;</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>tidio<span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"height"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">&gt;=</span><span class="token number">230</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"tidio-chat-iframe"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>zIndex<span class="token operator">=</span><span class="token string">"998"</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 19 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>daovoice<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+        <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">i<span class="token punctuation">,</span> s<span class="token punctuation">,</span> o<span class="token punctuation">,</span> g<span class="token punctuation">,</span> r<span class="token punctuation">,</span> a<span class="token punctuation">,</span> m</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            i<span class="token punctuation">[</span><span class="token string">"DaoVoiceObject"</span><span class="token punctuation">]</span> <span class="token operator">=</span> r<span class="token punctuation">;</span>
+            i<span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token punctuation">(</span>i<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>q <span class="token operator">=</span> i<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>q <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> i<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>l <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">*</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            a <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">,</span> m <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span>o<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            a<span class="token punctuation">.</span>async <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            a<span class="token punctuation">.</span>src <span class="token operator">=</span> g<span class="token punctuation">;</span>
+            a<span class="token punctuation">.</span>charset <span class="token operator">=</span> <span class="token string">"utf-8"</span><span class="token punctuation">;</span>
+            m<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> m<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>window<span class="token punctuation">,</span> document<span class="token punctuation">,</span> <span class="token string">"script"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'https:'</span> <span class="token operator">==</span> document<span class="token punctuation">.</span>location<span class="token punctuation">.</span>protocol <span class="token operator">?</span> <span class="token string">'https:'</span> <span class="token operator">:</span> <span class="token string">'http:'</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+            <span class="token string">"//widget.daovoice.io/widget/6984b559.js"</span><span class="token punctuation">,</span> <span class="token string">"daovoice"</span><span class="token punctuation">)</span>
+        <span class="token function">daovoice</span><span class="token punctuation">(</span><span class="token string">'init'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            app_id<span class="token operator">:</span> <span class="token string">"<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>daovoice<span class="token punctuation">.</span>app_id </span><span class="token delimiter punctuation">%&gt;</span></span>"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">daovoice</span><span class="token punctuation">(</span><span class="token string">'update'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 20 腾讯兔小巢--&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>tuxiaochao<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">position</span><span class="token punctuation">:</span>fixed<span class="token punctuation">;</span><span class="token property">bottom</span><span class="token punctuation">:</span>125px<span class="token punctuation">;</span><span class="token property">right</span><span class="token punctuation">:</span>16px<span class="token punctuation">;</span><span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>兔小巢<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://support.qq.com/products/<span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>tuxiaochao<span class="token punctuation">.</span>productId </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fa fa-comments fa-3x<span class="token punctuation">"</span></span>  <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"><span class="token punctuation">}</span></span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 21 canvas_nest特效 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>canvas_nest<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>canvas_nest<span class="token punctuation">.</span>color </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span>
+        <span class="token attr-name">pointColor</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>canvas_nest<span class="token punctuation">.</span>pointColor </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">opacity</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>canvas_nest<span class="token punctuation">.</span>opacity </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">'</span></span>
+        <span class="token attr-name">zIndex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>canvas_nest<span class="token punctuation">.</span>zIndex </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">count</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>canvas_nest<span class="token punctuation">.</span>count </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span>
+        <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>canvas_nest<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+	
+    <span class="token comment">&lt;!-- 22 ribbon特效 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>ribbon<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">var</span> ribbonSrc <span class="token operator">=</span> theme<span class="token punctuation">.</span>ribbon<span class="token punctuation">.</span>clickChange <span class="token operator">?</span> theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>ribbon <span class="token operator">:</span> theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>ribbonRefresh<span class="token punctuation">;</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>ribbon<span class="token punctuation">.</span>size </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">alpha</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>ribbon<span class="token punctuation">.</span>alpha </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">'</span></span>
+        <span class="token attr-name">zIndex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>ribbon<span class="token punctuation">.</span>zIndex </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>ribbonSrc<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">async</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>async<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    
+    <span class="token comment">&lt;!-- 23 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>ribbon_dynamic<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>ribbon_dynamic<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">async</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>async<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+    <span class="token comment">&lt;!-- 24 --&gt;</span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>instantpage<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> theme<span class="token punctuation">.</span>jsDelivr<span class="token punctuation">.</span>url </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%-</span><span class="token language-javascript"> <span class="token function">url_for</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>libs<span class="token punctuation">.</span>js<span class="token punctuation">.</span>instantpage<span class="token punctuation">)</span> </span><span class="token delimiter punctuation">%&gt;</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token ejs language-ejs"><span class="token delimiter punctuation">&lt;%</span><span class="token language-javascript"> <span class="token punctuation">}</span> </span><span class="token delimiter punctuation">%&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="～～Todo：对主题的source中css中matery-css文件进行一个整体的了解"><a href="#～～Todo：对主题的source中css中matery-css文件进行一个整体的了解" class="headerlink" title="～～Todo：对主题的source中css中matery.css文件进行一个整体的了解"></a>～～Todo：对主题的source中css中matery.css文件进行一个整体的了解</h2><p>matery.css包含了基本的样式</p>
+<h2 id="～～Todo：RSS订阅-Daovoice在线聊天-Tido在线聊天"><a href="#～～Todo：RSS订阅-Daovoice在线聊天-Tido在线聊天" class="headerlink" title="～～Todo：RSS订阅+Daovoice在线聊天+Tido在线聊天"></a>～～Todo：RSS订阅+Daovoice在线聊天+Tido在线聊天</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p>############################</p>
+<p>#&lt;1,<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a>, matery的github连接中文说明&gt;<br>#&lt;2,<a target="_blank" rel="noopener" href="http://www.yinhuafeng.cn/kjzx/579.html">http://www.yinhuafeng.cn/kjzx/579.html</a>, RSS订阅是什么,让用户有效率的阅读&gt;</p>
+<h2 id="～～Todo：代码样式"><a href="#～～Todo：代码样式" class="headerlink" title="～～Todo：代码样式"></a>～～Todo：代码样式</h2><h3 id="开启matery代码样式"><a href="#开启matery代码样式" class="headerlink" title="开启matery代码样式"></a>开启matery代码样式</h3><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a> 代码高亮部分尝试</p>
 <blockquote>
 <p>从 Hexo5.0 版本开始自带了 <code>prismjs</code> 代码语法高亮的支持，本主题对此进行了改造支持。</p>
 <p>如果你的博客中曾经安装过 <code>hexo-prism-plugin</code> 的插件，那么你须要执行 <code>npm uninstall hexo-prism-plugin</code> 来卸载掉它，否则生成的代码中会有 <code>{</code> 和 <code>}</code> 的转义字符。</p>
@@ -1418,7 +2526,56 @@ x. 猜测 Font Awesome 应该也是以 css 文件形式导入的，因为在 mat
 <blockquote>
 <p>如果你想定制自己的主题，可以前往 <a target="_blank" rel="noopener" href="https://prismjs.com/download.html">prismjs 下载页面</a> 定制下载自己喜欢的主题 <code>css</code> 文件，然后将此 css 主题文件取名为 <code>prism.css</code>，替换掉 <code>hexo-theme-matery</code> 主题文件夹中的 <code>source/libs/prism/prism.css</code> 文件即可。</p>
 </blockquote>
-<h3 id="Todo：如何在matery增添代码样式，针对不同类型的代码。"><a href="#Todo：如何在matery增添代码样式，针对不同类型的代码。" class="headerlink" title="Todo：如何在matery增添代码样式，针对不同类型的代码。"></a>Todo：如何在matery增添代码样式，针对不同类型的代码。</h3>
+<h3 id="Todo：如何在matery增添代码样式，针对不同类型的代码。"><a href="#Todo：如何在matery增添代码样式，针对不同类型的代码。" class="headerlink" title="Todo：如何在matery增添代码样式，针对不同类型的代码。"></a>Todo：如何在matery增添代码样式，针对不同类型的代码。</h3><h2 id="matery作者寄语"><a href="#matery作者寄语" class="headerlink" title="matery作者寄语"></a>matery作者寄语</h2><pre class="line-numbers language-none"><code class="language-none">##	参考资料 
+############################
+#&lt;1,https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md, matery的github连接中文说明
+
+
+## 自定制修改
+############################
+在本主题的 _config.yml 中可以修改部分自定义信息，有以下几个部分：
+
+    菜单
+    我的梦想
+    首页的音乐播放器和视频播放器配置
+    是否显示推荐文章名称和按钮配置
+    favicon 和 Logo
+    个人信息
+    TOC 目录
+    文章打赏信息
+    复制文章内容时追加版权信息
+    MathJax
+    文章字数统计、阅读时长
+    点击页面的'爱心'效果
+    我的项目
+    我的技能
+    我的相册
+    Gitalk、Gitment、Valine 和 disqus 评论配置
+    不蒜子统计和谷歌分析（Google Analytics）
+    默认特色图的集合。当文章没有设置特色图时，本主题会根据文章标题的 hashcode 值取余，来选择展示对应的特色图
+
+我认为个人博客应该都有自己的风格和特色。如果本主题中的诸多功能和主题色彩你不满意，可以在主题中自定义修改，很多更自由的功能和细节点的修改难以在主题的 _config.yml 中完成，需要修改源代码才来完成。以下列出了可能对你有用的地方：
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 
             </div>
             <hr/>
@@ -1748,16 +2905,16 @@ x. 猜测 Font Awesome 应该也是以 css 文件形式导入的，因为在 mat
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">博客搭建</span>
-                    </a>
-                    
                     <a href="/tags/Typora/">
                         <span class="chip bg-color">Typora</span>
                     </a>
                     
                     <a href="/tags/Markdown/">
                         <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">博客搭建</span>
                     </a>
                     
                 </div>
@@ -1987,7 +3144,7 @@ x. 猜测 Font Awesome 应该也是以 css 文件形式导入的，因为在 mat
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">103.5k</span>
+                        class="white-color">111.2k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
