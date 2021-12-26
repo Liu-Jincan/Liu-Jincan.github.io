@@ -372,12 +372,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
-                            </a>
-                        
                             <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
                                 <span class="chip bg-color">博客搭建</span>
+                            </a>
+                        
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -415,7 +415,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    90.5k
+                    95.9k
                 </div>
                 
 
@@ -7235,7 +7235,524 @@ $ <span class="token function">git</span> config --global user.email  <span clas
 
 
 
-<h2 id="Windows：hexo-d-初次实现"><a href="#Windows：hexo-d-初次实现" class="headerlink" title="Windows：hexo d 初次实现"></a>Windows：<code>hexo d</code> 初次实现</h2><h2 id="对hexo的-config-yml整体了解"><a href="#对hexo的-config-yml整体了解" class="headerlink" title="对hexo的_config.yml整体了解"></a>对hexo的_config.yml整体了解</h2><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">
+<h2 id="Windows：hexo-d-初次实现"><a href="#Windows：hexo-d-初次实现" class="headerlink" title="Windows：hexo d 初次实现"></a>Windows：<code>hexo d</code> 初次实现</h2><h3 id="错误：OpenSSL-SSL-read-Connection-was-aborted-errno-10053"><a href="#错误：OpenSSL-SSL-read-Connection-was-aborted-errno-10053" class="headerlink" title="错误：OpenSSL SSL_read: Connection was aborted, errno 10053"></a>错误：<code>OpenSSL SSL_read: Connection was aborted, errno 10053</code></h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io
+$ hexo clean
+INFO  Validating config
+INFO  Deleted database.
+INFO  Deleted public folder.
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io
+$ hexo g <span class="token operator">&gt;</span>/dev/null
+
+<span class="token comment">## OpenSSL SSL_read: Connection was aborted, errno 10053</span>
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io
+$ hexo d
+INFO  Validating config
+INFO  Deploying: <span class="token function">git</span>
+INFO  Clearing .deploy_git folder<span class="token punctuation">..</span>.
+INFO  Copying files from public folder<span class="token punctuation">..</span>.
+INFO  Copying files from extend dirs<span class="token punctuation">..</span>.
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/20/hello-world/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/21/hexo-jincan/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/24/matery/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/24/typora-jincan/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/25/linux-ubuntu/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/25/wavewatch3/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">404</span>/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> about/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> archives/2021/12/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> archives/2021/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> archives/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/linux/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/博客搭建/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/海浪数值模型/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> contact/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/barrager.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/bb.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/gallery.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/gitment.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/matery.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/my-gitalk.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/my.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> friends/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/crypto-js.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/gallery-encrypt.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/jquery.barrager.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/matery.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/search.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/animate/animate.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aos/aos.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aos/aos.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aplayer/APlayer.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aplayer/APlayer.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aplayer/Meting.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/css/all.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/css/all.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/webfonts/fa-brands-400.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/webfonts/fa-regular-400.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/webfonts/fa-solid-900.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/background/canvas-nest.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/background/ribbon-dynamic.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeBlockFuction.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeCopy.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeLang.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeShrink.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/cryptojs/crypto-js.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/dplayer/DPlayer.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/dplayer/DPlayer.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/echarts/echarts.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/fancybox/fancybox.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitalk/gitalk.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitalk/gitalk.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitment/gitment-default.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitment/gitment.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/instantpage/instantpage.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/jqcloud/jqcloud-1.0.4.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/jqcloud/jqcloud.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/jquery/jquery-3.6.0.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/justifiedGallery/justifiedGallery.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/justifiedGallery/justifiedGallery.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/lightGallery/fonts/lg.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/lightGallery/js/lightgallery-all.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/masonry/masonry.pkgd.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/materialize/materialize.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/mermaid/mermaid.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/mermaid/mermaid.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/TencentCaptcha.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/sakura.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/snow.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/star.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/prism/prism.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/share/css/share.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/share/js/jquery.share.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/share/js/social-share.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/tocbot/tocbot.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/twikoo/twikoo.all.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/twikoo/twikoo.all.min.js.LICENSE.txt.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/valine/Valine.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/valine/av-min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> search.xml.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/Markdown/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/Typora/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/WW3/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/hexo/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/linux/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/matery/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/ubuntu/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/博客搭建/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/海浪数值模型/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+<span class="token punctuation">[</span>master 07e5213<span class="token punctuation">]</span> Site updated: <span class="token number">2021</span>-12-26 09:46:39
+ <span class="token number">29</span> files changed, <span class="token number">560</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">396</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+fatal: unable to access <span class="token string">'https://github.com/Liu-Jincan/Liu-Jincan.github.io.git/'</span><span class="token builtin class-name">:</span> OpenSSL SSL_read: Connection was aborted, errno <span class="token number">10053</span>
+FATAL <span class="token punctuation">{</span>
+  err: Error: Spawn failed
+      at ChildProcess.<span class="token operator">&lt;</span>anonymous<span class="token operator">&gt;</span> <span class="token punctuation">(</span>D:<span class="token punctuation">\</span>Liu-Jincan.github.io<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-util<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>spawn.js:51:21<span class="token punctuation">)</span>
+      at ChildProcess.emit <span class="token punctuation">(</span>node:events:378:20<span class="token punctuation">)</span>
+      at ChildProcess.cp.emit <span class="token punctuation">(</span>D:<span class="token punctuation">\</span>Liu-Jincan.github.io<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>cross-spawn<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>enoent.js:34:29<span class="token punctuation">)</span>
+      at Process.ChildProcess._handle.onexit <span class="token punctuation">(</span>node:internal/child_process:290:12<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    code: <span class="token number">128</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> Something's wrong. Maybe you can <span class="token function">find</span> the solution here: %s https://hexo.io/docs/troubleshooting.html
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="方法一-（失败）"><a href="#方法一-（失败）" class="headerlink" title="方法一 （失败）"></a>方法一 （失败）</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/bigcat030/article/details/115742972">https://blog.csdn.net/bigcat030/article/details/115742972</a>  （失败）</p>
+<h4 id="方法二-（失败）"><a href="#方法二-（失败）" class="headerlink" title="方法二 （失败）"></a>方法二 （失败）</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/ZJ_____W/article/details/114778696">https://blog.csdn.net/ZJ_____W/article/details/114778696</a>      （失败）</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io
+$ <span class="token function">git</span> config http.sslVerify <span class="token string">"false"</span>
+fatal: not <span class="token keyword">in</span> a <span class="token function">git</span> directory<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/emanlee/p/12993683.html">https://www.cnblogs.com/emanlee/p/12993683.html</a>  解决：<code>fatal: not in a git directory</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io
+$ <span class="token function">git</span> init
+Initialized empty Git repository <span class="token keyword">in</span> D:/Liu-Jincan.github.io/.git/
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ <span class="token function">git</span> config http.sslVerify <span class="token string">"false"</span>
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d
+$ <span class="token builtin class-name">cd</span> ./Liu-Jincan.github.io/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ <span class="token function">git</span> config --global http.postBuffer <span class="token number">524288000</span>
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ <span class="token function">git</span> config http.sslVerify <span class="token string">"false"</span>
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ hexo clean
+INFO  Validating config
+INFO  Deleted database.
+INFO  Deleted public folder.
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ hexo g <span class="token operator">&gt;</span>/dev/null
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ hexo d
+INFO  Validating config
+INFO  Deploying: <span class="token function">git</span>
+INFO  Clearing .deploy_git folder<span class="token punctuation">..</span>.
+INFO  Copying files from public folder<span class="token punctuation">..</span>.
+INFO  Copying files from extend dirs<span class="token punctuation">..</span>.
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/20/hello-world/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/21/hexo-jincan/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/24/matery/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/24/typora-jincan/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/25/linux-ubuntu/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">2021</span>/12/25/wavewatch3/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> <span class="token number">404</span>/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> about/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> archives/2021/12/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> archives/2021/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> archives/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/linux/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/博客搭建/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> categories/海浪数值模型/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> contact/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/barrager.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/bb.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/gallery.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/gitment.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/matery.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/my-gitalk.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> css/my.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> friends/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/crypto-js.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/gallery-encrypt.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/jquery.barrager.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/matery.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> js/search.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/animate/animate.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aos/aos.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aos/aos.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aplayer/APlayer.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aplayer/APlayer.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/aplayer/Meting.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/css/all.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/css/all.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/webfonts/fa-brands-400.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/webfonts/fa-regular-400.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/awesome/webfonts/fa-solid-900.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/background/canvas-nest.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/background/ribbon-dynamic.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeBlockFuction.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeCopy.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeLang.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/codeBlock/codeShrink.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/cryptojs/crypto-js.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/dplayer/DPlayer.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/dplayer/DPlayer.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/echarts/echarts.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/fancybox/fancybox.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitalk/gitalk.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitalk/gitalk.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitment/gitment-default.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/gitment/gitment.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/instantpage/instantpage.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/jqcloud/jqcloud-1.0.4.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/jqcloud/jqcloud.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/jquery/jquery-3.6.0.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/justifiedGallery/justifiedGallery.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/justifiedGallery/justifiedGallery.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/lightGallery/fonts/lg.svg.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/lightGallery/js/lightgallery-all.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/masonry/masonry.pkgd.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/materialize/materialize.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/mermaid/mermaid.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/mermaid/mermaid.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/TencentCaptcha.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/sakura.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/snow.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/others/star.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/prism/prism.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/share/css/share.min.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/share/js/jquery.share.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/share/js/social-share.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/tocbot/tocbot.css.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/twikoo/twikoo.all.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/twikoo/twikoo.all.min.js.LICENSE.txt.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/valine/Valine.min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> libs/valine/av-min.js.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> search.xml.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/Markdown/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/Typora/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/WW3/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/hexo/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/linux/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/matery/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/ubuntu/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/博客搭建/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+warning: LF will be replaced by CRLF <span class="token keyword">in</span> tags/海浪数值模型/index.html.
+The <span class="token function">file</span> will have its original line endings <span class="token keyword">in</span> your working directory
+<span class="token punctuation">[</span>master 92b698b<span class="token punctuation">]</span> Site updated: <span class="token number">2021</span>-12-26 <span class="token number">10</span>:09:51
+ <span class="token number">15</span> files changed, <span class="token number">134</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">134</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+remote: Invalid username or password.
+fatal: Authentication failed <span class="token keyword">for</span> <span class="token string">'https://github.com/Liu-Jincan/Liu-Jincan.github.io.git/'</span>
+FATAL <span class="token punctuation">{</span>
+  err: Error: Spawn failed
+      at ChildProcess.<span class="token operator">&lt;</span>anonymous<span class="token operator">&gt;</span> <span class="token punctuation">(</span>D:<span class="token punctuation">\</span>Liu-Jincan.github.io<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>hexo-util<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>spawn.js:51:21<span class="token punctuation">)</span>
+      at ChildProcess.emit <span class="token punctuation">(</span>node:events:378:20<span class="token punctuation">)</span>
+      at ChildProcess.cp.emit <span class="token punctuation">(</span>D:<span class="token punctuation">\</span>Liu-Jincan.github.io<span class="token punctuation">\</span>node_modules<span class="token punctuation">\</span>cross-spawn<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>enoent.js:34:29<span class="token punctuation">)</span>
+      at Process.ChildProcess._handle.onexit <span class="token punctuation">(</span>node:internal/child_process:290:12<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    code: <span class="token number">128</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> Something's wrong. Maybe you can <span class="token function">find</span> the solution here: %s https://hexo.io/docs/troubleshooting.html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+<h4 id="方法三（成功）"><a href="#方法三（成功）" class="headerlink" title="方法三（成功）"></a>方法三（成功）</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ <span class="token function">git</span> config --global user.name <span class="token string">"Liu-Jincan"</span>
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ <span class="token function">git</span> config --global user.email  <span class="token string">"3079779149@qq.com"</span>
+
+
+<span class="token comment">## </span>
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ hexo d
+INFO  Validating config
+INFO  Deploying: <span class="token function">git</span>
+INFO  Clearing .deploy_git folder<span class="token punctuation">..</span>.
+INFO  Copying files from public folder<span class="token punctuation">..</span>.
+INFO  Copying files from extend dirs<span class="token punctuation">..</span>.
+On branch master
+nothing to commit, working tree clean
+
+INFO  Bye<span class="token operator">!</span>
+fatal: helper error <span class="token punctuation">(</span>-1073741510<span class="token punctuation">)</span>: Unknown
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$
+
+
+<span class="token comment">## 需要输入一个 token 密码</span>
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/Liu-Jincan.github.io <span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+$ hexo d
+INFO  Validating config
+INFO  Deploying: <span class="token function">git</span>
+INFO  Clearing .deploy_git folder<span class="token punctuation">..</span>.
+INFO  Copying files from public folder<span class="token punctuation">..</span>.
+INFO  Copying files from extend dirs<span class="token punctuation">..</span>.
+On branch master
+nothing to commit, working tree clean
+Enumerating objects: <span class="token number">202</span>, done.
+Counting objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">202</span>/202<span class="token punctuation">)</span>, done.
+Delta compression using up to <span class="token number">8</span> threads
+Compressing objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">89</span>/89<span class="token punctuation">)</span>, done.
+Writing objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">149</span>/149<span class="token punctuation">)</span>, <span class="token number">31.16</span> KiB <span class="token operator">|</span> <span class="token number">275.00</span> KiB/s, done.
+Total <span class="token number">149</span> <span class="token punctuation">(</span>delta <span class="token number">70</span><span class="token punctuation">)</span>, reused <span class="token number">0</span> <span class="token punctuation">(</span>delta <span class="token number">0</span><span class="token punctuation">)</span>, pack-reused <span class="token number">0</span>
+remote: Resolving deltas: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">70</span>/70<span class="token punctuation">)</span>, completed with <span class="token number">21</span> <span class="token builtin class-name">local</span> objects.
+To https://github.com/Liu-Jincan/Liu-Jincan.github.io.git
+   4ffad58<span class="token punctuation">..</span>92b698b  HEAD -<span class="token operator">&gt;</span> main
+Branch <span class="token string">'master'</span> <span class="token builtin class-name">set</span> up to track remote branch <span class="token string">'main'</span> from <span class="token string">'https://github.com/Liu-Jincan/Liu-Jincan.github.io.git'</span><span class="token builtin class-name">.</span>
+INFO  Deploy done: <span class="token function">git</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+<h2 id="对hexo的-config-yml整体了解"><a href="#对hexo的-config-yml整体了解" class="headerlink" title="对hexo的_config.yml整体了解"></a>对hexo的_config.yml整体了解</h2><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">
 
 <span class="token comment"># Hexo Configuration</span>
 <span class="token comment">## Docs: https://hexo.io/docs/configuration.html</span>
@@ -7521,12 +8038,12 @@ Icon=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/PicGo/icon-PicG
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
-                                </a>
-                            
                                 <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
                                     <span class="chip bg-color">博客搭建</span>
+                                </a>
+                            
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -7735,16 +8252,16 @@ Icon=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/PicGo/icon-PicG
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">博客搭建</span>
-                    </a>
-                    
                     <a href="/tags/Typora/">
                         <span class="chip bg-color">Typora</span>
                     </a>
                     
                     <a href="/tags/Markdown/">
                         <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">博客搭建</span>
                     </a>
                     
                 </div>
@@ -7792,12 +8309,12 @@ Icon=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/PicGo/icon-PicG
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
                     <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
                         <span class="chip bg-color">博客搭建</span>
+                    </a>
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -8027,7 +8544,7 @@ Icon=/home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/PicGo/icon-PicG
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">112k</span>
+                        class="white-color">117.4k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
