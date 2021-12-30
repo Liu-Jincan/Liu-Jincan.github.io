@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-12-28
+                    2021-12-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    3.8k
+                    7.5k
                 </div>
                 
 
@@ -405,10 +405,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="06-TUTORIAL-GRIDEN-矩形网格生成"><a href="#06-TUTORIAL-GRIDEN-矩形网格生成" class="headerlink" title="06-TUTORIAL-GRIDEN-矩形网格生成"></a><center>06-TUTORIAL-GRIDEN-矩形网格生成</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-griden.pdf</code>；</p>
+                <h1 id="06-TUTORIAL-GRIDGEN-网格生成"><a href="#06-TUTORIAL-GRIDGEN-网格生成" class="headerlink" title="06-TUTORIAL-GRIDGEN-网格生成"></a><center>06-TUTORIAL-GRIDGEN-网格生成</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-grigen.pdf</code>；</p>
 <blockquote>
 <ul>
-<li><p>也就是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-GRIDEN</code> 里面的内容；</p>
+<li><p>也就是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-GRIDGEN</code> 里面的内容；</p>
 </li>
 <li><p>需要知道的一点是，TUTORIAL 是会更新的，下面是关于 <strong>2019</strong> 版本的； </p>
 </li>
@@ -416,9 +416,9 @@
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228092333.png"></p>
 </blockquote>
 <h2 id="待解决问题"><a href="#待解决问题" class="headerlink" title="待解决问题"></a>待解决问题</h2><h2 id="内容、知识点、创新点"><a href="#内容、知识点、创新点" class="headerlink" title="内容、知识点、创新点"></a>内容、知识点、创新点</h2><h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>本练习的目的是向用户介绍名为 <strong>GRIDGEN</strong> 的<strong>网格生成软件</strong>。 它专为生成可用于 WAVEWATCH III 应用程序的网格而开发。 在这种情况下，我们将为南非创建一个网格，并使用分辨率为 0.5° 的全局网格定义其边界。<br>请注意：网格生成软件是一系列用于创建 ASCII 网格文件的 MATLAB 例程。 然后将这些文件提供给 ww3_grid 程序以生成特定的模型定义文件。 对 MATLAB 的一些有限的熟练程度将有助于跟随练习，但不是必需的。</p>
-<h2 id="GRIDEN工作目录创建"><a href="#GRIDEN工作目录创建" class="headerlink" title="GRIDEN工作目录创建"></a>GRIDEN工作目录创建</h2><p>创建一个 GRIDEN 工作目录，假如为 <code>work-griden</code> ，在目录下打开终端，输入以下命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">## 将TUTORIAL-GRIDEN文件夹放进word-griden ，用复制命令，因为TUTORIAL-GRIDEN文件夹不大。</span>
-<span class="token comment">#  TUTORIAL-GRIDEN具体的绝对路径需要更改；</span>
+<h2 id="GRIDGEN工作目录创建"><a href="#GRIDGEN工作目录创建" class="headerlink" title="GRIDGEN工作目录创建"></a>GRIDGEN工作目录创建</h2><p>创建一个 GRIDGEN 工作目录，假如为 <code>work-griden</code> ，在目录下打开终端，输入以下命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">## 将TUTORIAL-GRIDGEN文件夹放进word-griden ，用复制命令，因为TUTORIAL-GRIDGEN文件夹不大。</span>
+<span class="token comment">#  TUTORIAL-GRIDGEN具体的绝对路径需要更改；</span>
 <span class="token function">cp</span>   -r   /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/COURS/WAVES-SHORT-COURSE/TUTORIALS/TUTORIAL_GRIDGEN   <span class="token builtin class-name">.</span>
 
 <span class="token comment">## 将BATHY文件夹里的文件放进word-griden ，用软连接的形式创建，因为BATHY里的文件占用空间大。</span>
@@ -429,7 +429,7 @@
 
 <p>现在可以进 <code>./TUTORIAL_GRIDGEN</code>，开始操作。</p>
 <hr>
-<h3 id="TUTORIAL-GRIDEN-目录"><a href="#TUTORIAL-GRIDEN-目录" class="headerlink" title="TUTORIAL_GRIDEN 目录"></a>TUTORIAL_GRIDEN 目录</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228104404.png"></p>
+<h3 id="TUTORIAL-GRIDGEN-目录"><a href="#TUTORIAL-GRIDGEN-目录" class="headerlink" title="TUTORIAL_GRIDGEN 目录"></a>TUTORIAL_GRIDGEN 目录</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228104404.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228104415.png"></p>
 <h3 id="reference-coastal-bound-mat"><a href="#reference-coastal-bound-mat" class="headerlink" title="reference/coastal_bound_*.mat"></a>reference/coastal_bound_*.mat</h3><p>海岸边界是Matlab二进制文件，以数据结构形式存储：加载这些文件中的任何一个都会为用户提供数据结构的形式。 只要使用相同的格式存储，用户就可以在此包中使用自己的沿海多边形。 对于每个边界，沿海多边形以<strong>逆时针</strong>模式定义，第一个点和最后一个点相同（以有效地关闭边界）。</p>
 <h3 id="reference-水深数据"><a href="#reference-水深数据" class="headerlink" title="reference/水深数据"></a>reference/水深数据</h3><p>该软件包提供的<strong>参考测深数据</strong>（在 “reference “文件夹中）是全球<code>ETOPO1</code>和<code>ETOPO2</code>数据文件，一个全球GEBCO数据文件和一个覆盖南非的区域SRTM文件。所有这些文件都是NetCDF格式的。</p>
@@ -455,7 +455,7 @@
 </ul>
 <p>如果你选择使用这些数据集，请确保它们符合上述要求。</p>
 </blockquote>
-<h2 id="grid创建：南非区域"><a href="#grid创建：南非区域" class="headerlink" title="grid创建：南非区域"></a>grid创建：南非区域</h2><h3 id="00-进入matlab环境"><a href="#00-进入matlab环境" class="headerlink" title="00~~进入matlab环境"></a>00~~进入matlab环境</h3><p>打开 <code>matlab</code> ，进入 <code>work-griden/TUTORIAL_GRIDGEN/area/</code> 下（<code>area</code>文件夹是我自己创建的）， 创建 <code>south_Africa.m</code> 文件，下面基本所有命令都放在这个 m 文件即可。</p>
+<h2 id="grid创建：南非区域（一步一步实现，意义在于理解参数，不推荐在实际情况中使用）"><a href="#grid创建：南非区域（一步一步实现，意义在于理解参数，不推荐在实际情况中使用）" class="headerlink" title="grid创建：南非区域（一步一步实现，意义在于理解参数，不推荐在实际情况中使用）"></a>grid创建：南非区域（一步一步实现，意义在于理解参数，不推荐在实际情况中使用）</h2><h3 id="00-进入matlab环境"><a href="#00-进入matlab环境" class="headerlink" title="00~~进入matlab环境"></a>00~~进入matlab环境</h3><p>打开 <code>matlab</code> ，进入 <code>work-griden/TUTORIAL_GRIDGEN/area/</code> 下（<code>area</code>文件夹是我自己创建的）， 创建 <code>south_Africa.m</code> 文件，下面基本所有命令都放在这个 m 文件即可。</p>
 <h3 id="01-设置网格基本参数-amp-导入边界数据bound"><a href="#01-设置网格基本参数-amp-导入边界数据bound" class="headerlink" title="01~~设置网格基本参数&amp;导入边界数据bound"></a>01~~设置网格基本参数&amp;导入边界数据<code>bound</code></h3><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%%	这是 colormap 的设置</span>
 <span class="token function">set</span><span class="token punctuation">(</span>groot<span class="token punctuation">,</span><span class="token string">'DefaultFigureColormap'</span><span class="token punctuation">,</span>jet<span class="token punctuation">)</span>
 
@@ -749,11 +749,533 @@ d2 <span class="token operator">=</span> <span class="token function">round</spa
 
 <blockquote>
 <p><code>write_ww3meta</code>需要在<code>area</code>文件夹下运行；</p>
+<p>为了与之后的内容相对应，将<code>south_Africa.m</code>文件改名为<code>south_Africa_ZA_7M.m</code>；</p>
 </blockquote>
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228222043.png" alt="ZA-7M.bot"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228222143.png" alt="ZA-7M.mask_nobound"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228222204.png" alt="ZA-7M.obst （在95行是空的）（94+1+94 =189）"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211228222220.png" alt="ZA-7M.meta"></p>
+<hr>
+<h2 id="grid创建：南非区域（整体实现，推荐在实际情况中使用）"><a href="#grid创建：南非区域（整体实现，推荐在实际情况中使用）" class="headerlink" title="grid创建：南非区域（整体实现，推荐在实际情况中使用）"></a>grid创建：南非区域（整体实现，推荐在实际情况中使用）</h2><p>南非区域很容易手动和逐步创建，因为它有最简单的特征：网格不跨越<code>格林威治子午线</code>，所有经度都是正数。然而，根据你的水深测量数据集和你要创建的网格，情况可能并不总是这样。一般来说，你必须小心使用<code>generate_grid</code>、<code>compute_boundary</code>、<code>split_boundary</code>和<code>create_obstr</code>函数。它们只接受0°到360°的经度，所以对于这些特殊的步骤，你可能要给你的经度阵列的全部或部分增加一个偏移量，甚至把你的网格分成两部分。因此，重复上一节的各个步骤来创建另一个网格可能是一项麻烦的工作。</p>
+<p>幸运的是，<code>GRIDGEN工具箱</code>附带了一个通用脚本，可以帮助你以更方便、更安全的方式完成这项工作：只要你给它正确的参数，<code>create_grid</code>函数就会以自动方式为你处理网格的生成。它唯一需要的参数是一个包含所有所需网格信息的<code>namelist文件</code>。你所要做的就是在这个文件中填入正确的数值–这仍然是一个关键的步骤。</p>
+<p>前面的部分是一个逐步的介绍。现在，为了准备你将在另一个教程中实现的多网格运行，我们将使用自动程序来创建<strong>第二个南非区域</strong>3’分辨率的网格：<code>BENG-3M</code>。所有关于这个网格的信息都存储在 <code>gridgen.BENG-3M.nml </code>文件中。这是<code>create_grid</code>函数的唯一参数。</p>
+<p>现在，在<code>area</code>文件夹下创建<code>south_Africa_BENG_3M.m</code>文件，使用自动工具箱创建这个网格：</p>
+<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%%	因为之前已将 bin 下的函数导入了路径，所以可以调用 GRIDGEN 的所有函数；</span>
+<span class="token function">create_grid</span><span class="token punctuation">(</span><span class="token string">'/home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/work-griden/TUTORIAL_GRIDGEN/namelist/gridgen.BENG-3M.nml'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>在这一步之后，你的<code>data文件夹</code>中应该有4个新的ASCII文件，以<code>BENG-3M</code>开头。</p>
+<p><code>gridgen.BENG-3M.nml</code> 文件具体内容：</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">$-------------------------------------------------------------------------$
+$
+$ Grid namelist for gridgen routine
+$
+$-------------------------------------------------------------------------$
+
+$ Initialize parameters
+
+
+
+
+$ a. Path to directories and file names-----------------------------------$
+
+$ BIN_DIR : location of matlab scripts
+$
+$ REF_DIR : location of reference data
+$
+$ DATA_DIR : input/output grid directory
+$
+$ FNAME_POLY （？？？）:
+$ File with switches for using user-defined polygons.
+$ An example file has been provided with the reference data
+$ for an existing user-defined polygon database.
+$ 0: ignores the polygon | 1: accounts for the polygon.
+$ 带有使用用户定义的多边形的开关（switch）的文件。
+$ 已经提供了一个示例文件，其中包含现有用户定义的多边形数据库的参考数据。
+$ 0：忽略多边形|1：核算多边形。
+
+
+$
+$ FNAME : File name prefix: the routine will create output files
+$ fname.bot, fname.mask_rank1, etc.
+$
+$ FNAMEB : Name of base grid for modmask (if needed)
+$
+$ BOUND_SELECT（Ⅳ） : Boundary selection :
+0 -&gt; manually on the plot
+1 -&gt; automatically around the borders
+2 -&gt; from a .poly file
+
+&amp;GRID_INIT
+BIN_DIR = '../bin'
+REF_DIR = '../reference'
+DATA_DIR = '../data'
+FNAME_POLY = 'user_polygons.flag'
+FNAME = 'BENG-3M'
+FNAMEB = 'ZA-7M'
+BOUND_SELECT = 1
+/
+
+
+
+$ b. Information on bathymetry file--------------------------------------$
+
+$ Grid Definition
+
+$ Gridgen is designed to work with curvilinear and/or rectilinear grids. In
+$ both cases it expects a 2D array defining the Longitudes (x values) and
+$ Latitudes (y values). For curvilinear grids, the user will have to use
+$ alternative software to determine these arrays. For rectilinear grids
+$ these are determined by the grid domain and desired resolution as shown
+$ below
+$Gridgen被设计用于处理曲线型和/或直线型网格。
+$在这两种情况下，它都希望有一个定义经度（x值）和纬度（y值）的二维数组。
+$对于曲线型网格，用户将不得不使用其他软件来确定这些数组(???)。
+$对于直线型网格，这些阵列由网格域和所需的分辨率决定，如下图所示。
+
+$ REF_GRID : reference grid source = name of the bathy source file
+$ (without '.nc' extension)
+$ ref_grid = 'etopo1' -&gt; Etopo1 grid
+$ ref_grid = 'etopo2' -&gt; Etopo2 grid
+$ ref_grid = 'xyz' -&gt; ASCII .log grid
+$ ref_grid = ??? -&gt; user-defined bathymetry file (must match etopo format)
+$
+$ LONFROM : origin of longitudes
+$ lonfrom = -180 -&gt; longitudes from -180 to 180 (etopo2)
+$ lonfrom = 0 -&gt; longitudes from 0 to 360 (etopo1)
+$
+$ XVAR : name of variable defining longitudes in bathy file
+$ xvar = 'x' if etopo1
+$ xvar = 'lon' if etopo2
+$ YVAR : name of variable defining latitudes in bathy file
+$ yvar = 'y' if etopo1
+$ yvar = 'lat' if etopo2
+$ ZVAR : name of variable defining depths in bathy file
+$ zvar = 'z' for etopo1 &amp; etopo2 (can be other for user-defined file)
+
+&amp;BATHY_FILE
+REF_GRID = 'gebco'
+XVAR = 'lon'
+YVAR = 'lat'
+ZVAR = 'elevation'
+LONFROM = -180
+/
+
+$ c. Required grid resolution and boundaries---------------------------------$
+
+$ TYPE : rectangular grid 'rect' or curvilinear grid 'curv'
+$ DX : resolution in longitudes (°)
+$ DY : resolution in latitudes (°)
+$ LON_WEST : western boundary
+$ LON_EAST : eastern boundary
+$
+$ if lonfrom = 0 : lon_west &amp; lon_east in [0 ; 360]
+$ with possibly lon_west &gt; lon_east
+$ if the Greenwich meridian is crossed
+$ if lonfrom = -180 : lon_west &amp; lon_east in [-180 ; 180]
+$
+$ LAT_SOUTH : southern boundary
+$ LAT_NORTH : northern boundary
+$ lon_south &amp; lon_north in [-90 ; 90]
+$
+$ IS_GLOBAL（Ⅱ（6）） : set to 1 if the grid is global, else 0
+$
+$ IS_GLOBALB（Ⅳ）: set to 1 if the base grid is global, else 0
+$
+
+&amp;OUTGRID
+TYPE = 'rect'
+DX = 0.05
+DY = 0.05
+LON_WEST = 16
+LON_EAST = 20
+LAT_SOUTH = -36
+LAT_NORTH = -30
+IS_GLOBAL = 0
+IS_GLOBALB = 0
+/
+
+$ d. Boundary options-------------------------------------------------------$
+
+$ BOUNDARY : Option to determine which GSHHS
+$ .mat file to load:
+$ full = full resolution
+$ high = 0.2 km
+$ inter = 1 km
+$ low = 5 km
+$ coarse = 25 km
+$
+$ READ_BOUNDARY（？？？） : [0|1] flag to determine if input boundary information
+$ needs to be read; boundary data files can be
+$ significantly large and need to be read only the first
+$ time. So when making multiple grids, the flag can be set
+$ to 0 for subsequent grids.
+$ (Note : If the workspace is cleared, the boundary data
+$ will have to be read again)
+$
+$ OPT_POLY : [0|1] flag for reading the optional user-defined
+$ polygons. Set to 0 if you do not wish to use this option
+$
+$ MIN_DIST（Ⅱ（3））??? : Used in compute_boundary and in split_boudnary;
+$ threshold defining the minimum distance (in °) between
+$ the edge of a polygon and the inside/outside boundary.
+$ A low value reduces computation time but can raise
+$ errors if the grid is too coarse. If the script crashes,
+$ consider increasing the value.
+$ (Default value in function used to be min_dist = 4)
+
+&amp;GRID_BOUND
+BOUNDARY = 'full'&nbsp;&nbsp;&nbsp; %分别率调整
+READ_BOUNDARY = 1
+OPT_POLY = 0
+MIN_DIST = 4
+/
+
+$ e. Parameter values used in the software-------------------------------------$
+
+$ DRY_VAL : Depth value set for dry cells (can change as desired)
+$ Used in 'generate_grid' and in the making of initial mask
+$
+$ CUT_OFF : Cut-off depth to distinguish between dry and wet cells.
+$ All depths below the cut_off depth are marked wet
+$ Used in 'generate_grid'
+$ NOTE : If you have accurate boundary polygons, then it is
+$ better to have a low value for CUT_OFF, which will make the
+$ target bathymetry cell wet even when there are only few wet
+$ cells in the base bathymetry. This will then be cleaned up
+$ by the polygons in the 'mask cleanup' section. If, on the
+$ other, hand you do not intend to use the polygons to define
+$ the coastal domains, then you are better off with CUT_OFF = 0.5
+$注意：如果你有精确的边界多边形，那么最好将CUT_OFF的值调低，
+$这样会使目标测深单元变湿，即使在基本测深中只有少数湿单元。
+$然后，这将被 "掩膜清理 "部分中的多边形清理掉。
+$另一方面，如果你不打算用多边形来定义沿岸域，那么你最好使用 CUT_OFF = 0.5(???)。
+$
+$ LIM_BATHY(Ⅱ（2）)（？？？） : Proportion of base bathymetry cells that need to be wet for
+$ the target cell to be considered wet.
+$需要湿润的基础水深单元的比例，以使目标单元被认为是湿润的。
+$
+$ LIM_VAL（Ⅱ（5））（？？？） : Fraction of cell that has to be inside a polygon for the
+$ cell to be marked dry
+$
+$ SPLIT_LIM（Ⅱ（4））（？？？） : Limit for splitting the polygons; used in split_boundary
+$ Rule of thumbs: from 5 to 10 times max(dx,dy)
+$
+$
+$ OFFSET : Additional buffer around the boundary to check if cell is
+$ crossing boundary. Should be set to largest grid resolution
+$ ie OFFSET = max([dx dy])
+$ Used in 'clean_mask'
+$
+$ LAKE_TOL : Tolerance value that determines if all the wet cells
+$ corresponding to a particular wet body should be flagged
+$ dry or not.
+$ Used in 'remove_lake'
+$ if LAKE_TOL &gt; 0 : all water bodies having less than this
+$ value of total wet cells will be flagged&nbsp;
+$ dry &nbsp;&nbsp; $例如，如果为100，则弱湖泊（小水体）的单元输为60，则被认为是陆地，即dry
+$ if LAKE_TOL = 0 : the output and input masks are unchanged.
+$ if LAKE_TOL &lt; 0 : all but the largest water body is flagged
+$ dry
+$
+$ OBSTR_OFFSET : Flag to determine if neighbours should be considered.
+$ (0/1 = no/yes)
+$ Used in 'create_obstr'
+
+&amp;GRID_PARAM
+DRY_VAL = 999999
+CUT_OFF = 0
+LIM_BATHY = 0.4
+LIM_VAL = 0.5
+SPLIT_LIM = 0.25
+OFFSET = 0.05 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;%OFFSET = max([dx dy])
+LAKE_TOL = 100
+OBSTR_OFFSET = 1
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="multi-grid创建：南非区域？？？"><a href="#multi-grid创建：南非区域？？？" class="headerlink" title="multi-grid创建：南非区域？？？"></a>multi-grid创建：南非区域？？？</h2><hr>
+<h2 id="由GRIDGEN得到的ZA-7M-meta文件创建WW3的ww3-grid-nml（2019-附录E）"><a href="#由GRIDGEN得到的ZA-7M-meta文件创建WW3的ww3-grid-nml（2019-附录E）" class="headerlink" title="由GRIDGEN得到的ZA-7M.meta文件创建WW3的ww3_grid.nml（2019-附录E）"></a>由<code>GRIDGEN</code>得到的<code>ZA-7M.meta</code>文件创建<code>WW3</code>的<code>ww3_grid.nml</code>（2019-附录E）</h2><p> 一旦 <code>GRIDGEN</code> 工具箱生成了所有的网格和边界文件，您必须设置 <code>ww3_grid.nml</code>，<code>WAVEWATCHIII </code>将使用它来创建模型定义文件 <code>mod_def.ww3</code>。<br>首先将 <code>ww3_grid.nml</code> 文件从 <code>ww3 模板</code>复制到您的<code>data文件夹</code>中：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span>   /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/COURS/WAVES-SHORT-COURSE/MODEL/WW3/model/nml/ww3_grid.nml   /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/work-griden/TUTORIAL_GRIDGEN/data/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>打开 ww3_grid.nml 文件以填写您的网格配置。每个部分都会描述。</p>
+<ul>
+<li><p><strong>第一部分</strong>是关于频率和方向的定义。您可以将较低频率降低到取决于您在域上可以预期的最大波周期，我们通常将其设置为 0.0373，对应于 27 秒波周期，在这种情况下，您还必须将频率离散化增加到 32：</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;SPECTRUM_NML
+ SPECTRUM%XFR = 1.1
+ SPECTRUM%FREQ1 = 0.0373
+ SPECTRUM%NK = 32
+ SPECTRUM%NTH = 24
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p><strong>第二部分</strong>是关于波的传播，折射和源项的激活。如果您在强流下运行模型，则必须激活波数偏移：</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;RUN_NML
+ RUN%FLCX = T
+ RUN%FLCY = T
+ RUN%FLCTH = T
+ RUN%FLSOU = T
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p><strong>第三部分</strong>用于将所限定的<code>模型时间步长</code>。要计算的第一个时间步长是<code>最大 CFL 时间步长</code>，它取决于先前设置为 0.0373Hz 的<code>最低频率 Fmin</code> 和<strong>最靠近极点的纬度（此处为 -38.9S）</strong><code>沿 x 的最低空间网格分辨率</code>。</p>
+<pre class="line-numbers language-none"><code class="language-none">##	dx计算公式
+dx = min(reslon * cos(maxlat*Pi/180)*1852*60, reslon * cos(minlat*Pi/180)*1852*60)
+		#reslon对应沿 x 的最低空间网格分辨率，单位为°
+		#maxlat对应北纬度数最大的值，例如90比60大；
+		#minlat对应南纬度数最小的值，例如-90比-60小；
+
+##	dx计算
+dx = 0.12 * cos(-38.9*3.14/180)*1852* 60 = 2074m<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>提醒：<font color="red">1 度 = 60 分钟 // 1 分钟 = 1 英里 // 1 英里 = 1.852 公里</font>。</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">##	cfl计算公式
+Tcfl = dx / (g / (Fmin*4*Pi) ), 常数 Pi=3,14 和 g=9.8m/s²；
+
+##	cfl计算
+Tcfl = 2074 / (9.8 / (0.0373*4*3.14) ) = 99s
+
+##	最大cfl计算
+maxTcfl ~= 90% Tcfl = 90s
+
+##	最大全局时间步长计算
+#	知道maxTcfl，最大全局时间步长通常设置为3倍，
+#	最多可以设置6倍，节省计算时间，尽管精度损失更大；
+Tglob = 3*maxTcfl = 3*90 = 270s
+
+##	折射时间步长计算
+#	折射时间步长取决于网格上风或流的强度，通常设置为全局的 1/6 时间步长，
+#	但在强风或强风的情况下可以减少到 1/10：
+Tref = Tglob / 6 = 270 / 6 = 45s
+
+##	最小源项时间步长通常定义在 1 到 10 秒之间
+Tsrc = 1s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>nml</code>中的参数设置（与官方文档给的不太一样）</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! Define the timesteps parameterization via TIMESTEPS_NML namelist
+!
+! * It is highly recommended to set up time steps which are multiple 
+!   between them. 
+!
+! * The first time step to calculate is the maximum CFL time step
+!   which depend on the lowest frequency FREQ1 previously set up and the
+!   lowest spatial grid resolution in meters DXY.
+!   reminder : 1 degree=60minutes // 1minute=1mile // 1mile=1.852km
+!   The formula for the CFL time is :
+!   Tcfl = DXY / (G / (FREQ1*4*Pi) ) with the constants Pi=3,14 and G=9.8m/s²;
+!   DTXY  ~= 90% Tcfl
+!   DTMAX ~= 3 * DTXY   (maximum global time step limit)
+!
+! * The refraction time step depends on how strong can be the current velocities
+!   on your grid :
+!   DTKTH ~= DTMAX / 2   ! in case of no or light current velocities
+!   DTKTH ~= DTMAX / 10  ! in case of strong current velocities
+!
+! * The source terms time step is usually defined between 5s and 60s.
+!   A common value is 10s.
+!   DTMIN ~= 10
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     TIMESTEPS%DTMAX      = 0.         ! maximum global time step (s)
+!     TIMESTEPS%DTXY       = 0.         ! maximum CFL time step for x-y (s)
+!     TIMESTEPS%DTKTH      = 0.         ! maximum CFL time step for k-th (s)
+!     TIMESTEPS%DTMIN      = 0.         ! minimum source term time step (s)
+! -------------------------------------------------------------------- !
+&amp;TIMESTEPS_NML
+  TIMESTEPS%DTMAX         =   270.
+  TIMESTEPS%DTXY          =   90.
+  TIMESTEPS%DTKTH         =   45.
+  TIMESTEPS%DTMIN         =   1.
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p><strong>第四部分</strong>为网格信息，它通常是域名其次是空间分辨率，它不能超过30个字符。</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;GRID_NML
+ GRID%NAME = 'ZA-7M'
+ GRID%NML = 'namelists_ZA-7M.nml'
+ GRID%TYPE = 'RECT'
+ GRID%COORD = 'SPHE'
+ GRID%CLOS = 'NONE'
+ GRID%ZLIM = -0.10
+ GRID%DMIN = 2.5
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>文件 <code>namelists_ZA-7M.nml</code> 包含与用于编译模型的开关对应的名称列表的定义。对于第一次测试，您可以将其留空以使用默认值。在任何情况下，它都必须以 <code>END OF NAMELISTS</code> 行结束。</p>
+</blockquote>
+</li>
+<li><p><strong>下一部分</strong>为直线网格的定义，它包含的点数，网格分辨率和网格的西南角；</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! Define the rectilinear grid type via RECT_NML namelist
+! - only for RECT grids -
+!
+! * The minimum grid size is 3x3.
+!
+! * If the grid increments SX and SY are given in minutes of arc, the scaling
+!   factor SF must be set to 60. to provide an increment factor in degree.
+!
+! * If CSTRG='SMPL', then SX is forced to 360/NX.
+!
+! * value &lt;= value_read / scale_fac
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     RECT%NX               = 0        ! number of points along x-axis
+!     RECT%NY               = 0        ! number of points along y-axis
+!
+!     RECT%SX               = 0.       ! grid increment along x-axis
+!     RECT%SY               = 0.       ! grid increment along y-axis
+!     RECT%SF               = 1.       ! scaling division factor for x-y axis
+!
+!     RECT%X0               = 0.       ! x-coordinate of lower-left corner (deg)
+!     RECT%Y0               = 0.       ! y-coordinate of lower-left corner (deg)
+!     RECT%SF0              = 1.       ! scaling division factor for x0,y0 coord
+! -------------------------------------------------------------------- !
+&amp;RECT_NML
+ RECT%NX = 89
+ RECT%NY = 94
+!
+ RECT%SX = 0.12
+ RECT%SY = 0.12
+ RECT%X0 = 12.0000
+ RECT%Y0 = -38.9000
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p><strong>最后部分</strong>为depth文件，mask文件，obstruction文件；</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! Define the depth to preprocess via DEPTH_NML namelist
+! - for RECT and CURV grids -
+!
+! * if no obstruction subgrid, need to set &amp;MISC FLAGTR = 0
+!
+! * The depth value must have negative values under the mean sea level
+!
+! * value &lt;= value_read * scale_fac
+!
+! * IDLA : Layout indicator :
+!                  1   : Read line-by-line bottom to top.  (default)
+!                  2   : Like 1, single read statement.
+!                  3   : Read line-by-line top to bottom.
+!                  4   : Like 3, single read statement.
+! * IDFM : format indicator :
+!                  1   : Free format.  (default)
+!                  2   : Fixed format.
+!                  3   : Unformatted.
+! * FORMAT : element format to read :
+!               '(....)'  : auto detected  (default)
+!               '(f10.6)' : float type
+!
+! * Example :
+!      IDF  SF     IDLA  IDFM   FORMAT    FILENAME
+!      50   0.001  1     1     '(....)'  'GLOB-30M.bot'
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     DEPTH%SF             = 1.       ! scale factor
+!     DEPTH%FILENAME       = 'unset'  ! filename
+!     DEPTH%IDF            = 50       ! file unit number
+!     DEPTH%IDLA           = 1        ! layout indicator
+!     DEPTH%IDFM           = 1        ! format indicator
+!     DEPTH%FORMAT         = '(....)' ! formatted read format
+! -------------------------------------------------------------------- !
+&amp;DEPTH_NML
+ DEPTH%SF = 0.00
+ DEPTH%FILENAME = '../data/ZA-7M.bot'
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! Define the point status map via MASK_NML namelist
+! - only for RECT and CURV grids -
+!
+! * If no mask defined, INBOUND can be used to set active boundaries
+!
+! * IDLA : Layout indicator :
+!                  1   : Read line-by-line bottom to top.  (default)
+!                  2   : Like 1, single read statement.
+!                  3   : Read line-by-line top to bottom.
+!                  4   : Like 3, single read statement.
+! * IDFM : format indicator :
+!                  1   : Free format.  (default)
+!                  2   : Fixed format.
+!                  3   : Unformatted.
+! * FORMAT : element format to read :
+!               '(....)'  : auto detected  (default)
+!               '(f10.6)' : float type
+!
+! * Example :
+!      IDF  IDLA  IDFM   FORMAT    FILENAME
+!      60   1     1     '(....)'  'GLOB-30M.mask'
+!
+! * The legend for the input map is :
+!    -2 : Excluded boundary point (covered by ice)
+!    -1 : Excluded sea point (covered by ice)
+!     0 : Excluded land point
+!     1 : Sea point
+!     2 : Active boundary point
+!     3 : Excluded grid point
+!     7 : Ice point
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     MASK%FILENAME         = 'unset'  ! filename
+!     MASK%IDF              = 60       ! file unit number
+!     MASK%IDLA             = 1        ! layout indicator
+!     MASK%IDFM             = 1        ! format indicator
+!     MASK%FORMAT           = '(....)' ! formatted read format
+! -------------------------------------------------------------------- !
+&amp;MASK_NML
+ MASK%FILENAME = '../data/ZA-7M.mask'
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! Define the obstruction map via OBST_NML namelist
+! - only for RECT and CURV grids -
+!
+! * only used if &amp;MISC FLAGTR = 1 in param.nml
+!                (transparencies at cell boundaries)
+!          or if &amp;MISC FLAGTR = 2 in param.nml
+!                (transparencies at cell centers)
+!          or if &amp;MISC FLAGTR = 3 in param.nml
+!                (transparencies at cell boundaries with cont. ice)
+!          or if &amp;MISC FLAGTR = 4 in param.nml
+!                (transparencies at cell centers with cont. ice)
+!
+! * value &lt;= value_read * scale_fac
+!
+! * IDLA : Layout indicator :
+!                  1   : Read line-by-line bottom to top.  (default)
+!                  2   : Like 1, single read statement.
+!                  3   : Read line-by-line top to bottom.
+!                  4   : Like 3, single read statement.
+! * IDFM : format indicator :
+!                  1   : Free format.  (default)
+!                  2   : Fixed format.
+!                  3   : Unformatted.
+! * FORMAT : element format to read :
+!               '(....)'  : auto detected  (default)
+!               '(f10.6)' : float type
+!
+! * Example :
+!      IDF  SF      IDLA  IDFM   FORMAT    FILENAME
+!      70   0.0001  1     1     '(....)'  'GLOB-30M.obst'
+!
+! * If the file unit number equals 10, then the data is read from this
+!   file. The data must follow the above record. No comment lines are
+!   allowed within the data input.
+!
+! * In the case of unstructured grids, no obstruction file can be added
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     OBST%SF              = 1.       ! scale factor
+!     OBST%FILENAME        = 'unset'  ! filename
+!     OBST%IDF             = 70       ! file unit number
+!     OBST%IDLA            = 1        ! layout indicator
+!     OBST%IDFM            = 1        ! format indicator
+!     OBST%FORMAT          = '(....)' ! formatted read format
+! -------------------------------------------------------------------- !
+&amp;OBST_NML
+ OBST%SF = 0.01
+ OBST%FILENAME = '../data/ZA-7M.obst'
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
 
                 
             </div>
@@ -1289,7 +1811,7 @@ d2 <span class="token operator">=</span> <span class="token function">round</spa
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">213.3k</span>
+                        class="white-color">217k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
