@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-12-27
+                    2022-01-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    616
+                    1.5k
                 </div>
                 
 
@@ -405,7 +405,43 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="03-向hexo中添加图片"><a href="#03-向hexo中添加图片" class="headerlink" title="03-向hexo中添加图片"></a><center>03-向hexo中添加图片</center></h1><h2 id="向hexo中添加图片：图床（最佳方法）"><a href="#向hexo中添加图片：图床（最佳方法）" class="headerlink" title="向hexo中添加图片：图床（最佳方法）"></a>向hexo中添加图片：图床（最佳方法）</h2><h3 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">PicGo</a></h3><!-- ![](02.png) -->
+                <h1 id="03-向hexo中添加图片"><a href="#03-向hexo中添加图片" class="headerlink" title="03-向hexo中添加图片"></a><center>03-向hexo中添加图片</center></h1><h2 id="向hexo中添加图片：typora-插件方法"><a href="#向hexo中添加图片：typora-插件方法" class="headerlink" title="向hexo中添加图片：typora+插件方法"></a>向hexo中添加图片：typora+插件方法</h2><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv12633102">2021最全hexo搭建博客+matery美化+使用（保姆级教程）</a>，7.如何向hexo博客中插入图片 </p>
+<h3 id="使用相对路径的方式"><a href="#使用相对路径的方式" class="headerlink" title="使用相对路径的方式"></a>使用相对路径的方式</h3><p>由于我们的博客是要部署在网站上，部署后会生成新的文件目录，所以我们选择使用相对路径的方式。 </p>
+<p>在hexo中使用文章资源文件夹需要在hexo的config.yaml文件中更改一下配置： </p>
+<p><code>post_asset_folder: true </code></p>
+<p>当该配置被应用后，使用hexo new命令创建新文章时，会生成相同名字的文件夹，也就是文章资源文件夹。 </p>
+
+
+<p>在Typora编辑器中，普通的md文件使用<code>![](1/image.jpg)</code>能在编辑器中正常显示图片。</p>
+<p>在hexo中，按理说应该是使用<code>![](image.jpg)</code>，但网页中却无法正常显示。</p>
+<p>此时应该使用这样的方式来引入图片：<code>{% asset_img image.jpg 这是一张图片 %}</code></p>
+
+
+<p>虽然可以正常引用图片了，但是这种引用图片的方式只有一句话能形容，wtf。 </p>
+<h3 id="hexo-renderer-marked插件的安装与配置"><a href="#hexo-renderer-marked插件的安装与配置" class="headerlink" title="hexo-renderer-marked插件的安装与配置"></a>hexo-renderer-marked插件的安装与配置</h3><p>插件hexo-renderer-marked解决了这个问题</p>
+<p>安装： <code>npm install hexo-renderer-marked --save </code>  ，之后在hexo的config.yaml中添加配置即可</p>
+<blockquote>
+<p>marked:</p>
+<p>　　prependRoot: true</p>
+<p>　　postAsset: true</p>
+</blockquote>
+<p>之后就可以在使用 <code>![](image.jpg) </code> 的方式愉快的插入图片了。</p>
+<p>我们做了这么多都是为了方便，那么为什么不再方便一点呢。 <!----></p>
+<!-- ![](01.png) -->
+
+<h3 id="hexo-renderer-marked插件与Typora的完美结合"><a href="#hexo-renderer-marked插件与Typora的完美结合" class="headerlink" title="hexo-renderer-marked插件与Typora的完美结合"></a>hexo-renderer-marked插件与Typora的完美结合</h3><p>如果图片数量众多的话，一张一张的放很影响效率。但是不用怕，我们有很方便的解决方法。</p>
+<p>Typora对于插入图片的支持做得非常好，在<code>文件-&gt;偏好设置</code>或者直接&lt;C-,&gt;进入设置。 </p>
+<p><img src="D:\Liu-Jincan.github.io\source_posts\博客搭建\hexo\image-20211224214414635.png"></p>
+<p>使用该配置后，可以直接复制网页中的图片地址，粘贴到Typora中后，会直接复制该图片到文章资源文件夹，同时自动更改路径（<code>ps：typora导入hexo图片的优点所在</code>）。如复制网络路径的图片https://…../image.jpg粘贴到Typora中叫文章名的文章后，图片会自动变为<code>![](文章名/image.jpg)</code>。 </p>
+<p>但我们知道部署后，文件路径是不同的，所以当我们插入完所有的图片后，我们还需要删除每个图片路径中的文件名/。不慌，也很简单。在Typora编辑器中，使用<code>&lt;C-f&gt;</code>快捷键，将所有的<code>文章名/</code>替换为空即可删除（<code>ps：这种替换必须要求，&lt;文章名/&gt;，在整个markdown文本中具有唯一指定性，所以命名加上自己的名字拼音是个不错的选择</code>）。然后再将博客上传，图片就会随着文章一起打包。在网页中就可以看到正常显示的图片，大功告成。 </p>
+<blockquote>
+<p>缺点：使用这种方法的时候，切换文件的时候，必须进行一次[文件-&gt;偏好设置]路径的设置；如果不小心忘记了，图片导入错文件夹了，网页肯定不显示图片，这时候设置路径，重新拉进取即可</p>
+</blockquote>
+<h3 id="最佳方法：图床上传图片"><a href="#最佳方法：图床上传图片" class="headerlink" title="最佳方法：图床上传图片"></a>最佳方法：图床上传图片</h3><p>见 <a href="https://liu-jincan.github.io/2021/12/21/hexo-jincan/">https://liu-jincan.github.io/2021/12/21/hexo-jincan/</a> 中的 <code>向hexo中添加图片：图床</code>。</p>
+<blockquote>
+<p>这样貌似typora的优势就不大了，其他的markdown都可以实现图床在hexo上传图片。</p>
+</blockquote>
+<h2 id="向hexo中添加图片：图床（最佳方法）"><a href="#向hexo中添加图片：图床（最佳方法）" class="headerlink" title="向hexo中添加图片：图床（最佳方法）"></a>向hexo中添加图片：图床（最佳方法）</h2><h3 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">PicGo</a></h3><!-- ![](02.png) -->
 
 <h4 id="应用概述"><a href="#应用概述" class="headerlink" title="应用概述"></a>应用概述</h4><p><strong>PicGo: 一个用于快速上传图片并获取图片 URL 链接的工具</strong></p>
 <p>PicGo 本体支持如下图床：</p>
@@ -991,7 +1027,7 @@ startup <span class="token boolean">true</span>
             <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
             
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             
             <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
@@ -1011,7 +1047,7 @@ startup <span class="token boolean">true</span>
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">217k</span>
+                        class="white-color">218.9k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
