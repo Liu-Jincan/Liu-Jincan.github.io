@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="06-TUTORIALS-INOUT, Jincan">
+    <meta name="keywords" content="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出, Jincan">
     <meta name="description" content="~~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>06-TUTORIALS-INOUT | Jincan</title>
+    <title>06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出 | Jincan</title>
     <link rel="icon" type="image/png" href="/favicon_hua.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -234,7 +234,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">06-TUTORIALS-INOUT</h1>
+                    <h1 class="description center-align post-title">06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出</h1>
                 </div>
             </div>
         </div>
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-03
+                    2022-01-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    4.3k
+                    4.4k
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="06-TUTORIALS-INOUT"><a href="#06-TUTORIALS-INOUT" class="headerlink" title="06-TUTORIALS-INOUT"></a><center>06-TUTORIALS-INOUT</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-inout.pdf</code>；（**<font color="red">代码没有完全实现，卡在了PBS，qsub命令</font>**）</p>
+                <h1 id="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出"><a href="#06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出" class="headerlink" title="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出"></a><center>06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-inout.pdf</code>；（**<font color="red">代码没有完全实现，卡在了PBS，qsub命令</font>**）</p>
 <blockquote>
 <ul>
 <li><p>也就是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-INOUT</code> 里面的内容；</p>
@@ -616,7 +616,7 @@ ncview ww3.201109.nc<span aria-hidden="true" class="line-numbers-rows"><span></s
 
 <p>在第一个时间步，所有的域都被初始化为<code>从西边 2.5m 的涌浪</code>，然后一个真实的风吹过所有的网格，并且每小时更新一次。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103190226.png"></p>
-<h2 id="运行模型（真实谱边界条件）"><a href="#运行模型（真实谱边界条件）" class="headerlink" title="运行模型（真实谱边界条件）"></a>运行模型（真实谱边界条件）</h2><h3 id="谱边界文件"><a href="#谱边界文件" class="headerlink" title="谱边界文件"></a>谱边界文件</h3><p>现在您已拥有初始条件 (<code>restart.ww3</code>) 和真实的风力场 (<code>wind.ww3</code>)。 所需的最后一个输入是<code>谱边界(spectral boundary)</code>，以迫使你的<font color="red">网格（边界）向大海开放</font>。</p>
+<h2 id="运行模型（真实谱边界条件）–未实现"><a href="#运行模型（真实谱边界条件）–未实现" class="headerlink" title="运行模型（真实谱边界条件）–未实现"></a>运行模型（真实谱边界条件）–未实现</h2><h3 id="谱边界文件"><a href="#谱边界文件" class="headerlink" title="谱边界文件"></a>谱边界文件</h3><p>现在您已拥有初始条件 (<code>restart.ww3</code>) 和真实的风力场 (<code>wind.ww3</code>)。 所需的最后一个输入是<code>谱边界(spectral boundary)</code>，以迫使你的<font color="red">网格（边界）向大海开放</font>。</p>
 <ul>
 <li>一种方法是运行<code>多网格模型</code>来传达全球和区域网格之间的谱边界（参见 <code>TUTORIAL_MULTI</code>）。 </li>
 <li>另一种方法是首先运行一个<code>全球网格模型</code>，然后输出区域网格所需的边界点。为此我们做了近 20 年的全球后报，我们在全球海岸线上每0.5度提供一个<code>二维谱点</code>。（请参阅我们的 <code>google-earth</code> 的 <code>kmz</code> 文件）。</li>
@@ -687,7 +687,7 @@ ncview ww3.201109.nc<span aria-hidden="true" class="line-numbers-rows"><span></s
 
 <p>与以前相同的结果，但现在波能从活动边界向域中传播 1m 涌浪。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103212852.png"></p>
-<h2 id="运行模型（全输出）"><a href="#运行模型（全输出）" class="headerlink" title="运行模型（全输出）"></a>运行模型（全输出）</h2><h3 id="7种输出类型"><a href="#7种输出类型" class="headerlink" title="7种输出类型"></a>7种输出类型</h3><p>ww3 还可以输出不同类型的输出数据。它在 <code>ww3_shel.nml</code> 中名称列表 <code>OUTPUT_TYPE_NML</code> 和 <code>OUTPUT_DATE_NML</code> 中定义，一共有 7 种类型的输出：<code>场的平均波参数</code>、<code>点输出</code>、<code>沿轨迹谱点输出</code>、<code>重启文件</code>、<code>边界数据</code>、分离波场数据、耦合场。<br>   对于每种输出数据，必须设置开始和停止数据，这些数据可能与运行本身的开始和停止日期不同。 每种输出数据的时间步长必须大于<code>全局时间步长</code>，理想情况下应该是全局时间步长的倍数。 禁用某种输出类型，必须将其时间步幅设置为 0。</p>
+<h2 id="运行模型（全输出）–未实现"><a href="#运行模型（全输出）–未实现" class="headerlink" title="运行模型（全输出）–未实现"></a>运行模型（全输出）–未实现</h2><h3 id="7种输出类型"><a href="#7种输出类型" class="headerlink" title="7种输出类型"></a>7种输出类型</h3><p>ww3 还可以输出不同类型的输出数据。它在 <code>ww3_shel.nml</code> 中名称列表 <code>OUTPUT_TYPE_NML</code> 和 <code>OUTPUT_DATE_NML</code> 中定义，一共有 7 种类型的输出：<code>场的平均波参数</code>、<code>点输出</code>、<code>沿轨迹谱点输出</code>、<code>重启文件</code>、<code>边界数据</code>、分离波场数据、耦合场。<br>   对于每种输出数据，必须设置开始和停止数据，这些数据可能与运行本身的开始和停止日期不同。 每种输出数据的时间步长必须大于<code>全局时间步长</code>，理想情况下应该是全局时间步长的倍数。 禁用某种输出类型，必须将其时间步幅设置为 0。</p>
 <ul>
 <li><p>第一种输出数据是<code>场的平均波参数</code>。 必须在 <code>OUTPUT_TYPE_NML</code> 中指定要请求的输出参数：</p>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;OUTPUT_TYPE_NML
@@ -1013,17 +1013,16 @@ idlww3
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/">
+                <a href="/2022/01/04/hai-lang-shu-zhi-mo-shi/wavewatch3/06-prerequisites/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIALS-INOUT">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-Prerequisites-了解unix,netcdf,ldl">
                         
-                        <span class="card-title">06-TUTORIALS-INOUT</span>
+                        <span class="card-title">06-Prerequisites-了解unix,netcdf,ldl</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1033,9 +1032,9 @@ idlww3
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1048,7 +1047,6 @@ idlww3
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1315,7 +1313,7 @@ idlww3
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">222.3k</span>
+                        class="white-color">224.6k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
