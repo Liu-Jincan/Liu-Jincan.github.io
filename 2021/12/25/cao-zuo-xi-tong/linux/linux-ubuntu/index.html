@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-12-28
+                    2022-01-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    237
+                    251
                 </div>
                 
 
@@ -405,58 +405,61 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="linux-amp-ubuntu"><a href="#linux-amp-ubuntu" class="headerlink" title="linux&amp;ubuntu"></a>linux&amp;ubuntu</h1><h2 id="启动打开必要软件需要进行的操作（也可以添加快捷方式）"><a href="#启动打开必要软件需要进行的操作（也可以添加快捷方式）" class="headerlink" title="启动打开必要软件需要进行的操作（也可以添加快捷方式）"></a>启动打开必要软件需要进行的操作（也可以添加快捷方式）</h2><pre class="line-numbers language-none"><code class="language-none"># 如果屏幕分辨率出问题就换驱动
-# 设置分辨率
+                <h1 id="linux-amp-ubuntu"><a href="#linux-amp-ubuntu" class="headerlink" title="linux&amp;ubuntu"></a>linux&amp;ubuntu</h1><h2 id="启动打开必要软件需要进行的操作（也可以添加快捷方式）"><a href="#启动打开必要软件需要进行的操作（也可以添加快捷方式）" class="headerlink" title="启动打开必要软件需要进行的操作（也可以添加快捷方式）"></a>启动打开必要软件需要进行的操作（也可以添加快捷方式）</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 如果屏幕分辨率出问题就换驱动</span>
+<span class="token comment"># 设置分辨率</span>
 xrandr -s 1024x768	
 
-# 连接校园网
+<span class="token comment"># 连接校园网</span>
 
-# 打开向日葵
-cd /usr/local/sunlogin/bin
+<span class="token comment"># 打开向日葵</span>
+<span class="token builtin class-name">cd</span> /usr/local/sunlogin/bin
 ./sunloginclient 
 
-# 打开截图软件
+<span class="token comment"># 打开截图软件</span>
 flameshot gui
 
 
-# 打开notebook软件
-cd 
-#jupyter notebook
-#nohup jupyter notebook &amp;
-nohup jupyter notebook &gt; test.log 2&gt;&amp;1 &amp;
+<span class="token comment"># 打开notebook软件</span>
+<span class="token builtin class-name">cd</span> 
+<span class="token comment">#jupyter notebook</span>
+<span class="token comment">#nohup jupyter notebook &amp;</span>
+<span class="token function">nohup</span> jupyter notebook <span class="token operator">&gt;</span> test.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
 
 
-# 打开clash软件
-cd ~/.config/clash
+<span class="token comment"># 打开clash软件</span>
+<span class="token builtin class-name">cd</span> ~/.config/clash
 ./clash
-nohup ./clash &amp;
-nohup ./clash &gt; test.log 2&gt;&amp;1 &amp;
+<span class="token function">nohup</span> ./clash <span class="token operator">&amp;</span>
+<span class="token function">nohup</span> ./clash <span class="token operator">&gt;</span> test.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
 
-# 打开DDNSTO内网穿透软件
-sudo docker run -d     --name=ddnsto4  --network host     -e TOKEN=80c2fa8b-0541-42a0-bce5-34db391e3c9e     -e DEVICE_IDX=100     -v /etc/localtime:/etc/localtime:ro     -e PUID=100     -e PGID=100     linkease/ddnsto
+<span class="token comment"># 打开DDNSTO内网穿透软件</span>
+<span class="token function">sudo</span> docker run -d     --name<span class="token operator">=</span>ddnsto4  --network <span class="token function">host</span>     -e <span class="token assign-left variable">TOKEN</span><span class="token operator">=</span>80c2fa8b-0541-42a0-bce5-34db391e3c9e     -e <span class="token assign-left variable">DEVICE_IDX</span><span class="token operator">=</span><span class="token number">100</span>     -v /etc/localtime:/etc/localtime:ro     -e <span class="token assign-left variable">PUID</span><span class="token operator">=</span><span class="token number">100</span>     -e <span class="token assign-left variable">PGID</span><span class="token operator">=</span><span class="token number">100</span>     linkease/ddnsto
 
 
-# 打开 pycharm 
-cd /home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/pycharm-community-2021.2.3/bin   # pycharm 的安装路径
+<span class="token comment"># 打开 pycharm </span>
+<span class="token builtin class-name">cd</span> /home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/pycharm-community-2021.2.3/bin   <span class="token comment"># pycharm 的安装路径</span>
 ./pycharm.sh
 
-# 打开百度网盘
-cd /opt/baidunetdisk
+<span class="token comment"># 打开百度网盘</span>
+<span class="token builtin class-name">cd</span> /opt/baidunetdisk
 ./baidunetdisk --no-sandbox %U
 
-# 打开 panoply
-cd /home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/PanoplyJ/
-#./panoply.sh
- nohup ./panoply.sh &gt; test.log 2&gt;&amp;1 &amp;
+<span class="token comment"># 打开 panoply</span>
+<span class="token builtin class-name">cd</span> /home/jincanliu/BaiduNetdiskWorkspace/Program_SetupPosition/PanoplyJ/
+<span class="token comment">#./panoply.sh</span>
+ <span class="token function">nohup</span> ./panoply.sh <span class="token operator">&gt;</span> test.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
 
-# Toby
+<span class="token comment"># Toby</span>
 eEUGW4JPj5vE
 
-# 换个镜像
-cd /etc/apt/
-sudo cp sources.list.??? sources.list   #wangyi aliyun
-sudo apt-get update
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment"># 换个镜像</span>
+<span class="token builtin class-name">cd</span> /etc/apt/
+<span class="token function">sudo</span> <span class="token function">cp</span> sources.list.??? sources.list   <span class="token comment">#wangyi aliyun</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update
+
+<span class="token comment"># IDL</span>
+<span class="token builtin class-name">cd</span> /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/work-mesh-edit/TUTORIAL_MESH_EDIT
+idl -rt<span class="token operator">=</span>rt_visumain.sav<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -995,7 +998,7 @@ sudo apt-get update
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">235.3k</span>
+                        class="white-color">236.8k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

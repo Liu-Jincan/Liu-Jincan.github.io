@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-06
+                    2022-01-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    579
+                    1.3k
                 </div>
                 
 
@@ -416,6 +416,9 @@
 <hr>
 <h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在这个教程练习中，我们将编辑一个用<code>Polymesh</code>建立的<code>三角形网格</code>。目的是通过清理 “坏 “的三角形，让模型在<code>显式方案</code>下运行得更快。你可以按照本视频中描述的步骤进行操作（尽管使用的是稍旧的<code>TWIST</code>版本）。</p>
 <p><a target="_blank" rel="noopener" href="http://tinyurl.com/wikifrw3/En:idl_tool:mesh_timesteps_and_editing">http://tinyurl.com/wikifrw3/En:idl_tool:mesh_timesteps_and_editing</a>    （<font color="red">不知道为什么网页打不开~</font>）</p>
+<blockquote>
+<p>直接从<code>PolyMesh</code>中出来的网格通常没有经过优化，不能用<code>显式方案</code>运行。对它们进行一些清理可以帮助减少CPU的时间。在这里，我们使用<code>TWIST</code>工具以交互的方式来做这件事。</p>
+</blockquote>
 <h2 id="MESH-EDIT-工作目录创建"><a href="#MESH-EDIT-工作目录创建" class="headerlink" title="MESH-EDIT 工作目录创建"></a>MESH-EDIT 工作目录创建</h2><p>创建一个 MULTI-EDIT 工作目录，假如为 <code>work-mesh-edit</code> ，在目录下打开终端，输入以下命令</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span>   -r   <span class="token variable">$COURS</span>/WAVES-SHORT-COURSE/TUTORIALS/TUTORIAL_MESH_EDIT   <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -460,7 +463,7 @@
 <td align="left">（例子中）由TWIST产生的编辑过的网格</td>
 </tr>
 </tbody></table>
-<h2 id="用TWIST可视化网格…和时间步长"><a href="#用TWIST可视化网格…和时间步长" class="headerlink" title="用TWIST可视化网格…和时间步长"></a>用TWIST可视化网格…和时间步长</h2><p>要启动<code>idl</code>，你首先要复制<code>TWIST工具</code>并使用<code>runtime(运行时间)</code>运行：</p>
+<h2 id="用TWIST可视化网格"><a href="#用TWIST可视化网格" class="headerlink" title="用TWIST可视化网格"></a>用TWIST可视化网格</h2><p>要启动<code>idl</code>，你首先要复制<code>TWIST工具</code>并使用<code>runtime(运行时间)</code>运行：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ./TUTORIAL_MESH_EDIT
 <span class="token function">cp</span> <span class="token variable">$WAVE_COURSE</span>/TOOLS/IDL/rt_visumain.sav <span class="token builtin class-name">.</span>
 <span class="token function">cp</span> <span class="token variable">$WAVE_COURSE</span>/TOOLS/IDL/TWIST_init.txt <span class="token builtin class-name">.</span>
@@ -476,10 +479,43 @@ idl -rt<span class="token operator">=</span>rt_visumain.sav<span aria-hidden="tr
 <li><code>Refresh</code>；</li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220106220849.png" alt="sorted_v0.mesh网格"> </p>
-<p>下一步是得到WW3对该网格将使用的<code>时间步长</code>的值。因为三角形周围的每个单元都有一个最大的稳定<code>显性时间步长</code>，模型将使用其中最小的时间步长。这个最小的时间步长对于每个方向和每个频率都是不同的。在实践中，我们在这里重新计算<code>最低频率</code>的最小值。<br>要做到这一点，打开<code>MESH</code>工具箱，在<code>Mesh and timesteps</code>部分选择<code>Update model timesteps</code>：</p>
+<h2 id="用TWIST显示、编辑网格的最小时间步长"><a href="#用TWIST显示、编辑网格的最小时间步长" class="headerlink" title="用TWIST显示、编辑网格的最小时间步长"></a>用TWIST显示、编辑网格的最小时间步长</h2><p>下一步是得到<code>WW3</code>对该网格将使用的<code>时间步长</code>的值。因为三角形周围的每个<code>单元(cell)</code>都有一个<code>最大的稳定显性时间步长</code>，模型将使用其中<code>最小时间步长</code>。这个<code>最小时间步长</code>对于每个方向和每个频率都是不同的。在实践中，我们在这里重新计算<code>最低频率的最小值</code>。</p>
+<p>要做到这一点，打开<code>MESH</code>工具箱，在<code>Mesh and timesteps</code>部分选择<code>Update model timesteps</code>：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108191531.png" alt=" Mesh 工具箱 "></p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108191909.png" alt="在Mesh and timesteps部分选择Update model timesteps" style="zoom:70%;">
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108192109.png" alt="选择Update model timesteps后，终端的更新输出：前100，结点及其对应的最小时间步长"></p>
+<p>为了帮助你直观地了解这些<code>Nodes</code>的位置，你可以点击<code>Refresh</code>来获得新的图像：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108192808.png"></p>
+<p>随着<code>最小时间步长</code>的减少，<code>结点的方块标志</code>颜色由冷转暖，除了<code>真正的最小的时间步长</code> 的<code>结点的方块标志</code>，它在这里以蓝色出现，为了从<code>暖色方块标志</code>中突出显示。当你放大在<code>13.13s</code>时间步长（即<code>真正的最小的时间步长</code>）下的<code>带有蓝色方块标志的结点</code>时，你会看到，该节点是一个有4个<code>neighbors</code>的节点，而这是一个典型的<code>问题结点</code>：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108200557.png"></p>
+<p>搜索网格并移除4个<code>neighbors</code>的节点（即<code>问题节点</code>），是我们创建这一个工具的目的。在<code>MESH</code>工具箱中，选择<code>Work on mesh</code>中的<code>Remove all nodes with 4 neighbors</code>，<code>Refresh</code>后，<code>带有蓝色方块标志的结点</code>被移除了，如果你这样再选择一次，<code>带有红色方块标志的结点</code>也会被移除。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108204530.png" alt="选择1次 Remove all nodes with 4 neighbors 后，Refresh"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108204717.png" alt="再选1次 Remove all nodes with 4 neighbors 后，Refresh"></p>
+<p>现在选择<code>Update model timesteps</code>，<code>真正的最小时间步长</code>变成了<code>16.94s</code>，放大在该时间步长下的<code>带有蓝色方块标志的结点</code>。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108210241.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108210344.png" alt="选择Update model timesteps后，终端的更新输出：前100，结点及其对应的最小时间步长"></p>
+<p>正如你所看到的，这个<code>结点</code>周围的三角形有点<code>扁平(flat)</code>。你可以通过<code>手动移动结点</code>来改善网格：在<code>Mesh Editor</code>中点击 <code>Move GPs</code>，然后在<code>主窗口</code>中拖动相邻的结点。这可以使得<code>结点的方块标志颜色</code>变成其它颜色，甚至在结点掉出<code>前100个结点</code>的时候让标志消失。当你的网格将在一个运行系统<code>数年中每天运行时</code>，可以努力实现网格的调整。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108221458.png"></p>
 <blockquote>
-<p><code>MESH</code> 是什么？？？需要看<code>Polymesh</code>教程</p>
+<p>移动结点的时候要特别注意，貌似没有撤销的操作。</p>
 </blockquote>
+<h2 id="用TWIST保存网格文件"><a href="#用TWIST保存网格文件" class="headerlink" title="用TWIST保存网格文件"></a>用TWIST保存网格文件</h2><p>最后你应该保存一个<code>*.msh</code>文件（选择<code>MESH工具</code>中的<code>Save file</code>）。<br>一个例子是<code> sorted_v2.msh</code>。</p>
+<hr>
+<h2 id="额外练习1：POLYMESH-use-and-tricks-guide-pdf"><a href="#额外练习1：POLYMESH-use-and-tricks-guide-pdf" class="headerlink" title="额外练习1：POLYMESH_use_and_tricks_guide.pdf"></a>额外练习1：POLYMESH_use_and_tricks_guide.pdf</h2><p>如果你想知道更多关于如何<code>调整mesh</code>和根据你的需要<code>调整polymesh选项</code>，你可以阅读以下文档文件<code>POLYMESH_use_and_tricks_guide.pdf</code>。在<code>$WAVE_DATA/MESH_EDIT/</code>中提供了<code>pdf</code>和例子。</p>
+<h2 id="额外练习2：xfn图形工具"><a href="#额外练习2：xfn图形工具" class="headerlink" title="额外练习2：xfn图形工具"></a>额外练习2：xfn图形工具</h2><p><code>xfn图形工具</code>可以用来对网格做同样的操作。它应该输出一个文件<code>final.dat</code>，它将取代<code>polymesh</code>中的<code>xyz.dat</code>。</p>
+<p>复制<code>exe文件</code>，正确设置环境并运行<code>xfn工具</code>： </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> ~/POLYMESH/xf/* ~/bin/
+<span class="token function">chmod</span> <span class="token number">755</span> ~/bin/*
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">TICAD_DEFAULTS</span><span class="token operator">=</span><span class="token environment constant">$HOME</span>/bin/
+xfnn final<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>要用<code>xfn中的等高线文件(contour file)</code>运行<code>polymesh</code>，你需要编辑<code>Meshin.nml </code>:</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;GENERAL
+ LXYZ = F
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>然后运行<code>polymesh</code>，它将读取<code>rand.dat</code>、<code>insel.dat</code>和<code>final.dat</code>。</p>
 
                 
             </div>
@@ -1013,7 +1049,7 @@ idl -rt<span class="token operator">=</span>rt_visumain.sav<span aria-hidden="tr
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">235.3k</span>
+                        class="white-color">236.8k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

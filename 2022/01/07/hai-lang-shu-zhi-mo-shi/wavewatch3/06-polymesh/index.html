@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-07
+                    2022-01-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    3.9k
+                    4.2k
                 </div>
                 
 
@@ -497,9 +497,66 @@
 <li><code>polygon.dat</code> (如果你想细化一个特殊区域的多边形) </li>
 </ul>
 <p>所有这些输入文件都有一个特殊的格式，在运行<code>PolyMesh</code>之前，应在<code>附录A</code>中详细确认。必须提供正确的格式，否则<code>PolyMesh</code>会中止。</p>
-<h3 id="输入参数"><a href="#输入参数" class="headerlink" title="输入参数"></a>输入参数</h3><p>第二步，为了得到最好的结果，必须在 <code>meshin.nml</code>文件中正确定义<code>triangulation</code>的输入参数。<code>PolyMesh</code>会从这个文件中读取所有必要的输入参数。只能在你的命令提示符下编辑它并设置你的标准，否则<code>PolyMesh</code>将使用默认参数。在<code>附录C 42</code>中附有一个完整描述的输入文件。</p>
+<blockquote>
+<p><code>POLYMESH_use_and_tricks_guide.pdf</code>貌似包含<code>polymesh</code>的输入文件创建。</p>
+</blockquote>
+<h4 id="xyz-dat（xf格式）"><a href="#xyz-dat（xf格式）" class="headerlink" title="xyz.dat（xf格式）"></a>xyz.dat（xf格式）</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108154708.png" alt="附录A-xyz.dat（xf格式）-水深数据"></p>
+<blockquote>
+<ul>
+<li><code>Randknoten</code> 是 <code>Boundarynodes</code>，                         即边界点；</li>
+<li><code>Gebietsknoten</code>是<code>Areanodes</code>，                             即区域（内）点；</li>
+<li><code>x-Koord.</code>是<code>lon</code>，                                                    即经度；</li>
+<li><code>y-Koord.</code>是<code>lat</code>，                                                    即纬度；</li>
+<li><code>Skalarwert</code>是<code>measurementvalue</code>，                     即对应坐标系下的测量水深；</li>
+<li><code>Anzahl der Elemente</code>是<code>Number of Elements</code> ，即<code>Element</code>的数量；</li>
+<li><code>Knoten</code>是<code>Notes</code>，                                                    即点；</li>
+</ul>
+</blockquote>
+<h4 id="xyz-dat（xyz格式）"><a href="#xyz-dat（xyz格式）" class="headerlink" title="xyz.dat（xyz格式）"></a>xyz.dat（xyz格式）</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108155731.png" alt="附录A-xyz.dat（xyz格式）-水深数据"></p>
+<blockquote>
+<ul>
+<li>第一行：<code>6</code>表示有6个水深数据点；</li>
+<li>数据形式为(x,y,z)：<code>(lon,lat,measurement)</code></li>
+</ul>
+</blockquote>
+<h4 id="xyz-dat文件创建–待实现"><a href="#xyz-dat文件创建–待实现" class="headerlink" title="xyz.dat文件创建–待实现"></a>xyz.dat文件创建–待实现</h4><ol>
+<li><p>获取全球水深数据文件，例如<code>ETOPO1</code>和<code>ETOPO2</code>等，可用水深数据集在<a href="https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-gridgen-wang-ge-sheng-cheng/#toc-heading-8">GRIDGEN教程</a>中有链接，<code>GRIDGEN</code>教程包含<code>ETOPO1</code>和<code>ETOPO2</code>；</p>
+</li>
+<li><p>用<code>MATLAB</code>或<code>PYTHON</code>提取所需数据，输出生成<code>xyz.dat</code>文件</p>
+<blockquote>
+<p>具体程序待制作上传；</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="insel-dat-polygon-dat-struct-dat"><a href="#insel-dat-polygon-dat-struct-dat" class="headerlink" title="insel.dat / polygon.dat / struct.dat"></a>insel.dat / polygon.dat / struct.dat</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108160117.png" alt="附录A-insel.dat/polygon.dat/struct.dat-岛屿数据/多边形数据/结构数据"></p>
+<blockquote>
+<ul>
+<li>第一行：注释行 - 第一个字符必须是<code>C</code>或<code>c</code>，后面是一个<code>字符串（名称）</code>。</li>
+<li>数据形式为 <code>(标号,经度,纬度,测量值)</code></li>
+<li>数据集必须以<code>-1</code>关闭；</li>
+<li>文件必须包含至少1个<code>岛屿(island)</code>或<code>多边形(polygon)</code>，其中每组数据集至少有2个以上测量值。</li>
+</ul>
+</blockquote>
+<h4 id="rand-dat"><a href="#rand-dat" class="headerlink" title="rand.dat"></a>rand.dat</h4><p>与<code>insel.dat</code>等文件格式相同，但只包含一组测量数据。</p>
+<h4 id="insel-dat-polygon-dat-struct-dat-rand-dat-文件创建–待实现"><a href="#insel-dat-polygon-dat-struct-dat-rand-dat-文件创建–待实现" class="headerlink" title="insel.dat / polygon.dat / struct.dat / rand.dat 文件创建–待实现"></a>insel.dat / polygon.dat / struct.dat / rand.dat 文件创建–待实现</h4><p>输入文件可用 <a target="_blank" rel="noopener" href="https://developers.google.com/kml/documentation/kml_tut#polygons">Google-Earth kml</a> polygon 形式提供。</p>
+<blockquote>
+<p><a href="https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/">INOUT教程</a> 提供了 <code>google-earth</code> 在 <code>ubuntu</code> 上的下载安装。</p>
+</blockquote>
+<p>名单变量<code>IBOUNDFORMAT</code>必须设置为1。</p>
+<blockquote>
+<p><code>IBOUNDFORMAT</code> 是哪里的名单变量？</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108170134.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108170245.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108170316.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108170342.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108170411.png"></p>
+<h3 id="输入参数"><a href="#输入参数" class="headerlink" title="输入参数"></a>输入参数</h3><p>为了得到最好的结果，必须在 <code>meshin.nml</code>文件中正确定义<code>triangulation</code>的输入参数。<code>PolyMesh</code>会从这个文件中读取所有必要的输入参数。只能在你的命令提示符下编辑它并设置你的标准，否则<code>PolyMesh</code>将使用默认参数。在<code>附录C 42</code>中附有一个完整描述的输入文件。</p>
 <p>或者使用编辑器<code>kater-Toolbox</code>作为图形界面。只要用<code>ToolBox</code>启动<code>kater-Toolbox</code>，在下拉菜单中编辑参数。</p>
-<p>为了更好地理解，我们将输入文件分成了不同的部分，这些部分命名是直观的（intuitive）。这些部分是：</p>
+<blockquote>
+<p><code>kater-Toolbox</code>是什么软件？</p>
+</blockquote>
+<p>为了更好地理解，我们将输入文件分成了不同的<code>部分</code>，这些<code>部分</code>命名是直观的（intuitive）。这些<code>部分</code>是：</p>
 <pre class="line-numbers language-none"><code class="language-none"> General 
  Interpolation
  Refinement 
@@ -510,21 +567,28 @@
  Sorting 
  Debug <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>在输入文件每个部分中，你可以区分三种形式的输入参数。</p>
+<p>在输入文件每个<code>部分</code>中，有三种形式的输入参数。</p>
 <ul>
 <li><code>logical switches</code>，用于启用或禁用<code>PolyMesh</code>的某项功能，以 <code>L </code>开头，例如 <code>LISLAND</code>。</li>
-<li>为<code>PolyMesh</code>的代码提供文件名（即输出文件）的<code>字符</code>。</li>
-<li>最后是为测试案例设定值的<code>参数</code>。</li>
+<li><code>字符串</code>，为<code>PolyMesh</code>的代码提供文件名（即输出文件）的。</li>
+<li><code>参数值</code>，为测试案例设定值。</li>
 </ul>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220107210955.png" alt="附录C-42-General部分三种形式的输入参数" style="zoom:70%;">
-
-<p>关于输入参数的详细信息，见<code>附录C 42</code>。</p>
+<h4 id="GENERAL"><a href="#GENERAL" class="headerlink" title="GENERAL"></a>GENERAL</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/%E7%BB%98%E5%9B%BE1.png" alt="`附录C-42-GENERAL 部分`"></p>
+<h4 id="INTERPOLATION"><a href="#INTERPOLATION" class="headerlink" title="INTERPOLATION"></a>INTERPOLATION</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/%E7%BB%98%E5%9B%BE2.png" alt="`附录C-42-INTERPOLATION 部分`"></p>
+<h4 id="REFINEMENT"><a href="#REFINEMENT" class="headerlink" title="REFINEMENT"></a>REFINEMENT</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108115332.png" alt="附录C-42-REFINEMENT 部分"></p>
+<h4 id="TRIANGLEOPTIONS"><a href="#TRIANGLEOPTIONS" class="headerlink" title="TRIANGLEOPTIONS"></a>TRIANGLEOPTIONS</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108115435.png"></p>
+<h4 id="SMOOTH"><a href="#SMOOTH" class="headerlink" title="SMOOTH"></a>SMOOTH</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108115514.png"></p>
+<h4 id="COARSENING"><a href="#COARSENING" class="headerlink" title="COARSENING"></a>COARSENING</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108115543.png"></p>
+<h4 id="REGMESH"><a href="#REGMESH" class="headerlink" title="REGMESH"></a>REGMESH</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/%E7%BB%98%E5%9B%BE4.png"></p>
+<h4 id="SORTING"><a href="#SORTING" class="headerlink" title="SORTING"></a>SORTING</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108115856.png"></p>
+<h4 id="RIVER"><a href="#RIVER" class="headerlink" title="RIVER"></a>RIVER</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220108115928.png"></p>
+<h4 id="DEBUG"><a href="#DEBUG" class="headerlink" title="DEBUG"></a>DEBUG</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/%E7%BB%98%E5%9B%BE5.png"></p>
 <h3 id="输出文件"><a href="#输出文件" class="headerlink" title="输出文件"></a>输出文件</h3><p><code>PolyMesh</code>能够以四种不同的文件格式写出结果：</p>
 <ul>
-<li>XFN</li>
-<li>TRIANGLE </li>
-<li>GR3 </li>
-<li>MSH </li>
+<li><code>XFN</code></li>
+<li><code>TRIANGLE</code> </li>
+<li><code>GR3</code> </li>
+<li><code>MSH</code> </li>
 </ul>
 <p>要改变输出格式，请编辑输入文件 <code>meshin.nml</code>，并进入<code>General</code>部分。这里你可以改变变量 <code>OUTPUTFORMAT</code>。<br>额外的描述位于完全推荐的 <code>meshin_example.nml</code> 文件中（<code>/polymesh/manual/meshin_example.nml</code>）。</p>
 <h3 id="第一次运行"><a href="#第一次运行" class="headerlink" title="第一次运行"></a>第一次运行</h3><p>要运行<code>PolyMesh</code>，请在你的<code>本地测试案例文件夹</code>中输入 <code>polymesh</code>，这个文件夹包含了从<code>档案中</code>提取的输入文件。在<code>PolyMesh</code>中运行的过程如下：</p>
@@ -545,7 +609,10 @@
 <h3 id="Example-1-–-HISWA"><a href="#Example-1-–-HISWA" class="headerlink" title="Example 1 – HISWA"></a>Example 1 – HISWA</h3><p>在这个例子中，你可以按照步骤，学习如何使用<code>PolyMesh</code>。只需阅读这些章节，最后<strong>尝试制作你自己的网格</strong>。</p>
 <h4 id="定义边界，水深数据"><a href="#定义边界，水深数据" class="headerlink" title="定义边界，水深数据"></a>定义边界，水深数据</h4><p>使用<code>PolyMesh</code>生成网格的第一步是加载水深数据库。水深文件的主文件名可以在输入文件中设置。水深文件<code>xyz.dat</code>的变量被称为 <code>Depthfile</code>。在接下来的步骤中，<code>PolyMesh</code>会自动读取这些数据，因为水深总是被启用的。</p>
 <p>此外，<code>PolyMesh</code>需要边界坐标，这也应该存储在一个单独的文件中，否则<code>PolyMesh</code>会中止。默认名称是 <code>rand.dat</code>。你可以在输入文件中设置你喜欢的文件名。如果你已经设置了所有的输入参数，你就可以往前走一步了。</p>
-<h4 id="开始程序，可视化结果"><a href="#开始程序，可视化结果" class="headerlink" title="开始程序，可视化结果"></a>开始程序，可视化结果</h4><p>在你的私人文件夹中下载并解压<code>PolyMesh</code>。如果你需要进一步的帮助，请先阅读<code>第2.1章</code>，以后再继续。</p>
+<blockquote>
+<p><code>xyz.dat</code>和<code>rand.dat</code>文件怎么生成？</p>
+</blockquote>
+<h4 id="开始程序，可视化结果"><a href="#开始程序，可视化结果" class="headerlink" title="开始程序，可视化结果"></a>开始程序，可视化结果</h4><p>在你的<code>私人文件夹</code>中下载并解压<code>PolyMesh</code>。如果你需要进一步的帮助，请先阅读<code>第2.1章</code>，以后再继续。</p>
 <blockquote>
 <p>将编译生成的可执行文件，在<code>程序文件夹</code>，创建软连接</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ln</span> -s /home/jincanliu/bin/* <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1093,7 +1160,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">235.3k</span>
+                        class="white-color">236.8k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
