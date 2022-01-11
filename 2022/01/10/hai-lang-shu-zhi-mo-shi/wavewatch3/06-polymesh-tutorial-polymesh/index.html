@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="06-POLYMESH-TUTORIAL-POLYMESH, Jincan">
+    <meta name="keywords" content="06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE+MESH_RUN, Jincan">
     <meta name="description" content="~~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>06-POLYMESH-TUTORIAL-POLYMESH | Jincan</title>
+    <title>06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE+MESH_RUN | Jincan</title>
     <link rel="icon" type="image/png" href="/favicon_hua.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -234,7 +234,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">06-POLYMESH-TUTORIAL-POLYMESH</h1>
+                    <h1 class="description center-align post-title">06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE+MESH_RUN</h1>
                 </div>
             </div>
         </div>
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-10
+                    2022-01-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.4k
+                    6k
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="06-POLYMESH-TUTORIAL-POLYMESH-POLOGON-CREATE"><a href="#06-POLYMESH-TUTORIAL-POLYMESH-POLOGON-CREATE" class="headerlink" title="06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE"></a><center>06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE</center></h1><h2 id="POLYMESH参考资料"><a href="#POLYMESH参考资料" class="headerlink" title="POLYMESH参考资料"></a>POLYMESH参考资料</h2><p><code>wave-workshop-exercise-polymesh.pdf</code>；</p>
+                <h1 id="06-POLYMESH-TUTORIAL-POLYMESH-POLOGON-CREATE-MESH-RUN"><a href="#06-POLYMESH-TUTORIAL-POLYMESH-POLOGON-CREATE-MESH-RUN" class="headerlink" title="06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE+MESH_RUN"></a><center>06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE+MESH_RUN</center></h1><h2 id="POLYMESH参考资料"><a href="#POLYMESH参考资料" class="headerlink" title="POLYMESH参考资料"></a>POLYMESH参考资料</h2><p><code>wave-workshop-exercise-polymesh.pdf</code>；</p>
 <blockquote>
 <ul>
 <li>是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL_POLYMESH</code> 里面的内容；<br><code>TUTORIALS</code> 目录的链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1S4qGSGGyJizdSAeFIerewA">https://pan.baidu.com/s/1S4qGSGGyJizdSAeFIerewA</a>  密码: jpi1</li>
@@ -652,7 +652,247 @@ idl -rt<span class="token operator">=</span>/home/jincanliu/BaiduNetdiskWorkspac
 </ul>
 </blockquote>
 <p>技巧提示：如果你想把一个<code>多边形一分为二</code>，你首先需要知道地图上的结点号（#nb），它应该是新多边形的起点，然后打开网格编辑器，在表格中定义这个结点的轮廓值为-1。</p>
+<h2 id="———————————————-1"><a href="#———————————————-1" class="headerlink" title="———————————————-"></a>———————————————-</h2><h2 id="MESH-RUN参考资料"><a href="#MESH-RUN参考资料" class="headerlink" title="MESH_RUN参考资料"></a>MESH_RUN参考资料</h2><p><code>wave-workshop-exercise-mesh-run.pdf</code>；</p>
+<blockquote>
+<ul>
+<li>是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL_MESH_RUN</code> 里面的内容；<br><code>TUTORIALS</code> 目录的链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1S4qGSGGyJizdSAeFIerewA">https://pan.baidu.com/s/1S4qGSGGyJizdSAeFIerewA</a>  密码: jpi1</li>
+<li>TUTORIAL 是会更新的，关于 <strong>2019</strong> 版本的； </li>
+</ul>
+</blockquote>
+<h2 id="MESH-RUN内容"><a href="#MESH-RUN内容" class="headerlink" title="MESH_RUN内容"></a>MESH_RUN内容</h2><p>在这个教程练习中，我们将使用<code>WW3</code>的非结构化网格模式构建一个<code>后报模拟 handcast simulation</code>。涵盖的主题是<code>非结构化网格的生成</code>和<code>非结构化模型运行</code>的设置，包括沿海应用的<code>近海波浪边界条件</code>的指定。</p>
+<h2 id="MESH-RUN工作目录"><a href="#MESH-RUN工作目录" class="headerlink" title="MESH_RUN工作目录"></a>MESH_RUN工作目录</h2><p>创建一个 MESH_RUN 工作目录，假如为 <code>work-mesh-run</code> ，在目录下打开终端，输入以下命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span>   -r   <span class="token variable">$COURS</span>/WAVES-SHORT-COURSE/TUTORIALS/TUTORIAL_MESH_RUN   <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<p>现在可以进 <code>./TUTORIAL_POLYMESH</code>，在<code>data</code>文件夹可以发现如下文件：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111114650.png" style="zoom:60%;">
+
+<blockquote>
+<ul>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111114851.png"></li>
+</ul>
+</blockquote>
+<h2 id="非结构网格的定义-MATLAB可视化msh文件和nc文件（附录）"><a href="#非结构网格的定义-MATLAB可视化msh文件和nc文件（附录）" class="headerlink" title="非结构网格的定义+MATLAB可视化msh文件和nc文件（附录）"></a>非结构网格的定义+MATLAB可视化msh文件和nc文件（附录）</h2><p>这个模型配置相对于常规网格选项的主要区别在于非结构化网格文件<code>*.msh</code>的存在。由于这种网格没有像常规网格那样的规则结构，因此需要明确定义<code>网格点（称为结点 nodes）</code>和它们的<code>连接（称为元素 elements）</code>。<code>WW3</code>使用的非结构化网格由三角形元素组成，但一般来说，非结构化网格也可以采用四边形、五边形、六边形等<code>元素</code>。</p>
+<p>构建一个好的非结构化网格是一个耗时的过程，我们在这里只讨论一般原则。目前有很多网格生成程序可以用来构建网格，有的是相对简单的开源系统，如<a target="_blank" rel="noopener" href="http://geuz.org/gmsh">Gmsh</a>、<a target="_blank" rel="noopener" href="http://www-2.cs.cmu.edu/~quake/triangle.html">Triangle</a>、<a target="_blank" rel="noopener" href="http://www-nml.dartmouth.edu/Publications/internal_reports/NML-03-15">BatTri</a>，有的是更复杂的专有软件，如<a target="_blank" rel="noopener" href="http://www.aquaveo.com/sms">SMS</a>。</p>
+<blockquote>
+<ul>
+<li>目前只学了基于<code>Triangle</code>的<code>polymehs</code>，貌似<code>趋势分析那篇文章</code>用的是<code>SMS</code>；</li>
+<li>都提供了相关网站，可以学习；</li>
+</ul>
+</blockquote>
+<p><code>WW3</code>被设计成可以使用<code>Gmsh</code>程序产生的网格格式，该程序是根据<code>GNU</code>通用公共许可证（<code>General Public License, GPL</code>）的条款发布的。请参阅所附的<code>gmsh_manual.pdf</code>。</p>
+<blockquote>
+<ul>
+<li>不知道附在了哪里…</li>
+</ul>
+</blockquote>
+<p><strong>图1</strong>展示了一个夏威夷群岛的非结构化网格。你可以通过运行<code>Matlab</code>函数<code>plot_gmsh.m</code>来制作这个图片（如需说明，请输入<code>help plot_gmsh</code>）。这个网格通过减少岛屿区域的<code>网格元素尺寸 grid element sizes</code>，准确地将岛屿包含在这个开放的海洋领域中。 使用<code>Matlab</code>的<code>缩放工具 zoom tool</code>来探索沿着岛屿海岸线不断提高的分辨率。</p>
+<table>   
+    <tbody><tr> <td><center><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111115942.png" style="zoom:67%;"></center></td> </tr>  <tr> <td><center><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111160959.png" style="zoom:47%;"></center></td> </tr> </tbody></table><blockquote>
+<ul>
+<li><p><code>&lt;table&gt;</code>标签设置的附加属性<code>boarder="1"</code>、<code>align="center"</code>、<code>width="400"</code>，无法应用在<code>hexo</code>，导致无法使图片在<code>html</code>中居中。</p>
+</li>
+<li><p><code>plot_gmsh</code>的输入参数是<code>msh</code>文件，为了能在其它文件夹使用此函数，需要把包含此文件的目录添加到<code>MATLAB</code>环境变量。</p>
+</li>
+<li><p><code>plot_gmsh('hawaii_v5')</code>，其中<code>hawaii_v5</code>为<code>TUTORIAL_MESH_RUN/data</code>中的<code>hawaii_v5.msh</code>文件。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111163902.png" alt=" plot_gmsh('hawaii_v5') 输出结果"></p>
+</li>
+<li><p><code>plot_ounf_unstr</code></p>
+</li>
+</ul>
+</blockquote><p>生成网格的步骤：</p><ol>
+<li><p>第一步是指定陆地和公海的边界（多边形），由<strong>图1</strong>中<code>蓝色的结点</code>表示。这些陆地边界的数据可以在NOAA的<code>国家地球物理资料中心（NGDC）</code>获得（<a target="_blank" rel="noopener" href="http://www.ngdc.noaa.gov/mgg/shorelines/shorelines.html%EF%BC%8C%E4%B9%9F%E5%8F%AF%E5%8F%82%E8%A7%81%60gridgen%E6%95%99%E7%A8%8B%60%EF%BC%89%E3%80%82">http://www.ngdc.noaa.gov/mgg/shorelines/shorelines.html，也可参见`gridgen教程`）。</a><font color="red">网站进不去，可能更换了路径</font></p>
+</li>
+<li><p>接下来，指定哪些多边形区域应该建立网格（<code>湿润区域 wet areas</code>），哪些多边形区域应该被省略（<code>干地 dry land</code>，例如本例中的岛屿）。</p>
+</li>
+<li><p>有了这些信息，<code>自动网格生成算法</code>可以构建一个由这些边界多边形上的结点约束的基本非结构化网格。</p>
+<blockquote>
+<ul>
+<li><p>我们通常希望网格能够处理<code>solution（如波高、周期、方向）</code>中的相关<code>空间梯度 spatial gradients</code>。因此，<code>solution</code>逐渐变化的近海<code>元素</code>通常很大，而靠近海岸的浅水区域的<code>元素</code>越来越小。创建这种网格的最简单的方法–这里采用的方法–是沿<code>近海 offshore</code>多边形指定相对大的<code>结点之间的增量</code>（这里是0.25<code>角度 arc-deg</code>），沿<code>海岸 coastal</code>多边形指定相对小的增量（这里是~20<code>角秒 arc-sec</code>）。</p>
+<p><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/110218327.html">1arc-deg=60 arc-min=3600 arc-sec；1°=60′=3600″ </a></p>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>然而，简单地沿边界多边形约束网格<code>元素</code>并不总是能在所有感兴趣的区域提供足够的分辨率。因此，在大多数网格生成工具中，用户还可以指定一个所谓的<code>形状函数 shape function</code>，这是一个影响自动网格生成过程中<code>元素</code>大小分配的空间场。通常情况下，水深测量数据被用作形状函数的基础，因为水深较浅的区域自然需要更高的分辨率。然而，用户也可以构建一个任意的<code>形状函数</code>，将分辨率集中在感兴趣的研究区域。</p>
+</li>
+<li><p>一旦建立了非结构化的网格，就有必要检查网格的<code>质量</code>。通常情况下，应该避免<code>元素</code>大小的突然变化、小角度和每个结点超过6个连接（马车车轮）的情况。许多网格生成器都有可视化这些网格质量的功能。</p>
+</li>
+<li><p>最后一步是将水深测量数据<code>插值</code>到非结构化网格的结点上。</p>
+</li>
+</ol><p>现在花点时间研究一下<code>hawaii_v5.msh</code>网格文件的结构（见<code>Gmsh手册第九章</code>）。该文件包括三个部分，即<code>Meshformat</code>、<code>Nodes</code>和<code>Elements</code>部分，每部分都有标签<code>$[Section]</code>和<code>End[Section]</code>。</p><ul>
+<li><p><code>Meshformat</code>部分包含了版本号、文件类型和数据大小的信息（三个数字，之间并不相关）：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111172900.png" style="zoom:70%;"></li>
+<li><p><code>Nodes</code>部分从结点（网格点）的总数开始，然后列出每个结点的细节，即其<code>索引 index</code>、经度（x）、纬度（y）和<code>海拔 elevation</code>：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111173015.png" style="zoom:70%;"></li>
+<li><p><code>Elements 元素</code>部分提供了关于这些结点的连接信息，描述了<code>网格元素</code>和边界位置。这一部分的第一个数字是<code>元素</code>的总数，接着是所有<code>元素</code>的列表和它们的特征。其中包括：</p>
+<ul>
+<li><p><code>元素索引</code></p>
+</li>
+<li><p><code>元素类型</code>（<strong>2</strong>：3结点三角形；<strong>15</strong>：1结点，用于描述边界点）</p>
+</li>
+<li><p>描述该元素的<code>标签 tag</code>总数</p>
+<blockquote>
+<p>元素指的是三角形，<code>tag</code>指的是什么？</p>
+</blockquote>
+</li>
+<li><p>这些<code>标签</code>的列表（例如用于指定沿给定网格边缘的边界条件）</p>
+</li>
+<li><p>以及形成<code>元素角落点 corner points of the element</code>的结点索引列表（=3为三角形元素；=1为边界点）。</p>
+</li>
+</ul>
+<p>边界点（<strong>15型</strong>元素）已经在上面的<strong>图1</strong>中用蓝点表示。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111173317.png" style="zoom:70%;"></li>
+</ul><hr><h2 id="EX：运行非结构化网格模型"><a href="#EX：运行非结构化网格模型" class="headerlink" title="EX：运行非结构化网格模型"></a>EX：运行非结构化网格模型</h2><p>下面几节将详细介绍其余输入文件的设置、非结构化模型的执行和输出的显示。</p><h3 id="ww3编译生成exe文件夹"><a href="#ww3编译生成exe文件夹" class="headerlink" title="ww3编译生成exe文件夹"></a>ww3编译生成exe文件夹</h3><p>复制已经生成的exe文件夹：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ./TUTORIAL_MESH_RUN
+<span class="token function">mkdir</span> work <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> work
+<span class="token function">cp</span> -r <span class="token punctuation">..</span>/data/* <span class="token builtin class-name">.</span>
+
+<span class="token comment">#	在`ftp网站`中的`DATARMOR`有`已编译的exe文件夹`，</span>
+<span class="token comment">#	即` $WAVE_DATA/EXE/exe_Ifremer2_datarmor_mpt`，</span>
+<span class="token comment">#	将其中所有`ww3_`文件复制进`work-mesh-run/TUTORIAL_MESH_RUN`的`work`目录</span>
+<span class="token function">cp</span> <span class="token variable">$WAVE_DATA</span>/EXE/exe_Ifremer2_datarmor_mpt/ww3_* <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果想自己编译生成exe文件夹，需运行以下代码：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	$WW3	说明是在ftp网站中的文件夹；</span>
+<span class="token builtin class-name">cd</span> <span class="token variable">$WW3</span>/bin
+
+./w3_clean
+
+<span class="token comment">##	&lt;comp&gt;	需要自己选择一个；</span>
+./w3_setup <span class="token punctuation">..</span> -c <span class="token operator">&lt;</span>comp<span class="token operator">&gt;</span> -s Ifremer2 -q
+./w3_automake<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote>
+<ul>
+<li>非结构化模式都是建立在<code>PR3</code>开关下的，应该包含在开关文件中。该模型现在已经准备好处理非结构化网格文件。在接下来的章节中，我们将逐步介绍每个子程序的输入要求。</li>
+</ul>
+</blockquote><h3 id="ww3-grid（定义网格，网格预处理）"><a href="#ww3-grid（定义网格，网格预处理）" class="headerlink" title="ww3.grid（定义网格，网格预处理）"></a>ww3.grid（定义网格，网格预处理）</h3><ol>
+<li><p>像往常一样，第一个要执行的WW3子程序是<code>ww3_grid</code>。对于非结构化模式，需要在输入文件<code>namelists_HAWAII.nml</code>中指定关于空间传播、计算网格等的某些选项。首先，在<code>namelists</code>部分，必须包括以下一行来表示非结构化网格模式和空间传播的选择：</p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;UNST UGOBCAUTO = F, EXPFSN = T /<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<ul>
+<li><p>上面的第二个关键词<code>EXPFSN</code>指定了将被应用于非结构化网格的空间传播。用户可以选择显式方案（带有CFL约束，类似于默认的WW3）或者隐式方案，后者是无条件稳定的（类似于SWAN模型中使用的方案）。后一种方案是在海岸网元素非常小的情况下的一种实用方案，否则会严重限制空间传播的CFL时间步长。这些选项如下：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111194652.png" style="zoom:50%;"></li>
+</ul>
+</blockquote>
+</li>
+<li><p>在<code>ww3_grid.nml</code>中，定义计算网格的名单列表<code>&amp;GRID_NML</code>。指定计算网格类型（<code>UNST</code>表示非结构化），网格坐标<code>约定 convention</code>的标志（<code>SPHE</code>=球面长/宽），周期性网格的标志（<code>NONE</code>=非周期性），极限底深<code>ZLIM</code>（m）和最小水深<code>DMIN</code>（m）的信息。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111195114.png" style="zoom:50%;"></li>
+<li><p>随后，在名单列表 <code>&amp;UNST_NML</code>中提供网格定义，所需的参数比常规网格少，因为网格定义是在网格文件<code>*.msh</code>中提供的。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111195638.png" style="zoom:55%;"></li>
+<li><p>下一步是指定在哪些结点上应用边界条件（边界条件的实际指定将在下面<code>第3.3节</code>讨论）。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111200717.png" style="zoom:55%;">
+
+<blockquote>
+<ul>
+<li>边界条件的应用是很有用的，因为非结构化的网格域往往是一个有限区域沿海域的<code>巢穴 nest</code>，其边界条件由<code>更大区域的WW3</code>运行提供，或来自浮标观测（如果是后报）。</li>
+<li>每一行包含活动点的离散网格计数器（IX,IY）和一个连接标志。如果这个标志为<code>T</code>，并且<font color="red">现在和以前的点都在一条网格线或对角线上（什么意思？）</font>，所有的中间点也被定义为边界点。在非结构化模式下，只需要提供<code>边界结点</code>的<code>单结点索引</code>，并与网格计数器IX一起指定（IY计数器被设置为1并被忽略）。边界结点索引可以在上面<code>第2.1节</code>讨论的<code>*.msh</code>文件中找到，通常与网格生成过程开始时指定的开放海洋多边形相对应。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>这样就完成了对输入文件的调整。现在运行<code>网格预处理</code>程序。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_grid <span class="token operator">|</span> <span class="token function">tee</span> ww3_grid.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<ul>
+<li>通常的二进制mod_def.ww3模型定义文件将被创建为输出。</li>
+</ul>
+</blockquote>
+</li>
+</ol><h3 id="ww3-bounc（边界条件预处理）"><a href="#ww3-bounc（边界条件预处理）" class="headerlink" title="ww3.bounc（边界条件预处理）"></a>ww3.bounc（边界条件预处理）</h3><p>由于非结构化的模型运行通常会集中在<code>沿海地区</code>，因此需要应用<code>近海波浪边界</code>。</p><ol>
+<li><blockquote>
+<ul>
+<li><p>边界条件的应用是很有用的，因为非结构化的网格域往往是一个有限区域沿海域的<code>巢穴 nest</code>，其边界条件由<code>更大区域的WW3</code>运行提供，或来自浮标观测（如果是后报）。</p>
+</li>
+<li><p>边界条件可以由<code>前面的更大域WW3</code>运行生成，打包成嵌套文件<code>nest.ww3</code>；也可以由任意波谱（模型或观测）编译，同样打包成<code>nest.ww3</code>文件格式。</p>
+<p><font color="red">我们在这里说的边界条件到底是什么？海岸线 No，我觉得是目标海域与开放海域的边界，即需考虑开放海域对目标海域的影响，这个在INOUT教程中也有介绍。</font></p>
+</li>
+</ul>
+</blockquote>
+<p>这里我们将讨论使用预处理程序<code>ww3_bounc</code>产生后一种形式的边界条件输入的程序。用户指令在文件<code>ww3_bounc.nml</code>中给出，见下面的例子。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111202234.png" style="zoom:80%;">
+
+<blockquote>
+<ul>
+<li>边界条件数据可能是空间上的变化（以及时间上的变化），但通常不会在每个边界点明确指定。因此我们可以选择指定最近的指定边界值（选项1），或者在指定值之间插值（选项2）。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>接下来，<code>包含实际边界数据的二维谱文件</code>的文件名被列在一个外部文件<code>spec.list</code>中。这些边界条件文件的格式与任何二维WW3谱系文件相同。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111202712.png" alt="spec.list" style="zoom:80%;">
+
+<p>这里我们应用<strong>图2</strong>所示的边界数据。<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111202601.png"></p>
+<p>为了使边界条件有效，这个地理位置应该与<code>*.msh文件</code>（第2.1节）中的一个<code>边界位置</code>相吻合，并列在<code>ww3_grid.nml</code>文件（第3.2节）中。</p>
+<blockquote>
+<ul>
+<li><font color="red">*.msh文件的一个边界位置，指的是其中一个文件吗？吻合，指的是怎么吻合？</font></li>
+</ul>
+</blockquote>
+<p><code>边界条件</code>至少应该在每个边界段或边的起点和终点指定（目前的例子），但也可以给出中间点。所有介于两者之间的<code>活动边界点</code>都要根据上面选择的<code>插值选项</code>1或2来分配数值。</p>
+</li>
+<li><p>运行边界条件预处理程序：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_bounc <span class="token operator">|</span> <span class="token function">tee</span> ww3_bounc.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<ul>
+<li>边界条件预处理器通过输入运行，产生边界条件文件nest.ww3。</li>
+</ul>
+</blockquote>
+</li>
+</ol><h3 id="ww3-prnc（强迫场预处理）"><a href="#ww3-prnc（强迫场预处理）" class="headerlink" title="ww3.prnc（强迫场预处理）"></a>ww3.prnc（强迫场预处理）</h3><p>风力强迫场由<code>预处理器</code>在非结构化网格上通过键入</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_prnc <span class="token operator">|</span> <span class="token function">tee</span> ww3_prnc.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>产生边界条件文件<code>wind.ww3</code>进行插值。</p><blockquote>
+<ul>
+<li>请注意，如果你在完全相同的非结构化网格上有一个强迫场，你可以通过激活标志<code>ASIS</code>而不是<code>LATLON</code>，并将经度设置为<code>'node'</code>，纬度设置为<code>"</code>来使用它作为强迫。</li>
+</ul>
+</blockquote><h3 id="ww3-shel（运行模型，MPI）"><a href="#ww3-shel（运行模型，MPI）" class="headerlink" title="ww3.shel（运行模型，MPI）"></a>ww3.shel（运行模型，MPI）</h3><ol>
+<li><p>为了启用非结构化模式，对主模型子程序<code>ww3_shel</code>没有具体的改动。看看名单列表文件<code>ww3_shel.nml</code>的内容。注意包括<code>输入强迫场</code>和一些<code>波浪参数的场输出</code>请求：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111212305.png" style="zoom:67%;"></li>
+<li><p>要运行主模型子程序，输入：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">qsub job_shel.pbs
+qstat -u <span class="token environment constant">$USER</span> <span class="token punctuation">(</span>to check <span class="token keyword">if</span> your job is still running<span class="token punctuation">)</span>
+gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p> 正如预期的那样，二进制输出<code>gridded</code>文件<code>out_grd.ww3</code>被创建。</p>
+</li>
+</ol><h3 id="ww3-ounf（场输出后处理）"><a href="#ww3-ounf（场输出后处理）" class="headerlink" title="ww3.ounf（场输出后处理）"></a>ww3.ounf（场输出后处理）</h3><p>将非结构化网格运行的输出打包成一个灵活的<code>NetCDF</code>格式文件是很实用的。这可以通过<code>NetCDF</code>场后处理子程序<code>ww3_ounf</code>来实现。</p><ol>
+<li><p>在名单列表文件<code>ww3_ounf.nml</code>中，设置所需的输出场（与上面<code>ww3_shel.nml</code>中相同）。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111212740.png" style="zoom:67%;"></li>
+<li><p>现在通过键入：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_ounf <span class="token operator">|</span> <span class="token function">tee</span> ww3_ounf.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>来运行后处理程序。</p>
+</li>
+<li><p>这将产生输出文件<code>ww3.200801.nc</code>，可以用<code>IDL</code>进行可视化，放大研究岛屿海岸线的细节（由于没有<code>初始条件</code>，所以在<code>第一个时间步长</code>没有<code>Hs</code>）。</p>
+<blockquote>
+<ul>
+<li><font color="red">什么是第一个时间步长？指的是ww3_grid.nml中的时间步长，哪个呢？</font></li>
+<li>(WW3 NetCDF MAP → WW3 map）。</li>
+</ul>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111213236.png"></p>
+</li>
+</ol><table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
                 
             </div>
             <hr/>
@@ -893,9 +1133,9 @@ idl -rt<span class="token operator">=</span>/home/jincanliu/BaiduNetdiskWorkspac
                 <a href="/2022/01/10/hai-lang-shu-zhi-mo-shi/wavewatch3/06-polymesh-tutorial-polymesh/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-POLYMESH-TUTORIAL-POLYMESH">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE+MESH_RUN">
                         
-                        <span class="card-title">06-POLYMESH-TUTORIAL-POLYMESH</span>
+                        <span class="card-title">06-POLYMESH-TUTORIAL-POLYMESH+POLOGON_CREATE+MESH_RUN</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1187,7 +1427,7 @@ idl -rt<span class="token operator">=</span>/home/jincanliu/BaiduNetdiskWorkspac
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">245k</span>
+                        class="white-color">249.4k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

@@ -382,14 +382,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.2k
+                    1.3k
                 </div>
                 
 
@@ -435,7 +435,7 @@
 <blockquote>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220102132032.png"></p>
 </blockquote>
-<h3 id="方法二：AutoHotKey-ahk-快捷键变法-Windows"><a href="#方法二：AutoHotKey-ahk-快捷键变法-Windows" class="headerlink" title="方法二：AutoHotKey(.ahk)快捷键变法 (Windows)"></a>方法二：AutoHotKey(.ahk)快捷键变法 (Windows)</h3><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/385854845">https://www.zhihu.com/question/385854845</a>    （typora里面如何快捷改变字体颜色？）（<font color="red">从官方群的朋友得知这一信息位于知乎</font>）</p>
+<h3 id="方法二：AutoHotKey-ahk-快捷键变法-Windows"><a href="#方法二：AutoHotKey-ahk-快捷键变法-Windows" class="headerlink" title="方法二：AutoHotKey(.ahk)快捷键变法 (Windows)"></a>方法二：AutoHotKey(.ahk)快捷键变法 (Windows)</h3><h4 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h4><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/385854845">https://www.zhihu.com/question/385854845</a>    （typora里面如何快捷改变字体颜色？）（<font color="red">从官方群的朋友得知这一信息位于知乎</font>）</p>
 <blockquote>
 <ol>
 <li><p>下载软件：<a target="_blank" rel="noopener" href="https://autohotkey.com/download/ahk-install.exe">AutoHotKey</a></p>
@@ -533,7 +533,7 @@ addFontColor(color){
 ; alt+1 红色
 !1::addFontColor("red")
 
-; alt+1 橙色
+; alt+2 橙色
 !2::addFontColor("orange") 
 
 ; alt+3 黄色
@@ -573,6 +573,17 @@ addFontColor(color){
 </blockquote>
 </li>
 </ol>
+</blockquote>
+<h4 id="表格图片"><a href="#表格图片" class="headerlink" title="表格图片"></a>表格图片</h4><pre class="line-numbers language-ahk" data-language="ahk"><code class="language-ahk">; alt+8 表格图片
+!8::addPicLR()
+addPicLR(){
+    SendInput {TEXT}&lt;table boarder="1"&gt;   &lt;tr&gt; &lt;td &gt;&lt;center&gt;&lt;img src=""&gt;&lt;/center&gt;&lt;/td&gt; &lt;/tr&gt;   &lt;table&gt;
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><code>&lt;tr&gt;</code> 标签定义 HTML 表格中的行。<a target="_blank" rel="noopener" href="https://m.runoob.com/tags/tag-tr.html">https://m.runoob.com/tags/tag-tr.html</a></p>
+<p><code>&lt;td&gt;</code> 标签定义 HTML 表格中的标准单元格。<a target="_blank" rel="noopener" href="https://www.runoob.com/tags/tag-td.html">https://www.runoob.com/tags/tag-td.html</a></p>
 </blockquote>
 
                 
@@ -1112,7 +1123,7 @@ addFontColor(color){
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">245k</span>
+                        class="white-color">249.4k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

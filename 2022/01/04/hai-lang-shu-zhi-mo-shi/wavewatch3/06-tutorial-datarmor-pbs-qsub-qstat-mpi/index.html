@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-04
+                    2022-01-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    753
+                    1.1k
                 </div>
                 
 
@@ -427,8 +427,13 @@
 <p>…</p>
 </blockquote>
 <hr>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本教程练习中，我们将进入<code>cluster datarmor</code>，设置环境并学习如何传输数据和运行 MPI 作业。</p>
-<h2 id="1-如何在-cluster-datarmor-工作（未能理解）"><a href="#1-如何在-cluster-datarmor-工作（未能理解）" class="headerlink" title="1-如何在 cluster datarmor 工作（未能理解）"></a>1-如何在 cluster datarmor 工作（未能理解）</h2><p>首先必须让<code>datarmor</code>环境文件在你的本地机器上工作：</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本教程练习中，我们将进入集群<code>datarmor</code>，设置环境并学习如何传输数据和运行 MPI 作业。</p>
+<blockquote>
+<ul>
+<li><code>datarmor</code>是<code>ifremer</code>中的<code>超级计算机 supercomputer</code>。<code>waverun</code>教程有提到。</li>
+</ul>
+</blockquote>
+<h2 id="1-如何在集群datarmor-工作"><a href="#1-如何在集群datarmor-工作" class="headerlink" title="1-如何在集群datarmor 工作"></a>1-如何在集群datarmor 工作</h2><p>首先必须让<code>datarmor</code>环境文件在你的本地机器上工作：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	保存原先的环境文件</span>
 <span class="token function">cp</span> ~/.bashrc ~/.bashrc.save_20220104
 
@@ -477,7 +482,31 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
 <blockquote>
 <p>home : /home1/datahome/login - 50G with a back up system.<br>work : /home1/datawork/login - 500G with no back up system.<br>scratch : /home1/datascratch/login - 10T with no back up system and 2 weeks of storage lifespan.</p>
 </blockquote>
+<h2 id="2-从datarmor获取数据-输送数据到datarmor"><a href="#2-从datarmor获取数据-输送数据到datarmor" class="headerlink" title="2-从datarmor获取数据+输送数据到datarmor"></a>2-从datarmor获取数据+输送数据到datarmor</h2><h2 id="3-在datarmor运行工作"><a href="#3-在datarmor运行工作" class="headerlink" title="3-在datarmor运行工作"></a>3-在datarmor运行工作</h2><blockquote>
+<ul>
+<li>运行ww3程序不要超过几分钟的时间，如果每个人都这样做，系统将变得非常慢，甚至关闭。当你必须长时间运行代码或使用大量内存时，好的做法是使用<code>qsub</code>工具在<code>计算节点 computation node</code>而不是<code>前端节点 front-end node</code>上运行你的程序。</li>
+</ul>
+</blockquote>
+<p>教程中给出了一个例子：<code>data/job_shel.pbs</code>。要运行这个程序，使用这个命令行：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">qsub -N myShelJob job_shel.pbs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111225640.png" alt="job_shel.pbs" style="zoom:67%;">
+
+<blockquote>
+<ul>
+<li><p>如果你在复制数据，运行<code>nco</code>工具，或任何fortran可执行文件的<code>顺序模式 sequential mode</code>，你必须在<code>队列顺序 queue sequential </code>上运行。</p>
+</li>
+<li><p>对于<code>MPI</code>程序，你可以使用以下更合适的<code>mpi队列 queue</code>：mpi_1, mpi_2, mpi_3, mpi_4, mpi_6, …, mpi_18 或 big。</p>
+<ul>
+<li>每个节点有28个<code>mpi任务 tasks</code>，因此例如mpi_2在56个mpi任务上运行。</li>
+<li>如果使用big队列，你必须用变量 <code>select</code>定义使用的处理器数量（例如：<code>#PBS -l select=36:ncpus=28:mpiprocs=28</code>）。然后使用环境变量<code>$MPI_LAUNCH</code>调用你的MPI程序（例如：<code>$MPI_LAUNCH ww3_shel &gt;&amp; ww3_shel.out</code>）。</li>
+</ul>
+</li>
+<li><p>可以进行内存分配（<code>#PBS -l mem=60G</code>）或<code>walltime</code>设置（<code>#PBS -l walltime=2:00:00</code>）。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111225311.png" alt="wall-time解释（有道翻译中查到的）" style="zoom:60%;"></li>
+</ul>
+</blockquote>
+<h2 id="4-如何远程在datarmor工作"><a href="#4-如何远程在datarmor工作" class="headerlink" title="4-如何远程在datarmor工作"></a>4-如何远程在datarmor工作</h2>
                 
             </div>
             <hr/>
@@ -1010,7 +1039,7 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">245k</span>
+                        class="white-color">249.4k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

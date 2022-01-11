@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-04
+                    2022-01-11
                 </div>
                 
 
@@ -527,6 +527,17 @@ PBS 是公开源代码的作业管理系统，在此环境下运行，用户不�
 qsub job_shel.pbs
 qstat -u <span class="token environment constant">$USER</span> <span class="token punctuation">(</span>to check <span class="token keyword">if</span> your job is still running <span class="token builtin class-name">:</span> job_shel.pbs <span class="token environment constant">$USER</span> 00:03:08 R mpi_1<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<blockquote>
+<ul>
+<li><p><code>job_shel.pbs</code>文件：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111225640.png" alt="job_shel.pbs" style="zoom:80%;"></li>
+<li><p>能否不用 <code>qsub</code> 命令，运行<code>ww3_shel</code>？<font color="red">一个很重要的想法，十分希望成功</font>；</p>
+<p>直接运行<code>./ww3_shel</code>：<code>undefined symbol: mpi_init_</code>；<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111231349.png"></p>
+<p><code>mpirun</code>命令？</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111233533.png"></p>
+</li>
+</ul>
+</blockquote>
 <p>运行结果是一个二进制文件 <code>out_grd.ww3</code>，其中包含在网格上为每个输出时间步长计算的所有<code>平均波参数</code>。 这个例子中，模型中没有给出<code>输入风</code>，仅仅只含有 <code>ww3_strt</code> 实现的初始理想化条件。当前路径中有<code>ww3_strt</code> 实现的<code>restart.ww3</code>时，模型会自动读取此文件。了解模型是否已考虑<code>restart</code>， 可以阅读 <code>log.ww3</code>文件，本例子显示的是：“Restart file read; cold start (<strong>idealized</strong>)”，说明已考虑<code>restart</code>。 在<code>输出时间线</code>中，您可以在“<code>gridded field</code>”列“<code>g</code>”中看到由“<code>X</code>”符号显示的 I/O 更新（或“<code>L</code>”表示的上次更新）。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -1313,7 +1324,7 @@ idlww3
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">245k</span>
+                        class="white-color">249.4k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
