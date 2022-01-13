@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-12
+                    2022-01-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    6k
+                    6.2k
                 </div>
                 
 
@@ -663,7 +663,7 @@ idl -rt<span class="token operator">=</span>/home/jincanliu/BaiduNetdiskWorkspac
 <h2 id="MESH-RUN工作目录"><a href="#MESH-RUN工作目录" class="headerlink" title="MESH_RUN工作目录"></a>MESH_RUN工作目录</h2><p>创建一个 MESH_RUN 工作目录，假如为 <code>work-mesh-run</code> ，在目录下打开终端，输入以下命令</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span>   -r   <span class="token variable">$COURS</span>/WAVES-SHORT-COURSE/TUTORIALS/TUTORIAL_MESH_RUN   <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>现在可以进 <code>./TUTORIAL_POLYMESH</code>，在<code>data</code>文件夹可以发现如下文件：</p>
+<p>现在可以进 <code>./TUTORIAL_MESH_RUN</code>，在<code>data</code>文件夹可以发现如下文件：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111114650.png" style="zoom:60%;">
 
 <blockquote>
@@ -742,21 +742,17 @@ idl -rt<span class="token operator">=</span>/home/jincanliu/BaiduNetdiskWorkspac
 </ul>
 <p>边界点（<strong>15型</strong>元素）已经在上面的<strong>图1</strong>中用蓝点表示。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111173317.png" style="zoom:70%;"></li>
-</ul><hr><h2 id="EX：运行非结构化网格模型"><a href="#EX：运行非结构化网格模型" class="headerlink" title="EX：运行非结构化网格模型"></a>EX：运行非结构化网格模型</h2><p>下面几节将详细介绍其余输入文件的设置、非结构化模型的执行和输出的显示。</p><h3 id="ww3编译生成exe文件夹"><a href="#ww3编译生成exe文件夹" class="headerlink" title="ww3编译生成exe文件夹"></a>ww3编译生成exe文件夹</h3><p>复制已经生成的exe文件夹：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ./TUTORIAL_MESH_RUN
+</ul><hr><h2 id="EX：运行非结构化网格模型（实现的结果不一致）"><a href="#EX：运行非结构化网格模型（实现的结果不一致）" class="headerlink" title="EX：运行非结构化网格模型（实现的结果不一致）"></a>EX：运行非结构化网格模型（实现的结果不一致）</h2><p>下面几节将详细介绍其余输入文件的设置、非结构化模型的执行和输出的显示。</p><h3 id="ww3编译生成exe文件夹"><a href="#ww3编译生成exe文件夹" class="headerlink" title="ww3编译生成exe文件夹"></a>ww3编译生成exe文件夹</h3><p>复制已经生成的exe文件夹：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ./TUTORIAL_MESH_RUN
 <span class="token function">mkdir</span> work <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> work
 <span class="token function">cp</span> -r <span class="token punctuation">..</span>/data/* <span class="token builtin class-name">.</span>
 
 <span class="token comment">#	在`ftp网站`中的`DATARMOR`有`已编译的exe文件夹`，</span>
 <span class="token comment">#	即` $WAVE_DATA/EXE/exe_Ifremer2_datarmor_mpt`，</span>
 <span class="token comment">#	将其中所有`ww3_`文件复制进`work-mesh-run/TUTORIAL_MESH_RUN`的`work`目录</span>
-<span class="token function">cp</span> <span class="token variable">$WAVE_DATA</span>/EXE/exe_Ifremer2_datarmor_mpt/ww3_* <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果想自己编译生成exe文件夹，需运行以下代码：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	$WW3	说明是在ftp网站中的文件夹；</span>
-<span class="token builtin class-name">cd</span> <span class="token variable">$WW3</span>/bin
+<span class="token comment">#	cp $WAVE_DATA/EXE/exe_Ifremer2_datarmor_mpt/ww3_* .</span>
 
-./w3_clean
-
-<span class="token comment">##	&lt;comp&gt;	需要自己选择一个；</span>
-./w3_setup <span class="token punctuation">..</span> -c <span class="token operator">&lt;</span>comp<span class="token operator">&gt;</span> -s Ifremer2 -q
-./w3_automake<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote>
+<span class="token comment">#	我用的不是‘ftp’中编译的exe文件夹，是‘INOUT’教程中的‘exe2’文件夹</span>
+<span class="token function">cp</span> <span class="token variable">$exe2</span>/ww3_* <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote>
 <ul>
 <li>非结构化模式都是建立在<code>PR3</code>开关下的，应该包含在开关文件中。该模型现在已经准备好处理非结构化网格文件。在接下来的章节中，我们将逐步介绍每个子程序的输入要求。</li>
 </ul>
@@ -772,11 +768,30 @@ idl -rt<span class="token operator">=</span>/home/jincanliu/BaiduNetdiskWorkspac
 </blockquote>
 </li>
 <li><p>在<code>ww3_grid.nml</code>中，定义计算网格的名单列表<code>&amp;GRID_NML</code>。指定计算网格类型（<code>UNST</code>表示非结构化），网格坐标<code>约定 convention</code>的标志（<code>SPHE</code>=球面长/宽），周期性网格的标志（<code>NONE</code>=非周期性），极限底深<code>ZLIM</code>（m）和最小水深<code>DMIN</code>（m）的信息。</p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111195114.png" style="zoom:50%;"></li>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;GRID_NML
+ GRID%NAME = 'HAWAII'
+ GRID%NML = 'namelists_HAWAII.nml'
+ GRID%TYPE = 'UNST'
+ GRID%COORD = 'SPHE'
+ GRID%CLOS = 'NONE'
+ GRID%ZLIM = 4.0
+ GRID%DMIN = 0.30
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li><p>随后，在名单列表 <code>&amp;UNST_NML</code>中提供网格定义，所需的参数比常规网格少，因为网格定义是在网格文件<code>*.msh</code>中提供的。</p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111195638.png" style="zoom:55%;"></li>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;UNST_NML
+ UNST%SF = -1.
+ UNST%FILENAME = 'sorted.msh'
+ UNST%IDLA = 4
+ UNST%FORMAT = '(20f10.2)'
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li><p>下一步是指定在哪些结点上应用边界条件（边界条件的实际指定将在下面<code>第3.3节</code>讨论）。</p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111200717.png" style="zoom:55%;">
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;INBND_COUNT_NML
+ INBND_COUNT%N_POINT = 2
+/
+&amp;INBND_POINT_NML
+ INBND_POINT(1) = 1 1 F
+ INBND_POINT(2) = 160 1 T
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
 <ul>
@@ -840,17 +855,41 @@ idl -rt<span class="token operator">=</span>/home/jincanliu/BaiduNetdiskWorkspac
 </ul>
 </blockquote><h3 id="ww3-shel（运行模型，MPI）"><a href="#ww3-shel（运行模型，MPI）" class="headerlink" title="ww3.shel（运行模型，MPI）"></a>ww3.shel（运行模型，MPI）</h3><ol>
 <li><p>为了启用非结构化模式，对主模型子程序<code>ww3_shel</code>没有具体的改动。看看名单列表文件<code>ww3_shel.nml</code>的内容。注意包括<code>输入强迫场</code>和一些<code>波浪参数的场输出</code>请求：</p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111212305.png" style="zoom:67%;"></li>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;INPUT_NML
+ INPUT%FORCING%WINDS = 'T'
+/
+&amp;OUTPUT_TYPE_NML
+ TYPE%FIELD%LIST = 'DPT HS MSS WND'
+/
+&amp;OUTPUT_DATE_NML
+ DATE%FIELD = '20080101 000000' '3600' '20080101 120000'
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li><p>要运行主模型子程序，输入：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">qsub job_shel.pbs
-qstat -u <span class="token environment constant">$USER</span> <span class="token punctuation">(</span>to check <span class="token keyword">if</span> your job is still running<span class="token punctuation">)</span>
-gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_shel <span class="token operator">|</span> <span class="token function">tee</span> ww3_shel.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p> 正如预期的那样，二进制输出<code>gridded</code>文件<code>out_grd.ww3</code>被创建。</p>
+<blockquote>
+<ul>
+<li><p><code>全局时间步长</code>是<code>150s</code>，意味着在<code>./ww3_shel</code>过程中，每<code>150s</code>计算一次：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113174541.png" style="zoom:80%;">
+
+<p><code>全局时间步长</code>是在<code>ww3_grid.nml</code>的<code>&amp;TIMESTEPS_NML</code>名单列表中<code>DTMAX</code>定义的：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113174726.png" style="zoom:80%;"></li>
+<li><p><code>log.ww3</code>：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113180814.png" style="zoom:100%;">
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113181025.png"></p>
+</li>
+</ul>
+</blockquote>
 </li>
 </ol><h3 id="ww3-ounf（场输出后处理）"><a href="#ww3-ounf（场输出后处理）" class="headerlink" title="ww3.ounf（场输出后处理）"></a>ww3.ounf（场输出后处理）</h3><p>将非结构化网格运行的输出打包成一个灵活的<code>NetCDF</code>格式文件是很实用的。这可以通过<code>NetCDF</code>场后处理子程序<code>ww3_ounf</code>来实现。</p><ol>
 <li><p>在名单列表文件<code>ww3_ounf.nml</code>中，设置所需的输出场（与上面<code>ww3_shel.nml</code>中相同）。</p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111212740.png" style="zoom:67%;"></li>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;FIELD_NML
+ FIELD%TIMESTART = '20080101 000000'
+ FIELD%TIMESTRIDE = '3600'
+ FIELD%LIST = 'DPT HS MSS WND'
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li><p>现在通过键入：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_ounf <span class="token operator">|</span> <span class="token function">tee</span> ww3_ounf.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -859,16 +898,20 @@ gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 <li><p>这将产生输出文件<code>ww3.200801.nc</code>，可以用<code>IDL</code>进行可视化，放大研究岛屿海岸线的细节（由于没有<code>初始条件</code>，所以在<code>第一个时间步长</code>没有<code>Hs</code>）。</p>
 <blockquote>
 <ul>
-<li><font color="red">什么是第一个时间步长？指的是ww3_grid.nml中的时间步长，哪个呢？</font></li>
-<li>(WW3 NetCDF MAP → WW3 map）。</li>
+<li><font color="red">什么是第一个时间步长？指的是ww3_grid.nml中的时间步长，哪个呢？</font>答：指的是第一个全局时间步长</li>
+<li>对于<code>ww3.200801.nc</code>文件，无法使用<code>ncview</code>进行可视化，也无法使用<code>panoply</code>进行可视化。</li>
+<li><code>IDL</code>操作步骤：(<code>WW3 NetCDF MAP</code> → <code>WW3 map</code>）。</li>
 </ul>
 </blockquote>
+<blockquote>
+<ul>
+<li><p>原<code>pdf</code>中的图像</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111213236.png"></p>
 </li>
+</ul>
+</blockquote>
+</li>
 </ol><table>
-
-
-
 
 
 
@@ -1174,9 +1217,9 @@ gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
                 <a href="/2022/01/09/hai-lang-shu-zhi-mo-shi/wavewatch3/06-polymesh-use-and-tricks-guide/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-POLYMESH- _use_and_tricks_guide">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-POLYMESH- _use_and_tricks_guide（未实现）">
                         
-                        <span class="card-title">06-POLYMESH- _use_and_tricks_guide</span>
+                        <span class="card-title">06-POLYMESH- _use_and_tricks_guide（未实现）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1427,7 +1470,7 @@ gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">206.1k</span>
+                        class="white-color">207.6k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
