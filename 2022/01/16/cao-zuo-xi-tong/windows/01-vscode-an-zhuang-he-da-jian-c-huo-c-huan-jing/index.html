@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="06-文章SHA256加密, Jincan">
+    <meta name="keywords" content="01-VScode搭建C/C++, Jincan">
     <meta name="description" content="~~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>06-文章SHA256加密 | Jincan</title>
+    <title>01-VScode搭建C/C++ | Jincan</title>
     <link rel="icon" type="image/png" href="/favicon_hua.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -229,12 +229,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225215552.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115131020.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">06-文章SHA256加密</h1>
+                    <h1 class="description center-align post-title">01-VScode搭建C/C++</h1>
                 </div>
             </div>
         </div>
@@ -358,8 +358,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo/" class="post-category">
-                                hexo
+                            <a href="/categories/VScode/" class="post-category">
+                                VScode
                             </a>
                         
                     </div>
@@ -371,21 +371,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    75
+                    264
                 </div>
                 
 
@@ -405,19 +405,41 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="文章SHA256加密"><a href="#文章SHA256加密" class="headerlink" title="文章SHA256加密"></a><center>文章SHA256加密</center></h1><p>SHA256 加密后的密码，如何制作？用<a target="_blank" rel="noopener" href="https://www.cmd5.com/hash.aspx?s=123456">网站</a>制作</p>
-<ol>
-<li>在pass输入你想的密码；</li>
-<li>下面有sha256对应的密码，复制即可；</li>
-</ol>
-<p>如果你想要破解，这个网站也许也可以，<a target="_blank" rel="noopener" href="https://www.cmd5.com/">页面</a></p>
-<ol>
-<li>在密文添加密码；</li>
-<li>查询结果；</li>
-</ol>
-<p>例子：</p>
-<p>​        123456，                8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+                <h1 id="01-VScode搭建C-C"><a href="#01-VScode搭建C-C" class="headerlink" title="01-VScode搭建C/C++"></a><center>01-VScode搭建C/C++</center></h1><h2 id="—————————————"><a href="#—————————————" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YL411L7Sg?p=3">https://www.bilibili.com/video/BV1YL411L7Sg?p=3</a></p>
+<blockquote>
+<p>00:39    新建Cpp环境文件夹；<br>00:55    新建文件<code>说明.txt</code>，解释<code>编辑器</code>和<code>IDE</code>的区别；</p>
+<ul>
+<li>IDE相对于编辑器，还包括了<code>编译器</code>和<code>运行环境</code>；<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220116132014.png"></li>
+</ul>
+<p>03:38     新建<code>test.cpp</code>，弹出<code>是否为C++安装推荐的扩展？</code>，选择<code>安装</code>；</p>
+<ul>
+<li>现在有语法提示；</li>
+<li>按下<code>F5</code>，随意选择一个，运行不了，显示错误；</li>
+<li>缺少<code>编译器</code>；</li>
+</ul>
+<p>06:30    下载编译器；</p>
+<ul>
+<li><p>进入<code>winlibs.com</code>，<code>Release versions</code> 中 <code>UCRT runtime</code>，点击<code>GCC 11.2.0 +</code>中<code>Win32</code>的<code>Zip archive</code>；</p>
+<p><code>7-Zip</code>比<code>Zip</code>压缩效率高；</p>
+</li>
+<li><p>08:50    下载速度可能有些慢，进入<code>fsou.cc</code>，选择<code>Github加速</code>，将文件链接放进去；</p>
+</li>
+</ul>
+<p>10:00    解压缩<code>编译器</code>压缩文件，<code>cmd</code>进入<code>bin</code>文件夹下</p>
+<ul>
+<li><code>g++ --version</code>，没出错，说明解压成功；</li>
+<li><code>gcc --version</code>；</li>
+<li>添加<code>编译器</code>的环境变量；</li>
+</ul>
+<p>13:11   <code>cmd</code>下 <code>cpp</code>转变成<code>exe</code>文件</p>
+<ul>
+<li><code>g++ test.cpp -o test.exe</code></li>
+<li>14:10    添加<code>system("pause")</code></li>
+</ul>
+<p>15:45    <code>.vscode</code>文件夹的作用；</p>
+<p>​              添加<code>.vscode</code>，<code>F5</code>后选择<code>GDB</code>，再选择<code>g++ .exe</code>；</p>
+</blockquote>
+
                 
             </div>
             <hr/>
@@ -443,7 +465,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Liu-Jincan.github.io/2022/01/02/bo-ke-da-jian/hexo/wen-zhang-sha256-jia-mi/">https://Liu-Jincan.github.io/2022/01/02/bo-ke-da-jian/hexo/wen-zhang-sha256-jia-mi/</a>
+                    <a href="https://Liu-Jincan.github.io/2022/01/16/cao-zuo-xi-tong/windows/01-vscode-an-zhuang-he-da-jian-c-huo-c-huan-jing/">https://Liu-Jincan.github.io/2022/01/16/cao-zuo-xi-tong/windows/01-vscode-an-zhuang-he-da-jian-c-huo-c-huan-jing/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -650,56 +672,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
-            <div class="card">
-                <a href="/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/">
-                    <div class="card-image">
-                        
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出">
-                        
-                        <span class="card-title">06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ~~
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/WW3/" class="post-category">
-                                    WW3
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-gridgen-wang-ge-sheng-cheng/">
+                <a href="/2022/01/16/cao-zuo-xi-tong/windows/01-vscode-an-zhuang-he-da-jian-c-huo-c-huan-jing/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIALS-GRIDGEN-矩形网格生成">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115131020.png" class="responsive-img" alt="01-VScode搭建C/C++">
                         
-                        <span class="card-title">06-TUTORIALS-GRIDGEN-矩形网格生成</span>
+                        <span class="card-title">01-VScode搭建C/C++</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -710,14 +693,55 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/WW3/" class="post-category">
-                                    WW3
+                            <a href="/categories/VScode/" class="post-category">
+                                    VScode
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/01/15/cao-zuo-xi-tong/windows/01-vscode-an-zhuang-he-da-jian-python-huan-jing/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115131020.png" class="responsive-img" alt="01-VScode安装和搭建Python">
+                        
+                        <span class="card-title">01-VScode安装和搭建Python</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/VScode/" class="post-category">
+                                    VScode
                                 </a>
                             
                             
