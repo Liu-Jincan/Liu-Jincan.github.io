@@ -385,7 +385,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    5k
+                    6k
                 </div>
                 
 
@@ -448,7 +448,7 @@
 <p>incrementally 递增的</p>
 </blockquote>
 <h2 id="—————————————-2"><a href="#—————————————-2" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-2"><a href="#参考资料-2" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>gridgen</code>教程；</p>
-<p><a href="https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-gridgen-wang-ge-sheng-cheng/#">https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-gridgen-wang-ge-sheng-cheng/#</a>!</p>
+<p><a href="https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-gridgen-tutorial-wang-ge-sheng-cheng/">https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-gridgen-tutorial-wang-ge-sheng-cheng/</a></p>
 <blockquote>
 <p>以下的程序，是基于<code>gridgen</code>教程创建的工作目录文件夹<code>work-griden</code>，从而执行的。</p>
 </blockquote>
@@ -1172,6 +1172,228 @@ OBSTR_OFFSET = 1
 </blockquote>
 </li>
 </ol>
+<h3 id="ww3-grid-nml创建（P25目标网格）"><a href="#ww3-grid-nml创建（P25目标网格）" class="headerlink" title="ww3_grid.nml创建（P25目标网格）"></a>ww3_grid.nml创建（P25目标网格）</h3><pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! Define the spectrum parameterization via SPECTRUM_NML namelist
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     SPECTRUM%XFR         = 0.            ! frequency increment
+!     SPECTRUM%FREQ1       = 0.            ! first frequency (Hz)
+!     SPECTRUM%NK          = 0             ! number of frequencies (wavenumbers)
+!     SPECTRUM%NTH         = 0             ! number of direction bins
+!     SPECTRUM%THOFF       = 0.            ! relative offset of first direction [-0.5,0.5]
+! -------------------------------------------------------------------- !
+&amp;SPECTRUM_NML
+  SPECTRUM%XFR           =  1.1
+  SPECTRUM%FREQ1         =  0.04118
+  SPECTRUM%NK            =  32
+  SPECTRUM%NTH           =  24
+/
+
+
+
+! -------------------------------------------------------------------- !
+! Define the run parameterization via RUN_NML namelist
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     RUN%FLDRY            = F             ! dry run (I/O only, no calculation)
+!     RUN%FLCX             = F             ! x-component of propagation
+!     RUN%FLCY             = F             ! y-component of propagation
+!     RUN%FLCTH            = F             ! direction shift
+!     RUN%FLCK             = F             ! wavenumber shift
+!     RUN%FLSOU            = F             ! source terms
+! -------------------------------------------------------------------- !
+&amp;RUN_NML
+  RUN%FLCX            = T
+  RUN%FLCY            = T
+  RUN%FLCTH           = T
+  RUN%FLSOU           = T
+/
+
+
+
+! -------------------------------------------------------------------- !
+! Define the timesteps parameterization via TIMESTEPS_NML namelist
+!
+! * It is highly recommended to set up time steps which are multiple 
+!   between them. 
+!
+! * The first time step to calculate is the maximum CFL time step
+!   which depend on the lowest frequency FREQ1 previously set up and the
+!   lowest spatial grid resolution in meters DXY.
+!   reminder : 1 degree=60minutes // 1minute=1mile // 1mile=1.852km
+!   The formula for the CFL time is :
+!   Tcfl = DXY / (G / (FREQ1*4*Pi) ) with the constants Pi=3,14 and G=9.8m/s²;
+!   DTXY  ~= 90% Tcfl
+!   DTMAX ~= 3 * DTXY   (maximum global time step limit)
+！  在这个例子中：
+!   DXY=min(reslon * cosd(maxlat)*1852*60, reslon * cosd(minlat)*1852*60)
+!      其中，reslon=0.25, maxlat=46, minlat=36
+!      gridgen教程中附录算的是错的？？？
+!   Tcfl ~= 1000
+!   DTXY ~= 900
+！
+! * The refraction time step depends on how strong can be the current velocities
+!   on your grid :
+!   DTKTH ~= DTMAX / 2   ! in case of no or light current velocities
+!   DTKTH ~= DTMAX / 10  ! in case of strong current velocities
+!
+! * The source terms time step is usually defined between 5s and 60s.
+!   A common value is 10s.
+!   DTMIN ~= 10
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     TIMESTEPS%DTMAX      = 0.         ! maximum global time step (s)
+!     TIMESTEPS%DTXY       = 0.         ! maximum CFL time step for x-y (s)
+!     TIMESTEPS%DTKTH      = 0.         ! maximum CFL time step for k-th (s)
+!     TIMESTEPS%DTMIN      = 0.         ! minimum source term time step (s)
+! -------------------------------------------------------------------- !
+&amp;TIMESTEPS_NML
+  TIMESTEPS%DTMAX         =   2700.
+  TIMESTEPS%DTXY          =   900.
+  TIMESTEPS%DTKTH         =   1350.
+  TIMESTEPS%DTMIN         =   10.
+/
+
+
+
+! -------------------------------------------------------------------- !
+! Define the grid to preprocess via GRID_NML namelist
+!
+! * the tunable parameters for source terms, propagation schemes, and 
+!    numerics are read using namelists. 
+! * Any namelist found in the folowing sections is temporarily written
+!   to param.scratch, and read from there if necessary. 
+! * The order of the namelists is immaterial.
+! * Namelists not needed for the given switch settings will be skipped
+!   automatically
+!
+! * grid type can be : 
+!    'RECT' : rectilinear
+!    'CURV' : curvilinear
+!    'UNST' : unstructured (triangle-based)
+!
+! * coordinate system can be : 
+!    'SPHE' : Spherical (degrees)
+!    'CART' : Cartesian (meters)
+!
+! * grid closure can only be applied in spherical coordinates
+!
+! * grid closure can be : 
+!    'NONE' : No closure is applied
+!    'SMPL' : Simple grid closure. Grid is periodic in the
+!           : i-index and wraps at i=NX+1. In other words,
+!           : (NX+1,J) =&gt; (1,J). A grid with simple closure
+!           : may be rectilinear or curvilinear.
+!    'TRPL' : Tripole grid closure : Grid is periodic in the
+!           : i-index and wraps at i=NX+1 and has closure at
+!           : j=NY+1. In other words, (NX+1,J&lt;=NY) =&gt; (1,J)
+!           : and (I,NY+1) =&gt; (NX-I+1,NY). Tripole
+!           : grid closure requires that NX be even. A grid
+!           : with tripole closure must be curvilinear.
+!
+! * The coastline limit depth is the value which distinguish the sea 
+!   points to the land points. All the points with depth values (ZBIN)
+!   greater than this limit (ZLIM) will be considered as excluded points
+!   and will never be wet points, even if the water level grows over.
+!   It can only overwrite the status of a sea point to a land point.
+!   The value must have a negative value under the mean sea level
+!
+! * The minimum water depth allowed to compute the model is the absolute
+!   depth value (DMIN) used in the model if the input depth is lower to 
+!   avoid the model to blow up.
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     GRID%NAME             = 'unset'            ! grid name (30 char)
+!     GRID%NML              = 'namelists.nml'    ! namelists filename
+!     GRID%TYPE             = 'unset'            ! grid type
+!     GRID%COORD            = 'unset'            ! coordinate system
+!     GRID%CLOS             = 'unset'            ! grid closure
+!
+!     GRID%ZLIM             = 0.        ! coastline limit depth (m)
+!     GRID%DMIN             = 0.        ! abs. minimum water depth (m)
+!
+!  下面所有项，在gridgen中生成.meta中有，全部复制过来。
+! -------------------------------------------------------------------- !
+&amp;GRID_NML
+  GRID%NAME              =  'east-USA_P25'
+  GRID%NML               =  'namelists_east-USA_P25.nml'
+  GRID%TYPE              =  'RECT'
+  GRID%COORD             =  'SPHE'
+  GRID%CLOS              =  'NONE'
+  GRID%ZLIM              =  -0.10
+  GRID%DMIN              =   2.50
+/
+
+
+&amp;RECT_NML
+  RECT%NX                =  69
+  RECT%NY                =  41
+!
+  RECT%SX                =   0.250000000000
+  RECT%SY                =   0.250000000000
+  RECT%X0                =  -75.0000
+  RECT%Y0                =   36.0000
+/
+
+
+
+! -------------------------------------------------------------------- !
+! Define the depth to preprocess via DEPTH_NML namelist
+! - for RECT and CURV grids -
+!
+! * if no obstruction subgrid, need to set &amp;MISC FLAGTR = 0
+!
+! * The depth value must have negative values under the mean sea level
+!
+! * value &lt;= value_read * scale_fac
+!
+! * IDLA : Layout indicator :
+!                  1   : Read line-by-line bottom to top.  (default)
+!                  2   : Like 1, single read statement.
+!                  3   : Read line-by-line top to bottom.
+!                  4   : Like 3, single read statement.
+! * IDFM : format indicator :
+!                  1   : Free format.  (default)
+!                  2   : Fixed format.
+!                  3   : Unformatted.
+! * FORMAT : element format to read :
+!               '(....)'  : auto detected  (default)
+!               '(f10.6)' : float type
+!
+! * Example :
+!      IDF  SF     IDLA  IDFM   FORMAT    FILENAME
+!      50   0.001  1     1     '(....)'  'GLOB-30M.bot'
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     DEPTH%SF             = 1.       ! scale factor
+!     DEPTH%FILENAME       = 'unset'  ! filename
+!     DEPTH%IDF            = 50       ! file unit number
+!     DEPTH%IDLA           = 1        ! layout indicator
+!     DEPTH%IDFM           = 1        ! format indicator
+!     DEPTH%FORMAT         = '(....)' ! formatted read format
+! -------------------------------------------------------------------- !
+
+&amp;DEPTH_NML
+  DEPTH%SF             =  0.00
+  DEPTH%FILENAME       = '../data/east-USA_P25.bot'
+/
+
+&amp;MASK_NML
+  MASK%FILENAME         = '../data/east-USA_P25.mask'
+/
+
+&amp;OBST_NML
+  OBST%SF              =  0.01
+  OBST%FILENAME        = '../data/east-USA_P25.obst'
+/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
 <h2 id="—————————————-3"><a href="#—————————————-3" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-3"><a href="#参考资料-3" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>inout</code>教程；</p>
 <p><a href="https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/#">https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/#</a>!</p>
 <blockquote>
@@ -1179,7 +1401,11 @@ OBSTR_OFFSET = 1
 </blockquote>
 <h2 id="ww3的inout实现"><a href="#ww3的inout实现" class="headerlink" title="ww3的inout实现"></a>ww3的inout实现</h2><h3 id="comp-link-switch-的选择，生成-ww3"><a href="#comp-link-switch-的选择，生成-ww3" class="headerlink" title="comp, link, switch 的选择，生成 ww3_*"></a>comp, link, switch 的选择，生成 ww3_*</h3><p>这里使用<code>inout</code>教程的switch。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118150051.png" alt="switch 源项的选择"></p>
-<h3 id="ww3-grid"><a href="#ww3-grid" class="headerlink" title="ww3_grid"></a>ww3_grid</h3>
+<p>创建工作目录：<code>work-east-USA</code>。</p>
+<h3 id="ww3-grid"><a href="#ww3-grid" class="headerlink" title="ww3_grid"></a>ww3_grid</h3><ol>
+<li>在工作目录添加<code>ww3_grid.nml</code>；</li>
+</ol>
+
                 
             </div>
             <hr/>
@@ -1714,7 +1940,7 @@ OBSTR_OFFSET = 1
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">222.3k</span>
+                        class="white-color">223.3k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
