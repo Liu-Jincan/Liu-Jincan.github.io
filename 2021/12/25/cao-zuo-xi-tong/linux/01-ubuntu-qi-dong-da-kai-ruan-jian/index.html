@@ -385,7 +385,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    566
+                    598
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="01-ubuntu-启动打开软件、换镜像"><a href="#01-ubuntu-启动打开软件、换镜像" class="headerlink" title="01-ubuntu-启动打开软件、换镜像"></a><center>01-ubuntu-启动打开软件、换镜像</center></h1><h2 id="————————————"><a href="#————————————" class="headerlink" title="————————————"></a>————————————</h2><h2 id="脚本文件"><a href="#脚本文件" class="headerlink" title="脚本文件"></a>脚本文件</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 如果屏幕分辨率出问题就换驱动</span>
+                <h1 id="01-ubuntu-启动打开软件、换镜像、添加快捷方式"><a href="#01-ubuntu-启动打开软件、换镜像、添加快捷方式" class="headerlink" title="01-ubuntu-启动打开软件、换镜像、添加快捷方式"></a><center>01-ubuntu-启动打开软件、换镜像、添加快捷方式</center></h1><h2 id="————————————"><a href="#————————————" class="headerlink" title="————————————"></a>————————————</h2><h2 id="脚本文件"><a href="#脚本文件" class="headerlink" title="脚本文件"></a>脚本文件</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 如果屏幕分辨率出问题就换驱动</span>
 <span class="token comment"># 设置分辨率</span>
 xrandr -s 1024x768	
 
@@ -470,7 +470,7 @@ idl -rt<span class="token operator">=</span>rt_visumain.sav<span aria-hidden="tr
 <p>Creating a .desktop file for a new application</p>
 </blockquote>
 <p>…</p>
-<h2 id="添加快捷方式、打开方式–手动添加方法"><a href="#添加快捷方式、打开方式–手动添加方法" class="headerlink" title="添加快捷方式、打开方式–手动添加方法"></a>添加快捷方式、打开方式–手动添加方法</h2><p>以<code>matlab_2021b</code>为例，ubuntu中打开matlab需要在<code>$bin</code>目录下执行<code>./matlab</code>，很麻烦，可以将其做成桌面快捷方式（桌面图标）。</p>
+<h2 id="添加快捷方式、打开方式–手动添加-desktop"><a href="#添加快捷方式、打开方式–手动添加-desktop" class="headerlink" title="添加快捷方式、打开方式–手动添加.desktop"></a>添加快捷方式、打开方式–手动添加.desktop</h2><p>以<code>matlab_2021b</code>为例，ubuntu中打开matlab需要在<code>$bin</code>目录下执行<code>./matlab</code>，很麻烦，可以将其做成桌面快捷方式（桌面图标）。</p>
 <blockquote>
 <p>如果打开对应软件需要多条命令，可以写成一个<code>bash</code>脚本文件。</p>
 </blockquote>
@@ -503,10 +503,11 @@ Categories=Development;  <span aria-hidden="true" class="line-numbers-rows"><spa
 <blockquote>
 <p>Name 是软件名称</p>
 <p>Exec 是软件执行文件的路径，<code>/</code>前不需要加<code>.</code>，在后面加上<code>%F</code>，是为了能在打开方式中找到该软件；</p>
-<p>Icon 是软件图标，建议图片两个纬度的像素相等；</p>
+<p>Icon 是软件图标，建议图片两个纬度的像素相等，图标一般下载到<code>$bin</code>下（与软件执行文件目录相同）；</p>
 <p>…</p>
 </blockquote>
-<h2 id="添加快捷方式–GUI界面添加方法"><a href="#添加快捷方式–GUI界面添加方法" class="headerlink" title="添加快捷方式–GUI界面添加方法"></a>添加快捷方式–GUI界面添加方法</h2><ol>
+<p>安装完成后，可能会出现闪退~~？？</p>
+<h2 id="添加快捷方式–alacarte添加"><a href="#添加快捷方式–alacarte添加" class="headerlink" title="添加快捷方式–alacarte添加"></a>添加快捷方式–alacarte添加</h2><ol>
 <li>安装 alacarte：<code>sudo apt install alacarte </code>；或者在<code>ubuntu software</code>中搜索软件<code>alacarte</code>，会出现<code>main menu</code>，安装其即可；</li>
 <li>…</li>
 </ol>
@@ -1050,7 +1051,7 @@ Categories=Development;  <span aria-hidden="true" class="line-numbers-rows"><spa
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">225.1k</span>
+                        class="white-color">225.3k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
