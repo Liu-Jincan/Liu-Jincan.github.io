@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-12-27
+                    2022-01-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    5.4k
+                    5.5k
                 </div>
                 
 
@@ -414,7 +414,14 @@
 <p>下载压缩包，解压即可。</p>
 <p>解压后的文件夹内容</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226154728.png"></p>
-<h3 id="安装gcc，版本位置信息"><a href="#安装gcc，版本位置信息" class="headerlink" title="安装gcc，版本位置信息"></a>安装gcc，版本位置信息</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">xuniji1@xuniji1-virtual-machine:~$ gcc -v
+<h3 id="安装gcc，版本位置信息"><a href="#安装gcc，版本位置信息" class="headerlink" title="安装gcc，版本位置信息"></a>安装gcc，版本位置信息</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 安装 gcc, gcc+</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> build-essential
+
+<span class="token comment">### 注意事项1</span>
+<span class="token comment"># 安装过程，可能需要输入 /media/cfdom? 什么的，它会有提示的；</span>
+<span class="token comment">###</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">xuniji1@xuniji1-virtual-machine:~$ gcc -v
 Using built-in specs.
 <span class="token assign-left variable">COLLECT_GCC</span><span class="token operator">=</span>gcc
 <span class="token assign-left variable">COLLECT_LTO_WRAPPER</span><span class="token operator">=</span>/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -430,7 +437,10 @@ xuniji1@xuniji1-virtual-machine:~$ <span class="token function">which</span> gcc
 
 
 
-<h3 id="安装gfortran，版本位置信息"><a href="#安装gfortran，版本位置信息" class="headerlink" title="安装gfortran，版本位置信息"></a>安装gfortran，版本位置信息</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">xuniji1@xuniji1-virtual-machine:~$ gfortran -v
+<h3 id="安装gfortran，版本位置信息"><a href="#安装gfortran，版本位置信息" class="headerlink" title="安装gfortran，版本位置信息"></a>安装gfortran，版本位置信息</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 安装 gfortran</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> gfortran<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">xuniji1@xuniji1-virtual-machine:~$ gfortran -v
 Using built-in specs.
 <span class="token assign-left variable">COLLECT_GCC</span><span class="token operator">=</span>gfortran
 <span class="token assign-left variable">COLLECT_LTO_WRAPPER</span><span class="token operator">=</span>/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -446,7 +456,9 @@ xuniji1@xuniji1-virtual-machine:~$ <span class="token function">which</span> gfo
 
 
 
-<h3 id="安装netcdf-c，版本位置信息"><a href="#安装netcdf-c，版本位置信息" class="headerlink" title="安装netcdf-c，版本位置信息"></a>安装netcdf-c，版本位置信息</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">xuniji1@xuniji1-virtual-machine:~$ nc-config --all
+<h3 id="安装netcdf-c，版本位置信息"><a href="#安装netcdf-c，版本位置信息" class="headerlink" title="安装netcdf-c，版本位置信息"></a>安装netcdf-c，版本位置信息</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> libnetcdf-dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">xuniji1@xuniji1-virtual-machine:~$ nc-config --all
 
 This netCDF <span class="token number">4.6</span>.0 has been built with the following features: 
 
@@ -1725,12 +1737,12 @@ ad3 <span class="token builtin class-name">:</span> processing ww3_trnc
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/03-regtests-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing-li-zi/">
+                <a href="/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/02-lao-shi-gei-de-yi-ge-yun-xing-li-zi/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="03-regtests文件夹（官方给的ww3运行例子）">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="02-老师给的一个运行例子">
                         
-                        <span class="card-title">03-regtests文件夹（官方给的ww3运行例子）</span>
+                        <span class="card-title">02-老师给的一个运行例子</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1981,7 +1993,7 @@ ad3 <span class="token builtin class-name">:</span> processing ww3_trnc
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">228.8k</span>
+                        class="white-color">230.1k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

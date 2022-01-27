@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-24
+                    2022-01-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    6.1k
+                    6.8k
                 </div>
                 
 
@@ -453,7 +453,10 @@
 <p>以下的程序，是基于<code>gridgen</code>教程创建的工作目录文件夹<code>work-griden</code>，从而执行的。</p>
 <p>其实执行程序是在<code>Tutorial_GRIDGEN</code>中，只需要下载这个即可。</p>
 </blockquote>
-<h2 id="gridgen生成矩形网格"><a href="#gridgen生成矩形网格" class="headerlink" title="gridgen生成矩形网格"></a>gridgen生成矩形网格</h2><h3 id="create-grid"><a href="#create-grid" class="headerlink" title="create_grid()"></a>create_grid()</h3><ol>
+<h2 id="gridgen生成矩形网格"><a href="#gridgen生成矩形网格" class="headerlink" title="gridgen生成矩形网格"></a>gridgen生成矩形网格</h2><blockquote>
+<p>记住在<code>matlab</code>中添加<code>$Tutorial_GRIDGEN/bin</code>环境变量，允许在其它目录运行其中的函数。</p>
+</blockquote>
+<h3 id="create-grid"><a href="#create-grid" class="headerlink" title="create_grid()"></a>create_grid()</h3><ol>
 <li><p>在<code>$namelist</code>文件夹下创建，目标网格对应的<code>gridgen.east-USA_P25.nml</code>：</p>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">$ a. Path to directories and file names-----------------------------------$
 
@@ -1173,7 +1176,23 @@ OBSTR_OFFSET = 1
 </blockquote>
 </li>
 </ol>
-<h3 id="ww3-grid-nml创建（P25目标网格）"><a href="#ww3-grid-nml创建（P25目标网格）" class="headerlink" title="ww3_grid.nml创建（P25目标网格）"></a>ww3_grid.nml创建（P25目标网格）</h3><pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+<h3 id="ww3-grid-nml创建（P25目标网格）"><a href="#ww3-grid-nml创建（P25目标网格）" class="headerlink" title="ww3_grid.nml创建（P25目标网格）"></a>ww3_grid.nml创建（P25目标网格）</h3><p>根据创建的目标网格，在<code>$data</code>创建<code>east-USA_P25_ww3_grid.nml</code>，文件内容：</p>
+<blockquote>
+<p>有部分内容是<code>.meta</code>文件的内容，记得路径修改成文件名称即可；</p>
+</blockquote>
+<blockquote>
+<p>ww3需要用到的文件：</p>
+<p><code>east-USA_P25_ww3_grid.nml</code></p>
+<p><code>east-USA_P25.bot</code></p>
+<p><code>east-USA_P25.mask</code></p>
+<p><code>east-USA_P25.obst</code></p>
+<p><code>namelists_east-USA_P25.nml</code></p>
+<p>具体用到时，将这些文件放在<code>$inout</code>中。</p>
+</blockquote>
+<blockquote>
+<p>问题：<font color="red">时间步长如何确定？（我算出来的很诡异）</font></p>
+</blockquote>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
 ! Define the spectrum parameterization via SPECTRUM_NML namelist
 !
 ! * namelist must be terminated with /
@@ -1381,30 +1400,122 @@ OBSTR_OFFSET = 1
 
 &amp;DEPTH_NML
   DEPTH%SF             =  0.00
-  DEPTH%FILENAME       = '../data/east-USA_P25.bot'
+  DEPTH%FILENAME       = 'east-USA_P25.bot'
 /
 
 &amp;MASK_NML
-  MASK%FILENAME         = '../data/east-USA_P25.mask'
+  MASK%FILENAME         = 'east-USA_P25.mask'
 /
 
 &amp;OBST_NML
   OBST%SF              =  0.01
-  OBST%FILENAME        = '../data/east-USA_P25.obst'
+  OBST%FILENAME        = 'east-USA_P25.obst'
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
-<h2 id="—————————————-3"><a href="#—————————————-3" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-3"><a href="#参考资料-3" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>inout</code>教程；</p>
+<h2 id="—————————————-3"><a href="#—————————————-3" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-3"><a href="#参考资料-3" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/01-ww3-v6.07.1-xia-zai.w3-make/">https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/01-ww3-v6.07.1-xia-zai.w3-make/</a></p>
+<blockquote>
+<p>WW3 v6.07.1：下载+./w3_make</p>
+</blockquote>
 <p><a href="https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/#">https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/#</a>!</p>
 <blockquote>
-<p>以下的程序，是基于<code>inout</code>教程创建的工作目录文件夹<code>work-inout</code>，从而执行的。</p>
+<p><code>inout</code>教程；</p>
 </blockquote>
-<h2 id="ww3的inout实现"><a href="#ww3的inout实现" class="headerlink" title="ww3的inout实现"></a>ww3的inout实现</h2><h3 id="comp-link-switch-的选择，生成-ww3"><a href="#comp-link-switch-的选择，生成-ww3" class="headerlink" title="comp, link, switch 的选择，生成 ww3_*"></a>comp, link, switch 的选择，生成 ww3_*</h3><p>这里使用<code>inout</code>教程的switch。</p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118150051.png" alt="switch 源项的选择"></p>
-<p>创建工作目录：<code>work-east-USA</code>。</p>
-<h3 id="ww3-grid"><a href="#ww3-grid" class="headerlink" title="ww3_grid"></a>ww3_grid</h3><ol>
-<li>在工作目录添加<code>ww3_grid.nml</code>；</li>
+<h2 id="w3-make测试生成-ww3文件"><a href="#w3-make测试生成-ww3文件" class="headerlink" title="./w3_make测试生成.ww3文件"></a>./w3_make测试生成.ww3文件</h2><p>下载WW3文件夹，按照参考资料的流程，能成功./w3_make。成功后，会生成<code>$model/exe</code>文件夹，其中包含了<code>.ww3</code>文件和配置文件<code>comp</code>, <code>link</code>, <code>switch</code>；</p>
+<blockquote>
+<p><code>$exe</code>文件夹可以更换名称，如<code>$exe_inout</code>表明在<code>inout</code>教程用到的<code>$exe</code>，换名后的<code>$exe</code>不会被<code>./w3_clean</code>和<code>./w3_new</code>清除，不换名，<code>$exe</code>会被更新；</p>
+</blockquote>
+<blockquote>
+<p>这一步的主要作用是为了确定能生成<code>.ww3</code>文件，</p>
+<p>如果不能成功./w3_make，接下来在<code>regtests</code>中，根据自己的需求配置<code>comp</code>、 <code>link</code>、<code>switch</code>，更加不可能实现；</p>
+</blockquote>
+<h2 id="—————————————-4"><a href="#—————————————-4" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-4"><a href="#参考资料-4" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/03-regtests-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing-li-zi/">https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/03-regtests-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing-li-zi/</a></p>
+<blockquote>
+<p>03-regtests文件夹（官方给的ww3运行例子）</p>
+</blockquote>
+<h2 id="在regtests的east-USA中，根据执行ww3-grid的run-test命令，配置相关文件并执行"><a href="#在regtests的east-USA中，根据执行ww3-grid的run-test命令，配置相关文件并执行" class="headerlink" title="在regtests的east-USA中，根据执行ww3_grid的run_test命令，配置相关文件并执行"></a>在regtests的east-USA中，根据执行ww3_grid的run_test命令，配置相关文件并执行</h2><ol>
+<li><p>进入<code>$regtests</code>，新建<code>east-USA</code>文件夹；</p>
+</li>
+<li><p>在<code>east-USA</code>中，获取已经存在的 <code>run_test</code> 脚本；</p>
+</li>
+<li><p>了解运行<code>run_test</code>的重要参数：</p>
+<ul>
+<li><p><code>-i input</code> 表明，输入文件夹是，在<code>east-USA</code>下的<code>input</code>；</p>
+<blockquote>
+<p>可以更换<code>input</code>名称，例如<code>input2</code>；</p>
+</blockquote>
+</li>
+<li><p><code>-s inout</code>表明，源项使用的是，在输入文件夹下的<code>switch_inout</code>；</p>
+<blockquote>
+<p>默认是输入文件夹下的<code>switch</code>；</p>
+</blockquote>
+<blockquote>
+<p><code>switch_inout</code>文件来自于<code>inout</code>教程；</p>
+</blockquote>
+</li>
+<li><p><code>-N</code>表明，使用的是<code>.nml</code>，而不是<code>.inp</code>；</p>
+</li>
+<li><p><code>-g east-USA_P25</code>表明，ww3_grid名单列表文件名称<code>.</code>之前，是<code>ww3_grid_east-USA_P25</code>；</p>
+<blockquote>
+<p>默认是<code>ww3_grid</code>；</p>
+</blockquote>
+</li>
+<li><p><code>-c Gnu</code>表明，编译使用的是，在<code>$model/bin</code>目录下的<code>comp.Gnu</code>和<code>link.Gnu</code>;</p>
+<blockquote>
+<p>终于不用创建什么<code>comp.comp.Gnu</code>这些奇怪的文件了；</p>
+</blockquote>
+<blockquote>
+<p>我到目前为止（20220127），常用的是 Gnu；</p>
+</blockquote>
+<blockquote>
+<p>默认的是在<code>$model/bin</code>目录下的<code>comp</code>和<code>link</code>;</p>
+</blockquote>
+</li>
+<li><p><code>-w work</code>表明，输出（工作）文件夹是，在<code>east-USA</code>下的<code>work</code>;</p>
+<blockquote>
+<p>可以更换<code>work</code>名称，例如<code>work2</code>；</p>
+</blockquote>
+</li>
+<li><p><code>-r ww3_grid</code>表明，程序仅仅执行<code>ww3_grid</code>过程；</p>
+<blockquote>
+<p><code>ww3_grid.ww3</code>会在程序运行的过程中，在<code>$model/exe</code>中创建；</p>
+</blockquote>
+<blockquote>
+<p>在输出文件夹有，记录运行过程的文件<code>ww3_grid.out</code>；</p>
+</blockquote>
+<blockquote>
+<p>类似的，<code>ww3_strt</code>，…</p>
+</blockquote>
+</li>
+<li><p>…；</p>
+</li>
+</ul>
+<p>执行ww3_grid的run_test命令为：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$regtests</span>
+./east-USA/run_test -i input -c Gnu -s inout -N -g east-USA_P25 -w work1 <span class="token punctuation">..</span>/model east-USA<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>根据<code>执行ww3_grid的run_test命令</code>，配置相关文件（总共<strong>5+1=6</strong>个文件）：</p>
+<ul>
+<li><p>创建<code>input</code>输入文件夹；</p>
+</li>
+<li><p>确保<code>$model/bin</code>目录下有<code>comp.Gnu</code>和<code>link.Gnu</code>；</p>
+</li>
+<li><p>将源项<code>switch_inout</code>添加到输入文件夹；（<strong>1</strong>）</p>
+<blockquote>
+<p>与<code>-s inout</code>对应；</p>
+</blockquote>
+</li>
+<li><p>将gridgen<code>$data</code>中的<code>east-USA_P25_ww3_grid.nml</code>、<code>east-USA_P25.bot</code>、<code>east-USA_P25.mask</code>、<code>east-USA_P25.obst</code>、<code>namelists_east-USA_P25.nml</code>复制粘贴到输入文件夹。（<strong>5</strong>）</p>
+<blockquote>
+<p><code>east-USA_P25_ww3_grid.nml</code>改成<code>ww3_grid_east-USA_P25.nml</code>，与<code>-g east-USA_P25</code>对应；</p>
+</blockquote>
+<blockquote>
+<p><code>east-USA_P25.bot</code>、<code>east-USA_P25.mask</code>、<code>east-USA_P25.obst</code>、<code>namelists_east-USA_P25.nml</code>在run_test中有创建软连接的操作；（<strong>自己添加的这个操作</strong>）</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>执行，在输出文件夹得到结果；</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220127211027.png"></p>
+</li>
 </ol>
 
                 
@@ -1939,7 +2050,7 @@ OBSTR_OFFSET = 1
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">228.8k</span>
+                        class="white-color">230.1k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
