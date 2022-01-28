@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-27
+                    2022-01-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    6.8k
+                    9.3k
                 </div>
                 
 
@@ -1190,7 +1190,7 @@ OBSTR_OFFSET = 1
 <p>具体用到时，将这些文件放在<code>$inout</code>中。</p>
 </blockquote>
 <blockquote>
-<p>问题：<font color="red">时间步长如何确定？（我算出来的很诡异）</font></p>
+<p>问题：<font color="red">时间步长如何确定？（我算出来的很诡异），先使用600s的全局时间步长吧</font></p>
 </blockquote>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
 ! Define the spectrum parameterization via SPECTRUM_NML namelist
@@ -1271,9 +1271,9 @@ OBSTR_OFFSET = 1
 !     TIMESTEPS%DTMIN      = 0.         ! minimum source term time step (s)
 ! -------------------------------------------------------------------- !
 &amp;TIMESTEPS_NML
-  TIMESTEPS%DTMAX         =   2700.
-  TIMESTEPS%DTXY          =   900.
-  TIMESTEPS%DTKTH         =   1350.
+  TIMESTEPS%DTMAX         =   600.
+  TIMESTEPS%DTXY          =   200.
+  TIMESTEPS%DTKTH         =   300.
   TIMESTEPS%DTMIN         =   10.
 /
 
@@ -1444,12 +1444,12 @@ OBSTR_OFFSET = 1
 <p>可以更换<code>input</code>名称，例如<code>input2</code>；</p>
 </blockquote>
 </li>
-<li><p><code>-s inout</code>表明，源项使用的是，在输入文件夹下的<code>switch_inout</code>；</p>
+<li><p><code>-s Ifremer1</code>表明，源项使用的是，在输入文件夹下的<code>switch_Ifremer1</code>；</p>
 <blockquote>
 <p>默认是输入文件夹下的<code>switch</code>；</p>
 </blockquote>
 <blockquote>
-<p><code>switch_inout</code>文件来自于<code>inout</code>教程；</p>
+<p><code>switch_Ifremer1</code>文件来自于<code>$model/bin</code>；</p>
 </blockquote>
 </li>
 <li><p><code>-N</code>表明，使用的是<code>.nml</code>，而不是<code>.inp</code>；</p>
@@ -1491,16 +1491,16 @@ OBSTR_OFFSET = 1
 </ul>
 <p>执行ww3_grid的run_test命令为：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$regtests</span>
-./east-USA/run_test -i input -c Gnu -s inout -N -g east-USA_P25 -w work1 <span class="token punctuation">..</span>/model east-USA<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+./east-USA/run_test -i input -c Gnu -s Ifremer1 -N -g east-USA_P25 -r ww3_grid -w work1 <span class="token punctuation">..</span>/model east-USA<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 <li><p>根据<code>执行ww3_grid的run_test命令</code>，配置相关文件（总共<strong>5+1=6</strong>个文件）：</p>
 <ul>
 <li><p>创建<code>input</code>输入文件夹；</p>
 </li>
 <li><p>确保<code>$model/bin</code>目录下有<code>comp.Gnu</code>和<code>link.Gnu</code>；</p>
 </li>
-<li><p>将源项<code>switch_inout</code>添加到输入文件夹；（<strong>1</strong>）</p>
+<li><p>将源项<code>switch_Ifremer1</code>添加到输入文件夹；（<strong>1</strong>）</p>
 <blockquote>
-<p>与<code>-s inout</code>对应；</p>
+<p>与<code>-s Ifremer1</code>对应；</p>
 </blockquote>
 </li>
 <li><p>将gridgen<code>$data</code>中的<code>east-USA_P25_ww3_grid.nml</code>、<code>east-USA_P25.bot</code>、<code>east-USA_P25.mask</code>、<code>east-USA_P25.obst</code>、<code>namelists_east-USA_P25.nml</code>复制粘贴到输入文件夹。（<strong>5</strong>）</p>
@@ -1517,6 +1517,413 @@ OBSTR_OFFSET = 1
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220127211027.png"></p>
 </li>
 </ol>
+<h2 id="—————————————理想初始条件运行"><a href="#—————————————理想初始条件运行" class="headerlink" title="—————————————理想初始条件运行"></a>—————————————理想初始条件运行</h2><h2 id="参考资料-5"><a href="#参考资料-5" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/#">https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/#</a>!</p>
+<blockquote>
+<p><code>inout</code>教程；</p>
+</blockquote>
+<h2 id="在regtests的east-USA中，根据执行ww3-strt的run-test命令，配置相关文件并执行"><a href="#在regtests的east-USA中，根据执行ww3-strt的run-test命令，配置相关文件并执行" class="headerlink" title="在regtests的east-USA中，根据执行ww3_strt的run_test命令，配置相关文件并执行"></a>在regtests的east-USA中，根据执行ww3_strt的run_test命令，配置相关文件并执行</h2><ol>
+<li><p>执行ww3_strt的run_test命令为：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$regtests</span>
+./east-USA/run_test -i input -c Gnu -s Ifremer1 -r ww3_strt -w work1 <span class="token punctuation">..</span>/model east-USA<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>在输入文件夹中创建<code>ww3_strt.inp</code>：</p>
+<blockquote>
+<p>在<code>$model/nml</code>中没有<code>ww3_strt.nml</code>，在<code>$model/inp</code>中有<code>ww3_strt.inp</code>；</p>
+</blockquote>
+<blockquote>
+<p>inout教程中的ww3_strt.inp文件，与<code>$model/inp</code>中的一致，如下：</p>
+<pre class="line-numbers language-inp" data-language="inp"><code class="language-inp">$ -------------------------------------------------------------------- $
+$ WAVEWATCH III Initial conditions input file                          $
+$--------------------------------------------------------------------- $
+$ type of initial field ITYPE .
+$
+    1
+$
+$ ITYPE = 1 ---------------------------------------------------------- $
+$ Gaussian in frequency and space, cos type in direction.
+$ - fp and spread (Hz), mean direction (degr., oceanographic
+$    convention) and cosine power, Xm and spread (degr. or m) Ym and
+$    spread (degr. or m), Hmax (m) (Example for lon-lat grid in degr.).
+$
+$   0.10  0.01  270. 2  1. 0.5 1. 0.5 2.5
+    0.10  0.01  270. 2  0. 1000. 1. 1000. 2.5
+$   0.10  0.01  270. 2  0. 1000. 1. 1000. 0.01
+$   0.10  0.01  270. 2  0. 1000. 1. 1000. 0.
+$
+$ ITYPE = 2 ---------------------------------------------------------- $
+$ JONSWAP spectrum with Hasselmann et al. (1980) direct. distribution.
+$ - alfa, peak freq. (Hz), mean direction (degr., oceanographical
+$   convention), gamma, sigA, sigB, Xm and spread (degr. or m) Ym and
+$   spread (degr. or m)  (Example for lon-lat grid in degr.).
+$   alfa, sigA, sigB give default values if less than or equal to 0.
+$
+$   0.0081  0.1  270.  1.0 0. 0. 1. 100. 1. 100.
+$
+$ ITYPE = 3 ---------------------------------------------------------- $
+$ Fetch-limited JONSWAP
+$ - No additional data, the local spectrum is calculated using the
+$   local wind speed and direction, using the spatial grid size as
+$   fetch, and assuring that the spectrum is within the discrete
+$   frequency range.
+$
+$ ITYPE = 4 ---------------------------------------------------------- $
+$ User-defined spectrum
+$ - Scale factor., defaults to 1 if less than or equal 0.
+$ - Spectrum F(f,theta) (single read statement)
+$
+$ -0.1
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 1 4 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 1 2 3 2 1 1 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 1 3 9 7 5 3 2 1 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 1 3 4 3 2 1 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+$
+$ ITYPE = 5 ---------------------------------------------------------- $
+$ Starting from calm conditions.
+$ - No additional data.
+$
+$ -------------------------------------------------------------------- $
+$ End of input file                                                    $
+$ -------------------------------------------------------------------- $<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<p>先用<code>$model/inp</code>中的这个文件吧。</p>
+</li>
+<li><p>执行，在输出文件夹得到结果：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220128120046.png"></p>
+</li>
+</ol>
+<h2 id="在regtests的east-USA中，根据执行ww3-shel的run-test命令，配置相关文件并执行"><a href="#在regtests的east-USA中，根据执行ww3-shel的run-test命令，配置相关文件并执行" class="headerlink" title="在regtests的east-USA中，根据执行ww3_shel的run_test命令，配置相关文件并执行"></a>在regtests的east-USA中，根据执行ww3_shel的run_test命令，配置相关文件并执行</h2><ol>
+<li><p>执行ww3_shel的run_test命令为：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$regtests</span>
+./east-USA/run_test -i input -c Gnu -s Ifremer1 -N -r ww3_shel -w work1 <span class="token punctuation">..</span>/model east-USA<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>在输入文件夹中创建<code>ww3_shel.nml</code>：</p>
+<p>先采用inout教程中最初始的<code>ww3_shel.nml</code></p>
+<blockquote>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! WAVEWATCH III ww3_shel.nml - single-grid model                       !
+! -------------------------------------------------------------------- !
+
+
+! -------------------------------------------------------------------- !
+! Define top-level model parameters via DOMAIN_NML namelist
+!
+! * IOSTYP defines the output server mode for parallel implementation.
+!             0 : No data server processes, direct access output from
+!                 each process (requires true parallel file system).
+!             1 : No data server process. All output for each type 
+!                 performed by process that performs computations too.
+!             2 : Last process is reserved for all output, and does no
+!                 computing.
+!             3 : Multiple dedicated output processes.
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     DOMAIN%IOSTYP =  1                 ! Output server type
+!     DOMAIN%START  = '19680606 000000'  ! Start date for the entire model 
+!     DOMAIN%STOP   = '19680607 000000'  ! Stop date for the entire model
+! -------------------------------------------------------------------- !
+&amp;DOMAIN_NML
+  DOMAIN%START   = '20110902 000000'
+  DOMAIN%STOP    = '20110902 060000'
+/
+
+! -------------------------------------------------------------------- !
+! Define each forcing via the INPUT_NML namelist
+!
+! * The FORCING flag can be  : F for "no forcing"
+!                              T for "external forcing file"
+!                              H for "homogenous forcing input"
+!                              C for "coupled forcing field"
+!
+! * homogeneous forcing is not available for ICE_CONC
+!
+! * The ASSIM flag can :  F for "no forcing"
+!                         T for "external forcing file"
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     INPUT%FORCING%WATER_LEVELS  = F
+!     INPUT%FORCING%CURRENTS      = F
+!     INPUT%FORCING%WINDS         = F
+!     INPUT%FORCING%ICE_CONC      = F
+!     INPUT%FORCING%ICE_PARAM1    = F
+!     INPUT%FORCING%ICE_PARAM2    = F
+!     INPUT%FORCING%ICE_PARAM3    = F
+!     INPUT%FORCING%ICE_PARAM4    = F
+!     INPUT%FORCING%ICE_PARAM5    = F
+!     INPUT%FORCING%MUD_DENSITY   = F
+!     INPUT%FORCING%MUD_THICKNESS = F
+!     INPUT%FORCING%MUD_VISCOSITY = F
+!     INPUT%ASSIM%MEAN            = F
+!     INPUT%ASSIM%SPEC1D          = F
+!     INPUT%ASSIM%SPEC2D          = F
+! -------------------------------------------------------------------- !
+&amp;INPUT_NML
+/
+
+! -------------------------------------------------------------------- !
+! Define the output types point parameters via OUTPUT_TYPE_NML namelist
+!
+! * the point file is a space separated values per line : lon lat 'name'
+!
+! * the full list of field names is : 
+!  DPT CUR WND AST WLV ICE IBG D50 IC1 IC5 HS LM T02 T0M1 T01 FP DIR SPR
+!  DP HIG EF TH1M STH1M TH2M STH2M WN PHS PTP PLP PDIR PSPR PWS TWS PNR
+!  UST CHA CGE FAW TAW TWA WCC WCF WCH WCM SXY TWO BHD FOC TUS USS P2S
+!  USF P2L TWI FIC ABR UBR BED FBB TBB MSS MSC DTD FC CFX CFD CFK U1 U2 
+!
+! * output track file formatted (T) or unformated (F)
+!
+! * coupling fields exchanged list is :
+!   - Sent fields by ww3:
+!       - Ocean model : T0M1 OCHA OHS DIR BHD TWO UBR FOC TAW TUS USS LM DRY
+!       - Atmospheric model : ACHA AHS TP (or FP) FWS
+!       - Ice model : IC5 TWI
+!   - Received fields by ww3:
+!       - Ocean model : SSH CUR
+!       - Atmospheric model : WND
+!       - Ice model : ICE IC1 IC5
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     TYPE%FIELD%LIST         =  'unset'
+!     TYPE%POINT%FILE         =  'points.list'
+!     TYPE%TRACK%FORMAT       =  T
+!     TYPE%PARTITION%X0       =  0
+!     TYPE%PARTITION%XN       =  0
+!     TYPE%PARTITION%NX       =  0
+!     TYPE%PARTITION%Y0       =  0
+!     TYPE%PARTITION%YN       =  0
+!     TYPE%PARTITION%NY       =  0
+!     TYPE%PARTITION%FORMAT   =  T
+!     TYPE%COUPLING%SENT      = 'unset'
+!     TYPE%COUPLING%RECEIVED  = 'unset'
+!
+! -------------------------------------------------------------------- !
+&amp;OUTPUT_TYPE_NML
+  TYPE%FIELD%LIST          = 'HS FP DIR DP CHA UST DPT CUR WND'
+/
+
+! -------------------------------------------------------------------- !
+! Define output dates via OUTPUT_DATE_NML namelist
+!
+! * start and stop times are with format 'yyyymmdd hhmmss'
+! * if time stride is equal '0', then output is disabled
+! * time stride is given in seconds
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     DATE%FIELD%START         =  '19680606 000000'
+!     DATE%FIELD%STRIDE        =  '0'
+!     DATE%FIELD%STOP          =  '19680607 000000'
+!     DATE%POINT%START         =  '19680606 000000'
+!     DATE%POINT%STRIDE        =  '0'
+!     DATE%POINT%STOP          =  '19680607 000000'
+!     DATE%TRACK%START         =  '19680606 000000'
+!     DATE%TRACK%STRIDE        =  '0'
+!     DATE%TRACK%STOP          =  '19680607 000000'
+!     DATE%RESTART%START       =  '19680606 000000'
+!     DATE%RESTART%STRIDE      =  '0'
+!     DATE%RESTART%STOP        =  '19680607 000000'
+!     DATE%BOUNDARY%START      =  '19680606 000000'
+!     DATE%BOUNDARY%STRIDE     =  '0'
+!     DATE%BOUNDARY%STOP       =  '19680607 000000'
+!     DATE%PARTITION%START     =  '19680606 000000'
+!     DATE%PARTITION%STRIDE    =  '0'
+!     DATE%PARTITION%STOP      =  '19680607 000000'
+!     DATE%COUPLING%START      =  '19680606 000000'
+!     DATE%COUPLING%STRIDE     =  '0'
+!     DATE%COUPLING%STOP       =  '19680607 000000'
+!
+!     DATE%RESTART             =  '19680606 000000' '0' '19680607 000000'
+! -------------------------------------------------------------------- !
+&amp;OUTPUT_DATE_NML
+  DATE%FIELD          = '20110902 000000' '3600' '20110902 060000'
+/
+
+! -------------------------------------------------------------------- !
+! Define homogeneous input via HOMOG_COUNT_NML and HOMOG_INPUT_NML namelist
+!
+! * the number of each homogeneous input is defined by HOMOG_COUNT
+! * the total number of homogeneous input is automatically calculated
+! * the homogeneous input must start from index 1 to N
+! * if VALUE1 is equal 0, then the homogeneous input is desactivated
+! * NAME can be IC1, IC2, IC3, IC4, IC5, MDN, MTH, MVS, LEV, CUR, WND, ICE, MOV
+! * each homogeneous input is defined over a maximum of 3 values detailled below :
+!     - IC1 is defined by thickness
+!     - IC2 is defined by viscosity
+!     - IC3 is defined by density
+!     - IC4 is defined by modulus
+!     - IC5 is defined by floe diameter
+!     - MDN is defined by density
+!     - MTH is defined by thickness
+!     - MVS is defined by viscosity
+!     - LEV is defined by height
+!     - CUR is defined by speed and direction
+!     - WND is defined by speed, direction and airseatemp
+!     - ICE is defined by concentration
+!     - MOV is defined by speed and direction
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     HOMOG_COUNT%N_IC1            =  0
+!     HOMOG_COUNT%N_IC2            =  0
+!     HOMOG_COUNT%N_IC3            =  0
+!     HOMOG_COUNT%N_IC4            =  0
+!     HOMOG_COUNT%N_IC5            =  0
+!     HOMOG_COUNT%N_MDN            =  0
+!     HOMOG_COUNT%N_MTH            =  0
+!     HOMOG_COUNT%N_MVS            =  0
+!     HOMOG_COUNT%N_LEV            =  0
+!     HOMOG_COUNT%N_CUR            =  0
+!     HOMOG_COUNT%N_WND            =  0
+!     HOMOG_COUNT%N_ICE            =  0
+!     HOMOG_COUNT%N_MOV            =  0
+!
+!     HOMOG_INPUT(I)%NAME           =  'unset'
+!     HOMOG_INPUT(I)%DATE           =  '19680606 000000'
+!     HOMOG_INPUT(I)%VALUE1         =  0
+!     HOMOG_INPUT(I)%VALUE2         =  0
+!     HOMOG_INPUT(I)%VALUE3         =  0
+! -------------------------------------------------------------------- !
+&amp;HOMOG_COUNT_NML
+/
+
+&amp;HOMOG_INPUT_NML
+/
+
+
+! -------------------------------------------------------------------- !
+! WAVEWATCH III - end of namelist                                      !
+! -------------------------------------------------------------------- !<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+</li>
+<li><p>执行，在输出文件夹得到结果：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220128144719.png"></p>
+<p><code>cat log.ww3 | less</code>：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220128145435.png"></p>
+</li>
+</ol>
+<h2 id="在regtests的east-USA中，根据执行ww3-ounf的run-test命令，配置相关文件并执行"><a href="#在regtests的east-USA中，根据执行ww3-ounf的run-test命令，配置相关文件并执行" class="headerlink" title="在regtests的east-USA中，根据执行ww3_ounf的run_test命令，配置相关文件并执行"></a>在regtests的east-USA中，根据执行ww3_ounf的run_test命令，配置相关文件并执行</h2><ol>
+<li><p>执行ww3_ounf的run_test命令为：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$regtests</span>
+./east-USA/run_test -i input -c Gnu -s Ifremer1 -N -r ww3_ounf -w work1 -o netcdf <span class="token punctuation">..</span>/model east-USA<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><code>-o netcdf</code>输出文件类型为<code>netcdf</code>；</p>
+</blockquote>
+</li>
+<li><p>在输入文件夹中创建<code>ww3_ounf.nml</code>：</p>
+<p>先采用inout教程中的<code>ww3_ounf.nml</code></p>
+<pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">! -------------------------------------------------------------------- !
+! WAVEWATCH III ww3_ounf.nml - Grid output post-processing             !
+! -------------------------------------------------------------------- !
+
+! -------------------------------------------------------------------- !
+! Define the output fields to postprocess via FIELD_NML namelist
+!
+! * the full list of field names FIELD%LIST is : 
+!  DPT CUR WND AST WLV ICE IBG D50 IC1 IC5 HS LM T02 T0M1 T01 FP DIR SPR
+!  DP HIG EF TH1M STH1M TH2M STH2M WN PHS PTP PLP PDIR PSPR PWS TWS PNR
+!  UST CHA CGE FAW TAW TWA WCC WCF WCH WCM SXY TWO BHD FOC TUS USS P2S
+!  USF P2L TWI FIC ABR UBR BED FBB TBB MSS MSC DTD FC CFX CFD CFK U1 U2 
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     FIELD%TIMESTART            = '19000101 000000'  ! Stop date for the output field
+!     FIELD%TIMESTRIDE           = '0'                ! Time stride for the output field
+!     FIELD%TIMESTOP             = '29001231 000000'  ! Stop date for the output field
+!     FIELD%TIMECOUNT            = '1000000000'       ! Number of time steps
+!     FIELD%TIMESPLIT            = 6                  ! [4(yearly),6(monthly),8(daily),10(hourly)]
+!     FIELD%LIST                 = 'unset'            ! List of output fields
+!     FIELD%PARTITION            = '0 1 2 3'          ! List of wave partitions ['0 1 2 3 4 5']
+!     FIELD%SAMEFILE             = T                  ! All the variables in the same file [T|F]
+!     FIELD%TYPE                 = 3                  ! [2 = SHORT, 3 = it depends , 4 = REAL]
+! -------------------------------------------------------------------- !
+&amp;FIELD_NML
+  FIELD%TIMESTART        =  '20080310 000000'
+  FIELD%TIMESTRIDE       =  '180'
+  FIELD%TIMECOUNT        =  '100'
+  FIELD%LIST             =  'HS FP DIR DP CHA UST DPT CUR WND'
+  FIELD%PARTITION        =  '0'
+/
+
+! -------------------------------------------------------------------- !
+! Define the content of the input file via FILE_NML namelist
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     FILE%PREFIX        = 'ww3.'            ! Prefix for output file name
+!     FILE%NETCDF        = 3                 ! Netcdf version [3|4]
+!     FILE%IX0           = 1                 ! First X-axis or node index
+!     FILE%IXN           = 1000000000        ! Last X-axis or node index
+!     FILE%IY0           = 1                 ! First Y-axis index
+!     FILE%IYN           = 1000000000        ! Last Y-axis index
+! -------------------------------------------------------------------- !
+&amp;FILE_NML
+/
+
+
+! -------------------------------------------------------------------- !
+! Define the content of the output file via SMC_NML namelist
+!
+! * For SMC grids, IX0, IXN, IY0 and IYN from FILE_NML are not used.
+!   Two types of output are available:
+! *   TYPE=1: Flat 1D "seapoint" array of grid cells.
+! *   TYPE=2: Re-gridded regular grid with cell sizes being an integer
+! *           multiple of the smallest SMC grid cells size.
+!
+! * Note that the first/last longitudes and latitudes will be adjusted
+!  to snap to the underlying SMC grid edges. CELFAC is only used for
+!  type 2 output and defines the output cell sizes as an integer
+!  multiple of the smallest SMC Grid cell size. CELFAC should be a
+!  power of 2, e.g: 1,2,4,8,16, etc...
+!
+! * namelist must be terminated with /
+! * definitions &amp; defaults:
+!     SMC%TYPE          = 1              ! SMC Grid type (1 or 2)
+!     SMC%SXO           = -999.9         ! First longitude
+!     SMC%EXO           = -999.9         ! Last longitude
+!     SMC%SYO           = -999.9         ! First latitude
+!     SMC%EYO           = -999.9         ! Last latitude
+!     SMC%CELFAC        = 1              ! Cell size factor (SMCTYPE=2 only)
+!     SMC%NOVAL         = UNDEF          ! Fill value for wet cells with no data
+! -------------------------------------------------------------------- !
+&amp;SMC_NML
+/
+
+! -------------------------------------------------------------------- !
+! WAVEWATCH III - end of namelist                                      !
+! -------------------------------------------------------------------- !
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>执行，在输出文件夹得到结果：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220128181732.png"></p>
+</li>
+<li><p>ncview可视化nc文件：</p>
+<p><code>ncview ww3.201109.nc</code>，查看Hs：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/15.gif"></p>
+</li>
+</ol>
+<h2 id="了解ww3-strt-inp参数"><a href="#了解ww3-strt-inp参数" class="headerlink" title="了解ww3_strt.inp参数"></a>了解ww3_strt.inp参数</h2><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220128193641.png" style="zoom:80%;">
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/16.gif"></p>
 
                 
             </div>
@@ -2050,7 +2457,7 @@ OBSTR_OFFSET = 1
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">230.1k</span>
+                        class="white-color">232.8k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
