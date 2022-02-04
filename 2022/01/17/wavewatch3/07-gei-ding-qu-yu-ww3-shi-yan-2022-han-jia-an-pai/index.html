@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-28
+                    2022-02-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    9.3k
+                    11.7k
                 </div>
                 
 
@@ -409,11 +409,19 @@
 <blockquote>
 <p>需要到火狐浏览器打开</p>
 </blockquote>
-<h2 id="NDBC浮标数据"><a href="#NDBC浮标数据" class="headerlink" title="NDBC浮标数据"></a>NDBC浮标数据</h2><h2 id="—————————————-1"><a href="#—————————————-1" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-1"><a href="#参考资料-1" class="headerlink" title="参考资料"></a>参考资料</h2><p>官网：<a target="_blank" rel="noopener" href="https://www.remss.com/measurements/ccmp/">https://www.remss.com/measurements/ccmp/</a></p>
+<h2 id="NDBC浮标数据"><a href="#NDBC浮标数据" class="headerlink" title="NDBC浮标数据"></a>NDBC浮标数据</h2><h2 id="—————————————CCMP"><a href="#—————————————CCMP" class="headerlink" title="—————————————CCMP"></a>—————————————CCMP</h2><h2 id="参考资料-1"><a href="#参考资料-1" class="headerlink" title="参考资料"></a>参考资料</h2><p>官网：<a target="_blank" rel="noopener" href="https://www.remss.com/measurements/ccmp/">https://www.remss.com/measurements/ccmp/</a></p>
 <blockquote>
 <p>2022-01-17 可以打开</p>
+<p><code>CCMP Wind Vector Analysis Product</code></p>
 </blockquote>
-<h2 id="CCMP-Wind-Vector-Analysis-Product"><a href="#CCMP-Wind-Vector-Analysis-Product" class="headerlink" title="CCMP Wind Vector Analysis Product"></a>CCMP Wind Vector Analysis Product</h2><h3 id="Version-2-CCMP-Wind-Product"><a href="#Version-2-CCMP-Wind-Product" class="headerlink" title="Version 2 CCMP Wind Product"></a>Version 2 CCMP Wind Product</h3><p>The Cross-Calibrated Multi-Platform (CCMP) gridded surface vector winds are produced using satellite, moored buoy, and model wind data, and as such, are considered to be a Level-3 ocean vector wind analysis product. We have updated the CCMP product, using improved and additional input data. </p>
+<p><a target="_blank" rel="noopener" href="https://data.remss.com/ccmp/">https://data.remss.com/ccmp/</a></p>
+<blockquote>
+<p>2022-02-04 可以打开</p>
+<p>来自于Wjc老师发的网站；</p>
+<p><code>readme_ccmp.pdf</code> 来自于<code>CCMP Wind Vector Analysis Product</code>；</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204171753.png" style="zoom:67%;">
+</blockquote>
+<h2 id="CCMP-Wind-Vector-Analysis-Product-2022-01-17"><a href="#CCMP-Wind-Vector-Analysis-Product-2022-01-17" class="headerlink" title="CCMP Wind Vector Analysis Product (2022-01-17)"></a>CCMP Wind Vector Analysis Product (2022-01-17)</h2><h3 id="Version-2-CCMP-Wind-Product"><a href="#Version-2-CCMP-Wind-Product" class="headerlink" title="Version 2 CCMP Wind Product"></a>Version 2 CCMP Wind Product</h3><p>The Cross-Calibrated Multi-Platform (CCMP) gridded surface vector winds are produced using satellite, moored buoy, and model wind data, and as such, are considered to be a Level-3 ocean vector wind analysis product. We have updated the CCMP product, using improved and additional input data. </p>
 <p><strong>This web site documents the new CCMP V2.0 data set now available from Remote Sensing Systems</strong> (RSS). </p>
 <p><code>The V2 CCMP processing</code> now combines <code>Version-7 RSS radiometer wind speeds</code>,<code> QuikSCAT and ASCAT scatterometer wind vectors</code>, <code>moored buoy wind data</code>, and <code>ERA-Interim model wind fields</code> using a <code>Variational Analysis Method (VAM)</code> to produce four maps daily of <code>0.25 degree</code> gridded vector winds.  </p>
 <blockquote>
@@ -447,7 +455,74 @@
 <blockquote>
 <p>incrementally 递增的</p>
 </blockquote>
-<h2 id="—————————————-2"><a href="#—————————————-2" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-2"><a href="#参考资料-2" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>gridgen</code>教程；</p>
+<p>We provide the Level-3.0 (L3.0) and Level-3.5 (L3.5) CCMP V2.0 products in netCDF4 format.</p>
+<ul>
+<li>The L3.0 CCMP V2.0 product contains four daily maps (00, 06, 12, and 18Z) of U and V vector wind components on a 0.25 degree global grid. The U and V components are relative to true north. The L3.0 data also includes maps of the number of observations (both satellite and in situ) that were analyzed at each location.</li>
+<li>The L3.5 CCMP V2.0 contains monthly winds averaged over the calendar month. Vector averages are computed for U and V. The average wind W is computed using a scalar average.</li>
+<li>Updates to the CCMP V2.0 product will be made roughly twice a year, to complete processing through December and June.</li>
+<li>The most recent update occurred in March 2018, and CCMP is now updated through December 30, 2017.</li>
+</ul>
+<h3 id="Product-Development"><a href="#Product-Development" class="headerlink" title="Product Development"></a>Product Development</h3><p>The CCMP data set combines cross-calibrated satellite microwave winds and instrument observations using a Variational Analysis Method (VAM) to produce high-resolution (0.25 degree) gridded analyses. </p>
+<p>Satellite wind retrievals derived by <strong>Remote Sensing Systems</strong> from a number of satellite-borne passive and active microwave instruments are used. RSS intercalibrates radiometers at the brightness temperature level to within 0.2 degree Celsius, applying a refined sea-surface emissivity model and radiative transfer function to derive surface winds. The resulting wind retrievals are highly consistent between microwave radiometer instrument platforms, including <a target="_blank" rel="noopener" href="https://www.remss.com/missions/ssmi">SSM/I</a>, <a target="_blank" rel="noopener" href="https://www.remss.com/missions/ssmi">SSMIS</a>, <a target="_blank" rel="noopener" href="https://www.remss.com/missions/amsr">AMSR</a>, <a target="_blank" rel="noopener" href="https://www.remss.com/missions/tmi">TMI</a>, <a target="_blank" rel="noopener" href="https://www.remss.com/missions/windsat">WindSat</a>, and <a target="_blank" rel="noopener" href="https://www.remss.com/missions/gmi">GMI</a>. RSS has also developed a geophysical model function for deriving wind speeds and directions from microwave scatterometers, including <a target="_blank" rel="noopener" href="https://www.remss.com/missions/qscat">QuikSCAT</a> and <a target="_blank" rel="noopener" href="https://www.remss.com/missions/ascat">ASCAT</a>. </p>
+<p>Both radiometer and scatterometer data are validated against ocean <strong>moored buoys</strong>, which confirm the measurements are in agreement (to within 0.8 m/s) despite the difference in wind measurement and retrieval methodologies. </p>
+<p>The <strong>VAM</strong> combines RSS instrument data with moored buoy measurements and a starting estimate (first-guess) of the wind field. </p>
+<p>The European Center for Medium-Range Weather Forecasts (<strong>ECMWF</strong>) <a target="_blank" rel="noopener" href="http://www.ecmwf.int/en/research/climate-reanalysis/era-interim">ERA-Interim Reanalysis</a> winds are used in the CCMP V2.0 processing as <strong>the first-guess wind field</strong>. This 0.25 deg model wind field is consistently processed, as opposed to that of the ECMWF operational model for which the model changes over time.  </p>
+<p>All wind observations (satellite and buoy) and model analysis fields are referenced to <strong>a height of 10 meters</strong>.</p>
+<h4 id="CCMP-VERSION-2-UPDATES"><a href="#CCMP-VERSION-2-UPDATES" class="headerlink" title="CCMP VERSION-2 UPDATES"></a>CCMP VERSION-2 UPDATES</h4><p>RSS cooperated with Dr. Ross Hoffman and Mark Leidner to transition the maintenance, update, and continued processing of CCMP. Once the transition was confirmed to be accurately functioning, RSS conducted a full reprocessing of the CCMP data set bringing it out of first-look status and delivering a consistently-reprocessed V2.0 data product for public use in scientific research. The version changes associated with the RSS V2.0 CCMP release include:</p>
+<ul>
+<li>Use of uniform inputs and satellite retrievals, with all satellite winds produced using RSS Version-7 (or higher) Ocean Radiative Transfer Model (ORTM) and a consistent processing methodology.</li>
+<li>Extension of the CCMP data set to July 2015 with plans to provide bi-annual extensions and updates to the dataset.</li>
+<li>Addition of winds from new instruments: ASCAT Metop-A, AMSR2, and GMI.</li>
+<li>Upgrade of the first-guess background wind field.  Now using the 0.25-deg, 6-hourly ERA-Interim Reanalysis winds.</li>
+<li>Use of improved moored buoy data with better quality control, including winds from NDBC, TAO, TRITON, RAMA, PIRATA, and Canadian buoys.</li>
+<li>Upgrade of the data file format to netCDF4 with CF-1.6 metadata.  Each daily file contains four 6-hourly wind analyses and self-describing metadata.</li>
+</ul>
+<p>A time series of all input data used in the VAM is shown below.  Passive radiometers are plotted in red and active scatterometers are plotted in green.  The version of data used for each instrument is provided. The moored buoy winds and ERA-Interim Reanalysis winds are available for the entire data range.  Quality controlled buoy data have been obtained from the Pacific Marine Environmental Lab (<a target="_blank" rel="noopener" href="http://www.pmel.noaa.gov/">PMEL</a>), from the National Data Buoy Center (<a target="_blank" rel="noopener" href="http://www.ndbc.noaa.gov/">NDBC</a>), and from the Fisheries and Ocean Canada Oceanography and Scientific Data branch (<a target="_blank" rel="noopener" href="http://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/index-eng.htm">OSD</a>).  </p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204175150.png"></p>
+<p>Full reprocessing of the entire data set takes approximately 1-2 months. Twice per year, in January and July, we will update the data product to include the past 6 months.  For example, in January 2017, we will release June 2016 to December 2016. In transitioning the code to run at RSS, special care was taken to make no changes to the overall approach or the methodology of the original CCMP product.  The code was changed, only where necessary, to account for changes in system architecture and compilers. Source code that was needed for the addition of new satellite winds (AMSR2 or GMI) was adapted from already existing code. This type of careful transition ensures that the same high-quality CCMP product is still produced, but with updated satellite, buoy and model wind data as input.</p>
+<h3 id="Data-Product-Format"><a href="#Data-Product-Format" class="headerlink" title="Data Product Format"></a>Data Product Format</h3><p>The CCMP V2.0 Level-3.0 (<strong>L3.0</strong>) winds are available as netCDF-4 data files. Each L3.0 daily data file contains <strong>3 arrays</strong> of size <strong>1440</strong> (longitude) by <strong>628</strong> (latitude for range -78.375 to 78.375) by <strong>4</strong> (time of 0Z, 06Z, 12Z, 18Z). Two of the arrays are the U and V wind components in <strong>meters/second (m/s)</strong>. Standard U and V coordinates apply, meaning the <strong>positive U is to the right</strong> and <strong>positive V is above the axis</strong>. U and V are relative to true north. CCMP winds are expressed using the oceanographic convention, meaning <strong>a wind blowing toward the Northeast</strong> has a positive U component and a positive V component. The third array in the file is the number of observations (nobs) used to derive the wind components. A nobs value of 0.0 means that the wind vector for that grid cell is very close to the wind vector from the background field because no satellite or moored buoy wind data were available to directly influence the analyzed vector wind.</p>
+<p>The CCMP V2.0 Level-3.5 (<strong>L3.5</strong>) winds are available as netCDF-4 data files. Each L3.5 monthly data file contains 3 arrays of size 1440 (longitude) by 628 (latitude for range -78.375 to 78.375) by <strong>1</strong> (time centered on the middle of the calendar month). The first two arrays are the vector-averaged U and V wind components in meters/second (m/s). The third array contains the scalar-averaged wind speed W for each location. Note that in regions with wind directions that vary substantially over time, W can be much higher than the magnitude of the vector-average components U and V.</p>
+<p>A fill value of <strong>-9999.0</strong> is used for any grid cell without any data. This should rarely happen. Longitude is given in degrees East from 0.125 to 359.875 and latitude is given in degrees North with negative values representing southern locations. While this is referred to as a global wind product, the extent of the data is  <strong>-79</strong> degrees to <strong>79</strong> degrees latitude.  The time in the file is given as hours since midnight on Jan 1, <strong>1987</strong>.</p>
+<p>The netCDF file contains CF 1.6-compliant self-describing metadata.  The JPL metadata compliance checker was used to assess compliance. The RSS CCMP V2.0 data set is distributed as L3.0 daily and L3.5 monthly files. The V1.1 CCMP data set available from PO.DAAC also contained L2.5 (vectors on satellite data) and L3.5 pentad data products. However, RSS has chosen to not distribute the L2.5 or L3.5 pentad data products at this time.</p>
+<h4 id="MISSING-DATA"><a href="#MISSING-DATA" class="headerlink" title="MISSING DATA"></a>MISSING DATA</h4><p>There are <strong>gaps</strong> within these data. There are <strong>11 days</strong> scattered between May and December of 1988 and <strong>14 days</strong> in January through July 1989 that do not appear on our FTP server</p>
+<p>During this time period, F08 is the only operational satellite input into the dataset. Days that are missing are because there was either very little or no data collected by the satellite on that day.</p>
+<p>In future reprocessing, we may include these files for completeness, but the CCMP wind field would essentially be just the <strong>ERA-Int</strong> background except for minor differences near buoys.</p>
+<h3 id="Read-Routines-Data-Access"><a href="#Read-Routines-Data-Access" class="headerlink" title="Read Routines / Data Access"></a>Read Routines / Data Access</h3><p>The CCMP netCDF4 files can be <strong>explored</strong> using tools such as <a target="_blank" rel="noopener" href="http://www.giss.nasa.gov/tools/panoply/">Panoply</a> or <a target="_blank" rel="noopener" href="http://www.epic.noaa.gov/java/ncBrowse/">ncBrowse</a>.  Matlab, IDL, and Python have built-in routines for <strong>reading netCDF files</strong>.  We have provided a sample read routine in <strong>Python</strong>.  The routine will plot and display the data for an example file.  CCMP data files can be obtained from RSS by <a target="_blank" rel="noopener" href="http://ftp2.remss.com/ccmp">ftp</a> and <a target="_blank" rel="noopener" href="http://data.remss.com/ccmp">http</a>.  </p>
+<p>File names have the structure <strong>CCMP_Wind_Analysis_YYYYMMDD_V02.0_L3.0_RSS.nc</strong> where YYYY is the 4-digit year, MM the month and DD the day-of-month. The files are stored in <strong>v02.0/Yyyyy/Mmm/</strong> directory structure.</p>
+<h3 id="Browse-Images-Graphic-Maps"><a href="#Browse-Images-Graphic-Maps" class="headerlink" title="Browse Images / Graphic Maps"></a>Browse Images / Graphic Maps</h3><p>The following movies loop through the full 28 years of data.</p>
+<p><a target="_blank" rel="noopener" href="http://images.remss.com/figures/measurements/ccmp/ccmp_v2.0_wind_speed.avi">CCMP Wind Speed Animation</a></p>
+<blockquote>
+<p>已上传至个人B站：</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=851317250&amp;bvid=BV17L4y1s7JW&amp;cid=501309410&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>   
+</div>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="http://images.remss.com/figures/measurements/ccmp/ccmp_v2.0_wind_speed_anomaly.avi">CCMP Wind Speed Anomaly Animation</a></p>
+<blockquote>
+<p>已上传至个人B站：</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=723865080&amp;bvid=BV1QS4y1k7ku&amp;cid=501318221&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>   
+</div>
+</blockquote>
+<h3 id="Product-Details"><a href="#Product-Details" class="headerlink" title="Product Details"></a>Product Details</h3><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204224229.png" alt=" " style="zoom:60%;">
+
+<h3 id="Known-Issues-Data-Caveats"><a href="#Known-Issues-Data-Caveats" class="headerlink" title="Known Issues / Data Caveats"></a>Known Issues / Data Caveats</h3><p>The following information should be taken into consideration when using this data product:</p>
+<ul>
+<li><strong>Users should not consider these winds suitable for studying global trends</strong>.  While the winds are derived from consistently processed satellite data suitable for climate study, the act of assimilating the model data into an analysis product potentially introduces spurious trends that may exist in the background wind field. These CCMP V2.0 winds may, however, be suitable for studying regional trends and patterns.</li>
+<li><strong>Caution should be used when studying high wind regions</strong>. We have noted differences between satellite data and the CCMP winds at high wind speeds (&gt;25 m/s), where the background model wind is known to underestimate wind events. Since the VAM method attempts to find a consistent wind field solution somewhere between the satellite-observed high wind events and the lower model winds for those same events, CCMP, as a wind analysis product, will inevitably be lower than the satellite data indicates. Note, wind events of this magnitude tend to be infrequent and geographically limited. </li>
+<li><strong>The V2.0 winds are different from the V1.1 winds</strong>.  Users should not compare or mix the two products. Differences between the versions do exist and are related to the changes in the satellite data and background wind field.  For example, the new Ku-2011 GMF QuikSCAT winds are much improved at high wind speeds resulting in lower CCMP V2.0 winds at speeds greater than 25 m/s when compared to the CCMP V1.1 winds.</li>
+</ul>
+<h3 id="Related-Data"><a href="#Related-Data" class="headerlink" title="Related Data"></a>Related Data</h3><p>The <a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/dataset/CCMP_MEASURES_ATLAS_L4_OW_L3_0_WIND_VECTORS_FLK">original CCMP V1.1 FLK data</a> are available at the NASA Physical Oceanography DAAC (podaac.jpl.nasa.gov)</p>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3><p>Atlas, R., R. N. Hoffman, J. Ardizzone, S. M. Leidner, J. C. Jusem, D. K. Smith, D. Gombos, 2011: A cross-calibrated, multiplatform ocean surface wind velocity product for meteorological and oceanographic applications. Bull. Amer. Meteor. Soc., 92, 157-174. doi: 10.1175/2010BAMS2946.1</p>
+<p>Atlas, R., R.N. Hoffman, S.C. Bloom, J.C. Jusem, and J. Ardizzone, 1996: A multiyear global surface wind velocity dataset using SSM/I wind observations. Bull. Amer. Meteor. Soc., 77, 5, 869-882.</p>
+<p>Hoffman, R. N., M. Leidner, J. M. Henderson, R. Atlas, J. V. Ardizzone, and S. C. Bloom, 2003: A two-dimensional variational analysis method for NSCAT ambiguity removal: methodology, sensitivity, and tuning. Journal of Atmospheric &amp; Oceanic Technology, 20, 585-605.</p>
+<p>The original V1.1 <a href="ftp://podaac-ftp.jpl.nasa.gov/allData/ccmp/L2.5/docs/ccmp_users_guide.pdf">Cross-Calibrated Multi-Platform Ocean Surface Wind Vector Analyses User Guide</a> (.pdf) available from JPL PO.DAAC.</p>
+<h3 id="How-to-Cite-These-Data"><a href="#How-to-Cite-These-Data" class="headerlink" title="How to Cite These Data"></a>How to Cite These Data</h3><p>Continued production of this data set requires support from NASA. We need you to be sure to cite these data when used in your publications so that we can demonstrate the value of this data set to the scientific community. Please include the following statement in the acknowledgement section of your paper:</p>
+<p>“CCMP Version-2.0 vector wind analyses are produced by Remote Sensing Systems. Data are available at <a target="_blank" rel="noopener" href="http://www.remss.com/">www.remss.com</a>.”</p>
+<h4 id="DATA-SET-CITATION"><a href="#DATA-SET-CITATION" class="headerlink" title="DATA SET CITATION"></a>DATA SET CITATION</h4><p>Wentz, F.J., J. Scott, R. Hoffman, M. Leidner, R. Atlas, J. Ardizzone, 2015:  Remote Sensing Systems Cross-Calibrated Multi-Platform (CCMP) 6-hourly ocean vector wind analysis product on 0.25 deg grid, Version 2.0, [indicate date subset, if used]. Remote Sensing Systems, Santa Rosa, CA. Available online at <a target="_blank" rel="noopener" href="http://www.remss.com/measurements/ccmp">www.remss.com/measurements/ccmp</a>. [Accessed dd mmm yyyy].  *Insert the appropriate information in the brackets.</p>
+<h4 id="JOURNAL-REFERENCE"><a href="#JOURNAL-REFERENCE" class="headerlink" title="JOURNAL REFERENCE"></a>JOURNAL REFERENCE</h4><p>Atlas, R., R. N. Hoffman, J. Ardizzone, S. M. Leidner, J. C. Jusem, D. K. Smith, D. Gombos, 2011: A cross-calibrated, multiplatform ocean surface wind velocity product for meteorological and oceanographic applications. Bull. Amer. Meteor. Soc., 92, 157-174. doi: 10.1175/2010BAMS2946.1</p>
+<p>Mears, C. A., Scott, J., Wentz, F. J., Ricciardulli, L., Leidner, S. M., Hoffman, R., &amp; Atlas, R. ( 2019). A Near Real Time Version of the Cross Calibrated Multiplatform (CCMP) Ocean Surface Wind Velocity Data Set. Journal of Geophysical Research: Oceans, 124, 6997– 7010. <a target="_blank" rel="noopener" href="https://doi.org/10.1029/2019JC015367">https://doi.org/10.1029/2019JC015367</a></p>
+<h2 id="—————————————-1"><a href="#—————————————-1" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-2"><a href="#参考资料-2" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>gridgen</code>教程；</p>
 <p><a href="https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-gridgen-tutorial-wang-ge-sheng-cheng/">https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-gridgen-tutorial-wang-ge-sheng-cheng/</a></p>
 <blockquote>
 <p>以下的程序，是基于<code>gridgen</code>教程创建的工作目录文件夹<code>work-griden</code>，从而执行的。</p>
@@ -1412,7 +1487,7 @@ OBSTR_OFFSET = 1
   OBST%FILENAME        = 'east-USA_P25.obst'
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="—————————————-3"><a href="#—————————————-3" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-3"><a href="#参考资料-3" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/01-ww3-v6.07.1-xia-zai.w3-make/">https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/01-ww3-v6.07.1-xia-zai.w3-make/</a></p>
+<h2 id="—————————————-2"><a href="#—————————————-2" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-3"><a href="#参考资料-3" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/01-ww3-v6.07.1-xia-zai.w3-make/">https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/01-ww3-v6.07.1-xia-zai.w3-make/</a></p>
 <blockquote>
 <p>WW3 v6.07.1：下载+./w3_make</p>
 </blockquote>
@@ -1428,7 +1503,7 @@ OBSTR_OFFSET = 1
 <p>这一步的主要作用是为了确定能生成<code>.ww3</code>文件，</p>
 <p>如果不能成功./w3_make，接下来在<code>regtests</code>中，根据自己的需求配置<code>comp</code>、 <code>link</code>、<code>switch</code>，更加不可能实现；</p>
 </blockquote>
-<h2 id="—————————————-4"><a href="#—————————————-4" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-4"><a href="#参考资料-4" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/03-regtests-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing-li-zi/">https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/03-regtests-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing-li-zi/</a></p>
+<h2 id="—————————————-3"><a href="#—————————————-3" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料-4"><a href="#参考资料-4" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/03-regtests-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing-li-zi/">https://liu-jincan.github.io/2021/12/25/hai-lang-shu-zhi-mo-shi/wavewatch3/03-regtests-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing-li-zi/</a></p>
 <blockquote>
 <p>03-regtests文件夹（官方给的ww3运行例子）</p>
 </blockquote>
@@ -1921,10 +1996,31 @@ $ -------------------------------------------------------------------- $<span ar
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/15.gif"></p>
 </li>
 </ol>
-<h2 id="了解ww3-strt-inp参数"><a href="#了解ww3-strt-inp参数" class="headerlink" title="了解ww3_strt.inp参数"></a>了解ww3_strt.inp参数</h2><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220128193641.png" style="zoom:80%;">
+<h2 id="了解ww3-strt-inp参数"><a href="#了解ww3-strt-inp参数" class="headerlink" title="了解ww3_strt.inp参数"></a>了解ww3_strt.inp参数</h2><h3 id="case-1"><a href="#case-1" class="headerlink" title="case 1"></a>case 1</h3><p>0.10  0.01  270. 2  0. 1000. 1. 1000. 2.5</p>
+<h3 id="case-2"><a href="#case-2" class="headerlink" title="case 2"></a>case 2</h3><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220128193641.png" style="zoom:80%;">
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/16.gif"></p>
+<h3 id="case-3"><a href="#case-3" class="headerlink" title="case 3"></a>case 3</h3><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204160714.png" alt=" " style="zoom:80%;">
 
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204160854.png"></p>
+<blockquote>
+<p>当时间变化时，图像不变，即都为0；</p>
+</blockquote>
+<h3 id="问题：将-case-2-中生成的restart-ww3文件更换为-case-3-中的，再ww3-shel，图像是-case-3-中的吗？"><a href="#问题：将-case-2-中生成的restart-ww3文件更换为-case-3-中的，再ww3-shel，图像是-case-3-中的吗？" class="headerlink" title="问题：将 case 2 中生成的restart.ww3文件更换为 case 3 中的，再ww3_shel，图像是  case 3 中的吗？"></a>问题：将 case 2 中生成的restart.ww3文件更换为 case 3 中的，再ww3_shel，图像是  case 3 中的吗？</h3><p>是的~~</p>
+<p><strong>结论</strong>：运行不是目的，得到相应的.ww3文件才是~~</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204162043.png"></p>
+<h3 id="问题：case-3-不需要restart-ww3，再ww3-shel，可行吗？"><a href="#问题：case-3-不需要restart-ww3，再ww3-shel，可行吗？" class="headerlink" title="问题：case 3 不需要restart.ww3，再ww3_shel，可行吗？"></a>问题：case 3 不需要restart.ww3，再ww3_shel，可行吗？</h3><p>可行~</p>
+<p>得到的nc文件与 case 3 有 restart.ww3 时一致~~</p>
+<p>log.ww3 是否也一致？<strong>不一致</strong>~~</p>
+<p>calm</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204164001.png" alt="无restart.ww3时的log.ww3"></p>
+<p>idealized</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220204164310.png" alt="有restart.ww3时的log.ww3"></p>
+<h2 id="—————————————CCMP风场下运行"><a href="#—————————————CCMP风场下运行" class="headerlink" title="—————————————CCMP风场下运行"></a>—————————————CCMP风场下运行</h2><h2 id="参考资料-6"><a href="#参考资料-6" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://liu-jincan.github.io/2022/01/02/wavewatch3/06-tutorial-inout/">https://liu-jincan.github.io/2022/01/02/wavewatch3/06-tutorial-inout/</a></p>
+<blockquote>
+<p><code>inout</code>教程；</p>
+</blockquote>
+<h2 id="在regtests的east-USA中，根据执行ww3-prnc的run-test命令，配置相关文件并执行"><a href="#在regtests的east-USA中，根据执行ww3-prnc的run-test命令，配置相关文件并执行" class="headerlink" title="在regtests的east-USA中，根据执行ww3_prnc的run_test命令，配置相关文件并执行"></a>在regtests的east-USA中，根据执行ww3_prnc的run_test命令，配置相关文件并执行</h2>
                 
             </div>
             <hr/>
@@ -2457,7 +2553,7 @@ $ -------------------------------------------------------------------- $<span ar
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">233.7k</span>
+                        class="white-color">236.4k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
