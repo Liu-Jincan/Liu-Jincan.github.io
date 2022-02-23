@@ -39,7 +39,7 @@
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
      
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
 
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-12
+                    2022-02-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    847
+                    10.3k
                 </div>
                 
 
@@ -410,9 +410,1409 @@
 <ul>
 <li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226165254.png"></li>
 <li>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Db2a46SGijSh5TOmUeB6rg">https://pan.baidu.com/s/1Db2a46SGijSh5TOmUeB6rg</a><br>提取码：l2zm<br>–来自百度网盘</li>
+<li>fi</li>
+<li></li>
 </ul>
 </blockquote>
-<h2 id="附录C-为分布式机器进行设置（MPI）"><a href="#附录C-为分布式机器进行设置（MPI）" class="headerlink" title="附录C    为分布式机器进行设置（MPI）"></a>附录C    为分布式机器进行设置（MPI）</h2><blockquote>
+<h2 id="Contents"><a href="#Contents" class="headerlink" title="Contents"></a>Contents</h2><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><h2 id="2-Governing-equations"><a href="#2-Governing-equations" class="headerlink" title="2 Governing equations"></a>2 Governing equations</h2><h2 id="3-Numerical-approaches"><a href="#3-Numerical-approaches" class="headerlink" title="3 Numerical approaches"></a>3 Numerical approaches</h2><h2 id="4-Wave-Model-Structure-and-Data-Flow"><a href="#4-Wave-Model-Structure-and-Data-Flow" class="headerlink" title="4 Wave Model Structure and Data Flow"></a>4 Wave Model Structure and Data Flow</h2><h3 id="4-1-Program-design"><a href="#4-1-Program-design" class="headerlink" title="4.1 Program design"></a>4.1 Program design</h3><p>The core of WAVEWATCH III is the wave model subroutine, which can be called by either a stand-alone program shell or any other program that requires dynamically updated wave data. Two such programs are provided with the WAVEWATCH III release (e.g., <strong>ww3_shel</strong> and <strong>ww3_multi</strong>). Auxiliary programs include a grid preprocessor <strong>ww3_grid</strong>, a program to generate artificial initial conditions <strong>ww3_strt</strong>, generic program shells for individual <strong>ww3_shel</strong> or multi-grid <strong>ww3_multi</strong> applications, two input pre-processors (<strong>ww3_prep</strong> and <strong>ww3 prnc</strong>), and post-processors for gridded (<strong>ww3_outf</strong> and <strong>ww3_ounf</strong>) and point (<strong>ww3_outp</strong> and <strong>ww3_ounp</strong>) output data.</p>
+<p>In this section, note that file names will be identified by the file type font, the contents of a file by the code type font and fortran program elements by the fortran type font. The main wave model subroutine is <strong>w3wave</strong>. Data files are identified with the file extension <strong>.ww3</strong>, except in the multi-grid wave model <strong>ww3_multi</strong>, where the file extension identifies individual grids part of a chosen multi-grid mosaic. For simplicity, the file extension <strong>.ww3</strong> will be used throughout this chapter.</p>
+<p>A relational diagram including the basic data flow is presented in <strong>Fig. 4.1</strong>. The figure illustrates a typical workflow, as follows. The grid pre-processor <strong>ww3_grid</strong> writes a model definition file <strong>mod_def.ww3</strong> with bottom and obstruction information and parameter values defining the physical and numerical approaches. The wave model may have cold or hot starts. Hot starting requires a restart file <strong>restart.ww3</strong>, created either by the wave model itself in a previous run, or by the initial conditions program <strong>ww3_strt</strong>. If a restart file is not available, the wave model will be initialized automatically. If linear growth or spectral seeding is switch on, the model may start from a flat ocean ( Hs = 0 ), otherwise the initial conditions will consist of a parametric fetch-limited spectrum based on the initial wind field (see the corresponding option in the initial conditions program).</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221203432.png" style="zoom:67%;">
+
+<p>The wave model routine (<strong>w3wave</strong>) optionally generates up to 9 restart files <strong>restartn.ww3</strong>, where n represents a single digit integer number. For telescoping nest applications, the wave model also optionally reads boundary conditions from the file <strong>nest.ww3</strong> and generates boundary conditions for con-secutive nested runs in <strong>nestn.ww3</strong>. The model furthermore dumps raw data to the output files <strong>out_grd.ww3</strong> , <strong>out_pnt.ww3</strong>, <strong>track_o.ww3</strong> and <strong>partition.ww3</strong> (gridded mean wave parameters, spectra at locations, spectra along tracks, and partitioned wave data, respectively). The tracks along which spectra are to be presented is defined in the file <strong>track_i.ww3</strong>. Note that the wave model does not write to standard output, because this would be inconvenient if WAVEWATCH III is part of an integrated model. Instead, it maintains its own log file <strong>log.ww3</strong> and optionally a test output files <strong>test.ww3</strong> for a shared memory version of the model, or <strong>testnnn.ww3</strong> for distributed memory versions, where nnn is the processor number starting with 1. Finally, various output post-processors are available (binary post-processing of raw gridded fields, point output and track output files; <strong>NetCDF</strong> and <strong>GRIB(2)</strong> packing of wave data; post-processing for later <strong>GrADS</strong> graphical processing of gridded and spectral data). A more detailed description of all program elements and their input files is given below. Note that the source codes of each routine are fully documented. This documentation is an additional source of information about <strong>WAVEWATCH III</strong>.</p>
+<p>Files specific to WAVEWATCH III are opened by name within program subroutines. The unit numbers, however, are defined by the user within each inp, guaranteeing the largest possible flexibility for implementation in integrated models.</p>
+<p>In addition to the wave model subroutine, an <strong>initialization routine</strong> and <strong>an interface routine for data assimilation</strong> are provided. The routine includes a generic interface that provides all necessary model components to perform full spectral data assimilation. This routine is integrated into the generic wave model shell, which is set up to perform time step managements for a wave model with or without data assimilation. The shell also provides a simple yet flexible way to provide the data assimilation scheme with various types of data. Data assimilation has not yet been included in the multi-grid wave model shell.</p>
+<h3 id="4-2-The-wave-model-routines"><a href="#4-2-The-wave-model-routines" class="headerlink" title="4.2 The wave model routines"></a>4.2 The wave model routines</h3><p>The wave model driver is a subroutine within the WAVEWATCH III framework package. To run the model driver subroutine, a program shell is needed. WAVEWATCH III is provided with a simple stand-alone shell as will be discussed in Section 4.4.10, and with a more complex multi-grid model shell as will be discussed in Section 4.4.12. The present section concentrates on the wave model driver subroutines.</p>
+<p>The wave model initialization routine <strong>w3init</strong> performs model initialization for a single wave model grid. This includes setting up part of the I/O system by defining unit numbers, initializing internal time management, processing the model definition file (<strong>mod_def.ww3</strong>), processing initial conditions (<strong>restart.ww3</strong>), preparing model output, and calculating grid-dependent parameters. If the model is compiled for an MPI environment, all necessary communication for both calculations and output are determined and initialized (the model uses persistent MPI communication throughout).</p>
+<p>The wave model routine <strong>w3wave</strong> can be called any number of times to propagate the wave field for a single grid in time after the initialization has taken place. After some initial checks, the subroutine interpolates winds and currents, updates ice concentrations and water levels, propagates the wave field, and applies the selected source terms for a number of time steps. The internal time step is defined by the interval for which the calculations are to be performed, and by the requested output times. At the end of the calculations, the routine provides the calling program with the requested fields of wave data. A documentation of the interface of <strong>w3wave</strong> can be found in the source code (<strong>w3wavemd.ftn</strong>).</p>
+<p>Apart from the raw data files as described above, the program maintains a log file <strong>log.ww3</strong>. This file is opened by <strong>w3init</strong> (contained in <strong>w3wave</strong> in <strong>w3wavemd.ftn</strong>), which writes some self-explanatory header information to this file. Each consecutive call to <strong>w3wave</strong> adds several lines to an ‘action table’ in this log file as is shown in <strong>Fig. 4.2</strong>. The column identified as ‘<strong>step</strong>’ shows the discrete time step considered. The column identified as ‘pass’ identifies the sequence number of the call to <strong>w3wave</strong>; i.e., 3 identifies that this action took place in the third call to <strong>w3wave</strong>. The third column shows the ending time of the time step. In the input and output columns the corresponding actions of the model are shown. A <strong>X</strong> identifies that the input has been updated, or that the output has been performed. A <strong>F</strong> indicates a first field read, and an L identifies the last output. The seven input columns identify boundary conditions (b), wind fields (w), water levels (l), current fields (c), ice concentrations (i), and data for assimilation (d), respectively. Note that data assimilation takes place at the end of the time step after the wave routine call. The seven output columns identify gridded output (g), point output (p), output along tracks (t), restart files (r), boundary data (b), and partitioned spectral data (f), and output for coupling (c), respectively.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221205255.png" style="zoom:70%;">
+
+<p>For the multi-grid wave model (Tolman, 2008b, <strong>ww3_multi</strong>) a set of rou-tines is build around the basic wave model routines. The three main routines are the initialization routine <strong>wminit</strong>, a time stepping routine <strong>wmwave</strong> and a finalization routine <strong>wmfinl</strong>, with similar functions as the routines for a single grid as described above. Note that the raw input and output files are generated for separate grid in the mosaic, and are identified by replacing the standard file extension <strong>.ww3</strong> with a unique identifier for each individual grid as chosen by the user in the <strong>ww3_grid.inp</strong> file. Log files are maintained for each individual grid, as well as an overall log file <strong>log.mww3</strong>.</p>
+<h3 id="4-3-The-data-assimilation-interface"><a href="#4-3-The-data-assimilation-interface" class="headerlink" title="4.3 The data assimilation interface"></a>4.3 The data assimilation interface</h3><p>As discussed above, the wave model subroutine is supplemented with a data assimilation interface routine (<strong>w3wdas in w3wdasmd.ftn</strong>). This routine is integrated in the stand-alone shell (see Section 4.4.10) to provide time step management of a combined wave model / data assimilation scheme. It has not yet been integrated in the multi-grid model driver, although it is accounted for in the multi-grid model management algorithm.</p>
+<p>In this a fairly simple approach is assumed where data assimilation is performed at selected times, while the wave model marches forward in time. In the setup of the shell, the data assimilation is performed after the model has reached the target time, but has not yet produced output. After the data assimilation is performed, the wave model routine is called again only to generate output as requested. Thus, <strong>the wave model output for a given time will include the effects of data assimilation for that specific target time</strong>.</p>
+<p>The generic program shell also processes several types of <strong>data to be assimilated</strong>, and passes it on to the data assimilation interface routine. All data needs to be preprocessed using the wave model input preprocessor (see Section 4.4.7), and will be recognized by the generic shell by file name. Presently, up to three different data files can be used. Tentatively, these could be <strong>mean wave parameters, one dimensional spectral data, and two dimensional spectral data</strong>, respectively. This is, however, not hardwired to the model and in fact needs to be defined by the user.</p>
+<p>Presently, no data assimilation packages are available. Therefore, user supplied data assimilation schemes are required, and may be included in the wave model using the interface routine (w3wdas in w3wdasmd.ftn), <strong>the documentation of which should be sufficient for the necessary programming</strong>. Details on how to add user supplied software to the WAVEWATCH III compilation system can be found in the following chapter. Although NCEP is presently working on wave data assimilation techniques, <strong>there are no plans to distribute wave data assimilation software as part of the WAVEWATCH III package</strong>.</p>
+<h3 id="4-4-Auxiliary-programs"><a href="#4-4-Auxiliary-programs" class="headerlink" title="4.4 Auxiliary programs"></a>4.4 Auxiliary programs</h3><h4 id="4-4-1-General-concepts"><a href="#4-4-1-General-concepts" class="headerlink" title="4.4.1 General concepts"></a>4.4.1 General concepts</h4><p>All auxiliary programs presented here, with the exception of the track output post-processor, read input from a pre-defined input file. Contents of that file determine user choices for each auxiliary program. Comment lines are allowed using a character determined by the user as follows: the first character on the first line of the input file will be considered to be the comment character, identifying comment lines throughout the input file. This comment character has to appear on the first position of input lines to be effective. In all examples in the following sections, the first character of the first line is <strong>$</strong>. Therefore, all lines starting with <strong>$</strong> contain only comments that are not parsed into the auxiliary program. As a standard, auxiliary programs all write formatted output to the standard output unit.</p>
+<blockquote>
+<p>注释问题~~</p>
+</blockquote>
+<p>In the following sections, all available auxiliary programs are described using an example input file. These are found in the <strong>directory inp</strong> within the WAVEWATCH III package. Inside each sample input file, all possible options that can be activated by the user are included, most of them feature as comment lines starting with ’$’. Files in the current section reflect actual contents of sample files. The sections below also show the name of the executable program associated with the displayed input file, the program name (as appears in the program statement), the source code file and input and output files and their unit numbers (in brackets behind the file name). Input and output files marked with ∗ are optional. The intermediate files mentioned below are all unformatted, and are not described in detail here. Each file is written and read by a single routine, to which reference is made for addi -tional documentation.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221210528.png" style="zoom:73%;">
+
+<blockquote>
+<p>这个图好像跟上面的内容不是很对应~~</p>
+</blockquote>
+<p>Preprocessing and compilation of the programs is discussed in the following two chapters. Examples of test runs of the model are provided with the source code.</p>
+<h4 id="4-4-2-Configuration-file"><a href="#4-4-2-Configuration-file" class="headerlink" title="4.4.2 Configuration file"></a>4.4.2 Configuration file</h4><p>All auxiliary programs presented here read parameters and configuration from either a namelist file (new form) or an input file (legacy form). Although most auxiliary programs provide the option of a namelist file, some are still limited to using the legacy input file form. Namelist files for the latter programs will become available in future public releases. For programs which already use namelists, template files are stored in model/nml directory. It is also possible to convert the traditional inp file to new <strong>nml</strong> format using <strong>bash</strong> tools stored in the model/aux/bash directory. If <strong>inp</strong> and <strong>nml</strong> files are both present in the run directory, the priority will be given to the namelist file. For regtests, the default behavior is to run all the programs with <strong>inp</strong> file, the option <strong>-N</strong> must be added to rather use <strong>nml</strong> file. Some new features are only available with namelists and the future developments will mainly be designed for namelist use.</p>
+<p>The namelist configuration file dedicated to a program provides a more readable and adaptative file. A <strong>nml</strong> file contains one or more namelists with default values for each parameter with the possibility to overwrite them by a user-defined value. There is <strong>no mandatory order</strong> to defined namelists in the <strong>nml</strong> file. A namelist starts by <strong>&amp;SOMETHING NML</strong> and stops by <strong>/</strong>. If a section is skipped from the namelist file, all the default values will be used. When a program read its namelist file, all the default and user-defined values for all namelists will be outputted in a log file for more tracability.</p>
+<p>The traditional way to read the program configuration is from a predefined input file. The first character on the first line of the input file will be considered to be the comment character, identifying comment lines in the input file. This comment character has to appear on the first position of input lines to be effective. In all examples in the following sections lines starting with <strong>$</strong> therefore only contain comment. The programs furthermore all write formatted output to the standard output unit.</p>
+<p>Below is the part of an <strong>inp</strong> file with the corresponding part of <strong>nml</strong> file:</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221211624.png" style="zoom:71%;">
+
+<h4 id="4-4-3-ww3-grid-The-grid-preprocessor"><a href="#4-4-3-ww3-grid-The-grid-preprocessor" class="headerlink" title="4.4.3 ww3_grid: The grid preprocessor"></a>4.4.3 ww3_grid: The grid preprocessor</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221212402.png" style="zoom:71%;">
+
+<blockquote>
+<p>输入是 5 个文件，我TMD在<strong>2022寒假</strong>里总结的 5+1，其实这里已经包含了，┭┮﹏┭┮</p>
+<p>但貌似验证了 ww3_grid 的输入确实是 5 个文件，o(<em>￣▽￣</em>)ブ</p>
+</blockquote>
+<p>Note that bottom and obstruction data may be in same file.</p>
+<h4 id="4-4-4-ww3-strt-The-initial-conditions-program"><a href="#4-4-4-ww3-strt-The-initial-conditions-program" class="headerlink" title="4.4.4 ww3_strt: The initial conditions program"></a>4.4.4 ww3_strt: The initial conditions program</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221212942.png" style="zoom:71%;">
+
+<h4 id="4-4-5-ww3-bound-The-boundary-conditions-program"><a href="#4-4-5-ww3-bound-The-boundary-conditions-program" class="headerlink" title="4.4.5 ww3_bound: The boundary conditions program"></a>4.4.5 ww3_bound: The boundary conditions program</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221213045.png" style="zoom:71%;">
+
+<blockquote>
+<p>inout 教程里~~<strong>spectra file</strong></p>
+</blockquote>
+<h4 id="4-4-6-ww3-bounc-The-NetCDF-boundary-conditions-program"><a href="#4-4-6-ww3-bounc-The-NetCDF-boundary-conditions-program" class="headerlink" title="4.4.6 ww3_bounc: The NetCDF boundary conditions program"></a>4.4.6 ww3_bounc: The NetCDF boundary conditions program</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221213231.png" style="zoom:70%;">
+
+<h4 id="4-4-7-ww3-prep-The-input-field-preprocessor"><a href="#4-4-7-ww3-prep-The-input-field-preprocessor" class="headerlink" title="4.4.7 ww3_prep: The input field preprocessor"></a>4.4.7 ww3_prep: The input field preprocessor</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221213336.png" style="zoom:71%;">
+
+<p>Note that the optional output files are specific to <strong>ww3_shel</strong> and <strong>ww3_multi</strong>, but are not processed by the actual wave model routines. These files are consequently not needed if the wave model routines are used in a different shell or in an integrated program. However, the routines reading and writing these files are system-independent and could therefore be used in customized applications of the basic wave model. The reading and writing of these files is performed by the subroutine <strong>w3fldg</strong> (<strong>w3fldsmd.ftn</strong>). For additional documentation and file formats reference if made to this routine.</p>
+<h4 id="4-4-8-ww3-prnc-The-NetCDF-input-field-preprocessor"><a href="#4-4-8-ww3-prnc-The-NetCDF-input-field-preprocessor" class="headerlink" title="4.4.8 ww3_prnc: The NetCDF input field preprocessor"></a>4.4.8 ww3_prnc: The NetCDF input field preprocessor</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221213647.png" style="zoom:71%;">
+
+<p>See note at the end of the previous section (4.4.7) for tools that can be used to pack input files in custom programs.</p>
+<h4 id="4-4-9-ww3-prtide-The-tide-prediction-program"><a href="#4-4-9-ww3-prtide-The-tide-prediction-program" class="headerlink" title="4.4.9 ww3_prtide: The tide prediction program"></a>4.4.9 ww3_prtide: The tide prediction program</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221213804.png" style="zoom:71%;">
+
+<p>The user-provided file <strong>current.ww3_tide</strong> or <strong>level.ww3_tide</strong> is a binary file that can be obtained by running <strong>ww3_prnc</strong> with the <strong>AT</strong> option and then renaming the resulting file <strong>current.ww3</strong> or <strong>level.ww3</strong> into <strong>current.ww3_tide</strong> or <strong>level.ww3_tide</strong> . The choice of tidal constituents used for the tidal prediction can be a subset of the ones present in these files or all of them.</p>
+<p>Because of wetting and drying or grid mismatches, the tidal constituents may be erroneous or absent for some of the WAVEWATCH III nodes. The erroneous ones can be detected using a maximum amplitude on particular components. When the amplitudes exceeds these maxima, then the tidal constituents are extrapolated from the nearest nodes. This feature has only been tested on triangular meshes.</p>
+<h4 id="4-4-10-ww3-shel-The-generic-shell"><a href="#4-4-10-ww3-shel-The-generic-shell" class="headerlink" title="4.4.10 ww3_shel: The generic shell"></a>4.4.10 ww3_shel: The generic shell</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221214216.png" style="zoom:71%;">
+
+<blockquote>
+<p>终于知道你这个<code>shell</code>了；</p>
+</blockquote>
+<h4 id="4-4-11-ww3-gspl-Automated-grid-splitting-for-ww3-multi-ww3-gspl"><a href="#4-4-11-ww3-gspl-Automated-grid-splitting-for-ww3-multi-ww3-gspl" class="headerlink" title="4.4.11 ww3_gspl: Automated grid splitting for ww3_multi (ww3_gspl)"></a>4.4.11 ww3_gspl: Automated grid splitting for ww3_multi (ww3_gspl)</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221214431.png" style="zoom:71%;">
+
+<p>To further automate the splitting of the grid, a script <strong>ww3_gspl.sh</strong> is provided. This script runs <strong>ww3_gspl</strong>, and subsequently generated the <strong>mod_def</strong> files for all sub-grids. If a file <strong>ww3_multi.inp</strong> is provided, then this file is updated too. The workings of the script are shown with the <strong>-h</strong> command line flag, which results in the output of the script as shown in <strong>Fig. 4.3</strong>.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221214706.png" style="zoom:71%;">
+
+<h4 id="4-4-12-ww3-multi-The-multi-grid-shell"><a href="#4-4-12-ww3-multi-The-multi-grid-shell" class="headerlink" title="4.4.12 ww3_multi: The multi-grid shell"></a>4.4.12 ww3_multi: The multi-grid shell</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221220753.png" style="zoom:70%;">
+
+<p>This wave model program requires and produces a plethora of input and output files consistent with those of <strong>ww3_shel</strong> in Section 4.4.10, where file extensions <strong>.ww3</strong> are replaced by an identifier for a specific grid. Note that all files are opened by name, and that the unit number assignment is dynamic and automatic.</p>
+<p>In order to make all existing features available there is a new version of the input file that uses namelists. This is the version that will be supported in the future as it allows a more flexible addition of new features. <strong>Please note that the namelist form is not supported by GCC compilers before version 4.8.2</strong>.</p>
+<h4 id="4-4-13-ww3-gint-Grid-Integration"><a href="#4-4-13-ww3-gint-Grid-Integration" class="headerlink" title="4.4.13 ww3_gint: Grid Integration"></a>4.4.13 ww3_gint: Grid Integration</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221221223.png" style="zoom:70%;">
+
+<p>This post processor program takes <strong>field data</strong> from several overlapping grids and produces a unified output file. The different model definition and field output files are identified by the unique identifier associated with each specific grid. At this moment the program works with curvilinear and rectilinear grids. A weights file <strong>WHTGRIDINT.bin</strong> is written that can be read in subsequent runs using identical origin-destination grids, saving substantial time in cases using large number of input grids and/or high-resolution target grids.</p>
+<blockquote>
+<p>不是现场数据，是场数据</p>
+</blockquote>
+<p>Note that this program can be used in concert with the grid splitting program <strong>ww3_gspl</strong>, and that <strong>ww3_gspl.sh</strong> has an option to produce a template input file for his program (see Section 4.4.11).</p>
+<h4 id="4-4-14-ww3-outf-Gridded-output-post-processor"><a href="#4-4-14-ww3-outf-Gridded-output-post-processor" class="headerlink" title="4.4.14 ww3_outf: Gridded output post-processor"></a>4.4.14 ww3_outf: Gridded output post-processor</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221221741.png" style="zoom:71%;">
+
+<p>The extension of the file name of transfer files for itype = 3 identifies the content of the file. The file extension for each data type is given in <strong>Table 4.1</strong> on page 221.</p>
+<h4 id="4-4-15-ww3-ounf-Gridded-output-NetCDF-post-processor"><a href="#4-4-15-ww3-ounf-Gridded-output-NetCDF-post-processor" class="headerlink" title="4.4.15 ww3_ounf: Gridded output NetCDF post-processor"></a>4.4.15 ww3_ounf: Gridded output NetCDF post-processor</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221222428.png" style="zoom:71%;">
+
+<p>When a single field is put in the file, the abbreviated field name (file extensions from <strong>ww3_outf</strong>) for each data type is given in <strong>Table 4.1</strong> on page 221.</p>
+<h4 id="4-4-16-gx-outf-Gridded-output-post-processor-for-GrADS"><a href="#4-4-16-gx-outf-Gridded-output-post-processor-for-GrADS" class="headerlink" title="4.4.16 gx_outf: Gridded output post-processor for GrADS"></a>4.4.16 gx_outf: Gridded output post-processor for GrADS</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221222709.png" style="zoom:71%;">
+
+<p>This post-processor generates input files with gridded model parameters for the <code>Grid Analysis and Display System</code> (<strong>GrADS</strong>, Doty, 1995). Although <strong>GrADS</strong> can also work with <strong>GRIB</strong> files, the present preprocessor is preferable, as the data file also gives access to a land-sea-ice map.</p>
+<h4 id="4-4-17-ww3-grib-Gridded-GRIB-output-post-processor"><a href="#4-4-17-ww3-grib-Gridded-GRIB-output-post-processor" class="headerlink" title="4.4.17 ww3_grib: Gridded GRIB output post-processor"></a>4.4.17 ww3_grib: Gridded GRIB output post-processor</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221223048.png" style="zoom:71%;">
+
+<p>This post-processor packs fields of mean wave parameters in <strong>GRIB</strong> format, using <strong>GRIB</strong> version II and NCEP’s w3 and bacio library routines, or in GRIB2, using NCEPS’s operational package. Additional packing data can be found in <strong>Table 4.1</strong> on page 221.</p>
+<p>The GRIB packing is performed using the NCEP’s GRIB tables as described in <strong>NCEP (1998)</strong>. Because the w3 and bacio routine are not fully portable, they are not supplied with the code. The user will have to provide corresponding routines. It is suggested that such routines are activated with additional WAVEWATCH III switches in the mandatory switch group containing the ‘nogrb’ switch, as if presently the case with the NCEP routines. The GRIB2 packing is performed according to <strong>WMO (2001)</strong>, and is performed with NCEP’s standard operational packages.</p>
+<p><strong>Table 4.1</strong> shows the kpds(5) data values for GRIB packing. For the partitioned data, the first number identifies the wind sea, the second number identifies swell. Most data are packed as surface data (kpds(6) = 0). For the partitioned swell fields, however, consecutive fields are packed at consecutive levels, with the level type indicator set to (kpds(6) = 241). kpds(7) identifies the actual level or swell field number.</p>
+<p><strong>Table 4.1</strong> shows several kpds data values for GRIB2 packing. The first number in the table represents listsec0(2), which identifies the discipline type (e.g., oceanography, meteorology, etc.) The second number represents kpds(1), which identifies the parameter category (e.g., waves, circulation, ice, etc.) within the discipline type. The third number represents kpds(2), which identifies the actual parameter. For the partitioned data, A/B means A for wind sea and B for swell. Additionally kpds(10) = 0 for surface data, and kpds(10) = 241 to pack consecutive swell fields at consecutive levels.kpds(12) identifies the actual level or swell field number.</p>
+<p>Although the above input file contains flags for all 31 output fields of WAVEWATCH III, not all fields can be packed in GRIB. If a parameter is chosen for which GRIB packing is not available, a message will be printed to standard output. <strong>Table 4.1</strong> shows which parameter can be packed in GRIB.<br>Note that at NCEP the conversions from GRIB to GRIB2 coincided with the introduction of partitioned wave model output. This required some duplicate definitions in GRIB and some apparent inconsistencies between GRIB and GRIB2 packing.</p>
+<h4 id="4-4-18-ww3-outp-Point-output-post-processor"><a href="#4-4-18-ww3-outp-Point-output-post-processor" class="headerlink" title="4.4.18 ww3_outp: Point output post-processor"></a>4.4.18 ww3_outp: Point output post-processor</h4><h4 id="4-4-19-ww3-ounp-Point-output-NetCDF-post-processor"><a href="#4-4-19-ww3-ounp-Point-output-NetCDF-post-processor" class="headerlink" title="4.4.19 ww3_ounp: Point output NetCDF post-processor"></a>4.4.19 ww3_ounp: Point output NetCDF post-processor</h4><h4 id="4-4-20-gx-outp-Point-output-post-processor-for-GrADS"><a href="#4-4-20-gx-outp-Point-output-post-processor-for-GrADS" class="headerlink" title="4.4.20 gx_outp: Point output post-processor for GrADS"></a>4.4.20 gx_outp: Point output post-processor for GrADS</h4><h4 id="4-4-21-ww3-trck-Track-output-post-processor"><a href="#4-4-21-ww3-trck-Track-output-post-processor" class="headerlink" title="4.4.21 ww3_trck: Track output post-processor"></a>4.4.21 ww3_trck: Track output post-processor</h4><h4 id="4-4-22-ww3-trnc-Track-output-NetCDF-post-processor"><a href="#4-4-22-ww3-trnc-Track-output-NetCDF-post-processor" class="headerlink" title="4.4.22 ww3_trnc: Track output NetCDF post-processor"></a>4.4.22 ww3_trnc: Track output NetCDF post-processor</h4><h4 id="4-4-23-ww3-systrk-Spatial-and-temporal-tracking-of-wave-systems"><a href="#4-4-23-ww3-systrk-Spatial-and-temporal-tracking-of-wave-systems" class="headerlink" title="4.4.23 ww3_systrk: Spatial and temporal tracking of wave systems"></a>4.4.23 ww3_systrk: Spatial and temporal tracking of wave systems</h4><h4 id="4-4-24-ww3-uprstr-The-Restart-File-Processor"><a href="#4-4-24-ww3-uprstr-The-Restart-File-Processor" class="headerlink" title="4.4.24 ww3_uprstr: The Restart File Processor"></a>4.4.24 ww3_uprstr: The Restart File Processor</h4><h4 id="Table-4-1"><a href="#Table-4-1" class="headerlink" title="Table 4.1"></a>Table 4.1</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221223843.png" style="zoom:71%;">
+
+<h2 id="5-Install-Compile-and-Run-the-wave-model"><a href="#5-Install-Compile-and-Run-the-wave-model" class="headerlink" title="5 Install, Compile and Run the wave model"></a>5 Install, Compile and Run the wave model</h2><h3 id="5-1-Introduction"><a href="#5-1-Introduction" class="headerlink" title="5.1 Introduction"></a>5.1 Introduction</h3><p>WAVEWATCH III is written in <strong>ANSI</strong> standard <strong>FORTRAN-90</strong>, with no <strong>machine-dependent</strong> elements, so that WAVEWATCH III can be installed without modifications on most platforms. WAVEWATCH III utilizes its own preprocessor to select model options at the compile level, and to switch test output on or off. This approach proved to be efficient during the development of WAVEWATCH III, but complicates its installation. To minimize complications, a set of <strong>UNIX/Linux</strong> scripts is provided to automate the installation in general and the use of the preprocessor in particular. Note this option is not supported for other operation systems like <strong>MS</strong> products. If the code is to be compiled on one of the latter platforms, it is suggested to extract a working code in a <strong>UNIX/Linux</strong> environment using the utility <strong>w3_source</strong> (see below), and then to port this clean code to the platform of choice.</p>
+<blockquote>
+<p><code>机器相关</code> ➡ <code>机器依赖</code></p>
+</blockquote>
+<p>If version 6.07 is implemented as an upgrade to previous versions of WAVEWATCH III, please note that this version may not be compatible with previous model versions. It is therefore prudent <strong>NOT</strong> to install the new version of WAVEWATCH III on top of the old version.</p>
+<h3 id="5-2-Distribution"><a href="#5-2-Distribution" class="headerlink" title="5.2 Distribution"></a>5.2 Distribution</h3><p>Through version 5.16, WAVEWATCH III public releases were released as <strong>tarballs</strong>. After the public release of version 6.07, WAVEWATCH III will move to an open development paradigm and source code is distributed via <strong>Github</strong>.</p>
+<h3 id="5-3-Installing"><a href="#5-3-Installing" class="headerlink" title="5.3 Installing"></a>5.3 Installing</h3><h3 id="5-4-Setting-up"><a href="#5-4-Setting-up" class="headerlink" title="5.4 Setting up"></a>5.4 Setting up</h3><h3 id="5-5-Directory-Structure"><a href="#5-5-Directory-Structure" class="headerlink" title="5.5 Directory Structure"></a>5.5 Directory Structure</h3><p>After cloning the WAVEWATCH III repository, the following directories are found on the top level.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220222201920.png" alt=" " style="zoom:72%;">
+
+<p>The following directories exist in the <code>model</code> directory of WAVEWATCH III.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220222202054.png" style="zoom:73%;">
+
+<p>The following directories are generated in the <code>model</code> directory after compiling the code.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220222202205.png" style="zoom:72%;">
+
+<p>The <strong>aux</strong> directory has various additional tools, see the actual directory for its contents. These include contributed <strong>Matlab</strong> codes, <strong>IDL</strong> tools, <strong>bash</strong> scripts and <strong>GrADS</strong> and <strong>FORTRAN</strong> programs.</p>
+<p>Setting up WAVEWATCH III runs the installation the auxiliary programs will first process <strong>FORTRAN</strong> codes, using the compiler as defined in the setup file <strong>wwatch3.env</strong>. Note that these codes are still in fixed format <strong>FORTRAN77</strong>. The executables are stored in the directory <strong>bin</strong>. A more detailed description of these programs (including instructions on running the executables) can be found in the documentation included in the above source code files. After the compilation of these programs, several <strong>UNIX shell</strong> scripts and auxiliary files are installed in the bin directory.</p>
+<table>
+<thead>
+<tr>
+<th>w3adc.f</th>
+<th>WAVEWATCH III FORTRAN preprocessor.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>w3prnt.f</strong></td>
+<td>Print files (source codes) including page and line numbers.</td>
+</tr>
+<tr>
+<td><strong>w3list.f</strong></td>
+<td>Generate a generic source code listing.</td>
+</tr>
+<tr>
+<td><strong>w3split.f</strong></td>
+<td>Generate spectral bulletin identifying individual wave fields within a spectrum from the spectral output of the point output post-processor (see <strong>Section 4.4.18</strong>). This is a legacy code superseded by generating bulletins directly from <strong>ww3_outp</strong>. It is retained here for historical reasons only.</td>
+</tr>
+</tbody></table>
+<p>​    </p>
+<p>The bin directory has various UNIX scripts to manage the WAVEWATCH III framework. The use of these scripts is explained in <strong>Section 5.7</strong>. Note that the following scripts acquire setup information from the WAVEWATCH III environment setup file defined by <strong>WWATCH3_ENV</strong>. Either defined by <strong>w3_setenv</strong> which read the local <strong>wwatch3.env</strong> or by the user environment file.</p>
+<p>Main programs used :</p>
+<table>
+<thead>
+<tr>
+<th>install_ww3_tar</th>
+<th>Script to install WAVEWATCH III from tar files.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>w3_setup</td>
+<td>Script for creating/editing the WAVEWATCH III environment setup file. The default setup file is <strong>bin/.wwatch3.env</strong>. switch and compiler are given in arguments. (see options)</td>
+</tr>
+<tr>
+<td>w3_clean</td>
+<td>Script to clean up WAVEWATCH III directories by removing files generated during compilation or test runs. 3 levels of clean-up. (see options)</td>
+</tr>
+<tr>
+<td>w3_make</td>
+<td>Script to compile and link components of WAVEWATCH III using a makefile. A list of programs can be given in arguments.</td>
+</tr>
+<tr>
+<td>w3_automake</td>
+<td>Script to automatically compile separately sequential and distributed programs in MPI, OMP or HYB depending on the switch file content. A list of programs can be given in arguments.</td>
+</tr>
+<tr>
+<td>w3_new</td>
+<td>Script to touch all correct source code files to account for changes in compiler switches in combination with the makefile.</td>
+</tr>
+<tr>
+<td>ww3_gspl.sh</td>
+<td>Script to automate use of <strong>ww3_gspl</strong> program (see <strong>Section 4.4.11</strong>).</td>
+</tr>
+<tr>
+<td>arc_wwatch3_tar</td>
+<td>Program to archive versions of WAVEWATCH III in the directory <strong>arc</strong>.</td>
+</tr>
+<tr>
+<td>ww3_from_ftp.sh</td>
+<td>Script to download all the binary files not provided by git.</td>
+</tr>
+</tbody></table>
+<p>Examples files provided :</p>
+<table>
+<thead>
+<tr>
+<th>switch_xxx</th>
+<th>Examples of preprocessor switches provided by users or developers. (Section 5.9)</th>
+</tr>
+</thead>
+</table>
+<p>Subprograms <code>called</code> :</p>
+<table>
+<thead>
+<tr>
+<th>w3_setenv</th>
+<th>Script to setup the environment based on bin/.wwatch3.env. Called by all auxiliary programs.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>comp.tmpl</td>
+<td>Compiler script template <strong>comp</strong> used with <strong>cmplr.env</strong>.</td>
+</tr>
+<tr>
+<td><code>link.tmpl </code></td>
+<td>Link script template <strong>link</strong> used with <strong>cmplr.env</strong>.</td>
+</tr>
+<tr>
+<td>cmplr.env</td>
+<td>compiler options tested on intel, mpt, gnu, pgi with optimized and debugging options. used with <strong>comp.tmpl</strong> and <strong>link.tmpl</strong>.</td>
+</tr>
+<tr>
+<td>make_makefile.sh</td>
+<td>Script to generate the makefile based on selections in the file switch.</td>
+</tr>
+<tr>
+<td><code>ad3 </code></td>
+<td>Script to run the preprocessor <strong>w3adc</strong> and the compile script <strong>comp</strong> for a given source code file.</td>
+</tr>
+<tr>
+<td>ad3_test</td>
+<td>Test version of <strong>ad3</strong>, showing modifications to original source file. This script does not compile code.</td>
+</tr>
+<tr>
+<td>all_switches</td>
+<td>Generates a list of all <strong>w3adc</strong> switches present in the source code files.</td>
+</tr>
+<tr>
+<td>find_switch</td>
+<td>Script to find WAVEWATCH III source code files containing compiler switches (or arbitrary strings).</td>
+</tr>
+<tr>
+<td><code>sort_switch</code></td>
+<td>Order the switches present in the switch file.</td>
+</tr>
+<tr>
+<td>sort_all_switches</td>
+<td>Script to search all the switch files in WAVEWATCH III and call sort switch.</td>
+</tr>
+</tbody></table>
+<p>Extra <code>programs</code> :</p>
+<table>
+<thead>
+<tr>
+<th>comp.xxx</th>
+<th>Compiler script comp for advanced setting.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>link.xxx </code></td>
+<td>Link script <strong>link</strong> for advanced setting.</td>
+</tr>
+<tr>
+<td>make_MPI</td>
+<td>Script to separately compile MPI and non-MPI programs. (obsolete in future releases - use <strong>w3_automake</strong>)</td>
+</tr>
+<tr>
+<td>make_OMP</td>
+<td>Script to separately compile OpenMP and single threaded programs. (obsolete in future releases use <strong>w3_automake</strong>)</td>
+</tr>
+<tr>
+<td>make_HYB</td>
+<td>Script to separately compile hybrid MPI-OpenMP and single threaded programs. (obsolete in future releases - use <strong>w3_automake</strong>)</td>
+</tr>
+<tr>
+<td>ln3</td>
+<td>Script to make symbolic link of source code file to work directory. (not used)</td>
+</tr>
+<tr>
+<td><code>list</code></td>
+<td>Script to print source code listing using w3prnt. (not used)</td>
+</tr>
+<tr>
+<td>w3_source</td>
+<td>Script to generate a true FORTRAN source code for any of he WAVEWATCH III program elements. (not used)</td>
+</tr>
+<tr>
+<td>WW3_switch_process</td>
+<td>Perl script to process switch from a source file. (not used)</td>
+</tr>
+</tbody></table>
+<p>After installation in the <strong>bin</strong> directory, several <strong>GrADS</strong> scripts are installed in the <strong>aux</strong> directory.</p>
+<table>
+<thead>
+<tr>
+<th>cbarn.gs</th>
+<th>Semi-standard GrADS script for displaying color bars.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>colorset.gs</code></td>
+<td>Script to define colors used in shading.</td>
+</tr>
+<tr>
+<td><code>profile.gs</code></td>
+<td>Script to display profiling data generated by ww3_multi.</td>
+</tr>
+<tr>
+<td><code>source.gs</code></td>
+<td>Script for composite plot of spectra and source terms (2-D polar or Cartesian plots in color or in black and white).</td>
+</tr>
+<tr>
+<td>1source.gs</td>
+<td>Script to plot single source term.</td>
+</tr>
+<tr>
+<td><code>spec.gs</code></td>
+<td>Script to plot spectra.</td>
+</tr>
+<tr>
+<td>spec_ids.gen</td>
+<td>Data file used by spectral / source scripts.</td>
+</tr>
+</tbody></table>
+<h3 id="5-6-Optional-environment-settings"><a href="#5-6-Optional-environment-settings" class="headerlink" title="5.6 Optional environment settings"></a>5.6 Optional environment settings</h3><pre class="line-numbers language-none"><code class="language-none">nf-config --version
+nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>Compilation of the WAVEWATCH III with <strong>PDLIB for Domain Decompstion</strong> option for (Explicit/Implicit) <strong>triangular unstructed grids</strong> requires the environment variable <strong>METIS PATH</strong> be set to the path where <strong>Metis and ParMetis</strong> are compiled using the same compiler used for WW3.</p>
+<p>Two additional remarks need to be made regarding <strong>parallel versions</strong> of the model (OpenMP and MPI versions). First, complications may occur when preparing executables for running in an MPI environment. Such complications are discussed in <strong>Appendix C</strong>. Secondly, the OpenMP code should be compiled using directives only, i.e., do not use compiler options that automatically thread the code.</p>
+<h3 id="5-7-Compiling-and-linking"><a href="#5-7-Compiling-and-linking" class="headerlink" title="5.7 Compiling and linking"></a>5.7 Compiling and linking</h3><p>For the first compilation, the WAVEWATCH III environment must be set up using the script <strong>w3_setup</strong> with the model directory path in argument. Some options are available to define the compiler options and the switch file located in the bin directory. For instance,</p>
+<pre class="line-numbers language-none"><code class="language-none">w3_setup /home/user/WW3/model -c &lt;comp&gt; -s &lt;switch&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>the <strong>&lt;comp&gt;</strong> keyword can be <strong>mpt, intel, gfortran, pgi</strong> for optimized compilation options or could be <strong>mpt_debug, intel_debug, gfortran_debug, pgi_debug</strong> for debugging compilation options. If system-dependant options are needed, it can be done by modifying the script <strong>cmplr.env</strong>. Some old <code>comp/link</code> templates from different clusters are still available but not recommended. The <strong>&lt;switch&gt;</strong> keyword can be the suffix of a provided switch file or your own one. Running this script will create these three scripts/files :</p>
+<table>
+<thead>
+<tr>
+<th><code>comp</code></th>
+<th>Compiler script. This script is based on comp.tmpl with the provided definition of the compiler and its options.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>link</code></td>
+<td>Linker script. This script is based on <strong>link.tmpl</strong> with the provided definition of the linker and its options.</td>
+</tr>
+<tr>
+<td><code>switch</code></td>
+<td>File containing a list of switches as recognized by the preprocessor w3adc. Copied from switch_&lt;switch&gt;.</td>
+</tr>
+</tbody></table>
+<p>The environment file <strong>wwatch3.env</strong> will be created or updated if it already exists. The auxiliary FORTRAN programs for code prepocessor will be compiled using by default the <strong>GNU FORTRAN</strong> compiler which can be different to the provided compiler for the WAVEWATCH III programs.</p>
+<p>The easiest way to compile WAVEWATCH III is using the script <strong>w3_automake</strong> to automatically detect which programs to compile and to compile it. It will force pre- and post-processing programs to be compiled as sequential implementation and others depending on the switches from openMP, MPI or hybrid configurations. If the netCDF library is correctly set up, the netCDF dedicated programs will be also compiled. The same test is done for SCRIPNC, PDLIB, OASIS, ESMF, TRKNC and TIDE keywords to manage the program compilation in the best way. For instance,</p>
+<pre class="line-numbers language-none"><code class="language-none">w3_automake<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>or for a few programs</p>
+<pre class="line-numbers language-none"><code class="language-none">w3_automake ww3_grid ww3_shel ww3_ounf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>the compiled programs will all be stored in the <strong>exe</strong> directory with <strong>a copy</strong> of the switch, comp and link files used.</p>
+<p>In case of troubles during the compilation of a program, the log files will be stored in a temporary directory which will differs between sequential mode (<strong>tmp_SEQ</strong>) and distributed mode like MPI (<strong>tmp_MPI</strong>), OMP (<strong>tmp_OMP</strong>) or hybrid (<strong>tmp_HYB</strong>). There are usually three log files per program:</p>
+<table>
+<thead>
+<tr>
+<th>ww3_&lt;prog&gt;.l</th>
+<th>full program with only the matching lines of codes based on the switches and at the end the compilation command line.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ww3_&lt;prog&gt;.out</td>
+<td>warning messages</td>
+</tr>
+<tr>
+<td>ww3_&lt;prog&gt;.err</td>
+<td>error messages</td>
+</tr>
+</tbody></table>
+<p>To remove all user-created files from the WAVEWATCH III framework, the script <strong>w3_clean</strong> can be used by only cleaning up the model directory</p>
+<pre class="line-numbers language-none"><code class="language-none">w3_clean -m<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>or the full ww3 repository</p>
+<pre class="line-numbers language-none"><code class="language-none">w3_clean -c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="5-8-Detailled-compilation"><a href="#5-8-Detailled-compilation" class="headerlink" title="5.8 Detailled compilation"></a>5.8 Detailled compilation</h3><p>Compilation of WAVEWATCH III is performed using the script <strong>w3_make</strong> in the bin directory (Note that before running <strong>w3_make</strong> several user interventions are needed as described in the remainder of this section.). If this script is used without parameters, all basic programs of WAVEWATCH III are compiled. Optionally, names of programs to be compiled can be given as part of the compile command. For instance, <code>w3_make ww3_grid ww3_strt</code> will compile the grid preprocessor and the initial conditions program only.</p>
+<p><strong>w3_make</strong> uses several of the scripts described in the previous section. A graphical representation is given in <strong>Fig. 5.1</strong>. </p>
+<ul>
+<li><p>If necessary, the script w3_make uses the scripts make_makefile.sh to generate a makefile. make_makefile.sh generates a list of modules to be linked, based on the program switches in the file switch (see Section 5.9), and checks all needed sources for module dependencies. If switches have been changed since the last call to w3_make, w3_new is used to touch relevant source code or to delete relevant object files. </p>
+<blockquote>
+<p><code>touch</code> ➡ <code>linux bash 创建文件用到时 touch，</code></p>
+<p><code>很好的解释了switch对于ww3_make的意义</code></p>
+</blockquote>
+</li>
+<li><p>After the makefile has been completed, the <code>standard UNIX make utility</code> is used to compile and link the programs. Instead of directly using the FORTRAN compiler, the makefile invokes the <code>preprocessor and compile scripts ad3 and comp, and the link script link</code>. The script <code>ad3</code> uses the extension of the file name to determine the necessary action. Files with extension <code>.ftn</code> are processed by <strong>w3adc</strong>, files with extension <code>.f</code> or <code>.f90</code> are send to the script comp directly. </p>
+</li>
+</ul>
+<p><strong>Although a user could try out several of these scripts interactively, he or she generally needs to run w3_make only</strong>.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220222220514.png" style="zoom:71%;">
+
+<p>The auxiliary scripts <strong>w3_make</strong> etc. use the <code>switch, comp and link</code> files from the <strong>./bin</strong> directory under the WAVEWATCH III home directory, <strong>NOT</strong> from the local directory.</p>
+<p>After the appropriate changes have been made, or the appropriate example scripts have been copied in, (parts of) WAVEWATCH III can be compiled and linked. </p>
+<ul>
+<li><p>When the program is compiled for the first time, it is suggested to compile program parts one-by-one to avoid lengthy errors messages, and to set up error capturing in <code>comp</code>. </p>
+</li>
+<li><p>A good place to start is compilation of the simple test code <strong>ctest</strong>. First go to the directory <code>work</code> and make a link to the source code of this routine by typing <code>ln3 ctest</code>. This link is made to facilitate later inclusion of errors to test or set-up error capturing in the script <code>comp</code>. The inner workings of the preprocessor <strong>w3adc</strong> can be seen by typing the command <code>ad3_test ctest</code> which will show how the actual source code is constructed from <strong>ctest.ftn</strong>, include files and program switches. </p>
+</li>
+<li><p>Next, the compilation of this subroutine can be tested by typing <code>ad3 ctest 1</code> which invokes both the preprocessor <strong>w3adc</strong> and the compile script <code>comp</code>. The 1 at the end of this line activates test output. If it is omitted, this command should result in a single line of output, identifying that the routine is being processed. </p>
+<p>If <code>ad3</code> works as expected, an object file <strong>obj/ctest.o</strong> is generated. If requested during the initial set up, a source code and listing file (<strong>ctest.f</strong> and <strong>ctest.l</strong>) can be found in the scratch directory. The listing file is also retained if compilation errors are detected by <code>comp</code>. At this time, it is prudent to test error capturing in the script <code>comp</code> by adding errors and warnings to ctest.ftn in the work directory. The error capturing is discussed in some detail in the documentation of comp. After <code>comp</code> has been tested, and the errors in <strong>ctest.ftn</strong> have been removed, the link to the work directory and the file <strong>obj/ctest.o</strong> can be deleted.</p>
+</li>
+</ul>
+<blockquote>
+<p><code>上面这段好难~~</code></p>
+</blockquote>
+<p>After a single routine has been compiled successfully, the next step is to try to compile and link an entire program. </p>
+<ul>
+<li>The grid preprocessor can be compiled by typing <code>w3_make ww3_grid</code>. If the compilation appears successful, and if the input files have been installed (see above), the grid preprocessor can be tested by typing <code>ww3_grid</code>  in the work directory. If the input files have been installed, a link to the input file <strong>ww3_grid.inp</strong> will be present in the work directory, and the grid preprocessor will run and send its output to the screen. Output files of the grid preprocessor will appear in the work directory. When a program is compiled for the first time, the operating system might not be able to find the executable. If this occurs, try to type <code>rehash</code> or open a new shell to work from. In this way all separate programs can be compiled and tested. </li>
+<li>To clean up all temporarily files (such as listings) and data files of the test runs, type <code>w3_clean</code>. Note that <strong>w3_make</strong> only checks the switch file for changes. </li>
+<li>If the user changes the compile options in the compile and link scripts comp and link, it is advised to force the recompilation of the entire program. This can be achieved by typing <code>w3_new all or w3_new</code> before invoking w3_make. This might also be useful if the compilation is unsuccessful for no apparent reason.</li>
+</ul>
+<h3 id="5-9-Selecting-model-options"><a href="#5-9-Selecting-model-options" class="headerlink" title="5.9 Selecting model options"></a>5.9 Selecting model options</h3><p>The file <code>switch</code> in the <code>bin</code> directory contains a set of strings identifying model options to be selected. Many options are available. Of several groups of options it is mandatory to select exactly one. These mandatory <code>switches</code> are described in Section 5.9.1. Other <code>switches</code> are optional, and are described in Section 5.9.2. Default model setting are identified in Section 5.9.3. The order in which the switches appear in switch is arbitrary. How these <code>switches</code> are included in the source code files is described in Section 6.2.</p>
+<h4 id="5-9-1-Mandatory-switches"><a href="#5-9-1-Mandatory-switches" class="headerlink" title="5.9.1 Mandatory switches"></a>5.9.1 Mandatory switches</h4><p>Of each of the below groups of switches exactly one has to be selected.</p>
+<p>The first group of switches controls <strong>the selection of machine-dependent code</strong>. With the introduction of FORTRAN-90 this set of switches should have become obsolete. Problems with some compilers have prompted the retention of the second switch.</p>
+<table>
+<thead>
+<tr>
+<th>F90</th>
+<th>FORTRAN-90 style date and time capturing and program abort.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DUM</code></td>
+<td>Dummy to be used if WAVEWATCH III is to be installed on previously untried hardware.</td>
+</tr>
+</tbody></table>
+<p><strong>Hardware model (first group) and message passing protocol (second group)</strong>. Note that these two groups share a <code>switch</code>. This implies that the <code>mpi</code> switch can only be used in combination with the <code>dist</code> switch.</p>
+<table>
+<thead>
+<tr>
+<th><code>SHRD</code></th>
+<th>Shared memory model.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DIST</code></td>
+<td>Distributed memory model.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><code>SHRD</code></th>
+<th>Shared memory model, no message passing.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MPI</td>
+<td>Message Passing Interface (MPI).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of propagation schemes and GSE alleviation method</strong>. These represent two sets of switches with some shared <code>switches</code> between the groups. Note that the second set of switches is secondary to the selection of program modules in the first set of switches, and therefore, does not have a user-defined option.</p>
+<table>
+<thead>
+<tr>
+<th>PR0</th>
+<th>No propagation scheme / GSE alleviation used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>PR1</code></td>
+<td>First order propagation scheme, no GSE alleviation</td>
+</tr>
+<tr>
+<td>PR2</td>
+<td>Higher-order schemes with Booij and Holthuijsen (1987) dispersion correction.</td>
+</tr>
+<tr>
+<td>PR3</td>
+<td>Higher-order schemes with Tolman (2002a) averaging technique.</td>
+</tr>
+<tr>
+<td>PRX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>PR0</th>
+<th>No propagation scheme used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>PR1</code></td>
+<td>First-order propagation scheme.</td>
+</tr>
+<tr>
+<td>UNO</td>
+<td>Second-order (UNO) propagation scheme.</td>
+</tr>
+<tr>
+<td><code>UQ</code></td>
+<td>Third-order (UQ) propagation scheme.</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of flux computation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>FLX0</th>
+<th>No routine used; flux computation included in source terms,</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FLX1</td>
+<td>Friction velocity according to Eq (2.56).</td>
+</tr>
+<tr>
+<td>FLX2</td>
+<td>Friction velocity from Tolman and Chalikov input.</td>
+</tr>
+<tr>
+<td>FLX3</td>
+<td>Idem, with cap of Eq (2.78) or (2.79).</td>
+</tr>
+<tr>
+<td>FLX4</td>
+<td>Friction velocity according to Eq (2.138).</td>
+</tr>
+<tr>
+<td>FLXX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of linear input:</strong></p>
+<table>
+<thead>
+<tr>
+<th>LN0</th>
+<th>No linear input.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>SEED</code></td>
+<td>Spectral seeding of Eq (3.70).</td>
+</tr>
+<tr>
+<td>LN1</td>
+<td>Cavaleri and Malanotte-Rizzoli with filter.</td>
+</tr>
+<tr>
+<td>LNX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of input and dissipation</strong>. <code>stabn switches</code> are optional and additional to corresponding <code>stn switch</code>:</p>
+<table>
+<thead>
+<tr>
+<th>ST0</th>
+<th>No input and dissipation used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ST1</td>
+<td>WAM3 source term package.</td>
+</tr>
+<tr>
+<td>ST2</td>
+<td>Tolman and Chalikov (1996) source term package. See also the optional <code>stab2 switch</code>.</td>
+</tr>
+<tr>
+<td>STAB0</td>
+<td>No stability correction. Compatible with any source term (st) package. Including this switch has no effect.</td>
+</tr>
+<tr>
+<td>STAB2</td>
+<td>Enable stability correction (2.95) - (2.98). Compatible with <code>st2</code> only.</td>
+</tr>
+<tr>
+<td>ST3</td>
+<td>WAM4 and variants source term package.</td>
+</tr>
+<tr>
+<td>STAB3</td>
+<td>Enable stability correction from Abdalla and Bidlot (2002). Compatible with <code>st3 and st4</code> only.</td>
+</tr>
+<tr>
+<td>ST4</td>
+<td>Ardhuin et al (2010) source term package.</td>
+</tr>
+<tr>
+<td>ST6</td>
+<td>BYDRZ source term package.</td>
+</tr>
+<tr>
+<td>STX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of nonlinear interactions:</strong></p>
+<table>
+<thead>
+<tr>
+<th>NL0</th>
+<th>No nonlinear interactions used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NL1</td>
+<td>Discrete interaction approximation (DIA).</td>
+</tr>
+<tr>
+<td>NL2</td>
+<td>Exact interaction approximation (WRT).</td>
+</tr>
+<tr>
+<td>NL3</td>
+<td>Generalized Multiple DIA (GMD).</td>
+</tr>
+<tr>
+<td>NL4</td>
+<td>Two-scale approximation (TSA).</td>
+</tr>
+<tr>
+<td>NLX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of bottom friction:</strong></p>
+<table>
+<thead>
+<tr>
+<th>BT0</th>
+<th>No bottom friction used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BT1</td>
+<td>JONSWAP bottom friction <code>formulation</code>.</td>
+</tr>
+<tr>
+<td>BT4</td>
+<td>SHOWEX bottom friction <code>formulation</code>.</td>
+</tr>
+<tr>
+<td>BT8</td>
+<td>Dalrymple and Liu <code>formulation</code> (fluid mud seafloor).</td>
+</tr>
+<tr>
+<td>BT9</td>
+<td>Ng <code>formulation</code> (fluid mud seafloor).</td>
+</tr>
+<tr>
+<td>BTX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of term for damping by sea ice:</strong></p>
+<table>
+<thead>
+<tr>
+<th><code>IC0</code></th>
+<th>No damping by sea ice.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IC1</td>
+<td>Simple <code>formulation</code>.</td>
+</tr>
+<tr>
+<td>IC2</td>
+<td>Liu et al <code>formulation</code>.</td>
+</tr>
+<tr>
+<td>IC3</td>
+<td>Wang and Shen formulation.</td>
+</tr>
+<tr>
+<td>IC4</td>
+<td>Frequency-dependent damping by sea ice.</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of term for scattering by sea ice:</strong></p>
+<table>
+<thead>
+<tr>
+<th>IS0</th>
+<th>No scattering by sea ice.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IS1</td>
+<td>Diffusive scattering by sea ice (simple).</td>
+</tr>
+<tr>
+<td>IS2</td>
+<td>Floe-size dependent scattering and dissipation.</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of term for reflection:</strong></p>
+<table>
+<thead>
+<tr>
+<th>REF0</th>
+<th>No reflection</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>REF1</td>
+<td>Enables reflection of shorelines and icebergs</td>
+</tr>
+</tbody></table>
+<p><strong>Selection depth-induced breaking of :</strong></p>
+<table>
+<thead>
+<tr>
+<th>DB0</th>
+<th>No depth-induced breaking used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DB1</td>
+<td>Battjes-Janssen.</td>
+</tr>
+<tr>
+<td>DBX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of triad interactions:</strong></p>
+<table>
+<thead>
+<tr>
+<th>TR0</th>
+<th>No triad interactions used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TR1</td>
+<td>Lumped Triad Interaction (LTA) method.</td>
+</tr>
+<tr>
+<td>TRX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of bottom scattering:</strong></p>
+<table>
+<thead>
+<tr>
+<th>BS0</th>
+<th>No bottom scattering used.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BS1</td>
+<td>Magne and Ardhuin.</td>
+</tr>
+<tr>
+<td>BSX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of supplemental source term:</strong></p>
+<table>
+<thead>
+<tr>
+<th>XX0</th>
+<th>No supplemental source term used</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>XXX</td>
+<td>Experimental (user supplied).</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of method of wind interpolation (time):</strong></p>
+<table>
+<thead>
+<tr>
+<th>WNT0</th>
+<th>No interpolation.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>WNT1</td>
+<td>Linear interpolation.</td>
+</tr>
+<tr>
+<td>WNT2</td>
+<td>Approximately quadratic interpolation.</td>
+</tr>
+</tbody></table>
+<p><strong>Selection of method of wind interpolation (space):</strong></p>
+<table>
+<thead>
+<tr>
+<th>WNX0</th>
+<th>Vector interpolation.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>WNX1</td>
+<td>Approximately linear speed interpolation.</td>
+</tr>
+<tr>
+<td>WNX2</td>
+<td>Approximately quadratic speed interpolation.</td>
+</tr>
+</tbody></table>
+<p>Selection of method of <code>current interpolation (time)</code>:</p>
+<table>
+<thead>
+<tr>
+<th><code>CRT0</code></th>
+<th>No interpolation.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CRT1</td>
+<td>Linear interpolation.</td>
+</tr>
+<tr>
+<td><code>CRT2</code></td>
+<td>Approximately quadratic interpolation.</td>
+</tr>
+</tbody></table>
+<p>Selection of method of <code>current interpolation (space)</code>:</p>
+<table>
+<thead>
+<tr>
+<th>CRX0</th>
+<th>Vector interpolation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CRX1</td>
+<td>Approximate linear speed interpolation.</td>
+</tr>
+<tr>
+<td>CRX2</td>
+<td>Approximate quadratic speed interpolation.</td>
+</tr>
+</tbody></table>
+<p><strong>Switch for user supplied GRIB package.</strong></p>
+<table>
+<thead>
+<tr>
+<th><code>NOGRB</code></th>
+<th>No package included.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NCEP1</td>
+<td>NCEP GRIB1 package for IBM SP.</td>
+</tr>
+<tr>
+<td>NCEP2</td>
+<td>NCEP GRIB2 package for IBM SP.</td>
+</tr>
+</tbody></table>
+<h4 id="5-9-2-Optional-switches"><a href="#5-9-2-Optional-switches" class="headerlink" title="5.9.2 Optional switches"></a>5.9.2 Optional switches</h4><p>All switches below activate model behavior if selected, but do not require particular combinations. </p>
+<p>The following switches control <strong>optional output</strong> for WAVEWATCH III programs.</p>
+<table>
+<thead>
+<tr>
+<th>o0</th>
+<th>Output of namelists in grid preprocessor.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>o1</td>
+<td>Output of boundary points in grid preprocessor.</td>
+</tr>
+<tr>
+<td>o2</td>
+<td>Output of the grid point status map in grid preprocessor.</td>
+</tr>
+<tr>
+<td>o2a</td>
+<td>Generation of land-sea mask file <strong>mask.ww3</strong> in grid preprocessor.</td>
+</tr>
+<tr>
+<td>o2b</td>
+<td>Output of obstruction map in grid preprocessor.</td>
+</tr>
+<tr>
+<td>o2c</td>
+<td>Print status map in format as read by <strong>ww3_grid</strong>.</td>
+</tr>
+<tr>
+<td>o3</td>
+<td>Additional output in loop over fields in field preprocessor.</td>
+</tr>
+<tr>
+<td>o4</td>
+<td>Print plot of normalized one-dimensional energy spectrum in initial conditions program.</td>
+</tr>
+<tr>
+<td>o5</td>
+<td>Id. two-dimensional energy spectrum.</td>
+</tr>
+<tr>
+<td>o6</td>
+<td>Id. spatial distribution of wave heights (not adapted for distributed memory).</td>
+</tr>
+<tr>
+<td>o7</td>
+<td><code>Echo input data for homogeneous fields in generic shell</code>. <code>echo是linux的bash语言中的</code>.</td>
+</tr>
+<tr>
+<td>o7a</td>
+<td>Diagnostic output for output points.</td>
+</tr>
+<tr>
+<td>o7b</td>
+<td>Idem in <strong>ww3_multi</strong>.</td>
+</tr>
+<tr>
+<td>o8</td>
+<td>Filter field output for extremely small wave heights in wave model (useful for some propagation tests).</td>
+</tr>
+<tr>
+<td>o9</td>
+<td>Assign a negative wave height to negative energy in wave model. Used in testing phase of new propagation schemes.</td>
+</tr>
+<tr>
+<td>o10</td>
+<td>Identify main elements of multi-grid model extensions in standard output.</td>
+</tr>
+<tr>
+<td>o11</td>
+<td>Additional log output on management algorithm in <strong>log.mww3</strong>.</td>
+</tr>
+<tr>
+<td>o12</td>
+<td>Identify removed boundary points in overlapping grids (center).</td>
+</tr>
+<tr>
+<td>o13</td>
+<td>Identify removed boundary points in overlapping grids (edge).</td>
+</tr>
+<tr>
+<td>o14</td>
+<td>Generate log file with buoy data <strong>buoy_log.ww3</strong> for output type <strong>ITYPE = 0</strong> in <strong>ww3_outp</strong>.</td>
+</tr>
+<tr>
+<td>o15</td>
+<td>Generate log file with time stamps of input data file <strong>times.XXX</strong> in <strong>ww3_prep</strong>.</td>
+</tr>
+<tr>
+<td>o16</td>
+<td>Generate GrADS output of grid partitioning in <strong>ww3_gspl</strong>.</td>
+</tr>
+</tbody></table>
+<p>The following switches <strong>enable parallelization of the model using OpenMP directives</strong>, also known as ‘threading’. Before model version 5.01, threading and parallelization using the mpi switch could no be used simultaneously. With version 5.01, pure MPI,pure OMP and hybrid MPI-OMP approaches became available. Switches used in version 5.01 and higher are not compatible with switches used in previous model versions.</p>
+<table>
+<thead>
+<tr>
+<th>OMPG</th>
+<th>General loop parallelization directives used for both exclusive OpenMP parallelization and hybrid MPI-OpenMP parallelization.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OMPX</td>
+<td>Idem, but for directives used only for exclusive OpenMP parallelization.</td>
+</tr>
+<tr>
+<td>OMPH</td>
+<td>Idem, but for directives used only for hybrid MPI-OpenMP parallelization.</td>
+</tr>
+<tr>
+<td>PDLIB</td>
+<td>Domain Decomposition for Explicit and Implicit Solver on triangular unstructured grids. (ParMetis is required for this option)</td>
+</tr>
+</tbody></table>
+<p>Note that these switches can only be used in certain combinations, as enforced in the model installation scripts (particularly <code>make_makefile.sh</code>. A pure MPI approach requires the <code>DIST and MPI switches</code>. A pure OpenMP approach requires the <code>SHRD, OMPG and OMPX switches</code>, and the hybrid approach requires the <code>DIST, MPI, OMPG,and OMPH switches</code>.</p>
+<p>The following <strong>switches are associated with the continuously moving grid options</strong>. The first switch activates the option, the other two are optional additions.</p>
+<table>
+<thead>
+<tr>
+<th>MGP</th>
+<th>Activate propagation correction in Eq (3.45).</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MGW</td>
+<td>Apply wind correction in moving grid approach.</td>
+</tr>
+<tr>
+<td>MGG</td>
+<td>Activate GSE alleviation correction in Eq (3.48).</td>
+</tr>
+</tbody></table>
+<p>The following <strong>compiler dependent switches</strong> are available. They may not have been maintained for recent compiler versions.</p>
+<table>
+<thead>
+<tr>
+<th>C90</th>
+<th>Compiler directives for Cray C90 (vectorization).</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NEC</td>
+<td>Compiler directives for NEC SX6/SX8 (vectorization).</td>
+</tr>
+</tbody></table>
+<p>Furthermore the following <strong>miscellaneous switches</strong> are available:</p>
+<table>
+<thead>
+<tr>
+<th><code>ARC</code></th>
+<th>Arctic grid option for SMC grid. (Not yet fully tested according to author.)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>COU</td>
+<td>Activates the calculation of variables required for coupling</td>
+</tr>
+<tr>
+<td>DSS0</td>
+<td>Switch off frequency dispersion in diffusive dispersion correction.</td>
+</tr>
+<tr>
+<td>FLD1</td>
+<td>Sea-state dependent $\tau$ Reichl et al (2014) (Section 2.5.2).</td>
+</tr>
+<tr>
+<td>FLD2</td>
+<td>Sea-state dependent $\tau$ Donelan et al (2012) (Section 2.5.3).</td>
+</tr>
+<tr>
+<td>IG1</td>
+<td>Second-order spectrum and free infragravity waves (Section 2.4.9).</td>
+</tr>
+<tr>
+<td>MLIM</td>
+<td>Use Miche-style shallow water limiter of Eq (3.71).</td>
+</tr>
+<tr>
+<td>MPIBDI</td>
+<td>Experimental parallelization of multi-grid model initialization</td>
+</tr>
+<tr>
+<td><code>MPIT</code></td>
+<td>Test output for MPI initializations.</td>
+</tr>
+<tr>
+<td>MPRF</td>
+<td>Profiling of individual models and nesting in <strong>ww3_multi</strong>.</td>
+</tr>
+<tr>
+<td>NC4</td>
+<td>Activates the NetCDF-4 API in the NetCDF pre- and post- processing programs.</td>
+</tr>
+<tr>
+<td>NCC</td>
+<td>NCEP coupler.</td>
+</tr>
+<tr>
+<td><code>NCO</code></td>
+<td>Code modifications for operational implementation at NCO (NCEP Central Operations). Mostly changes unit numbers and file names. Not recommended for general use.</td>
+</tr>
+<tr>
+<td>NLS</td>
+<td>Activate nonlinear smoother (Section 2.3.6).</td>
+</tr>
+<tr>
+<td>NNT</td>
+<td>Generate file test_data_nnn.ww3 with spectra and nonlinear interactions for training and testing of NNIA.</td>
+</tr>
+<tr>
+<td><code>OASIS</code></td>
+<td>Initializes OASIS Coupler (App. E.3).</td>
+</tr>
+<tr>
+<td><code>OASACM</code></td>
+<td>OASIS atmospheric model coupling fields(App. E.3).</td>
+</tr>
+<tr>
+<td>OASOCM</td>
+<td>OASIS oceanic model coupling fields (App. E.3).</td>
+</tr>
+<tr>
+<td>OASICM</td>
+<td>OASIS sea ice model coupling fields (App. E.3).</td>
+</tr>
+<tr>
+<td>REFRX</td>
+<td>Enables refraction based on spatial gradients in phase velocity (Section 2.4.3)</td>
+</tr>
+<tr>
+<td><code>REFT</code></td>
+<td>Test output for shoreline reflflection (which is activated with <code>REF1</code>).</td>
+</tr>
+<tr>
+<td><code>RTD</code></td>
+<td>Rotated grid option.</td>
+</tr>
+<tr>
+<td>RWND</td>
+<td>Correct wind speed for current velocity.</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td>Enable subroutine tracing in the main WAVEWATCH III subroutines by activating calls to the subroutine <code>strace</code>.</td>
+</tr>
+<tr>
+<td><code>SCRIP</code></td>
+<td>Enable SCRIP remapping routines (App. D.3)</td>
+</tr>
+<tr>
+<td><code>SCRIPNG</code></td>
+<td>Enable storage of remapping weights in NetCDF files (App. D.3)</td>
+</tr>
+<tr>
+<td>SEC1</td>
+<td>Enable the use of global time steps less than 1 s, but does not allow output at time steps less than 1 s.</td>
+</tr>
+<tr>
+<td>SMC</td>
+<td>Activate SMC grid.</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td>Enable test output throughout the program(s).</td>
+</tr>
+<tr>
+<td><code>Tn</code></td>
+<td>Id.</td>
+</tr>
+<tr>
+<td>TDYN</td>
+<td>Dynamic increment of swell age in diffusive dispersion correction (test cases only).</td>
+</tr>
+<tr>
+<td><code>TIDE</code></td>
+<td>Enables tidal analysis: used for pre-processing of input files, run-time tidal prediction in ww3_shel or tidal prediction with ww3_prtide.</td>
+</tr>
+<tr>
+<td><code>TIDET</code></td>
+<td>test output for tidal analysis.</td>
+</tr>
+<tr>
+<td>TRKNC</td>
+<td>Activates the NetCDF API in the wave system tracking post-processing program. Selecting TRKNC alone will generate NetCDF-3 files. Selecting both TRKNC and NC4 will generate NetCDF-4 files.</td>
+</tr>
+<tr>
+<td>UOST</td>
+<td>Enable the unresolved obstacles source term.</td>
+</tr>
+<tr>
+<td>XW0</td>
+<td>Swell diffusion only in ULTIMATE QUICKEST scheme</td>
+</tr>
+<tr>
+<td>XW1</td>
+<td>Id. wave growth diffusion only.</td>
+</tr>
+</tbody></table>
+<h4 id="5-9-3-Default-model-settings"><a href="#5-9-3-Default-model-settings" class="headerlink" title="5.9.3 Default model settings"></a>5.9.3 Default model settings</h4><p>Up to model version 3.14, the NCEP operational model setup was considered as the default model setup. However, with subsequent versions of WAVEWATCH III, the model has evolved into a modeling framework rather than a single model. With this, WAVEWATCH III is run differently at various centers, and a clear “default” model version can no longer be identified. Nevertheless, in order to be able to concisely identify in publications exactly which model setup is used, “default” configurations of various centers are now provided in the bin directory. <strong>These configurations are provided in example switch files and README files, such as switch NCEP_st2 and README.NCEP</strong>. Note that these files are provided to simplify referring to model version, but do not imply an endorsement of the specific model configuration; in this context, it should be noted that by nature, model versions at operational centers are in a continuous state of development.</p>
+<blockquote>
+<p><code>默认配置，真香，论文中，太香了~~</code></p>
+</blockquote>
+<h3 id="5-10-Modifying-the-source-code"><a href="#5-10-Modifying-the-source-code" class="headerlink" title="5.10 Modifying the source code"></a>5.10 Modifying the source code</h3><h3 id="5-11-Running-test-cases"><a href="#5-11-Running-test-cases" class="headerlink" title="5.11 Running test cases"></a>5.11 Running test cases</h3><p>Up to version 3.14, WAVEWATCH III was provided with a set of simple tests to established assess the proper behavior of the basic functionality of the model. In the early development of the next release of the model, Erick Rogers and Tim Campbell converted these in regression tests that could be run more easily in an automated version. Up to model version 4.06, these modified tests were gathered in the nrltest directory, while keeping the old tests in the test directory. In model version 4.07, the <code>nrltest</code> were adopted as the new test cases for WAVEWATCH III in a new regtests directory, while eventually the remaining real-world test cases in <code>test</code> were moved to the <code>cases directory</code>, while discontinuing the <code>test directory</code> completely. The following regression tests are available in the <code>regtests directory</code>.</p>
+<table>
+<thead>
+<tr>
+<th>ww3_tp1.1</th>
+<th>1D propagation around the world along the equator (no land).</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ww3_tp1.2</td>
+<td>1D propagation, along meridian (no land).</td>
+</tr>
+<tr>
+<td>ww3_tp1.3</td>
+<td>1D propagation, shoaling test.</td>
+</tr>
+<tr>
+<td>ww3_tp1.4</td>
+<td>1D propagation, spectral refraction (x).</td>
+</tr>
+<tr>
+<td>ww3_tp1.5</td>
+<td>1D propagation, spectral refraction (y).</td>
+</tr>
+<tr>
+<td>ww3_tp1.6</td>
+<td>1D propagation, wave blocking by current.</td>
+</tr>
+<tr>
+<td>ww3_tp1.7</td>
+<td>1D propagation, IG wave generation.</td>
+</tr>
+<tr>
+<td>ww3_tp1.8</td>
+<td>1D propagation, wave breaking on a beach.</td>
+</tr>
+<tr>
+<td>ww3_tp1.9</td>
+<td>1D propagation, Beji and Battjes (1993) barred flume case.</td>
+</tr>
+<tr>
+<td>ww3_tp2.1</td>
+<td>2D propagation under angle with grid.</td>
+</tr>
+<tr>
+<td>ww3_tp2.2</td>
+<td>2D propagation over half the globe without land (with directional spread).</td>
+</tr>
+<tr>
+<td>ww3_tp2.3</td>
+<td>2D propagation, GSE test.</td>
+</tr>
+<tr>
+<td>ww3_tp2.4</td>
+<td>2D propagation, East Pacific curvilinear grid test.</td>
+</tr>
+<tr>
+<td>ww3_tp2.5</td>
+<td>2D propagation, Arctic Grid, curvilinear grid test.</td>
+</tr>
+<tr>
+<td>ww3_tp2.6</td>
+<td>2D propagation, Limon Harbor unstructured grid test.</td>
+</tr>
+<tr>
+<td>ww3_tp2.7</td>
+<td>Reflection on a 2D unstructured grid.</td>
+</tr>
+<tr>
+<td>ww3_tp2.8</td>
+<td>Tidal constituents on a 2D regular grid.</td>
+</tr>
+<tr>
+<td>ww3_tp2.9</td>
+<td>Tests for obstruction grids.</td>
+</tr>
+<tr>
+<td>ww3_tp2.10</td>
+<td>Tests for SMC grid.</td>
+</tr>
+<tr>
+<td>ww3_tp2.11</td>
+<td>Tests for rotated grid.</td>
+</tr>
+<tr>
+<td>ww3_tp2.12</td>
+<td>Test for system tracking.</td>
+</tr>
+<tr>
+<td>ww3_tp2.13</td>
+<td>Test for propagation under angle with grid (tripole)</td>
+</tr>
+<tr>
+<td>ww3_tp2.14</td>
+<td>Test for toy-model using <code>OASIS</code> coupler.</td>
+</tr>
+<tr>
+<td>ww3_tp2.15</td>
+<td>Test for space-time extremes parameters.</td>
+</tr>
+<tr>
+<td>ww3_tp2.16</td>
+<td>Two-dimensional propagation on SMC grid with ARC option</td>
+</tr>
+<tr>
+<td>ww3_tp2.17</td>
+<td>Unstructured grid with Card Deck vs Domain Decompostion for Explicit vs Implicit schemes</td>
+</tr>
+<tr>
+<td>ww3_tp2.18</td>
+<td>Test for two-dimensional SMC propagation with Arctic pole handling</td>
+</tr>
+<tr>
+<td>ww3_ts1</td>
+<td>Source term test, time limited growth.</td>
+</tr>
+<tr>
+<td>ww3_ts2</td>
+<td>Source term test, fetch limited growth.</td>
+</tr>
+<tr>
+<td>ww3_ts3</td>
+<td>Source term test, hurricane with single moving grid.</td>
+</tr>
+<tr>
+<td>ww3_ts4</td>
+<td>Source term test, unresolved obstacles.</td>
+</tr>
+<tr>
+<td>ww3_tic1.1</td>
+<td>Wave-ice interaction, 1D test of $S_{ice}$.</td>
+</tr>
+<tr>
+<td>ww3_tic1.2</td>
+<td>Wave-ice interaction, 1D test of “shoaling” effect.</td>
+</tr>
+<tr>
+<td>ww3_tic1.3</td>
+<td>Wave-ice interaction, 1D test of refraction effect.</td>
+</tr>
+<tr>
+<td>ww3_tic1.4</td>
+<td>Wave-ice interaction, 1D test with ice flfloes and ice thickness.</td>
+</tr>
+<tr>
+<td>ww3_tic2.1</td>
+<td>Wave-ice interaction, 2D test of $S_{ice}$.</td>
+</tr>
+<tr>
+<td>ww3_tic2.2</td>
+<td>Wave-ice interaction, 2D test with non-uniform ice.</td>
+</tr>
+<tr>
+<td>ww3_tic2.3</td>
+<td>Wave-ice interaction, 2D test with uniform ice with increasing thickness.</td>
+</tr>
+<tr>
+<td>ww3_tbt1.1</td>
+<td>Wave-mud interaction, 1D test of $S_{mud}$.</td>
+</tr>
+<tr>
+<td>ww3_tbt2.1</td>
+<td>Wave-mud interaction, 2D test of $S_{mud}$.</td>
+</tr>
+<tr>
+<td>ww3_tpt1.1</td>
+<td>Tests for alternative spectral partitioning methods.</td>
+</tr>
+<tr>
+<td>ww3_ta1</td>
+<td>ww3 uprstrt, update the restart file of homogeneous conditions (1 point model)</td>
+</tr>
+<tr>
+<td>mww3_test_01</td>
+<td>Test for expanded grid mask with wetting and drying, etc.</td>
+</tr>
+<tr>
+<td>mww3_test_02</td>
+<td>Two-way nesting test with single inner grid.</td>
+</tr>
+<tr>
+<td>mww3_test_03</td>
+<td>Overlapping grids and two-way nesting tests (6-grid version with beach in high-resolution grids.)</td>
+</tr>
+<tr>
+<td>mww3_test_04</td>
+<td>Current or sea-mount test for two-way nesting with stationary swell conditions.</td>
+</tr>
+<tr>
+<td>mww3_test_05</td>
+<td>Three nested hurricane grids with moving grids test.</td>
+</tr>
+<tr>
+<td>mww3_test_06</td>
+<td>Tests for irregular grid(s) w/ <code>ww3_multi</code>.</td>
+</tr>
+<tr>
+<td>mww3_test_07</td>
+<td>Tests for unstructured grid(s) w/ <code>ww3_multi</code>.</td>
+</tr>
+<tr>
+<td>mww3_test_08</td>
+<td>Tests with wind and ice input.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>mww3_case_01</th>
+<th>Atlantic case with five grids focusing on Trondheim.</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>mww3_case_02</td>
+<td>Pacific case with three grids focusing on Alaska.</td>
+</tr>
+<tr>
+<td>mww3_case_03</td>
+<td>Original multi-grid case used as global model at NCEP.</td>
+</tr>
+<tr>
+<td>mww3_data_00</td>
+<td>Wind fields and ice data used by all example cases.</td>
+</tr>
+<tr>
+<td>mww3_data_xx</td>
+<td>Specific data needed for script <strong>mww3_case_nn</strong>.</td>
+</tr>
+</tbody></table>
+<h2 id="6-System-documentation"><a href="#6-System-documentation" class="headerlink" title="6 System documentation"></a>6 System documentation</h2><h3 id="6-1-Introduction"><a href="#6-1-Introduction" class="headerlink" title="6.1 Introduction"></a>6.1 Introduction</h3><p>In this chapter a brief system documentation is presented. Discussed are the custom preprocessor used by WAVEWATCH III (Section 6.2), the contents of the different source code files (Section 6.3), optimization (Section 6.4), and the internal data storage (Section 6.5). For a more elaborate documentation, reference is made to the source code itself, which is fully documented.</p>
+<h3 id="6-2-The-preprocessor"><a href="#6-2-The-preprocessor" class="headerlink" title="6.2 The preprocessor"></a>6.2 The preprocessor</h3><p>The WAVEWATCH III source code files are not ready to use FORTRAN files; <strong>mandatory and optional program options still have to be selected</strong>, and test output may be activated. （Exceptions are some modules that are not originally part of WAVEWATCH III, like the exact interaction modules. Such modules with the extension .f of .f90 bypass the preprocessor and get copied to the work directory with the .f extension.）</p>
+<p>Compile level options are activated using “switches”. The arbitrary switch ’SWT’ is included in the WAVEWATCH III files as comment of the form <strong>!/SWT</strong>, where the switch name SWT is followed by a space or by a ’/’. If a switch is selected, the preprocessor removes the comment characters, thus activating the corresponding source code line. If ’/’ follows the switch, it is also removed, thus allowing the selective inclusion of hardware-dependent compiler directives etc. The switches are <strong>case sensitive</strong>, and available switches are presented in Section 5.9. Files which contain the switch <strong>C/SWT</strong> can be found by typing:</p>
+<pre class="line-numbers language-none"><code class="language-none">find switch ’!/SWT’<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>A list of all switches included in the WAVEWATCH III fifiles can be obtained by typing:</p>
+<pre class="line-numbers language-none"><code class="language-none">all_switches<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Pre-processing is performed by the program <strong>w3adc</strong>. This program is found in the file <strong>w3adc.f</strong>, which contains a ready to compile FORTRAN source code and a full documentation (Presently still in fifixed-format FORTRAN-77). Various properties of <strong>w3adc</strong> are set in <strong>PARAMETER</strong> statements in <strong>w3adc.f</strong>, i.e., the maximum length of switches, the maximum number of include files, the maximum number of lines in an include file and the line length. <strong>w3adc</strong> reads its ‘commands’ from standard input. An example input file for <strong>w3adc</strong> is given in <strong>Fig. 6.1</strong>. Line-by-line, the input consists of:</p>
+<ul>
+<li>Test indicator and compress indicator.</li>
+<li>File names of the input and output code.</li>
+<li>Switches to be turned on in a single string (see Section 5.9).</li>
+<li>Additional lines with include files can be given, but these are no longer used in the automated compile system.</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220223213401.png" style="zoom:71%;">
+
+<p>A test indicator 0 disables test output, and increasing values increase the detail of the test output. A compress indicator 0 leaves the file as is. </p>
+<p>A compress indicator 1 results in the removal of all comment lines indicated by ’!’, except for empty switches, i.e., lines starting with ’!/’. A compress indicator 2 results in the subsequent removal of all comments. Comment lines are not allowed in this input file. </p>
+<p>The above input for <strong>w3adc</strong> is read using free format. Therefore quotes are needed around strings. Echo and test output is send to the standard output device. To facilitate the use of the preprocessor, <strong>several UNIX scripts are provided with WAVEWATCH III as discussed in Section 5.7</strong>. Note that compiler directives are protected from file compression by defining them using a switch.</p>
+<h3 id="6-3-Program-files"><a href="#6-3-Program-files" class="headerlink" title="6.3 Program files"></a>6.3 Program files</h3><h3 id="6-4-Optimization"><a href="#6-4-Optimization" class="headerlink" title="6.4 Optimization"></a>6.4 Optimization</h3><h3 id="6-5-Internal-data-storage"><a href="#6-5-Internal-data-storage" class="headerlink" title="6.5 Internal data storage"></a>6.5 Internal data storage</h3><h3 id="6-6-Variables-in-modules"><a href="#6-6-Variables-in-modules" class="headerlink" title="6.6 Variables in modules"></a>6.6 Variables in modules</h3><h2 id="附录C-为分布式机器进行设置（MPI）"><a href="#附录C-为分布式机器进行设置（MPI）" class="headerlink" title="附录C    为分布式机器进行设置（MPI）"></a>附录C    为分布式机器进行设置（MPI）</h2><blockquote>
 <ul>
 <li><code>分布式机器 distributed machine</code></li>
 <li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/6920998?fr=aladdin">分布式计算机系统</a>是将多台小型微型机互连组成的一种新型计算机系统。它冲破了传统的集中式单机局面，从分散处理的概念出发来组织计算机系统，具有较高的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%80%A7%E8%83%BD%E4%BB%B7%E6%A0%BC%E6%AF%94/4963335">性能价格比</a>，灵活的系统可扩充性， 良好的实时性、可靠性与容错性等潜在优点，是近几年来计算机科学技术领域中极受重视的新型计算机系统，现已成为迅速发展的一个新方向。</li>
@@ -686,12 +2086,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/12/26/hexo/01-an-zhuang-hexo-ji-zai-github-shang-chuan-zai-windows-xi-tong/">
+                <a href="/2021/12/25/wavewatch3/02-lao-shi-gei-de-yi-ge-yun-xing-li-zi/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225215552.png" class="responsive-img" alt="01-安装hexo及在github上传载（windows系统）">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="02-老师给的一个运行例子">
                         
-                        <span class="card-title">01-安装hexo及在github上传载（windows系统）</span>
+                        <span class="card-title">02-老师给的一个运行例子</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -702,14 +2102,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-25
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/hexo/" class="post-category">
-                                    hexo
+                            <a href="/categories/WW3/" class="post-category">
+                                    WW3
                                 </a>
                             
                             
@@ -884,6 +2284,13 @@
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
 
     
     <!-- 05 footer是什么？页脚 -->
@@ -982,7 +2389,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">296.2k</span>
+                        class="white-color">321.3k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

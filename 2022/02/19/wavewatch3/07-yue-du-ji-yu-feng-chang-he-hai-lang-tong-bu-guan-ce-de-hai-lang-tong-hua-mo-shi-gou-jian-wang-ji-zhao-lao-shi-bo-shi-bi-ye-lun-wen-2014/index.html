@@ -39,7 +39,7 @@
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
      
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
 
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-02-20
+                    2022-02-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    12.7k
+                    23.2k
                 </div>
                 
 
@@ -497,15 +497,22 @@
 <p>基于最优控制理论的方法包括三维变分(Three Dimension VARiation, 3D-VAR)和四维变分(Four Dimension VARiation, 4D-VAR)等方法。变分方法也称为<strong>‘多时间水平’(multi-time-level)<strong>方法，其在同化过程中用到</strong>精确的动力模式</strong>，它用一个代价泛函描述模式和观测之间的偏差，进而在各种控制变量下(比如风场，初始条件)极小化这个泛函。</p>
 <p>基于统计估计理论的方法包括最优插值(Optimal Interpolation, OI)、卡尔曼滤波(Kalman Filter, KF)、集合卡尔曼滤波 (Ensemble Kalman Filter, EnKF)及其变种等方法(Bishop et al.，2001；Kalnay, 2003; Ott et al., 2004;朱江和汪萍，2006;Harlim and Hunt,2007; Hunt et al.，2007；Reichle et al.，2008；Beezley et al.，2008；Mandel et al.，2010; Miyoshi,2011; Zhu et al., 2011; Sakov et al.，2012；Clayton et al.，2013)。这些基于统计估计理论的方法也称为<strong>顺序(Sequential)同化方法</strong>或者<strong>‘单时间水平’(single-time-level)方法</strong>。在实际应用中，<strong>顺序同化方法被认为是相对简单并且计算高效的方法</strong>。</p>
 <p>需要指出的是，在动力模式的线性假设下，KF 方法与 4D-VAR 方法等价，OI 方法与3D-VAR 方法等价(乔方利，2002)。 </p>
-<h4 id="2-5-1-OI方法的基本原理"><a href="#2-5-1-OI方法的基本原理" class="headerlink" title="2.5.1 OI方法的基本原理"></a>2.5.1 OI方法的基本原理</h4><p>OI 方法是一种顺序同化方法，自 60 年代开始就广泛地应用在了大气模式中，其已经被 ECMWF 和 RNMI(荷兰皇家气象学会)用在了业务化的系统中。由于在大气模式应用中的成功，OI 方法被广泛地引入并应用到了海浪模式中(de Valk and Calkoen, 1989; Greenslade, 2001;Hasselmann, et al., 1988, 1997; Hsu, et al., 2011; Komen, 1985;Lionello et al., 1992;Lionello et al., 1995; Siddons et al., 2009; Thomas,1988)。OI 方法历经几十年的发展，在大气和海洋的数据同化中<strong>仍然具有非常强的生命力</strong>。</p>
+<h4 id="2-5-1-OI方法的基本原理"><a href="#2-5-1-OI方法的基本原理" class="headerlink" title="2.5.1 OI方法的基本原理"></a>2.5.1 OI方法的基本原理</h4><p><strong>OI 方法是一种顺序同化方法</strong>，自 60 年代开始就广泛地应用在了大气模式中，其已经被 ECMWF 和 RNMI(荷兰皇家气象学会)用在了业务化的系统中。由于在大气模式应用中的成功，OI 方法被广泛地引入并应用到了海浪模式中(de Valk and Calkoen, 1989; Greenslade, 2001;Hasselmann, et al., 1988, 1997; Hsu, et al., 2011; Komen, 1985;Lionello et al., 1992;Lionello et al., 1995; Siddons et al., 2009; Thomas,1988)。OI 方法历经几十年的发展，在大气和海洋的数据同化中<strong>仍然具有非常强的生命力</strong>。</p>
 <p>最优插值同化方法是使分析误差的方差达到最小的一种统计意义上的线性估计。假设模式的状态变量为$x$，则此状态变量的分析值$x^{a}$由初猜值(或背景值) $x^{f}$ 和观测向量 $y$ 的组合表示为<br>$$<br>x^{a}=x^{f}+K\left(y-H x^{f}\right) \tag{2.40} \<br>$$</p>
 <p>$$<br>K=B H^{T}\left(H B H^{T}+R\right)^{-1} \tag{2.41}\<br>$$</p>
-<p>其中，$H$ 为观测算子，其将背景场的信息转化到观测位置；$K$ 称为增益矩阵，是在极小化分析误差方差的条件下求得的。$B$ 和 $R$ 分别为背景误差协方差矩阵和观测误差协方差矩阵。需要指出的是，在海浪数据同化中，观测变量为有效波高等积分波参数或者海浪谱，不需要转换成其他变量，观测算子 $H$ 只需用于空间插值即可。</p>
-<h4 id="2-5-2-误差协方差矩阵"><a href="#2-5-2-误差协方差矩阵" class="headerlink" title="2.5.2 误差协方差矩阵"></a>2.5.2 误差协方差矩阵</h4><p>OI 方法的一个最基本的挑战是要<strong>制定特定的误差协方差矩阵</strong>。一般情况下，<strong>观测误差被认为是空间无关的</strong>，这就导致了 $R$ 是一个对角阵，对角线上的元素为观测均方根误差与背景均方根误差的比值<br>$$<br>R_{i j}=\delta_{i j}\left(\frac{\sigma_{i}^{o}}{\sigma_{i}^{f}}\right) \tag{2.42}<br>$$<br>其中 $\sigma_{i}^{o}$ 和 $\sigma_{i}^{f}$ 分别为模式网格点 $i$ 上的观测和背景均方根误差。</p>
+<p>其中，$H$ 为观测算子，其将背景场的信息转化到观测位置；$K$ 称为增益矩阵，是在极小化分析误差方差的条件下求得的。$B$ 和 $R$ 分别为背景误差协方差矩阵和观测误差协方差矩阵。需要指出的是，在海浪数据同化中，观测变量为有效波高等积分波参数或者海浪谱，不需要转换成其他变量，<strong>观测算子 $H$ 只需用于空间插值即可</strong>。</p>
+<h4 id="2-5-2-误差协方差矩阵"><a href="#2-5-2-误差协方差矩阵" class="headerlink" title="2.5.2 误差协方差矩阵"></a>2.5.2 误差协方差矩阵</h4><p>OI 方法的一个最基本的挑战是要<strong>制定特定的误差协方差矩阵</strong>。</p>
+<ul>
+<li><p>观测误差协方差矩阵</p>
+<p>一般情况下，<strong>观测误差被认为是空间无关的</strong>，这就导致了 $R$ 是一个对角阵，对角线上的元素为观测均方根误差与背景均方根误差的比值<br>$$<br>R_{i j}=\delta_{i j}\left(\frac{\sigma_{i}^{o}}{\sigma_{i}^{f}}\right) \tag{2.42}<br>$$<br>其中 $\sigma_{i}^{o}$ 和 $\sigma_{i}^{f}$ 分别为模式网格点 $i$ 上的观测和背景均方根误差。</p>
+</li>
+<li><p>背景误差协方差矩阵</p>
 <p>为了尽量增大同化策略的优势，必需定义一个<strong>空间相关的背景误差协方差矩阵</strong> $B$ 。定义误差的空间相关性是一个繁琐的任务，对 $B$  的研究一般情况下是转化为对<strong>相关函数</strong>的分析<br>$$<br>B_{i j}=\sigma_{i}^{f} \sigma_{j}^{f} \rho_{i j}<br>\tag{2.43}<br>$$<br>这里， $\rho_{i j}$ 为模式网格点 $i$ 和 $j$ 处的背景误差相关函数， $\sigma_{i}^{f}$ 和 $\sigma_{j}^{f}$ 为网格点上 $i$ 和 $j$ 上的的背景均方根误差。<strong>表 2.2</strong> 列出了背景误差相关函数的多种表达形式。其中，$d_{i j}$ 表示网格点 $i$ 和 $j$ 之间的距离，$L$ 为相关距离尺度(correlation length scale)。 </p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220220163720.png" alt=" " style="zoom:58%;">
 
 <p>基于 WAM 模式，Greenslade(2004)模拟了 1998 年至 2002 年的全球网格下的海浪场，并与 <strong>ERS-2 高度计</strong>的有效波高数据进行了比对，详细分析了表中部分误差相关函数。采用表 2.2 中公式 1 至公式 4 所获取的结果差别不大，并且相关距离尺度 $L$ 在高低纬度的值存在明显差别。任启峰(2010)提出了各向异性的背景误差相关函数(表中公式 6)，在其进行的夏威夷海域的实验中，背景误差相关函数取为表 2.2 中公式 6 比取为表 2.2 中公式 2 时的同化效果略有改善 (有效波高的均方根误差分别为 0.349m 和 0.354m)。郭衍游(2006)基于 WW3 模式，在东中国海海域进行了有效波高同化实验，其比较了表 2.2 中公式 1 和公式 5 的拟合效果，认为后者比前者略好。基于上述分析，易知采<strong>用何种背景相关函数的表达式进行同化，差别不会很大</strong>。本文采用表 2.2 中的公式 5 进行有效波高和海浪谱的数据同化研究。需要特别说明的是，<strong>表 2.2 各个公式中的相关距离尺度是非常不同的</strong>，<strong>即使对同一个表达式，$L$ 的取值也具有很大的差异性</strong>，比如 Bauer et al.(1992)运用表 2.2 中的公式 1 进行了相关的同化研究，其给出最优相关距离尺度为 1650 km,而在 ECMWF 的业务化预报系统中，运用的是同样的公式，但是相关距离尺度却选择了远小于 1650 km 的 300 km。 </p>
+</li>
+</ul>
 <h4 id="2-5-3-OI-I-同化方法"><a href="#2-5-3-OI-I-同化方法" class="headerlink" title="2.5.3 OI-I 同化方法"></a>2.5.3 OI-I 同化方法</h4><p><strong>OI 同化策略</strong>包含两步。一是，通过对背景和观测进行最优插值，得到有效波高等积分波参数的分析场。二是，基于分析的有效波高更新模式产生的二维海浪谱以得到分析谱，模式把此分析谱当作背景谱进行下一步积分。</p>
 <p>由于第三代海浪模式是谱模式，在得到分析的有效波高等<strong>积分波参数</strong>(Integral wave parameters)后，需要联合背景谱和分析的积分波参数以计算出<strong>分析谱</strong>。当风浪的能量大于总能量的 3/4 时，二维谱被看作是<strong>风浪谱</strong>，否则二维谱被看作是<strong>涌浪谱</strong>。分析的二维谱 $F^{a}(f, \theta)$ 由模式的背景谱 $F^{f}(f, \theta)$ 经过缩放和频移得到<br>$$<br>F^{a}(f, \theta) = A F^{f}(Bf, \theta)<br>\tag{2.44}<br>$$<br>针对风浪谱和涌浪谱，参数 $A$ 和 $B$ 有不同的计算方法。</p>
 <ul>
@@ -556,7 +563,277 @@
 <p>两个’\‘加上_，才能编译出_;</p>
 </blockquote>
 <p>其中，$N$ 表示数据数量，$A$ 为测波雷达或者 HY-2 高度计的观测有效波高，$B$ 为 WW3 模拟的有效波高。</p>
-<h2 id="学习经历与论文发表情况"><a href="#学习经历与论文发表情况" class="headerlink" title="学习经历与论文发表情况"></a>学习经历与论文发表情况</h2><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220220115851.png" alt=" " style="zoom:80%;">
+<h3 id="3-4-结果分析"><a href="#3-4-结果分析" class="headerlink" title="3.4 结果分析"></a>3.4 结果分析</h3><p>在是否考虑大气稳定性的条件下，为了评估输入耗散项的模拟能力，进行了 5 组实验，分别命名为 WAM3_ST1, TC96_ST2, TC_96STAB2, WAM4_ST3 和WAM4_STAB3。基于 WOR 数据，得到的结果见<strong>表 3.2</strong> 和<strong>图 3.2</strong>。图和表中给出的为 2012 年 1 月 5 日至 1 月 30 日的数据。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221113525.png" style="zoom:65%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221113644.png" alt=" " style="zoom:71%;">
+
+<p>可以得出，TC96_STAB2 的模拟效果最好，即此实验得到的有效波高值最接近 WOR 的实测波高值。WAM4_STAB3的模拟结果仅次之。TC96_ST2 和 WAM3_ST1 模拟的有效波高值比较接近，这也验证了 Georgia et al.(2009)提到的：TC96 的输入耗散项与 WAM3 类似，只是TC96 的耗散函数把谱的低频和高频分成两部分考虑了。所以，<strong>图 3.2</strong> 中的红色虚线和绿色虚线几乎重合。<strong>图 3.2</strong> 中绿色虚线和蓝色虚线之间的差别，反映了‘<strong>有效风速</strong>’<strong>策略</strong>对模拟结果的影响是非常显著的。</p>
+<p>在 WAM4 方案中，大气不稳定性的影响是通过‘STAB3’这个开关控制的。从本文的结果可以看出，实验 WAM4_ST3 和 WAM4_STAB3 的模拟结果几乎没有差别。也就是说，WAM4 方案中的大气不稳定性的影响在 WW3 模式中不能很好地体现出来。这个现象在 Bidlot et al.(2005)把 WAM4 应用到 ECWAM 模式中的时候也出现过，他们发现，是否在 WAM4 方案中考虑大气不稳定性的影响对模拟结果之间的差别影响非常小。Tolman(2009)亦指出，他们<strong>正在研究这种差别非常小的原因</strong>。所以，在图 3.2 中，黄色的虚线因为黑色虚线的覆盖没有显示出来。同样，基于此原因，表 3.2 中也未列出实验 WAM4_ST3 相关的统计参数。</p>
+<p>显然，相比与 WOR 的有效波高数据，采用不同源项的这 5 组实验模拟的波高值看起来都有些偏低。现在，用 ‘最好’的 TC96_STAB2 实验的结果来分析产生这种偏差的原因。在<strong>图 3.3</strong> 中，蓝色的圈线表示根据风浪关系(WAMDI，1988)计算得到的有效波高值，这里用到的风速是模式的输出数据。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221115331.png" alt=" " style="zoom:80%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221115449.png" alt="  " style="zoom:70%;">
+
+<p>从<strong>图 3.3 中</strong>可以看出，粗略地讲，模拟的有效波高(红色)与经验公式得到的波高(蓝色)值在趋势上是一致的。图 3.3 中，被大圆围住的点上，模拟的有效波高值相对于当时的风速来说是较大的，这些点上可能受涌浪影响的多一些。显然，在涌浪占主导的时期，上文提及的输入耗散项均不能很好地模拟海浪的消长。这种情况在 Georgia et al. (2009)中也有提及。</p>
+<p>另外，上述五种实验获得的模拟结果还与 HY-2 高度计的有效波高值进行了比较。不失一般性，我们<strong>丢弃了那些波高大于 5m 或者小于 0.5m 的点</strong>。<strong>图 3.4</strong>给出了实验 WAM3_ST1，TC96_ST2，TC96_STAB2 和 WAM4_STAB3 的模拟结果与 HY-2 高度计有效波高比对的散点图。模式输出的有效波高与 HY-2 高度计有效波高具有较好的一致性，与和 WOR 比较的结果一致，实验 TC96_STAB2的统计结果最好，其次是实验 WAM4_STAB3 的结果。</p>
+<table>
+    <tbody><tr>
+        <td><center><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221120153.png">  </center></td>
+        <td><center><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221120234.png">  </center></td>
+    </tr>
+    <tr>
+        <td><center><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221120312.png">  </center></td>
+        <td><center><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221120343.png">  </center></td>
+    </tr>
+</tbody></table>
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221120445.png" alt="  " style="zoom:70%;">
+
+<h3 id="3-5-参数敏感性分析"><a href="#3-5-参数敏感性分析" class="headerlink" title="3.5 参数敏感性分析"></a>3.5 参数敏感性分析</h3><p>通过与把 5 组实验的模拟有效波高值分别与 WOR 和 HY-2 高度计的有效波高值进行比对，可以得出，在 WW3 模式提供的所有输入耗散项中，用‘有效风速’策略考虑大气不稳定性的 TC96 方案的模拟能力最强。在‘有效风速’策略中，参数 $c_0$ 是非常重要的。Lee et al. (2009) 选择了 <strong>8 个最重要的参数</strong>进行了敏感性分析，他们得出，在 8 个参数中，公式 (3.1) 中的风速校正参数 $c_0$ 是最重要和最敏感的参数。本文中，对这个参数进行了敏感性分析，并尝试给出此参数在所进行的实验中的最佳值。</p>
+<p>对于风速校正参数 $c_0$ ，模式默认值为 $1.38$，在此默认值的一定范围内选择数值进行实验，所选数值为$1.38 \times(1 \pm i \times 10 \%)$，其中 $i$ 是 1,2,3 等。基于 WOR有效波高数据，<strong>图 3.5</strong> 给出了 $i=\pm 1$ 的情况，也就是选择 $c_0=1.518$ 和 $1.242$ 分别进行类似于 TC96_STAB2 的两组实验。这两组实验的模拟结果与 HY-2 高度计有效波高比对的散点图见<strong>图 3.6</strong>。  </p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221121626.png" style="zoom:67%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221121808.png" style="zoom:67%;">
+
+<p>风速校正参数 <em>c</em>0 是非常敏感的，当其取值为 1.518 时，模拟的有效波高值相对于缺省值模拟的有效波高值有一定的改善，但是当其取 1.242 时，模拟结果变的较差。考虑到不同的条件，这个参数的最优值也可能不尽相同，这与风场，水深，研究区域等等都有关系。在本文的实验中，风速校正参数 <em>c</em>0 取比缺省值 1.38 稍大一些的 1.5 可能是一个较好的选择。</p>
+<p>总之，WW3 提供的三种输入耗散项都能较好地模拟出海浪的演变趋势。但是<strong>在涌浪占主导的情况下，模拟效果均不甚理想</strong>。在 WAM3，TC96 和 WAM4这些输入耗散方案中，用‘有效风速’策略考虑了大气不稳定性的 TC96 方案的模拟效果最佳。<strong>风速校正参数是非常敏感的</strong>，为获得高精度的模拟和预报结果，在某特定区域进行模拟之前，需要对此参数进行验证和选择。</p>
+<h2 id="第四章-风场和海浪同步观测的海浪波高同化"><a href="#第四章-风场和海浪同步观测的海浪波高同化" class="headerlink" title="第四章 风场和海浪同步观测的海浪波高同化"></a>第四章 风场和海浪同步观测的海浪波高同化</h2><p>风场是影响海浪生长和消亡的重要因素，是海浪预报中的主要误差源之一， 海浪模式也依赖于风场以成功地对海浪进行建模。同时，海浪的数据同化又是 提高海浪模式模拟和预报精度的重要途径。在目前的海浪观测中，有些仪器比如浮标可以<strong>获取同步观测的风场和海浪数据</strong>，遥感卫星比如 HY-2 上同时搭载的多种传感器亦可<strong>同步获取风场和海浪波高数据</strong>。即将发射的中法卫星 CFOSAT 上搭载有可<strong>获取二维海浪谱数据</strong>的海浪波谱仪 SWIM，以及可<strong>获取海面风场</strong>的散射计 SCAT。这使得同步获取大量的风场和二维海浪谱数据成为可能。可以预见，在进行海浪同化的过程中，充分利用同步观测的风场数据必能进一步提高海浪模拟和预报的精度。本章利用 NDBC 浮标可同步获取风速风向以及海浪波高的能力，研究同步风场的利用策略，分析考虑同步风场后的海浪模拟和同化效果，以在充分利用风场和海浪同步观测信息的前提下建立高精度的海浪同化模式。</p>
+<h3 id="4-1-同步风场的数据融合"><a href="#4-1-同步风场的数据融合" class="headerlink" title="4.1 同步风场的数据融合"></a>4.1 同步风场的数据融合</h3><p>在海浪数据同化中，<strong>风场校正</strong>被认为是数据同化的一个重要方面。Lionello(1992) 利用观测的海浪场更新了风场信息。<strong>如果初猜谱满足如下条件就被认为是风浪谱</strong>，<br>$$<br>1.3 \frac{u^{\text {old }}}{c_{p}} \cos \left(\theta_{u}-\theta_{m}\right)&gt;1 \tag{4.1}<br>$$<br>其中 $u^{old}$ 是输入的强迫风场的风速，$c_p$ 为海浪谱峰值对应的相速度， $\theta_{u}$ 为风向，$\theta_{m}$ 为均值波向<br>$$<br>\theta_{m}=\arctan \left(\frac{\iint F(f, \theta) \sin \theta d f d \theta}{F(f, \theta) \cos \theta d f d \theta}\right)<br>\tag{4.2}<br>$$<br><strong>当上述(4.1)式成立的时候，风速进行如下更新</strong><br>$$<br>u^{n e w}=u^{o l d}+u^{a n}-u^{f g}<br>\tag{4.3}<br>$$<br>风速 $u^{an}$ 是从分析的波能 $E^{an}$  和均值频率 $f_m^{an}$ 中得到的<br>$$<br>\frac{g^{2} E^{a n}}{\left(u^{a n}\right)^{4}}=2 \times 10^{-5}\left(\frac{f_{m}^{a n} u^{a n}}{g}\right)^{-2.69}<br>\tag{4.4}<br>$$<br>类似地， $u^{fg}$ 是由初猜的波能 $E^{fg}$  和均值频率 $f_m^{fg}$ 计算得到。 </p>
+<p>这样，更新后的风场用作强迫风场驱动海浪模式，直到读入下一步的风场数据。Feng et al. (2012) 对上述方法进行了测试，他们得到的结论是对风场进行 订正远不如对海浪场进行同化，在对模式结果的改善方面，后者对结果改进的 贡献比前者的小的多。注意到，上述方法中，虽然是对风场进行了更新，但是仅仅是针对风速，对于<strong>风向却未提及</strong>；而且，是使用同化前后海浪的信息更新风场，这会涉及到复杂的<strong>风浪耦合机制</strong>，按照上述方法更新的风场未必能和下一步输入的强迫风场‘平滑’地衔接在一起。<strong>基于业务化预报模式的昂贵的计算代价的考虑，一般不采用此方法对风场进行订正</strong>。</p>
+<p>在海浪模式中，风场通常只是作为强迫项，在诸多的海浪同化的研究中， 由于风浪耦合机制非常复杂，很少有对风和浪的数据进行联合同化的。de las  Heras and Janssen (1992)以及 Bauser et al. (1996) 进行过风浪联合同化的尝试， <strong>相比与单独的海浪有效波高同化，其对海浪的改善效果并不明显</strong>。</p>
+<p>目前，很多现场和遥感设备可以获取同步观测的风场和海浪信息。NDBC 浮标可以同步获取风速风向和海浪有效波高数据，我国自主研发的遥感卫星 HY-2 上同时搭载的高度计和散射计亦可同步获取风场和海浪波高数据，即将发射的中法卫星 CFOSAT 上亦搭载有可获取二维海浪谱数据的海浪波谱仪和可 获取海面风场的散射计。</p>
+<p>为充分利用与海浪场同步观测的风场信息，本文进行如下的操作。首先， 获取较高精度的再分析风场数据，然后<strong>把观测的同步风场数据</strong>‘<strong>融合</strong>’<strong>到此再分析风场</strong>中，得到更高精度的风场，以融合后的再分析风场作为模式的强迫风场驱动海浪模式。由于遥感数据的精度目前情况下还不如浮标的高，虽然空间覆盖率要远远大于浮标的空间覆盖率，但是在区域海洋中可获取的数据不具有时间上的连续性，所以本文用到的同步观测的风场和海浪数据来自与 NDBC 浮标 的风速风向和有效波高。</p>
+<p>当然，亦可在大气模式中同化观测的风场数据，得到同化观测风场信息后的大气模式输出的风场，以此风场数据作为海浪模式的强迫风场。这种风场是大气模式输出的直接结果，而再分析风场是在大气模式输出的基础上融合了多 源遥感和现场观测数据的结果，可以预见，<strong>同化了同步观测风场数据后的大气模式输出的风场精度应该不如再分析风场的高</strong>。</p>
+<h4 id="4-1-1-QSCAT-NCEP-和-CCMP-再分析风场"><a href="#4-1-1-QSCAT-NCEP-和-CCMP-再分析风场" class="headerlink" title="4.1.1 QSCAT/NCEP 和 CCMP 再分析风场"></a>4.1.1 QSCAT/NCEP 和 CCMP 再分析风场</h4><p>美国大气研究中心(NCAR)提供的 QSCAT/NCEP 的混合风场数据，其空间分辨率为 0.5°x0.5°，时间间隔为 6 小时一次。多平台交叉校正(Cross Calibrated  Multi-Platform，CCMP)海面风场数据是 NASA 在 2009 年推出的一种融合了多种卫星遥感平台的新型数据产品，具有较高的时空分辨率，覆盖范围广且具有很高的连续性。该数据集用一种增强的变分同化法融合了 QuikSCAT、 ADEOS-II、AMSR-E、TRMM TMI 和 SSM/I 等诸多海洋被动微波和散射计采集的海面风场数据，具有很高的空间连续性，几乎可以覆盖全球所有海洋(Atlas  et al., 2011)。该数据空间分辨率为 0.25°，时间间隔为 6 小时。这两种风场给出的都是距海面 10 m 处风场沿经向和纬向的速度分量。</p>
+<p>NDBC 浮标可提供同步的风场和波高数据，为研究同步风场对海浪同化效果的影响机制，本文分别以 QSCAT/NCEP 和 CCMP 再分析风场为背景场，对研究区域内的 10 个浮标的风速和风向进行融合，进而以融合后的风场作为海浪模式的驱动场，进行海浪模拟和同化实验。</p>
+<blockquote>
+<p>我可以也先正常尝试风场的同化~~</p>
+</blockquote>
+<p><strong>图 4.1</strong> 给出了研究区域 2008 年 3 月 1 日 6 时 QSCAT/NCEP 和 CCMP 风矢量的 u 分量和 v 分量。<strong>图 4.2</strong> 展示了这个时间上的两个风场的矢量图。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221134727.png" style="zoom:67%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221134838.png" style="zoom:45%;">
+
+<p>从两幅图中可以直观地看到，QSCAT/NCEP 和 CCMP 风场数据在量级和空 间结构上既有共性又存在差异。</p>
+<p>为了更精确地分析这两种背景风场数据，在进行融合之前，基于 NDBC 浮标的风场数据，先对其进行<strong>验证</strong>。浮标风速和风向数据为每小时获取一次，其频率高于 QSCAT/NCEP 和 CCMP 再分析风场的每 6 小时一次，将<strong>网格化的再分析风场数据插值到浮标位置</strong>，便可对这两种再分析风场数据进行验证，由于<strong>时间上能完全匹配</strong>，时间维度上无需进行插值运算。</p>
+<p>采用<strong>图 4.3</strong> 所列出的 115 个 NDBC 浮标对背景风场进行验证。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221135220.png" style="zoom:67%;">
+
+<p>图 4.3 中所示的 115 个浮标的<strong>经纬度见表 4.1</strong>。 </p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221135655.png" style="zoom:67%;">
+
+<p>验证指标除了第三章中提及的均值偏差 Bias 和均方根误差 RMS 外，相关系数 Corr 的定义如下<br>$$<br>Corr =\frac{\sum_{i=1}^{N}\left(\left(A_{i}-\bar{A}\right)\left(B_{i}-\bar{B}\right)\right)}{\left(\sum_{i=1}^{N}\left(A_{i}-\bar{A}\right)^{2} \sum_{i=1}^{N}\left(B_{i}-\bar{B}\right)^{2}\right)^{1 / 2}}<br>\tag{4.5}<br>$$<br>其中，<em>N</em> 表示数据数量，<em>A</em> 为浮标风速，<em>B</em> 为 QSCAT/NCEP 和 CCMP 风速，横杠为取均值。</p>
+<p>以 2008 年 3 月为例，用<strong>表 4.1</strong> 中列出的 NDBC 浮标的风速和风向对 QSCAT/NCEP 和 CCMP 再分析风场进行验证。共匹配出 7758 对数据， QSCAT/NCEP 风速的均值偏差 Bias 为-0.70m/s, 均方根误差 RMS 为 2.93m/s， 相关系数 Corr 为 0.65。CCMP 风场的 Bias 为-0.54 m/s, RMS 为 1.61 m/s, 相关 系数为 0.91。散点图见<strong>图 4.4</strong>，这里仅列出 2008 年 3 月的风速散点图，对于 2008年其他月份的风速比较的散点图参看<strong>附录 A</strong>。从 RMS 等统计参数和图 4.4 都可看出，CCMP 风场的风速精度非常高，QSCAT/NCEP 风场的风速质量相对较差。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221140229.png" style="zoom:67%;">
+
+<p>对于两种风场的风向数据，仅基于研究区域内的 10 个浮标数据进行了验证。由于<strong>风向具有周期性</strong>，这会使得一部分数据的验证不太‘公平’，比如浮标风向为 356°，而再分析风向为 6°，若按照正常的计算方式，这两种之间的差距有 350° 之多，但其实二者的差距仅为 10°。因此，为了消除风向的周期性带来的影响， 进行统计时，<strong>舍弃了风向小于 10°和大于 350°的浮标和再分析的风向数据</strong>。基于研究区域内 10 个浮标风向的统计参数见<strong>表 4.2</strong>，关于这些匹配数据的风速的统计参数见<strong>表 4.3</strong>。QSCAT/NCEP 的风向 RMS 为 57°左右，CCMP 的风向 RMS为 33°左右，这说明<strong>二者在风向上的差别不如在风速上的差别大</strong>。散点图见<strong>图 4.5</strong>。</p>
+<blockquote>
+<p>RMSE，不太好反应风向再分析数据与真实数据的差异；有什么更好的方法吗？</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221140559.png" alt=" " style="zoom:62%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221140726.png" style="zoom:62%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221141217.png" style="zoom:62%;">
+
+<p>由上可知，QSCAT/NCEP 风场虽然能较好地描述‘真实’的风速和风向，但 其精度不如 CCMP 风场，在后面的海浪模拟和同化实验中，把 QSCAT/NCEP 风场考虑为<strong>低精度风场</strong>，把 CCMP 风场认为是<strong>高精度风场</strong>。<strong>图 4.6</strong> 和 <strong>4.7</strong> 给出 了浮标 44037 位置处的风速，风向散点图以及相关的统计参数。这里列出的是浮标 44037 位置处的所有有效的风速和风向数据，对于风向并未做前述的‘舍弃’ 处理。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221141359.png" style="zoom:64%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221141545.png" style="zoom:63%;">
+
+<h4 id="4-1-2-风场数据融合方法"><a href="#4-1-2-风场数据融合方法" class="headerlink" title="4.1.2 风场数据融合方法"></a>4.1.2 风场数据融合方法</h4><p>Kako et al. (2011) 基于 NCEP/NCAR 的网格分辨率为 2.5°x2.5°的再分析风 场产品 NRA1(NCEP Reanalysis Average)，在经度和纬度方向通过线性插值，得 到了网格大小为 0.25°0.25°的日平均全球风场产品，然后将此 0.25°x0.25°的风 场数据作为背景值，通过最优插值(Optimal Interpolation, OI)算法，对日平均的 ASCAT 风场数据进行了融合，得到高精度的全球 0.25°x0.25°网格风场数据。</p>
+<p>本文借鉴此 OI 算法，以网格化的 QSCAT/NCEP 混合风场以及 CCMP 风场作为背景场，融合 NDBC 浮标的风场数据，获取更高精度的风场作为海浪模式的驱动场。</p>
+<p><strong>基本公式为</strong><br>$$<br>x_{k}^{a}=x_{k}^{f}+\sum_{i=1}^{N}\left(O_{i}-x_{i}^{f}\right) W_{i}<br>\tag{4.6}<br>$$<br>其中，$k$ 为待插值的网格点，$N$ 为此时刻的观测个数，$x_{i}^{f}$ 表示插值到第 $i$ 个观测点位置的背景值，$W_{i}$ 为第 $i$ 个观测点的权重。</p>
+<blockquote>
+<p>这只是对某个网格点进行了同化呀，不是整个区域~~</p>
+</blockquote>
+<ul>
+<li><p><strong>在假设误差无关(Uncorrelated)和无偏(Unbiased)的情况下，最优的权重 $W_{i}$ 可通过下面的表达式获取</strong><br>$$<br>\sum_{j=1}^{N} \sum_{i=1}^{N}\left(\mu_{i j}^{f}+\mu_{i j}^{o} \lambda_{i} \lambda_{j}\right) W_{i}=\mu_{i k}^{f}<br>\tag{4.7}<br>$$</p>
+<ul>
+<li><p>$\mu_{i j}^{f}$ 为格点 $i$ 与 $j$ 的背景误差相关系数，</p>
+</li>
+<li><p>$\mu_{i j}^{o}$ 为格点 $i$ 与 $j$ 的观测误差相关系数，</p>
+</li>
+<li><p>$\lambda$ 为观测均方根误差与背景均方根误差之比<br>$$<br>\lambda = \frac{\sigma^o}{\sigma^f}<br>\tag{4.8}<br>$$<br>$\lambda$ 一般取值为 1(Kako and Kubota, 2006)。</p>
+</li>
+<li><p>$\mu_{i j}^{f}$ 由下式得到<br>$$<br>\mu_{i j}^{f}=\exp \left(-r_{m}^{2} / L_{m}^{2}-r_{z}^{2} / L_{z}^{2}\right)<br>\tag{4.9}<br>$$<br>其中，$r_{z}(r_{m})$ 表示网格点 $i$ 与 $j$ 之间的<strong>纬向(径向)距离</strong>，$L_{z}(L_{m})$ 为<strong>纬向(径向)的相关距离尺度</strong>。</p>
+</li>
+<li><p>与 Kuragano and Shibata (1997) 中提到的 $\mu_{i j}^{o}$ 类似，这里</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221143502.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-1-3-融合后的风场"><a href="#4-1-3-融合后的风场" class="headerlink" title="4.1.3 融合后的风场"></a>4.1.3 融合后的风场</h4><p>基于研究区域内的 10 个浮标的风速和风向数据，通过前文所述的 OI 方法对 QSCAT/NCEP 和 CCMP 风场分别进行融合，相应地，融合后的风场分别记为 <strong>NCEP_OI</strong> 和 <strong>CCMP_OI</strong> 风场。<strong>表 4.4</strong> 中列出了这 10 个浮标的经纬度以及风速的均值、最小值和最大值。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221143830.png" style="zoom:65%;">
+
+<blockquote>
+<p>44005，44011，44024 和 44037</p>
+</blockquote>
+<h3 id="4-2-模拟及同化实验"><a href="#4-2-模拟及同化实验" class="headerlink" title="4.2 模拟及同化实验"></a>4.2 模拟及同化实验</h3><p>采用 WW3 的 3.14 版本，利用<strong>嵌套模拟方案</strong>，对<strong>缅因湾(Gulf of Maine)<strong>海域进行模拟和同化实验(<strong>图 4.8</strong>)。大区域范围为 55-77°W，33-48°N，分辨率为 0.5°×0.5°，小区域范围为 63-73°W，40-46°N，分辨率为 10min×10min。模拟时间为 2008 年 3 月 1 日 0 时至 2008 年 3 月 31 日 18 时。模式采用的</strong>海浪波数谱</strong>离散为 24 个波向 (15°分 辨 率 ) 和 25 个波数 ， 相应<strong>频率范围</strong>为 0.04118Hz-0.40561Hz。设置<strong>最大全局时间步长</strong>为 1500 秒，<strong>最大 CFL 条件时间步长</strong> 800 秒，<strong>最小源函数积分时间步长</strong> 30 秒，模拟结果每间隔 1 小时进行一次保存。模式所需的水深数据采用 ETOPO-1 数据。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221151633.png" style="zoom:64%;">
+
+<p>研究区域内分布有若干 NDBC 浮标，选取<strong>表 4.4</strong> 中列出的 10 个浮标的风场和波高数据用于风场数据融合及海浪波高同化研究。分别采用 QSCAT/NCEP、 CCMP、NCEP_OI 和 CCMP_OI 风场对海浪模式进行驱动，以分析<strong>同步风场对海浪同化效果的影响</strong>。本章进行若干模拟和同化实验，同化方法采用第二章中介绍的 OI-I 方法，同化数据为与前文所述的浮标风场同步观测的海浪的有效波高。实验名称及其相关信息见<strong>表 4.5</strong>.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221151950.png" style="zoom:64%;">
+
+<blockquote>
+<p>感觉还是只是对点的同化；</p>
+</blockquote>
+<p>选取均值偏差 Bias、均方根误差 RMS、相关系数 Corr 和<strong>同化率 AI</strong> 来检验海浪模式的模拟能力以及同化效果，前三个指标的定义分别见公式(3.5)、(3.7)和(4.5)，关于同化率的定义如下<br>$$<br>\mathrm{AI}=\frac{\mathrm{RMSN}-\mathrm{RMSA}}{\mathrm{RMSN}} \times 100 \%<br>\tag{4.11}<br>$$</p>
+<blockquote>
+<p>typora显示有误，看博客上的；</p>
+</blockquote>
+<p>其中，RMSN 和 RMSA 分别表示模拟和同化结果相对于浮标真值的均方根误差RMS。</p>
+<h3 id="问题：如何同化一个浮标的数据？"><a href="#问题：如何同化一个浮标的数据？" class="headerlink" title="问题：如何同化一个浮标的数据？"></a>问题：如何同化一个浮标的数据？</h3><h3 id="4-3-结果分析"><a href="#4-3-结果分析" class="headerlink" title="4.3 结果分析"></a>4.3 结果分析</h3><p>对表 4.5 中进行的若干模拟和同化实验，现分别进行分组讨论，以研究风场、海浪数据以及同步观测的风和浪的数据对同化效果的影响，分析同化率与距离的关系，分析不同的相关距离尺度对同化结果的影响。</p>
+<h4 id="4-3-1-原始风场驱动的模拟结果"><a href="#4-3-1-原始风场驱动的模拟结果" class="headerlink" title="4.3.1 原始风场驱动的模拟结果"></a>4.3.1 原始风场驱动的模拟结果</h4><p>为分析背景风场 QSCAT/NCEP 和 CCMP 作为驱动风场时的海浪模拟的效果，进行了实验 A_sim 和 B_sim。考虑到<strong>海浪模式的 spin-up 需要一段时间，舍弃了前 4 天的模拟数据</strong>，浮标实测数据和模拟结果之间的比较是从 <strong>3 月 5 日 0 时至 3 月 30 日 23 时</strong>(下同)。利用 WW3 的‘点输出’功能(<strong>ww3_outp</strong>)，时间间隔 一小时，输出 10 个浮标位置处的有效波高等海浪参数信息。<strong>图 4.9</strong> 给出了浮标 44005，44011，44024 和 44037 位置处的模拟有效波高对比图，风场精度的不同直接决定了模拟结果的差别。<strong>表 4.6</strong> 和<strong>表 4.7</strong> 列出了这两种风场作为模式的驱动风场时，4 个浮标位置处的模拟结果与浮标实测有效波高的统计参数。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221154256.png" style="zoom:64%;">
+
+<blockquote>
+<p>看看我的那个10天的模拟，对比一下，吸收经验，我的没有spin-up舍弃数据~~</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221154441.png" style="zoom:62%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221154518.png" style="zoom:62%;">
+
+<p>从<strong>表 4.6</strong> 和 <strong>4.7</strong> 中可以看出，CCMP 作为驱动风场的模拟结果要比 QSCAT/NCEP 作为驱动风场的模拟结果要好。从均方根误差 RMS 上来看，这两种风场驱动的模拟结果稍有些不理想，但是考虑到这四个浮标点的浮标有效波高均值和最大值(<strong>表 4.4</strong>)，以及浮标实测数据的‘震荡’范围(<strong>图 4.9</strong>)，可以得出， 这两种风场驱动的海浪模式均较好地模拟出了海浪有效波高的变化趋势，作为<strong>高精度风场的 CCMP 风场驱动的模拟结果比较低精度的 QSCAT/NCEP 风场驱动的模拟结果要好</strong>。这也从侧面反映出驱动风场对海浪模式的重要性。</p>
+<p>值得一提的是，由于浮标 44007，44013 和 44033 <strong>非常近岸</strong>，在目前的水深分辨率和驱动风场分辨率的条件之下，<strong>模拟效果比较差</strong>，本文不再列出这三个浮标位置处的模拟结果的时间序列图和统计参数。当然，<strong>这并不能说明 WW3 没有模拟近岸海浪的能力</strong>，Jouon et al.(2009)甚至将 WW3 模式成功地应用与某半封闭的泻湖的海浪建模。另外，限于篇幅，关于浮标 44008，44018 和 44032位置处的模拟结果以及后文中的同化结果见<strong>附录 B</strong>。</p>
+<blockquote>
+<p>不能说明没有，只是想说不好，Swan~~</p>
+</blockquote>
+<h4 id="4-3-2-融合风场驱动的模拟结果"><a href="#4-3-2-融合风场驱动的模拟结果" class="headerlink" title="4.3.2 融合风场驱动的模拟结果"></a>4.3.2 融合风场驱动的模拟结果</h4><p>为分析背景风场 NCEP_OI 和 CCMP_OI 作为驱动风场时的海浪模拟的效果，进行了实验 C_sim 和 D_sim。作为比原始的背景风场更‘精确’的风场数据， <strong>融合了浮标风速和风向的 NCEP_OI 和 CCMP_OI 风场表现的更加出色</strong>。以此风场作为驱动风场，在 4 个浮标位置处的海浪有效波高模拟结果见<strong>图 4.10</strong>，相关 的统计参数见<strong>表 4.8</strong> 和<strong>表 4.9</strong>。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221160403.png" style="zoom:62%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221160504.png" style="zoom:60%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221160541.png" style="zoom:60%;">
+
+<p>正如预期的那样，两种融合风场作为驱动风场的模拟结果比相应的原始背景风场作为驱动风场的模拟结果要好。以浮标 44037 位置处的模拟结果为例， <strong>图 4.11</strong> 给出了融合前后的风场作为驱动风场的模拟结果与浮标实测有效波高的对比图。结合四个<strong>表 4.6、4.7、4.8 和表 4.9</strong>，可以得出，与浮标实测相比，NCEP_OI 驱动的模拟波高比 QSCAT/NCEP 驱动的模拟波高的 RMS 从 0.86m 降为 0.72m,  CCMP_OI 驱动的模拟波高比 CCMP 驱动的模拟波高的 RMS 从 0.72m 降为 0.60m. 可见，融合风场作为驱动风场的模拟有效波高 RMS 比原始的背景风场作为驱动风场的模拟有效波高 RMS 降低约 **15%**。当然，这是比较理想的情况， <strong>这个指标跟很多因素都有关系，比如网格化的背景风场的精度、实测风场的精度、实测风场的数据量、实测风场的地理位置分布等</strong>。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221160909.png" style="zoom:60%;">
+
+<h4 id="4-3-3-原始风场驱动与融合风场驱动的同化结果"><a href="#4-3-3-原始风场驱动与融合风场驱动的同化结果" class="headerlink" title="4.3.3 原始风场驱动与融合风场驱动的同化结果"></a>4.3.3 原始风场驱动与融合风场驱动的同化结果</h4><p>由上节可以得出，用融合了浮标风速和风向的再分析风场数据作为海浪模式的驱动场，模拟的有效波高精度在 RMS 上有近 15%的改善。本节探求同化与浮标风场数据同步获取的浮标有效波高数据之后，模式输出的海浪参数的改善情况。这里用到的同化方法为第一章中提及的 <strong>OI-I 同化方法</strong>。进行实验 A_44037，B_44037，C_44037 和 D_44037。实验 <strong>A_44037</strong> 是指在 QSCAT/NCEP 风场驱动下，同化浮标 44037 的有效波高数据，类似地，实验 B_44037，C_44037 和 D_44037 分别是在 CCMP、NCEP_OI和 CCMP_OI风场驱动下同化浮标 44037 的有效波高数据。</p>
+<blockquote>
+<p>专门针对44037浮标的同化~~</p>
+</blockquote>
+<blockquote>
+<p>在某个位置同化某个浮标，再用这个浮标验证，这肯定能大幅度提升呀，但貌似用的是其4个浮标验证<del>嗯嗯</del></p>
+</blockquote>
+<p><strong>图 4.12</strong> 给出了浮标 44005，44011，44024 和 44037 位置处的实验 A_44037 和 C_44037 的同化模拟结果。<strong>表 4.10</strong> 列出了实验 A_44037 和 C_44037 在上述 4 个浮标位置处与浮标实测波高对比的统计参数。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221161813.png" style="zoom:62%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221162005.png" style="zoom:61%;">
+
+<p>同样，<strong>图4.13</strong>给出了浮标44005， 44011，44024 和 44037 位置处的实验 B_44037 和 D_44037 的同化模拟结果。<strong>表 4.11</strong> 列出了实验 B_44037 和 D_44037 在上述 4 个浮标位置处与浮标实测波高对比的统计参数。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221162329.png" style="zoom:60%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221162408.png" style="zoom:61%;">
+
+<p>从上述图、表中可以得出，<strong>海浪同化大幅度改善了模式的输出结果</strong>，四种风场驱动下的海浪模式，在同化了相同的有效波高数据后，模式输出的有效波高值在 Bias、RMS 和 Corr 三个参数上都有较好的表现。以<strong>浮标 44011</strong>位置处的结果为例，实验 A_44037 的模式输出波高的 RMS 为 0.69m，同化前的 RMS 为 0.85m，RMS 的改善率为 19.7%，实验 C_44037 的模式输出波高的 RMS 为 0.58m，同化前的 RMS 为 0.66m，RMS 的改善率为 12.4%.</p>
+<p>需要指出的是，<strong>表 4.10</strong> 和<strong>表 4.11</strong> 中的‘均值’指的是在三个浮标(44005, 44011 和44024)位置处的各个统计参数的均值。由于在上述实验中同化的是浮标44037 的有效波高值，所以<strong>在浮标 44037 位置处的统计参数只作为参考</strong>。<br>均方根误差 RMS 是一个判断模拟或者同化效果的一个重要指标，联合所述的统计表格，得到了实验 A_sim, B_sim, C_sim, D_sim, A_44037, B_44037,  C_44037 和 D_44037 在 4 个浮标位置的 RMS 值(<strong>表 4.12</strong>)。根据此表格数据，作<strong>图 4.14</strong>，由于其中的几个实验同化的是浮标 44037 的有效波高数据，所以对于浮标 44037 位置处的 RMS 变化情况在图中没有标出。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221162608.png" style="zoom:60%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221162647.png" style="zoom:60%;">
+
+<p>总之，在进行海浪数据同化时，<strong>在驱动风场中融合同步观测的风场数据会更加改善海浪同化的效果</strong>。下面分两部分对前述实验结果进行统计分析。</p>
+<ul>
+<li><p><strong>以 QSCAT/NCEP 和 NCEP_OI 风场作为驱动风场</strong></p>
+<p>仅考虑同步风场的影响，不同化任何海浪数据时(即实验 A_sim 和 C_sim 模 拟结果的对比)，模式输出的有效波高的 RMS 降低了 19.2%，22.9%和 11.9%， 平均降低了 18.0%； </p>
+<p>仅同化海浪有效波高，不考虑同步风场的影响时(即实验 A_sim 和 A_44037 模拟结果的对比)，模式输出的有效波高的 RMS 降低了 34.8%，19.7%和 33.5%， 平均降低了 29.3%; </p>
+<p>考虑同步的风场和海浪有效波高数据时(即实验 A_sim 和 C_44037 模拟结果 的对比)，模式输出的有效波高的 RMS 降低了 45.7%，32.5%和 36.2%，平均降低了 38.1%.</p>
+</li>
+<li><p><strong>以 CCMP 和 CCMP_OI 风场作为驱动风场</strong></p>
+<p>仅考虑同步风场的影响，不同化任何海浪数据时(即实验 B_sim 和 D_sim 模 拟结果的对比)，模式输出的有效波高的 RMS 降低了 18.4%，18.0%和 15.8%， 平均降低了 17.4%; </p>
+<p>仅同化海浪有效波高，不考虑同步风场的影响时(即实验 B_sim 和 B_44037 模拟结果的对比)，模式输出的有效波高的 RMS 降低了 40.4%，18.7%和 28.0%， 平均降低了 29.0%; </p>
+<p>考虑同步的风场和海浪有效波高数据时(即实验 B_sim 和 D_44037 模拟结果 的对比)，模式输出的有效波高的 RMS 降低了 46.9%，26.6%和 35.2%，平均降 低了 36.2%</p>
+</li>
+</ul>
+<p>为说明同步观测的风场和海浪数据对海浪同化效果的影响，这里，先给出风场和海浪数据对同化结果的<strong>贡献率 RC</strong>(<strong>Rate of Contribution</strong>)的定义。</p>
+<p>假设：条件 a 作用于事件 E 上，对 E 的影响为 $\alpha$ ；条件 b 作用于事件 E 上，对 E 的影响为 $\beta$；条件 a 和 b 共同作用于事件 E 上，对 E 的影响为 $\gamma$. 若 $\alpha&lt;\beta&lt;\gamma$，则，条件 b 对事件 E 的贡献率为<br>$$<br>R C_{b}=\left|\frac{\beta}{\gamma}\right| \times 100 \%<br>\tag{4.12}<br>$$</p>
+<blockquote>
+<p>typora上显示有误，看博客上的；</p>
+</blockquote>
+<p>条件 a 对事件 E 的贡献率为<br>$$<br>R C_{a}=1-R C_{b}<br>\tag{4.13}<br>$$</p>
+<blockquote>
+<p>可以这么算吗？先算RCa，与1-RCb得到的值不一样吧~~？？</p>
+</blockquote>
+<p>按照上述公式，以 QSCAT/NCEP 风场为基础，浮标同步获取的有效波高以及风场数据对同化效果的贡献率分别为 76.9%和 23.1%，比例约为 3.3:1；以 CCMP 风场为基础，浮标同步获取的有效波高以及风场数据对同化效果的贡献率分别为 80.1%和 19.9%，比例约为 4:1. 可见，<strong>背景风场精度越高，与海浪数据同步获取的风场在海浪同化中发挥的作用相对于海浪数据在海浪同化中发挥的作用越小</strong>。</p>
+<p>需要特别指出的是，上面的结论中用到的<strong>数据是</strong>‘<strong>不对等</strong>’的。因为，在风场融合中，用到的是 10 个浮标的风速和风向数据，而在海浪同化中用到的则是 1 个浮标的有效波高数据。</p>
+<blockquote>
+<p>貌似1个浮标的有效波高同化更猛呀~~</p>
+</blockquote>
+<h4 id="问题：同化的是44037浮标，和其他4个浮标有什么关系，同化涉及的是场，还是一个点？"><a href="#问题：同化的是44037浮标，和其他4个浮标有什么关系，同化涉及的是场，还是一个点？" class="headerlink" title="问题：同化的是44037浮标，和其他4个浮标有什么关系，同化涉及的是场，还是一个点？"></a>问题：同化的是44037浮标，和其他4个浮标有什么关系，同化涉及的是场，还是一个点？</h4><h4 id="4-3-4-融合风场驱动的同化不同浮标数据的结果"><a href="#4-3-4-融合风场驱动的同化不同浮标数据的结果" class="headerlink" title="4.3.4 融合风场驱动的同化不同浮标数据的结果"></a>4.3.4 融合风场驱动的同化不同浮标数据的结果</h4><p>从上节的分析中可以得出，以 CCMP_OI 风场作为驱动风场的同化实验所得到的结果最优。本节基于实验 D_44005, D_44011, D_44024 和 D_44037 分析同化不同浮标的有效波高数据对某位置点的影响。<strong>表 4.13</strong> 列出了相应的同化率， 同化效果见时间序列<strong>图 4.15</strong>。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221164158.png" style="zoom:60%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221164403.png" style="zoom:64%;">
+
+<p>为分析<strong>同化率和距离</strong>之间的关系，这里给出浮标之间的距离。根据浮标的经纬度计算得出 4 个浮标之间的距离为： </p>
+<ul>
+<li>浮标 44005 与 44011 之间的距离为 313.21 km; </li>
+<li>浮标 44005 与 44024 之间的距离为 279.82km; </li>
+<li>浮标 44005 与 44037 之间的距离为 105.50 km; </li>
+<li>浮标 44011 与 44024 之间的距离为 145.54 km; </li>
+<li>浮标 44011 与 44037 之间的距离为 285.11 km; </li>
+<li>浮标 44024 与 44037 之间的距离为 206.06 km.</li>
+</ul>
+<p>同化浮标 44005 的有效波高数据时，在浮标 44037，44024 和 44011 位置处的同化率随着与浮标 44005 的距离的增大而减小，这种情况下的同化率与距离是完全负相关的；同化浮标 44037 的有效波高时在浮标 44005，44024 和 44011 位置处的同化率随着与浮标 44037 的距离的增大而减小，这种情况下的同化率与距离也是完全负相关的；但是，在同化浮标 44011 和 44024 的有效波高时， 其他浮标位置点上的同化率并非完全随着距离的增大而减小，而是存在一定的波动，可能与浮标的数据质量以及岸线的形状有关。可见，同化率并不完全与距离负相关。</p>
+<h4 id="4-3-5-不同相关距离尺度的影响"><a href="#4-3-5-不同相关距离尺度的影响" class="headerlink" title="4.3.5 不同相关距离尺度的影响"></a>4.3.5 不同相关距离尺度的影响</h4><p>在本章所用的 OI-I 同化方法中，采用第二章中表 2.2 中的公式 5 作为<strong>背景误差相关函数</strong>，进行浮标有效波高的同化。在诸多的海浪同化的研究中，都对公式中的<strong>相关距离尺度 L</strong> 进行了研究，针对不同的研究区域给出了最优的相关距离尺度。本节亦在前述的模式设置下，研究不同的相关距离尺度对同化效果的影响，并给出了本实验下的最优相关距离尺度。</p>
+<p>本节涉及的实验为<strong>表 4.5</strong> 中的 D_44037，D_44037_0，D_44037_2 和 D_44037_3，其对应的相关距离尺度依次为 250 km，100 km，500 km 和 700 km。</p>
+<p>当相关距离尺度增大时，误差相关函数计算得出的相关系数亦增大，这会增强相同区域内的观测信息的影响。以 CCMP_OI 风场为强迫风场，同化 44037 浮标有效波高数据，根据不同相关距离尺度，得到的浮标 44005、44011、44024 和 44037 位置处的同化效果图见<strong>图 4.16</strong>.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221171105.png" style="zoom:64%;">
+
+<p>以 CCMP_OI 风场为强迫风场，同化 44037 浮标有效波高数据，根据不同相关距离尺度，得到的浮标 44005 位置处的统计参数如<strong>表 4.14</strong> 所示。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221171438.png" style="zoom:60%;">
+
+<p>以 CCMP_OI 风场为强迫风场，同化 44037 浮标有效波高数据，根据不同相关距离尺度，得到的浮标 44011 位置处的统计参数如<strong>表 4.15</strong> 所示。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221171608.png" style="zoom:60%;">
+
+<p>以 CCMP_OI 风场为强迫风场，同化 44037 浮标有效波高数据，根据不同相关距离尺度，得到的浮标 44024 位置处的统计参数如<strong>表 4.16</strong> 所示。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221171652.png" style="zoom:60%;">
+
+<p>以 CCMP_OI 风场为强迫风场，同化 44037 浮标有效波高数据，根据不同相关距离尺度，得到的浮标 44037 位置处的统计参数如<strong>表 4.17</strong> 所示。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221171752.png" alt=" " style="zoom:60%;">
+
+<p>由<strong>表 4.14-4.17</strong> 可知，相关距离尺度的改变并未大幅度改变相应的统计参数。不同的实验会得到不同的相关距离尺度的最优值，从均方根误差 RMS 上来看，本章所进行的实验的最优相关距离尺度应在 250 km 至 400 km 之间。</p>
+<p>为更清晰地表明上述结论，<strong>图 4.17-4.19</strong> 进一步给出了以 CCMP_OI 为强迫风场，同化浮标 44037 波高数据后，在 4 个浮标位置处的 Bias、RMS 以及 Corr随着相关距离尺度的变化情况。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221172001.png" style="zoom:60%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221172038.png" style="zoom:60%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221172114.png" style="zoom:60%;">
+
+
+
+<h3 id="4-4-本章小结"><a href="#4-4-本章小结" class="headerlink" title="4.4 本章小结"></a>4.4 本章小结</h3><p>本章以 QSCAT/NCEP 和 CCMP 风场为背景风场，融合了浮标风速和风向数据，并以背景风场和融合后的风场作为海浪模式的强迫风场，进行了与浮标风场同步观测的浮标有效波高数据的海浪同化研究，分析考虑同步风场后的海浪模拟和同化效果，分析了同步观测的风和浪在同化中的贡献率，考虑了相关距离尺度对同化效果的影响。主要工作及结论为：</p>
+<ol>
+<li><p>基于 NDBC 浮标的风速和风向数据，评估了 QSCAT/NCEP 和 CCMP 风场， 两种风场数据在量级和空间结构上既有共性又存在差异，精度都比较高。2008 年 3 月 QSCAT/NCEP 风速的 RMS 为 2.93m/s，CCMP 风速的 RMS 为 1.61m/s. 本章中，把 QSCAT/NCEP 风场考虑成精度较低的风场，把 CCMP 风场数据当作高精度风场。</p>
+</li>
+<li><p>采用最优插值算法把 QSCAT/NCEP 和 CCMP 风场作为背景场，融合了 10 个浮标的风速和风向数据，得到了融合后的更高精度的 NCEP_OI 和 CCMP_OI 风场数据。</p>
+<blockquote>
+<p>最优插值算法如何以场融合点的数据？</p>
+</blockquote>
+</li>
+<li><p>根据不同的强迫风场，进行了多组模拟和同化实验，结论主要为：</p>
+<ul>
+<li><p>以 QSCAT/NCEP 作为驱动风场的模式模拟的有效波高 RMS 作为<strong>基准值</strong>，以 NCEP_OI 作为驱动风场的模式模拟的有效波高 RMS 降低16.30%；以 QSCAT/NCEP 作为驱动风场、同化浮标波高后的模式输出 有效波高 RMS 降低 36.07%；以 NCEP_OI 作为驱动风场、同化浮标波 高后的模式输出有效波高 RMS 降低 43.26%。</p>
+</li>
+<li><p>以 CCMP 作为驱动风场的模式模拟的有效波高 RMS 作为基准值，以 CCMP_OI 作为驱动风场的模式模拟的有效波高 RMS 降低 16.62%；以 CCMP 作为驱动风场、同化浮标波高后的模式输出有效波高 RMS 降低 33.00%；以 NCEP_OI 作为驱动风场、同化浮标波高后的模式输出有效 波高 RMS 降低 39.22%。 </p>
+</li>
+<li><p>在海浪数据同化中，既融合风场又同化同步观测的海浪数据的同化效果最佳，同步获取的海浪数据与风场对海浪同化效果的贡献率约为 4:1.</p>
+</li>
+<li><p>背景风场精度越高，与海浪数据同步获取的风场在海浪同化中发挥的作用相对于海浪数据在海浪同化中发挥的作用越小，海浪数据同化能减小海浪模式对强迫风场的高度敏感性。</p>
+</li>
+<li><p>受数据质量以及岸线形状等因素的影响，<strong>同化率并不完全与距离负相关</strong>。</p>
+<blockquote>
+<p>可能与一篇文献不太一样；</p>
+</blockquote>
+</li>
+<li><p>OI-I 同化方法中的相关距离尺度根据实验的不同而具有不同的最优值， 本章进行的同化实验中的最优相关距离尺度在 250km 至 400km 之间。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="下一步：OI的实现，终于来了"><a href="#下一步：OI的实现，终于来了" class="headerlink" title="下一步：OI的实现，终于来了~~"></a>下一步：OI的实现，终于来了~~</h2><h2 id="第五章-基于谱分割策略的海浪谱同化"><a href="#第五章-基于谱分割策略的海浪谱同化" class="headerlink" title="第五章 基于谱分割策略的海浪谱同化"></a>第五章 基于谱分割策略的海浪谱同化</h2><p><strong>二维海浪谱中</strong>包含诸如有效波高、波周期、传播方向等海浪特征参数信息。<strong>海浪有效波高同化</strong>只能用海浪的总能量来研究分析海浪谱，研究表明，<strong>同化二维海浪谱数据</strong>比同化全谱的均值波参数，在物理和实际应用上都有优势。发射于 2002 年的 Envisat 卫星可提供大面积、长时序的二维海浪谱数据，即将由中国的长征火箭发射的中法海洋星 CFOSAT 上将搭载可获取二维海浪谱数据的海 浪波谱仪 SWIM，这些都为<strong>二维海浪谱同化</strong>提供了数据保障。本章首先用 NDBC 浮标的数据对 Envisat ASAR 波模式的 2 级海浪谱产品进行了比对分析，然后介绍了基于谱分割策略的二维海浪谱同化方法，最后进行了海浪谱的最优插值同化实验。</p>
+<h2 id="第六章-结论与展望"><a href="#第六章-结论与展望" class="headerlink" title="第六章 结论与展望"></a>第六章 结论与展望</h2><h2 id="学习经历与论文发表情况"><a href="#学习经历与论文发表情况" class="headerlink" title="学习经历与论文发表情况"></a>学习经历与论文发表情况</h2><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220220115851.png" alt=" " style="zoom:80%;">
 
 
 
@@ -1116,7 +1393,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">296.2k</span>
+                        class="white-color">321.3k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
