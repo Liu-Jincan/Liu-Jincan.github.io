@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="07-阅读：, Jincan">
+    <meta name="keywords" content="07-阅读：nansencenter-DA-tutorials-2021, Jincan">
     <meta name="description" content="~~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>07-阅读： | Jincan</title>
+    <title>07-阅读：nansencenter-DA-tutorials-2021 | Jincan</title>
     <link rel="icon" type="image/png" href="/favicon_hua.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -234,7 +234,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">07-阅读：</h1>
+                    <h1 class="description center-align post-title">07-阅读：nansencenter-DA-tutorials-2021</h1>
                 </div>
             </div>
         </div>
@@ -385,7 +385,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    5.1k
+                    4.5k
                 </div>
                 
 
@@ -405,33 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="07-阅读：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"><a href="#07-阅读：用于3D变分数据同化的基于注意力的卷积自动编码器-2020" class="headerlink" title="07-阅读：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"></a><center>07-阅读：用于3D变分数据同化的基于注意力的卷积自动编码器-2020</center></h1><h2 id="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"><a href="#参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020" class="headerlink" title="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"></a>参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020</h2><ul>
-<li><p>英文名：<strong>Attention-based Convolutional Autoencoders for 3D-Variational Data Assimilation</strong></p>
-</li>
-<li><p>期刊：《Computer methods in applied mechanics and engineering》，LetPub，<a target="_blank" rel="noopener" href="https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search">https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search</a></p>
-<blockquote>
-<p>这个期刊也不错~~</p>
-<p>8.0，171，9.9，2区</p>
-</blockquote>
-</li>
-<li><p>作者：Julian Mack, Rossella Arcucci,  Miguel Molina-Solana,  Yi-Ke Guo</p>
-</li>
-</ul>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>We propose a new ‘Bi-Reduced Space’ approach to solving 3D Variational Data Assimilation using Convolutional Autoencoders. We prove that our approach has the same solution as previous methods but has significantly lower computational complexity; in other words, <strong>we reduce the computational cost without affecting the data assimilation accuracy</strong>. </p>
-<p>We tested our proposal with data from <strong>a real-world application</strong>: a pollution model of a site in Elephant and Castle (London, UK) and found that we could </p>
-<ul>
-<li>(1) reduce the size of the <strong>background covariance matrix representation</strong> by O(10<sup>3</sup> ), and </li>
-<li>(2) increase our <strong>data assimilation accuracy</strong> with respect to existing reduced space methods.</li>
-</ul>
-<h2 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h2><p>This work is supported by the EPSRC, UK Grand Challenge grant “Managing Air for Green Inner Cities” (MAGIC) EP/N010221/1, by the EPSRC, UK Centre for Mathematics of Precision Healthcare EP/N0145291/1 and the EP/T003189/1 Health assessment across biological length scales for personal pollution exposure and its mitigation (INHALE). Thanks to Dr. Laetitia Mottet for the set up of the full model in Fluidity. M. MolinaSolana was supported by European Union’s H2020 MSCA-IF (ga. No. 743623) and Athenea3i (ga. No. 754446) programmes.</p>
-<h2 id="9-Conclusions-and-future-work"><a href="#9-Conclusions-and-future-work" class="headerlink" title="9. Conclusions and future work"></a>9. Conclusions and future work</h2><p>We have presented a new <strong>Bi-reduced space 3D-VarDA formulation</strong> and show that, in combination with the Zhou et al or <em>‘Tucodec’</em> image compression CAE, this method gives superior data assimilation performance in comparison with <strong>reduced space VarDA</strong> regardless of the parameters used in the latter case. We have demonstrated that our method is also faster in the majority of scenarios. On the theoretical side, we show that our method produces approximately equivalent solutions to the traditional method at lower computational complexity. Unlike the previous approach which is in O(<em>M<sup>2</sup></em> ) for large <em>M</em>, our method does not penalise the collection of more observation data. </p>
-<p>We have released our work in a well tested Python module <strong>VarDACAE</strong>.</p>
-<blockquote>
-<p><code>↑ 在 python 的 module 上发布的</code></p>
-</blockquote>
-<p>There were many extensions to this work which we would have liked to explore further. We feel that the most important of these is the validation of our hypothesis that is possible to create an observation encoder network <em>f<sup>o</sup></em> to calculate the latent misfits <strong>d</strong><sub>l</sub> . We would also have liked to apply our approach to 4D-VarDA, validate it on other data sets and investigate alternatives to the L-BFGS minimisation routine. A more substantial extension would involve integrating our method with CAE-based ROM approaches to produce a single end-to-end network for reduced space data assimilation and we believe this would be complemented by the use of data assimilation localisation techniques [66]. Finally, there is also potential for the use of VAEs within the proposed system to enforce orthogonality in the CAE latent dimension.</p>
-<h2 id="github-code"><a href="#github-code" class="headerlink" title="github code"></a>github code</h2><p>VarDACAE：<a target="_blank" rel="noopener" href="https://github.com/scheng1992/Data_Assimilation">https://github.com/scheng1992/Data_Assimilation</a></p>
-<h1 id="07-阅读：nansencenter-DA-tutorials-2021"><a href="#07-阅读：nansencenter-DA-tutorials-2021" class="headerlink" title="07-阅读：nansencenter/DA-tutorials-2021"></a><center>07-阅读：nansencenter/DA-tutorials-2021</center></h1><h2 id="参考资料：nansencenter-DA-tutorials-2021"><a href="#参考资料：nansencenter-DA-tutorials-2021" class="headerlink" title="参考资料：nansencenter/DA-tutorials-2021"></a>参考资料：nansencenter/DA-tutorials-2021</h2><ul>
+                <h2 id="参考资料：nansencenter-DA-tutorials-2021"><a href="#参考资料：nansencenter-DA-tutorials-2021" class="headerlink" title="参考资料：nansencenter-DA-tutorials-2021"></a><center>参考资料：nansencenter-DA-tutorials-2021</center></h2><ul>
 <li>github仓库：<a target="_blank" rel="noopener" href="https://github.com/nansencenter/DA-tutorials">https://github.com/nansencenter/DA-tutorials</a></li>
 </ul>
 <h2 id="README-md：Introduction-to-data-assimilation-and-the-EnKF"><a href="#README-md：Introduction-to-data-assimilation-and-the-EnKF" class="headerlink" title="README.md：Introduction to data assimilation and the EnKF"></a>README.md：Introduction to data assimilation and the EnKF</h2><h3 id="Cloud-computing"><a href="#Cloud-computing" class="headerlink" title="Cloud computing"></a>Cloud computing</h3><p>Jump right in using one of these cloud computing providers:</p>
@@ -1093,7 +1067,7 @@ PP    <span class="token operator">=</span> np<span class="token punctuation">.<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Liu-Jincan.github.io/2022/02/28/wavewatch3/07-yue-du/">https://Liu-Jincan.github.io/2022/02/28/wavewatch3/07-yue-du/</a>
+                    <a href="https://Liu-Jincan.github.io/2022/02/28/wavewatch3/07-yue-du-nansencenter-da-tutorials-2021/">https://Liu-Jincan.github.io/2022/02/28/wavewatch3/07-yue-du-nansencenter-da-tutorials-2021/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1300,17 +1274,16 @@ PP    <span class="token operator">=</span> np<span class="token punctuation">.<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/02/28/wavewatch3/07-yue-du/">
+                <a href="/2022/03/02/wavewatch3/07-yue-du-ji-he-qia-er-man-lu-bo-de-li-lun-zhi-ding-yu-shi-ji-shi-xian-2003/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118131148.png" class="responsive-img" alt="07-阅读：">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118131148.png" class="responsive-img" alt="07-阅读：集合卡尔曼滤波的理论制定与实际实现-2003">
                         
-                        <span class="card-title">07-阅读：</span>
+                        <span class="card-title">07-阅读：集合卡尔曼滤波的理论制定与实际实现-2003</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1320,9 +1293,9 @@ PP    <span class="token operator">=</span> np<span class="token punctuation">.<
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-02
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1335,7 +1308,6 @@ PP    <span class="token operator">=</span> np<span class="token punctuation">.<
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1609,7 +1581,7 @@ PP    <span class="token operator">=</span> np<span class="token punctuation">.<
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">347.6k</span>
+                        class="white-color">357.2k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
