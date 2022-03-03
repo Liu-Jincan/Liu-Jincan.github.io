@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-03-02
+                    2022-03-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    9.4k
+                    10.6k
                 </div>
                 
 
@@ -416,14 +416,21 @@
 </li>
 <li><p>作者：Julian Mack, Rossella Arcucci, Miguel Molina-Solana, Yi-Ke Guo</p>
 </li>
+<li><p>机构：Data Science Institute, Imperial College London, UK</p>
+</li>
 <li><p><code>这一篇是在2022-02-28 看的，对3D-VAR进行的改进，实现B矩阵的神经网络训练？~</code></p>
 </li>
 </ul>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>We propose a new ‘Bi-Reduced Space’ approach to solving 3D Variational Data Assimilation using Convolutional Autoencoders. We prove that our approach has the same solution as previous methods but has significantly lower computational complexity; in other words,<strong>we reduce the computational cost without affecting the data assimilation accuracy</strong>.</p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>We propose a new <strong>‘Bi-Reduced Space’ approach</strong> to solving <strong>3D Variational Data Assimilation</strong> using <strong>Convolutional Autoencoders</strong>. We prove that our approach has the same solution as previous methods but has significantly lower computational complexity; in other words,<strong>we reduce the computational cost without affecting the data assimilation accuracy</strong>.</p>
 <p>We tested our proposal with data from <strong>a real-world application</strong>: a pollution model of a site in Elephant and Castle (London, UK) and found that we could </p>
 <ul>
-<li>(1) reduce the size of the <strong>background covariance matrix representation</strong> by O(10<sup>3</sup> ), and </li>
-<li>(2) increase our <strong>data assimilation accuracy</strong> with respect to existing reduced space methods.</li>
+<li><p>(1) reduce the size of the <strong>background covariance matrix representation</strong> by O(10<sup>3</sup> ), and </p>
+<blockquote>
+<p><code>reduce by, increase by</code></p>
+</blockquote>
+</li>
+<li><p>(2) increase our <strong>data assimilation accuracy</strong> with respect to existing reduced space methods.</p>
+</li>
 </ul>
 <h2 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h2><p>This work is supported by the EPSRC, UK Grand Challenge grant “Managing Air for Green Inner Cities”(MAGIC) EP/N010221/1, by the EPSRC, UK Centre for Mathematics of Precision Healthcare EP/N0145291/1 and the EP/T003189/1 Health assessment across biological length scales for personal pollution exposure and its mitigation (INHALE). Thanks to Dr. Laetitia Mottet for the set up of the full model in Fluidity. M. Molina-Solana was supported by European Union’s H2020 MSCA-IF (ga. No.743623) and Athenea3i (ga. No.754446) programmes.</p>
 <h2 id="9-Conclusions-and-future-work"><a href="#9-Conclusions-and-future-work" class="headerlink" title="9. Conclusions and future work"></a>9. Conclusions and future work</h2><p>We have presented a new <strong>Bi-reduced space 3D-VarDA formulation</strong> and show that, in combination with the Zhou et al or <em>‘Tucodec’</em> image compression CAE, this method gives superior data assimilation performance in comparison with <strong>reduced space VarDA</strong> regardless of the parameters used in the latter case. We have demonstrated that our method is also faster in the majority of scenarios. On the theoretical side, we show that our method produces approximately equivalent solutions to the traditional method at lower computational complexity. Unlike the previous approach which is in O(<em>M<sup>2</sup></em>) for large <em>M</em>, our method does not penalise the collection of more observation data.</p>
@@ -460,6 +467,80 @@
 <p>—<strong>Getting Started</strong></p>
 <p>—<strong>Settings Instance</strong></p>
 <p>—<strong>Train a model on your own data</strong></p>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>Data Assimilation (DA) is an uncertainty quantification technique in which observation data and a forecasting model are used in <strong>tandem</strong> to generate predictions that are more accurate than those that would be produced using <strong>either component</strong> independently. </p>
+<blockquote>
+<p><code>↑ DA的定义</code></p>
+</blockquote>
+<p>DA is computationally costly for large systems [1] and under <strong>operational constraints</strong>, it is often necessary to solve the problem in <strong>a reduced space</strong> in order to achieve real-time assimilation. </p>
+<blockquote>
+<p><code>↑ operational 可以翻译成业务化吧</code></p>
+</blockquote>
+<ul>
+<li><p>In most relevant DA operational software, <strong>a variable transformation</strong> is performed on the variational functional to reduce the computational cost needed for computing the covariance matrix explicitly; to reduce the space, only <strong>Empirical Orthogonal Functions (EOFs)</strong> of the first largest eigenvalues of the error covariance matrix are considered. </p>
+<blockquote>
+<p><code>↑ 变量变换，经验正交函数(EOF)</code></p>
+</blockquote>
+<p>Since its introduction to meteorology by Edward Lorenz, <strong>EOFs analysis</strong>, which is essentially based on a <strong>Truncated Singular Value Decomposition (TSVD)</strong>, has become a fundamental tool in computational fluid dynamic modelling for <strong>data diagnostics</strong> and <strong>dynamical model reduction</strong>. </p>
+<blockquote>
+<p><code>↑ EOF分析基于阶段奇异值分解（TSVD）</code></p>
+</blockquote>
+<p>Real world applications of TSVD (EOFs) basically <strong>exploit the fact</strong> that these methods allow a decomposition of a data function into a set of orthogonal functions, which are designed so that only a few of these functions are needed in <strong>lower-dimensional approximations</strong>. </p>
+<blockquote>
+<p><code>↑ TSVD的原理：降维</code></p>
+<p><code>exploit 利用</code></p>
+</blockquote>
+<p>Nevertheless, the accuracy of the solution obtained by truncating, exhibits a high sensitivity to the variation of the value of the <strong>truncation parameter</strong> [2,3], so that a suitable truncation parameter is needed. This is a severe drawback of truncation-based methods and limits the utility of operational software based on these methods. </p>
+<blockquote>
+<p><code>↑ TSVD的缺点，结果对truncation参数极其敏感</code></p>
+</blockquote>
+</li>
+<li><p><strong>Convolutional Autoencoders (CAEs)</strong> are a type of neural network that can be used to compress <strong>inputs that exhibit local smoothness</strong>. CAEs have had huge successes in computer vision [4,5] and particularly in image compression [6,7]. </p>
+<blockquote>
+<p><code>↑ 卷积自编码（CAE）的原理：压缩具有局部光滑的输入。</code></p>
+</blockquote>
+</li>
+</ul>
+<p>In this work, we use CAEs to produce a reduced space in which DA can be performed efficiently. We show that our approach has lower online complexity than a DA with TSVD while also giving <strong>equivalent forecasts</strong>.</p>
+<blockquote>
+<p><code>↑ DA-CAE 和 DA-TSVD 对比 </code></p>
+</blockquote>
+<p>The structure of this paper is as follows: </p>
+<ul>
+<li>in Section 2 we cover related work and we present the contribution of the present work. </li>
+<li>Section 3 provides preliminary concepts and definitions, </li>
+<li>Section 4 provides <strong>background on Autoenconders</strong>, and Section 5 introduces our theoretical contribution. </li>
+<li>As the success of our approach is heavily conditioned on the choice of a CAE architecture, in Section 6 we summarise the results of our extensive architecture search before evaluating our approach against existing VarDA methods in Section 7. </li>
+<li>The paper ends with a discussion in Section 8 and some conclusions and further remarks in Section 9.</li>
+</ul>
+<h2 id="2-Related-work-and-contribution-of-the-present-work"><a href="#2-Related-work-and-contribution-of-the-present-work" class="headerlink" title="2 Related work and contribution of the present work"></a>2 Related work and contribution of the present work</h2><p>Forecasting models introduce uncertainty from numerous sources. These include, but are not limited to, uncertainty in initial conditions, imperfect representations of the underlying physical processes and numerical errors. As a result, a model without access to real-time data will accumulate errors until its predictions no longer correspond to reality [8]. Similarly, all observations will have an irreducible uncertainty as a result of imperfect measuring devices. </p>
+<blockquote>
+<p><code>↑ 预测模型的不确定性包括...</code></p>
+</blockquote>
+<p>The key idea in DA is that the overall uncertainty in a forecast can be reduced by producing <strong>a weighed average of model forecasts and observations</strong>. </p>
+<blockquote>
+<p><code>↑ QT：DA 中的 a weighed average 怎么理解？</code></p>
+</blockquote>
+<p>The canonical application of Data Assimilation (DA) [9,10] is Numerical Weather Prediction (NWP) [11–13] but the technique has been utilised in contexts as diverse as oceanic modelling [14,15], solar wind prediction [16] and inner city pollution modelling [17,18]. </p>
+<p>Our proposed approach is agnostic to the details of the forecasting model (i.e. <strong>it is non-intrusive</strong>) and is therefore applicable to any DA problem in which <strong>a reduced order system</strong> is used.</p>
+<blockquote>
+<p><code>↑ non-intrusive 非侵入性的怎么理解？</code></p>
+</blockquote>
+<p>Our proposed formulation of Variational DA [12,13] extends the incremental formulation [11]. In 1992, Parrish et al. [19] proposed using a <strong>Control Variable Transform (CVT) to reduce the space of the background error covariance matrix B</strong> by performing Cholesky factorisation as B = V V<sup>T</sup> . Since then, many authors have used eigenanalysis techniques such as PCA or TSVD to reduce the rank of V [17]. <strong>In this work, we propose replacing these eigenanalysis approaches with a CAE that learns to compress V more efficiently, and with less information-loss than the removal of eigen-modes.</strong></p>
+<blockquote>
+<p><code>↑ 本文的创新点，使用CAE更有效的压缩V</code></p>
+</blockquote>
+<p><strong>This work builds on</strong> a previous publication [17] in which <strong>TSVD was used to precondition V</strong>. The original authors used a test-site location in South London and synthetic data generated by Fluidity, an open-source finite-element fluid dynamic software (<a target="_blank" rel="noopener" href="http://fluidityproject.github.io/">http://fluidityproject.github.io/</a>). We test our approach on the same domain and data to enable a clear comparison. We find that our method gives considerably more accurate predictions and, in most cases, provides them sooner than the previous approach. <strong>In fact, our method is also more accurate (and much faster) than the CVT formulation of Parrish et al. [19]</strong>.</p>
+<p>In this paper we make <strong>the following contributions</strong>: </p>
+<ol>
+<li><p>We propose <strong>a new ‘Bi-reduced space’ 3D Variational Data Assimilation (3D-VarDA) formulation</strong> that has an online complexity that is independent of the number of assimilated observations (i.e. it can be used with arbitrarily dense sensor networks). We show that our approach has lower online complexity than [17] while also giving equivalent forecasts.</p>
+</li>
+<li><p>We create and evaluate <strong>3D extensions of a range of state-of-the-art CAEs</strong> for 2D image compression. To our knowledge, we are the first to extend the image compression network of [20] and image restoration GRDN of [21] to three-dimensions. We find that Zhou et al.’s attention-based model [20] performs best, and make some small improvements to this system including the replacement of vanilla residual blocks [22] with ‘NeXt’ residual blocks [23] in order to reduce decoder inference time.</p>
+</li>
+<li><p><strong>This adapted CAE, in combination with our proposed DA formulation</strong>, achieves a substantial relative reduction in DA error of 37% compared with Arcucci et al.’s TSVD approach [17]. Depending on the number of assimilated observations, our method is up x30 faster. We discuss the speed–accuracy tradeoff at length in Section 7.</p>
+</li>
+<li><p>We release a well tested open-source <strong>Python module VarDACAE</strong> that enables users to easily replicate our experiments, use our model implementations, and train CAEs for any Variational data assimilation problem. The repository can be found at <a target="_blank" rel="noopener" href="https://github.com/julianmack/Data">https://github.com/julianmack/Data</a> Assimilation.</p>
+</li>
+</ol>
 <h2 id="参考资料2：基于数据同化的地下水模型不确定性分析"><a href="#参考资料2：基于数据同化的地下水模型不确定性分析" class="headerlink" title="参考资料2：基于数据同化的地下水模型不确定性分析"></a><center>参考资料2：基于数据同化的地下水模型不确定性分析</center></h2><ul>
 <li><p>期刊：《Journal of Glaciology and Geocryology》，</p>
 <blockquote>
@@ -752,7 +833,7 @@
 <li><p><code>创新点：国内2020同化研究的内容</code></p>
 </li>
 </ul>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This special section is the scientific legacy of the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China, which was held in Changsha, China during December 3–4, 2020 with more than 160 participants from 35 units in China. It continued a series of National Ocean Data Assimilation conferences which began in 2003, which played an important role in the development of ocean data assimilation in China. </p>
+<h2 id="1-Introduction-1"><a href="#1-Introduction-1" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>This special section is the scientific legacy of the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China, which was held in Changsha, China during December 3–4, 2020 with more than 160 participants from 35 units in China. It continued a series of National Ocean Data Assimilation conferences which began in 2003, which played an important role in the development of ocean data assimilation in China. </p>
 <p>In this 13th conference, there were 41 oral presentations and 15 posters, which focused on </p>
 <ul>
 <li><strong>ocean data assimilation methods,</strong> </li>
@@ -1040,17 +1121,16 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/03/02/wavewatch3/07-yue-du-find-idea-of-da/">
+                <a href="/2022/03/03/yun-fan-qiang/04-liu-liang-bei-dao-shua/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118131148.png" class="responsive-img" alt="07-阅读：Find_idea_of_DA">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220303160306.png" class="responsive-img" alt="04-流量被盗刷">
                         
-                        <span class="card-title">07-阅读：Find_idea_of_DA</span>
+                        <span class="card-title">04-流量被盗刷</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1060,22 +1140,21 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-02
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/WW3/" class="post-category">
-                                    WW3
+                            <a href="/categories/%E4%BA%91/" class="post-category">
+                                    云
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1349,7 +1428,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">357.2k</span>
+                        class="white-color">359.9k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
