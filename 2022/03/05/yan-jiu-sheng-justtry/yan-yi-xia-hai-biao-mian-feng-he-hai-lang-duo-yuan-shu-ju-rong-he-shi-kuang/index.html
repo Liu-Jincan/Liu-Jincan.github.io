@@ -1,0 +1,3190 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="研一下-海表面风和海浪多源数据融合实况, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>研一下-海表面风和海浪多源数据融合实况 | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">研一下-海表面风和海浪多源数据融合实况</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                研究生JustTry
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-03-05
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-03-10
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    23.6k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="研一下-海表面风和海浪多源数据融合实况"><a href="#研一下-海表面风和海浪多源数据融合实况" class="headerlink" title="研一下-海表面风和海浪多源数据融合实况"></a><center>研一下-海表面风和海浪多源数据融合实况</center></h2><h2 id="2022-03-05-wjc老师反馈"><a href="#2022-03-05-wjc老师反馈" class="headerlink" title="2022-03-05 wjc老师反馈"></a>2022-03-05 wjc老师反馈</h2><p>什么是<code>实况</code>：</p>
+<ul>
+<li>不是预报</li>
+<li>QT：是对当前时刻的前几个小时的观测，进行融合？；</li>
+</ul>
+<p><strong>work</strong>：</p>
+<ul>
+<li>老师发的资料，<ul>
+<li>资料1.docx</li>
+<li>其他项目的初设——请避免重复——暂不用参考本文档的格式.docx</li>
+<li>洋面风海浪等模块-wjc20180616.docx</li>
+<li>风场融合实施方案word03.doc</li>
+<li>RemoteSensors遥感仪器综述.doc</li>
+</ul>
+</li>
+<li>主要科研机构的做法，</li>
+<li>最新的文献，</li>
+</ul>
+<blockquote>
+<p><code>↑ 上面的work，并不是具体去做什么，而是以 find_idea 的形式去推进，以问题为驱动~</code></p>
+</blockquote>
+<h3 id="QT：什么是数据融合？"><a href="#QT：什么是数据融合？" class="headerlink" title="QT：什么是数据融合？"></a>QT：什么是数据融合？</h3><blockquote>
+<p>wiki：<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Data_fusion">https://en.wikipedia.org/wiki/Data_fusion</a></p>
+</blockquote>
+<p><strong>Data fusion</strong> is the process of integrating multiple data sources to produce more consistent, accurate, and useful information than that provided by any individual data source.</p>
+<p>Data fusion processes are often categorized as low, intermediate, or high, depending on the processing stage at which fusion takes place[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Data_fusion#cite_note-Klein-1">1]</a> .Low-level data fusion combines several sources of raw data to produce new raw data. The expectation is that fused data is more <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">informative</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Synthetic_data">synthetic</a> than the original inputs.</p>
+<p>For example, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Sensor_fusion">sensor fusion</a> is also known as (multi-sensor) data fusion and is a subset of <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Information_fusion">information fusion</a>.</p>
+<p>The concept of data fusion has origins in the evolved capacity of humans and animals to incorporate information from multiple senses to improve their ability to survive. For example, a combination of sight, touch, smell, and taste may indicate whether a substance is edible[<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Data_fusion#cite_note-2">2]</a>.</p>
+<h2 id="阅读1：资料1-docx-任务要求"><a href="#阅读1：资料1-docx-任务要求" class="headerlink" title="阅读1：资料1.docx~~任务要求"></a>阅读1：资料1.docx~~任务要求</h2><ul>
+<li>2022-03-05</li>
+</ul>
+<h3 id="洋面风多源融合实况分析产品及历史产品研制"><a href="#洋面风多源融合实况分析产品及历史产品研制" class="headerlink" title="洋面风多源融合实况分析产品及历史产品研制"></a>洋面风多源融合实况分析产品及历史产品研制</h3><blockquote>
+<p><code>↑ 王老师主要细化有批准部分模块的功能点。模块下的功能点写法。模块如果超过10万以上，应细化出多个功能点，一个功能点5万左右。</code></p>
+</blockquote>
+<h4 id="数据预处理（5个模块）"><a href="#数据预处理（5个模块）" class="headerlink" title="数据预处理（5个模块）"></a>数据预处理（5个模块）</h4><p><strong>风云卫星洋面风场预处理模块</strong>：实现洋面风融合中，</p>
+<ul>
+<li><p>需要风云卫星洋面风场<strong>数据的预处理</strong>，包括实时、历史输入数据文件中特定变量的投影转换、分辨率转换，</p>
+<blockquote>
+<p>在技术资料里面有~</p>
+</blockquote>
+</li>
+<li><p>实现<strong>与融合模块的对接</strong>，保证融合质量，</p>
+</li>
+<li><p>同时实现<strong>历史数据的预处理</strong>，达到历史数据集制作要求。</p>
+</li>
+</ul>
+<p><strong>海洋卫星洋面风场预处理模块</strong>：实现洋面风融合中，</p>
+<ul>
+<li><p>需要海洋卫星洋面风场数据的预处理，包括实时、历史输入数据文件中特定变量的投影转换、分辨率转换，</p>
+</li>
+<li><p>实现与融合模块的对接，保证融合质量。</p>
+</li>
+<li><p>同时由于海洋卫星与气象卫星的风向定义方式不同，因此预处理模块还要实现<strong>风向的转换</strong>，保证风向定义的一致性，</p>
+</li>
+<li><p>同时实现历史数据的预处理，达到历史数据集制作要求。</p>
+<blockquote>
+<p>海洋卫星用散射计</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>其他卫星洋面风场预处理模块</strong>：随着数据共享与国际交换的不断发展，<strong>未来将有更多的卫星洋面风场满足实时性要求</strong>，如<strong>windsat、风神</strong>等卫星反演洋面风产品，将进一步提升实时产品精度，因此针对未来新增洋面风反演数据，也需要提前参照历史数据开发其他卫星洋面风场数据的预处理，包括</p>
+<ul>
+<li><p>输入数据文件中特定变量的投影转换、分辨率转换，</p>
+</li>
+<li><p>实现与融合模块的对接，保证融合质量，</p>
+</li>
+<li><p>同时实现历史数据的预处理，达到历史数据集制作要求。</p>
+<blockquote>
+<p>国际上准备发射，还没发射</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 卫星</code></p>
+</blockquote>
+<p><strong>海基洋面风观测预处理模块</strong>：</p>
+<ul>
+<li><p>基于大数据云平台实现洋面风融合中需要浮标、船舶、海上平台等多种洋面风<strong>实际观测数据的获取</strong>，</p>
+</li>
+<li><p>并利用元数据信息实现探风仪器距海面高度的确定，挑选符合10m风场定义的实际观测，</p>
+<blockquote>
+<p>风是算出来的</p>
+<p>模式手册，把不同高度的风转化成10m风，（给个公式）</p>
+</blockquote>
+</li>
+<li><p>并按照融合模块要求，将实际观测数据输出，</p>
+</li>
+<li><p>同时实现历史数据的预处理，达到历史数据集制作要求。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 观测</code></p>
+</blockquote>
+<p><strong>数值预报模式数据预处理模块</strong>：依据洋面风融合<strong>所需的ECMWF或CRA模式</strong>风场数据格式及内容，</p>
+<ul>
+<li><p>实现模式洋面风场的投影转换、分辨率转换，</p>
+<blockquote>
+<p>25km 的，转换成 10km，</p>
+</blockquote>
+</li>
+<li><p>实现与融合模块的对接，保证融合质量，</p>
+</li>
+<li><p>同时实现历史数据的预处理，达到历史数据集制作要求。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 数值预报模式</code></p>
+</blockquote>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="QT：风云卫星、海洋卫星"><a href="#QT：风云卫星、海洋卫星" class="headerlink" title="QT：风云卫星、海洋卫星"></a>QT：风云卫星、海洋卫星</h4><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%A3%8E%E4%BA%91%E6%B0%94%E8%B1%A1%E5%8D%AB%E6%98%9F/14113714?fromtitle=%E9%A3%8E%E4%BA%91%E5%8D%AB%E6%98%9F&amp;fromid=23146902&amp;fr=aladdin">风云气象卫星百度百科</a>；</p>
+<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%B5%B7%E6%B4%8B%E7%B3%BB%E5%88%97%E5%8D%AB%E6%98%9F/15657132?fr=aladdin">海洋系列卫星</a>；</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="洋面风融合（5个模块）"><a href="#洋面风融合（5个模块）" class="headerlink" title="洋面风融合（5个模块）"></a>洋面风融合（5个模块）</h4><p><strong>卫星洋面风数据检查模块</strong>：</p>
+<ul>
+<li><p>首先根据散射计和辐射计等卫星遥感洋面风产品的质量控制码<strong>剔除异常数据或对异常数据进行插补</strong>；</p>
+</li>
+<li><p>再根据融合产品区域的海陆分布，剔除陆上格点、海陆混合格点及距离陆地较近格点的数据，<strong>将陆地对探测数据的影响降到最低</strong>；</p>
+</li>
+<li><p>然后结合所用背景场数据，进行融合前的背景场差异检查，<strong>剔除差异明显超出部分的数据</strong>，</p>
+</li>
+<li><p>最后将卫星产品梳理成待融合的高质量卫星遥感洋面风数据。</p>
+</li>
+<li><p>同时实现对历史数据的检查，达到历史数据集制作要求</p>
+<blockquote>
+<p>看看卫星的数据形式</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>卫星洋面风偏差订正模块</strong>：</p>
+<ul>
+<li><p>针对待融合的散射计和辐射计等洋面风数据，利用浮标等<strong>现场观测数据</strong>进行验证和校准。</p>
+</li>
+<li><p>采用线性和非线性回归方法，获取不同卫星洋面风数据与现场观测数据的函数关系，进而<strong>对卫星遥感散射计和辐射计数据进行偏差订正</strong>，以获取无偏的待融合卫星洋面风数据。</p>
+<blockquote>
+<p>什么是偏差订正？，机器学习~~</p>
+</blockquote>
+</li>
+<li><p>同时实现对历史数据的偏差订正，达到历史数据集制作要求。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>UV风场融合模块</strong>：</p>
+<ul>
+<li><p>采用逐步订正、最优插值、多重网格三维变分等融合算法，将现场观测洋面风数据、卫星遥感观测洋面风数据和模式输出的网格化背景洋面风数据转换为UV风场，分别进行融合，从而获得高时空分辨率的全球、区域和近岸网格化UV风场融合产品。</p>
+<blockquote>
+<p><code>↑ 很期待去做~~</code></p>
+<p>都可以改的，往技术发展的方向改~</p>
+<p>风速的融合，分成U和V<del>散射计有UV</del></p>
+<p>现在不是思考怎么做，而是思考怎么写~</p>
+<p>有背景场是好融合的<del>简单的插值</del>，没有背景场，融合很难的~</p>
+</blockquote>
+</li>
+<li><p>同时利用UV风场计算<strong>洋面风向</strong>和洋面风速，方便洋面风速模块的使用。</p>
+</li>
+<li><p>并具备对历史数据的融合功能，满足对多种来源历史数据融合要求。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>洋面风速融合模块</strong>：</p>
+<ul>
+<li><p>由于<strong>微波探测器</strong>反演的洋面风速产品更准，最大风量级更大，因此需要将多颗卫星的微波反演风速产品与上一步融合的洋面风速进一步融合，提升洋面风风速融合产品质量。</p>
+<blockquote>
+<p>有些数据是没有UV的，只有风速~</p>
+</blockquote>
+</li>
+<li><p>并具备对历史数据的融合功能，满足对多种来源历史数据融合要求。</p>
+</li>
+<li><p>并具备<strong>对不同来源历史洋面风速数据的融合功能</strong>，满足<strong>历史回算模块</strong>一键回算的要求。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块14.4w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>历史数据回算模块</strong>：</p>
+<ul>
+<li><p>历史回算模块主要分为</p>
+<ul>
+<li>单点时间历史数据回算、</li>
+<li>多点时间历史数据回算、</li>
+<li>单一连续时间段历史数据回算、</li>
+<li>混合时间设置历史数据回算。</li>
+</ul>
+</li>
+<li><p>通过配置</p>
+<ul>
+<li>输入数据（岸基观测洋面风、各种海洋气象卫星及海基观测等）、</li>
+<li>数据产品目录、</li>
+<li>回算时次信息</li>
+</ul>
+<p>后，可实现一键式回算。</p>
+</li>
+<li><p>同时实现历史数据集的制作。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<h3 id="海浪多源融合实况分析产品研制"><a href="#海浪多源融合实况分析产品研制" class="headerlink" title="海浪多源融合实况分析产品研制"></a>海浪多源融合实况分析产品研制</h3><blockquote>
+<p><code>↑ 王老师主要细化有批准部分模块的功能点。模块下的功能点写法。模块如果超过10万以上，应细化出多个功能点，一个功能点5万左右</code></p>
+</blockquote>
+<h4 id="数据预处理（3个模块）"><a href="#数据预处理（3个模块）" class="headerlink" title="数据预处理（3个模块）"></a>数据预处理（3个模块）</h4><p><strong>海洋卫星海浪产品预处理模块</strong>：</p>
+<ul>
+<li><p>实现海浪融合中需要海洋卫星海浪产品的预处理，包括输入数据文件中特定变量的投影转换、分辨率转换，</p>
+</li>
+<li><p>实现与融合模块的对接，保证融合质量。</p>
+</li>
+<li><p>同时实现历史数据的预处理，达到历史数据集制作要求。</p>
+<blockquote>
+<p>海洋卫星的高度计产品</p>
+<p>海洋卫星波谱仪产品预处理模块</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>其他卫星海浪产品预处理模块</strong>：</p>
+<ul>
+<li><p>实现海浪融合中需要其他卫星海浪产品的预处理，包括输入数据文件中特定变量的投影转换、分辨率转换，</p>
+</li>
+<li><p>实现与融合模块的对接，保证融合质量。</p>
+</li>
+<li><p>同时实现历史数据的预处理，达到历史数据集制作要求。</p>
+<blockquote>
+<p>有其他卫星的吗？</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>海基海浪观测预处理模块</strong>：</p>
+<ul>
+<li>基于大数据云平台实现海浪融合中需要浮标、船舶、海上平台等多种海浪实际观测数据的获取，</li>
+<li>并按照融合模块要求，将实际观测数据输出。</li>
+<li>同时实现历史数据的预处理，达到历史数据集制作要求。</li>
+</ul>
+<h4 id="海浪融合（7个模块）"><a href="#海浪融合（7个模块）" class="headerlink" title="海浪融合（7个模块）"></a>海浪融合（7个模块）</h4><p><strong>卫星反演海浪产品数据检查模块</strong>：</p>
+<ul>
+<li>根据产品质量控制码挑选质量可靠的数据；</li>
+<li>再根据融合产品区域的海陆分布，剔除陆上格点、海陆混合格点及距离陆地较近格点的数据，将陆地对探测数据的影响降到最低；</li>
+<li>然后结合所用背景场数据，进行融合前的背景场差异检查，剔除差异明显超出部分的数据，最后梳理成待融合的高质量数据。</li>
+<li>同时实现历史数据的检查，达到历史数据集制作要求。</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块14.4w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>卫星反演海浪产品偏差订正模块</strong>：</p>
+<ul>
+<li>卫星反演海浪产品与海浪背景场之间存在一定的偏差，在利用海浪模式对卫星反演海浪产品同化前，需要<strong>模式数据对卫星反演海浪产品进行偏差订正</strong>，</li>
+<li>并将待同化数据制成海浪同化模式所需的标准格式。</li>
+<li>同时实现历史数据的偏差订正，达到历史数据集制作要求。</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>海浪模式构建模块</strong>：</p>
+<ul>
+<li>构建WAVEWATCH-III和SWAN嵌套的海浪模式，对全球、区域和近岸海域进行海浪模拟，大区域海浪模式为小区域海浪模式提供<strong>海浪谱边界条件</strong>。</li>
+<li>优化风-浪相互作用、波-波相互作用、底摩擦和波浪破碎等方案，获取多种海浪要素。</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>海浪数据同化模块</strong>：</p>
+<ul>
+<li><p>采用最优插值、集合卡尔曼滤波等同化方法，将预处理的海浪有效波高观测数据与构建的海浪嵌套模式有机结合，发挥同化方法的优势，提高海浪模式输出要素的精度。</p>
+</li>
+<li><p><strong>同化技术涉及</strong>非对角的观测误差协方差矩阵构建、流依赖背景误差协方差矩阵的构造、方差膨胀和协方差局地化策略、基于分水岭算法的谱分割策略等。</p>
+<blockquote>
+<p><code>↑ 我开始兴奋了~~😘</code></p>
+</blockquote>
+</li>
+<li><p>同时实现对历史数据的同化，达到历史数据集制作要求。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>海浪模式产品后处理模块</strong>：</p>
+<ul>
+<li>对海浪同化模式的输出要素进行标准化处理，制作全球、区域和近岸多套不同时空分辨率、不同要素的网格化海浪产品。</li>
+<li>制作与Jason-3等高度计同步的沿轨海浪有效波高数据集。</li>
+<li>同时实现对历史模式产品后处理，达到历史数据集制作要求。</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>海浪有效波高融合模块</strong>：</p>
+<ul>
+<li><p>将海浪同化模式输出的、不同分辨率网格化有效波高数据作为背景场，采用最优插值、多重网格三维变分等融合方法，对<strong>雷达反演海浪波高、卫星遥感海浪有效波高和现场观测有效波高数据</strong>进行高质量时空融合。获得高时空分辨率的全球、区域和近岸网格化的海浪有效波高融合产品。</p>
+<blockquote>
+<p><code>↑ 再同化一次？同化与融合不一样？</code></p>
+</blockquote>
+</li>
+<li><p>同时具备历史数据融合功能，达到历史数据回算模块要求，实现历史数据的融合。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 廖志宏：该模块18w，需要分功能，每个功能不超过5w，请参照5.1.5.1“台风大数据存储”格式编写。</code></p>
+</blockquote>
+<p><strong>历史数据回算模块</strong>：</p>
+<ul>
+<li><p>历史回算模块主要分为</p>
+<ul>
+<li>单点时间历史数据回算、</li>
+<li>多点时间历史数据回算、</li>
+<li>单一连续时间段历史数据回算、</li>
+<li>混合时间设置历史数据回算</li>
+</ul>
+</li>
+<li><p>通过配置</p>
+<ul>
+<li>输入数据（岸基观测海浪产品、海洋卫星及海基观测数据）、</li>
+<li>数据产品目录、</li>
+<li>回算时次信息</li>
+</ul>
+<p>后，可实现一键式回算，</p>
+</li>
+<li><p>实现历史数据集的制作。</p>
+</li>
+</ul>
+<h2 id="阅读2：其他项目的初设——请避免重复——暂不用参考本文档的格式-docx-模块模板"><a href="#阅读2：其他项目的初设——请避免重复——暂不用参考本文档的格式-docx-模块模板" class="headerlink" title="阅读2：其他项目的初设——请避免重复——暂不用参考本文档的格式.docx~~模块模板"></a>阅读2：其他项目的初设——请避免重复——暂不用参考本文档的格式.docx~~模块模板</h2><h3 id="多源卫星反演洋面风订正模块"><a href="#多源卫星反演洋面风订正模块" class="headerlink" title="多源卫星反演洋面风订正模块"></a>多源卫星反演洋面风订正模块</h3><blockquote>
+<p><code>↑ 1.1.1.1 多源卫星反演洋面风订正模块</code></p>
+</blockquote>
+<h4 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h4><p><strong>针对</strong>不同卫星和不同洋面风反演算法，造成的不同来源卫星洋面风资料之间的差异，</p>
+<p><strong>开发</strong>基于<strong>现场实测数据</strong>的卫星洋面风资料的<strong>误差特征分析与误差订正模块</strong>，</p>
+<p><strong>实现</strong>不同来源的卫星洋面风资料之间存在系统性差异的消除，</p>
+<p><strong>降低</strong>平台因素给融合产品带来的误差。</p>
+<h4 id="2-输入"><a href="#2-输入" class="headerlink" title="2. 输入"></a>2. 输入</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305155901.png" style="zoom:63%;">
+
+<h4 id="3-数据处理"><a href="#3-数据处理" class="headerlink" title="3. 数据处理"></a>3. 数据处理</h4><h5 id="（1）模型算法描述"><a href="#（1）模型算法描述" class="headerlink" title="（1）模型算法描述"></a>（1）模型算法描述</h5><p>多源卫星反演洋面风订正模块将<strong>按刈幅排列的风场数据</strong>转换成<strong>按经纬度规则排列的风场数据</strong>。</p>
+<p>规则经纬度网格是指相邻网格中心的经度和纬度的间隔都是0.25°；经度的坐标刻度起点是0.125°、终点是359.875°，共1440点；纬度的坐标刻度起点是-89.875°、终点是89.875°，共720点。</p>
+<p>为了尽可能保证风场观测的覆盖空间范围，网格转化首先要按以下流程<strong>对刈幅网格进行预处理</strong>（以下成为插值）：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305161219.png" style="zoom:67%;">
+
+<p>插值的物理参量为，</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305161346.png" style="zoom:80%;">
+
+<p>最后，三角形内部<em>p</em>点位置插值的物理参量为：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305161427.png" style="zoom:80%;">
+
+<h5 id="（2）数据处理流程"><a href="#（2）数据处理流程" class="headerlink" title="（2）数据处理流程"></a>（2）数据处理流程</h5><ul>
+<li><p><strong>数据读取</strong>：主要是实现HY-2和METOP卫星微波散射计L2B级产品和背景风场产品的数据读取；</p>
+</li>
+<li><p><strong>数据自检</strong>：根据残差和风单元质量标识符提取HY-2和METOP卫星微波散射计有效的海面风场信息，以便用于后续的网格转化处理和时空统计分析。；</p>
+</li>
+<li><p><strong>网格转化</strong>：网格转化模块承接数据自检的输出，将按刈幅排列的风场数据转换成按经纬度规则排列的风场数据。</p>
+</li>
+<li><p><strong>时空统计</strong>：根据网格化的散射计风场和数值天气预报模式提供的背景风场，统计分析每个网格点两种风场经向（u）和纬向（v）分量的均值和方差。</p>
+</li>
+<li><p><strong>质量分析</strong>：根据时空统计分析模块的结果，分析每个网格点数据统计分显著程度，如果统计显著性小于设定的阈值，将该网格点的风场设置成缺省值。</p>
+</li>
+<li><p><strong>订正系数</strong>：根据HY-2和METOP卫星微波散射计L2B级产品的统计分析和质量分析结果，计算多源洋面风场数据的订正系数。</p>
+</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305160700.png" style="zoom:63%;">
+
+<h4 id="4-输出"><a href="#4-输出" class="headerlink" title="4. 输出"></a>4. 输出</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305160213.png" style="zoom:63%;">
+
+<blockquote>
+<p><code>↓↓ 后面的模块基本是一个形式~</code></p>
+</blockquote>
+<h3 id="洋面风二维变分融合模块"><a href="#洋面风二维变分融合模块" class="headerlink" title="洋面风二维变分融合模块"></a>洋面风二维变分融合模块</h3><blockquote>
+<p><code>↑ 1.1.1.2 洋面风二维变分融合模块</code></p>
+</blockquote>
+<h3 id="洋面风最优插值融合模块"><a href="#洋面风最优插值融合模块" class="headerlink" title="洋面风最优插值融合模块"></a>洋面风最优插值融合模块</h3><blockquote>
+<p><code>↑ 1.1.1.3 洋面风最优插值融合模块</code></p>
+</blockquote>
+<h3 id="洋面风融合产品生成模块"><a href="#洋面风融合产品生成模块" class="headerlink" title="洋面风融合产品生成模块"></a>洋面风融合产品生成模块</h3><blockquote>
+<p><code>↑ 1.1.1.4 洋面风融合产品生成模块</code></p>
+</blockquote>
+<h3 id="多源卫星反演有效波高订正模块"><a href="#多源卫星反演有效波高订正模块" class="headerlink" title="多源卫星反演有效波高订正模块"></a>多源卫星反演有效波高订正模块</h3><blockquote>
+<p><code>↑ 1.1.1.5 多源卫星反演有效波高订正模块</code></p>
+</blockquote>
+<h3 id="有效波高最优插值融合模块"><a href="#有效波高最优插值融合模块" class="headerlink" title="有效波高最优插值融合模块"></a>有效波高最优插值融合模块</h3><blockquote>
+<p><code>↑ 1.1.1.6 有效波高最优插值融合模块</code></p>
+</blockquote>
+<h3 id="有效波高克里金插值融合模块"><a href="#有效波高克里金插值融合模块" class="headerlink" title="有效波高克里金插值融合模块"></a>有效波高克里金插值融合模块</h3><blockquote>
+<p><code>↑ 1.1.1.7 有效波高克里金插值融合模块</code></p>
+</blockquote>
+<h3 id="有效波高逐步订正融合模块"><a href="#有效波高逐步订正融合模块" class="headerlink" title="有效波高逐步订正融合模块"></a>有效波高逐步订正融合模块</h3><blockquote>
+<p><code>↑ 1.1.1.8 有效波高逐步订正融合模块</code></p>
+</blockquote>
+<h3 id="有效波高融合产品生成模块"><a href="#有效波高融合产品生成模块" class="headerlink" title="有效波高融合产品生成模块"></a>有效波高融合产品生成模块</h3><blockquote>
+<p><code>↑ 1.1.1.9 有效波高融合产品生成模块</code></p>
+</blockquote>
+<h2 id="阅读3：洋面风海浪等模块-wjc20180616-docx-模板模块"><a href="#阅读3：洋面风海浪等模块-wjc20180616-docx-模板模块" class="headerlink" title="阅读3：洋面风海浪等模块-wjc20180616.docx~~模板模块"></a>阅读3：洋面风海浪等模块-wjc20180616.docx~~模板模块</h2><ul>
+<li>2018</li>
+<li>全是干货~~😎</li>
+</ul>
+<h3 id="卫星洋面风质量控制模块"><a href="#卫星洋面风质量控制模块" class="headerlink" title="卫星洋面风质量控制模块"></a>卫星洋面风质量控制模块</h3><p>自动下载散射计和辐射计等卫星遥感洋面风产品，剔除异常数据或对异常数据进行插补；进行空间检查、阈值检查、时间检查并进行与背景场的差异检查；将下载的卫星产品梳理成待融合的高质量卫星遥感洋面风数据。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 自动获取公开的ASCAT、HY-2等散射计洋面风产品和AMSR-E、TMI等微波辐射计洋面风产品，对卫星遥感产品进行解码、读取，写成标准格式；</p>
+<p>(2) 判断异常数据标志，剔除异常数据，或通过时空插值方法，利用相邻洋面风数据对异常数据进行插补；</p>
+<p>(3) 判断海陆冰标志，进行洋面风数据的空间检查，去除陆地和冰上的洋面风数据；</p>
+<p>(4) 确定风速的阈值，对洋面风数据进行阈值检查，以确保其在合理的范围之内，减少因高误差引起的数据不确定性；</p>
+<p>(5) 融合之前进行时间检查，判断待融合卫星遥感洋面风数据是否在融合时间窗口内，保证数据源的准确性，彻底消除时间错位；</p>
+<p>(6) 进行与背景场的差异检查，若卫星观测与背景场差异超出了阈值，则剔除该观测数据以保证观测与背景场的相容性。</p>
+<h3 id="卫星洋面风偏差订正模块"><a href="#卫星洋面风偏差订正模块" class="headerlink" title="卫星洋面风偏差订正模块"></a>卫星洋面风偏差订正模块</h3><p>针对待融合的散射计和辐射计等洋面风数据，利用浮标等现场观测数据进行验证和校准。采用线性和非线性回归方法，获取不同卫星洋面风数据与现场观测数据的函数关系，进而对卫星遥感散射计和辐射计数据进行偏差订正，以获取无偏的待融合卫星洋面风数据。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 获取浮标、船舶等现场观测洋面风数据，并对其进行质量控制和标准化处理；</p>
+<p>(2) 针对不同分辨率的洋面风融合，选择不同的时间和空间窗口，以进行回归。如全球0.25°逐1小时的融合，采用30分钟的时间窗口和50公里的空间窗口；</p>
+<p>(3) 把浮标等现场洋面风数据作为真值，采用最小二乘回归方法，获取不同卫星洋面风数据与现场观测数据的线性或非线性关系，建立不同散射计和辐射计等的风速(风向)回归公式；</p>
+<p>(4) 通过回归关系对卫星遥感散射计和辐射计数据进行偏差订正，以获取无偏的待融合卫星洋面风数据，并将订正后的卫星洋面风数据写成标准格式。</p>
+<h3 id="多源洋面风融合模块"><a href="#多源洋面风融合模块" class="headerlink" title="多源洋面风融合模块"></a>多源洋面风融合模块</h3><p>采用逐步订正、最优插值、多重网格三维变分等融合算法，将现场观测洋面风数据、卫星遥感观测洋面风数据和模式输出的网格化背景洋面风数据进行融合，获得高时空分辨率的全球、区域和近岸网格化洋面风融合产品。用现场观测和再分析洋面风资料对融合洋面风场进行验证和评估。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 获取船舶、台站、浮标等现场观测洋面风数据和模式输出的网格化背景洋面风数据，并进行标准化处理；</p>
+<p>(2) 将多种待融合的现场和偏差订正后的卫星遥感洋面风数据进行处理，针对融合产品不同时空分辨率的要求，进行“瘦数据处理”，形成融合时刻的超级观测场文件；</p>
+<p>(3) 采用<strong>逐步订正、最优插值、多重网格三维变分等融合算法</strong>，将浮标等现场观测和散射计等卫星遥感观测与背景洋面风场进行融合，获得高时空分辨率的全球、区域和近岸网格化的、包括风速和风向的洋面风融合产品；</p>
+<p>(4) 自动下载ECMWF等再分析洋面风数据产品，为洋面风融合产品检验评估做数据准备；</p>
+<p>(5) 针对全球、区域和近岸的洋面风融合产品采用不同的时空窗口进行数据匹配，采用均方根误差、相关系数等统计因子，用现场观测和再分析洋面风资料对融合洋面风场进行验证和评估。</p>
+<h3 id="多源海浪观测预处理模块"><a href="#多源海浪观测预处理模块" class="headerlink" title="多源海浪观测预处理模块"></a>多源海浪观测预处理模块</h3><p>获取浮标、测波雷达等现场观测海浪数据以及高度计、波谱仪和SAR卫星遥感观测海浪数据并进行质量控制，利用现场海浪观测对卫星遥感海浪观测进行偏差订正，将待同化数据制成海浪同化模式所需的标准格式。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 自动下载Jason-3、HY-2等卫星高度计海浪有效波高数据，CFOSAT波谱仪、SAR等卫星遥感观测的二维海浪谱数据，进行质量控制；</p>
+<p>(2) 通过最小二乘等回归方法，利用现场海浪观测对卫星高度计海浪观测, 获取不同卫星高度计海浪数据与现场观测数据的线性或非线性关系，建立海浪有效波高回归公式；</p>
+<p>(3) 通过回归关系对卫星遥感高度计数据进行偏差订正，以获取无偏的卫星高度计海浪有效波高数据，并将订正后的卫星有效波高数据写成标准格式；</p>
+<p>(4) 将待同化的海浪有效波高、平均周期、平均波向、二维海浪谱等数据制成海浪同化模式所需的标准格式。</p>
+<h3 id="海浪模式构建模块"><a href="#海浪模式构建模块" class="headerlink" title="海浪模式构建模块"></a>海浪模式构建模块</h3><p>构建WAVEWATCH-III和SWAN嵌套的海浪模式，对全球、区域和近岸海域进行海浪模拟，大区域海浪模式为小区域海浪模式提供海浪谱边界条件。优化风-浪相互作用、波-波相互作用、底摩擦和波浪破碎等方案，获取多种海浪要素。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 研究海浪模式WAVEWATCH-III和SWAN的风-浪相互作用、波-波相互作用、底摩擦和波浪破碎等的优化方案，针对全球、区域和近岸不同情况，制定最优的参数化方案；</p>
+<p>(2) 研究WAVEWATCH-III和SWAN的嵌套方式，研究WAVEWATCH-III的规则网格和SWAN的非结构网格在嵌套时的边界处理方案，采用三层嵌套，全球海浪模式为区域海浪模式提供边界条件，区域海浪模式为近岸海浪模式提供边界条件；</p>
+<p>(3) 获取驱动场数据，结合初始条件和边界条件构建不同时空分辨率的海浪嵌套模式，全球模式空间水平分辨率达到25公里，近岸海浪模式空间水平分辨率达到4公里；</p>
+<p>(4) 输出不同分辨率的海浪要素，包括：有效波高、均值周期、峰值周期、均值波向、峰值波向、峰值频率、风浪波高、风浪方向、第一涌浪波高、第一涌浪方向等。</p>
+<p><strong>海浪数据同化模块</strong></p>
+<p>采用最优插值、集合卡尔曼滤波等同化方法，将预处理的海浪有效波高观测数据与构建的海浪嵌套模式有机结合，发挥同化方法的优势，提高海浪模式输出要素的精度。同化技术涉及非对角的观测误差协方差矩阵构建、流依赖背景误差协方差矩阵的构造、方差膨胀和协方差局地化策略、基于分水岭算法的谱分割策略等。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 根据海浪遥感观测数据的特点，考虑观测误差的相关性，研究观测误差的统计性质，构建非对角的观测误差协方差矩阵；分析观测误差的相关性对同化效果的影响，考虑计算复杂度，探求最优的非对角观测误差协方差矩阵；</p>
+<p>(2) 采用集合卡尔曼滤波方法，用集合思想解决背景误差协方差矩阵估计和预报困难问题，把误差的统计量隐含在一组预报变量中进行预报，然后根据该组预报值的差异进行统计，得到新的误差协方差，构建流依赖的背景场误差协方差矩阵；</p>
+<p>(3) 研究方差膨胀和协方差局地化策略，解决集合同化方法中抽样误差会导致模式状态背景方差的低估和观测与模式状态之间存在长距离伪相关问题，开发一种简单有效的协方差局地化和方差膨胀的补偿机制，从而有效提高集合滤波的同化效果；</p>
+<p>(4) 针对海浪有效波高不足以纠正模式产生的海浪谱的问题，基于分水岭算法，改进谱分割策略，将分割的二维海浪谱数据融入同化方法中，建立可直接同化二维谱数据的同化算法；</p>
+<p>(5) 将预处理的海浪有效波高观测数据以及二维海浪谱数据与构建的海浪嵌套模式有机结合，发挥同化方法的优势，构建更优的海浪分析场，提高海浪模式输出要素的精度。</p>
+<h3 id="海浪模式产品后处理模块"><a href="#海浪模式产品后处理模块" class="headerlink" title="海浪模式产品后处理模块"></a>海浪模式产品后处理模块</h3><p>对海浪同化模式的输出要素进行标准化处理，制作全球、区域和近岸多套不同时空分辨率、不同要素的网格化海浪产品。制作与Jason-3等高度计同步的沿轨海浪有效波高数据集。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 将海浪同化模式输出的有效波高、均值周期、峰值周期、均值波向、峰值波向、峰值频率、风浪波高、风浪方向、第一涌浪波高、第一涌浪方向等海浪要素进行标准化处理；</p>
+<p>(2) 制作不同时空分辨率、不同海浪要素的网格化产品，全球区域空间水平分辨率达到25公里，近岸区域空间水平分辨率达到4公里；</p>
+<p>(3) 提供全球、区域和近岸的网格化海浪有效波高数据，以作为海浪有效波高融合产品所需的背景场数据；</p>
+<p>(4) 设置模式输出，制作与Jason-3等高度计同步的沿轨海浪有效波高数据集，对比分析模式输出有效波高数据的质量。</p>
+<h3 id="海浪有效波高融合模块"><a href="#海浪有效波高融合模块" class="headerlink" title="海浪有效波高融合模块"></a>海浪有效波高融合模块</h3><p>将海浪同化模式输出的、不同分辨率网格化有效波高数据作为背景场，采用最优插值、多重网格三维变分等融合方法，对卫星遥感海浪有效波高和现场观测有效波高数据进行高质量时空融合。获得高时空分辨率的全球、区域和近岸网格化的海浪有效波高融合产品。用现场观测和再分析海浪有效波高资料对融合有效波高产品进行验证和评估。</p>
+<p><strong>技术路线及软件开发</strong>：</p>
+<p>(1) 获取船舶、台站、浮标等现场观测海浪有效波高数据和模式输出的网格化背景有效波高数据，并进行标准化处理；</p>
+<p>(2) 将多种待融合的现场和偏差订正后的卫星遥感海浪有效波高数据进行处理，针对融合产品不同时空分辨率的要求，进行“瘦数据处理”，形成融合时刻的超级观测场文件；</p>
+<p>(3) 采<strong>用逐步订正、最优插值、多重网格三维变分等融合算法</strong>，将浮标等现场观测和高度计等卫星遥感观测与海浪模式输出的背景有效波高场进行融合，获得高时空分辨率的全球、区域和近岸网格化的有效波高融合产品；</p>
+<p>(4) 自动下载ECMWF等再分析有效波高数据产品，为有效波高融合产品检验评估做数据准备；</p>
+<p>(5) 针对全球、区域和近岸的有效波高融合产品采用不同的时空窗口进行数据匹配，采用均方根误差、相关系数等统计因子，用现场观测和再分析有效波高资料对融合有效波高产品进行验证和评估。</p>
+<h2 id="阅读4：风场融合实施方案word03-doc-全球多源洋面风观测资料融合技术研究-卫星现状–2015"><a href="#阅读4：风场融合实施方案word03-doc-全球多源洋面风观测资料融合技术研究-卫星现状–2015" class="headerlink" title="阅读4：风场融合实施方案word03.doc~~全球多源洋面风观测资料融合技术研究+卫星现状–2015"></a>阅读4：风场融合实施方案word03.doc~~全球多源洋面风观测资料融合技术研究+卫星现状–2015</h2><ul>
+<li><p>2015-08</p>
+</li>
+<li><p><code>↓ 对卫星数据介绍的那是相当的好</code></p>
+</li>
+<li><p><code>↑ 相关机构和学者的数据融合</code></p>
+<blockquote>
+<p><code>找资料的机构方向</code></p>
+</blockquote>
+</li>
+<li><p><code>↑ 常见的融合方法</code></p>
+</li>
+<li><p><code>↑ 最优插值算法的公式</code></p>
+</li>
+</ul>
+<h3 id="一、洋面风融合现状及趋势"><a href="#一、洋面风融合现状及趋势" class="headerlink" title="一、洋面风融合现状及趋势"></a>一、洋面风融合现状及趋势</h3><p><strong>洋面风（Sea surface wind）</strong>是决定海洋和大气之间动量、能量和质量交换的重要因素之一, </p>
+<p><strong>洋面风场</strong>是气象业务中广泛使用的基本要素之一, 在海洋和大气科学的研究中受到广泛关注。</p>
+<ul>
+<li><p>高质量、高时空分辨率的洋面风数据对于影响大气和海洋的<strong>海气相互作用</strong>是至关重要的。</p>
+</li>
+<li><p>洋面风数据可以为海洋模式提供驱动场，</p>
+</li>
+<li><p>在计算海表热通量、湿度等要素时需要洋面风场，</p>
+</li>
+<li><p>同时，洋面风场可以为大气模式提供初始场和对模式结果进行验证。</p>
+</li>
+</ul>
+<h4 id="1-常规数据、再分析数据、卫星数据"><a href="#1-常规数据、再分析数据、卫星数据" class="headerlink" title="1. 常规数据、再分析数据、卫星数据"></a>1. 常规数据、再分析数据、卫星数据</h4><p><strong>获取洋面风的常规手段</strong>主要是</p>
+<ul>
+<li>布设海上浮标、</li>
+<li>建立沿岸和岛屿气象观测系统</li>
+<li>以及海洋调查船走航观测等。</li>
+</ul>
+<p>但是这些常规手段受到海上复杂的海况和天气条件的限制, 也几乎不可能获得大面积的海面风场信息。因此在以往的海洋和大气科学研究中，<strong>再分析资料</strong>成了主要的海面风场资料源。</p>
+<blockquote>
+<p><code>↓ 对卫星数据介绍的那是相当的好~~</code></p>
+</blockquote>
+<p>近年来, <strong>卫星遥感监测方法</strong>的逐步成熟为海面风场的监测提供了新的手段。</p>
+<ul>
+<li>从1987 年7月美国实施国防气象卫星计划(DMSP)以来, 逐步实现了海面风的业务化卫星探测。 到目前为止, 美国有6颗搭载了海面风观测传感器的卫星进行全球海面风的业务观测，其中包括DMSP系列卫星(F08,F10,F11,F13,F14,F15) 装载的专用微波成像仪微波辐射计<strong>SSM/I</strong>、TRMM卫星上装载的微波成像仪TMI、QuikSCAT卫星上装载的新型主动微波遥感仪散射计SeaWinds, 以及美国宇航局的卫星EOSAQUA上的高级微波扫描辐射计AMSR-E。</li>
+<li>欧空局发射的ERS卫星上搭载有主动微波仪器AMI可获取全球的风速和风向数据，自2006年始，欧空局的系列卫星MetOp上搭载了高级散射计ASCAT，至今可获取全球的风场数据。</li>
+<li>中国于2011年8月发射的HY-2卫星上同时载有微波散射计和微波辐射计，可获取全球洋面风场数据。据统计，在6小时的观测时间窗口内，对全球海洋的遥感探测采样率从1987 年的20 % 增长为2004年的 70 % 以上。</li>
+</ul>
+<p>自1978年NASA发射了Seasat卫星以来，载有微波辐射计和微波散射计的海洋卫星列表如<strong>表1</strong>。</p>
+<blockquote>
+<p>现在只用散射计~~</p>
+</blockquote>
+<center>表1 星载微波辐射计和散射</center>
+
+<table>
+<thead>
+<tr>
+<th>卫星</th>
+<th>传感器</th>
+<th>仪器类别</th>
+<th>单位</th>
+<th>服役时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Seasat</td>
+<td>SASS</td>
+<td>scatterometer</td>
+<td>NASA</td>
+<td>1978.06-1978.10</td>
+</tr>
+<tr>
+<td>Seasat</td>
+<td>SMMR</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1978.06-1978.10</td>
+</tr>
+<tr>
+<td>ERS-1</td>
+<td>AMI-SCAT</td>
+<td>scatterometer</td>
+<td>ESA</td>
+<td>1991.07-2000.03</td>
+</tr>
+<tr>
+<td>ERS-2</td>
+<td>AMI-SCAT</td>
+<td>scatterometer</td>
+<td>ESA</td>
+<td>1995.04-2011.09</td>
+</tr>
+<tr>
+<td>ADEOS-1</td>
+<td>NSCAT</td>
+<td>scatterometer</td>
+<td>NASA</td>
+<td>1996.08-1997.06</td>
+</tr>
+<tr>
+<td>QuikSCAT</td>
+<td>SeaWinds</td>
+<td>scatterometer</td>
+<td>NASA</td>
+<td>1999.07- 2009.12</td>
+</tr>
+<tr>
+<td>ADEOS-2</td>
+<td>SeaWinds</td>
+<td>scatterometer</td>
+<td>NASA</td>
+<td>2002.12-2003.08</td>
+</tr>
+<tr>
+<td>ADEOS-2</td>
+<td>AMSR</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>2002.12-2003.08</td>
+</tr>
+<tr>
+<td>DMSP(F08)</td>
+<td>SSM/I</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1987.07-1991.12</td>
+</tr>
+<tr>
+<td>DMSP(F10)</td>
+<td>SSM/I</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1990.12-1997.11</td>
+</tr>
+<tr>
+<td>DMSP(F11)</td>
+<td>SSM/I</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1991.12-2000.05</td>
+</tr>
+<tr>
+<td>DMSP(F13)</td>
+<td>SSM/I</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1995.05-2009.12</td>
+</tr>
+<tr>
+<td>DMSP(F14)</td>
+<td>SSM/I</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1997.05-2008.08</td>
+</tr>
+<tr>
+<td>DMSP(F15)</td>
+<td>SSM/I</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1999.12-</td>
+</tr>
+<tr>
+<td>DMSP(F16)</td>
+<td>SSMIS</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>2003.10-</td>
+</tr>
+<tr>
+<td>DMSP(F17)</td>
+<td>SSMIS</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>2006.12-</td>
+</tr>
+<tr>
+<td>DMSP(F18)</td>
+<td>SSMIS</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>2009.10-</td>
+</tr>
+<tr>
+<td>TRMM</td>
+<td>TMI</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>1997.12-2015.04</td>
+</tr>
+<tr>
+<td>EOSAQUA</td>
+<td>AMSR-E</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>2002.05-2011.10</td>
+</tr>
+<tr>
+<td>GCOM-W1</td>
+<td>AMSR-2</td>
+<td>radiometer</td>
+<td>NASA</td>
+<td>2012.05-</td>
+</tr>
+<tr>
+<td>Coriolis</td>
+<td>WindSat</td>
+<td>polarimetric radiometer</td>
+<td>美国国防部</td>
+<td>2003.01-</td>
+</tr>
+<tr>
+<td>MetOp-1,2,3</td>
+<td>ASCAT</td>
+<td>scatterometer</td>
+<td>ESA</td>
+<td>2006.10-</td>
+</tr>
+<tr>
+<td>HY-2</td>
+<td>KU-RFSCAT</td>
+<td>scatterometer</td>
+<td>CNSA</td>
+<td>2011.08-</td>
+</tr>
+<tr>
+<td>HY-2</td>
+<td>MWRI</td>
+<td>radiometer</td>
+<td>CNSA</td>
+<td>2011.08-</td>
+</tr>
+</tbody></table>
+<p>附部分缩略词：</p>
+<p>ADEOS: Advanced Earth Observing Satellite</p>
+<p>AMI: Active Microwave Instrument</p>
+<p>AMSR-E: Advanced Microwave Scanning Radiometer - Earth Observing System</p>
+<p>ASCAT: Advanced Scatterometer </p>
+<p>CNSA: China National Space Administration</p>
+<p>DMSP: Defense Meteorological Satellite Program</p>
+<p>KU-RFSCAT: Ku-band Rotational Fan-beam Scatterometer</p>
+<p>ERS: European Remote-Sensing Satellite</p>
+<p>MWRI: Microwave Radiometer Imager</p>
+<p>NCAR: National Center for Atmospheric Research </p>
+<p>NCEP: National Center for Environmental Prediction </p>
+<p>SASS: SEASAT-A Scatterometer System</p>
+<p>SMMR: Scanning Multichannel Microwave Radiometer</p>
+<p>SSM/I: Special Sensor Microwave Imager </p>
+<p>SSMIS: Special Sensor Microwave Imager Sounder </p>
+<p>TMI: TRMM Microwave Imager</p>
+<p>TRMM: Tropical Rainfall Measuring Mission.</p>
+<h4 id="2-融合产品及必要性"><a href="#2-融合产品及必要性" class="headerlink" title="2. 融合产品及必要性"></a>2. 融合产品及必要性</h4><p>卫星搭载的<strong>微波散射计</strong>和<strong>扫描微波辐射计</strong>的沿轨数据仍<strong>不能完全覆盖全球海域</strong>，并且大气和海洋环境预报等部门在实际使用卫星遥感数据中通常需要用到全球化网格化的、具有较高的空间和时间分辨率标准数据。为了解决上述问题，<strong>数据融合被认为是非常有效的手段之一</strong>，通过数据融合可以优化遥感信息资源利用实现多源数据的优势互补。</p>
+<blockquote>
+<p><code>QT：数据融合是为了实现获取全球数据的？</code></p>
+</blockquote>
+<p>2009 年 5 月起<strong>美国国家航空航天局 (NASA)</strong> 的物理海洋学分布式档案中心(Physieal Oceanography Distributed Active Archive Center, PODAAC )实施了 “研究用途的地球系统数据记录计划”， 其以多源卫星探测的洋面风资料为基础，采用改进的变分同化方法合成了一种新的高分辨率( 25 km ) 交叉定标多平台卫星探测海面风场资料**(Cross-Calibrated, Multi-Platform ocean surface wind product, CCMP)**。NASA的遥感系统（Remote Sensing Systems，RSS）已经利用各种卫星测风仪器制作了高质量的海面10m处的洋面风场，最高空间分辨率为0.25°，时间分辨率为6小时。</p>
+<p><strong>ECMWF</strong>也以模式数据为背景风场，融合了若干现场和卫星观测风场产品，制作了全球0.25°逐6小时的洋面风产品。</p>
+<p>许多学者在制定高分辨率、网格化的洋面风产品上也付出了许多努力。如<strong>Kako</strong>于2011年利用<strong>NCEP</strong>的再分析风场数据为背景风场，采用最优插值算法，融合了ASCAT散射计的沿轨数据，制作了全球0.25°逐6小时的洋面风数据，但是只提供2009.09至 2011.07的数据下载。</p>
+<blockquote>
+<p><code>↑ 相关机构和学者的数据融合</code></p>
+</blockquote>
+<p>上述网格化融合产品的时空分辨率都较高，但是对我国的HY-2散射计KU-RFSCAT皆未涉猎，而且对于精度较高的ASCAT散射计数据提及的也很少。鉴于此，本项目主要以HY-2散射计KU-RFSCAT和MetOp系列卫星上搭载的ASCAT风场产品为<strong>待融合产品</strong>，以来自NCEP/NCAR的再分析产品<strong>NRA1</strong>(NCEP Reanalysis Average)为<strong>背景风场</strong>，制作高精度的全球0.25°´0.25°逐6小时的洋面风数据。其中NRA1的全球网格分辨率为2.5°´2.5°，数据从1948年1月1日至今，是NOAA的ESRL（Earth System Research Laboratory）用分析/预报模式并执行数据同化得到的数据集。</p>
+<blockquote>
+<p><code>↑ 创新点</code></p>
+</blockquote>
+<h4 id="3-融合方法"><a href="#3-融合方法" class="headerlink" title="3. 融合方法"></a>3. 融合方法</h4><p>数据融合算法主要包括反距离加权算法、克里金插值算法、逐步订正算法、混合分析算法、截断滤波窗的变分分析算法、客观分析算法、三维变分同化分析算法、卡尔曼滤波算法和最优插值算法。</p>
+<ul>
+<li><p><strong>反距离加权法</strong>是目前最常用的空间插值方法**,该方法认为观测点离网格中心点越近, 其值的贡献越大; 距离越远, 贡献越小**。其计算公式为：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305174008.png" style="zoom:70%;">
+
+<p>该方法中观测点到网格中心点的距离是最重要的参数, 它决定融合结果的好坏。</p>
+</li>
+<li><p><strong>克里金插值法</strong>是对空间分布的数据求线性、无偏内插估计的一种方法，它的核心是求取变差函数。其计算公式为</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305174303.png" style="zoom:70%;">
+
+<p>选取适当的权重, 使网格中心点处的插值估计无偏, 并使方差小于任意观测值线性组合的方差。</p>
+<p>研究表明，<strong>球状模型最适合有效波高数据融合</strong>。</p>
+<p>在<strong>求取变差函数</strong>时, 确定基本滞后很重要, 它关系到变差函数的变异性和稳定性。如果卫星散射计的轨道在网格内有交叉点或者轨道非常接近, 这样直接计算得到的基本滞后就很小甚至为零, 最终无法得到正确的理论变差函数。</p>
+</li>
+<li><p><strong>逐步订正算法</strong>由于仅使用当前的观测数据，因此<strong>时间上的记忆性差</strong>；</p>
+<p>逐步订正法是通过用观测值与初猜场之差去订正初猜场，以便得到一个新的初猜场，直到该场十分逼近观测场，即它们的均方差达到最小。其计算公式如下：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305174654.png" style="zoom:70%;">
+
+<p>该方法的关键就是确定初猜场和选择影响半径。有效波高的空间尺度大概为30<del>100km, 初始影响半径至少为该尺度的3</del> 4倍。随着迭代次数的增加初始影响半径应逐渐减小。</p>
+</li>
+<li><p><strong>混合分析算法</strong>也没有时间上的记忆性，且时空分辨率都很低，分析场被严重平滑；</p>
+</li>
+<li><p><strong>统计最优估计算法</strong>和使用截断滤波窗的变分分析算法均选用了包括红外与微波在内的多种卫星遥感数据，空间分辨率高，但在有多种卫星遥感数据时，仅选取其中一种数据则可能给融合结果带入较大的噪声；</p>
+</li>
+<li><p><strong>三维变分同化分析算法</strong>对计算机存储要求低，计算速度快，三维变分同化分析和最优插值算法分析一样，融合结果受到数据分布稀疏的限制；</p>
+</li>
+<li><p><strong>最优插值算法</strong>可看作是<strong>卡尔曼滤波法的简化版</strong>，与卡尔曼滤波法相比，最优插值算法有以下几个方面的特点：</p>
+<ul>
+<li>在误差的计算上，从卡尔曼滤波法的公式看，它的<strong>误差是发展的</strong>，这是卡尔曼滤波法最吸引人的地方，但这一直也是制约着卡尔曼滤波法应用的致命之处，因为它的<strong>计算量很大</strong>，而最优插值算法完全省略了这点，因此最优插值算法减少了很大的计算量，使得其误差变为静止的，</li>
+<li>在最优插值算法的资料选择方面它通常只是<strong>选取分析点附近的资料</strong>来进行分析，这样大大减少了计算量。</li>
+<li>最优插值算法通常只进行<strong>单变量分析</strong>，例如海面风场，</li>
+</ul>
+</li>
+<li><p><strong>时间空间距离加权插值</strong>的优点是公式比较简单特别适用于结点散乱不是网格点的问题。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 常见的融合方法</code></p>
+</blockquote>
+<p>总的来说最优插值算法由于其计算量少，融合的性价比高，因此可以在单变量数据融合、洋面风场融合业务上得到广泛的应用。基于以上考虑，本项目<strong>选用最优插值算法</strong>对洋面风数据进行融合，并且可利用该方法进行业务化。</p>
+<blockquote>
+<p><code>↑ 业务化：最优插值算法</code></p>
+</blockquote>
+<p>最优插值算法由于具备了部分卡尔曼滤波算法的优点并且计算量较小，在数据融合领域倍受青睐。</p>
+<p><strong>最优插值算法的基本公式</strong>为：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305175118.png" style="zoom:70%;">
+
+<p><strong>权函数</strong>由极小化一个误差协方差得到，可由解下面的公式得到：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305175238.png" style="zoom:70%;">
+
+<p>在进行网格化之前，用以下公式对 <em>μ<sup>B</sup></em> 和 <em>μ<sup>O</sup></em> 进行估计</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305175507.png" style="zoom:70%;">
+
+<blockquote>
+<p><code>↑ 最优插值算法的公式</code></p>
+</blockquote>
+<p>本项目拟以 HY-2 散射计 KU-RFSCAT 和 MetOp 系列卫星上搭载的 ASCAT 散射计风场作为数据源、采用最优插值融合算法、结合 NCEP/NCAR 的再分析产品 NRA1 进行洋面风场的数据融合，制作全球逐 6 小时 0.25°×0.25° 的网格化洋面风融合产品，并对融合结果进行验证。</p>
+<h3 id="二、工作目标"><a href="#二、工作目标" class="headerlink" title="二、工作目标"></a>二、工作目标</h3><p>在对星载散射计等洋面风资料进行系统偏差订正的基础上，以NCEP/NCAR的网格化产品NRA1为背景风场，制作高精度的全球逐6小时、0.25°×0.25°的网格化洋面风融合产品，并对融合产品进行验证。</p>
+<h3 id="三、工作内容"><a href="#三、工作内容" class="headerlink" title="三、工作内容"></a>三、工作内容</h3><p>利用国家气象信息中心收集的船舶、浮标、卫星、模式等洋面风资料，开展卫星反演洋面风系统偏差订正以及多源洋面风融合技术研究，开发适合制作全球高分辨率(0.25°×0.25°，6小时)洋面风融合产品的<strong>融合技术模块</strong>。</p>
+<p>评估多源洋面风观测资料的质量，制定订正多卫星遥感反演的洋面风资料的系统偏差订正方案，以及实现适合制作融合卫星、现场观测的高分辨洋面风产品的融合方法，<strong>研发针对全球洋面风多源观测数据的融合技术模块</strong>。</p>
+<h3 id="四、拟采取的方法和技术路线"><a href="#四、拟采取的方法和技术路线" class="headerlink" title="四、拟采取的方法和技术路线"></a>四、拟采取的方法和技术路线</h3><p>洋面风场以ASCAT散射计、HY-2散射计数据为主，结合AMSR-E等微波辐射计数据进行。散射计数据基于数据编辑准则进行海面风矢量数据质量控制。结合实测数据，对散射计海面风场数据进行检验与修正。将经修正后的不同遥感数据源得出的洋面风场利用最优插值方法进行数据融合，得到全球的洋面风场参数。在此基础上，对融合后的洋面风场产品进行验证，最终得到洋面风场的时空分布图。具体技术流程如下图所示：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305180029.png" style="zoom:70%;">
+
+<p>具体实施步骤如下：</p>
+<p>1、在进行散射计等风场资料融合之前，需要对待融合数据进行质量控制，去除陆上以及冰上的点，剔除异常数据。</p>
+<blockquote>
+<p>标记、阈值，有公式的尽量用公式~~</p>
+</blockquote>
+<p>2、在质量控制完成之后，还需要利用浮标数据对散射计等数据进行验证和校准。一般来说，散射计数据的验证研究致力于获得相关的散射计和浮标观测的数据集，进而找出散射计数据最符合浮标数据的近似调整。要建立一个可接受的时间窗口，即一个最大的时间偏差，在这个偏差内散射计和浮标被认为是可比较的。相似的，对于散射计轨道和浮标的位置，要建立一个可接受的空间窗口。基于对洋面风场的时空变化的评估，普遍的一个准则是：空间窗口取为50km，时间窗口为30分钟。把浮标数据作为真值，校正过程是在浮标数据之上回归散射计数据。</p>
+<p>3、获取NCEP/NCAR的再分析产品NRA1。此产品的网格分辨率为2.5°×2.5°，在经度和纬度方向通过线性插值，把网格大小插值为0.25°×0.25°。对于陆地和冰上的格点数据进行识别，对异常数据进行处理。考虑到风场是有两个分量组成的矢量，进行插值时需要对两个分量单独进行插值，这样就保留了风向的信息。</p>
+<p>4、将插值后的NRA1作为背景风场，通过最优插值算法，融合ASCAT和HY-2散射计风场资料，得到全球0.25°×0.25°网格风场数据。对风场的两个分量分别进行最优插值，最终得到的是网格化的洋面风场的U、V分量场。</p>
+<p>5、基于浮标数据，对融合产品进行验证和评估，给出全球洋面风场的时空分布图。</p>
+<h3 id="五、预期成果"><a href="#五、预期成果" class="headerlink" title="五、预期成果"></a>五、预期成果</h3><p>1、卫星反演洋面风系统偏差订正模块程序**(Fortran)**；</p>
+<p>2、多源洋面风资料融合算法说明及模块程序**(Fortran)**；</p>
+<p>3、生成全球区域的逐6小时、0.25°×0.25°洋面风实验融合产品(NetCDF)，并对融合产品进行验证和质量评估。</p>
+<h3 id="六、工作计划及阶段考核指标"><a href="#六、工作计划及阶段考核指标" class="headerlink" title="六、工作计划及阶段考核指标"></a>六、工作计划及阶段考核指标</h3><h4 id="1-工作计划"><a href="#1-工作计划" class="headerlink" title="1.工作计划"></a>1.工作计划</h4><p>2015年8月~2015年12月：NDBC浮标等实测风场数据收集，ASCAT、HY-2散射计等基础风场资料收集与质量控制，NCEP/NCAR再分析风场数据收集；</p>
+<p>2016年1月~2016年6月：利用浮标实测风场资料对待融合的卫星风场资料进行评估与偏差订正，进行风场融合算法研究；</p>
+<p>2016年7月~2016年12月：根据最优插值风场融合算法，制作逐6小时、0.25°的全球洋面风场数据产品，产品时间周期为2011年8月-2014年8月；</p>
+<p>2017年1月：形成各项研究报告与成果，提交程序与融合产品。</p>
+<h4 id="2-阶段性考核指标"><a href="#2-阶段性考核指标" class="headerlink" title="2.阶段性考核指标"></a>2.阶段性考核指标</h4><p>2015年12月：完成基础信息资料收集，完成散射计风场的质量控制；</p>
+<p>2016年6月：完成卫星散射计风场的验证与偏差订正，完成风场融合算法的研究；</p>
+<p>2016年12月：完成全球逐6小时、0.25°的洋面风场数据产品制作；</p>
+<p>2017年1月：完成项目任务，达到任务书规定的考核指标要求。</p>
+<h2 id="阅读5：RemoteSensors遥感仪器综述-doc"><a href="#阅读5：RemoteSensors遥感仪器综述-doc" class="headerlink" title="阅读5：RemoteSensors遥感仪器综述.doc"></a>阅读5：RemoteSensors遥感仪器综述.doc</h2><h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><p>Remote sensing instruments are of two primary types—<strong>passive and active</strong>.</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/user-resources/remote-sensors#ed-passive-sensors">Passive sensors</a> detect natural energy (radiation) that is emitted or reflected by the object or scene being observed. Reflected sunlight is the most common source of radiation measured by passive sensors.</li>
+<li><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/user-resources/remote-sensors#ed-active-sensors">Active sensors</a>, on the other hand, provide their own source of energy to illuminate the objects they observe. An active sensor emits radiation in the direction of the target to be investigated. The sensor then detects and measures the radiation that is reflected or backscattered from the target.</li>
+</ul>
+<blockquote>
+<p><code>↑ passive sensor 无源传感器，active sensor 有源传感器</code></p>
+<p><code>↑ 介绍有源和无源传感器https://zhidao.baidu.com/question/1540081867768312507.html</code></p>
+</blockquote>
+<h3 id="Passive-sensors"><a href="#Passive-sensors" class="headerlink" title="Passive sensors"></a>Passive sensors</h3><p>Passive sensors include different types of <strong>radiometers</strong> and <strong>spectrometers</strong>. Most passive systems used in remote sensing applications operate <strong>in the visible, infrared, thermal infrared, and microwave portions of the electromagnetic spectrum</strong>. </p>
+<p>Passive remote sensors include the following:</p>
+<ul>
+<li><p><strong>Accelerometer</strong>—An instrument that measures acceleration (change in velocity per unit time). There are two general types of accelerometers. One measures translational accelerations (changes in linear motions in one or more dimensions), and the other measures angular accelerations (changes in rotation rate per unit time).</p>
+</li>
+<li><p><strong>Radiometer</strong>—An instrument that quantitatively measures the intensity of electromagnetic radiation in some bands within the spectrum. Usually, a radiometer is further identified by the portion of the spectrum it covers; for example, visible, infrared, or microwave.</p>
+</li>
+<li><p><strong>Imaging radiometer</strong>—A radiometer that has a scanning capability to provide a two-dimensional array of pixels from which an image may be produced. Scanning can be performed mechanically or electronically by using an array of detectors.</p>
+</li>
+<li><p><strong>Spectrometer</strong>—A device that is designed to detect, measure, and analyze the spectral content of incident electromagnetic radiation. Conventional imaging spectrometers use gratings or prisms to disperse the radiation for spectral discrimination.</p>
+</li>
+<li><p><strong>Spectroradiometer</strong>—A radiometer that measures the intensity of radiation in multiple wavelength bands (i.e., multispectral). Many times the bands are of high-spectral resolution, designed for remotely sensing specific geophysical parameters</p>
+</li>
+<li><p><strong>Hyperspectral radiometer</strong>—An advanced multispectral sensor that detects hundreds of very narrow spectral bands throughout the visible, near-infrared, and mid-infrared portions of the electromagnetic spectrum. This sensor’s very high spectral resolution facilitates fine discrimination between different targets based on their spectral response in each of the narrow bands.</p>
+</li>
+<li><p><strong>Sounder</strong>—An instrument that measures vertical distributions of atmospheric parameters such as temperature, pressure, and composition from multispectral information.</p>
+</li>
+</ul>
+<p>The following table lists and describes many of the passive sensors whose data are supported by <strong>EOSDIS</strong>. Some of these sensors may overlap categories.</p>
+<table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Type</th>
+<th>Platform</th>
+<th>Data Center</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Single Channel/Total Power Radiometers and Imagers</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ACRIM II</td>
+<td>Total power radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/uars/index.html">UARS</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>Measures total solar irradiance.</td>
+</tr>
+<tr>
+<td>ACRIM III</td>
+<td>Total power radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/acrimsat/">ACRIMSAT</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>Measures total solar irradiance.</td>
+</tr>
+<tr>
+<td><code>TIM</code></td>
+<td>Total power radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://lasp.colorado.edu/sorce/index.htm">SORCE</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a></td>
+<td>Measures total solar irradiance.</td>
+</tr>
+<tr>
+<td><code>LIS</code></td>
+<td>Imager</td>
+<td><a target="_blank" rel="noopener" href="http://trmm.gsfc.nasa.gov/">TRMM</a></td>
+<td><a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>Detects intracloud and cloud-to-ground lightning,  day and night.</td>
+</tr>
+<tr>
+<td><code>WFC</code></td>
+<td>Wide Field Camera</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/calipso/main/index.html">CALIPSO</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>Fixed, nadir-viewing imager with a single spectral  channel covering the 620-270 nm region.</td>
+</tr>
+<tr>
+<td><strong>Multispectral  Instruments</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AMPR</td>
+<td>Microwave radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/centers/dryden/research/AirSci/ER-2/">ER-2</a> and<a target="_blank" rel="noopener" href="http://www.nasa.gov/centers/dryden/research/AirSci/DC-8/">DC-8</a></td>
+<td><a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>Cross-track scanning total power microwave  radiometer with four channels centered at 10.7, 19.35, 37.1 and 85.5 GHz.  (FIRE ACE, Teflun-B, TRMM-LBA, CAMEX-4. TCSP, TC4 projects)</td>
+</tr>
+<tr>
+<td>AMSR-E</td>
+<td>Multichannel microwave radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://aqua.nasa.gov/">Aqua</a></td>
+<td><a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC   DAAC</a>   <a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>Measures precipitation, oceanic water vapor, cloud  water, near-surface wind speed, sea and land surface temperature, soil  moisture, snow cover, and sea ice. Provides spatial resolutions of 5.4 km, 12 km, 21   km, 25 km,  38 km, 56 km, and 0.25 deg resolution.</td>
+</tr>
+<tr>
+<td><code>ASTER</code></td>
+<td>Multispectral radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/terra/index.html">Terra</a></td>
+<td><a target="_blank" rel="noopener" href="https://lpdaac.usgs.gov/">LP DAAC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Measures surface radiance, reflectance, emissivity,  and temperature. Provides spatial resolutions of 15 m, 30 m,  and 90 m.</td>
+</tr>
+<tr>
+<td>AVHRR</td>
+<td>Multispectral radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://science.nasa.gov/missions/noaa/">NOAA/   POES</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a>   <a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC DAAC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a>   <a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Has four or six bands, depending on platform.  Telemetried resolutions are 1.1   km (HRPT data) and 4 km  (Pathfinder V5 and GAC data). 5km,  25 km spatial  resolution.</td>
+</tr>
+<tr>
+<td><code>CERES</code></td>
+<td>Broadband scanning radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aqua/index.html">Aqua</a>   <a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/terra/index.html">Terra</a>   <a target="_blank" rel="noopener" href="http://trmm.gsfc.nasa.gov/">TRMM</a>   <a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/NPP/main/index.html">NPP</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>Has four to six channels (shortwave, longwave,  total). Measures atmospheric and surface energy fluxes. Provides 20 km resolution at nadir.</td>
+</tr>
+<tr>
+<td>IIR</td>
+<td>Imaging Infrared Radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/calipso/main/index.html">CALIPSO</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>Nadir-viewing, non-scanning imager having a 64 km swath with a pixel size of 1 km. Provides measurements at three  channels in the thermal infrared window region at 8.7 mm, 10.5 mm, and 12.0 mm.</td>
+</tr>
+<tr>
+<td><code>MAS</code></td>
+<td>Imaging spectrometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/centers/dryden/research/AirSci/ER-2/">NASA ER-2   aircraft</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a>   <a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a>   <a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Has 50 spectral bands. Provides spatial resolution  of 50 m at typical flight  altitudes.</td>
+</tr>
+<tr>
+<td>MISR</td>
+<td>Imaging spectrometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/terra/index.html">Terra</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Obtains precisely calibrated images in four  spectral bands, at nine different angles, to provide aerosol, cloud, and land  surface data. Provides spatial resolution of 250 m to 1.1   km.</td>
+</tr>
+<tr>
+<td><code>MODIS</code></td>
+<td>Imaging spectroradiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aqua/index.html">Aqua</a>   <a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/terra/index.html">Terra</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a>   <a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a>   <a target="_blank" rel="noopener" href="https://lpdaac.usgs.gov/">LP DAAC</a>   <a target="_blank" rel="noopener" href="https://ladsweb.nascom.nasa.gov/">LAADS</a>   <a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC DAAC</a>   <a target="_blank" rel="noopener" href="http://oceancolor.gsfc.nasa.gov/">OB.DAAC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a>   <a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Measures many environmental parameters (ocean and  land surface temperatures, fire products, snow and ice cover, vegetation  properties and dynamics, surface reflectance and emissivity, cloud and  aerosol properties, atmospheric temperature and water vapor, ocean color and  pigments, and ocean biological properties). Provides moderate spatial  resolutions of 250 m  (bands 1 and 2), 500 m  (bands 3-7), and 1 km  (bands 8-36).</td>
+</tr>
+<tr>
+<td>SSM/I</td>
+<td>Multispectral microwave radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.ngdc.noaa.gov/dmsp/index.html">DMSP</a></td>
+<td><a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a>   <a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a>   <a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC DAAC</a>   <a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Has seven channels and four frequencies. Measures  atmospheric, ocean and terrain microwave brightness temperatures which are  used to derive ocean near-surface wind speed, atmospheric integrated water  vapor and cloud/rain liquid water content sea ice extent and concentration.</td>
+</tr>
+<tr>
+<td>SMMR</td>
+<td>Multispectral microwave radiometer</td>
+<td><a target="_blank" rel="noopener" href="https://nssdc.gsfc.nasa.gov/nmc/spacecraftDisplay.do?id=1978-098A">Nimbus-7</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a>   <a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a>   <a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC DAAC</a>   <a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Ten channels. Measured sea surface temperatures,  ocean near-surface winds, water vapor and cloud liquid water content, sea ice  extent, sea ice concentration, snow cover, snow moisture, rainfall rates, and  differential of ice types.</td>
+</tr>
+<tr>
+<td>TMI</td>
+<td>Multispectral Microwave Radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://trmm.gsfc.nasa.gov/">TRMM</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a>   <a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>TMI measures the intensity of radiation at five  separate frequencies: 10.7, 19.4, 21.3, 37, 85.5 GHz. TMI measures microwave  brightness temperatures, water vapor, cloud water, and rainfall intensity.</td>
+</tr>
+<tr>
+<td><strong>Ranging Instrument</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ACC</td>
+<td>Accelerometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.jpl.nasa.gov/missions/details.php?id=5882">GRACE</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>The Onera SuperSTAR Accelerometer measures the  non-gravitational forces acting on the GRACE satellites.</td>
+</tr>
+<tr>
+<td><strong>Hyperspectral Instruments</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>AVIRIS</code></td>
+<td>Imaging spectrometer</td>
+<td>Aircraft</td>
+<td><a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Has 224 contiguous channels, approximately 10 nm  wide. Measurements are used to derive water vapor, ocean color, vegetation  classification, mineral mapping, and snow and ice cover (BOREAS Project).</td>
+</tr>
+<tr>
+<td><code>SOLSTICE</code></td>
+<td>Spectrometer</td>
+<td><a target="_blank" rel="noopener" href="http://lasp.colorado.edu/sorce/index.htm">SORCE</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a></td>
+<td>Measures the solar spectral irradiance of the total  solar disk in the ultraviolet wavelengths from 115 to 430 nm.</td>
+</tr>
+<tr>
+<td><strong>Polarimetric Instruments</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>POLDER</code></td>
+<td>Polarimeter</td>
+<td>Aircraft</td>
+<td><a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Measures the polarization and the directional and  spectral characteristics of the solar light reflected by aerosols, clouds,  and the Earth’s surface (BOREAS Project).</td>
+</tr>
+<tr>
+<td>PSR</td>
+<td>Microwave polarimeter</td>
+<td>Aircraft</td>
+<td><a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>Measures wind speed and direction (CAMEX-3 Project).</td>
+</tr>
+<tr>
+<td><strong>Sounding Instruments</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>AIRS</code></td>
+<td>Sounder</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aqua/index.html">Aqua</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a></td>
+<td>Measures air temperature, humidity, clouds, and  surface temperature. Provides spatial resolution of ~13.5 km in the IR channels and ~2.3 km in the visible. Swath retrieval  products are at 50 km  resolution.</td>
+</tr>
+<tr>
+<td>AMSU</td>
+<td>Sounder</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aqua/index.html">Aqua</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC </a>   <a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>Has 15 channels. Measures temperature profiles in  the upper atmosphere. Has a cloud filtering capability for tropospheric  temperature observations. Provides spatial resolution of 40 km at nadir.</td>
+</tr>
+<tr>
+<td>HAMSR</td>
+<td>Sounder</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/centers/dryden/research/AirSci/DC-8/">DC-8</a></td>
+<td><a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>Measures vertical profiles of temperature, water  vapor, from the surface to 100mb in 2-4 km  layers. (CAMEX-4, NAMMA projects)</td>
+</tr>
+<tr>
+<td>HIRDLS</td>
+<td>Sounder</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aura/main/index.html">Aura</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a></td>
+<td>Measures infrared emissions at the Earth’s limb in  21 channels to obtain profiles of temperature, ozone, CFCs, various other  gases affecting ozone chemistry, and aerosols at 1 km vertical resolution. In addition, HIRDLS  measures the location of polar stratospheric clouds.</td>
+</tr>
+<tr>
+<td><code>MLS</code></td>
+<td>Sounder</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aura/main/index.html">Aura</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a></td>
+<td>Five broad band radiometers and 28 spectrometers  measure microwave thermal emission from the limb of Earth’s atmosphere to  derive profiles of ozone, SO2, N2O, OH and other atmospheric gases, temperature,  pressure, and cloud ice.</td>
+</tr>
+<tr>
+<td><code>MOPITT</code></td>
+<td>Sounder</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/terra/index.html">Terra</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC </a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Measures carbon monoxide and methane in the  troposphere. Is able to collect data under cloud-free conditions. Provides  horizontal resolution of ~22   km and vertical resolution of ~4 km.</td>
+</tr>
+<tr>
+<td><code>OMI</code></td>
+<td>Multispectral radiometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aura/main/index.html">Aura</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a></td>
+<td>Has 740 wavelength bands in visible and  ultraviolet. Measures total ozone and profiles of ozone, N2O, SO2, and  several other chemical species.</td>
+</tr>
+<tr>
+<td>TES</td>
+<td>Imaging Spectrometer</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/aura/main/index.html">Aura</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>High-resolution imaging infrared Fourier-transform  spectrometer that operates in both nadir and limb-sounding modes. Provides  profile measurements of ozone, water vapor, carbon monoxide, methane, nitric  oxide, nitrogen dioxide, nitric acid carbon dioxide, and ammonia.</td>
+</tr>
+</tbody></table>
+<h3 id="Active-sensors"><a href="#Active-sensors" class="headerlink" title="Active sensors"></a>Active sensors</h3><p>The majority of active sensors operate in the microwave portion of the electromagnetic spectrum, which makes them able to penetrate the atmosphere under most conditions. An active technique views the target from either end of a baseline of known length. The change in apparent view direction (parallax) is related to the absolute distance between the instrument and target.</p>
+<ul>
+<li><p>Radar—An active radio detection and ranging sensor that provides its own source of electromagnetic energy. An active radar sensor, whether airborne or spaceborne, emits microwave radiation in a series of pulses from an antenna. When the energy reaches the target, some of the energy is reflected back toward the sensor. This backscattered microwave radiation is detected, measured, and timed. The time required for the energy to travel to the target and return back to the sensor determines the distance or range to the target. By recording the range and magnitude of the energy reflected from all targets as the system passes by, a two-dimensional image of the surface can be produced.</p>
+</li>
+<li><p>Ranging Instrument—A device that measures the distance between the instrument and a target object. Radars and altimeters work by determining the time a transmitted pulse (microwaves or light) takes to reflect from a target and return to the instrument. Another technique employs identical microwave instruments on a pair of platforms. Signals are transmitted from each instrument to the other, with the distance between the two determined from the difference between the received signal phase and transmitted (reference) phase. These are examples of active techniques. An active technique views the target from either end of a baseline of known length. The change in apparent view direction (parallax) is related to the absolute distance between the instrument and target.</p>
+</li>
+<li><p>Scatterometer—A high-frequency microwave radar designed specifically to measure backscattered radiation. Over ocean surfaces, measurements of backscattered radiation in the microwave spectral region can be used to derive maps of surface wind speed and direction.</p>
+</li>
+<li><p>Lidar—A light detection and ranging sensor that uses a laser (light amplification by stimulated emission of radiation) radar to transmit a light pulse and a receiver with sensitive detectors to measure the backscattered or reflected light. Distance to the object is determined by recording the time between transmitted and backscattered pulses and by using the speed of light to calculate the distance traveled.</p>
+</li>
+<li><p>Laser altimeter—An instrument that uses a lidar to measure the height of the platform (spacecraft or aircraft) above the surface. The height of the platform with respect to the mean Earth’s surface is used to determine the topography of the underlying surface.</p>
+</li>
+<li><p>Sounder—An instrument that measures vertical distribution of precipitation and other atmospheric characteristics such as temperature, humidity, and cloud composition.</p>
+</li>
+</ul>
+<p>The following table lists and describes many of the active sensors whose data are supported by EOSDIS. Some of these sensors may overlap categories.</p>
+<table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Type</th>
+<th>Platform</th>
+<th>Data Center</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Altimeters -  Radar and Laser (Lidar)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ALT-A, -B</td>
+<td>Radar altimeter</td>
+<td><a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/topex-poseidon/">TOPEX/ Poseidon</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Dual-frequency altimeter that measures height of  the satellite above the sea (satellite range), wind speed, wave height, and  ionospheric correction.</td>
+</tr>
+<tr>
+<td>CALIOP</td>
+<td>Cloud and Aerosol Lidar</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/mission_pages/calipso/main/index.html">CALIPSO</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>Two-wavelength polarization-sensitive lidar that  provides high-resolution vertical profiles of aerosols and clouds.</td>
+</tr>
+<tr>
+<td>GLAS</td>
+<td>Laser altimeter</td>
+<td><a target="_blank" rel="noopener" href="http://icesat.gsfc.nasa.gov/">ICESat</a></td>
+<td><a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC DAAC</a></td>
+<td>The main objective is to measure ice sheet  elevations and changes in elevation through time. Secondary objectives  include measurement of cloud and aerosol height profiles, land elevation and  vegetation cover, and sea ice thickness.</td>
+</tr>
+<tr>
+<td>Poseidon-1</td>
+<td>Radar altimeter</td>
+<td><a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/topex-poseidon/">TOPEX/Poseidon</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Single-frequency altimeter that measures height of  the satellite above the sea (satellite range), wind speed, and wave height.</td>
+</tr>
+<tr>
+<td>Poseidon-2</td>
+<td>Radar altimeter</td>
+<td><a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/jason-1/">Jason-1</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Measures sea level, wave height, wind speed, and  ionospheric correction.</td>
+</tr>
+<tr>
+<td>Scatterometers</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NSCAT</td>
+<td>Radar scatterometer</td>
+<td><a target="_blank" rel="noopener" href="http://science.nasa.gov/missions/adeos/">ADEOS-I</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Dual Fan-Beam Ku Band that measures ocean vector  winds at a nominal grid resolution of 25   km.</td>
+</tr>
+<tr>
+<td>SASS</td>
+<td>Radar scatterometer</td>
+<td><a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/seasat-1/">Seasat</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Dual Fan-Beam Ku Band that measures ocean vector  winds at a nominal grid resolution of 25   km.</td>
+</tr>
+<tr>
+<td>SeaWinds</td>
+<td>Radar scatterometer</td>
+<td><a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/quikscat/">QuikSCAT</a><a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/seawinds/">ADEOS-II</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DAAC</a></td>
+<td>Dual Pencil-Beam Ku Band that measures ocean vector  winds at a nominal grid resolution of 25   km.</td>
+</tr>
+<tr>
+<td>Imaging  Radar/SAR</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SAR</td>
+<td>Synthetic aperature radar</td>
+<td>ERS-1   ERS-2   JERS-1   <a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/radarsat/">RADARSAT-1</a>   PALSAR   UAVSAR</td>
+<td><a target="_blank" rel="noopener" href="http://www.asf.alaska.edu/program/sdc">ASF DAAC</a>   <a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC DAAC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Provides high-resolution surface imagery at 7 to 240 m.   Multiple polarizations are utilized by some SAR instruments.</td>
+</tr>
+<tr>
+<td>Sounding Instruments</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CLS</td>
+<td>Lidar</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/centers/dryden/research/AirSci/ER-2/">ER-2</a></td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a></td>
+<td>Determines vertical cloud structure. (FIRE  Project).</td>
+</tr>
+<tr>
+<td>LASE</td>
+<td>Lidar</td>
+<td><a target="_blank" rel="noopener" href="http://www.nasa.gov/centers/dryden/research/AirSci/DC-8/">DC-8</a></td>
+<td><a target="_blank" rel="noopener" href="http://ghrc.msfc.nasa.gov/">GHRC DAAC</a></td>
+<td>Measures water vapor, aerosols, and clouds  throughout the troposphere (CAMEX-4, TCSP, NAMMA projects).</td>
+</tr>
+<tr>
+<td>PR</td>
+<td>Phased-array radar</td>
+<td><a target="_blank" rel="noopener" href="http://trmm.gsfc.nasa.gov/">TRMM</a></td>
+<td><a target="_blank" rel="noopener" href="http://disc.sci.gsfc.nasa.gov/">GES DISC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Measures 3-D distribution of rain and ice. Provides  horizontal resolution of 250   m and vertical resolution of 5 km.</td>
+</tr>
+<tr>
+<td>VIL</td>
+<td>Lidar</td>
+<td>Ground</td>
+<td><a target="_blank" rel="noopener" href="http://eosweb.larc.nasa.gov/">ASDC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
+<td>Determines vertical cloud structure (FIFE, FIRE and BOREAS Projects).</td>
+</tr>
+<tr>
+<td>Ranging Instrument</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>KBR</td>
+<td>Ranging Instrument</td>
+<td><a target="_blank" rel="noopener" href="http://www.jpl.nasa.gov/missions/details.php?id=5882">GRACE</a></td>
+<td><a target="_blank" rel="noopener" href="http://podaac.jpl.nasa.gov/">PO.DACC</a></td>
+<td>The dual-frequency KBR instrument measures the  range between the GRACE satellites to extremely high precision.</td>
+</tr>
+</tbody></table>
+<h2 id="待了解：earthdata-nasa-gov-learn-remote-sensors"><a href="#待了解：earthdata-nasa-gov-learn-remote-sensors" class="headerlink" title="待了解：earthdata.nasa.gov/learn/remote-sensors"></a>待了解：earthdata.nasa.gov/learn/remote-sensors</h2><ul>
+<li><p>earthdata网站待了解</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#ed-passive-sensors">https://earthdata.nasa.gov/learn/remote-sensors#ed-passive-sensors</a></p>
+</li>
+</ul>
+<h3 id="Overview-1"><a href="#Overview-1" class="headerlink" title="Overview"></a>Overview</h3><p>Remote sensing instruments are of two primary types:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors/active-sensors">Active sensors</a>, provide their own source of energy to illuminate the objects they  observe. An active sensor emits radiation in the direction of the target to be investigated. The sensor then detects and measures the radiation  that is reflected or backscattered from the target.</li>
+<li><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors/passive-sensors">Passive sensors</a>, on the other hand, detect natural energy (radiation) that is emitted or reflected by the object or scene being observed. Reflected sunlight is  the most common source of radiation measured by passive sensors.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305201412.png"></p>
+<center>Illustration showing the difference between passive versus  active sensors. Credit: NASA Applied Sciences Remote Sensing Training  Program.</center>
+
+<h3 id="Table-sensors"><a href="#Table-sensors" class="headerlink" title="Table sensors"></a>Table sensors</h3><p>The following tables list and describe many of the active and passive sensors whose data are supported by EOSDIS.  Some of these sensors may  overlap categories. They are listed by <strong><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#current">current</a></strong>, <strong><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#future">future</a></strong>, and <strong><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#historic">historic</a></strong> missions.</p>
+<p>Search the remote sensors tables by clicking in the search boxes  below and entering in a keyword term, such as a DAAC (ASDC, NSIDC,  SEDAC, etc), a platform (ABoVE, CALIPSO, LIS ISS, etc), an instrument  (GRACE, MODIS, TROPOMI, etc) or science term (surface mass, snow cover,  tomography, etc). The search results will narrow down the table entries  applicable to the search keyword entered.</p>
+<h3 id="Current-Missions"><a href="#Current-Missions" class="headerlink" title="Current Missions"></a>Current Missions</h3><h3 id="Future-Missions"><a href="#Future-Missions" class="headerlink" title="Future Missions"></a>Future Missions</h3><h3 id="Historic-Missions"><a href="#Historic-Missions" class="headerlink" title="Historic Missions"></a>Historic Missions</h3><h2 id="阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和-NWP-模拟风与浮标数据的比较-2014"><a href="#阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和-NWP-模拟风与浮标数据的比较-2014" class="headerlink" title="阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和 NWP 模拟风与浮标数据的比较-2014"></a>阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和 NWP 模拟风与浮标数据的比较-2014</h2><ul>
+<li><p>英文名：Comparison of reanalyzed, analyzed, satellite- retrieved and NWP modelled winds with buoy data along the Iberian Peninsula coast  </p>
+</li>
+<li><p>2014</p>
+</li>
+<li><p>期刊：《Remote Sensing of Environment》，</p>
+<blockquote>
+<p>(2021)复合影响因子：10</p>
+<p>1区</p>
+</blockquote>
+</li>
+<li><p>作者：D. Carvalho，等</p>
+</li>
+<li><p>机构：CESAM, Department of Physics, <strong>University of Aveiro</strong>, Campus Universitário de Santiago, 3810-193 Aveiro, Portugal</p>
+</li>
+<li><p>创新点：</p>
+<p>* </p>
+</li>
+<li><p>good</p>
+<ul>
+<li><p><code>↑ 四种数据：卫星、再分析、分析、WRF model，good</code></p>
+</li>
+<li><p><code>↑ WRF 模拟的海上风是现场测量海上风数据的最佳替代方案</code></p>
+<p><code>↑ CCMP 和 IFREMER-BWF 可以被认为是 WRF 高分辨率模拟的最佳替代方案</code></p>
+<p><code>↑ NCEP-CFSR 再分析或 NCEP-GFS 分析数据可以作为 WRF 波能评估的替代方案</code></p>
+</li>
+<li><p><code>↑ 所有数据库的一个共同特点是，它们都高估了低风速而低估了强风</code></p>
+</li>
+<li><p><code>↑ 空间分辨率对结果的影响</code></p>
+</li>
+<li><p><code>↑ 本研究中提供的结论和结果可以放心地考虑到其他地区，特别是沿海地区</code></p>
+</li>
+<li><p>；</p>
+</li>
+<li><p><code>↑ 洋面风的价值：建模、风能</code></p>
+</li>
+<li><p><code>↑ 卫星数据的缺点</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Abstract</strong></p>
+<p>Offshore wind data derived from the below were compared to in situ measurements, in order to assess which one of these products is the best alternative to in situ offshore measured wind data.</p>
+<ul>
+<li>satellite measurements (CCMP, QuikSCAT, NCDC Blended Sea Winds and IFREMER Blended Wind Fields), </li>
+<li>reanalyses (NCEP-CFSR, ERA-Interim, NASA-MERRA and NCEP-RII), </li>
+<li>analyses (NCEP-FNL and NCEP-GFS),</li>
+<li>WRF modelled</li>
+</ul>
+<p>Wind speed and direction from these products were compared to measurements collected at five buoys moored along the Iberian Peninsula Atlantic coast.</p>
+<blockquote>
+<p><code>↑ 四种数据：卫星、再分析、分析、WRF model，good</code></p>
+</blockquote>
+<p>Results show that </p>
+<ul>
+<li><p><strong>WRF modelled offshore winds</strong> are <strong>the best alternative</strong> to in situ measured offshore wind data, showing the highest temporal accuracy (the ability in representing the wind speed and direction at a given time instant) and lowest errors in terms of offshore wind power flux estimations. </p>
+</li>
+<li><p>However, offshore wind data taken from CCMP shows the lowest errors in terms of the mean wind speeds and, together with IFREMER-BWF, the best wind temporal accuracy after WRF simulation. </p>
+<p>Therefore, in general <strong>CCMP and IFREMER-BWF can be considered as the best alternatives to WRF</strong> high resolution modelled offshore winds, if the latter is not available. </p>
+</li>
+<li><p>Specifically for offshore wind energy resource assessment, NCEP-CFSR reanalysis or NCEP-GFS analysis data can also be used with confidence as an alternative to WRF modelled data, showing better wind power flux estimates than CCMP and IFREMER-BWF.</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ WRF 模拟的海上风是现场测量海上风数据的最佳替代方案</code></p>
+<p><code>↑ CCMP 和 IFREMER-BWF 可以被认为是 WRF 高分辨率模拟的最佳替代方案</code></p>
+<p><code>↑ NCEP-CFSR 再分析或 NCEP-GFS 分析数据可以作为 WRF 波能评估的替代方案</code></p>
+</blockquote>
+<p>Despite the best performances of WRF high resolution offshore winds, such modelling tasks require considerable computational resources and time to obtain quality results. Therefore, the value of satellite-derived wind data should not be disregarded. These remotely sensed offshore wind measurements should be seriously considered when searching for alternative sources of wind information for ocean areas, in particular for open ocean areas where they have their strength.</p>
+<blockquote>
+<p><code>↑ 不应忽视卫星风数据的价值。在为海洋区域寻找替代的风信息来源时，应认真考虑这些遥感海上风测量，</code></p>
+</blockquote>
+<p><strong>Acknowledgement</strong></p>
+<p>D. Carvalho was supported by the Portuguese Foundation for Science and Technology (F.C.T.) Ph.D grant SFRH/BD/73070/2010. This work was partially financed by Xunta de Galicia under the project “Programa de Consolidación e Estructuración de Unidades de Investigación Competitivas (Grupos de Referencia Competitiva)”, co-funded by the European Regional Development Fund (FEDER). The authors would like to express their gratitude to all the climate, meteorological and oceanographic institutions referred in the text, for providing the data used in this work.</p>
+<p><strong>4 Conclusions</strong></p>
+<p>This study evaluates and compares offshore wind data derived from satellites (Cross-Calibrated Multi-Platform ocean wind vectors, QuikSCAT scaterometter, NCDC Blended Sea Winds and IFREMER Blended Wind Fields), reanalyses (NCEP-CFSR, ERA-Interim, NASA-MERRA and NCEP-RII), analyses (NCEP-FNL and NCEP-GFS) and WRF modelled offshore winds, aiming to determine which one of these databases offers the offshore wind data closest to measurements collected by buoys moored offshore the Iberian Peninsula Atlantic coast. The findings presented here can be of great value for climate, oceanic, meteorological and offshore wind energy resource assessment applications that focus on ocean areas where in situ measured wind data is either not available or is insufficient and, therefore, alternative sources of offshore wind data have to be considered.</p>
+<p>The results presented in this study show that WRF offshore wind simulation is the best alternative source to in situ measured offshore wind data, showing the highest temporal accuracy (RMSE, STDE and correlation coefficients) and offshore wind power flux estimations. However, offshore wind data taken from CCMP database shows the lowest errors in terms of the mean wind speeds (biases and mean wind speed) and, together with IFREMER-BWF, a temporal accuracy similar to the WRF simulation. Therefore, in general CCMP and IFREMER-BWF can be seen as the best alternatives to WRF high resolution modelled offshore winds, if such results are unavailable. Specifically for offshore wind energy resource assessment, NCEP-CFSR reanalysis and NCEP-GFS analysis data can also be used with confidence as alternative to WRF modelled data, with better performances than CCMP and IFREMER-BWF.</p>
+<p>While WRF, QuikSCAT, NCDC-BWF, IFREMER-BWF, ERA-Interim, NCEP-RII and NCEP-FNL show a tendency to overestimate the wind speeds and wind power fluxes estimates, NASA-MERRA shows an opposite tendency. CCMP, NCEP-CFSR and NCEP-GFS do not seem to have any tendency to over/underestimate wind velocities and wind power fluxes estimates (except CCMP, which seems to systematically underestimate the wind power fluxes). <strong>A common feature to all databases is that all of them overestimate low wind speeds and underestimate strong winds (except QuikSCAT, which sows an overestimation tendency transversal to all wind velocities magnitudes). The best performances are usually obtained in the presence of intermediate wind speeds</strong> (4–12 m·s<sup>−1</sup> ).</p>
+<blockquote>
+<p><code>↑ 所有数据库的一个共同特点是，它们都高估了低风速而低估了强风</code></p>
+</blockquote>
+<p>Spatial resolution seems to have an important impact on the databases accuracy. </p>
+<ul>
+<li>The ones with finer spatial resolution are typically the ones with the best results (with some exceptions such as NASA-MERRA and NCDC-BSW). Since the in situ data here used is <strong>strongly influenced by the neighbouring topography, terrain characteristics and land-sea discontinuities</strong>, products with finer spatial resolutions are more likely to attain better performances. </li>
+<li>Although satellite-derived winds have finer spatial resolutions when compared to reanalysis and analysis products, <strong>they suffer from land masking issues</strong> that limit their accuracy in retrieving coastal winds. </li>
+</ul>
+<blockquote>
+<p><code>↑ 空间分辨率对结果的影响</code></p>
+</blockquote>
+<p>Temporal sampling rate does not seem to have such an impact, at least in what is related to the ability to represent local wind speed distributions (although it is advisable to use databases with at least 6-hourly records). However, temporal resolution of the wind products is an important characteristic in terms of the ability to accurately represent local wind circulation patterns.</p>
+<blockquote>
+<p><code>↑ 时间采样率</code></p>
+</blockquote>
+<p>Although the advantages in using mesoscale NWP models for high resolution offshore wind modelling are shown in this study, such tasks require considerable computational resources and time to obtain quality results. Moreover, it is known that satellite-derived wind data has its strength in open ocean areas. Therefore, the value of satellitederived wind data cannot be disregarded, and these kinds of offshore wind data sources have to be seriously considered when searching for alternative sources of wind information in particular for wide ocean areas.</p>
+<p><strong>Since the buoys considered in this study are distributed through a wide geographical area, where each buoy shows its own local wind micro-climate, the conclusions and findings provided in this study can be considered with confidence for other areas, in particular coastal ones</strong>.</p>
+<blockquote>
+<p><code>↑ 本研究中提供的结论和结果可以放心地考虑到其他地区，特别是沿海地区</code></p>
+</blockquote>
+<p><strong>1 Introduction</strong></p>
+<p>Climatic, atmospheric and oceanic modelling applications require accurate oceanic surface wind data to, realistically, represent the oceanic forcing fields and interactions between air and sea. Moreover, data regarding ocean winds is very valuable in the context of offshore wind energy, which is expected to constitute a significant part of the future wind-derived energy as a whole (Carvalho, Rocha, Gómez-Gesteira, &amp; Santos, 2012; Carvalho, Rocha, Santos, &amp; Pereira, 2013). </p>
+<blockquote>
+<p><code>↑ 洋面风的价值：建模、风能</code></p>
+</blockquote>
+<p>However, it is known that ocean areas suffer form a strong lack of measured wind data, mainly due to the high costs and technological challenges involved in the installation of wind measuring masts at such sites. Even when in situ data exists (collected on board ships, vessels, moored buoys, etc.) their availability is highly variable both in space and time and cannot be considered as representative of local wind regimes (Risien &amp; Chelton, 2006). Especially for offshore wind resource assessment applications, accurate wind data is a key factor because energetic production is proportional to the wind speed cubed (Bruun, Koch, Horstmann, Hasager, &amp; Nielsen, 2006), making that apparent small inaccuracies in the wind velocity can originate large discrepancies in the expected wind-derived energy production.</p>
+<blockquote>
+<p><code>↑ 海洋区域严重缺乏测风数据：高成本和技术挑战</code></p>
+</blockquote>
+<p>Thus, it becomes paramount to search and validate alternative data sources to in situ measured wind data over ocean areas. These alternative sources of offshore wind data consist, basically, in <strong>satellite-derived measurements</strong>, <strong>data simulated by numerical weather prediction (NWP) models</strong> and <strong>products that combine observed and NWP simulated data (mainly reanalysis and analysis datasets)</strong>. </p>
+<blockquote>
+<p><code>↑ 四种数据：卫星、再分析、分析、WRF model，good</code></p>
+</blockquote>
+<ul>
+<li><p>While satellite-derived wind data is available at a near-global scale and in a time-continuous way, they are <strong>indirect measurements</strong> (that is, they are derived from other measurements and processed using complex geophysical models) and often <strong>suffer from low spatial and/or temporal resolutions, together with large missing/erroneous data gaps (data records affected by rain, malfunction of instruments, etc.)</strong>. </p>
+<blockquote>
+<p><code>↑ 卫星数据的缺点：间接测量+受到低分辨率的影响+数据缺失问题</code></p>
+</blockquote>
+</li>
+<li><p>NWP models, in particular regional circulation models (RCMs, also known as <strong>mesoscale models</strong>), are able to produce meteorological data at high spatial and temporal resolutions for any area of the globe, and in a relatively fast way (depending on the available computational resources, NWP model configuration, desired resolutions and spatial/time coverage). In the recent past, <strong>NWP modelling has found a number of applications focused on deriving wind information to study meteorological and climatic events, drive oceanic models and in the preliminary search and identification of potential sites for wind energy exploitation</strong>. However, NWP modelled wind data usually shows <strong>non-negligible deviations</strong> when compared to observed data, mainly due to their <strong>inability in accurately resolving medium- to small scale meteorological processes</strong> (Carvalho, Rocha, Gómez-Gesteira, &amp; Silva Santos, 2014). </p>
+<blockquote>
+<p><code>↑ NWP 研究气象和气候事件、驱动海洋模型以及初步搜索和确定风能开发的潜在地点</code></p>
+</blockquote>
+</li>
+<li><p>Reanalysis and analysis products combine data simulated by global circulation models (GCMs) with large amounts of meteorological measurements, providing a complete and homogeneous synthesis of the available global observations assimilated into a continuous and coherent physical structure (Trenberth et al., 2010). However, these kinds of products are usually available <strong>at low spatial resolutions (250 to 50 km)</strong>, insufficient to accurately characterize local wind regimes and adequately represent medium and small scale meteorological features.</p>
+</li>
+</ul>
+<p>The aim of this study is to evaluate and compare several alternative sources of offshore wind data with in situ ocean surface wind measurements, with the main objective of determining which of these alternative offshore wind sources best describe the local wind regimes at the selected buoy locations and, thus, can be considered as the best alternative to in situ measured offshore wind data. For this, one complete year of satellite-derived wind data, NWP modeled and reanalysis/analysis products are compared with in situ offshore wind measurements collected by five buoys moored offshore the Iberian Peninsula Atlantic coast (Gulf of Cádiz, West and North Galician coast). </p>
+<ul>
+<li>The NWP chosen to run the offshore wind simulation for the area under study is <strong>the Weather Research and Forecasting (WRF) mesoscale model</strong>. </li>
+<li>The sources of satellite-derived offshore wind data used in this study are: NASA’s SeaWinds scatterometer installed onboard the QuikSCAT satellite platform (henceforth referred to as QuikSCAT); the National Climatic Data Center Blended Sea Winds (NCDC-BSW); the French Research Institute for Exploitation of the Sea Blended Wind Fields (IFREMER-BWF); and the Cross-Calibrated Multi-Platform Ocean Surface Wind Vectors (CCMP). </li>
+<li>The reanalyses and analyses considered in this study are: the National Centres for Environmental Prediction Reanalysis 2 (NCEP-R2); the European Centre for Medium-Range Weather Forecasts (ECMWF) Interim reanalysis (ERA-Interim); the National Centre for Environmental Prediction Climate Forecast System Reanalysis (NCEP-CFSR); NASA’s Modern Era Retrospective Analysis for Research and Applications (NASA-MERRA); the National Centre for Environmental Prediction Global Forecast System (NCEP-GFS) and the National Centre for Environmental Prediction Final Analysis (NCEP-FNL). </li>
+</ul>
+<p>The main characteristics of all these sources of offshore wind data are presented in <strong>Table 1</strong>, and in Sections 2.1, 2.2 and 2.3 additional information about these datasets are presented.</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305214507.png"></p>
+<p>The published literature includes several studies that </p>
+<ul>
+<li><p>compare NWP offshore wind simulations with observations (eg.: Berge, Byrkjedal, Ydersbond, &amp; Kindler, 2009; Carvalho, Rocha, &amp; Gómez-Gesteira, 2012; Carvalho, Rocha, Gómez-Gesteira, &amp; Silva Santos, in press-a,b; Jiménez, Durante, Lange, Kreutzer, &amp; Tambke, 2007; Ohsawa et al., 2007; Shimada &amp; Ohsawa, 2011; Shimada, Ohsawa, &amp; Yatsu, 2009), </p>
+</li>
+<li><p>or that compare satellite-derived offshore winds with buoy measurements (eg.: Ebuchi, Graber, &amp; Caruso, 2002; Moore, Pickart, &amp; Renfrew, 2008; Pensieri, Bozzano, &amp; Schiano, 2010; Pickett, Tang, Rosenfeld, &amp; Wash, 2003; Sánchez et al., 2007; Satheesan, Sarkar, Parekh, Ramesh Kumar, &amp; Kuroda, 2007; Tang, Liu, &amp; Stiles, 2004). </p>
+</li>
+<li><p>Also studies that compare satellite-derived, reanalyses, and/or blended satellite-derived offshore winds with measurements are available (eg.: Kent, Fangohr, &amp; Berry, 2013; Li et al., 2013; Ruti, Marullo, D’Ortenzio, &amp; Tremant, 2008), </p>
+</li>
+<li><p>as well as studies that focus on the comparison of NWP and satellitederived offshore winds with observations (eg.: Accadia, Zecchetto, Lavagnini, &amp; Speranza, 2007; Karagali et al., 2013; Wallcraft et al., 2009). </p>
+</li>
+</ul>
+<p>From these studies there are evidences that products that combine satellite and NWP data, and in particular CCMP, can offer improvements when compared to individual satellite records. </p>
+<blockquote>
+<p><code>↑ </code></p>
+</blockquote>
+<p>However, satellite-derived records are usually more accurate than reanalyses/analyses. </p>
+<blockquote>
+<p><code>↑</code></p>
+</blockquote>
+<p>Furthermore, NWP-derived data, in particular the ones obtained with mesoscale NWP models, seems to show better performance in terms of wind variability but higher biases when compared to satellitederived winds. </p>
+<blockquote>
+<p><code>↑</code></p>
+</blockquote>
+<p>In particular for the area here under study, the following studies should be highlighted: </p>
+<ul>
+<li>Penabad et al. (2008) compared 4 years (2002–2005) of QuikSCAT and two NWP (MM5 and ARPS) modelled winds with measured wind data collected offshore the Galician Coast, concluding that no significant differences between models and satellite data were found. </li>
+<li>Otero and Ruiz-Vilarreal (2008) evaluated the reliability of different meteorological models through the comparison with observed winds around the north-west and north Iberia during autumn 2002 showing significant differences among modeled wind data products. </li>
+<li>Carvalho, Rocha, Gómez-Gesteira, Alvarez, and Silva Santos (2013) compared 3 different QuikSCAT products (gridded L3 and swath L2B with 25 and 12.5 km) and CCMP with measured winds collected in the same buoys considered in this study, for the same time period (2008), concluding that the high resolution QuikSCAT L2B product showed the best results for the wind speed variability and wind direction means, while CCMP showed the best results for wind speed means and wind direction variability. </li>
+<li>Alvarez, Gomez-Gesteira, deCastro, and Carvalho (2013) compared 10 years (2000–2009) of wind data from six databases (NCEP-R2, ERA-Interim, NASA-MERRA, NCEP-CFSR, QuikSCAT and CCMP) with wind measurements collected by four buoys moored in the southern limit of the Bay of Biscay, concluding that the wind products with finer spatial resolution provide the best results, especially in nearshore areas. </li>
+<li>Sousa, Alvarez, Vaz, Gomez-Gesteira, and Dias (2013) evaluated 1 year of QuikSCAT and WRF modelled winds with in situ measurements collected by three buoys moored offshore the Galician coast, reporting that the wind speeds derived from QuikSCAT and WRF do not show significant differences along the coast. </li>
+</ul>
+<p>Despite all of this research, no study was found that makes a joint comparison of all these sources of offshore wind data, objectively assessing through an integrated comparison which one of these products is the best alternative to in situ offshore wind measurements, nor for the area here under study nor for any other areas of the globe. Such findings can be of great value for areas where no in situ offshore measured data are available (or the available data is insufficient and/or inadequate for the desired purposes) and, therefore, valid alternatives have to be found. This is the case for the area under study, since the Iberian Peninsula is presently one of the areas with the highest percentage of installed onshore wind power per capita worldwide due to its attractive wind conditions. This asset, combined with its large coastal line, makes this area a promising one for future installation of offshore wind farms.</p>
+<blockquote>
+<p><code>↑</code></p>
+</blockquote>
+<h2 id="待了解：钟老师文献管理方法"><a href="#待了解：钟老师文献管理方法" class="headerlink" title="待了解：钟老师文献管理方法"></a>待了解：钟老师文献管理方法</h2><h3 id="web-of-science"><a href="#web-of-science" class="headerlink" title="web of science"></a>web of science</h3><ol>
+<li><p><strong>检索式</strong>（比较难确定关键词）</p>
+<p><strong>数据融合</strong>：</p>
+<ul>
+<li>data fusion, data integration, data syncretizing（有道翻译）</li>
+<li>sensor fusion，information fusion, fused data （<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Data_fusion">wiki</a>）</li>
+</ul>
+<p>海表面风，洋面风，海浪：wind or wave，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306210457.png"></p>
+</li>
+<li><p>标记结果列表</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306210542.png"></p>
+</li>
+<li><p>创建跟踪服务（可选）</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306204155.png"></p>
+</li>
+<li><p>导出到endnote</p>
+<ul>
+<li><p>首先需要在所选文件夹下新建<strong>保存endnote数据的文件夹</strong></p>
+</li>
+<li><p>具体导出操作</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306211439.png"></p>
+<p>双击生成的文件，就会导入到正在打开的endnote了</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306211741.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306211844.png"></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="endnote"><a href="#endnote" class="headerlink" title="endnote"></a>endnote</h3><ol>
+<li><p>清除重复的文献</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306212210.png"></p>
+</li>
+<li><p>bottom</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220306212843.png"></p>
+</li>
+<li><p>分类;</p>
+</li>
+</ol>
+<h2 id="2022-03-07-wjc老师讨论"><a href="#2022-03-07-wjc老师讨论" class="headerlink" title="2022-03-07 wjc老师讨论"></a>2022-03-07 wjc老师讨论</h2><ul>
+<li><p>指标要求是什么？</p>
+<p>洋面风量化指标：</p>
+<p>查询 10km，三角形网格，<strong>平均 10km</strong>；（港珠澳大桥，很细，桥墩~）</p>
+<p>同化前三天的数据，再往前的数据影响就不大了；</p>
+<p>融合的话，变分分析，二维变分<del>三维变分</del>（二维变分+时间动力插值~动力约束下的二维变分），时间上前后的差分；</p>
+<p>全球 10km，区域 5km，时间 3小时；</p>
+<p>模式三角形网格，反插值成正常网格；</p>
+<p>分辨率 12.5 km，</p>
+<p> <strong>方法是软东西，产品是真东西</strong>（）</p>
+<p>指标要求：三角形网格，平均 10km，3 小时</p>
+</li>
+<li><p>补充资料1.docx</p>
+<p>9.2.4 技术路线<br>9.2.4.1 设计策略<br>9.2.4.2 关键技术<br>9.2.5 模块设计<br><strong>海表气象要素融合实况分析</strong>子系统包含洋面风多源融合实况分析产品及历史产品、海浪多源融合实况分析产品、海表温度多源融合实况分析产品及历史产品、海洋降水融合实况分析产品及历史产品、海上气温融合实况分析产品等5个部分功能建设，各部分模块设计如下：</p>
+<blockquote>
+<p>~~</p>
+</blockquote>
+</li>
+<li><p>什么是横向和纵向项目？</p>
+<p><strong>横向-层次相同的单位</strong>（要求没这么高），<strong>纵向-更高一级的单位</strong>（），</p>
+</li>
+<li><p>什么是<strong>数据融合</strong>？</p>
+<p>高度计-线状-SWH，数据量相对少，</p>
+<p>散射计-带状-~~，数据量相对多，</p>
+<p>新的方法：二维变分+动力插值，</p>
+</li>
+<li><p><strong>混合海风资料？</strong></p>
+</li>
+<li><p><strong>遥感数据资料？</strong></p>
+</li>
+<li><p><strong>关于融合的科学技术报告？</strong></p>
+<p>CCMP，</p>
+<p>ERA5，</p>
+<p>查、查、查~~</p>
+</li>
+<li><p><strong>融合的翻译？</strong></p>
+<p>blending，（混合）</p>
+<p>fusion，（融合）</p>
+</li>
+<li><p><strong>各个产品是什么？</strong></p>
+<p>再分析产品，（？？）</p>
+<p>同化产品，</p>
+<p>融合产品，（更宽泛）</p>
+</li>
+<li><p><strong>上传的文献内容是什么？</strong></p>
+<p>风场网格化</p>
+<p>二位变分分析，</p>
+<p>CCMP 怎么做的，三位变分，</p>
+<p>CWIND 技术报告，</p>
+</li>
+</ul>
+<h2 id="2022-03-07-wjc老师反馈"><a href="#2022-03-07-wjc老师反馈" class="headerlink" title="2022-03-07 wjc老师反馈"></a>2022-03-07 wjc老师反馈</h2><ul>
+<li><p>老师发送的资料</p>
+<p>混合海风 <a target="_blank" rel="noopener" href="https://www.ncei.noaa.gov/products/blended-sea-winds">https://www.ncei.noaa.gov/products/blended-sea-winds</a></p>
+<p>资料1-20220307.docx</p>
+<p>重要！！！！星载散射计的研究现状及发展趋势.pdf</p>
+<p><code>2.多源气象数据融合产品原型系统开发技术报告--wjc.docxs</code></p>
+<p>High-resolution ASCAT wind vector data set gridded by applying.pdf</p>
+<p>Gridded surface wind fields from Metop-ASCAT measurements.pdf</p>
+<p>A Two-Dimensional Variational Analysis Method for NSCAT Ambiguity Removal Methodology, Sensitivity, and Tuning.pdf</p>
+<p>中国风云卫星与海洋卫星近海SST资料融合技术及应用研究_苗春生.pdf</p>
+<p>CCMP2.0.pdf</p>
+<p>各种风场数据说明.doc</p>
+<p><code>4.（以此为蓝本写实施方案）mwf_vol1.pdf</code></p>
+<p><code>3. （以此为技术蓝本）SeawindsDocumentation.pdf</code></p>
+</li>
+<li><p><strong>work</strong>–deadline 2022-03-08 晚上，最迟 2022-03-09 早上</p>
+<p><strong>历史数据回算模块</strong>：历史回算模块主要分为单点时间历史数据回算、多点时间历史数据回算、单一连续时间段历史数据回算、混合时间设置历史数据回算。通过配置输入数据（岸基观测洋面风、各种海洋气象卫星及海基观测等）、数据产品目录、回算时次信息后，可实现一键式回算。同时实现历史数据集的制作。（刘锦灿）</p>
+<p><strong>海洋卫星高度计产品预处理模块</strong>：（刘锦灿）</p>
+<p><strong>海洋卫星波谱仪产品预处理模块</strong>：（刘锦灿）</p>
+<p><strong>海基海浪观测预处理模块</strong>：基于大数据云平台实现海浪融合中需要浮标、船舶、海上平台等多种海浪实际观测数据的获取，并按照融合模块要求，将实际观测数据输出。同时实现历史数据的预处理，达到历史数据集制作要求。（刘锦灿）</p>
+<p><strong>卫星反演海浪产品数据检查模块</strong>：根据产品质量控制码挑选质量可靠的数据；再根据融合产品区域的海陆分布，剔除陆上格点、海陆混合格点及距离陆地较近格点的数据，将陆地对探测数据的影响降到最低；然后结合所用背景场数据，进行融合前的背景场差异检查，剔除差异明显超出部分的数据，最后梳理成待融合的高质量数据。同时实现历史数据的检查，达到历史数据集制作要求。（刘锦灿）</p>
+<p><strong>历史数据回算模块</strong>：历史回算模块主要分为单点时间历史数据回算、多点时间历史数据回算、单一连续时间段历史数据回算、混合时间设置历史数据回算。通过配置输入数据（岸基观测海浪产品、海洋卫星及海基观测数据）、数据产品目录、回算时次信息后，可实现一键式回算，实现历史数据集的制作。（刘锦灿）</p>
+</li>
+</ul>
+<h2 id="海洋卫星高度计产品预处理模块：（刘锦灿）"><a href="#海洋卫星高度计产品预处理模块：（刘锦灿）" class="headerlink" title="海洋卫星高度计产品预处理模块：（刘锦灿）"></a><strong>海洋卫星高度计产品预处理模块</strong>：（刘锦灿）</h2><p>要求：</p>
+<ul>
+<li><p>实现海浪融合中需要<strong>海洋卫星海浪产品的预处理</strong>，包括输入数据文件中</p>
+<ul>
+<li>特定变量的投影转换、</li>
+<li>分辨率转换</li>
+</ul>
+<p><strong>QT：需要哪些海洋卫星？</strong></p>
+<ul>
+<li><p><del>海洋一号C卫星（HY-1C）数据</del>、</p>
+</li>
+<li><p><del>海洋二号A卫星（HY-2A）数据</del>、</p>
+</li>
+<li><p>海洋二号B卫星（HY-2B）数据、</p>
+</li>
+<li><p>海洋二号C卫星（HY-2C）数据、</p>
+</li>
+<li><p><del>中法海洋卫星（CFOSAT）数据</del>、</p>
+</li>
+<li><p><del>高分卫星数据</del></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220307164716.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220307164803.png"></p>
+</li>
+</ul>
+<p>QT：HY-2B获取数据中级别选项是什么意思？</p>
+<p>选择SDR吧~No，应该是<strong>GDR</strong></p>
+<p>对国家卫星海洋中心提供的HY-2B和HY-2C海洋卫星雷达高度计（ALT）二级产品数据GDR_L2R，进行预处理：</p>
+<p><strong>QT：海洋卫星的产品数据格式？</strong></p>
+<p>QT：需要哪些海浪产品？</p>
+<p>QT：</p>
+</li>
+<li><p>实现与融合模块的对接，保证融合质量。</p>
+</li>
+<li><p>同时实现历史数据的预处理，达到历史数据集制作要求。</p>
+</li>
+</ul>
+<h2 id="阅读7：星载微波散射计的研究现状及发展趋势-pdf-2009"><a href="#阅读7：星载微波散射计的研究现状及发展趋势-pdf-2009" class="headerlink" title="阅读7：星载微波散射计的研究现状及发展趋势.pdf-2009"></a>阅读7：星载微波散射计的研究现状及发展趋势.pdf-2009</h2><p><strong>摘要</strong></p>
+<p>本文</p>
+<ul>
+<li>介绍美国宇航局(NASA)和欧空局(ESA)星载微波散射计传感器的类别和特点以及发展历程，</li>
+<li>详细描述星载散 射计海面风矢量在大洋环流、海洋大气交互作用、中短期极端天气状况预报等领域的应用以及散射计分辨率增强数据在极地海 冰制图、监测、分类、陆地植被参数反演等方面的应用，</li>
+<li>展望星载散射计研究在全天候、全天时、高时间分辨率、高空间分辨 率等提高观测能力方向的发展趋势，</li>
+<li>最后简述国内星载散射计神州 4 号(SZ-4)散射计(CN/SCAT)和海洋卫星 2 (HY-2)号散射计的特点及研究现状。</li>
+</ul>
+<p><strong>2 散射计探测原理</strong></p>
+<p><strong>3 散射计观测计划</strong> </p>
+<ul>
+<li><p>散射计<strong>扫描方式</strong></p>
+<p>笔形波束散射计相较于扇形波束散射计的优势</p>
+</li>
+<li><p>NASA和ESA对<strong>波段选取</strong></p>
+</li>
+<li><p>过去、现役和未来的<strong>散射计观测计划</strong></p>
+</li>
+<li><p>现役 Seawinds 和 ASCAT 散射计的<strong>技术参数</strong>以供参考</p>
+</li>
+</ul>
+<p><strong>4 散射计应用研究</strong> </p>
+<ul>
+<li><strong>海面风场应用</strong></li>
+<li><strong>海冰制图与监测</strong></li>
+<li><strong>陆面应用研究</strong> </li>
+</ul>
+<p><strong>5 散射计研究发展趋势</strong> </p>
+<ul>
+<li><strong>美国全国研究理事会(NRC)<strong>制定了空间技术应用于地球科学的十年规划，其中，</strong>对散射计未来的发展提出三个计划</strong></li>
+</ul>
+<p><strong>6</strong> <strong>国内散射计研究现状</strong></p>
+<ul>
+<li><p>**我国第一个多模态微波遥感器(M3RS)**于 2002 年 12 月，由 sz-4 送入太空</p>
+</li>
+<li><p>HY-2 散射计性能技术参数</p>
+</li>
+</ul>
+<h2 id="阅读8：卫星高度计及其应用-1989"><a href="#阅读8：卫星高度计及其应用-1989" class="headerlink" title="阅读8：卫星高度计及其应用-1989"></a>阅读8：卫星高度计及其应用-1989</h2><p><strong>一、星载高度计-ATL</strong></p>
+<p><strong>二、海面高度测量</strong></p>
+<p><strong>三、应用</strong></p>
+<ul>
+<li>卫星的点轨迹</li>
+</ul>
+<h2 id="阅读9：多源卫星高度计新融合产品的研发与评估-2020"><a href="#阅读9：多源卫星高度计新融合产品的研发与评估-2020" class="headerlink" title="阅读9：多源卫星高度计新融合产品的研发与评估-2020"></a>阅读9：多源卫星高度计新融合产品的研发与评估-2020</h2><p><strong>摘要</strong></p>
+<ul>
+<li><p><strong>当前在轨运行的高度计卫星已达5颗(Sentinel-3A、Jason-3、Cryosat-2、Saral/AltiKa以及HY-2A)</strong>, 观测精度不断提高, 但卫星高度计融合产品的有效分辨率(可分辨海面涡旋的最小尺度)仍需进一步提升. </p>
+</li>
+<li><p>本研究以变分原理为基础, 改进背景场、背景误差协方差矩阵以及观测误差, 建立一种<strong>新的多源卫星高度计资料融合方法</strong>. </p>
+</li>
+<li><p>以南海及其附近海域为目标区域, 在格距为0.08°的规则网格上, 融合所有在轨运行的5颗卫星高度计的沿轨数据, 得到<strong>逐日融合产品</strong>. </p>
+</li>
+<li><p>评估分析表明: 新方法得到的融合产品的有效分辨率达到125 km左右, 与国际上广泛应用的<strong>AVISO产品</strong>相比(格距0.25°, 有效分辨率240 km), 有效分辨率提高近一倍, 融合产品的精度进一步提高, 可用于描述更小尺度的海洋环流结构.</p>
+</li>
+</ul>
+<p><strong>引言</strong></p>
+<ul>
+<li><p>卫星高度计在运行中<strong>获取沿轨星下点的海面高度(sea surface height, SSH),</strong></p>
+</li>
+<li><p>法国建立的<strong>多源卫星高度计资料融合产品AVISO</strong>(archiving, validation, and interpretation of satellite oceanographic data),</p>
+<p>AVISO在南海的有效分辨率仅为240 km，</p>
+</li>
+</ul>
+<p><strong>3 融合产品评估</strong></p>
+<ul>
+<li>采用滤波后的J3和S3A沿轨资料(以下简称沿轨资料)作为观测真值[22], <strong>确定有效分辨率及误差</strong></li>
+<li><strong>AMSR2卫星观测的海表温度(sea surface temperature, SST)[23]和NOAA提供的南海洋面漂流浮标资料[24</strong>], 考查融合产品的合理性.</li>
+</ul>
+<h2 id="阅读10：“海洋二号”有效波高数据在多源卫星高度计数据融合中的应用-2013"><a href="#阅读10：“海洋二号”有效波高数据在多源卫星高度计数据融合中的应用-2013" class="headerlink" title="阅读10：“海洋二号”有效波高数据在多源卫星高度计数据融合中的应用-2013"></a>阅读10：“海洋二号”有效波高数据在多源卫星高度计数据融合中的应用-2013</h2><p><strong>摘要</strong></p>
+<ul>
+<li>利用<strong>反距离加权法</strong>根据不同的方案融合</li>
+<li>借助<strong>NDBC提供的浮标数据</strong>对融合结果进行验证和比较</li>
+</ul>
+<p>1 <strong>引言</strong></p>
+<ul>
+<li>海洋二号的介绍</li>
+</ul>
+<p>2 <strong>数据资料以及数据预处理</strong></p>
+<ul>
+<li><p>融合的高度计资料包括：“HY-2”、“Jason-1/2”以及“ENVISAT”卫星高度计</p>
+<p><strong>国家海洋局国家卫星海洋应用中心</strong>提供的“HY-2”数据、<strong>NASA</strong>提供的“Jason-1/2”数据、以及<strong>ESA</strong>提供的“ENVISAT”数据</p>
+</li>
+<li><p>各卫星高度计的主要参数</p>
+</li>
+<li><p>各卫星高度计的轨道分布</p>
+</li>
+<li><p><strong>各卫星高度计的使用手册</strong>：</p>
+<ul>
+<li>进行质量控制，</li>
+<li>去除陆地和冰上的数据以及质量不符合要求的数据</li>
+</ul>
+<p><strong>AVISO</strong>,PODAAC.<strong>AVISO and PODAAC User Handbook</strong>-IGDR and GDR Jason-1Products,2008[EB/OL].[2011-04-23].<a target="_blank" rel="noopener" href="http://www.aviso.oceanobs.com/fileadmin/documentsdatatools/hdbk_j1_gdr.pdf">http://www.aviso.oceanobs.com/fileadmin/documentsdatatools/hdbk_j1_gdr.pdf</a>.</p>
+<p><strong>OSTM/Jason-2Products Handbook</strong>,2009[EB/OL].[2011-05-10].<a target="_blank" rel="noopener" href="http://www.aviso.oceanobs.com/fileadmin/documents/data/tools/hd-bk_j2.pdf">http://www.aviso.oceanobs.com/fileadmin/documents/data/tools/hd-bk_j2.pdf</a>.</p>
+<p>ESA.<strong>ENVISAT-1Products Specifications Volume 5:Products Structures</strong>,2007[EB/OL].[2011-06-03].<a target="_blank" rel="noopener" href="http://earth.esa.int/pub/ESA_DOC/ENVISAT/Vol05_Structures_3d_20071122.pdf">http://earth.esa.int/pub/ESA_DOC/ENVISAT/Vol05_Structures_3d_20071122.pdf</a>.</p>
+<p>ESA.ENVISAT-1Products Specifications Volume 14:RA-2Products Specifications,2008[EB/OL].[2011-06-03].<a target="_blank" rel="noopener" href="http://earth.esa.int/pu-bESA_DOC/ENVISAT/Voll4_Ra2mwr_4B.pdf">http://earth.esa.int/pu-bESA_DOC/ENVISAT/Voll4_Ra2mwr_4B.pdf</a>.</p>
+<p>ESA.ENVISAT RA2/MWR Product Handbook,2007[EB/OL].[2011-06-03].<a target="_blank" rel="noopener" href="http://envisat.esa.int/pub/ESA_DOC/ENVISAT/RA2_MWR/ra2-mwr.roductHandbook.2_2.pdf">http://envisat.esa.int/pub/ESA_DOC/ENVISAT/RA2_MWR/ra2-mwr.roductHandbook.2_2.pdf</a>.</p>
+</li>
+<li><p>对各卫星高度计数据进行校准</p>
+</li>
+<li><p>轨道交叉点处的精度</p>
+</li>
+</ul>
+<h2 id="阅读11：remss-com-missions-ssmi-卫星融合模板"><a href="#阅读11：remss-com-missions-ssmi-卫星融合模板" class="headerlink" title="阅读11：remss.com/missions/ssmi/~~卫星融合模板"></a>阅读11：remss.com/missions/ssmi/~~卫星融合模板</h2><blockquote>
+<p>CCMP 中对 SSMI / SSMIS 卫星的融合 <a target="_blank" rel="noopener" href="https://www.remss.com/missions/ssmi/">https://www.remss.com/missions/ssmi/</a></p>
+</blockquote>
+<p><strong>介绍</strong></p>
+<p>Special Sensor Microwave Imager (SSM/I) 和 Special Sensor Microwave Imager Sounder (SSMIS) 是卫星无源微波辐射计。自 1987 年以来，这一系列仪器已搭载在国防气象卫星计划 (DMSP) 卫星上。这些是近极地轨道卫星。这些仪器以 F08 开头的卫星编号表示，并在下表中列出。目前运行的仪表有：F15、F16、F17和F18。我们从辐射计观测中获得的海洋测量结果包括地表风速、大气水汽、云液态水和降雨率。</p>
+<p><strong>仪器说明</strong></p>
+<p><strong>数据处理</strong></p>
+<p>遥感系统分两个阶段对 SSM/I 和 SSMIS 仪器数据进行详细处理。第一阶段产生一个临时产品（在文件名中用“rt”标识），我们会尽快提供它，通常在记录数据后的几个小时内。本产品可能不完整或包含提供给我们的数据中固有的地理定位错误和错误的亮度温度。这些错误在最终处理中被消除，通常在初始产品的几天内完成。最终产品会自动替换中间产品，文件名中的“rt”名称更改为“v7”。</p>
+<h2 id="阅读12：我国海洋卫星数据应用发展现状与思考-2021-02"><a href="#阅读12：我国海洋卫星数据应用发展现状与思考-2021-02" class="headerlink" title="阅读12：我国海洋卫星数据应用发展现状与思考-2021-02"></a>阅读12：我国海洋卫星数据应用发展现状与思考-2021-02</h2><p>本文总结了国内外海洋卫星的基本情况和我国海洋卫星数据应用发展的现状,在此基础上提出我国海洋卫星数据应用发展中存在的主要问题,以及未来的发展策略。</p>
+<p>1 <strong>国内外海洋卫星资源基本情况</strong></p>
+<ul>
+<li><p>海洋卫星主要类别</p>
+<ul>
+<li>海洋水色卫星是对海洋水色要素(如叶绿素、悬浮沙和可溶性的有色有机物质等)和水温及其动态变化的探测</li>
+<li><strong>海洋动力环境卫星</strong>是对海洋风场、海面高度、浪场、流场以及温度场等动力环境要素探测的卫星(林明森等,2018),有效载荷通常是微波散射计、微波辐射计、雷达高度计等,并具有多种模式和多种分辨率。</li>
+<li>海洋综合探测卫星是对全球与近海(包括海岸带)海洋动力环境和生态环境各种信息的综合遥感监测,同时具备多种载荷。</li>
+</ul>
+</li>
+<li><p>国外海洋卫星发展现状</p>
+</li>
+<li><p>我国海洋卫星发展现状</p>
+<ul>
+<li><p>包括海洋2号系列卫星、中法海洋卫星与海风海浪卫星和海洋盐度卫星。</p>
+<p>海洋2号系列卫星以海面风场、高度、温度等动力环境要素为探测对象。</p>
+<p>2025年前的发展包括3个阶段:第一阶段为海洋2A卫星;第二阶段为海洋2B/C/D卫星;第三阶段为新一代海洋动力环境卫星。</p>
+</li>
+<li><p>中法海洋卫星(China-France Oceanographic Satellite,CFOSAT)</p>
+</li>
+<li><p>海风海浪卫星是中法海洋卫星的后续星。国家卫星海洋应用中心于2017年底启动了该星立项论证工作。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="阅读13：我国海洋卫星发展历程、现状与建议-2021-09"><a href="#阅读13：我国海洋卫星发展历程、现状与建议-2021-09" class="headerlink" title="阅读13：我国海洋卫星发展历程、现状与建议-2021-09"></a>阅读13：我国海洋卫星发展历程、现状与建议-2021-09</h2><p>一、<strong>海洋卫星需求背景</strong></p>
+<p>二、<strong>海洋卫星规划</strong>、<strong>型号立项与各阶段成果</strong></p>
+<p>三、<strong>目前在轨海洋卫星用途与特点</strong></p>
+<ul>
+<li>从2002年5月15日发射第一颗海洋卫星至今，已经发射了10颗海洋卫星，包括HY-1A/1B/1C/1D、HY-2A/2B/2C/2D、CFOSAT、GF-3卫星，目前HY-1A/1B已经停止工作，HY-2A降级工作，其余卫星在轨正常工作。</li>
+<li>在轨海洋卫星用途<ul>
+<li><strong>海洋二号系列</strong>卫星用于全球全天候海面风场、浪高、海面高度、海面温度等多种海洋动力环境参数监测，直接为灾害性海况预警预报提供实测数据，为海洋防灾减灾、海洋权益维护、海洋资源开发、海洋环境保护、海洋科学研究以及国防建设等提供支撑服务，载荷为雷达高度计、微波散射计、微波辐射计、双频全球定位系统、船舶自动识别系统、数据收集系统、双向数据通信等，HY-2A为试验星，HY-2B/2C/2D三星实现业务化组网观测。</li>
+<li><strong>国际合作试验卫星</strong>：CFOSAT为中法两国合作的科研试验卫星，中方提供散射计，法方提供波谱仪，主要任务是获取全球海面波浪谱、海面风场、南北极海冰信息，进一步加强对海洋动力环境变化规律的科学认知</li>
+</ul>
+</li>
+<li>卫星载荷配置、轨道与工作模式</li>
+<li>海洋卫星可兼顾大尺度陆地监测，为快速普查与应急救灾提供支撑</li>
+</ul>
+<h2 id="阅读14：国家卫星海洋中心"><a href="#阅读14：国家卫星海洋中心" class="headerlink" title="阅读14：国家卫星海洋中心"></a>阅读14：国家卫星海洋中心</h2><h3 id="海洋卫星"><a href="#海洋卫星" class="headerlink" title="海洋卫星"></a>海洋卫星</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.nsoas.org.cn/news/content/2018-11/23/44_697.html">http://www.nsoas.org.cn/news/content/2018-11/23/44_697.html</a></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220307163834.png"></p>
+</blockquote>
+<p><strong>HY-2B</strong></p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220307170818.png" alt=" " style="zoom:70%;">
+
+<h3 id="数据服务"><a href="#数据服务" class="headerlink" title="数据服务"></a>数据服务</h3><h4 id="海洋动力环境卫星数据的数据获取"><a href="#海洋动力环境卫星数据的数据获取" class="headerlink" title="海洋动力环境卫星数据的数据获取"></a>海洋动力环境卫星数据的数据获取</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://osdds.nsoas.org.cn/MarineDynamic">https://osdds.nsoas.org.cn/MarineDynamic</a></p>
+</blockquote>
+<h4 id="数据说明文档及软件下载"><a href="#数据说明文档及软件下载" class="headerlink" title="数据说明文档及软件下载"></a>数据说明文档及软件下载</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://osdds-ftp.nsoas.org.cn/main.html?download&amp;weblink=a573def5960804423de16d7c37eabac1&amp;lang=schinese">https://osdds-ftp.nsoas.org.cn/main.html?download&amp;weblink=a573def5960804423de16d7c37eabac1&amp;lang=schinese</a></p>
+</blockquote>
+<p><strong>HY-2B卫星数据使用说明.pdf</strong></p>
+<ul>
+<li>2 级产品数据分为<ul>
+<li><strong>实时业务化地球物理数据(Operational Geophysical data record, 以下简称：OGDR)</strong></li>
+<li><strong>临时</strong>地球物理数据(Interim Geophysical Data Records, 以下简称：IGDR)、</li>
+<li><strong>遥感</strong>地球物理数据(Sensor Geophysical Data Records, 以下简称：SGDR)、</li>
+<li><strong>地球物理数据</strong>(Geophysical Data Records, 以下简称：GDR)四种产品。</li>
+</ul>
+</li>
+<li>其中，校正微波辐射计数据产品已经整合到雷达高度计标准数据产品中，不再单独介绍。</li>
+</ul>
+<p><strong>HY-2B卫星高度计二级产品数据格式说明.pdf</strong></p>
+<ul>
+<li><p>国家卫星海洋应用中心将载荷的 HY-2 卫星高度计 0 级数据经过预处理、数据反演和统计平均分别生成 1 级、2 级和融合数据产品。按照国际惯例，<strong>0 级和1 级产品为原始数据产品，不对外分发</strong>。</p>
+</li>
+<li><p>SGDR与IGDR和GDR基本一致，区别在于其中包含了波形数据</p>
+</li>
+<li><p>数据产品制作流程（<strong>二级数据处理得到的数据称为二级产品</strong>）</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220307174241.png"></p>
+</li>
+</ul>
+<h2 id="海洋卫星波谱仪产品预处理模块：（刘锦灿）"><a href="#海洋卫星波谱仪产品预处理模块：（刘锦灿）" class="headerlink" title="海洋卫星波谱仪产品预处理模块：（刘锦灿）"></a><strong>海洋卫星波谱仪产品预处理模块</strong>：（刘锦灿）</h2><h2 id="阅读：地理信息系统中多种投影转换的实现-1996"><a href="#阅读：地理信息系统中多种投影转换的实现-1996" class="headerlink" title="阅读：地理信息系统中多种投影转换的实现-1996"></a>阅读：地理信息系统中多种投影转换的实现-1996</h2><h2 id="海基海浪观测预处理模块：（刘锦灿）"><a href="#海基海浪观测预处理模块：（刘锦灿）" class="headerlink" title="海基海浪观测预处理模块：（刘锦灿）"></a><strong>海基海浪观测预处理模块</strong>：（刘锦灿）</h2><p>要求：</p>
+<ul>
+<li>基于<strong>大数据云平台</strong>实现海浪融合中需要浮标、船舶、海上平台等多种海浪实际观测数据的获取，</li>
+<li>并按照融合模块要求，将<strong>实际观测数据输出</strong>。</li>
+<li>同时实现历史数据的预处理，达到历史数据集制作要求。</li>
+</ul>
+<h2 id="阅读：Argo"><a href="#阅读：Argo" class="headerlink" title="阅读：Argo"></a>阅读：Argo</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://argo.ucsd.edu/">https://argo.ucsd.edu/</a></p>
+</blockquote>
+<h2 id="阅读：基于Argo浮标观测数据的海洋温、盐度特征分析-2021"><a href="#阅读：基于Argo浮标观测数据的海洋温、盐度特征分析-2021" class="headerlink" title="阅读：基于Argo浮标观测数据的海洋温、盐度特征分析-2021"></a>阅读：基于Argo浮标观测数据的海洋温、盐度特征分析-2021</h2><blockquote>
+<p>Argo 是温盐的</p>
+</blockquote>
+<h2 id="阅读：ICOADS资料"><a href="#阅读：ICOADS资料" class="headerlink" title="阅读：ICOADS资料"></a>阅读：ICOADS资料</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://icoads.noaa.gov/">https://icoads.noaa.gov/</a></p>
+</blockquote>
+<h3 id="Data-and-Documentation"><a href="#Data-and-Documentation" class="headerlink" title="Data and Documentation"></a>Data and Documentation</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://icoads.noaa.gov/products.html">https://icoads.noaa.gov/products.html</a></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220308235659.png"></p>
+<h3 id="IMMA1-documentation"><a href="#IMMA1-documentation" class="headerlink" title="IMMA1 documentation"></a>IMMA1 documentation</h3><blockquote>
+<p>R3.0-imma1_short.pdf</p>
+</blockquote>
+<h2 id="阅读：西北太平洋海浪现场观测及统计产品数据集-2021-ICOADS-观测数据质量控制"><a href="#阅读：西北太平洋海浪现场观测及统计产品数据集-2021-ICOADS-观测数据质量控制" class="headerlink" title="阅读：西北太平洋海浪现场观测及统计产品数据集-2021-~~ICOADS+观测数据质量控制"></a>阅读：西北太平洋海浪现场观测及统计产品数据集-2021-~~ICOADS+观测数据质量控制</h2><blockquote>
+<p>ICOADS介绍</p>
+<p>观测资料的质量控制</p>
+</blockquote>
+<h2 id="卫星反演海浪产品数据检查模块：（刘锦灿）"><a href="#卫星反演海浪产品数据检查模块：（刘锦灿）" class="headerlink" title="卫星反演海浪产品数据检查模块：（刘锦灿）"></a><strong>卫星反演海浪产品数据检查模块</strong>：（刘锦灿）</h2><p>要求：</p>
+<ul>
+<li>根据<strong>产品质量控制码</strong>挑选质量可靠的数据；</li>
+<li>再根据融合产品区域的<strong>海陆分布</strong>，剔除陆上格点、海陆混合格点及距离陆地较近格点的数据，将陆地对探测数据的影响降到最低；</li>
+<li>然后结合所用<strong>背景场数据</strong>，进行融合前的背景场差异检查，剔除差异明显超出部分的数据，最后梳理成待融合的高质量数据。</li>
+<li>同时实现历史数据的检查，达到历史数据集制作要求。</li>
+</ul>
+<h2 id="阅读：AMDAR-观测资料分析及质量控制"><a href="#阅读：AMDAR-观测资料分析及质量控制" class="headerlink" title="阅读：AMDAR 观测资料分析及质量控制"></a>阅读：AMDAR 观测资料分析及质量控制</h2><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220308190547.png"></p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220308191136.png" style="zoom:50%;">
+
+<h2 id="历史数据回算模块：（刘锦灿）"><a href="#历史数据回算模块：（刘锦灿）" class="headerlink" title="历史数据回算模块：（刘锦灿）"></a><strong>历史数据回算模块</strong>：（刘锦灿）</h2><h2 id="阅读：支持回算的大数据实时计算关键技术研究"><a href="#阅读：支持回算的大数据实时计算关键技术研究" class="headerlink" title="阅读：支持回算的大数据实时计算关键技术研究"></a>阅读：支持回算的大数据实时计算关键技术研究</h2><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220308124313.png"></p>
+<h2 id="阅读：基于多源高度计数据的海浪融合方法研究"><a href="#阅读：基于多源高度计数据的海浪融合方法研究" class="headerlink" title="阅读：基于多源高度计数据的海浪融合方法研究"></a>阅读：基于多源高度计数据的海浪融合方法研究</h2><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220308225332.png"></p>
+<h2 id="2022-03-10-wjc老师反馈"><a href="#2022-03-10-wjc老师反馈" class="headerlink" title="2022-03-10 wjc老师反馈"></a>2022-03-10 wjc老师反馈</h2><p>孙沛东</p>
+<ul>
+<li><p><strong>风向的标准</strong>是什么？</p>
+<p>0正北，90正东</p>
+</li>
+<li><p>风向转换？</p>
+</li>
+<li><p>以秒为单位</p>
+</li>
+</ul>
+<p>邓方宇</p>
+<ul>
+<li>偏差订正<ul>
+<li>处理数据</li>
+<li>模型算法</li>
+<li></li>
+</ul>
+</li>
+<li>二维变分和三维变分的差别是什么？<ul>
+<li>三维变分，CCMP2.0</li>
+</ul>
+</li>
+<li>CCMP 手册<ul>
+<li>三维变分…</li>
+<li>变分同化…变分分析…</li>
+</ul>
+</li>
+<li>融合</li>
+</ul>
+<p>刘锦灿</p>
+<ul>
+<li>…</li>
+<li>改历史数据回算</li>
+</ul>
+<h2 id="2022-03-10-wjc老师反馈-1"><a href="#2022-03-10-wjc老师反馈-1" class="headerlink" title="2022-03-10 wjc老师反馈"></a>2022-03-10 wjc老师反馈</h2><p>洋面风偏差订正模块</p>
+<ul>
+<li><p>辐射计精度相较于散射计差很多~</p>
+</li>
+<li><p>目标，10km~</p>
+</li>
+<li><p>缺失数据补，现场观测数据的校准~</p>
+</li>
+<li><p>U和V，U东西~</p>
+<p>风向~</p>
+<p>风速~</p>
+<p>以正北方向为0度，顺时针表示，风向在已知U和V分量的情况下，<strong>风向的计算公式为</strong>：</p>
+<p>tmp=270-arctan(v,u)*180/pi</p>
+<p>alpha=mod(tmp,360)</p>
+</li>
+</ul>
+<p>UV融合模块</p>
+<ul>
+<li>逐步订正</li>
+<li>最优插值</li>
+<li>二维变分</li>
+<li>变分分析（CCMP）</li>
+</ul>
+<p>历史回算模块</p>
+<ul>
+<li>单点，多点，一段时间段，混合时间设置，在软件中的差异~~（<strong>刘锦灿</strong>）</li>
+</ul>
+<p>海浪偏差订正</p>
+<ul>
+<li>重新分成4个模块？</li>
+</ul>
+<p>海浪模式构建</p>
+<ul>
+<li><p>图，visio，（<strong>刘锦灿</strong>）</p>
+<p><strong>visio，连接符</strong>，</p>
+</li>
+</ul>
+<p>海浪数据同化模块</p>
+<ul>
+<li>流依赖，</li>
+<li>数据接入与标准化，</li>
+<li>分水岭算法，（<strong>刘锦灿</strong>）</li>
+<li>海浪谱分割策略，</li>
+</ul>
+<p>海浪模式产品后处理模块</p>
+<ul>
+<li>；</li>
+</ul>
+<p>海浪融合模块</p>
+<ul>
+<li>多尺度三维变分，何中杰老师；</li>
+</ul>
+<h2 id="2022-03-10-wjc老师反馈-2"><a href="#2022-03-10-wjc老师反馈-2" class="headerlink" title="2022-03-10 wjc老师反馈"></a>2022-03-10 wjc老师反馈</h2><p>晚上</p>
+<ul>
+<li><p>二位海浪谱一般表现为频率-方向谱的矩阵，分水岭将矩阵处理为图像，进而将图像当作大地测量学的…，集水盆，…</p>
+</li>
+<li><p>海浪谱分割，…</p>
+</li>
+<li><p>CAFSTO，波谱仪，海浪谱，分水岭，分割，。hjshshjdhjssakdsadsaui，skdjskjksdjasjkdssjdskdksadsadkjdsakjdskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkssssssssssssssssssskkkkkkkkkkkkkkksallllllllllsdjsak., sd sd sss sdsd sdhg jhsds shd</p>
+</li>
+<li><p>集合最优插值，输入：集合数、误差分布规律、标准化的海浪预测数据、模式背景场，</p>
+</li>
+<li><p>沿轨的~~</p>
+</li>
+<li><p>jkdsjd~~</p>
+</li>
+<li><p>顶不住了，12点回了宿舍，老师~~</p>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/03/05/yan-jiu-sheng-justtry/yan-yi-xia-hai-biao-mian-feng-he-hai-lang-duo-yuan-shu-ju-rong-he-shi-kuang/">https://Liu-Jincan.github.io/2022/03/05/yan-jiu-sheng-justtry/yan-yi-xia-hai-biao-mian-feng-he-hai-lang-duo-yuan-shu-ju-rong-he-shi-kuang/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/03/17/wavewatch3/07-yue-du-dapper/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118131148.png" class="responsive-img" alt="07-阅读：DAPPER">
+                        
+                        <span class="card-title">07-阅读：DAPPER</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-17
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/WW3/" class="post-category">
+                                    WW3
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/05/yan-jiu-sheng-justtry/yan-yi-xia-zhong-cheng-lao-shi-jiang-ke-yan/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118131148.png" class="responsive-img" alt="07-钟老师讲科研">
+                        
+                        <span class="card-title">07-钟老师讲科研</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                    研究生JustTry
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">408.1k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

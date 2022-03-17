@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-03-03
+                    2022-03-04
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="参考资料1：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"><a href="#参考资料1：用于3D变分数据同化的基于注意力的卷积自动编码器-2020" class="headerlink" title="参考资料1：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"></a><center>参考资料1：用于3D变分数据同化的基于注意力的卷积自动编码器-2020</center></h2><ul>
+                <h2 id="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"><a href="#参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020" class="headerlink" title="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"></a><center>参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020</center></h2><ul>
 <li><p>英文名：<strong>Attention-based Convolutional Autoencoders for 3D-Variational Data Assimilation</strong></p>
 </li>
 <li><p>期刊：《Computer methods in applied mechanics and engineering》，LetPub，<a target="_blank" rel="noopener" href="https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search">https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search</a></p>
@@ -421,7 +421,7 @@
 <li><p><code>这一篇是在2022-02-28 看的，对3D-VAR进行的改进，实现B矩阵的神经网络训练？~</code></p>
 </li>
 </ul>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>We propose a new <strong>‘Bi-Reduced Space’ approach</strong> to solving <strong>3D Variational Data Assimilation</strong> using <strong>Convolutional Autoencoders</strong>. We prove that our approach has the same solution as previous methods but has significantly lower computational complexity; in other words,<strong>we reduce the computational cost without affecting the data assimilation accuracy</strong>.</p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>We propose a new <strong>‘Bi-Reduced Space’ approach</strong> to solving <strong>3D Variational Data Assimilation</strong> using <strong>Convolutional Autoencoders</strong>. We prove that our approach has the same solution as previous methods but has significantly lower computational complexity; in other words,<strong>we reduce the computational cost without affecting the data assimilation accuracy</strong>.</p>
 <p>We tested our proposal with data from <strong>a real-world application</strong>: a pollution model of a site in Elephant and Castle (London, UK) and found that we could </p>
 <ul>
 <li><p>(1) reduce the size of the <strong>background covariance matrix representation</strong> by O(10<sup>3</sup> ), and </p>
@@ -432,15 +432,15 @@
 <li><p>(2) increase our <strong>data assimilation accuracy</strong> with respect to existing reduced space methods.</p>
 </li>
 </ul>
-<h2 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h2><p>This work is supported by the EPSRC, UK Grand Challenge grant “Managing Air for Green Inner Cities”(MAGIC) EP/N010221/1, by the EPSRC, UK Centre for Mathematics of Precision Healthcare EP/N0145291/1 and the EP/T003189/1 Health assessment across biological length scales for personal pollution exposure and its mitigation (INHALE). Thanks to Dr. Laetitia Mottet for the set up of the full model in Fluidity. M. Molina-Solana was supported by European Union’s H2020 MSCA-IF (ga. No.743623) and Athenea3i (ga. No.754446) programmes.</p>
-<h2 id="9-Conclusions-and-future-work"><a href="#9-Conclusions-and-future-work" class="headerlink" title="9. Conclusions and future work"></a>9. Conclusions and future work</h2><p>We have presented a new <strong>Bi-reduced space 3D-VarDA formulation</strong> and show that, in combination with the Zhou et al or <em>‘Tucodec’</em> image compression CAE, this method gives superior data assimilation performance in comparison with <strong>reduced space VarDA</strong> regardless of the parameters used in the latter case. We have demonstrated that our method is also faster in the majority of scenarios. On the theoretical side, we show that our method produces approximately equivalent solutions to the traditional method at lower computational complexity. Unlike the previous approach which is in O(<em>M<sup>2</sup></em>) for large <em>M</em>, our method does not penalise the collection of more observation data.</p>
+<h3 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h3><p>This work is supported by the EPSRC, UK Grand Challenge grant “Managing Air for Green Inner Cities”(MAGIC) EP/N010221/1, by the EPSRC, UK Centre for Mathematics of Precision Healthcare EP/N0145291/1 and the EP/T003189/1 Health assessment across biological length scales for personal pollution exposure and its mitigation (INHALE). Thanks to Dr. Laetitia Mottet for the set up of the full model in Fluidity. M. Molina-Solana was supported by European Union’s H2020 MSCA-IF (ga. No.743623) and Athenea3i (ga. No.754446) programmes.</p>
+<h3 id="9-Conclusions-and-future-work"><a href="#9-Conclusions-and-future-work" class="headerlink" title="9. Conclusions and future work"></a>9. Conclusions and future work</h3><p>We have presented a new <strong>Bi-reduced space 3D-VarDA formulation</strong> and show that, in combination with the Zhou et al or <em>‘Tucodec’</em> image compression CAE, this method gives superior data assimilation performance in comparison with <strong>reduced space VarDA</strong> regardless of the parameters used in the latter case. We have demonstrated that our method is also faster in the majority of scenarios. On the theoretical side, we show that our method produces approximately equivalent solutions to the traditional method at lower computational complexity. Unlike the previous approach which is in O(<em>M<sup>2</sup></em>) for large <em>M</em>, our method does not penalise the collection of more observation data.</p>
 <p>We have released our work in a well tested Python module <strong>VarDACAE</strong>.</p>
 <blockquote>
 <p><code>↑在 python 的 module 上发布的</code></p>
 </blockquote>
 <p>There were many extensions to this work which we would have liked to explore further. We feel that the most important of these is the validation of our hypothesis that is possible to create an observation encoder network <em>f<sup>o</sup></em> to calculate the latent misfits <strong>d</strong><sub>l</sub> . We would also have liked to a<strong>pply our approach to 4D-VarDA</strong>, validate it on other data sets and investigate alternatives to the L-BFGS minimisation routine. A more substantial extension would involve integrating our method with CAE-based ROM approaches to produce a single end-to-end network for reduced space data assimilation and we believe this would be complemented by the use of data assimilation localisation techniques [66]. Finally, there is also potential for the use of VAEs within the proposed system to enforce orthogonality in the CAE latent dimension.</p>
-<h2 id="github-code"><a href="#github-code" class="headerlink" title="github code"></a>github code</h2><p>VarDACAE：<a target="_blank" rel="noopener" href="https://github.com/scheng1992/Data_Assimilation">https://github.com/scheng1992/Data_Assimilation</a></p>
-<h3 id="Readme-md"><a href="#Readme-md" class="headerlink" title="Readme.md"></a>Readme.md</h3><p>—<strong>VarDACAE</strong></p>
+<h3 id="github-code"><a href="#github-code" class="headerlink" title="github code"></a>github code</h3><p>VarDACAE：<a target="_blank" rel="noopener" href="https://github.com/scheng1992/Data_Assimilation">https://github.com/scheng1992/Data_Assimilation</a></p>
+<h4 id="Readme-md"><a href="#Readme-md" class="headerlink" title="Readme.md"></a>Readme.md</h4><p>—<strong>VarDACAE</strong></p>
 <p>This module is used to create Convolutional AutoEncoders for Variational Data Assimilation. A user can define, create and train an AE for Data Assimilation with just a few lines of code. It is the accompanying code to the paper <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2101.02121">here</a>, published in <em>Computer Methods in Applied Mechanics and Engineering</em>.</p>
 <p>—<strong>Introduction</strong></p>
 <p>Data Assimilation (DA) is <strong>an uncertainty quantification technique</strong> used to reduce the error in predictions by combining forecasting data with observation of the state. The most common techniques for DA are Variational approaches and Kalman Filters.</p>
@@ -467,7 +467,7 @@
 <p>—<strong>Getting Started</strong></p>
 <p>—<strong>Settings Instance</strong></p>
 <p>—<strong>Train a model on your own data</strong></p>
-<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>Data Assimilation (DA) is an uncertainty quantification technique in which observation data and a forecasting model are used in <strong>tandem</strong> to generate predictions that are more accurate than those that would be produced using <strong>either component</strong> independently. </p>
+<h3 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>Data Assimilation (DA) is an uncertainty quantification technique in which observation data and a forecasting model are used in <strong>tandem</strong> to generate predictions that are more accurate than those that would be produced using <strong>either component</strong> independently. </p>
 <blockquote>
 <p><code>↑ DA的定义</code></p>
 </blockquote>
@@ -512,7 +512,7 @@
 <li>As the success of our approach is heavily conditioned on the choice of a CAE architecture, in Section 6 we summarise the results of our extensive architecture search before evaluating our approach against existing VarDA methods in Section 7. </li>
 <li>The paper ends with a discussion in Section 8 and some conclusions and further remarks in Section 9.</li>
 </ul>
-<h2 id="2-Related-work-and-contribution-of-the-present-work"><a href="#2-Related-work-and-contribution-of-the-present-work" class="headerlink" title="2 Related work and contribution of the present work"></a>2 Related work and contribution of the present work</h2><p>Forecasting models introduce uncertainty from numerous sources. These include, but are not limited to, uncertainty in initial conditions, imperfect representations of the underlying physical processes and numerical errors. As a result, a model without access to real-time data will accumulate errors until its predictions no longer correspond to reality [8]. Similarly, all observations will have an irreducible uncertainty as a result of imperfect measuring devices. </p>
+<h3 id="2-Related-work-and-contribution-of-the-present-work"><a href="#2-Related-work-and-contribution-of-the-present-work" class="headerlink" title="2 Related work and contribution of the present work"></a>2 Related work and contribution of the present work</h3><p>Forecasting models introduce uncertainty from numerous sources. These include, but are not limited to, uncertainty in initial conditions, imperfect representations of the underlying physical processes and numerical errors. As a result, a model without access to real-time data will accumulate errors until its predictions no longer correspond to reality [8]. Similarly, all observations will have an irreducible uncertainty as a result of imperfect measuring devices. </p>
 <blockquote>
 <p><code>↑ 预测模型的不确定性包括...</code></p>
 </blockquote>
@@ -541,7 +541,7 @@
 <li><p>We release a well tested open-source <strong>Python module VarDACAE</strong> that enables users to easily replicate our experiments, use our model implementations, and train CAEs for any Variational data assimilation problem. The repository can be found at <a target="_blank" rel="noopener" href="https://github.com/julianmack/Data">https://github.com/julianmack/Data</a> Assimilation.</p>
 </li>
 </ol>
-<h2 id="参考资料2：基于数据同化的地下水模型不确定性分析"><a href="#参考资料2：基于数据同化的地下水模型不确定性分析" class="headerlink" title="参考资料2：基于数据同化的地下水模型不确定性分析"></a><center>参考资料2：基于数据同化的地下水模型不确定性分析</center></h2><ul>
+<h2 id="参考资料：基于数据同化的地下水模型不确定性分析"><a href="#参考资料：基于数据同化的地下水模型不确定性分析" class="headerlink" title="参考资料：基于数据同化的地下水模型不确定性分析"></a><center>参考资料：基于数据同化的地下水模型不确定性分析</center></h2><ul>
 <li><p>期刊：《Journal of Glaciology and Geocryology》，</p>
 <blockquote>
 <p>这个期刊查不到</p>
@@ -554,7 +554,7 @@
 <li><p><code>创新点：数据同化的不确定分析</code></p>
 </li>
 </ul>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><strong>黑河流域</strong>中下游地下水系统受上游冰冻圈融水和降雨的补给，由气候变暖导致的冰冻圈萎缩致使中下游地下水系统的稳定性面临更多的风险。</p>
+<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p><strong>黑河流域</strong>中下游地下水系统受上游冰冻圈融水和降雨的补给，由气候变暖导致的冰冻圈萎缩致使中下游地下水系统的稳定性面临更多的风险。</p>
 <blockquote>
 <p><code>↑ 地下水模型，研究意义</code></p>
 </blockquote>
@@ -568,11 +568,11 @@
 </blockquote>
 <p>实验结果证明数据同化算法可有效减小地下水模型参数的不确定性，观测资料的种类与数量对参数不确定性的减小起到重要作用；不同地下水模型参数的不确定性不同，地表水与地下水相互作用频繁的区域参数不确定性较大；含水层渗透系数、含水层给水度以及灌溉回流系数对模型输出的地下水位输出影响显著，河床水力传导系数对模型输出的河流流量影响较大。</p>
 <p>本研究将为地下水研究提供更加可靠的模型方法，为西北内流区地下水哺育的绿洲生态系统稳定可持续研究提供重要支撑。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>本文提出了基于数据同化的不确定性分析方法，通过包含观测资料信息<strong>减小模型参数的不确定性</strong>。基于已构建的黑河流域中游地下水模型，利用提出的算法对模型参数进行不确定性分析，探索了不同超参数对算法效果的影响，分析了含水层渗透系数、河床水力传导系数、含水层给水度、灌溉回流系数的不确定性，评估了不同系数对观测信息的敏感程度，主要结论如下：</p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>本文提出了基于数据同化的不确定性分析方法，通过包含观测资料信息<strong>减小模型参数的不确定性</strong>。基于已构建的黑河流域中游地下水模型，利用提出的算法对模型参数进行不确定性分析，探索了不同超参数对算法效果的影响，分析了含水层渗透系数、河床水力传导系数、含水层给水度、灌溉回流系数的不确定性，评估了不同系数对观测信息的敏感程度，主要结论如下：</p>
 <p>（1）<strong>基于贝叶斯理论的数据同化方法是不确定性分析的有效手段</strong>，ESMDA-EnKF算法通过包含观测资料更新参数，能够有效的减小模型参数的不确定性；对不确定性分析结果的统计分析结果表明，经过 ESMDA-EnKF 算法更新后的参数均值收敛到最优均值附近，不确定性范围明显减小。</p>
 <p>（2）不同超参数对算法效果影响不一，<strong>观测资料的增加将提升算法对模型参数的更新程度，减小参数的不确定性，且加入新类型的观测资料会进一步减小参数的不确定性</strong>。</p>
 <p>（3）<strong>不同模型参数的不确定性不同</strong>，地表水与地下水相互作用频繁的区域参数不确定性较大；含水层渗透系数、含水层给水度以及灌溉回流系数对模型输出的地下水位影响显著，水力传导系数对模型输出的河流流量影响较大。</p>
-<h2 id="0-引言"><a href="#0-引言" class="headerlink" title="0 引言"></a>0 引言</h2><p><strong>地下水系统模拟</strong>已经成为地球科学的基本研究方法，在地球系统科学领域被誉为第二次哥白尼革命［1］，被证明是最有价值和最实用的工具之一［2-3］。地下水模型能够刻画水文过程的整体和局部行为；多次模拟，选择最优的设计；通过情景分析进行情景预测，提出应对策略。</p>
+<h3 id="0-引言"><a href="#0-引言" class="headerlink" title="0 引言"></a>0 引言</h3><p><strong>地下水系统模拟</strong>已经成为地球科学的基本研究方法，在地球系统科学领域被誉为第二次哥白尼革命［1］，被证明是最有价值和最实用的工具之一［2-3］。地下水模型能够刻画水文过程的整体和局部行为；多次模拟，选择最优的设计；通过情景分析进行情景预测，提出应对策略。</p>
 <p>围绕黑河中游地表水、泉水和地下水，大量学者利用模型进行了有益探索：陈冲等［4］建立了黑河中游地区地下水模型，并初步分析了上游径流与耕地面积对地下水资源的影响；王旭升等［5］总结了20年来黑河流域的地下水模型研究，并指出地下水模型应加强与关联过程（地表水、土壤水、水利工程）的集成；程国栋等［6］阐述了黑河流域生态—水文过程集成研究的进展及展望。</p>
 <blockquote>
 <p><code>↑ 黑河</code></p>
@@ -610,7 +610,7 @@
 <blockquote>
 <p><code>↑ 本文创新点</code></p>
 </blockquote>
-<h2 id="1-研究区域"><a href="#1-研究区域" class="headerlink" title="1 研究区域"></a>1 研究区域</h2><h2 id="2-研究方法"><a href="#2-研究方法" class="headerlink" title="2 研究方法"></a>2 研究方法</h2><p>本文采用 ESMDA 与 EnKF 结合的方法 <strong>ESMDA-EnKF</strong> 对研究区地下水模型的参数进行不确定性分析。</p>
+<h3 id="1-研究区域"><a href="#1-研究区域" class="headerlink" title="1 研究区域"></a>1 研究区域</h3><h3 id="2-研究方法"><a href="#2-研究方法" class="headerlink" title="2 研究方法"></a>2 研究方法</h3><p>本文采用 ESMDA 与 EnKF 结合的方法 <strong>ESMDA-EnKF</strong> 对研究区地下水模型的参数进行不确定性分析。</p>
 <p><strong>图 2</strong> 给出了使用 ESMDA 算法进行不确定性分析的程序流程。</p>
 <ul>
 <li>在进行不确定性分析之前， 首先要对算法进行初始化，并<strong>对模型的参数进行设置</strong>，根据给定的概率分布（一般假定为正态分布或者对数正态分布）<strong>生成模型参数集合</strong>。</li>
@@ -671,12 +671,12 @@
 <p>研究区内定义为活动单元，研究区外定义为非 活动单元。时间上，以每月为一个应力期，每天为 一个时间步。研究区边界条件参考文献［41］以及自然边界确定（图 3）。由于地下水分水岭的存在， A<del>E设置为无水流边界；E处为正义峡水文站，黑河从此处流出研究区；据调查资料分析，北山地区地 下水含水介质与南部祁连山相似，但由于降水稀少，无常年地表径流，地下水含量无法与祁连山区相比较［26］，因此，将D</del>E边界假设为无水流边界；由…</p>
 <h3 id="2-4-模型评价"><a href="#2-4-模型评价" class="headerlink" title="2.4 模型评价"></a>2.4 模型评价</h3><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302173140.png" style="zoom:72%;">
 
-<h2 id="3-结果与讨论"><a href="#3-结果与讨论" class="headerlink" title="3 结果与讨论"></a>3 结果与讨论</h2><h3 id="3-1-算法参数分析（敏感性分析？）"><a href="#3-1-算法参数分析（敏感性分析？）" class="headerlink" title="3.1 算法参数分析（敏感性分析？）"></a>3.1 算法参数分析（敏感性分析？）</h3><p>在使用 ESMDA-EnKF 算法对地下水模型进行不确定性分析的过程中，算法存在一些超参数直接影响到同化算法对模型参数的更新效果（例如：<strong>算法执行次数</strong>（即膨胀系数）Na、<strong>观测资料数 n</strong>、<strong>参数集合大小N</strong>等），因此，本文首先为ESMDA-EnKF<strong>确定最优超参数</strong>，之后采用算法分析<strong>模型参数的不确定性</strong>以及<strong>模型参数对观测数据的敏感性</strong>。</p>
+<h3 id="3-结果与讨论"><a href="#3-结果与讨论" class="headerlink" title="3 结果与讨论"></a>3 结果与讨论</h3><h4 id="3-1-算法参数分析（敏感性分析？）"><a href="#3-1-算法参数分析（敏感性分析？）" class="headerlink" title="3.1 算法参数分析（敏感性分析？）"></a>3.1 算法参数分析（敏感性分析？）</h4><p>在使用 ESMDA-EnKF 算法对地下水模型进行不确定性分析的过程中，算法存在一些超参数直接影响到同化算法对模型参数的更新效果（例如：<strong>算法执行次数</strong>（即膨胀系数）Na、<strong>观测资料数 n</strong>、<strong>参数集合大小N</strong>等），因此，本文首先为ESMDA-EnKF<strong>确定最优超参数</strong>，之后采用算法分析<strong>模型参数的不确定性</strong>以及<strong>模型参数对观测数据的敏感性</strong>。</p>
 <blockquote>
 <p><code>↑ 超参数</code></p>
 </blockquote>
 <p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
-<h4 id="3-1-1-ESMDA执行次数对不确定性分析的影响"><a href="#3-1-1-ESMDA执行次数对不确定性分析的影响" class="headerlink" title="3.1.1 ESMDA执行次数对不确定性分析的影响"></a><strong>3.1.1 ESMDA执行次数对不确定性分析的影响</strong></h4><p>ESMDA 采用 EnKF 算法对地下水模型参数进行更新，因此，<strong>EnKF 算法的执行次数</strong>将直接影响模型参数的更新效果。然而，目前尚没有关于执行次数的理论研究，而在文献［40］给出的例子中，分别执行了2次、4次算法以对比同化效果。考虑到计算消耗问题，本节评价了执行 1 次、2 次、3 次、4 次 En⁃ KF算法后的同化效果（<strong>图4</strong>）。</p>
+<h5 id="3-1-1-ESMDA执行次数对不确定性分析的影响"><a href="#3-1-1-ESMDA执行次数对不确定性分析的影响" class="headerlink" title="3.1.1 ESMDA执行次数对不确定性分析的影响"></a><strong>3.1.1 ESMDA执行次数对不确定性分析的影响</strong></h5><p>ESMDA 采用 EnKF 算法对地下水模型参数进行更新，因此，<strong>EnKF 算法的执行次数</strong>将直接影响模型参数的更新效果。然而，目前尚没有关于执行次数的理论研究，而在文献［40］给出的例子中，分别执行了2次、4次算法以对比同化效果。考虑到计算消耗问题，本节评价了执行 1 次、2 次、3 次、4 次 En⁃ KF算法后的同化效果（<strong>图4</strong>）。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302173806.png" style="zoom:72%;">
 
 <p><strong>图 4</strong> 中展示了 EnKF 算法执行不同次数后的同化效果，<strong>Last iteration 代表采用不同的执行次数时</strong>， 最后一次执行结束之后的同化效果。</p>
@@ -691,14 +691,14 @@
 <p><code>↑ QT：有必要进行多次同化吗，观测不是也有不确定性吗，用RMSE？</code></p>
 </blockquote>
 <p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
-<h4 id="3-1-2-观测资料数对不确定性分析的影响"><a href="#3-1-2-观测资料数对不确定性分析的影响" class="headerlink" title="3.1.2 观测资料数对不确定性分析的影响"></a><strong>3.1.2 观测资料数对不确定性分析的影响</strong></h4><p>数据同化的目的即是最大限度的融合不同来源、不同时间、空间分辨率的直接、间接观测数据以用于提高模型的估计精度，以获得更加准确的状态变量的时空分布［44-45］。然而由于成本原因，对系统内相关因素进行<strong>无限制观测是不现实的</strong>。因此，<strong>研究观测资料对同化效果的影响是必要的</strong>。选择 42 个水位观测井处的观测水位以及高崖和正义峡水文观测站处的黑河流量观测数据，分别研究观测数 为 7、14、21、28、35、42 以及 44 时对同化效果的影响。</p>
+<h5 id="3-1-2-观测资料数对不确定性分析的影响"><a href="#3-1-2-观测资料数对不确定性分析的影响" class="headerlink" title="3.1.2 观测资料数对不确定性分析的影响"></a><strong>3.1.2 观测资料数对不确定性分析的影响</strong></h5><p>数据同化的目的即是最大限度的融合不同来源、不同时间、空间分辨率的直接、间接观测数据以用于提高模型的估计精度，以获得更加准确的状态变量的时空分布［44-45］。然而由于成本原因，对系统内相关因素进行<strong>无限制观测是不现实的</strong>。因此，<strong>研究观测资料对同化效果的影响是必要的</strong>。选择 42 个水位观测井处的观测水位以及高崖和正义峡水文观测站处的黑河流量观测数据，分别研究观测数 为 7、14、21、28、35、42 以及 44 时对同化效果的影响。</p>
 <p><strong>图 5</strong> 显示了经过 2 次参数更新过程之后，不同观测资料数的 RMSE 值。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302175448.png" style="zoom:72%;">
 
 <p>由于涉及到不同类型的观测值、输出值（地下水位、流量），所以，图中对地下水水位、流量的观测值及输出值进行了归一化处理，将观测值、输出值限定于［0，1］之间。</p>
 <p>由图 5 总体趋势上可以看出，随着观测资料的增加，参数逐渐接近真实值，地下水位的 RMSE 值逐渐降低。然而，观测数从 7个增加至 14个对同化效果影响不明显；观测井数增加至 21 个之后，同化效果基本保持不变；增加流量观测（42 至 44）对同化效果影响较为显著。由此可见，一种类型的观测数据确实会 提升同化效果，但是当一种类型的观测数据增加到 一定程度时（本实验中为 21 个），观测数据对同化效果的影响有限；然而，继续增加不同类型的观测数据（河流流量观测数据）将进一步提升同化效果。</p>
 <p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
-<h4 id="3-1-3-集合大小对不确定性分析的影响"><a href="#3-1-3-集合大小对不确定性分析的影响" class="headerlink" title="3.1.3 集合大小对不确定性分析的影响"></a><strong>3.1.3 集合大小对不确定性分析的影响</strong></h4><p>EnKF 采用<strong>样本集合</strong>的方式表示<strong>模型状态变量的先验概率分布</strong>，估计误差协方差［46］。</p>
+<h5 id="3-1-3-集合大小对不确定性分析的影响"><a href="#3-1-3-集合大小对不确定性分析的影响" class="headerlink" title="3.1.3 集合大小对不确定性分析的影响"></a><strong>3.1.3 集合大小对不确定性分析的影响</strong></h5><p>EnKF 采用<strong>样本集合</strong>的方式表示<strong>模型状态变量的先验概率分布</strong>，估计误差协方差［46］。</p>
 <blockquote>
 <p><code>↑ 怎么理解ENKF的先验？（预测步）</code></p>
 </blockquote>
@@ -709,7 +709,7 @@
 <p><strong>图 6</strong> 显示了模型参数集合大小分别为 30、60、 90、120、150 情况下，经过两次参数更新之后的 RMSE 值。由图中可以看出，当参数集合大小为 30 时，并没有出现<strong>滤波发散</strong>现象，且增加采样对同化效果的影响并不明显。因此，本文将集合大小设置为30以平衡算法效果与计算消耗。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302175822.png" style="zoom:72%;">
 
-<h3 id="3-2-地下水模型参数不确定性分析"><a href="#3-2-地下水模型参数不确定性分析" class="headerlink" title="3.2 地下水模型参数不确定性分析"></a>3.2 地下水模型参数不确定性分析</h3><p>基于以上分析确定了算法参数之后，本文利用 ESMDA-EnKF 对地下水模型参数进行了不确定性分析，模型参数分布见<strong>图 7</strong>，相关设置见<strong>表 1</strong>。</p>
+<h4 id="3-2-地下水模型参数不确定性分析"><a href="#3-2-地下水模型参数不确定性分析" class="headerlink" title="3.2 地下水模型参数不确定性分析"></a>3.2 地下水模型参数不确定性分析</h4><p>基于以上分析确定了算法参数之后，本文利用 ESMDA-EnKF 对地下水模型参数进行了不确定性分析，模型参数分布见<strong>图 7</strong>，相关设置见<strong>表 1</strong>。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302194700.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302194737.png"></p>
 <p>从<strong>模型参数先验概率分布</strong>中进行 30 次随机采样，使用 42 个水位观测井、2 个径流观测站处的观测数据对模型参数进行 2 次（Na=2）更新。模型参数随 ESMDA-EnKF 运行所得的不确定性如<strong>图 8</strong>（注：由于参数与观测点数较多，<strong>图 8</strong> 中只显示了部分参数与观测点处的更新情况）。</p>
@@ -761,10 +761,10 @@
 <blockquote>
 <p><code>↑ 同化中极为经典的图~~</code></p>
 </blockquote>
-<h2 id="参考资料3：基于EnKF和ES-MDA的油藏自动历史拟合"><a href="#参考资料3：基于EnKF和ES-MDA的油藏自动历史拟合" class="headerlink" title="参考资料3：基于EnKF和ES-MDA的油藏自动历史拟合"></a>参考资料3：基于EnKF和ES-MDA的油藏自动历史拟合</h2><ul>
+<h2 id="参考资料：基于EnKF和ES-MDA的油藏自动历史拟合"><a href="#参考资料：基于EnKF和ES-MDA的油藏自动历史拟合" class="headerlink" title="参考资料：基于EnKF和ES-MDA的油藏自动历史拟合"></a>参考资料：基于EnKF和ES-MDA的油藏自动历史拟合</h2><ul>
 <li><code>与参考资料2中的ES-MDA一样？</code></li>
 </ul>
-<h2 id="参考资料4：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022"><a href="#参考资料4：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022" class="headerlink" title="参考资料4：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022"></a>参考资料4：<strong>FY-2G</strong>云导风资料同化在台风“天鸽”数值预报中的应用-2022</h2><ul>
+<h2 id="参考资料：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022"><a href="#参考资料：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022" class="headerlink" title="参考资料：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022"></a>参考资料：<strong>FY-2G</strong>云导风资料同化在台风“天鸽”数值预报中的应用-2022</h2><ul>
 <li><p>期刊：《海洋预报》，</p>
 <blockquote>
 <p>这个期刊查不到</p>
@@ -777,12 +777,12 @@
 <li><p><code>创新点：同化了云导风资料</code></p>
 </li>
 </ul>
-<h2 id="摘要-1"><a href="#摘要-1" class="headerlink" title="摘要"></a>摘要</h2><p>以2017年8月登陆我国的13号台风“天鸽”为个例，采用美国全球预报系统资料作为背景场，利用WRF中尺度数值模式及天气研究和预报模式同化系统中的三维变分模块，探究了<strong>新一代静止卫星FY-2G云导风资料同化对台风预报的影响</strong>。</p>
+<h3 id="摘要-1"><a href="#摘要-1" class="headerlink" title="摘要"></a>摘要</h3><p>以2017年8月登陆我国的13号台风“天鸽”为个例，采用美国全球预报系统资料作为背景场，利用WRF中尺度数值模式及天气研究和预报模式同化系统中的三维变分模块，探究了<strong>新一代静止卫星FY-2G云导风资料同化对台风预报的影响</strong>。</p>
 <blockquote>
 <p><code>↑ 主要创新点就是同化了FY-2G云导风资料</code></p>
 </blockquote>
 <p>研究结果表明：<strong>云导风资料同化模拟的台风路径、强度和最大风速与实况更加接近</strong>。与控制试验相比，云导风资料同化能够为背景场提供丰富的风矢量信息，增强台风周围对流云及其引导气流的强度，从而较好地模拟台风的内部结构，对影响其发展和维持的水汽条件与动力条件进行改进。</p>
-<h2 id="6-结论"><a href="#6-结论" class="headerlink" title="6 结论"></a>6 结论</h2><p>本文选取了2017年8月22日登陆我国的强台风 “天鸽”，使用3.9.1版本的WRF模式及其同化系统， 考察FY-2G卫星云导风资料同化对台风数值预报的影响，并进行了30 h的<strong>确定性预报</strong>，同时对影响台风发展移动的多个要素进行考察分析。结论如下：</p>
+<h3 id="6-结论"><a href="#6-结论" class="headerlink" title="6 结论"></a>6 结论</h3><p>本文选取了2017年8月22日登陆我国的强台风 “天鸽”，使用3.9.1版本的WRF模式及其同化系统， 考察FY-2G卫星云导风资料同化对台风数值预报的影响，并进行了30 h的<strong>确定性预报</strong>，同时对影响台风发展移动的多个要素进行考察分析。结论如下：</p>
 <p>（1）同化试验模拟的台风路径预报误差更小。由于云导风资料集中在中高层大气，模拟出的台风强度不会因为台风登陆后受到地面的摩擦而产生较大误差。 </p>
 <p>（2）同化卫星云导风资料能够增加模式初始场中台风周围的风矢量信息，并且为中高层台风周围的大气增加正的风矢量。中高层之间的垂直动量输送使得台风向北移动的引导气流加强，台风路径 也随之得到准确调整。 </p>
 <p>（3）卫星云导风资料同化能够使模式更好地模拟台风结构。同化试验在台风中心附近模拟出了正的相对湿度增量，有利于台风的维持；同时，同化试验模拟的T-logP探空图也更接近观测。</p>
@@ -793,7 +793,7 @@
 <li>在同化方法上，本研究采用的是 3DVAR 方法，在今后的研究中应考虑更高级的同化方法，如混合同化方法，以进一步改进预报效 果。</li>
 <li>在资料的使用上，本研究仅采用了含有高层风场信息的卫星云导风资料，缺失了低层风场信息， 未来将进一步尝试基于云导风资料和微波辐射计资料的多源资料联合同化试验，以进一步提高台风数值预报的准确度。</li>
 </ul>
-<h2 id="2-观测资料及同化系统"><a href="#2-观测资料及同化系统" class="headerlink" title="2 观测资料及同化系统"></a>2 观测资料及同化系统</h2><h3 id="2-1-FY-2G云导风资料及质量控制方案"><a href="#2-1-FY-2G云导风资料及质量控制方案" class="headerlink" title="2.1 FY-2G云导风资料及质量控制方案"></a>2.1 FY-2G云导风资料及质量控制方案</h3><p>…</p>
+<h3 id="2-观测资料及同化系统"><a href="#2-观测资料及同化系统" class="headerlink" title="2 观测资料及同化系统"></a>2 观测资料及同化系统</h3><h4 id="2-1-FY-2G云导风资料及质量控制方案"><a href="#2-1-FY-2G云导风资料及质量控制方案" class="headerlink" title="2.1 FY-2G云导风资料及质量控制方案"></a>2.1 FY-2G云导风资料及质量控制方案</h4><p>…</p>
 <blockquote>
 <p><code>↑ 介绍FY-2G云导风资料</code></p>
 </blockquote>
@@ -801,7 +801,7 @@
 <blockquote>
 <p><code>↑ 可能这就是这个资料的质量控制方案</code></p>
 </blockquote>
-<h3 id="2-2-WRFDA同化系统"><a href="#2-2-WRFDA同化系统" class="headerlink" title="2.2 WRFDA同化系统"></a><strong>2.2 WRFDA</strong>同化系统</h3><p><strong>WRFDA 同化系统与 WRF 模式配套</strong>，可同化绝大部分常规和非常规的气象资料，包含 3DVAR、四维变分（Four Dimensional VARiation，4DVAR）以及混合同化等部分。</p>
+<h4 id="2-2-WRFDA同化系统"><a href="#2-2-WRFDA同化系统" class="headerlink" title="2.2 WRFDA同化系统"></a><strong>2.2 WRFDA</strong>同化系统</h4><p><strong>WRFDA 同化系统与 WRF 模式配套</strong>，可同化绝大部分常规和非常规的气象资料，包含 3DVAR、四维变分（Four Dimensional VARiation，4DVAR）以及混合同化等部分。</p>
 <blockquote>
 <p><code>↑ 为什么WW3没有配套的同化系统</code></p>
 </blockquote>
@@ -816,9 +816,9 @@
 <blockquote>
 <p><code>↑ B矩阵的设计，去看看老师那篇论文~~</code></p>
 </blockquote>
-<h2 id="4-试验设计"><a href="#4-试验设计" class="headerlink" title="4 试验设计"></a>4 试验设计</h2><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302203812.png" style="zoom:80%;">
+<h3 id="4-试验设计"><a href="#4-试验设计" class="headerlink" title="4 试验设计"></a>4 试验设计</h3><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302203812.png" style="zoom:80%;">
 
-<h2 id="参考资料5：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022"><a href="#参考资料5：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022" class="headerlink" title="参考资料5：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022"></a>参考资料5：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022</h2><ul>
+<h2 id="参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022"><a href="#参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022" class="headerlink" title="参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022"></a>参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022</h2><ul>
 <li><p>英文名：Some progress on ocean data assimilation in China: Introduction of the special section “Ocean Data Assimilation” 2022</p>
 </li>
 <li><p>期刊：《ACTA OCEANOLOGICA SINICA》</p>
@@ -833,7 +833,7 @@
 <li><p><code>创新点：国内2020同化研究的内容</code></p>
 </li>
 </ul>
-<h2 id="1-Introduction-1"><a href="#1-Introduction-1" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>This special section is the scientific legacy of the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China, which was held in Changsha, China during December 3–4, 2020 with more than 160 participants from 35 units in China. It continued a series of National Ocean Data Assimilation conferences which began in 2003, which played an important role in the development of ocean data assimilation in China. </p>
+<h3 id="1-Introduction-1"><a href="#1-Introduction-1" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>This special section is the scientific legacy of the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China, which was held in Changsha, China during December 3–4, 2020 with more than 160 participants from 35 units in China. It continued a series of National Ocean Data Assimilation conferences which began in 2003, which played an important role in the development of ocean data assimilation in China. </p>
 <p>In this 13th conference, there were 41 oral presentations and 15 posters, which focused on </p>
 <ul>
 <li><strong>ocean data assimilation methods,</strong> </li>
@@ -877,7 +877,7 @@
 <li>With the development of earth system model, ocean model will also be coupled with atmosphere, land surface, ocean waves and sea ice models, the <strong>coupled data assimilation</strong> will be a hot topic; </li>
 <li>and the development of <strong>machine learning</strong> also prompt us to seek the combination of data assimilation and machine learning.</li>
 </ul>
-<h2 id="参考资料6：Data-Assimilation-for-Chaotic-Dynamics"><a href="#参考资料6：Data-Assimilation-for-Chaotic-Dynamics" class="headerlink" title="参考资料6：Data Assimilation for Chaotic Dynamics"></a>参考资料6：Data Assimilation for Chaotic Dynamics</h2><ul>
+<h2 id="参考资料：Data-Assimilation-for-Chaotic-Dynamics"><a href="#参考资料：Data-Assimilation-for-Chaotic-Dynamics" class="headerlink" title="参考资料：Data Assimilation for Chaotic Dynamics"></a>参考资料：Data Assimilation for Chaotic Dynamics</h2><ul>
 <li><p>Data Assimilation for Chaotic Dynamics</p>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://link.springer.com/chapter/10.1007/978-3-030-77722-7_1">https://link.springer.com/chapter/10.1007/978-3-030-77722-7_1</a></p>
@@ -1428,7 +1428,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">359.9k</span>
+                        class="white-color">408.1k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
