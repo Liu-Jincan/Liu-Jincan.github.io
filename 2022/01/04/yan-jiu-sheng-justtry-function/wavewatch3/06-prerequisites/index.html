@@ -1,0 +1,1555 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="06-Prerequisites-了解unix,netcdf,ldl, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>06-Prerequisites-了解unix,netcdf,ldl | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">06-Prerequisites-了解unix,netcdf,ldl</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/WW3/" class="post-category">
+                                WW3
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-01-04
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-01-13
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    2.1k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="06-Prerequisites-了解unix-netcdf-ldl"><a href="#06-Prerequisites-了解unix-netcdf-ldl" class="headerlink" title="06-Prerequisites-了解unix,netcdf,ldl"></a><center>06-Prerequisites-了解unix,netcdf,ldl</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>prerequisites-ww3.pdf</code>；（2017）</p>
+<blockquote>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NXDRX2gP2CywqL6UBiSLlA">https://pan.baidu.com/s/1NXDRX2gP2CywqL6UBiSLlA</a>   提取码：2hrk </p>
+</blockquote>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本文档中，您将学习如何使用最常用的命令行在 <code>UNIX</code> 环境中工作，以及如何使用海洋学中常用的 <code>netCDF</code> 文件进行管理。<br>在附录 A 中，根据您的系统解释了 <code>netCDF库</code>的逐步安装。<br>在附录 B 中，根据您的系统解释了 <code>IDL库</code>的逐步安装。</p>
+<h2 id="Unix-Linux"><a href="#Unix-Linux" class="headerlink" title="Unix/Linux"></a>Unix/Linux</h2><ul>
+<li><p>基本命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	显示当前目录路径</span>
+<span class="token builtin class-name">pwd</span>
+
+<span class="token comment">#	显示当前目录文件和文件夹</span>
+<span class="token function">ls</span>
+
+<span class="token comment">#	</span>
+<span class="token builtin class-name">cd</span> Documents
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+
+<span class="token comment">#	回到用户主目录</span>
+<span class="token builtin class-name">cd</span>
+<span class="token comment"># or</span>
+<span class="token builtin class-name">cd</span> ~
+<span class="token comment"># or</span>
+<span class="token builtin class-name">cd</span> <span class="token environment constant">$HOME</span>
+
+<span class="token comment">#	复制，移动，软连接，删除</span>
+<span class="token function">cp</span> fileA <span class="token punctuation">..</span>/fileB
+<span class="token function">mv</span> fileA <span class="token punctuation">..</span>/fileB 
+<span class="token function">ln</span> -s fileA <span class="token punctuation">..</span>/fileB
+<span class="token function">rm</span> fileA
+
+<span class="token comment">#	print</span>
+<span class="token builtin class-name">echo</span> <span class="token environment constant">$HOME</span>
+
+<span class="token comment">#	print 显示文件内容</span>
+<span class="token function">cat</span> readme.txt
+
+<span class="token comment">#	print 重定向文件</span>
+<span class="token function">cat</span> readme.txt <span class="token operator">&gt;</span> result.out 	<span class="token comment">#(to redirect and overwrite the log file result.out) </span>
+<span class="token function">cat</span> readme2.txt <span class="token operator">&gt;&gt;</span> result.out 	<span class="token comment">#(to redirect and append in the log file result.out)</span>
+<span class="token function">cat</span> readme <span class="token operator">|</span> <span class="token function">less</span> 				<span class="token comment">#(to display on the screen page by page)</span>
+<span class="token function">cat</span> readme.txt <span class="token operator">|</span> <span class="token function">tee</span> result.out <span class="token comment">#(to print on the sceen and redirect in the log file result.out)</span>
+
+<span class="token comment">#	终端下的组合快捷键</span>
+Ctrl+C 			<span class="token comment">#(to quit a running application)</span>
+Ctrl+Shift+C 	<span class="token comment">#(to copy the selection)</span>
+Ctrl+Shift+V 	<span class="token comment">#(to paste the selection)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>应用程序</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	安装包</span>
+<span class="token function">apt-get</span> <span class="token function">install</span> package 	<span class="token comment">#(ubuntu)</span>
+yum <span class="token function">install</span> package 		<span class="token comment">#(fedora)</span>
+port <span class="token function">install</span> package 		<span class="token comment">#(mac os x)</span>
+
+<span class="token comment">#	阅读pdf</span>
+okular manual.pdf
+
+<span class="token comment">#	显示或修改图片</span>
+eog figure.jpg
+
+<span class="token comment">#	编辑文件</span>
+gedit readme.txt
+<span class="token comment"># or</span>
+<span class="token function">vi</span> readme.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>常用的 vi 命令</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104104325.png"></p>
+</blockquote>
+</li>
+<li><p>高级设置</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	显示是 bash 环境，还是 csh 环境</span>
+<span class="token builtin class-name">echo</span> <span class="token environment constant">$SHELL</span>
+<span class="token comment"># If it display /bin/csh, you are using csh environment</span>
+<span class="token comment"># If it display /bin/bash, you are using bash environment</span>
+
+<span class="token comment">#	以下命令将取决于环境，csh 或 bash。 </span>
+<span class="token comment">#	环境由环境变量和别名定义。环境存储在主目录中的隐藏文件中。</span>
+<span class="token function">ls</span> ~/.cshrc
+<span class="token comment"># or</span>
+<span class="token function">ls</span> ~/.bashrc
+
+<span class="token comment">#	当更改环境文件中的某些内容时，您必须 sourch 该文件以传播环境中的修改。</span>
+<span class="token builtin class-name">source</span> ~/.cshrc
+<span class="token comment"># or</span>
+<span class="token builtin class-name">source</span> ~/.bashrc
+
+<span class="token comment">#	定义（alias）别名的语法将根据 csh 或 bash 环境而变化：</span>
+<span class="token builtin class-name">alias</span> idlww3 idl -rt<span class="token operator">=</span>rt_visumain.sav 	<span class="token comment">#(for csh)</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">idlww3</span><span class="token operator">=</span><span class="token string">"idl -rt=rt_visumain.sav"</span> 	<span class="token comment">#(for bash)</span>
+
+<span class="token comment">#	环境文件中定义的环境变量的语法也将发生变化：</span>
+setenv OASISDIR /home/<span class="token environment constant">$USER</span>/work_oasis3-mct2.0 <span class="token comment">#(for csh)</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">OASISDIR</span><span class="token operator">=</span>/home/<span class="token environment constant">$USER</span>/work_oasis3-mct2.0 <span class="token comment">#(for bash)</span>
+
+<span class="token comment">#	环境变量是 bin 文件夹的路径定义：</span>
+setenv <span class="token environment constant">PATH</span> <span class="token environment constant">$PATH</span>:/usr/local/bin <span class="token comment">#(for csh)</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span>:/usr/local/bin <span class="token comment">#(for bash)</span>
+
+<span class="token comment">#	环境变量是 library 文件夹的路径定义：</span>
+setenv LD_LIBRARY_PATH <span class="token variable">$LD_LIBRARY_PATH</span>:/usr/local/lib <span class="token comment">#(for csh)</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">LD_LIBRARY_PATH</span><span class="token operator">=</span><span class="token variable">$LD_LIBRARY_PATH</span>:/usr/local/lib <span class="token comment">#(for bash)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<hr>
+<h2 id="netcdf"><a href="#netcdf" class="headerlink" title="netcdf"></a>netcdf</h2><h3 id="为什么选择-netcdf？"><a href="#为什么选择-netcdf？" class="headerlink" title="为什么选择 netcdf？"></a>为什么选择 netcdf？</h3><p>最常见的文件格式是被称为<code>ASCII格式</code>的文本文件（扩展名为<code>.doc</code>、<code>.txt</code>），你可以用普通的编辑器（如<code>word</code>、<code>gedit</code>）阅读。这些<code>ASCII文件的问题</code>是，它需要大量的空间，所以如果你以<code>ASCII格式</code>存储模型数据或测量结果，它可以很快填满你的磁盘！</p>
+<p>另一个选择是将你的数据存储为<code>二进制文件</code>，如netCDF格式（扩展名为.nc），由于每个值都被写入文件中，所以使用的空间会比ASCII格式少得多。另一方面，你不能用之前提到的文本编辑器来阅读这种格式，为此你必须使用特定的工具来处理你的netCDF文件，简单的有<code>ncdump</code>和<code>ncview</code>。</p>
+<h3 id="netcdf-的结构组成"><a href="#netcdf-的结构组成" class="headerlink" title="netcdf 的结构组成"></a>netcdf 的结构组成</h3><p>netCDF文件的通常结构分为两部分，<code>文件头(header)</code>和<code>数据</code>。文件头分为3个部分，分别是<code>dimensions</code>、<code>variables</code>、<code>global attributes</code>。每个变量由一个或多个维度定义，通常由一个或多个属性描述。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104110357.png" alt="netCDF 的头文件(header)" style="zoom:70%;">
+
+<h3 id="ncdump-和-ncview"><a href="#ncdump-和-ncview" class="headerlink" title="ncdump 和 ncview"></a>ncdump 和 ncview</h3><p>以一个<code>mywind1.nc</code>文件为例。</p>
+<blockquote>
+<p>链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13Hr8m1mrXHsbUeQTk8NfYQ">https://pan.baidu.com/s/13Hr8m1mrXHsbUeQTk8NfYQ</a>   密码: jvdj</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104115634.png" alt="Panoply 打开 mywind1.nc"></p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	安装 ncdump</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> netcdf-bin
+
+<span class="token comment">#	transcript all the content of your binary file into text:</span>
+ncdump mywind1.nc
+<span class="token comment"># 不具有可读性</span>
+
+<span class="token comment">#	Well, you didn't had time to read all the content, you can either show it on your screen page by page:</span>
+ncdump mywind1.nc <span class="token operator">|</span> <span class="token function">less</span>
+<span class="token comment"># Linux less 命令: https://www.runoob.com/linux/linux-comm-less.html</span>
+<span class="token comment"># q 		退出</span>
+<span class="token comment"># 空格		是下一页</span>
+<span class="token comment"># b			是上一页</span>
+<span class="token comment"># 可读性好，且终端不会显示内容</span>
+
+<span class="token comment">#	redirecting all the transcripted content into a text file:</span>
+ncdump mywind1.nc <span class="token operator">&gt;</span> mywind1.txt
+<span class="token comment"># or</span>
+ncdump mywind1.nc <span class="token operator">|</span> <span class="token function">tee</span> mywind1.txt
+<span class="token comment"># 可读性好，但还需要创建文件</span>
+
+
+<span class="token comment">#	输出 nc 的 header，使用 option '-h';</span>
+ncdump -h mywind1.nc
+
+<span class="token comment">#	输出特定变量，使用 option '-v'，例如 time;</span>
+ncdump mywind1.nc -v <span class="token function">time</span>
+
+<span class="token comment">#	它会给你整数的浮点值，不是人类可读的，所以如果你的时间变量正确定义了属性“units”，</span>
+<span class="token comment">#	你可以使用选项“-t”来转换日期中的值：</span>
+ncdump mywind1.nc -v <span class="token function">time</span> -t
+ 
+<span class="token comment">#	变量可视化</span>
+<span class="token comment"># sudo apt install ncview</span>
+ncview mywind1.nc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104131554.png" alt="ncdump mywind1.nc | less (后面还有很多内容，这里只显示第一页)"></p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104115224.png" alt="ncdump -h mywind1.nc | less" style="zoom:60%;">
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104130521.png" alt="ncdump mywind1.nc -v time | less"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104130356.png" alt="ncdump mywind1.nc -v time -t | less"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104131242.png" alt="ncview mywind1.nc | less"></p>
+<hr>
+<h2 id="附录A：如何安装-netCDF-library"><a href="#附录A：如何安装-netCDF-library" class="headerlink" title="附录A：如何安装 netCDF library"></a>附录A：如何安装 netCDF library</h2><p>见原文</p>
+<h2 id="附录B：如何安装-IDL-librery"><a href="#附录B：如何安装-IDL-librery" class="headerlink" title="附录B：如何安装 IDL librery"></a>附录B：如何安装 IDL librery</h2><h3 id="在ubuntu安装"><a href="#在ubuntu安装" class="headerlink" title="在ubuntu安装"></a>在ubuntu安装</h3><ul>
+<li><p>安装 <code>libxp6</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libxp6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如果定位不到 libxp6 库，则需要从存档存储库中获取它。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> -mnH --cut-dirs<span class="token operator">=</span><span class="token number">5</span> http://archive.ubuntu.com/ubuntu/pool/main/libx/libxp/libxp6_1.0.2- 1ubuntu1_amd64.deb 
+<span class="token function">sudo</span> dpkg -i libxp6_1.0.2-1ubuntu1_amd64.deb<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>如果还是无法定位，提供deb下载的百度网盘链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_W7VBcnV4bbpdMQBnexIpA">https://pan.baidu.com/s/1_W7VBcnV4bbpdMQBnexIpA</a>  密码: e8ml，提供的deb版本是<code>libxp6_1.0.2-1ubuntu1_amd64.deb</code>。</p>
+<blockquote>
+<p>这个 deb 文件是从 <code>ubuntu 中文论坛</code> 得到的：</p>
+<ul>
+<li><p>原文链接 <a target="_blank" rel="noopener" href="https://forum.ubuntu.org.cn/viewtopic.php?t=483317">https://forum.ubuntu.org.cn/viewtopic.php?t=483317</a></p>
+</li>
+<li><p>原文提供的deb下载链接<a target="_blank" rel="noopener" href="http://mirrors.ustc.edu.cn/ubuntu/pool/main/libx/libxp/">http://mirrors.ustc.edu.cn/ubuntu/pool/main/libx/libxp/</a></p>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>下载 <code>IDL</code> 安装文件夹</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$IDL</span>
+<span class="token function">wget</span> -mnH --cut-dirs<span class="token operator">=</span><span class="token number">5</span> ftp://ftp.ifremer.fr/ifremer/ww3/COURS/WAVE_DATA/IDL81/linux<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>安装 <code>IDL</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$IDL</span>/linux
+<span class="token function">chmod</span> <span class="token number">775</span> install.sh
+<span class="token function">sudo</span> ./install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>安装位置设置在<code>$IDL/IDL8.1</code></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104133240.png"></p>
+</li>
+</ul>
+<h2 id="接下来会用到的软件"><a href="#接下来会用到的软件" class="headerlink" title="接下来会用到的软件"></a>接下来会用到的软件</h2><blockquote>
+<p><code>IDL</code> 的下载、安装在<a href="https://liu-jincan.github.io/2022/01/04/hai-lang-shu-zhi-mo-shi/wavewatch3/06-prerequisites/">Prerequisites</a>，基于<code>IDL</code>的<code>TWIST</code>的使用位于<a href="https://liu-jincan.github.io/2022/01/06/hai-lang-shu-zhi-mo-shi/wavewatch3/06-polymesh-tutorial-mesh-edit/">MESH-EDIT</a>；</p>
+<p><code>google-earth</code> 在 <code>ubuntu</code> 上的下载安装，<a href="https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/">INOUT教程</a> 提供了；</p>
+<p><code>polymesh</code>的下载、安装、编译在<a href="https://liu-jincan.github.io/2022/01/07/hai-lang-shu-zhi-mo-shi/wavewatch3/06-polymesh/">polymesh</a> ;</p>
+<p><code>gridgen</code>的下载、安装在<a href="https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-gridgen-wang-ge-sheng-cheng/">gridgen</a> ;</p>
+<p><code>parvisu</code>的下载、安装、适应位于<code>TUTORIAL-POLYMESH</code>的<code>wave-workshop-exercise-polymesh.pdf</code>额外练习；</p>
+<p><code>ncview</code>和<code>ncdump</code>的下载使用在<a href="https://liu-jincan.github.io/2022/01/04/hai-lang-shu-zhi-mo-shi/wavewatch3/06-prerequisites/">Prerequisites</a>的<code>netcdf</code>中；</p>
+<p>MATLAB可视化msh文件和nc文件在<code>MESH-RUN</code>教程；</p>
+</blockquote>
+<h2 id="风场数据来源"><a href="#风场数据来源" class="headerlink" title="风场数据来源"></a>风场数据来源</h2><p><code>INOUT</code>教程，运行模型（真实强迫场）</p>
+<blockquote>
+<p>主要的全球风力再分析是由 <code>NCEP</code> 和 <code>ECMWF</code> 机构完成的。</p>
+<ul>
+<li><p><code>NCEP</code>，历史的 <code>CFSR</code> 从 1979 年到 2010 年：<a target="_blank" rel="noopener" href="http://rda.ucar.edu/datasets/ds093.1/">http://rda.ucar.edu/datasets/ds093.1/</a> </p>
+<p>最新的一个是从 2011 年到现在的 CFSRR：<a target="_blank" rel="noopener" href="http://rda.ucar.edu/datasets/ds094.1/">http://rda.ucar.edu/datasets/ds094.1/</a></p>
+</li>
+<li><p><code>ECMWF</code>，最新的是 ERA-5：<a target="_blank" rel="noopener" href="https://climate.copernicus.eu/climate-reanalysis">https://climate.copernicus.eu/climate-reanalysis</a></p>
+</li>
+</ul>
+</blockquote>
+<h2 id="谱边界文件创建"><a href="#谱边界文件创建" class="headerlink" title="谱边界文件创建"></a>谱边界文件创建</h2><p><code>INOUT</code>教程，运行模型（真实强迫场）</p>
+<blockquote>
+<p> 所需的最后一个输入是<code>谱边界(spectral boundary)</code>，以迫使你的<font color="red">网格（边界）向大海开放</font>。</p>
+<ul>
+<li>一种方法是运行<code>多网格模型</code>来传达全球和区域网格之间的谱边界（参见 <code>TUTORIAL_MULTI</code>）。 </li>
+<li>另一种方法是首先运行一个<code>全球网格模型</code>，然后输出区域网格所需的边界点。为此我们做了近 20 年的全球后报，我们在全球海岸线上每0.5度提供一个<code>二维谱点</code>。（请参阅我们的 <code>google-earth</code> 的 <code>kmz</code> 文件）。</li>
+</ul>
+<p>要可视化所有可用的谱文件，请在 <code>google-earth</code> 上打开我们的 <code>kml</code> 文件。</p>
+<pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">open the google-earth on your local machine
+google-earth $WAVE_DATA/GOOGLE-EARTH-KMZ/IOWAGA_WWATCH_MULTI_output_points.kmz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><code>google-earth</code> 的下载安装：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考网站</span>
+<span class="token comment">#	https://www.codenong.com/f-install-google-earth-ubunu/</span>
+
+<span class="token comment">##	</span>
+<span class="token function">mkdir</span> google-earth <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> google-wget https://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
+<span class="token function">sudo</span> dpkg -i google-earth-stable*.deb
+<span class="token comment">#	deb包的百度网盘</span>
+<span class="token comment">#	链接: https://pan.baidu.com/s/1eW-OEXOa2PJv1JPionl0fw  密码: 11ku</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>安装完成后，在软件菜单栏有<code>google-earth</code>的图标，点击进入软件后，打开所需 <code>kml</code> 文件即可。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103201741.png"></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103200541.png" alt="未打开IOWAGA的 kml 的 google-earth"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103200718.png" alt="打开IOWAGA的 kml 的 google-earth"></p>
+<p>要自动查找特定网格所需的谱列表，请参阅教程 <code>GRIDGEN</code> 中的<code>附录 D</code>。 如果没有<code>netcdf谱数据</code>，别担心今年（2019年）应该全部重做。</p>
+<blockquote>
+<p><strong>GRIDGEN附录D–Define a polyline as domain boundaries with google-earth</strong></p>
+<blockquote>
+<p>运行 <code>create_grid</code> 程序后，您可能需要定义特定的边界区域。 这可以通过 <code>google-earth</code> 应用程序来定义多边形。</p>
+<pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">google earth
+select the polyline tool
+draw your polygon around your area, it can be an opened polygon
+save as kml file
+remove the first line of kml file<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后就可以将<code>kml</code>文件转换成多边形文件了。<br>请参阅GRIDGEN附录 C 以安装 <code>gmt</code> 工具。</p>
+<pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">run kml2gmt to create .poly file
+rename output file to fname.poly
+put it in data directory
+set SELECT_BOUND =2 in namelist file
+run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+</blockquote>
+<p>例如，2016 年北半球在 19W 和 19E 之间：</p>
+<p><a href="ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST/GLOBAL/2016_ECMWF/SPEC_NW19toE19/">ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST/GLOBAL/2016_ECMWF/SPEC_NW19toE19/</a></p>
+<p>对于本教程，您只需从数据文件夹中复制谱文件：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> -r <span class="token punctuation">..</span>/data/SPECTRA_NC <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103210844.png" alt="SPECTRA_NC 文件夹内容"></p>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-prerequisites/">https://Liu-Jincan.github.io/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-prerequisites/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-tutorial-datarmor-pbs-qsub-qstat-mpi/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIAL-DATARMOR-MPI_PBS_qsub_qstat（未实现）">
+                        
+                        <span class="card-title">06-TUTORIAL-DATARMOR-MPI_PBS_qsub_qstat（未实现）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/WW3/" class="post-category">
+                                    WW3
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/01/02/yan-jiu-sheng-justtry-function/wavewatch3/06-tutorial-inout/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出">
+                        
+                        <span class="card-title">06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/WW3/" class="post-category">
+                                    WW3
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">430.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

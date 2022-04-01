@@ -1,0 +1,1436 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="00-学术报告怎么记录, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>00-学术报告怎么记录 | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327150154.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">00-学术报告怎么记录</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A/" class="post-category">
+                                学术报告
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-02-22
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-03-31
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    1.1k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="00-学术报告怎么记录"><a href="#00-学术报告怎么记录" class="headerlink" title="00-学术报告怎么记录"></a><center>00-学术报告怎么记录</center></h1><h2 id="浏览器视频怎么录制（耳机，OBSstudio）"><a href="#浏览器视频怎么录制（耳机，OBSstudio）" class="headerlink" title="浏览器视频怎么录制（耳机，OBSstudio）"></a>浏览器视频怎么录制（耳机，OBSstudio）</h2><ol>
+<li><p>firefox打开浏览器视频；</p>
+</li>
+<li><p>打开<code>OBS studio</code>，进行相关设置；</p>
+<ul>
+<li><p>添加<code>窗口捕获</code>，</p>
+<p><strong>如果不添加，将没有画面</strong>，</p>
+</li>
+<li><p>添加<code>音频输入捕获</code>，</p>
+<p><strong>如果不添加，耳机将听不到任何声音</strong>，</p>
+</li>
+<li><p><strong>确保有画面、带上耳机有声音后</strong>，进行<code>输出</code>设置：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220222173223.png"></p>
+</li>
+</ul>
+</li>
+<li><p>开始录制，暂停，停止录制；</p>
+<blockquote>
+<p>强烈建议正式录制前，确定上述设置没问题；</p>
+<p>多尝试，多积累经验；</p>
+</blockquote>
+</li>
+<li><p>上传录制的视频到bilibili；</p>
+</li>
+<li><p>typora调用bilibili已上传的视频；</p>
+</li>
+</ol>
+<h2 id="腾讯会议怎么录制（耳机，OBSstudio）"><a href="#腾讯会议怎么录制（耳机，OBSstudio）" class="headerlink" title="腾讯会议怎么录制（耳机，OBSstudio）"></a>腾讯会议怎么录制（耳机，OBSstudio）</h2><blockquote>
+<p>以 <code>01-学术报告-人工智能海洋学研究新进展-2022-02-23-上海交通大学海洋学院邀请-中科院海洋所李晓峰研究员主讲</code> 为例，以后其它学术报告的typora记录，用它为模板就行了；</p>
+</blockquote>
+<ol>
+<li><p>打开<code>OBS studio</code>，进行相关设置；</p>
+<ul>
+<li><p>添加<code>窗口捕获</code>，</p>
+<p><strong>如果不添加，将没有画面</strong>，</p>
+</li>
+<li><p>添加<code>音频输入捕获</code>，</p>
+<p><strong>如果不添加，耳机将听不到任何声音</strong>，</p>
+</li>
+<li><p><strong>确保有画面、带上耳机有声音后</strong>，进行<code>输出</code>设置：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220222173223.png"></p>
+</li>
+</ul>
+</li>
+<li><p>提前进入会议，<code>测试扬声器</code>：开始录制，暂停，停止录制；</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220223123628.png" style="zoom:37%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220223124310.png" style="zoom:50%;"></li>
+<li><p><code>确认上面的录制没问题后</code>，正式开始录制，暂停，停止录制，重命名文件<code>学术报告-人工智能海洋学研究新进展-2022-02-23-上海交通大学海洋学院邀请-中科院海洋所李晓峰研究员主讲</code>；</p>
+<blockquote>
+<p>记得边录制边对PPT截图；</p>
+</blockquote>
+</li>
+<li><p>剪辑视频;</p>
+</li>
+<li><p>上传录制的视频到百度网盘；（可省略）</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1xpS1ShnLoJi8wUnVGU6i0A">https://pan.baidu.com/s/1xpS1ShnLoJi8wUnVGU6i0A</a><br>提取码：ar92<br>–来自百度网盘超级会员V5的分享</p>
+</li>
+</ol>
+<h3 id="上传到Bilibili"><a href="#上传到Bilibili" class="headerlink" title="上传到Bilibili"></a>上传到Bilibili</h3><hr>
+<ol start="6">
+<li><p>上传录制的视频到bilibili；（<strong>由于可能设计版权已下架，因为bilibili不支持视频私密</strong>）</p>
+<ul>
+<li><p>标题：<code>学术报告-人工智能海洋学研究新进展-2022-02-23-上海交通大学海洋学院邀请-中科院海洋所李晓峰研究员主讲</code></p>
+</li>
+<li><p>类型</p>
+</li>
+<li><p>分区</p>
+</li>
+<li><p>标签</p>
+</li>
+<li><p>简介：</p>
+<pre class="line-numbers language-none"><code class="language-none">谢谢上海交通大学海洋学院和李晓峰老师的分享~~
+报告摘要：
+
+人工智能是新一轮科技革命和产业变革的重要驱动力，人工智能与大数据紧密结合，在海量观测资料压缩、模型加速、非线性特征学习与建模等方面均具有显著的技术优势。有别于传统海洋学的知识驱动建模，通过数据驱动可实现数据到信息的可靠且高效的建模。
+
+本讲座将详细介绍人工智能技术在海洋学现象与过程的信息提取，海洋、大气现象的预报与建模等方面的最新研究成果。信息提取方面包括中尺度涡、海洋内波、海冰、船只、溢油、台风造成水淹等；在轻量化预报方面包括小尺度内波、中尺度海平面变化以及大尺度赤道不稳定波。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<blockquote>
+<p>审核的速度5分钟左右吧~~挺快的~</p>
+<p>但是不能私密~~</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220223151332.png"></p>
+<ol start="7">
+<li><p>typora调用bilibili已上传的视频；</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"&gt;
+ &lt;iframe src="//player.bilibili.com/player.html?aid=381801509&amp;bvid=BV1vZ4y1k7S5&amp;cid=515151775&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"&gt; &lt;/iframe&gt;   
+&lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h3 id="上传到优酷视频"><a href="#上传到优酷视频" class="headerlink" title="上传到优酷视频"></a>上传到优酷视频</h3><hr>
+<ol start="6">
+<li><p>上传录制的视频到优酷；</p>
+<ul>
+<li>标题</li>
+<li>标签</li>
+<li>分类</li>
+<li>简介</li>
+<li><strong>隐私设置：密码123123</strong></li>
+</ul>
+<blockquote>
+<p>审核太慢了~~1个小时？</p>
+<p>背景太黑了;</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220223163817.png"></p>
+</li>
+<li><p>typora调用腾讯视频已上传的视频；</p>
+<!-- 密码：123123 -->
+
+<blockquote>
+<p>高度和宽度还需要好好调调~~</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">&lt;iframe height=500 width=800 src='https://player.youku.com/embed/XNTg0NDk1MTQ0MA==' frameborder=0 'allowfullscreen'&gt;&lt;/iframe&gt; <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<h3 id="上传到腾讯视频"><a href="#上传到腾讯视频" class="headerlink" title="上传到腾讯视频"></a>上传到腾讯视频</h3><hr>
+<ol start="6">
+<li><p>上传录制的视频到腾讯；</p>
+<blockquote>
+<p>需要三天的身份认证审核期，🤮，</p>
+<p>额，貌似一个下午就审核完了~~</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="上传到Youtube"><a href="#上传到Youtube" class="headerlink" title="上传到Youtube"></a>上传到Youtube</h3><hr>
+<ol start="6">
+<li><p>上传视频到Youtube</p>
+<blockquote>
+<p>上传速度太慢了，🤮</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="问题：bilibili能上传多少个视频？"><a href="#问题：bilibili能上传多少个视频？" class="headerlink" title="问题：bilibili能上传多少个视频？"></a>问题：bilibili能上传多少个视频？</h2><p>wuxian??</p>
+<h2 id="问题：bilibili一个系列的视频"><a href="#问题：bilibili一个系列的视频" class="headerlink" title="问题：bilibili一个系列的视频"></a>问题：bilibili一个系列的视频</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV11D4y1o7a5/">https://www.bilibili.com/video/BV11D4y1o7a5/</a></p>
+<ol>
+<li>下载投稿工具</li>
+<li>按视频操作</li>
+</ol>
+<p>easy~~</p>
+<h2 id="FAQ：bilibili如何把已经上传的视频做成合集？"><a href="#FAQ：bilibili如何把已经上传的视频做成合集？" class="headerlink" title="FAQ：bilibili如何把已经上传的视频做成合集？"></a>FAQ：bilibili如何把已经上传的视频做成合集？</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Uf4y1G7eR/">https://www.bilibili.com/video/BV1Uf4y1G7eR/</a></p>
+<p>教你如何创建视频稿件分类栏目/合集/集合：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1rQ4y1D7eS/?spm_id_from=autoNext">https://www.bilibili.com/video/BV1rQ4y1D7eS/?spm_id_from=autoNext</a></p>
+<p>easy~</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/02/22/yan-jiu-sheng-justtry-function/xue-zhu-bao-gao/00-xue-zhu-bao-gao-zen-me-ji-lu/">https://Liu-Jincan.github.io/2022/02/22/yan-jiu-sheng-justtry-function/xue-zhu-bao-gao/00-xue-zhu-bao-gao-zen-me-ji-lu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/02/22/yan-jiu-sheng-justtry-function/xue-zhu-bao-gao/01-xue-zhu-bao-gao-ren-gong-zhi-neng-hai-yang-xue-yan-jiu-xin-jin-zhan/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327150154.png" class="responsive-img" alt="01-学术报告-人工智能海洋学研究新进展-2022-02-23-上海交通大学海洋学院邀请-中科院海洋所李晓峰研究员主讲">
+                        
+                        <span class="card-title">01-学术报告-人工智能海洋学研究新进展-2022-02-23-上海交通大学海洋学院邀请-中科院海洋所李晓峰研究员主讲</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AD%A6%E6%9C%AF%E6%8A%A5%E5%91%8A/" class="post-category">
+                                    学术报告
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/02/22/yan-jiu-sheng-justtry-function/yun-fan-qiang/03-windows-v2rayn/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327150739.png" class="responsive-img" alt="03-windows-V2RayN">
+                        
+                        <span class="card-title">03-windows-V2RayN</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BA%91%E7%BF%BB%E5%A2%99/" class="post-category">
+                                    云翻墙
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">430.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

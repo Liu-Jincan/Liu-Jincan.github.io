@@ -1,0 +1,1910 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="研一下-云计算合稿, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>研一下-云计算合稿 | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327150505.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">研一下-云计算合稿</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                研究生JustTry
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-03-21
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-03-27
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    5.2k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="研一下-云计算合稿"><a href="#研一下-云计算合稿" class="headerlink" title="研一下-云计算合稿"></a><center>研一下-云计算合稿</center></h2><h2 id="必要信息"><a href="#必要信息" class="headerlink" title="必要信息"></a>必要信息</h2><table>
+<thead>
+<tr>
+<th>必要信息</th>
+<th>文件位置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>…………………………………………………………………………..</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>创建的云计算合稿博客</td>
+<td>本博客</td>
+</tr>
+</tbody></table>
+<h2 id="2022-03-21"><a href="#2022-03-21" class="headerlink" title="2022-03-21"></a>2022-03-21</h2><h3 id="wjc老师反馈"><a href="#wjc老师反馈" class="headerlink" title="wjc老师反馈"></a>wjc老师反馈</h3><ul>
+<li><p>腾讯会议，合稿任务，已录制</p>
+<p>错别字，插图和内容对应，</p>
+<p>刘锦灿：课题1，2，3，修订模式（不用），错别字，目录，和插图对应，模板，参考文献、结论不全不用管~~</p>
+<p>于婷：课题1，从2开始，图、表</p>
+<p>引言，1 国内外现状，2 课题1的名称，3 课题2的名称</p>
+<p>任务，合稿</p>
+</li>
+<li><p>D盘新建文件夹，<code>合稿</code>；</p>
+<blockquote>
+<p>百度网盘：</p>
+</blockquote>
+</li>
+<li><p>研一下新建md文件，<code>研一下-云计算合稿</code>；</p>
+</li>
+</ul>
+<h3 id="科技报告正文模板-docx"><a href="#科技报告正文模板-docx" class="headerlink" title="科技报告正文模板.docx"></a>科技报告正文模板.docx</h3><ul>
+<li>大纲，明确要求</li>
+</ul>
+<h3 id="课题一-科技报告-doc-（word操作，研究格式中）"><a href="#课题一-科技报告-doc-（word操作，研究格式中）" class="headerlink" title="课题一-科技报告.doc  （word操作，研究格式中）"></a>课题一-科技报告.doc  （word操作，研究格式中）</h3><ul>
+<li>QT：.doc 转换成 .docx 的兼容问题；（不管）</li>
+<li>QT：标题、图、表的自动编号问题；</li>
+<li>QT：不同docx的不同样式实例统一识别问题；</li>
+</ul>
+<h4 id="对内容进行样式的分类，样式表（目的：为了能对正文、各类标题、图、表进行统一格式操作，编号）"><a href="#对内容进行样式的分类，样式表（目的：为了能对正文、各类标题、图、表进行统一格式操作，编号）" class="headerlink" title="对内容进行样式的分类，样式表（目的：为了能对正文、各类标题、图、表进行统一格式操作，编号）"></a>对内容进行样式的分类，样式表（目的：为了能对正文、各类标题、图、表进行统一格式操作，编号）</h4><ul>
+<li><p><code>正文样式</code></p>
+<ul>
+<li><p>添加样式（一般都会有<code>正文样式</code>）</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321143737.png"></p>
+</li>
+<li><p>选择<code>正文样式</code>下的所有实例，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321142605.png"></p>
+<p>浏览，确定没有遗漏正文实例，</p>
+<blockquote>
+<p>正文实例太多，word多次卡宕机，😥</p>
+</blockquote>
+<p>若出现正文实例遗漏，选中遗漏正文实例部分内容，点击<code>正文样式</code>即可；</p>
+</li>
+<li><p>再次选择所有实例，宋体，小四，1.5 倍行距</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321150625.png"></p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321150441.png" style="zoom:60%;">
+
+<blockquote>
+<p>不知道为什么，直接修改样式的格式，没有用，只能先选中所有实例，再进行样式修改才行~~</p>
+</blockquote>
+<blockquote>
+<p>如果正文中有加粗，此样式不会更改；</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><code>标题四样式</code></p>
+<ul>
+<li>添加样式</li>
+<li>选择实例，补漏实例</li>
+<li><strong>再次选择实例，宋体，小四，1.5 倍行距，字体适当放大和加粗</strong></li>
+</ul>
+</li>
+<li><p><code>标题三样式</code></p>
+<ul>
+<li>添加样式</li>
+<li>选择实例，补漏实例</li>
+<li><strong>再次选择实例，宋体，小四，1.5 倍行距，字体适当放大和加粗</strong></li>
+</ul>
+</li>
+<li><p><code>标题二样式</code></p>
+<ul>
+<li>添加样式</li>
+<li>选择实例，补漏实例</li>
+<li><strong>再次选择实例，宋体，小四，1.5 倍行距，字体适当放大和加粗</strong></li>
+</ul>
+</li>
+<li><p><code>标题一样式</code></p>
+<blockquote>
+<p>还没碰到，留给YT师姐吧</p>
+</blockquote>
+</li>
+<li><p><code>图</code>样式表</p>
+<p>后面定义</p>
+</li>
+<li><p><code>表</code></p>
+<p>后面定义</p>
+</li>
+<li><p>目录</p>
+</li>
+</ul>
+<h4 id="去除空行"><a href="#去除空行" class="headerlink" title="去除空行"></a>去除空行</h4><h4 id="标题自动编号列表（成功4-1-4-2-…）"><a href="#标题自动编号列表（成功4-1-4-2-…）" class="headerlink" title="标题自动编号列表（成功4.1, 4.2,…）"></a>标题自动编号列表（成功4.1, 4.2,…）</h4><p>使用样式表（前面定义），和自动编号的多级列表即可</p>
+<ul>
+<li><p>定义新的标题自动编号的多级列表：<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/bad08e1e84aa8109c85121af.html">https://jingyan.baidu.com/article/bad08e1e84aa8109c85121af.html</a></p>
+<ul>
+<li><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321170020.png"></p>
+</li>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321171100.png" alt=" " style="zoom:50%;"></li>
+<li><p>…</p>
+</li>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321171141.png" style="zoom:50%;"></li>
+<li><p>…</p>
+</li>
+<li><blockquote>
+<p>其实“要在库中显示的级别”并不会对你整体的多级列表的样式发生改动，所以你在设置各级样式的时候完全<strong>不用理会它</strong>，只要一级一级地修改好“单击要修改的级别”+“将级别链接到的样式”+“输入编号的格式”，<strong>最后根据你光标所在的段落所需要的样式决定你的“要在库中显示的级别”即可</strong>。:<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/463673866.html">https://zhidao.baidu.com/question/463673866.html</a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>修改某一标题自动编号的列表</p>
+<p>确定<code>当前列表</code>为需要修改的标题自动编号（可以在列表库中点选、点选的列表就会成为<code>当前列表</code>），再点击<code>定义新的多级列表</code>即可。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321170020.png"></p>
+</li>
+<li><p>将一种标题自动编号换成另一种形式的标题自动编号</p>
+<ul>
+<li><p>先…</p>
+</li>
+<li><p>某标题样式–&gt;<strong>选择实例</strong>–&gt;再点击某标题样式；</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="标题自动编号列表（成功4-4-1-4-4-2-…，疯狂的喜悦中）"><a href="#标题自动编号列表（成功4-4-1-4-4-2-…，疯狂的喜悦中）" class="headerlink" title="标题自动编号列表（成功4.4.1, 4.4.2,…，疯狂的喜悦中）"></a>标题自动编号列表（成功4.4.1, 4.4.2,…，疯狂的喜悦中）</h4><p>多级列表的设置，<strong>不断去尝试，终于解决了</strong>；日</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220322095302.png" alt=" " style="zoom:67%;">
+
+<p>删除 4.4.1.1.1.1 中的前三个1~~即可完成</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220322095424.png" style="zoom:67%;">
+
+<h4 id="标题交叉引用"><a href="#标题交叉引用" class="headerlink" title="标题交叉引用"></a>标题交叉引用</h4><p>在完成标题的自动编号后，交叉引用及其容易实现</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321185505.png" alt=" " style="zoom:67%;">
+
+<h4 id="标题列表目录（交给YT师姐，还是我自己，疯狂的喜悦中）"><a href="#标题列表目录（交给YT师姐，还是我自己，疯狂的喜悦中）" class="headerlink" title="标题列表目录（交给YT师姐，还是我自己，疯狂的喜悦中）"></a>标题列表目录（交给YT师姐，还是我自己，疯狂的喜悦中）</h4><blockquote>
+<p>《Word职场高效办公技巧》43. 自动目录的生成（样式）# office #办公技巧 #职场 #word：<a target="_blank" rel="noopener" href="https://www.douyin.com/video/6902596844078091531?extra_params=%7B%22search_params%22:%7B%22search_type%22:%22general%22,%22impr_id%22:%22202203221954330101351600443909945C%22,%22search_id%22:%22202203221954330101351600443909945C%22,%22search_keyword%22:%22word%E6%80%8E%E4%B9%88%E7%94%A8%E6%A0%B7%E5%BC%8F%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%22,%22search_result_id%22:%226902596844078091531%22%7D%7D&amp;previous_page=general_search">https://www.douyin.com/video/6902596844078091531?extra_params=%7B%22search_params%22%3A%7B%22search_type%22%3A%22general%22%2C%22impr_id%22%3A%22202203221954330101351600443909945C%22%2C%22search_id%22%3A%22202203221954330101351600443909945C%22%2C%22search_keyword%22%3A%22word%E6%80%8E%E4%B9%88%E7%94%A8%E6%A0%B7%E5%BC%8F%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%22%2C%22search_result_id%22%3A%226902596844078091531%22%7D%7D&amp;previous_page=general_search</a></p>
+<p>样式自己定</p>
+</blockquote>
+<h4 id="图交叉引用"><a href="#图交叉引用" class="headerlink" title="图交叉引用"></a>图交叉引用</h4><p>在完成图的自动编号后，交叉引用及其容易实现</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220321185505.png" alt=" " style="zoom:67%;">
+
+<h4 id="图列表目录"><a href="#图列表目录" class="headerlink" title="图列表目录"></a>图列表目录</h4><blockquote>
+<p>引用–&gt;插入表目录–&gt;ok</p>
+<p>可更新域</p>
+</blockquote>
+<h2 id="2022-03-22"><a href="#2022-03-22" class="headerlink" title="2022-03-22"></a>2022-03-22</h2><h3 id="课题四-格式调整ok（疯狂的喜悦中）"><a href="#课题四-格式调整ok（疯狂的喜悦中）" class="headerlink" title="课题四-格式调整ok（疯狂的喜悦中）"></a>课题四-格式调整ok（疯狂的喜悦中）</h3><p>刘锦灿(3079779149) 11:06:39<br>这是我对课题4的格式整理，待解决问题：<br>1、目录格式调整；<br>2、页码需要后面统一，或者谁的电脑能带的起来的，可以最后合在一起；<br>3、可能有对应的问题，建议最后和原来文件对应一次；</p>
+<p>刘锦灿(3079779149) 11:07:38<br>我就先这样一个一个文件改了~~</p>
+<p>课题一-格式调整</p>
+<p>11:20</p>
+<ol>
+<li><p>建立标题一、二、三、四、五，图、表的样式；</p>
+</li>
+<li><p>选中标题，确定标题、图、表的多级列表，<strong>只需一个多级列表</strong>；</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220322210952.png" alt=" " style="zoom:67%;"></li>
+<li><p>格式刷所有图；</p>
+</li>
+<li><p>格式刷所有表</p>
+</li>
+<li><p>交叉引用</p>
+</li>
+<li><p>生成标题、图、表目录</p>
+</li>
+</ol>
+<p>ok</p>
+<h3 id="课题二-格式调整"><a href="#课题二-格式调整" class="headerlink" title="课题二-格式调整"></a>课题二-格式调整</h3><p>1:30 begin</p>
+<blockquote>
+<p>wps 进行赋值粘贴，word太卡了；</p>
+</blockquote>
+<blockquote>
+<p>图85，交叉引用不过我管，；</p>
+</blockquote>
+<blockquote>
+<p><strong>找寻是否包含所有图实例的样式，未找到，只能自己建了</strong>，吐了</p>
+</blockquote>
+<h3 id="课题三-格式调整"><a href="#课题三-格式调整" class="headerlink" title="课题三-格式调整"></a>课题三-格式调整</h3><p>5:10 end</p>
+<h3 id="课题五-格式调整"><a href="#课题五-格式调整" class="headerlink" title="课题五-格式调整"></a>课题五-格式调整</h3><p>…</p>
+<h3 id="课题六-格式调整"><a href="#课题六-格式调整" class="headerlink" title="课题六-格式调整"></a>课题六-格式调整</h3><p>…</p>
+<h3 id="初合-0322-docx"><a href="#初合-0322-docx" class="headerlink" title="初合_0322.docx"></a>初合_0322.docx</h3><blockquote>
+<p>使用网盘，进行项目相关的操作，不错呀；</p>
+</blockquote>
+<h2 id="↑-2022-03-22总结（精华所在）"><a href="#↑-2022-03-22总结（精华所在）" class="headerlink" title="↑ 2022-03-22总结（精华所在）"></a>↑ 2022-03-22总结（精华所在）</h2><ul>
+<li><p>实现了的功能：<strong>标题、图、表的自动编号</strong>，<strong>图、表的目录生成</strong>，<strong>标题的目录生成</strong>~~</p>
+<blockquote>
+<p>这就是我的收获呀~~慢慢的成就感</p>
+</blockquote>
+</li>
+<li><p>机器人模式</p>
+<blockquote>
+<p>不想明天继续弄了，🤢</p>
+</blockquote>
+</li>
+<li><p><strong>出现的问题</strong>：我是管理格式的，到最后遗憾很多没做完</p>
+<p><strong>问题的原因</strong>：</p>
+<ul>
+<li><p>为了进行图自动编号（<code>多级列表功能实现</code>）和图目录生成（<code>表目录功能实现</code>），需将所有图统一成一个样式（<code>样式库功能</code>），而如果光靠一个人<strong>将所有图的实例加入到指定的样式</strong>，然后<strong>根据文本进行交叉引用</strong>，工作量太大；</p>
+<p>如果每个人在对文本进行操作时，将每个图的实例加入到指定的样式，并在文本中进行交叉引用，那么这样的工作是很有效的，否则<strong>可能会做很多无用功</strong>~</p>
+</li>
+<li><p>为了进行表自动编号（<code>多级列表功能实现</code>）和图目录生成（<code>表目录功能实现</code>），…</p>
+</li>
+</ul>
+<p><strong>解决方法</strong>：</p>
+<ul>
+<li><p>我：新建word，在样式库中生成一个图的样式，例如<code>图</code>。</p>
+</li>
+<li><p>他们：<strong>文本中出现的图标题，必须是这个样式</strong>，刚开始可通过<code>实例个数</code>验证是不是这个样式；（熟练了格式刷就可以了）</p>
+</li>
+<li><p>他们：引用图，<strong>必须交叉引用</strong>；</p>
+</li>
+<li><p>我：在新建的word中，在样式库中生成一个表的样式，例如<code>表</code>。</p>
+</li>
+<li><p>他们：<strong>文本中出现的表标题，必须是这个样式</strong>，刚开始可通过<code>实例个数</code>验证是不是这个样式；（熟练了格式刷就可以了）</p>
+</li>
+<li><p>他们：引用表，<strong>必须交叉引用</strong>；</p>
+</li>
+<li><p>…</p>
+<p>类似的，正文，标题1，标题2，…都可以这么实现；</p>
+</li>
+<li><p>我：生成一个正文的样式，文本中出现的正文，必须是这个样式；</p>
+</li>
+<li><p>我：对每一级标题（最多6级）生成一个标题的样式，文本中出现的标题，必须是这个样式；</p>
+</li>
+<li><p>我：标题、图、表自动编号，生成目录。</p>
+</li>
+</ul>
+<p>尝试思考的方法：overleaf 多人协作，latex（<strong>暂时感觉不可行</strong>）</p>
+<p>尝试思考的方法：word 的程序代码实现；</p>
+<p><strong>潜在的威胁</strong>：公式的自动编号问题？</p>
+</li>
+<li><p>有意义的思考：</p>
+<ul>
+<li><p>Jincan:<br>大纲级别和标题是不一样的，标题是样式</p>
+</li>
+<li><p>Jincan:<br>如何确定选中内容，或者光标所在位置，的样式是什么</p>
+</li>
+<li><p>Jincan:<br>样式的实例之间怎么跳转</p>
+</li>
+<li><p>Jincan:<br>如何判断两个Word的某个样式是否相同，</p>
+</li>
+<li><p>Jincan:<br>Word中两个样式的合一个</p>
+</li>
+</ul>
+</li>
+<li><p>遇到word相关问题时，<strong>抖音</strong>没想到这么好用~</p>
+</li>
+<li><p><strong>合在一起，word带不动~，先把每个文件单独进行格式的调整</strong>~，可以带动，<strong>wps</strong>~~</p>
+</li>
+</ul>
+<h2 id="2022-03-23"><a href="#2022-03-23" class="headerlink" title="2022-03-23"></a>2022-03-23</h2><h3 id="页码统一"><a href="#页码统一" class="headerlink" title="页码统一"></a>页码统一</h3><ul>
+<li><p><strong>确定未出现缺页情况</strong>：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220323103738.png"></p>
+<ul>
+<li><p>页码重新编号，是因为word分节了，解决方法如下：</p>
+<p>word分节之后如何取消 WORD中怎么删除分节符急：<a target="_blank" rel="noopener" href="https://www.51sjk.com/b1b102009/%EF%BC%88%E5%A4%A7%E7%BA%B2%E8%A7%86%E5%9B%BE%E5%88%A0%E9%99%A4%E5%88%86%E8%8A%82%E7%AC%A6%EF%BC%89">https://www.51sjk.com/b1b102009/（大纲视图删除分节符）</a></p>
+</li>
+<li><p>页码未进行编号，也是因为word分解了，链接到上一节即可；</p>
+</li>
+</ul>
+</li>
+<li><p>战略通道.pdf，前面是罗马数字页码，后面是阿拉伯数字页码；</p>
+<ul>
+<li>添加分节，插入下一页即可；</li>
+<li>页码格式，某一节使用罗马数字格式；</li>
+</ul>
+</li>
+</ul>
+<h3 id="目录统一"><a href="#目录统一" class="headerlink" title="目录统一"></a>目录统一</h3><ul>
+<li>目录中添加<code>前言</code>，先创造一个<code>前言</code>的样式，<code>自定义目录</code>选取中添加此样式即可；</li>
+<li>目录生成中，<code>标题二</code>为什么是斜体？，对生成的目录，段落-1.5倍间距，字体-宋体-小四；</li>
+<li>目录部分内容因标题太长，导致没有省略号，<code>Tab</code>健添加；</li>
+<li>QT：<strong>标题太长导致的排版难看，怎么解决？</strong></li>
+<li>QT：pdf输出的目录怎么有黑色背景？，格式的问题~~</li>
+</ul>
+<blockquote>
+<p>老师，由于word 文件太大，进行相关操作（例如批量处理选中内容格式、保存文件、输出pdf等），电脑带不起来，运行的非常慢，经常会卡死…</p>
+</blockquote>
+<h3 id="QT：任何对每个课题的操作，都只能在对应课题文件实现，不能在总文件去操作？–-gt-总文件不能进行任何操作，分节符-页码问题，…？"><a href="#QT：任何对每个课题的操作，都只能在对应课题文件实现，不能在总文件去操作？–-gt-总文件不能进行任何操作，分节符-页码问题，…？" class="headerlink" title="QT：任何对每个课题的操作，都只能在对应课题文件实现，不能在总文件去操作？–>总文件不能进行任何操作，分节符-页码问题，…？"></a>QT：任何对每个课题的操作，都只能在对应课题文件实现，不能在总文件去操作？–&gt;总文件不能进行任何操作，分节符-页码问题，…？</h3><h3 id="尝试在总文件里进行图、表对应（失败）"><a href="#尝试在总文件里进行图、表对应（失败）" class="headerlink" title="尝试在总文件里进行图、表对应（失败）"></a>尝试在总文件里进行图、表对应（失败）</h3><ul>
+<li><p>更新域~~</p>
+<blockquote>
+<p>卡死了~~</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2022-03-24"><a href="#2022-03-24" class="headerlink" title="2022-03-24"></a>2022-03-24</h2><h3 id="在有老师的群里，将任务分配给师姐"><a href="#在有老师的群里，将任务分配给师姐" class="headerlink" title="在有老师的群里，将任务分配给师姐"></a>在有老师的群里，将任务分配给师姐</h3><p>刘锦灿(3079779149) 2022/3/24 10:27:14<br>现在还有课题二、课题五、课题六的图表需要通过交叉引用进行对应，课题二图最多，我去做，希望两位师姐对剩下的课题进行对应，争取在下午三点前发给我，然后四点发给老师。具体的文件我在之前那个群已经发了，谢谢~</p>
+<h3 id="在有老师的群里，上传6个文件（每个课题的独立文件）-1个文件（合稿文件）"><a href="#在有老师的群里，上传6个文件（每个课题的独立文件）-1个文件（合稿文件）" class="headerlink" title="在有老师的群里，上传6个文件（每个课题的独立文件）+1个文件（合稿文件）"></a>在有老师的群里，上传6个文件（每个课题的独立文件）+1个文件（合稿文件）</h3><p>上传的6个课题文件，<code>课题1_0324.docx</code>，<code>课题2_0324.docx</code>，<code>课题3_0324.docx</code>，<code>课题4_0324.docx</code>，<code>课题5_0324.docx</code>，<code>课题6_0324.docx</code>，满足：</p>
+<ol>
+<li>标题使用的是同一个样式，“标题 1”，“标题 2”，“标题 3”，“标题 4”，“标题 5”</li>
+<li>图使用的是同一个样式，“图”</li>
+<li>表使用的同一个样式，“表”</li>
+<li>正文使用的是同一个样式，“正文”</li>
+<li>每个课题文件都是从引言开始</li>
+<li>上传前已对每个课题文件进行多级列表的设置（多级列表功能），目的是进行标题、图、表的自动编号</li>
+<li>上传前已对每个课题文件进行已对图、表编号实现交叉引用，（搜索关键字“图”，“表”，“错误!未找到引用源”找到需交叉引用的地方）</li>
+<li>上传前已对每个课题文件进行“更新域”操作（全选+F9），目的是为了对图、表交叉引用编号的更新</li>
+<li>上传前已对每个课题文件进行“页码”设置，页码与页数对应，通过大纲视图确定没有额外的分节符，目的是为了合稿时正文部分各个课题的页码可以连续</li>
+</ol>
+<p>在<code>初合_0323.docx</code>文件的基础上，将每个课题文件依次加入到该文件中的指定部分，可实现合稿<code>合稿_0324.docx</code>。</p>
+<ul>
+<li><p>体现了课题间的独立性；</p>
+</li>
+<li><p><strong>合稿时</strong></p>
+<ul>
+<li><p>先将之前的课题部分全删除；</p>
+</li>
+<li><p>若用WPS复制、粘贴文件，在word中更新域后，交叉引用显示的是“错误!未找到引用源”，图、表的自动编号显示没问题，之前用的这个方法合成了<code>初合_0323.docx</code>文件，可能也<strong>存在其它隐藏的问题</strong>；</p>
+</li>
+<li><p>用Word复制粘贴文件（<strong>电脑可能会卡</strong>），在word中更新域后，交叉引用、图、表都没问题；（nice~）</p>
+<blockquote>
+<p>通过插入–&gt;对象–&gt;文件中的文字，把一个Word文档插入到另一个Word文档中，更快捷</p>
+<p><a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/696649795860547244.html">https://zhidao.baidu.com/question/696649795860547244.html</a></p>
+</blockquote>
+</li>
+<li><p>需要审查页码是否连续</p>
+</li>
+<li><p>QT：标题 6.2.1，6.2.5.1， 去哪里了？ <strong>为什么会这样？</strong>重新开始于1后不会出现这种情况了</p>
+</li>
+</ul>
+</li>
+<li><p>合稿之后，也可依据标题、图、表样式（因为样式是统一的），通过多级列表设置，对整个文件的自动编号进行相关设置，再进行更新域操作实现交叉引用的更新；</p>
+<blockquote>
+<p>因为<code>初合_0323.docx</code>文件的标题、图、表样式与课题文件一致；</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2022-03-25"><a href="#2022-03-25" class="headerlink" title="2022-03-25"></a>2022-03-25</h2><h3 id="wjc-老师反馈：腾讯会议"><a href="#wjc-老师反馈：腾讯会议" class="headerlink" title="wjc 老师反馈：腾讯会议"></a>wjc 老师反馈：腾讯会议</h3><ul>
+<li><p><strong>中英文摘要，邓方宇</strong>，明天中午；</p>
+</li>
+<li><p>参考文献序号，删掉；</p>
+<p>所有参考文献，都拿出来弄成一个文档，拼音字母排序，英文放在前面；</p>
+<p>课题2和课题4没有参考文献；</p>
+<p>按照课题4的格式更改；</p>
+<p><strong>于婷</strong></p>
+</li>
+<li><p>承诺书删掉；</p>
+</li>
+<li><p>附录：论文、专利和人才培养情况删掉；</p>
+</li>
+<li><p>整体的，<code>引言</code>删掉，<code>本课题</code>去掉，</p>
+</li>
+<li><p>没图名的，自己添加；</p>
+<p>表</p>
+</li>
+<li><p>课题1，课题2，课题6，知识汲取</p>
+</li>
+<li><p><strong>项目信息及时反馈问题</strong></p>
+</li>
+</ul>
+<h3 id="我的任务"><a href="#我的任务" class="headerlink" title="我的任务"></a>我的任务</h3><ul>
+<li>图、表名称</li>
+<li>图、表大小</li>
+<li>表的乱码</li>
+<li><code>课题</code></li>
+<li>附录：论文、专利和人才培养情况删掉；</li>
+<li>承诺书删掉；</li>
+</ul>
+<p>先做与于婷师姐不相关的课题部分</p>
+<ul>
+<li><p>事前沟通</p>
+<pre class="line-numbers language-none"><code class="language-none">刘锦灿(3079779149)  11:04:41
+于婷师姐，你删完每个课题的参考文献序号后，在群里发一下吧~~
+我在你的基础上弄~
+
+于婷~~师姐(1838672341)  11:05:01
+只有课题5有
+
+于婷~~师姐(1838672341)  11:05:08
+其他的课题没有
+
+刘锦灿(3079779149)  11:05:18
+课题1也有呀
+
+于婷~~师姐(1838672341)  11:05:43
+课题1只有前面有几个，你搜索[1]就可以删掉，好像只有5个
+
+于婷~~师姐(1838672341)  11:05:55
+你课题1和老师改了很多
+
+于婷~~师姐(1838672341)  11:06:06
+再在我的基础上就不好改了
+
+刘锦灿(3079779149)  11:06:26
+好的~~
+
+刘锦灿(3079779149)  11:06:27
+ok<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>课题1</p>
+<ul>
+<li>检索<code>课题</code>，去除相关内容</li>
+<li>图大小调整，表可能乱-需进行调整<ul>
+<li>表2.1.1</li>
+</ul>
+</li>
+<li>图、表名称命名，通过引用实现验证</li>
+<li>…</li>
+<li>表清单，表名补充</li>
+<li>图清单，图名补充</li>
+<li>看全文，表是否需要选择性粘贴</li>
+<li><code>课题</code></li>
+<li>全部标题编号核对</li>
+<li>页码</li>
+</ul>
+</li>
+<li><p>课题2</p>
+<ul>
+<li><p>检索<code>课题</code>，去除相关内容，</p>
+</li>
+<li><p>图大小调整，表可能乱-需进行调整</p>
+<blockquote>
+<p>Word表格粘贴后格式变乱怎么办：<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/1675599660084666067.html">https://zhidao.baidu.com/question/1675599660084666067.html</a></p>
+<p>双击可打开表格对象；</p>
+</blockquote>
+</li>
+<li><p>图、表名称命名，通过引用实现验证</p>
+</li>
+<li><p>…</p>
+</li>
+<li><p>表清单，表名补充</p>
+</li>
+<li><p>图清单，图名补充</p>
+</li>
+<li><p>看全文，表是否需要选择性粘贴</p>
+</li>
+<li><p>全部标题编号核对</p>
+</li>
+<li><p><code>引言</code>，<code>小结</code>，参考文献，…</p>
+</li>
+<li><p>页码</p>
+</li>
+</ul>
+</li>
+<li><p>课题3</p>
+<ul>
+<li>表清单，表名补充</li>
+<li>图清单，图名补充</li>
+<li>看全文，表是否需要选择性粘贴</li>
+<li><code>课题</code>（未弄完，不好弄）</li>
+<li>全部标题编号核对</li>
+<li><code>引言</code>，<code>小结</code>，参考文献，…</li>
+<li>页码</li>
+</ul>
+</li>
+<li><p>课题4</p>
+<ul>
+<li><p>表清单，表名补充</p>
+</li>
+<li><p>图清单，图名补充</p>
+</li>
+<li><p>看全文，表是否需要选择性粘贴</p>
+<blockquote>
+<p>想好做什么，要么就不做，要么就做好~</p>
+</blockquote>
+</li>
+<li><p><code>课题</code>，数字</p>
+</li>
+<li><p>全部标题编号核对</p>
+</li>
+<li><p><code>引言</code>，<code>小结</code>，参考文献，…</p>
+</li>
+<li><p>页码</p>
+</li>
+</ul>
+</li>
+<li><p>课题5 </p>
+<ul>
+<li>表清单，表名补充</li>
+<li>图清单，图名补充，图目录格式核对（实力更新实现）</li>
+<li>看全文，表是否需要选择性粘贴</li>
+<li><code>课题</code></li>
+<li>全部标题编号核对</li>
+<li><code>引言</code>，<code>小结</code>，参考文献，…</li>
+<li>页码</li>
+</ul>
+</li>
+<li><p>课题6</p>
+<ul>
+<li><p>表清单，表名补充，</p>
+</li>
+<li><p>图清单，图名补充，</p>
+</li>
+<li><p>看全文，表是否需要选择性粘贴，</p>
+<blockquote>
+<p>为什么韩老师的表可以复制粘贴，格式不变的？</p>
+<p>一样会变，</p>
+<p>但是为什么感觉做起来很舒服？</p>
+</blockquote>
+<blockquote>
+<p>韩老师做的图也很好~</p>
+</blockquote>
+<blockquote>
+<p><strong>公式也可以用样式进行编号</strong>~？</p>
+</blockquote>
+</li>
+<li><p><code>课题</code></p>
+</li>
+<li><p>全部标题编号核对</p>
+</li>
+<li><p><code>引言</code>，<code>小结</code>，参考文献，…</p>
+</li>
+<li><p>页码</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="我的任务2，标题-图-表的目录"><a href="#我的任务2，标题-图-表的目录" class="headerlink" title="我的任务2，标题+图+表的目录"></a>我的任务2，标题+图+表的目录</h3><h3 id="总结（很重要）：不建议直接合稿，每个docx不应该轻易的复制粘贴，很容易出问题，因为样式并不统一，最好是在源文件的基础上进行修改，添加样式"><a href="#总结（很重要）：不建议直接合稿，每个docx不应该轻易的复制粘贴，很容易出问题，因为样式并不统一，最好是在源文件的基础上进行修改，添加样式" class="headerlink" title="总结（很重要）：不建议直接合稿，每个docx不应该轻易的复制粘贴，很容易出问题，因为样式并不统一，最好是在源文件的基础上进行修改，添加样式~"></a>总结（很重要）：不建议直接合稿，每个docx不应该轻易的复制粘贴，很容易出问题，因为样式并不统一，最好是在源文件的基础上进行修改，添加样式~</h3><h3 id="wjc-老师反馈：腾讯会议-1"><a href="#wjc-老师反馈：腾讯会议-1" class="headerlink" title="wjc 老师反馈：腾讯会议"></a>wjc 老师反馈：腾讯会议</h3><p>图片压缩~</p>
+<p>170M，到，50M~</p>
+<h3 id="QT：如何在word看图片所占内存大小？"><a href="#QT：如何在word看图片所占内存大小？" class="headerlink" title="QT：如何在word看图片所占内存大小？"></a>QT：如何在word看图片所占内存大小？</h3><blockquote>
+<p>word如何保存文档里的所有图片？<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/ad310e80966daf5949f49e94.html">https://jingyan.baidu.com/article/ad310e80966daf5949f49e94.html</a></p>
+<p>并不能看到图片大小</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">邓方宇~~师姐(1939772066)  22:24:27
+那要不先都原图保存 然后按大小排 就改大的那些可行不
+
+于婷~~师姐(1838672341)  22:25:20
+我打算要不先word里面的压缩
+
+邓方宇~~师姐(1939772066)  22:25:31
+关键还得再插回去
+
+于婷~~师姐(1838672341)  22:25:45
+然后看看那个还很清楚，感觉很大
+
+于婷~~师姐(1838672341)  22:25:49
+在插回去
+
+于婷~~师姐(1838672341)  22:26:14
+文件夹里生成的图片编号没有变
+
+刘锦灿(3079779149)  22:26:58
+感觉很棒，课题1应该可以减少很多
+
+邓方宇~~师姐(1939772066)  22:27:21
+咋都把图片存出来呀 我另存为没看到这个选项
+
+于婷~~师姐(1838672341)  22:27:25
+但是就怕很多公式是图片
+
+于婷~~师姐(1838672341)  22:27:41
+https://jingyan.baidu.com/article/ad310e80966daf5949f49e94.html
+
+于婷~~师姐(1838672341)  22:27:46
+这个是教程
+
+邓方宇~~师姐(1939772066)  22:27:55
+哈哈好<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="QT：文字占用大小大吗？"><a href="#QT：文字占用大小大吗？" class="headerlink" title="QT：文字占用大小大吗？"></a>QT：文字占用大小大吗？</h3><p>不大</p>
+<h2 id="2022-03-26"><a href="#2022-03-26" class="headerlink" title="2022-03-26"></a>2022-03-26</h2><h3 id="QT：什么格式的图片占内存最小？"><a href="#QT：什么格式的图片占内存最小？" class="headerlink" title="QT：什么格式的图片占内存最小？"></a>QT：什么格式的图片占内存最小？</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42099942/article/details/113366550">https://blog.csdn.net/weixin_42099942/article/details/113366550</a></p>
+<p>jpg</p>
+</blockquote>
+<h3 id="我的任务，压缩图片（失败？）"><a href="#我的任务，压缩图片（失败？）" class="headerlink" title="我的任务，压缩图片（失败？）"></a>我的任务，压缩图片（失败？）</h3><ol>
+<li><p>首先word直接批量压缩，选择<code>电子()</code></p>
+<p>word，二、批量压缩图片：<a target="_blank" rel="noopener" href="https://post.smzdm.com/p/apzkl4mw/">https://post.smzdm.com/p/apzkl4mw/</a> </p>
+<pre class="line-numbers language-none"><code class="language-none">邓方宇~~师姐(1939772066)  22:06:39
+好像格式里直接压缩图片能少不少
+
+刘锦灿(3079779149)  22:07:26
+是在word里吗？
+
+于婷~~师姐(1838672341)  22:07:26
+我刚才也试了试
+
+于婷~~师姐(1838672341)  22:07:31
+我这里好像不太行
+
+于婷~~师姐(1838672341)  22:07:41
+好多都识别不是图片
+
+邓方宇~~师姐(1939772066)  22:08:05
+选默认的那项不变 选电子邮件就小了很多
+
+邓方宇~~师姐(1939772066)  22:08:17
+word wps都有
+
+邓方宇~~师姐(1939772066)  22:08:43
+双击图片-格式-压缩图片就出来对话框了
+
+邓方宇~~师姐(1939772066)  22:08:59
+这样不用每张图都调了
+
+刘锦灿(3079779149)  22:09:38
+我已经少了一半了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>用<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/ad310e80966daf5949f49e94.html%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E4%BF%9D%E5%AD%98%E6%89%80%E6%9C%89%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%8C%E4%BA%86%E8%A7%A3%E5%86%85%E5%AD%98%E5%8D%A0%E6%AF%94%E5%A4%A7%E7%9A%84%E5%9B%BE%E7%89%87%E6%98%AF%E5%93%AA%E4%BA%9B%EF%BC%8C%E4%BC%98%E5%85%88%E5%AF%B9%E8%BF%99%E4%BA%9B%E5%9B%BE%E7%89%87%E8%BF%9B%E8%A1%8C%E5%8E%8B%E7%BC%A9%E3%80%82">https://jingyan.baidu.com/article/ad310e80966daf5949f49e94.html的方法，生成一个保存所有图片的文件夹，了解内存占比大的图片是哪些，优先对这些图片进行压缩。</a></p>
+<p>具体压缩是：</p>
+<ul>
+<li>在<code>保存文件夹</code>里对图片大小进行排序；</li>
+<li>对<code>大图片</code>进行压缩，确保不失真，压缩的图片放在另一个文件夹，命名即为word中的编号；</li>
+<li>导入到word（记得备份），保存后查看内存是否减少；</li>
+</ul>
+</li>
+</ol>
+<h3 id="我的任务，压缩图片（迅捷在线压缩，失败？）"><a href="#我的任务，压缩图片（迅捷在线压缩，失败？）" class="headerlink" title="我的任务，压缩图片（迅捷在线压缩，失败？）"></a>我的任务，压缩图片（迅捷在线压缩，失败？）</h3><ol>
+<li>将word文档中的图片一个一个另存为<code>jpg</code>格式，保存到<code>迅捷在线压缩</code>文件夹，每张图名称为对应编号；</li>
+<li>在<a target="_blank" rel="noopener" href="https://yasuo.xunjiepdf.com/img/%E6%89%B9%E9%87%8F%E4%B8%8A%E4%BC%A0%E8%AF%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E6%89%80%E6%9C%89%E5%9B%BE%E7%89%87%EF%BC%8C%E6%89%B9%E9%87%8F%E5%8E%8B%E7%BC%A9%EF%BC%9B">https://yasuo.xunjiepdf.com/img/批量上传该文件夹下所有图片，批量压缩；</a></li>
+<li>批量下载，下载后的压缩包内的图片都经过了压缩，名称仍为对应编号；</li>
+</ol>
+<h3 id="尝试用word压缩（迅捷在线压缩，失败？）"><a href="#尝试用word压缩（迅捷在线压缩，失败？）" class="headerlink" title="尝试用word压缩（迅捷在线压缩，失败？）"></a>尝试用word压缩（迅捷在线压缩，失败？）</h3><h3 id="检索-，删除文献序号；"><a href="#检索-，删除文献序号；" class="headerlink" title="检索[，删除文献序号；"></a>检索<code>[</code>，删除文献序号；</h3><h3 id="删图–"><a href="#删图–" class="headerlink" title="删图–"></a>删图–</h3><h3 id="wjc老师反馈-1"><a href="#wjc老师反馈-1" class="headerlink" title="wjc老师反馈"></a>wjc老师反馈</h3><p>像这种图题就太长，可以删除一些内容或者把说明文字单独成一段。</p>
+<h3 id="反思：为什么会出现这种情况，一直重复做一件事？，原因在于事前竟然没有以书面的形式给出需要做的内容，总是遇到问题再去弄，不能再改格式前就明确做什么嘛？思维的高度不够，解决方法："><a href="#反思：为什么会出现这种情况，一直重复做一件事？，原因在于事前竟然没有以书面的形式给出需要做的内容，总是遇到问题再去弄，不能再改格式前就明确做什么嘛？思维的高度不够，解决方法：" class="headerlink" title="反思：为什么会出现这种情况，一直重复做一件事？，原因在于事前竟然没有以书面的形式给出需要做的内容，总是遇到问题再去弄，不能再改格式前就明确做什么嘛？思维的高度不够，解决方法："></a>反思：为什么会出现这种情况，一直重复做一件事？，原因在于事前竟然没有以书面的形式给出需要做的内容，总是遇到问题再去弄，不能再改格式前就明确做什么嘛？思维的高度不够，解决方法：</h3><p>依据模板列出问题</p>
+<p>对症下药</p>
+<h3 id="wjc老师反馈-2"><a href="#wjc老师反馈-2" class="headerlink" title="wjc老师反馈"></a>wjc老师反馈</h3><p>自己改</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/03/21/yan-jiu-sheng-justtry-target/yan-yi-xia-yun-ji-suan-he-gao/">https://Liu-Jincan.github.io/2022/03/21/yan-jiu-sheng-justtry-target/yan-yi-xia-yun-ji-suan-he-gao/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/03/23/yan-jiu-sheng-justtry-function/wen-xian-cha-xun-xia-zai-guan-li/01-scidown/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220328092928.png" class="responsive-img" alt="scidown">
+                        
+                        <span class="card-title">scidown</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-23
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%96%87%E7%8C%AE%E6%9F%A5%E8%AF%A2-%E4%B8%8B%E8%BD%BD-%E7%AE%A1%E7%90%86/" class="post-category">
+                                    文献查询-下载-管理
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/17/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/08-code-dapper/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118131148.png" class="responsive-img" alt="07-阅读：DAPPER">
+                        
+                        <span class="card-title">07-阅读：DAPPER</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%90%8C%E5%8C%96/" class="post-category">
+                                    数据同化
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">430.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

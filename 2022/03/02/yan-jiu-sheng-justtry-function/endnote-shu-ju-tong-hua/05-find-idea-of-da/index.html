@@ -1,0 +1,1783 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="05-阅读：Find_idea_of_DA, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>05-阅读：Find_idea_of_DA | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327135302.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">05-阅读：Find_idea_of_DA</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%90%8C%E5%8C%96/" class="post-category">
+                                数据同化
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-03-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-03-27
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    10.6k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"><a href="#参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020" class="headerlink" title="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"></a><center>参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020</center></h2><ul>
+<li><p>英文名：<strong>Attention-based Convolutional Autoencoders for 3D-Variational Data Assimilation</strong></p>
+</li>
+<li><p>期刊：《Computer methods in applied mechanics and engineering》，LetPub，<a target="_blank" rel="noopener" href="https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search">https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search</a></p>
+<blockquote>
+<p>这个期刊也不错~~</p>
+<p>8.0，171，9.9，2区</p>
+</blockquote>
+</li>
+<li><p>作者：Julian Mack, Rossella Arcucci, Miguel Molina-Solana, Yi-Ke Guo</p>
+</li>
+<li><p>机构：Data Science Institute, Imperial College London, UK</p>
+</li>
+<li><p><code>这一篇是在2022-02-28 看的，对3D-VAR进行的改进，实现B矩阵的神经网络训练？~</code></p>
+</li>
+</ul>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>We propose a new <strong>‘Bi-Reduced Space’ approach</strong> to solving <strong>3D Variational Data Assimilation</strong> using <strong>Convolutional Autoencoders</strong>. We prove that our approach has the same solution as previous methods but has significantly lower computational complexity; in other words,<strong>we reduce the computational cost without affecting the data assimilation accuracy</strong>.</p>
+<p>We tested our proposal with data from <strong>a real-world application</strong>: a pollution model of a site in Elephant and Castle (London, UK) and found that we could </p>
+<ul>
+<li><p>(1) reduce the size of the <strong>background covariance matrix representation</strong> by O(10<sup>3</sup> ), and </p>
+<blockquote>
+<p><code>reduce by, increase by</code></p>
+</blockquote>
+</li>
+<li><p>(2) increase our <strong>data assimilation accuracy</strong> with respect to existing reduced space methods.</p>
+</li>
+</ul>
+<h3 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h3><p>This work is supported by the EPSRC, UK Grand Challenge grant “Managing Air for Green Inner Cities”(MAGIC) EP/N010221/1, by the EPSRC, UK Centre for Mathematics of Precision Healthcare EP/N0145291/1 and the EP/T003189/1 Health assessment across biological length scales for personal pollution exposure and its mitigation (INHALE). Thanks to Dr. Laetitia Mottet for the set up of the full model in Fluidity. M. Molina-Solana was supported by European Union’s H2020 MSCA-IF (ga. No.743623) and Athenea3i (ga. No.754446) programmes.</p>
+<h3 id="9-Conclusions-and-future-work"><a href="#9-Conclusions-and-future-work" class="headerlink" title="9. Conclusions and future work"></a>9. Conclusions and future work</h3><p>We have presented a new <strong>Bi-reduced space 3D-VarDA formulation</strong> and show that, in combination with the Zhou et al or <em>‘Tucodec’</em> image compression CAE, this method gives superior data assimilation performance in comparison with <strong>reduced space VarDA</strong> regardless of the parameters used in the latter case. We have demonstrated that our method is also faster in the majority of scenarios. On the theoretical side, we show that our method produces approximately equivalent solutions to the traditional method at lower computational complexity. Unlike the previous approach which is in O(<em>M<sup>2</sup></em>) for large <em>M</em>, our method does not penalise the collection of more observation data.</p>
+<p>We have released our work in a well tested Python module <strong>VarDACAE</strong>.</p>
+<blockquote>
+<p><code>↑在 python 的 module 上发布的</code></p>
+</blockquote>
+<p>There were many extensions to this work which we would have liked to explore further. We feel that the most important of these is the validation of our hypothesis that is possible to create an observation encoder network <em>f<sup>o</sup></em> to calculate the latent misfits <strong>d</strong><sub>l</sub> . We would also have liked to a<strong>pply our approach to 4D-VarDA</strong>, validate it on other data sets and investigate alternatives to the L-BFGS minimisation routine. A more substantial extension would involve integrating our method with CAE-based ROM approaches to produce a single end-to-end network for reduced space data assimilation and we believe this would be complemented by the use of data assimilation localisation techniques [66]. Finally, there is also potential for the use of VAEs within the proposed system to enforce orthogonality in the CAE latent dimension.</p>
+<h3 id="github-code"><a href="#github-code" class="headerlink" title="github code"></a>github code</h3><p>VarDACAE：<a target="_blank" rel="noopener" href="https://github.com/scheng1992/Data_Assimilation">https://github.com/scheng1992/Data_Assimilation</a></p>
+<h4 id="Readme-md"><a href="#Readme-md" class="headerlink" title="Readme.md"></a>Readme.md</h4><p>—<strong>VarDACAE</strong></p>
+<p>This module is used to create Convolutional AutoEncoders for Variational Data Assimilation. A user can define, create and train an AE for Data Assimilation with just a few lines of code. It is the accompanying code to the paper <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2101.02121">here</a>, published in <em>Computer Methods in Applied Mechanics and Engineering</em>.</p>
+<p>—<strong>Introduction</strong></p>
+<p>Data Assimilation (DA) is <strong>an uncertainty quantification technique</strong> used to reduce the error in predictions by combining forecasting data with observation of the state. The most common techniques for DA are Variational approaches and Kalman Filters.</p>
+<blockquote>
+<p><code>↑ DA介绍</code></p>
+</blockquote>
+<p>In this work, we propose a method of using Autoencoders to <strong>model the Background error covariance matrix</strong>, to greatly reduce the computational cost of solving 3D Variational DA <strong>while increasing the quality of the Data Assimilation</strong>.</p>
+<blockquote>
+<p><code>↑通过自动编码器对背景误差协方差进行建模</code></p>
+</blockquote>
+<p>—<strong>Data</strong></p>
+<p>The data used in this paper is owned by the Data Science Institute, Imperial College, London. If you do not have access to this data, please see the section below on training a model with your own data.</p>
+<p>—<strong>Installation</strong></p>
+<ol>
+<li><p>Install <code>vtk</code> by navigating to <a target="_blank" rel="noopener" href="https://vtk.org/download/">this link</a> and installing the version applicable to your system.</p>
+</li>
+<li><p>Navigate to the base directory and run:</p>
+<pre class="line-numbers language-none"><code class="language-none">pip install -e .<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>Run <code>pytest</code> from the home directory to ensure correct installation.</p>
+</li>
+</ol>
+<p>—<strong>Tests</strong></p>
+<p>From the project home directory run <code>pytest</code>.</p>
+<p>—<strong>Getting Started</strong></p>
+<p>—<strong>Settings Instance</strong></p>
+<p>—<strong>Train a model on your own data</strong></p>
+<h3 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>Data Assimilation (DA) is an uncertainty quantification technique in which observation data and a forecasting model are used in <strong>tandem</strong> to generate predictions that are more accurate than those that would be produced using <strong>either component</strong> independently. </p>
+<blockquote>
+<p><code>↑ DA的定义</code></p>
+</blockquote>
+<p>DA is computationally costly for large systems [1] and under <strong>operational constraints</strong>, it is often necessary to solve the problem in <strong>a reduced space</strong> in order to achieve real-time assimilation. </p>
+<blockquote>
+<p><code>↑ operational 可以翻译成业务化吧</code></p>
+</blockquote>
+<ul>
+<li><p>In most relevant DA operational software, <strong>a variable transformation</strong> is performed on the variational functional to reduce the computational cost needed for computing the covariance matrix explicitly; to reduce the space, only <strong>Empirical Orthogonal Functions (EOFs)</strong> of the first largest eigenvalues of the error covariance matrix are considered. </p>
+<blockquote>
+<p><code>↑ 变量变换，经验正交函数(EOF)</code></p>
+</blockquote>
+<p>Since its introduction to meteorology by Edward Lorenz, <strong>EOFs analysis</strong>, which is essentially based on a <strong>Truncated Singular Value Decomposition (TSVD)</strong>, has become a fundamental tool in computational fluid dynamic modelling for <strong>data diagnostics</strong> and <strong>dynamical model reduction</strong>. </p>
+<blockquote>
+<p><code>↑ EOF分析基于阶段奇异值分解（TSVD）</code></p>
+</blockquote>
+<p>Real world applications of TSVD (EOFs) basically <strong>exploit the fact</strong> that these methods allow a decomposition of a data function into a set of orthogonal functions, which are designed so that only a few of these functions are needed in <strong>lower-dimensional approximations</strong>. </p>
+<blockquote>
+<p><code>↑ TSVD的原理：降维</code></p>
+<p><code>exploit 利用</code></p>
+</blockquote>
+<p>Nevertheless, the accuracy of the solution obtained by truncating, exhibits a high sensitivity to the variation of the value of the <strong>truncation parameter</strong> [2,3], so that a suitable truncation parameter is needed. This is a severe drawback of truncation-based methods and limits the utility of operational software based on these methods. </p>
+<blockquote>
+<p><code>↑ TSVD的缺点，结果对truncation参数极其敏感</code></p>
+</blockquote>
+</li>
+<li><p><strong>Convolutional Autoencoders (CAEs)</strong> are a type of neural network that can be used to compress <strong>inputs that exhibit local smoothness</strong>. CAEs have had huge successes in computer vision [4,5] and particularly in image compression [6,7]. </p>
+<blockquote>
+<p><code>↑ 卷积自编码（CAE）的原理：压缩具有局部光滑的输入。</code></p>
+</blockquote>
+</li>
+</ul>
+<p>In this work, we use CAEs to produce a reduced space in which DA can be performed efficiently. We show that our approach has lower online complexity than a DA with TSVD while also giving <strong>equivalent forecasts</strong>.</p>
+<blockquote>
+<p><code>↑ DA-CAE 和 DA-TSVD 对比 </code></p>
+</blockquote>
+<p>The structure of this paper is as follows: </p>
+<ul>
+<li>in Section 2 we cover related work and we present the contribution of the present work. </li>
+<li>Section 3 provides preliminary concepts and definitions, </li>
+<li>Section 4 provides <strong>background on Autoenconders</strong>, and Section 5 introduces our theoretical contribution. </li>
+<li>As the success of our approach is heavily conditioned on the choice of a CAE architecture, in Section 6 we summarise the results of our extensive architecture search before evaluating our approach against existing VarDA methods in Section 7. </li>
+<li>The paper ends with a discussion in Section 8 and some conclusions and further remarks in Section 9.</li>
+</ul>
+<h3 id="2-Related-work-and-contribution-of-the-present-work"><a href="#2-Related-work-and-contribution-of-the-present-work" class="headerlink" title="2 Related work and contribution of the present work"></a>2 Related work and contribution of the present work</h3><p>Forecasting models introduce uncertainty from numerous sources. These include, but are not limited to, uncertainty in initial conditions, imperfect representations of the underlying physical processes and numerical errors. As a result, a model without access to real-time data will accumulate errors until its predictions no longer correspond to reality [8]. Similarly, all observations will have an irreducible uncertainty as a result of imperfect measuring devices. </p>
+<blockquote>
+<p><code>↑ 预测模型的不确定性包括...</code></p>
+</blockquote>
+<p>The key idea in DA is that the overall uncertainty in a forecast can be reduced by producing <strong>a weighed average of model forecasts and observations</strong>. </p>
+<blockquote>
+<p><code>↑ QT：DA 中的 a weighed average 怎么理解？</code></p>
+</blockquote>
+<p>The canonical application of Data Assimilation (DA) [9,10] is Numerical Weather Prediction (NWP) [11–13] but the technique has been utilised in contexts as diverse as oceanic modelling [14,15], solar wind prediction [16] and inner city pollution modelling [17,18]. </p>
+<p>Our proposed approach is agnostic to the details of the forecasting model (i.e. <strong>it is non-intrusive</strong>) and is therefore applicable to any DA problem in which <strong>a reduced order system</strong> is used.</p>
+<blockquote>
+<p><code>↑ non-intrusive 非侵入性的怎么理解？</code></p>
+</blockquote>
+<p>Our proposed formulation of Variational DA [12,13] extends the incremental formulation [11]. In 1992, Parrish et al. [19] proposed using a <strong>Control Variable Transform (CVT) to reduce the space of the background error covariance matrix B</strong> by performing Cholesky factorisation as B = V V<sup>T</sup> . Since then, many authors have used eigenanalysis techniques such as PCA or TSVD to reduce the rank of V [17]. <strong>In this work, we propose replacing these eigenanalysis approaches with a CAE that learns to compress V more efficiently, and with less information-loss than the removal of eigen-modes.</strong></p>
+<blockquote>
+<p><code>↑ 本文的创新点，使用CAE更有效的压缩V</code></p>
+</blockquote>
+<p><strong>This work builds on</strong> a previous publication [17] in which <strong>TSVD was used to precondition V</strong>. The original authors used a test-site location in South London and synthetic data generated by Fluidity, an open-source finite-element fluid dynamic software (<a target="_blank" rel="noopener" href="http://fluidityproject.github.io/">http://fluidityproject.github.io/</a>). We test our approach on the same domain and data to enable a clear comparison. We find that our method gives considerably more accurate predictions and, in most cases, provides them sooner than the previous approach. <strong>In fact, our method is also more accurate (and much faster) than the CVT formulation of Parrish et al. [19]</strong>.</p>
+<p>In this paper we make <strong>the following contributions</strong>: </p>
+<ol>
+<li><p>We propose <strong>a new ‘Bi-reduced space’ 3D Variational Data Assimilation (3D-VarDA) formulation</strong> that has an online complexity that is independent of the number of assimilated observations (i.e. it can be used with arbitrarily dense sensor networks). We show that our approach has lower online complexity than [17] while also giving equivalent forecasts.</p>
+</li>
+<li><p>We create and evaluate <strong>3D extensions of a range of state-of-the-art CAEs</strong> for 2D image compression. To our knowledge, we are the first to extend the image compression network of [20] and image restoration GRDN of [21] to three-dimensions. We find that Zhou et al.’s attention-based model [20] performs best, and make some small improvements to this system including the replacement of vanilla residual blocks [22] with ‘NeXt’ residual blocks [23] in order to reduce decoder inference time.</p>
+</li>
+<li><p><strong>This adapted CAE, in combination with our proposed DA formulation</strong>, achieves a substantial relative reduction in DA error of 37% compared with Arcucci et al.’s TSVD approach [17]. Depending on the number of assimilated observations, our method is up x30 faster. We discuss the speed–accuracy tradeoff at length in Section 7.</p>
+</li>
+<li><p>We release a well tested open-source <strong>Python module VarDACAE</strong> that enables users to easily replicate our experiments, use our model implementations, and train CAEs for any Variational data assimilation problem. The repository can be found at <a target="_blank" rel="noopener" href="https://github.com/julianmack/Data">https://github.com/julianmack/Data</a> Assimilation.</p>
+</li>
+</ol>
+<h2 id="参考资料：基于数据同化的地下水模型不确定性分析"><a href="#参考资料：基于数据同化的地下水模型不确定性分析" class="headerlink" title="参考资料：基于数据同化的地下水模型不确定性分析"></a><center>参考资料：基于数据同化的地下水模型不确定性分析</center></h2><ul>
+<li><p>期刊：《Journal of Glaciology and Geocryology》，</p>
+<blockquote>
+<p>这个期刊查不到</p>
+</blockquote>
+</li>
+<li><p>作者：陈冲</p>
+</li>
+<li><p>机构：中国石油大学（北京）</p>
+</li>
+<li><p><code>创新点：数据同化的不确定分析</code></p>
+</li>
+</ul>
+<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p><strong>黑河流域</strong>中下游地下水系统受上游冰冻圈融水和降雨的补给，由气候变暖导致的冰冻圈萎缩致使中下游地下水系统的稳定性面临更多的风险。</p>
+<blockquote>
+<p><code>↑ 地下水模型，研究意义</code></p>
+</blockquote>
+<p><strong>地下水模型</strong>是地下水系统稳定性评估的有效手段，但是<strong>地下水模型参数往往存在较大的不确定性</strong>。为此，本文提出了基于<strong>数据同化</strong>算法的不确定性分析方法，通过包含观测资料信息<strong>减小模型不确定性</strong>。</p>
+<blockquote>
+<p><code>↑ DA，为什么应用在地下水模型</code></p>
+</blockquote>
+<p>采用所提方法分析了（基于MODFLOW构建）黑河流域中游地下水模型中<strong>13个参数的不确定性</strong>，讨论了算法超参数的影响及其<strong>最优取值</strong>，分析了地下水模型参数的不确定性。</p>
+<blockquote>
+<p><code>↑ DA，怎么应用在地下水模型</code></p>
+</blockquote>
+<p>实验结果证明数据同化算法可有效减小地下水模型参数的不确定性，观测资料的种类与数量对参数不确定性的减小起到重要作用；不同地下水模型参数的不确定性不同，地表水与地下水相互作用频繁的区域参数不确定性较大；含水层渗透系数、含水层给水度以及灌溉回流系数对模型输出的地下水位输出影响显著，河床水力传导系数对模型输出的河流流量影响较大。</p>
+<p>本研究将为地下水研究提供更加可靠的模型方法，为西北内流区地下水哺育的绿洲生态系统稳定可持续研究提供重要支撑。</p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>本文提出了基于数据同化的不确定性分析方法，通过包含观测资料信息<strong>减小模型参数的不确定性</strong>。基于已构建的黑河流域中游地下水模型，利用提出的算法对模型参数进行不确定性分析，探索了不同超参数对算法效果的影响，分析了含水层渗透系数、河床水力传导系数、含水层给水度、灌溉回流系数的不确定性，评估了不同系数对观测信息的敏感程度，主要结论如下：</p>
+<p>（1）<strong>基于贝叶斯理论的数据同化方法是不确定性分析的有效手段</strong>，ESMDA-EnKF算法通过包含观测资料更新参数，能够有效的减小模型参数的不确定性；对不确定性分析结果的统计分析结果表明，经过 ESMDA-EnKF 算法更新后的参数均值收敛到最优均值附近，不确定性范围明显减小。</p>
+<p>（2）不同超参数对算法效果影响不一，<strong>观测资料的增加将提升算法对模型参数的更新程度，减小参数的不确定性，且加入新类型的观测资料会进一步减小参数的不确定性</strong>。</p>
+<p>（3）<strong>不同模型参数的不确定性不同</strong>，地表水与地下水相互作用频繁的区域参数不确定性较大；含水层渗透系数、含水层给水度以及灌溉回流系数对模型输出的地下水位影响显著，水力传导系数对模型输出的河流流量影响较大。</p>
+<h3 id="0-引言"><a href="#0-引言" class="headerlink" title="0 引言"></a>0 引言</h3><p><strong>地下水系统模拟</strong>已经成为地球科学的基本研究方法，在地球系统科学领域被誉为第二次哥白尼革命［1］，被证明是最有价值和最实用的工具之一［2-3］。地下水模型能够刻画水文过程的整体和局部行为；多次模拟，选择最优的设计；通过情景分析进行情景预测，提出应对策略。</p>
+<p>围绕黑河中游地表水、泉水和地下水，大量学者利用模型进行了有益探索：陈冲等［4］建立了黑河中游地区地下水模型，并初步分析了上游径流与耕地面积对地下水资源的影响；王旭升等［5］总结了20年来黑河流域的地下水模型研究，并指出地下水模型应加强与关联过程（地表水、土壤水、水利工程）的集成；程国栋等［6］阐述了黑河流域生态—水文过程集成研究的进展及展望。</p>
+<blockquote>
+<p><code>↑ 黑河</code></p>
+</blockquote>
+<p>目前的地下水模型一般基于确定性的参数、边界条件，采用确定性机制来构建模型。然而，由于实际过程的复杂性及非线性因素，导致模型往往存在一定不确定性。<strong>正如George所言，所有关于真实系统的模型都是“错误”的［7］，即模型永远不能完美表达实际系统</strong>。地下水模型的<strong>不确定性来源一般可以分为</strong>：模型数据的不确定性、模型结构的不确定性以及模型参数的不确定性。</p>
+<ul>
+<li><strong>模型数据的不确定性</strong>一般指由于监测误差或者数据缺失导致的不确定性，只能通过提高监测技术和数据收集频率来降低。</li>
+<li><strong>而模型结构和参数不确定性</strong>则来源于建模过程、模型参数标定及验证过程。这些不确定性将对进一步的科学研究以及决策提出等带来诸多麻烦甚至风险。因此在使用地下水模型时，对其进行不确定性分析是十分必要的。</li>
+</ul>
+<blockquote>
+<p><code>↑ 模型不确定性来源</code></p>
+</blockquote>
+<p>William 等［8］介绍了用来估计、分析模型中所有类型不确定性的多种方法。Beven［9］于1989年在对物理模型的适用性进行讨论的过程中，首次提出了对水文模型进行不确定性分析的概念。地下水模型<strong>不确定性分析方法主要分为蒙特卡罗（Monte Carlo）法、矩方程法与贝叶斯法三种［10］</strong>。</p>
+<ul>
+<li>虽然 MC 法是一种被广泛采用的不确定性分析方法［11-15］，但是 MC 法的缺点也不容忽视，其需对模型的参数进行<strong>大量的采样</strong>才能保证算法的正确性和准确性，无法适用于计算消耗大的模型。</li>
+<li>矩方程法通过随机偏微分方程直接求解模拟结果的各阶统计矩，已在地下水模型不确定性研究中得到初步应用［16-18］。</li>
+<li>贝叶斯法利用观测资料修正水文地质参数分布，其既可以用于模型参数识别反演［19］，也能够用于对参数进行不确定性分析，其优点是<strong>通过更新参数分布，以更加准确的评估模型不确定性</strong>。利用贝叶斯法进行地下水模型不确定性分析的研究相对较少［20-21］。</li>
+</ul>
+<p><code>↑ 不确定性分析方法</code></p>
+<p>数据同化（DA，Data Assimilation）是基于贝叶斯理论的参数更新方法。卡尔曼滤波算法（KF，Kalman Filter）是由 Kalman 提出的<strong>顺序数据同化算法</strong>［22］，其利用观测资料自回归地对模型的状态变量进行更新，并在更新的整个过程中保证<strong>状态变量估计值的误差最小</strong>。自提出以来，<strong>KF算法已被广泛应用于模型参数与状态的估计中</strong>。</p>
+<ul>
+<li>黄春林等［23］基于集合卡尔曼滤波（EnKF，Ensemble Kal⁃ man Filter）利用土壤水分观测数据同化了简单生物圈模型（SiB2，Simple Biosphere Model 2），探讨了简单生物圈模型的单点土壤水分同化方案；</li>
+<li>褚楠等［24］进一步采用双EnKF方法同时估计SiB2模型中土壤水分与土壤属性参数，提高了模型对土壤水分的估计精度。</li>
+<li>Li等［25］实现了采用EnKF同时估计地下水模型的参数与状态变量。</li>
+<li>Sly 等基于 EnKF 算法采用 SWOT（Surface Water and Ocean Topogra⁃ phy）模型的输出对 GHMs（Global Hydrological Models）进行了同化，提升了全球尺度水文模拟的精度。</li>
+</ul>
+<blockquote>
+<p><code>↑ KF方法</code></p>
+</blockquote>
+<p>然而，<strong>仅有少量研究基于数据同化方法进行模型不确定性分析</strong>。</p>
+<ul>
+<li>例如，Li 等［25］采用了 ESMDA （Ensemble Smoother with Multiple Data Assimila⁃ tion）分析了焉耆盆地水文模型参数的不确定性。</li>
+</ul>
+<p>本文基于前期工作中在黑河流域中游构建的地下水模型［4］，拟结合 ESMDA与 EnKF实现地下水模型参数的不确定性分析，探讨ESMDA与EnKF算法超参数对模型不确定性分析效果的影响，利用算法定量分析地下水模型<strong>参数的不确定性</strong>、对不同观测数据的敏感性以及不同参数的不确定性范围。</p>
+<blockquote>
+<p><code>↑ 本文创新点</code></p>
+</blockquote>
+<h3 id="1-研究区域"><a href="#1-研究区域" class="headerlink" title="1 研究区域"></a>1 研究区域</h3><h3 id="2-研究方法"><a href="#2-研究方法" class="headerlink" title="2 研究方法"></a>2 研究方法</h3><p>本文采用 ESMDA 与 EnKF 结合的方法 <strong>ESMDA-EnKF</strong> 对研究区地下水模型的参数进行不确定性分析。</p>
+<p><strong>图 2</strong> 给出了使用 ESMDA 算法进行不确定性分析的程序流程。</p>
+<ul>
+<li>在进行不确定性分析之前， 首先要对算法进行初始化，并<strong>对模型的参数进行设置</strong>，根据给定的概率分布（一般假定为正态分布或者对数正态分布）<strong>生成模型参数集合</strong>。</li>
+<li>将模型参数预测值分别输入地下水模型中，计算得到模型输出值；</li>
+<li>综合地下水模型输出、观测值、观测误差协方差以及参数预测值集合输入 ESMDA-EnKF 算法中， 从模型输出值和观测值集合计算得到增量场，根据集合中样本的误差统计计算出卡尔曼增益，由增量场与卡尔曼增益计算得到预测结果的更新量，将更新量叠加到初始场得到分析值集合；</li>
+<li>根据预先算法执行次数判定是否达到程序运行结束条件。</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302125616.png" style="zoom:80%;">
+
+<h3 id="2-1-Ensemble-Kalman-Filter"><a href="#2-1-Ensemble-Kalman-Filter" class="headerlink" title="2.1 Ensemble Kalman Filter"></a>2.1 Ensemble Kalman Filter</h3><p>EnKF 采用<strong>蒙特卡罗方法随机产生参数集合</strong>， 对状态变量进行预测，并根据获取的观测信息对状 态变量进行更新，已经有许多文献对其理论和具体 算法做了详细的论述［37-38］。此处仅简要回顾一下 <strong>EnKF的主要的工作原理</strong>。</p>
+<ul>
+<li><p>定义第 <em>t</em> 个时刻的参数和状态向量集合</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302164245.png" style="zoom:72%;"></li>
+<li><p>从第 <em>t</em> 个时刻到 <em>t+1</em> 个时刻的预测步</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302164402.png" style="zoom:72%;"></li>
+<li><p>第 <em>t+1</em> 个时刻的分析步</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302164800.png" style="zoom:72%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302164836.png" style="zoom:72%;">
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302165027.png" style="zoom:72%;"></li>
+</ul>
+<h3 id="2-2-Ensemble-Smoother-with-Multiple-Data-Assimilation"><a href="#2-2-Ensemble-Smoother-with-Multiple-Data-Assimilation" class="headerlink" title="2.2  Ensemble Smoother with Multiple Data Assimilation"></a>2.2  Ensemble Smoother with Multiple Data Assimilation</h3><p>对 ESMDA 算法主要分为 3 个方面进行介绍， 首先介绍<strong>集合平滑器（ES，Ensemble Smoother）</strong>；接下来在 ES 算法中引入<strong>膨胀系数</strong>，构成 ESMDA 算法框架；最后，介绍ESMDA与EnKF算法的结合，并给出伪代码的实现。</p>
+<blockquote>
+<p><code>↑ 期待伪代码</code></p>
+</blockquote>
+<h4 id="2-2-1-Ensemble-Smoother-ES"><a href="#2-2-1-Ensemble-Smoother-ES" class="headerlink" title="2.2.1 Ensemble Smoother (ES)"></a>2.2.1 Ensemble Smoother (ES)</h4><p>EnKF 属于<strong>顺序数据同化算法</strong>，其根据 t 时刻状态变量值初始化模型，预测 t+1 时刻模型的状态变量，在 t+1 时刻利用观测资料对状态变量的预测值进行加权更新，得到当前时刻状态变量的最优估计值，多用于对状态变量进行实时标定，以实现<strong>实时模型</strong>。</p>
+<blockquote>
+<p><code>↑ 对 ENKF 的顺序同化解释的非常之好，就是实时模型~</code></p>
+</blockquote>
+<p>然而，ES多用于参数反演以及参数的不确定性分析中，采用<strong>所有可用观测资料</strong>对参数进行更新。公式如下：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302171248.png" style="zoom:72%;">
+
+<blockquote>
+<p><code>↑ ES 是非顺序同化吗？</code></p>
+</blockquote>
+<h4 id="2-2-2-ESMDA"><a href="#2-2-2-ESMDA" class="headerlink" title="2.2.2 ESMDA"></a>2.2.2 ESMDA</h4><p><strong>ES 的本质</strong>是将所有时刻的观测资料输入同化算法中进行一次参数更新［39］。而 ESMDA 在 ES 的基础上设定一个<strong>算法执行次数，进行多次数据同化</strong>。</p>
+<blockquote>
+<p><code>↑ ES 和 ESMDA 的联系</code></p>
+</blockquote>
+<p>在每个循环中，ESMDA 并不是简单重复了 ES 过程，而是在每个循环中对观测误差添加了一个<strong>膨胀系数</strong> α<sub>i</sub> ，并令</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302172004.png" alt="" style="zoom:72%;">
+
+<p>显然地， α<sub>i</sub>  有许多种取值方式，然而文献［40］指出，随着循环次数的增加而逐渐减小的膨胀系数对于同化效果并无明显提升。因此，在每次循环中，采用<strong>相同的膨胀系数</strong>。</p>
+<h4 id="2-2-3-ESMDA-ENKF"><a href="#2-2-3-ESMDA-ENKF" class="headerlink" title="2.2.3 ESMDA-ENKF"></a>2.2.3 ESMDA-ENKF</h4><p>ESMDA-EnKF 在每次循环中采用 EnKF 对参数进行更新，其更新公式如下：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302172404.png" style="zoom:72%;">
+
+<p>ESMDA**-<strong>EnKF的具体实现如下</strong>伪代码**所示：</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302172555.png" style="zoom:72%;">
+
+<h3 id="2-3-地下水模型"><a href="#2-3-地下水模型" class="headerlink" title="2.3 地下水模型"></a>2.3 地下水模型</h3><p>黑河流域中游地下水模型<strong>基于 MODFLOW （MODular three-dimension finite-difference ground⁃ water FLOW model）构建</strong>。</p>
+<blockquote>
+<p><code>↑ 地下水模型的构建model</code></p>
+</blockquote>
+<p><strong>MODFLOW</strong> 采用有限差分法将时间与空间离散化以解决地下水在三维空间中的流动问题。研究区平面面积约为 9016 km2， 采用 1 km×1 km 的正方形网格将研究区含水层系统在水平方向上进行空间离散化，离散化之后，研 究区在平面上剖分成为 132 行×165 列网格（如<strong>图 3</strong>）。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302172902.png" style="zoom:72%;">
+
+<p>研究区内定义为活动单元，研究区外定义为非 活动单元。时间上，以每月为一个应力期，每天为 一个时间步。研究区边界条件参考文献［41］以及自然边界确定（图 3）。由于地下水分水岭的存在， A<del>E设置为无水流边界；E处为正义峡水文站，黑河从此处流出研究区；据调查资料分析，北山地区地 下水含水介质与南部祁连山相似，但由于降水稀少，无常年地表径流，地下水含量无法与祁连山区相比较［26］，因此，将D</del>E边界假设为无水流边界；由…</p>
+<h3 id="2-4-模型评价"><a href="#2-4-模型评价" class="headerlink" title="2.4 模型评价"></a>2.4 模型评价</h3><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302173140.png" style="zoom:72%;">
+
+<h3 id="3-结果与讨论"><a href="#3-结果与讨论" class="headerlink" title="3 结果与讨论"></a>3 结果与讨论</h3><h4 id="3-1-算法参数分析（敏感性分析？）"><a href="#3-1-算法参数分析（敏感性分析？）" class="headerlink" title="3.1 算法参数分析（敏感性分析？）"></a>3.1 算法参数分析（敏感性分析？）</h4><p>在使用 ESMDA-EnKF 算法对地下水模型进行不确定性分析的过程中，算法存在一些超参数直接影响到同化算法对模型参数的更新效果（例如：<strong>算法执行次数</strong>（即膨胀系数）Na、<strong>观测资料数 n</strong>、<strong>参数集合大小N</strong>等），因此，本文首先为ESMDA-EnKF<strong>确定最优超参数</strong>，之后采用算法分析<strong>模型参数的不确定性</strong>以及<strong>模型参数对观测数据的敏感性</strong>。</p>
+<blockquote>
+<p><code>↑ 超参数</code></p>
+</blockquote>
+<p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
+<h5 id="3-1-1-ESMDA执行次数对不确定性分析的影响"><a href="#3-1-1-ESMDA执行次数对不确定性分析的影响" class="headerlink" title="3.1.1 ESMDA执行次数对不确定性分析的影响"></a><strong>3.1.1 ESMDA执行次数对不确定性分析的影响</strong></h5><p>ESMDA 采用 EnKF 算法对地下水模型参数进行更新，因此，<strong>EnKF 算法的执行次数</strong>将直接影响模型参数的更新效果。然而，目前尚没有关于执行次数的理论研究，而在文献［40］给出的例子中，分别执行了2次、4次算法以对比同化效果。考虑到计算消耗问题，本节评价了执行 1 次、2 次、3 次、4 次 En⁃ KF算法后的同化效果（<strong>图4</strong>）。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302173806.png" style="zoom:72%;">
+
+<p><strong>图 4</strong> 中展示了 EnKF 算法执行不同次数后的同化效果，<strong>Last iteration 代表采用不同的执行次数时</strong>， 最后一次执行结束之后的同化效果。</p>
+<ul>
+<li><p>由图中可以看出随着 EnKF 算法对模型参数的更新，地下水位的 RMSE 值逐渐降低，表明地下水位模拟值逐渐接近地下水位的观测值。</p>
+</li>
+<li><p>经过<strong>随机采样之后的第一次、第二次参数更新</strong>对 RMSE 影响较大；第三次及第四次参数更新之后，与第二次参数更新之后的 RMSE值相比，变化不大。</p>
+<p>这表明，<strong>使用观测数据对地下水模型参数进行的前 2 次更新最为有效</strong>，可能是因为：（1）地下水模型的参数采用随机初始化，因此，ESMDA 在随机模型参数的基础上进行的第一次更新力度相对较大；（2）ESMDA采用了所有时刻的观测数据进行更新，最大程度上利用了观测数据中的信息，因此，能够更加有效且大幅度的更新参数。</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ QT：有必要进行多次同化吗，观测不是也有不确定性吗，用RMSE？</code></p>
+</blockquote>
+<p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
+<h5 id="3-1-2-观测资料数对不确定性分析的影响"><a href="#3-1-2-观测资料数对不确定性分析的影响" class="headerlink" title="3.1.2 观测资料数对不确定性分析的影响"></a><strong>3.1.2 观测资料数对不确定性分析的影响</strong></h5><p>数据同化的目的即是最大限度的融合不同来源、不同时间、空间分辨率的直接、间接观测数据以用于提高模型的估计精度，以获得更加准确的状态变量的时空分布［44-45］。然而由于成本原因，对系统内相关因素进行<strong>无限制观测是不现实的</strong>。因此，<strong>研究观测资料对同化效果的影响是必要的</strong>。选择 42 个水位观测井处的观测水位以及高崖和正义峡水文观测站处的黑河流量观测数据，分别研究观测数 为 7、14、21、28、35、42 以及 44 时对同化效果的影响。</p>
+<p><strong>图 5</strong> 显示了经过 2 次参数更新过程之后，不同观测资料数的 RMSE 值。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302175448.png" style="zoom:72%;">
+
+<p>由于涉及到不同类型的观测值、输出值（地下水位、流量），所以，图中对地下水水位、流量的观测值及输出值进行了归一化处理，将观测值、输出值限定于［0，1］之间。</p>
+<p>由图 5 总体趋势上可以看出，随着观测资料的增加，参数逐渐接近真实值，地下水位的 RMSE 值逐渐降低。然而，观测数从 7个增加至 14个对同化效果影响不明显；观测井数增加至 21 个之后，同化效果基本保持不变；增加流量观测（42 至 44）对同化效果影响较为显著。由此可见，一种类型的观测数据确实会 提升同化效果，但是当一种类型的观测数据增加到 一定程度时（本实验中为 21 个），观测数据对同化效果的影响有限；然而，继续增加不同类型的观测数据（河流流量观测数据）将进一步提升同化效果。</p>
+<p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
+<h5 id="3-1-3-集合大小对不确定性分析的影响"><a href="#3-1-3-集合大小对不确定性分析的影响" class="headerlink" title="3.1.3 集合大小对不确定性分析的影响"></a><strong>3.1.3 集合大小对不确定性分析的影响</strong></h5><p>EnKF 采用<strong>样本集合</strong>的方式表示<strong>模型状态变量的先验概率分布</strong>，估计误差协方差［46］。</p>
+<blockquote>
+<p><code>↑ 怎么理解ENKF的先验？（预测步）</code></p>
+</blockquote>
+<p>Thomas等［47］ 研究发现，EnKF 中的背景误差协方差估计和滤波函数的最优相关尺度等均与<strong>样本集合大小相关</strong>；当样本集合比较小时，协方差的估计噪音较大、最优相关尺度较小，出现滤波发散现象，且集合大小直接影响算法运行时间。因此，采用不同的集合大小运行算法，以探索集合大小对算法同化效果的影响。</p>
+<blockquote>
+<p><code>↑ 下图没显示出相关性，质疑~~</code></p>
+</blockquote>
+<p><strong>图 6</strong> 显示了模型参数集合大小分别为 30、60、 90、120、150 情况下，经过两次参数更新之后的 RMSE 值。由图中可以看出，当参数集合大小为 30 时，并没有出现<strong>滤波发散</strong>现象，且增加采样对同化效果的影响并不明显。因此，本文将集合大小设置为30以平衡算法效果与计算消耗。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302175822.png" style="zoom:72%;">
+
+<h4 id="3-2-地下水模型参数不确定性分析"><a href="#3-2-地下水模型参数不确定性分析" class="headerlink" title="3.2 地下水模型参数不确定性分析"></a>3.2 地下水模型参数不确定性分析</h4><p>基于以上分析确定了算法参数之后，本文利用 ESMDA-EnKF 对地下水模型参数进行了不确定性分析，模型参数分布见<strong>图 7</strong>，相关设置见<strong>表 1</strong>。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302194700.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302194737.png"></p>
+<p>从<strong>模型参数先验概率分布</strong>中进行 30 次随机采样，使用 42 个水位观测井、2 个径流观测站处的观测数据对模型参数进行 2 次（Na=2）更新。模型参数随 ESMDA-EnKF 运行所得的不确定性如<strong>图 8</strong>（注：由于参数与观测点数较多，<strong>图 8</strong> 中只显示了部分参数与观测点处的更新情况）。</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302194930.png"></p>
+<p>由<strong>图 8</strong> 可以看出，无论参数的初始分布如何，每次执行 ESMDA-EnKF 算法都会对模型参数进行更新，使参数值更接近其标定值。</p>
+<ul>
+<li>第一次执行算法对模型参数的更新效果显著， 大多模型参数在进行第一次更新之后，参数值已经较为接近参数标定值，不确定性明显减小；</li>
+<li>在进行第二次更新之后，模型参数均分布于标定值附近， 模型参数的不确定性进一步减小。</li>
+<li>图 8 第三列显示了各个参数在 ESMDA-EnKF 算法执行完成之后的分布情况，由此分布情况可以看出，各个分区的渗透系数（P1~P8）的不确定性显著减小，基本收敛于最优值附近。</li>
+<li>对比各个分区的渗透系数可以看出，经过 ESMDA-EnKF 算法更新之后，第Ⅷ个分区 的渗透系数（P8）的分布最分散，不确定性最大，这可能是由于在此分区内观测数据较少，导致算法无法对参数进行有效更新。</li>
+<li>在算法执行完成之后，黑 河子分区Ⅰ与子分区Ⅱ的河床水力传导系数（P9 与 P10）虽然也收敛到了最优值附近，但是其分布 比黑河子分区Ⅲ的河床水力传导系数（P11）分散 （即其标准差比较大）。这可能是由于在黑河子分 区Ⅰ与子分区Ⅱ河段，黑河与地下水相互作用频繁 （子分区Ⅰ河段河流补给地下水，子分区Ⅱ河段地 下水出流转化为河流），导致河床水力传导系数不 确定性较大。</li>
+<li>由图 8可见，ESMDA-EnKF算法能够 对模型参数进行有效更新，从而减小模型参数的不确定性。</li>
+</ul>
+<blockquote>
+<p><code>↑ 同化中，能得到参数分布？</code></p>
+</blockquote>
+<p>…</p>
+<h2 id="QT：顺序同化和非顺序同化、连续性同化和间歇性同化"><a href="#QT：顺序同化和非顺序同化、连续性同化和间歇性同化" class="headerlink" title="QT：顺序同化和非顺序同化、连续性同化和间歇性同化"></a>QT：顺序同化和非顺序同化、连续性同化和间歇性同化</h2><p>链接：<a target="_blank" rel="noopener" href="http://blog.sina.com.cn/s/blog_d8f6ec6b0101t59b.html">http://blog.sina.com.cn/s/blog_d8f6ec6b0101t59b.html</a></p>
+<blockquote>
+<p><code>↑ very good</code></p>
+</blockquote>
+<p>一个<strong>资料同化循环</strong>通常包括四个环节：</p>
+<p>（1）质量控制（2）客观分析（3）初始化（4）短期预报产生一个背景场</p>
+<blockquote>
+<p><code>↑ ？？？</code></p>
+</blockquote>
+<p>根据数据同化使用的观测资料的时间将其分为两类：</p>
+<ul>
+<li>一是顺序同化，就像<strong>业务化同化系统</strong>运行那样，如客观分析、最优插值、3DVAR，EnKF等，</li>
+<li>另外一种是<strong>非顺序同化，它利用到未来时刻的观测资料</strong>，如<strong>4DVAR</strong>等。</li>
+</ul>
+<p>从气象资料同化方法研究进展和成果来看，<strong>代表着顺序同化的</strong>三维变分3D-VAR、集合卡尔曼滤波和<strong>代表着全局拟合的4D—VAR同化方法</strong>，已经成为气象资料同化研究的重点，是气象资料同化今后发展的主要方向。</p>
+<ul>
+<li>顺序资料同化方法：综合预报背景场和观测资料而得到分析场，预报模式再以此分析场为初值向前预报至下一个观测资料时刻，如此进行下去，直至同化末端得到模式的最优解，期间<strong>观测信息是按顺序方式传递的</strong>。</li>
+<li>四维变分：求取某一同化时段内与观测资料最接近的模式解，期间观测信息既从过去传递到现在，又从现在传递到过去。</li>
+</ul>
+<blockquote>
+<p><code>↑ 顺序同化，非顺序同化</code></p>
+</blockquote>
+<p>根据同化时间的间隔可分为<strong>连续性同化和间歇性同化</strong>：</p>
+<ul>
+<li>连续性同化是在数值模式连续积分的过程中，不断加入<strong>与模式时刻一致的观测资料</strong>，这样会在短时间积分步长上不断地引入新的观测资料，迫使预报模式对新资料片的冲击进行调整，预报的大气状态也不断调整去拟合观测。</li>
+<li>间歇性资料同化是在数值模式积分的<strong>一定时间间隔</strong>（如3小时、6小时）上引入观测资料。<strong>业务形同普遍采用这种间歇同化分析循环系统</strong>。以分析时间为中心一定时间间隔内的观测资料被用来作分析，背景场是以3-6小时前的分析场为初始场作出的预报，在分析的基础上再进行初始化，然后用预报模式再产生3-6小时的预报。</li>
+</ul>
+<blockquote>
+<p><code>↑ 连续性同化和间歇性同化</code></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302170844.png"></p>
+<blockquote>
+<p><code>↑ 同化中极为经典的图~~</code></p>
+</blockquote>
+<h2 id="参考资料：基于EnKF和ES-MDA的油藏自动历史拟合"><a href="#参考资料：基于EnKF和ES-MDA的油藏自动历史拟合" class="headerlink" title="参考资料：基于EnKF和ES-MDA的油藏自动历史拟合"></a>参考资料：基于EnKF和ES-MDA的油藏自动历史拟合</h2><ul>
+<li><code>与参考资料2中的ES-MDA一样？</code></li>
+</ul>
+<h2 id="参考资料：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022"><a href="#参考资料：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022" class="headerlink" title="参考资料：FY-2G云导风资料同化在台风“天鸽”数值预报中的应用-2022"></a>参考资料：<strong>FY-2G</strong>云导风资料同化在台风“天鸽”数值预报中的应用-2022</h2><ul>
+<li><p>期刊：《海洋预报》，</p>
+<blockquote>
+<p>这个期刊查不到</p>
+</blockquote>
+</li>
+<li><p>作者：许冬梅，等</p>
+</li>
+<li><p>机构：南京信息工程大学气象灾害教育部重点实验室/气候与环境变化国际合作联合实验室/气象灾害预报预警与评估协同创新中心，江苏 南京 210044；</p>
+</li>
+<li><p><code>创新点：同化了云导风资料</code></p>
+</li>
+</ul>
+<h3 id="摘要-1"><a href="#摘要-1" class="headerlink" title="摘要"></a>摘要</h3><p>以2017年8月登陆我国的13号台风“天鸽”为个例，采用美国全球预报系统资料作为背景场，利用WRF中尺度数值模式及天气研究和预报模式同化系统中的三维变分模块，探究了<strong>新一代静止卫星FY-2G云导风资料同化对台风预报的影响</strong>。</p>
+<blockquote>
+<p><code>↑ 主要创新点就是同化了FY-2G云导风资料</code></p>
+</blockquote>
+<p>研究结果表明：<strong>云导风资料同化模拟的台风路径、强度和最大风速与实况更加接近</strong>。与控制试验相比，云导风资料同化能够为背景场提供丰富的风矢量信息，增强台风周围对流云及其引导气流的强度，从而较好地模拟台风的内部结构，对影响其发展和维持的水汽条件与动力条件进行改进。</p>
+<h3 id="6-结论"><a href="#6-结论" class="headerlink" title="6 结论"></a>6 结论</h3><p>本文选取了2017年8月22日登陆我国的强台风 “天鸽”，使用3.9.1版本的WRF模式及其同化系统， 考察FY-2G卫星云导风资料同化对台风数值预报的影响，并进行了30 h的<strong>确定性预报</strong>，同时对影响台风发展移动的多个要素进行考察分析。结论如下：</p>
+<p>（1）同化试验模拟的台风路径预报误差更小。由于云导风资料集中在中高层大气，模拟出的台风强度不会因为台风登陆后受到地面的摩擦而产生较大误差。 </p>
+<p>（2）同化卫星云导风资料能够增加模式初始场中台风周围的风矢量信息，并且为中高层台风周围的大气增加正的风矢量。中高层之间的垂直动量输送使得台风向北移动的引导气流加强，台风路径 也随之得到准确调整。 </p>
+<p>（3）卫星云导风资料同化能够使模式更好地模拟台风结构。同化试验在台风中心附近模拟出了正的相对湿度增量，有利于台风的维持；同时，同化试验模拟的T-logP探空图也更接近观测。</p>
+<p>本研究实现了 FY-2G 云导风资料的三维变分同化试验，个例的总体效果表明，云导风资料的同化能够有效改进台风“天鸽”的数值预报效果。</p>
+<p>需要指出的是：</p>
+<ul>
+<li>本研究是基于一个台风个例展开的， 为了充分检验 FY-2G 云导风的效果应增加更多的台风个例进行测试。</li>
+<li>在同化方法上，本研究采用的是 3DVAR 方法，在今后的研究中应考虑更高级的同化方法，如混合同化方法，以进一步改进预报效 果。</li>
+<li>在资料的使用上，本研究仅采用了含有高层风场信息的卫星云导风资料，缺失了低层风场信息， 未来将进一步尝试基于云导风资料和微波辐射计资料的多源资料联合同化试验，以进一步提高台风数值预报的准确度。</li>
+</ul>
+<h3 id="2-观测资料及同化系统"><a href="#2-观测资料及同化系统" class="headerlink" title="2 观测资料及同化系统"></a>2 观测资料及同化系统</h3><h4 id="2-1-FY-2G云导风资料及质量控制方案"><a href="#2-1-FY-2G云导风资料及质量控制方案" class="headerlink" title="2.1 FY-2G云导风资料及质量控制方案"></a>2.1 FY-2G云导风资料及质量控制方案</h4><p>…</p>
+<blockquote>
+<p><code>↑ 介绍FY-2G云导风资料</code></p>
+</blockquote>
+<p>在同化云导风资料前，需要对资料进行高度订正。本文采用何志新[12] 的高度订正方案。…</p>
+<blockquote>
+<p><code>↑ 可能这就是这个资料的质量控制方案</code></p>
+</blockquote>
+<h4 id="2-2-WRFDA同化系统"><a href="#2-2-WRFDA同化系统" class="headerlink" title="2.2 WRFDA同化系统"></a><strong>2.2 WRFDA</strong>同化系统</h4><p><strong>WRFDA 同化系统与 WRF 模式配套</strong>，可同化绝大部分常规和非常规的气象资料，包含 3DVAR、四维变分（Four Dimensional VARiation，4DVAR）以及混合同化等部分。</p>
+<blockquote>
+<p><code>↑ 为什么WW3没有配套的同化系统</code></p>
+</blockquote>
+<p>本次试验采用 3DVAR 同化方法，通过代价函数 <strong>J</strong> 的极小化得到观测场、背景场和分析场之间平衡的最优解。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302203116.png" style="zoom:79%;">
+
+<blockquote>
+<p><code>↑ 3D-VAR 代价函数</code></p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302203432.png" style="zoom:79%;">
+
+<blockquote>
+<p><code>↑ B矩阵的设计，去看看老师那篇论文~~</code></p>
+</blockquote>
+<h3 id="4-试验设计"><a href="#4-试验设计" class="headerlink" title="4 试验设计"></a>4 试验设计</h3><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302203812.png" style="zoom:80%;">
+
+<h2 id="参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022"><a href="#参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022" class="headerlink" title="参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022"></a>参考资料：中国海洋资料同化的一些进展-海洋资料同化专题介绍-2022</h2><ul>
+<li><p>英文名：Some progress on ocean data assimilation in China: Introduction of the special section “Ocean Data Assimilation” 2022</p>
+</li>
+<li><p>期刊：《ACTA OCEANOLOGICA SINICA》</p>
+<blockquote>
+<p>2区，<a target="_blank" rel="noopener" href="https://www.letpub.com.cn/index.php?page=journalapp&amp;view=detail&amp;journalid=137">https://www.letpub.com.cn/index.php?page=journalapp&amp;view=detail&amp;journalid=137</a></p>
+</blockquote>
+</li>
+<li><p>作者：Huizan Wang，等</p>
+</li>
+<li><p>机构：College of Meteorology and Oceanography, National University of Defense Technology, <strong>Changsha</strong> 410073, China</p>
+</li>
+<li><p><code>创新点：国内2020同化研究的内容</code></p>
+</li>
+</ul>
+<h3 id="1-Introduction-1"><a href="#1-Introduction-1" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>This special section is the scientific legacy of the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China, which was held in Changsha, China during December 3–4, 2020 with more than 160 participants from 35 units in China. It continued a series of National Ocean Data Assimilation conferences which began in 2003, which played an important role in the development of ocean data assimilation in China. </p>
+<p>In this 13th conference, there were 41 oral presentations and 15 posters, which focused on </p>
+<ul>
+<li><strong>ocean data assimilation methods,</strong> </li>
+<li><strong>ocean reanalysis data,</strong> </li>
+<li><strong>developments and operational application of ocean data assimilation systems,</strong> </li>
+<li><strong>assimilation of new type ocean observations,</strong> </li>
+<li><strong>ocean targeted observation analysis,</strong> </li>
+<li><strong>coupled data assimilation,</strong> </li>
+<li><strong>ocean models,</strong></li>
+<li><strong>parameter estimation, etc.</strong> </li>
+</ul>
+<blockquote>
+<p><code>↑ 国内2020同化研究的内容</code></p>
+</blockquote>
+<p>This conference was hosted by National University of Defense Technology, and cohosted by the Institute of Atmospheric Physics of Chinese Academy of Sciences, the South China Sea Institute of Oceanology of Chinese Academy of Sciences, the Second Institute of Oceanography of the Ministry of Natural Resources, Ocean University of China, Tianjin University and Hohai University.</p>
+<p>From this conference, we can see that ocean data assimilation has made great progress. In summary, there are six main aspects as follows: </p>
+<ul>
+<li>firstly, ocean data assimilation methods are improved continuously, especially new progress in <strong>hybrid data assimilation</strong>; </li>
+<li>secondly, there are continuous breakthroughs in data assimilation application of <strong>new type ocean observations</strong>, such as Glider data, ocean current data, acoustic information, etc; </li>
+<li>thirdly, <strong>the combination of ocean data assimilation and machine learning</strong> is showing more and more good prospects; </li>
+<li>fourthly, with the development of the Earth system model technology, <strong>the coupled data assimilation</strong> has become a hot spot; </li>
+<li>fifthly, <strong>ocean reanalysis and data fusion products</strong> are important for ocean study, some ocean reanalysis products, such as China’s CORA 2.0 reanalysis, have been greatly improved on the spatial and temporal resolution, and other new data fusion products, including the fusion of multi-source altimeter products, sea ice reanalysis dateset have been developed; </li>
+<li>sixthly, some <strong>new ocean model parameter estimation</strong> have been proposed and show good results.</li>
+</ul>
+<p>During the conference, the organizing committee announced <em>Acta Oceanologica Sinica</em> for publishing the research results on Ocean Data Assimilation. There are ten papers accepted for this special section, <strong>mainly from the first two aspects above</strong>, which are very important.In this special section, </p>
+<ul>
+<li>Shen et al. (2022a) used the hybrid data assimilation method called <strong>Localized Weighted Ensemble Kalman Filter (LWEnKF)</strong> to assimilate along-track sea surface height (AT-SSH), swath sea surface temperature (S-SST) and in-situ temperature and salinity (T/S) profiles for checking the operational application potential of this filter; </li>
+<li>Zhao et al. (2022) presented an improved approach based on the <strong>equivalent-weights particle filter (EWPF)</strong> that uses the proposal density to effectively improve the traditional particle filter, which was tested with the Lorenz 96 model numerical experiments ; </li>
+<li>Song et al. (2022) proposed a new nudging scheme for the operational prediction system of the National Marine Environmental Forecasting Center (NMEFC) of China, which mainly aimed at improving El Niño–Southern Oscillation (ENSO) and Indian Ocean Dipole (IOD) predictions; </li>
+<li>Yang et al. (2022) designed a reconstruction method called the <strong>multi-scale high-order recursive filter (MHRF)</strong> to reproduce the refined structure of sea <strong>ice field</strong>, which is a combination of Van Vliet fourth-order recursive filter and the three-dimensional variational (3D-VAR) analysis; </li>
+<li>Chen et al. (2022) designed two comparative reconstruction schemes under the optimal interpolation framework to diagnose and evaluate the contribution from satellite measurements and Argo observations to the reconstructed analysis, allowing for better configuration of assimilation parameters;</li>
+<li>Zhang et al. (2022) applied the gradient-dependent optimal interpolation to reconstruct daily subsurface oceanic environmental information according to fishery dates and locations based on Argo temperature and salinity profiles; </li>
+<li>Liu et al. (2022) investigated the sensitive areas in targeted observation for predicting the Kuroshio large meander (LM) path using the conditional nonlinear optimal perturbation approach with the Regional Ocean Modeling System (ROMS); </li>
+<li>Shen et al. (2022b) developed a two-stage inflation method for parameter estimation, which can address the collapse of parameter ensemble due to the constant evolution of parameters and was applied in observation system simulation experiment with CESM; </li>
+<li>Wu et al. (2022) applied <strong>empirical orthogonal function (EOF) analysis</strong> to a 50-year long time series of monthly mean positions of the Kuroshio path south of Japan from a regional reanalysis to explore temporal-spatial oceanic variation in relation with the three typical Kuroshio paths; </li>
+<li>Han et al. (2022) developed two <strong>offline bias correction methods for sea surface temperature (SST)</strong> forecasts and validated the performances using bias correction experiments implemented in the South China Sea with six-year (2003–2008) datasets.</li>
+</ul>
+<p>This special section systematically summarizes some, but not all, of the research results from the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China. <strong>In the future</strong>, </p>
+<ul>
+<li>ocean models will develop to higher resolution, and ocean data assimilation will also face the problem of processing <strong>non-linear non-Gaussian information</strong>. </li>
+<li>With the development of earth system model, ocean model will also be coupled with atmosphere, land surface, ocean waves and sea ice models, the <strong>coupled data assimilation</strong> will be a hot topic; </li>
+<li>and the development of <strong>machine learning</strong> also prompt us to seek the combination of data assimilation and machine learning.</li>
+</ul>
+<h2 id="参考资料：Data-Assimilation-for-Chaotic-Dynamics"><a href="#参考资料：Data-Assimilation-for-Chaotic-Dynamics" class="headerlink" title="参考资料：Data Assimilation for Chaotic Dynamics"></a>参考资料：Data Assimilation for Chaotic Dynamics</h2><ul>
+<li><p>Data Assimilation for Chaotic Dynamics</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://link.springer.com/chapter/10.1007/978-3-030-77722-7_1">https://link.springer.com/chapter/10.1007/978-3-030-77722-7_1</a></p>
+</li>
+<li><p>混沌在物理系统中无处不在。<strong>对初始条件的相关敏感性</strong>是预测天气和其他地球物理流体流动的重要障碍。数据同化是通过模型预测和实时数据的巧妙结合来<strong>减少初始条件的不确定性</strong>的过程。</p>
+<blockquote>
+<p><code>实际情况中，可能不仅仅是减少初始条件的不确定性~，还有模型的不确定性~，参数的不确定性~</code></p>
+</blockquote>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/03/02/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/05-find-idea-of-da/">https://Liu-Jincan.github.io/2022/03/02/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/05-find-idea-of-da/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/03/03/yan-jiu-sheng-justtry-function/yun-fan-qiang/04-liu-liang-bei-dao-shua/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327150739.png" class="responsive-img" alt="04-流量被盗刷">
+                        
+                        <span class="card-title">04-流量被盗刷</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BA%91%E7%BF%BB%E5%A2%99/" class="post-category">
+                                    云翻墙
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/02/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/03-yue-du-ji-he-qia-er-man-lu-bo-de-li-lun-zhi-ding-yu-shi-ji-shi-xian-2003/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327135302.png" class="responsive-img" alt="03-阅读：集合卡尔曼滤波的理论制定与实际实现-2003">
+                        
+                        <span class="card-title">03-阅读：集合卡尔曼滤波的理论制定与实际实现-2003</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%90%8C%E5%8C%96/" class="post-category">
+                                    数据同化
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">430.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,2888 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="07-阅读：DAPPER, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>07-阅读：DAPPER | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220118131148.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">07-阅读：DAPPER</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%90%8C%E5%8C%96/" class="post-category">
+                                数据同化
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-03-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-03-27
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    8.8k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="参考资料：DAPPER"><a href="#参考资料：DAPPER" class="headerlink" title="参考资料：DAPPER"></a><center>参考资料：DAPPER</center></h2><h2 id="必要信息"><a href="#必要信息" class="headerlink" title="必要信息"></a>必要信息</h2><table>
+<thead>
+<tr>
+<th>必要信息</th>
+<th>文件位置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>首次接触 DAPPER</td>
+<td><code>Liu-Jincan.github.io</code> 中的<code>给定区域WW3试验（同化部分）</code></td>
+</tr>
+<tr>
+<td>添加到endnote文件夹</td>
+<td>D盘 <code>数据同化</code>，检索，wjc老师</td>
+</tr>
+<tr>
+<td>下载的DAPPER文件夹</td>
+<td>D盘 <code>DAPPER-master</code> ，未保存到百度网盘</td>
+</tr>
+<tr>
+<td>创建的DAPPER 博客</td>
+<td>本博客</td>
+</tr>
+</tbody></table>
+<ul>
+<li>github仓库：<a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER">https://github.com/nansencenter/DAPPER</a></li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="README-md"><a href="#README-md" class="headerlink" title="README.md"></a>README.md</h2><p>DAPPER is a set of templates for <strong>benchmarking</strong> the performance of <strong>data assimilation</strong> (DA) methods. </p>
+<p>The tests provide experimental support and guidance for new developments in DA. </p>
+<p>The typical set-up is a <strong>synthetic (twin) experiment</strong>, where you specify a dynamic model and an observational model, and use these to generate a synthetic truth (multivariate time series), and then estimate that truth given the models and noisy observations.</p>
+<blockquote>
+<p><code>twin 实验</code></p>
+</blockquote>
+<h3 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h3><p><a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#Installation">Install</a>, then read, run and try to understand <code>examples/basic_{1,2,3}.py</code>. </p>
+<blockquote>
+<p><code>安装</code></p>
+</blockquote>
+<p>Some of the examples can also be opened in Jupyter, and thereby run in the cloud (i.e. <em>without installation</em>, but requiring Google login): <a target="_blank" rel="noopener" href="http://colab.research.google.com/github/nansencenter/DAPPER"><img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Collab"></a>. </p>
+<blockquote>
+<p><code>jupyter，colab</code></p>
+</blockquote>
+<p>This <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=YtalK0Zkzvg&amp;t=6475s">screencast</a> provides an introduction. </p>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/YtalK0Zkzvg?start=6491" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<blockquote>
+<p><code>Youtube关于DAPPER的介绍视频</code></p>
+</blockquote>
+<p>The <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER">documentation</a> includes general guidelines and the API, but for any serious use you will want to read and adapt the code yourself. </p>
+<blockquote>
+<p><code>DAPPER 文档/手册</code></p>
+</blockquote>
+<p>If you use it in a publication, please cite, e.g., <em>The experiments used (inspiration from) DAPPER [ref], version 1.2.1</em>, where [ref] points to <a target="_blank" rel="noopener" href="https://doi.org/10.5281/zenodo.2029296"><img src="https://camo.githubusercontent.com/9164e318022f08db450318ca4467b759977b1b57b632a9b959f74658e69a34c6/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f444f492f31302e353238312f7a656e6f646f2e323032393239362e737667" alt="DOI"></a>. </p>
+<blockquote>
+<p><code>DAPPER 引用</code></p>
+</blockquote>
+<p>Lastly, for an introduction to DA theory also using Python, see these <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DA-tutorials">tutorials</a>.</p>
+<blockquote>
+<p><code>一个关于DA理论的教程</code></p>
+</blockquote>
+<h3 id="Highlights"><a href="#Highlights" class="headerlink" title="Highlights"></a>Highlights</h3><p>DAPPER enables the numerical investigation of <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#DA-methods">DA methods</a> through a variety of typical <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#Test-cases-models">test cases</a> and statistics. It </p>
+<ul>
+<li>(a) reproduces numerical benchmarks results reported in the literature, and </li>
+<li>(b) facilitates comparative studies, </li>
+</ul>
+<p>thus promoting the (a) reliability and (b) relevance of the results. For example, this figure is generated by <code>examples/basic_3.py</code> and is a reproduction of figure 5.7 of <a target="_blank" rel="noopener" href="http://cerea.enpc.fr/HomePages/bocquet/teaching/assim-mb-en.pdf">these lecture notes</a>.</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER/blob/master/docs/imgs/ex1.jpg"><br><img src="https://github.com/nansencenter/DAPPER/raw/master/docs/imgs/ex1.jpg" alt="EnKF - Lorenz'63"></a></p>
+<p>In summary, it is well suited for teaching and fundamental DA research. </p>
+<blockquote>
+<p><code>↑  DAPPER 适合教学和基础的DA研究</code></p>
+</blockquote>
+<p>Also see its <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#similar-projects">drawbacks</a>.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317124450.png" style="zoom:60%;">
+
+<blockquote>
+<p><code>↑ wjc老师上课讲的那本书~</code></p>
+</blockquote>
+<h4 id="DA-methods"><a href="#DA-methods" class="headerlink" title="DA methods"></a>DA methods</h4><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Literature reproduced</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>EnKF <sup>1</sup></td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.sakov2008deterministic">Sakov08</a>, <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.hoteit2015mitigating">Hoteit15</a>, <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.grudzien2020numerical">Grudzien2020</a></td>
+</tr>
+<tr>
+<td>EnKF-N</td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.bocquet2012combining">Bocquet12</a>, <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.bocquet2015expanding">Bocquet15</a></td>
+</tr>
+<tr>
+<td>EnKS, EnRTS</td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.raanes2016thesis">Raanes2016</a></td>
+</tr>
+<tr>
+<td>iEnKS / iEnKF / EnRML / ES-MDA <sup>2</sup></td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.sakov2012iterative">Sakov12</a>, <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.Bocquet12">Bocquet12</a>, <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.bocquet2014iterative">Bocquet14</a></td>
+</tr>
+<tr>
+<td>LETKF, local &amp; serial EAKF</td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.bocquet2011ensemble">Bocquet11</a></td>
+</tr>
+<tr>
+<td>Sqrt. model noise methods</td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.raanes2014ext">Raanes2014</a></td>
+</tr>
+<tr>
+<td>Particle filter (bootstrap) <sup>3</sup></td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.bocquet2010beyond">Bocquet10</a></td>
+</tr>
+<tr>
+<td>Optimal/implicit Particle filter  <sup>3</sup></td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.bocquet2010beyond">Bocquet10</a></td>
+</tr>
+<tr>
+<td>NETF</td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.todter2015second">Tödter15</a>, <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.wiljes2016second">Wiljes16</a></td>
+</tr>
+<tr>
+<td>Rank histogram filter (RHF)</td>
+<td><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.anderson2010non">Anderson10</a></td>
+</tr>
+<tr>
+<td>4D-Var</td>
+<td></td>
+</tr>
+<tr>
+<td>3D-Var</td>
+<td></td>
+</tr>
+<tr>
+<td>Extended KF</td>
+<td></td>
+</tr>
+<tr>
+<td>Optimal interpolation</td>
+<td></td>
+</tr>
+<tr>
+<td>Climatology</td>
+<td></td>
+</tr>
+<tr>
+<td><!-- markdownlint-restore --></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><sup>1</sup>: Stochastic, DEnKF (i.e. half-update), ETKF (i.e. sym. sqrt.).<br>Serial forms are also available.<br>Tuned with inflation and “random, orthogonal rotations”.  </p>
+<p><sup>2</sup>: Also supports the bundle version,<br>and “EnKF-N”-type inflation.  </p>
+<p><sup>3</sup>: Resampling: multinomial<br>(including systematic/universal and residual).<br>The particle filter is tuned with “effective-N monitoring”,<br>“regularization/jittering” strength, and more.</p>
+<p>For a list of ready-made experiments with suitable,<br>tuned settings for a given method (e.g. the <code>iEnKS</code>), use:</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">grep -r "xp.*iEnKS" dapper/mods<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="Test-cases-models"><a href="#Test-cases-models" class="headerlink" title="Test cases (models)"></a>Test cases (models)</h4><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Lin</th>
+<th>TLM**</th>
+<th>PDE?</th>
+<th>Phys.dim.</th>
+<th>State len</th>
+<th>Lyap≥0</th>
+<th>Implementer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Id</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>N/A</td>
+<td>*</td>
+<td>0</td>
+<td>Raanes</td>
+</tr>
+<tr>
+<td>Linear Advect. (LA)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>1d</td>
+<td>1000 *</td>
+<td>51</td>
+<td>Evensen/Raanes</td>
+</tr>
+<tr>
+<td>DoublePendulum</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>0d</td>
+<td>4</td>
+<td>2</td>
+<td>Matplotlib/Raanes</td>
+</tr>
+<tr>
+<td>Ikeda</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>0d</td>
+<td>2</td>
+<td>1</td>
+<td>Raanes</td>
+</tr>
+<tr>
+<td>LotkaVolterra</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>0d</td>
+<td>5 *</td>
+<td>1</td>
+<td>Wikipedia/Raanes</td>
+</tr>
+<tr>
+<td>Lorenz63</td>
+<td>No</td>
+<td>Yes</td>
+<td>“Yes”</td>
+<td>0d</td>
+<td>3</td>
+<td>2</td>
+<td>Sakov</td>
+</tr>
+<tr>
+<td>Lorenz84</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>0d</td>
+<td>3</td>
+<td>2</td>
+<td>Raanes</td>
+</tr>
+<tr>
+<td>Lorenz96</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>1d</td>
+<td>40 *</td>
+<td>13</td>
+<td>Raanes</td>
+</tr>
+<tr>
+<td>Lorenz96s</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>1d</td>
+<td>10 *</td>
+<td>4</td>
+<td>Grudzien</td>
+</tr>
+<tr>
+<td>LorenzUV</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>2x 1d</td>
+<td>256 + 8 *</td>
+<td>≈60</td>
+<td>Raanes</td>
+</tr>
+<tr>
+<td>LorenzIII</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>1d</td>
+<td>960 *</td>
+<td>≈164</td>
+<td>Raanes</td>
+</tr>
+<tr>
+<td>Vissio-Lucarini 20</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>1d</td>
+<td>36 *</td>
+<td>10</td>
+<td>Yumeng</td>
+</tr>
+<tr>
+<td>Kuramoto-Sivashinsky</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>1d</td>
+<td>128 *</td>
+<td>11</td>
+<td>Kassam/Raanes</td>
+</tr>
+<tr>
+<td>Quasi-Geost (QG)</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>2d</td>
+<td>129²≈17k</td>
+<td>≈140</td>
+<td>Sakov</td>
+</tr>
+</tbody></table>
+<ul>
+<li><code>*</code>: Flexible; set as necessary</li>
+<li><code>**</code>: Tangent Linear Model included?</li>
+</ul>
+<p>The models are found as subdirectories within <code>dapper/mods</code>.</p>
+<p>A model should be defined in a file named <code>__init__.py</code>,<br>and illustrated by a file named <code>demo.py</code>.</p>
+<blockquote>
+<p><code>↑  模型定义</code></p>
+</blockquote>
+<p>Most other files within a model subdirectory<br>are usually named <code>authorYEAR.py</code> and define a <code>HMM</code> object,<br>which holds the settings of a specific twin experiment,</p>
+<p>using that model,<br>as detailed in the corresponding author/year’s paper.<br>A list of these files can be obtained using</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">find dapper/mods -iname '[a-z]*[0-9]*.py'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Some files contain settings used by several papers.</p>
+<p>Moreover, at the bottom of each such file should be (in comments)<br>a list of suitable, tuned settings for various DA methods,</p>
+<blockquote>
+<p><code>↑ HMM 模型设置</code></p>
+</blockquote>
+<p>along with their expected, average <code>rmse.a</code> score for that experiment.</p>
+<blockquote>
+<p><code>↑  rmse.a 度量</code></p>
+</blockquote>
+<p>As mentioned <a href="#DA-methods">above</a>, DAPPER reproduces literature results.<br>You will also find results that were not reproduced by DAPPER.</p>
+<h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><p>Works on Linux/Windows/Mac.</p>
+<h4 id="Prerequisite-Python-gt-3-7"><a href="#Prerequisite-Python-gt-3-7" class="headerlink" title="Prerequisite: Python>=3.7"></a>Prerequisite: Python&gt;=3.7</h4><p>If you’re an expert, setup a python environment however you like.</p>
+<p>Otherwise: Install <a target="_blank" rel="noopener" href="https://www.anaconda.com/download">Anaconda</a>, then open the <a target="_blank" rel="noopener" href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda">Anaconda terminal</a> and run the following commands:</p>
+<pre class="line-numbers language-none"><code class="language-none">conda create --yes --name dapper-env python=3.8
+conda activate dapper-env
+python --version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>Ensure the printed version is 3.7 or more.</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317125910.png"></p>
+<p><em>Keep using the same terminal for the commands below.</em></p>
+<h4 id="Install-for-development（失败）"><a href="#Install-for-development（失败）" class="headerlink" title="Install: for development（失败）"></a>Install: for development（失败）</h4><p>Install for development (<strong>recommended</strong>)</p>
+<p><em>Do you want the DAPPER code available to play around with?</em> Then</p>
+<ul>
+<li><p>Download and unzip (or <code>git clone</code>) DAPPER.</p>
+<blockquote>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_W_6Ej4AP1fEVg6SEqXTXw">https://pan.baidu.com/s/1_W_6Ej4AP1fEVg6SEqXTXw</a><br>提取码：1234<br>–来自百度网盘超级会员V5的分享</p>
+</blockquote>
+</li>
+<li><p>Move the resulting folder wherever you like,<br>and <code>cd</code> into it <em>(ensure you’re in the folder with a <code>setup.py</code> file)</em>.</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317130341.png"></p>
+</li>
+<li><p><code>pip install -e '.[dev]'</code><br>You can omit <code>[dev]</code> if you don’t need to do serious development.</p>
+<blockquote>
+<p><code>下载总是出现错误~~</code></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="Install-as-library（成功）"><a href="#Install-as-library（成功）" class="headerlink" title="Install: as library（成功）"></a>Install: as library（成功）</h4><p>Install as library</p>
+<p><em>Do you just want to run a script that requires DAPPER?</em> Then</p>
+<ul>
+<li>If the script comes with a <code>requirements.txt</code> file, then do<br><code>pip install -r path/to/requirements.txt</code>.<blockquote>
+<p><code>setup.py的INSTALL_REQUIRES内容，作为requirements.txt的内容</code></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317135927.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317140009.png"></p>
+</blockquote>
+</li>
+<li>If not, hopefully you know the version of DAPPER needed. Run<br><code>pip install dapper==1.0.0</code> to get version <code>1.2.3</code> (as an example).</li>
+</ul>
+<h4 id="Test-the-installation（成功）"><a href="#Test-the-installation（成功）" class="headerlink" title="Test the installation（成功）"></a>Test the installation（成功）</h4><p>You should now be able to do run your script with <code>python path/to/script.py</code>.<br>For example, if you are in the DAPPER dir,</p>
+<pre class="line-numbers language-none"><code class="language-none">python examples/basic_1.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>PS</strong>: If you closed the terminal (or shut down your computer), you’ll first need to run <code>conda activate dapper-env</code></p>
+<blockquote>
+<p><code>在pycharm中运行basic_1.py</code></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317140448.png"></p>
+</blockquote>
+<h3 id="Similar-projects"><a href="#Similar-projects" class="headerlink" title="Similar projects"></a>Similar projects</h3><p>DAPPER is aimed at research and teaching (see discussion up top). Example of limitations:</p>
+<ul>
+<li>It is not suited for very big models (&gt;60k unknowns).</li>
+<li>Time-dependent error covariances and changes in lengths of state/obs (although the Dyn and Obs models may otherwise be time-dependent).</li>
+<li>Non-uniform time sequences not fully supported.</li>
+</ul>
+<p>The scope of DAPPER is restricted because</p>
+<p><a target="_blank" rel="noopener" href="https://camo.githubusercontent.com/6399c389a5d0f410848374b22ca1fb7afd5ef81bf292ba8244f04f20e264a2a1/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f6769662e6c617465783f2535436c696d5f25374225354374657874253742666c65786962696c69747925374425323025354372696768746172726f77253230253543696e667479253744253230253543746578742537426672616d65776f726b2537442532302533442532302535437465787425374270726f672e2532306c616e6775616765253744"><img src="https://camo.githubusercontent.com/6399c389a5d0f410848374b22ca1fb7afd5ef81bf292ba8244f04f20e264a2a1/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f6769662e6c617465783f2535436c696d5f25374225354374657874253742666c65786962696c69747925374425323025354372696768746172726f77253230253543696e667479253744253230253543746578742537426672616d65776f726b2537442532302533442532302535437465787425374270726f672e2532306c616e6775616765253744" alt="framework_to_language"></a></p>
+<p>Moreover, even straying beyond basic configurability appears <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Flexibility%E2%80%93usability_tradeoff">unrewarding</a> when already building on a high-level language such as Python. Indeed, you may freely fork and modify the code of DAPPER, which should be seen as a set of templates, and not a framework.</p>
+<blockquote>
+<p><code>↑ DAPPER 只是一个模板，不是框架</code></p>
+</blockquote>
+<p>Also, DAPPER comes with no guarantees/support. Therefore, if you have an <em>operational</em> or real-world application, such as WRF, you should look into one of the alternatives, sorted by approximate project size.</p>
+<blockquote>
+<p><code>↑ and ↓ 实际中的应用，WRF，替代？</code></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Developers</th>
+<th>Purpose (approximately)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://www.image.ucar.edu/DAReS/DART/">DART</a></td>
+<td>NCAR</td>
+<td>General</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://pdaf.awi.de/trac/wiki">PDAF</a></td>
+<td>AWI</td>
+<td>General</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://jointcenterforsatellitedataassimilation-jedi-docs.readthedocs-hosted.com/en/latest/">JEDI</a></td>
+<td>JCSDA (NOAA, NASA, ++)</td>
+<td>General</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.openda.org/">OpenDA</a></td>
+<td>TU Delft</td>
+<td>General</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.met.reading.ac.uk/~darc/empire/index.php">EMPIRE</a></td>
+<td>Reading (Met)</td>
+<td>General</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/equinor/ert">ERT</a></td>
+<td>Statoil</td>
+<td>History matching (Petroleum DA)</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://uni.no/en/uni-cipr/">PIPT</a></td>
+<td>CIPR</td>
+<td>History matching (Petroleum DA)</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.dhigroup.com/">MIKE</a></td>
+<td>DHI</td>
+<td>Oceanographic</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/gher-ulg/OAK">OAK</a></td>
+<td>Liège</td>
+<td>Oceanographic</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www5.obs-mip.fr/sirocco/assimilation-tools/sequoia-data-assimilation-platform/">Siroco</a></td>
+<td>OMP</td>
+<td>Oceanographic</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://verdandi.sourceforge.net/">Verdandi</a></td>
+<td>INRIA</td>
+<td>Biophysical DA</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.geos.ed.ac.uk/~lfeng/">PyOSSE</a></td>
+<td>Edinburgh, Reading</td>
+<td>Earth-observation DA</td>
+</tr>
+</tbody></table>
+<p>Below is a list of projects with a purpose more similar to DAPPER’s (research <em>in</em> DA, and not so much <em>using</em> DA):</p>
+<blockquote>
+<p><code>↑ and ↓ 研究DA算法，却很少实际中用DA</code></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Developers</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER">DAPPER</a></td>
+<td>Raanes, Chen, Grudzien</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.data-assimilation.net/">SANGOMA</a></td>
+<td>Conglomerate*</td>
+<td>Fortran, Matlab</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://hippylib.github.io/">hIPPYlib</a></td>
+<td>Villa, Petra, Ghattas</td>
+<td>Python, adjoint-based PDE methods</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/rlabbe/filterpy">FilterPy</a></td>
+<td>R. Labbe</td>
+<td>Python. Engineering oriented.</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/judithyueli/DASoftware">DASoftware</a></td>
+<td>Yue Li, Stanford</td>
+<td>Matlab. Large inverse probs.</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/kingaa/pomp">Pomp</a></td>
+<td>U of Michigan</td>
+<td>R</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://enkf.nersc.no/">EnKF-Matlab</a></td>
+<td>Sakov</td>
+<td>Matlab</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/sakov/enkf-c">EnKF-C</a></td>
+<td>Sakov</td>
+<td>C. Light-weight, off-line DA</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://hickmank.github.io/pyda/">pyda</a></td>
+<td>Hickman</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/Shady-Ahmed/PyDA">PyDA</a></td>
+<td>Shady-Ahmed</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/daspy/daspy">DasPy</a></td>
+<td>Xujun Han</td>
+<td>Python</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://juliahub.com/docs/DataAssim/qCDwD/0.3.2/">DataAssim.jl</a></td>
+<td>Alexander-Barth</td>
+<td>Julia</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/cgrudz/DataAssimilationBenchmarks.jl">DataAssimilationBenchmarks.jl</a></td>
+<td>Grudzien</td>
+<td>Julia, Python</td>
+</tr>
+<tr>
+<td>Datum</td>
+<td>Raanes</td>
+<td>Matlab</td>
+</tr>
+<tr>
+<td>IEnKS code</td>
+<td>Bocquet</td>
+<td>Python</td>
+</tr>
+</tbody></table>
+<p>The <code>EnKF-Matlab</code> and <code>IEnKS</code> codes have been inspirational in the development of DAPPER.</p>
+<p><code>*</code>: AWI/Liege/CNRS/NERSC/Reading/Delft</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="examples-文件夹"><a href="#examples-文件夹" class="headerlink" title="examples 文件夹"></a>examples 文件夹</h2><ul>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220319121130.png"></li>
+</ul>
+<h3 id="README-md-1"><a href="#README-md-1" class="headerlink" title="README.md"></a>README.md</h3><p><strong>Examples</strong></p>
+<p>Here are some example scripts using DAPPER. They all consist of one (or more) synthetic experiments.</p>
+<p>Run them using <code>python examples/the_script.py</code>, or with the <code>%run</code> command inside <code>ipython</code>.</p>
+<p>Some of the scripts have also been converted to Jupyter notebooks (<code>.ipynb</code>). You can try them out without installing anything by pressing this button (but note that some plotting features won’t work, and that it requires a Google login): <a target="_blank" rel="noopener" href="http://colab.research.google.com/github/nansencenter/DAPPER"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Collab"></a></p>
+<p><strong>Description</strong></p>
+<ul>
+<li><code>basic_1.py</code>: A single experiment, with Liveplotting.</li>
+<li><code>basic_2.py</code>: Comparison of several DA methods.</li>
+<li><code>basic_3.py</code>: Comparison of <em>many</em> DA methods and other experiment settings.</li>
+<li><code>param_estim.py</code>: Similar to <code>basic_2</code>, but with parameter estimation.</li>
+<li><code>stoch_model1.py</code>: A perfect-yet-random model, with various integration schemes.</li>
+<li><code>stoch_models.py</code>: As above, but studies the relationship between model uncertainty and numerical discretization error.</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="basic-1-py"><a href="#basic-1-py" class="headerlink" title="basic_1.py"></a>basic_1.py</h3><blockquote>
+<ul>
+<li>run with python console </li>
+</ul>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317184420.png"></p>
+<p>代码</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># ## Illustrate usage of DAPPER to (interactively) run a synthetic ("twin") experiment.</span>
+
+<span class="token comment"># #### Imports</span>
+<span class="token comment"># &lt;b&gt;NB:&lt;/b&gt; If you're on &lt;mark&gt;&lt;b&gt;Gooble Colab&lt;/b&gt;&lt;/mark&gt;,</span>
+<span class="token comment"># then replace `%matplotlib notebook` below by</span>
+<span class="token comment"># `!python -m pip install git+https://github.com/nansencenter/DAPPER.git` .</span>
+<span class="token comment"># Also note that liveplotting does not work on Colab.</span>
+
+导入包_nb_dpr_da_HMM<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># %matplotlib notebook</span>
+<span class="token keyword">from</span> mpl_tools <span class="token keyword">import</span> is_notebook_or_qt <span class="token keyword">as</span> nb
+
+<span class="token keyword">import</span> dapper <span class="token keyword">as</span> dpr
+<span class="token keyword">import</span> dapper<span class="token punctuation">.</span>da_methods <span class="token keyword">as</span> da
+
+<span class="token comment"># #### Load experiment setup: the hidden Markov model (HMM)</span>
+<span class="token keyword">from</span> dapper<span class="token punctuation">.</span>mods<span class="token punctuation">.</span>Lorenz63<span class="token punctuation">.</span>sakov2012 <span class="token keyword">import</span> HMM
+
+
+生成随机数种子_seed<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Generate the same random numbers each time this script is run</span>
+seed <span class="token operator">=</span> dpr<span class="token punctuation">.</span>set_seed<span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span>
+
+
+生成实验的真实数据_xx和噪声_yy<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Simulate synthetic truth (xx) and noisy obs (yy)</span>
+HMM<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>T <span class="token operator">=</span> <span class="token number">30</span>  <span class="token comment"># shorten experiment</span>
+xx<span class="token punctuation">,</span> yy <span class="token operator">=</span> HMM<span class="token punctuation">.</span>simulate<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+生成实验的同化方法配置_xp<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Specify a DA method configuration ("xp" is short for "experiment")</span>
+
+<span class="token comment"># xp = da.OptInterp()</span>
+<span class="token comment"># xp = da.Var3D()</span>
+<span class="token comment"># xp = da.ExtKF(infl=90)</span>
+xp <span class="token operator">=</span> da<span class="token punctuation">.</span>EnKF<span class="token punctuation">(</span><span class="token string">'Sqrt'</span><span class="token punctuation">,</span> N<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> infl<span class="token operator">=</span><span class="token number">1.02</span><span class="token punctuation">,</span> rot<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+xp <span class="token operator">=</span> da<span class="token punctuation">.</span>iEnKS<span class="token punctuation">(</span><span class="token string">'Sqrt'</span><span class="token punctuation">,</span> N<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> infl<span class="token operator">=</span><span class="token number">1.02</span><span class="token punctuation">,</span> rot<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token comment"># xp = da.PartFilt(N=100, reg=2.4, NER=0.3)</span>
+
+
+
+进行同化<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Assimilate yy, knowing the HMM; xx is used to assess the performance</span>
+
+<span class="token comment">#xp.assimilate(HMM, xx, yy, liveplots=not nb)</span>
+xp<span class="token punctuation">.</span>assimilate<span class="token punctuation">(</span>HMM<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">,</span> liveplots<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+
+
+度量同化结果<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Average the time series of various statistics</span>
+
+xp<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>average_in_time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># #### Print some averages</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>xp<span class="token punctuation">.</span>avrgs<span class="token punctuation">.</span>tabulate<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'rmse.a'</span><span class="token punctuation">,</span> <span class="token string">'rmv.a'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>xp<span class="token punctuation">.</span>avrgs<span class="token punctuation">.</span>tabulate<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'err.rms.a'</span><span class="token punctuation">,</span> <span class="token string">'rmv.a'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">#print(xp.avrgs.tabulate(['err.m.a', 'rmv.a']))</span>
+
+
+再次显示<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Replay liveplotters</span>
+<span class="token comment">#xp.stats.replay()</span>
+<span class="token comment">#xp.stats.replay(</span>
+    <span class="token comment"># speed=.6</span>
+<span class="token comment">#)</span>
+
+<span class="token comment"># #### Further diagnostic plots</span>
+
+<span class="token keyword">if</span> nb<span class="token punctuation">:</span>
+    <span class="token keyword">import</span> dapper<span class="token punctuation">.</span>tools<span class="token punctuation">.</span>viz <span class="token keyword">as</span> viz
+    viz<span class="token punctuation">.</span>plot_rank_histogram<span class="token punctuation">(</span>xp<span class="token punctuation">.</span>stats<span class="token punctuation">)</span>
+    viz<span class="token punctuation">.</span>plot_err_components<span class="token punctuation">(</span>xp<span class="token punctuation">.</span>stats<span class="token punctuation">)</span>
+    viz<span class="token punctuation">.</span>plot_hovmoller<span class="token punctuation">(</span>xx<span class="token punctuation">)</span>
+
+<span class="token comment"># #### Explore objects</span>
+
+<span class="token keyword">if</span> nb<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>xp<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> nb<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>HMM<span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> nb<span class="token punctuation">:</span>
+    <span class="token comment"># print(xp.stats) # quite long printout</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>xp<span class="token punctuation">.</span>avrgs<span class="token punctuation">)</span>
+
+
+
+QT_为什么再次显示的图形不如直接生成的图形光滑<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Excercise: Why are the replay plots not as smooth as the liveplot?</span>
+<span class="token comment"># *Hint*: provide the keyword `store_u=True` to `assimilate()` to avoid this.</span>
+
+
+
+
+QT_为什么再次显示的图形仅包含蓝线<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Excercise: Why does the replay only contain the blue lines?</span>
+
+
+
+
+
+EX_尝试另一个DA方法_iEnKS_liveplots设置<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Excercise: Try out each of the above DA methods (currently commented out).</span>
+<span class="token comment"># Next, remove the call to `replay`, and set `liveplots=False` above.</span>
+<span class="token comment"># Now, use the iterative EnKS (`iEnKS`), and try to find a parameter combination</span>
+<span class="token comment"># for it so that you achieve a lower `rmse.a` than with the `PartFilt`.</span>
+<span class="token comment">#</span>
+
+
+QT_如何调参<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># *Hint*: In general, there is no free lunch. Similarly, not all methods work</span>
+<span class="token comment"># for all problems;</span>
+<span class="token comment">#</span>
+<span class="token comment"># additionally, methods often have parameters that require</span>
+<span class="token comment"># tuning. Luckily, in DAPPER, you should be able to find suitably tuned</span>
+<span class="token comment"># configuration settings for various DA methods *in the files that define the</span>
+<span class="token comment"># HMM*.</span>
+<span class="token comment">#</span>
+<span class="token comment"># If you do not find a suggested configuration for a given method, you</span>
+<span class="token comment"># will have to tune it yourself.</span>
+<span class="token comment">#</span>
+<span class="token comment"># The example script `basic_2` shows how DAPPER</span>
+<span class="token comment"># facilitates the tuning process, and `basic_3` takes this further.</span>
+
+
+EX_尝试不同的模型HMM<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Excercise: Run an experiment for each of these models</span>
+<span class="token comment"># - LotkaVolterra</span>
+<span class="token comment"># - Lorenz96</span>
+<span class="token comment"># - LA</span>
+<span class="token comment"># - QG</span>
+
+
+
+EX_尝试不同的度量方法<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Excercise: Printing other diagnostics.</span>
+<span class="token comment"># - Create a new code cell, and copy-paste the above `print(...tabulate)`</span>
+<span class="token comment">#   command into it. Then, replace `rmse` by `err.rms`. This should yield</span>
+<span class="token comment">#   the same printout, as is merely an abbreviation of the latter.</span>
+<span class="token comment">#</span>
+<span class="token comment"># - Next, figure out how to print the time average *forecast (i.e. prior)* error</span>
+<span class="token comment">#   (and `rmv`) instead. Explain (in broad terms) why the values are larger than</span>
+<span class="token comment">#   for the *analysis* values.</span>
+<span class="token comment">#</span>
+<span class="token comment"># - Finally, instead of the `rms` spatial/field averages,</span>
+<span class="token comment">#   print the regular mean (`.m`) averages. Explain why `err.m` is nearly zero,</span>
+<span class="token comment">#   in contrast to `err.rms`.</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="QT：EX-尝试不同的度量方法"><a href="#QT：EX-尝试不同的度量方法" class="headerlink" title="QT：EX_尝试不同的度量方法"></a>QT：EX_尝试不同的度量方法</h4><p>不理解部分：Next, figure out how to print the time average <em>forecast (i.e. prior)</em> error (and <code>rmv</code>) instead.  Explain (in broad terms) why the values are larger than for the <em>analysis</em> values.</p>
+<p>知道了：同化后，添加了观测信息，肯定误差变小了呀~~</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="basic-lorenz63-detail-py-（为了更好地理解，自己做的一个函数）"><a href="#basic-lorenz63-detail-py-（为了更好地理解，自己做的一个函数）" class="headerlink" title="basic_lorenz63_detail.py （为了更好地理解，自己做的一个函数）"></a>basic_lorenz63_detail.py （为了更好地理解，自己做的一个函数）</h3><h3 id="basic-2-py"><a href="#basic-2-py" class="headerlink" title="basic_2.py"></a>basic_2.py</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220319120900.png"></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># ## Illustrate usage of DAPPER to benchmark multiple DA methods.</span>
+
+<span class="token comment"># #### Imports</span>
+<span class="token comment"># &lt;b&gt;NB:&lt;/b&gt; If you're on &lt;mark&gt;&lt;b&gt;Gooble Colab&lt;/b&gt;&lt;/mark&gt;,</span>
+<span class="token comment"># then replace `%matplotlib notebook` below by</span>
+<span class="token comment"># `!python -m pip install git+https://github.com/nansencenter/DAPPER.git` .</span>
+<span class="token comment"># Also note that liveplotting does not work on Colab.</span>
+
+
+导入包_dpr_da<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># %matplotlib notebook</span>
+<span class="token keyword">import</span> dapper <span class="token keyword">as</span> dpr
+<span class="token keyword">import</span> dapper<span class="token punctuation">.</span>da_methods <span class="token keyword">as</span> da
+
+导入动力模型lorenz63_HMM<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### DA method configurations</span>
+<span class="token comment"># hidden Markov model (HMM)</span>
+<span class="token keyword">from</span> dapper<span class="token punctuation">.</span>mods<span class="token punctuation">.</span>Lorenz63<span class="token punctuation">.</span>sakov2012 <span class="token keyword">import</span> HMM  <span class="token comment"># Expected rmse.a:</span>
+
+
+手册_xpList<span class="token operator">=</span><span class="token number">0</span>  <span class="token comment">#https://nansencenter.github.io/DAPPER/dapper/xp_launch.html#dapper.xp_launch.xpList</span>
+xps <span class="token operator">=</span> dpr<span class="token punctuation">.</span>xpList<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+手册_baseline同化方法<span class="token operator">=</span><span class="token number">0</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>Climatology<span class="token punctuation">(</span><span class="token punctuation">)</span>                                      <span class="token comment"># 7.6</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>OptInterp<span class="token punctuation">(</span><span class="token punctuation">)</span>                                        <span class="token comment"># 1.25</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>Persistence<span class="token punctuation">(</span><span class="token punctuation">)</span>                                      <span class="token comment"># 10.7</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>PreProg<span class="token punctuation">(</span><span class="token keyword">lambda</span> k<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">:</span> xx<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">)</span>                   <span class="token comment"># 0</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>Var3D<span class="token punctuation">(</span>xB<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">)</span>                                      <span class="token comment"># 1.03</span>
+
+手册_extended同化方法<span class="token operator">=</span><span class="token number">0</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>ExtKF<span class="token punctuation">(</span>infl<span class="token operator">=</span><span class="token number">90</span><span class="token punctuation">)</span>                                     <span class="token comment"># 0.87</span>
+
+手册_ensemble同化方法<span class="token operator">=</span><span class="token number">0</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>EnKF<span class="token punctuation">(</span><span class="token string">'Sqrt'</span>   <span class="token punctuation">,</span> N<span class="token operator">=</span><span class="token number">3</span>   <span class="token punctuation">,</span> infl<span class="token operator">=</span><span class="token number">1.30</span><span class="token punctuation">)</span>                 <span class="token comment"># 0.82</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>EnKF<span class="token punctuation">(</span><span class="token string">'Sqrt'</span>   <span class="token punctuation">,</span> N<span class="token operator">=</span><span class="token number">10</span>  <span class="token punctuation">,</span> infl<span class="token operator">=</span><span class="token number">1.02</span><span class="token punctuation">,</span> rot<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>       <span class="token comment"># 0.63</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>EnKF<span class="token punctuation">(</span><span class="token string">'PertObs'</span><span class="token punctuation">,</span> N<span class="token operator">=</span><span class="token number">500</span> <span class="token punctuation">,</span> infl<span class="token operator">=</span><span class="token number">0.95</span><span class="token punctuation">,</span> rot<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>      <span class="token comment"># 0.56</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>EnKF_N<span class="token punctuation">(</span>         N<span class="token operator">=</span><span class="token number">10</span>             <span class="token punctuation">,</span> rot<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>       <span class="token comment"># 0.54</span>
+
+手册_variational同化方法<span class="token operator">=</span><span class="token number">0</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>iEnKS<span class="token punctuation">(</span><span class="token string">'Sqrt'</span>  <span class="token punctuation">,</span> N<span class="token operator">=</span><span class="token number">10</span>  <span class="token punctuation">,</span> infl<span class="token operator">=</span><span class="token number">1.02</span><span class="token punctuation">,</span> rot<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>       <span class="token comment"># 0.31</span>
+
+手册_particleFilter同化方法<span class="token operator">=</span><span class="token number">0</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>PartFilt<span class="token punctuation">(</span>       N<span class="token operator">=</span><span class="token number">100</span> <span class="token punctuation">,</span> reg<span class="token operator">=</span><span class="token number">2.4</span>  <span class="token punctuation">,</span> NER<span class="token operator">=</span><span class="token number">0.3</span><span class="token punctuation">)</span>        <span class="token comment"># 0.38</span>
+xps <span class="token operator">+=</span> da<span class="token punctuation">.</span>PartFilt<span class="token punctuation">(</span>       N<span class="token operator">=</span><span class="token number">800</span> <span class="token punctuation">,</span> reg<span class="token operator">=</span><span class="token number">0.9</span>  <span class="token punctuation">,</span> NER<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span>        <span class="token comment"># 0.28</span>
+<span class="token comment"># xps += da.PartFilt(       N=4000, reg=0.7  , NER=0.05)       # 0.27</span>
+<span class="token comment"># xps += da.PFxN(xN=1000,   N=30  , Qs=2     , NER=0.2)        # 0.56</span>
+
+
+EX_导入动力模型lorenz96_HMM<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### With Lorenz-96 instead</span>
+
+<span class="token comment"># +</span>
+<span class="token comment"># from dapper.mods.Lorenz96.sakov2008 import HMM   # Expected rmse.a:</span>
+<span class="token comment"># xps = dpr.xpList()</span>
+<span class="token comment"># xps += da.Climatology()                                     # 3.6</span>
+<span class="token comment"># xps += da.OptInterp()                                       # 0.95</span>
+<span class="token comment"># xps += da.Var3D(xB=0.02)                                    # 0.41</span>
+<span class="token comment"># xps += da.ExtKF(infl=6)                                     # 0.24</span>
+<span class="token comment"># xps += da.EnKF('PertObs', N=40, infl=1.06)                  # 0.22</span>
+<span class="token comment"># xps += da.EnKF('Sqrt'   , N=28, infl=1.02, rot=True)        # 0.18</span>
+<span class="token comment"># # More sophisticated:</span>
+<span class="token comment"># xps += da.EnKF_N(         N=24, rot=True)                   # 0.21</span>
+<span class="token comment"># xps += da.EnKF_N(         N=24, rot=True, xN=2)             # 0.18</span>
+<span class="token comment"># xps += da.iEnKS('Sqrt'  , N=40, infl=1.01, rot=True)        # 0.17</span>
+<span class="token comment"># # With localisation:</span>
+<span class="token comment"># xps += da.LETKF(          N=7 , infl=1.04, rot=True, loc_rad=4)  # 0.22</span>
+<span class="token comment"># xps += da.SL_EAKF(        N=7 , infl=1.07, rot=True, loc_rad=6)  # 0.23</span>
+<span class="token comment"># -</span>
+
+EX_导入其它动力模型_HMM<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Other models (suitable xp's listed in HMM files):</span>
+
+<span class="token comment"># +</span>
+<span class="token comment"># from dapper.mods.LA           .evensen2009 import HMM</span>
+<span class="token comment"># from dapper.mods.KS           .bocquet2019 import HMM</span>
+<span class="token comment"># from dapper.mods.LotkaVolterra.settings101 import HMM</span>
+<span class="token comment"># -</span>
+
+xps_launch操作<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># #### Launch</span>
+
+<span class="token comment"># Write some more non-arg parameters to the `xps`. In this case we set the seed,</span>
+<span class="token comment"># so that repeat experiments produce exactly the same result.</span>
+<span class="token keyword">for</span> xp <span class="token keyword">in</span> xps<span class="token punctuation">:</span>
+    xp<span class="token punctuation">.</span>seed <span class="token operator">=</span> <span class="token number">3000</span>
+
+<span class="token comment"># Adjust experiment duration</span>
+HMM<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>T <span class="token operator">=</span> <span class="token number">50</span>
+
+<span class="token comment"># Run/assimilate (for each `xp` in `xps`)</span>
+save_as <span class="token operator">=</span> xps<span class="token punctuation">.</span>launch<span class="token punctuation">(</span>HMM<span class="token punctuation">,</span> liveplots<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+
+<span class="token comment"># #### Print results</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>xps<span class="token punctuation">.</span>tabulate_avrgs<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="basic-3a-py"><a href="#basic-3a-py" class="headerlink" title="basic_3a.py"></a>basic_3a.py</h3><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="dapper-文件夹：对应的是手册"><a href="#dapper-文件夹：对应的是手册" class="headerlink" title="dapper 文件夹：对应的是手册"></a>dapper 文件夹：对应的是手册</h2><ul>
+<li>手册网站：<a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/index.html#gsc.tab=0">https://nansencenter.github.io/DAPPER/dapper/index.html#gsc.tab=0</a></li>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220319121050.png" style="zoom:50%;"></li>
+</ul>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>See <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#Getting-started">README/Getting-started</a></p>
+<p>Then, adapt one of the <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER/tree/master/examples">example scripts</a> to your needs. Make sure you have a working adaptation <code>examples/basic_1.py</code> before adapting <code>basic_2</code> and <code>basic_3</code>.</p>
+<blockquote>
+<p><code>↑ go-to~</code></p>
+</blockquote>
+<p>Since the generality of DAPPER is <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#similar-projects">limited</a> it is quite likely you will also need to make changes to the DAPPER code itself.</p>
+<p>If, in particular, you wish to illustrate and run benchmarks with your own <strong>model</strong> or <strong>method</strong>, then</p>
+<ul>
+<li><p>If it is a complex one, you may be better off using DAPPER merely as <em>inspiration</em> (but you can still <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#getting-started">cite it</a>) rather than trying to squeeze everything into its templates.</p>
+<blockquote>
+<p><code>↑ DAPPER的局限性</code></p>
+</blockquote>
+</li>
+<li><p>If it is relatively simple, however, you may well want to use DAPPER. In that case, read this:</p>
+<ul>
+<li><code>dapper.mods</code></li>
+<li><code>dapper.da_methods</code></li>
+</ul>
+<blockquote>
+<p><code>↑ DAPPER的两个核心模块：mods，da_methods</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Developer-guide"><a href="#Developer-guide" class="headerlink" title="Developer guide"></a>Developer guide</h3><h3 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h3><p>The main features are listed in <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#Highlights">README/highlights</a>. Additionally, there is:</p>
+<ul>
+<li>Parallelisation:<ul>
+<li>(Independent) experiments can run in parallel; see <code>examples/basic_3.py</code></li>
+<li>Forecast parallelisation is possible since the (user-implemented) model has access to the full ensemble; see example in <code>dapper.mods.QG</code>.</li>
+<li>Analysis parallelisation over local domains; see example in <code>LETKF</code></li>
+</ul>
+</li>
+<li>Classes that simplify treating:<ul>
+<li>Experiment administration and launch via <code>xpList</code> and data processing and presentation via <code>xpSpace</code>.</li>
+<li>Time sequences use via <code>Chronology</code> and<code>Ticker</code>.</li>
+<li>Random variables via <code>RV</code>: Gaussian, Student-t, Laplace, Uniform, …, as well as support for custom sampling functions.</li>
+<li>Covariance matrices via <code>CovMat</code>: provides input flexibility/overloading, lazy eval that facilitates the use of non-diagonal covariance matrices (whether sparse or full).</li>
+</ul>
+</li>
+<li>Diagnostics and statistics with<ul>
+<li>Confidence interval on times series (e.g. rmse) averages with<ul>
+<li>automatic correction for autocorrelation</li>
+<li>significant digits printing</li>
+</ul>
+</li>
+<li>Automatic averaging of several types for sub-domains (e.g. “ocean”, “land”, etc.)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ DAPPER的特点</code></p>
+</blockquote>
+<h3 id="API-reference"><a href="#API-reference" class="headerlink" title="API reference"></a>API reference</h3><p>The rendered docstrings can be browsed through the following links, which are also available in the left sidebar.</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token triple-quoted-string string">"""Data Assimilation with Python: a Package for Experimental Research
+
+.. include:: ./README.md
+"""</span>
+
+__version__ <span class="token operator">=</span> <span class="token string">"1.3.0"</span>
+
+<span class="token comment"># A parsimonious list of imports used in the examples</span>
+<span class="token keyword">from</span> <span class="token punctuation">.</span>dpr_config <span class="token keyword">import</span> rc
+<span class="token keyword">from</span> <span class="token punctuation">.</span>tools<span class="token punctuation">.</span>datafiles <span class="token keyword">import</span> find_latest_run<span class="token punctuation">,</span> load_xps
+<span class="token keyword">from</span> <span class="token punctuation">.</span>tools<span class="token punctuation">.</span>rounding <span class="token keyword">import</span> round2sigfig
+<span class="token keyword">from</span> <span class="token punctuation">.</span>tools<span class="token punctuation">.</span>seeding <span class="token keyword">import</span> set_seed
+<span class="token keyword">from</span> <span class="token punctuation">.</span>xp_launch <span class="token keyword">import</span> combinator<span class="token punctuation">,</span> seed_and_simulate<span class="token punctuation">,</span> xpList
+<span class="token keyword">from</span> <span class="token punctuation">.</span>xp_process <span class="token keyword">import</span> xpSpace
+
+
+<span class="token comment"># Exclude "demo.py" files from documentation.</span>
+<span class="token comment"># NB: pdoc complains/warns that it cannot find these files,</span>
+<span class="token comment"># but it still works fine. https://github.com/pdoc3/pdoc/issues/206</span>
+<span class="token keyword">def</span> <span class="token function">_find_demos</span><span class="token punctuation">(</span>as_path<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Discover all model demo.py scripts."""</span>
+    lst <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> d <span class="token keyword">in</span> <span class="token punctuation">(</span>rc<span class="token punctuation">.</span>dirs<span class="token punctuation">.</span>dapper<span class="token operator">/</span><span class="token string">"mods"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>iterdir<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        x <span class="token operator">=</span> d<span class="token operator">/</span><span class="token string">"demo.py"</span>
+        <span class="token keyword">if</span> x<span class="token punctuation">.</span>is_file<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            x <span class="token operator">=</span> x<span class="token punctuation">.</span>relative_to<span class="token punctuation">(</span>rc<span class="token punctuation">.</span>dirs<span class="token punctuation">.</span>DAPPER<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> as_path<span class="token punctuation">:</span>
+                x <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span>with_suffix<span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span> <span class="token string">"."</span><span class="token punctuation">)</span>
+            lst<span class="token punctuation">.</span>append<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> lst
+
+
+__pdoc__ <span class="token operator">=</span> <span class="token punctuation">{</span>k<span class="token punctuation">:</span> <span class="token boolean">False</span> <span class="token keyword">for</span> k <span class="token keyword">in</span> _find_demos<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><code>↑ 参考的API，能够全面了解dapper，实现对dapper的应用</code></p>
+</blockquote>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="dapper-da-methods"><a href="#dapper-da-methods" class="headerlink" title="dapper.da_methods"></a>dapper.da_methods</h3><p>Contains the data assimilation methods included with DAPPER …</p>
+<p>See the README section on <a target="_blank" rel="noopener" href="https://github.com/nansencenter/DAPPER#DA-Methods">DA Methods</a> for an overview of the methods included with DAPPER.</p>
+<h4 id="Defining-your-own-method"><a href="#Defining-your-own-method" class="headerlink" title="Defining your own method"></a>Defining your own method</h4><p>Follow the example of one of the methods within one of the sub-directories/packages. The simplest example is perhaps <code>EnKF</code>.</p>
+<h4 id="General-advice-for-programming-debugging-scientific-experiments"><a href="#General-advice-for-programming-debugging-scientific-experiments" class="headerlink" title="General advice for programming/debugging scientific experiments"></a>General advice for programming/debugging scientific experiments</h4><ul>
+<li>Start with something simple. This helps make sure the basics of the experiment are reasonable. For example, start with<ul>
+<li>a pre-existing example,</li>
+<li>something you are able to reproduce,</li>
+<li>a small/simple model.<ul>
+<li>Set the observation error to be small.</li>
+<li>Observe everything.</li>
+<li>Don’t include model error and/or noise to begin with.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Additionally, test a simple/baseline method to begin with. When including an ensemble method, start with using a large ensemble, and introduce localisation later.</li>
+<li>Take incremental steps towards your ultimate experiment setup. Validate each incremental setup with prints/plots. If results change, make sure you understand why.</li>
+<li>Use short experiment duration. You probably don’t need statistical significance while debugging.</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="dapper-da-methods-baseline"><a href="#dapper-da-methods-baseline" class="headerlink" title="dapper.da_methods.baseline"></a>dapper.da_methods.baseline</h4><p>Unsophisticated” but robust (widely applicable) DA methods …</p>
+<p>Many are based on <a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/bib.html#bib.raanes2016thesis&amp;gsc.tab=0">raanes2016thesis</a>. </p>
+<blockquote>
+<p><strong>Raanes</strong>, <strong>Patrick N</strong> 2016 Improvements to ensemble methods for data assimilation in the geosciences (PhD thesis). University of Oxford.</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token triple-quoted-string string">"""Unsophisticated" but robust (widely applicable) DA methods.
+
+Many are based on `bib.raanes2016thesis`.
+"""</span>
+<span class="token keyword">from</span> typing <span class="token keyword">import</span> Callable<span class="token punctuation">,</span> Optional
+
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+<span class="token keyword">import</span> dapper<span class="token punctuation">.</span>tools<span class="token punctuation">.</span>series <span class="token keyword">as</span> series
+<span class="token keyword">from</span> dapper<span class="token punctuation">.</span>stats <span class="token keyword">import</span> center
+<span class="token keyword">from</span> dapper<span class="token punctuation">.</span>tools<span class="token punctuation">.</span>linalg <span class="token keyword">import</span> mrdiv
+<span class="token keyword">from</span> dapper<span class="token punctuation">.</span>tools<span class="token punctuation">.</span>matrices <span class="token keyword">import</span> CovMat
+<span class="token keyword">from</span> dapper<span class="token punctuation">.</span>tools<span class="token punctuation">.</span>progressbar <span class="token keyword">import</span> progbar
+
+<span class="token keyword">from</span> <span class="token punctuation">.</span> <span class="token keyword">import</span> da_method
+
+
+<span class="token decorator annotation punctuation">@da_method</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Climatology</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""A baseline/reference method.
+
+    Note that the "climatology" is computed from truth, which might be
+    (unfairly) advantageous if the simulation is too short (vs mixing time).
+    """</span>
+
+    <span class="token keyword">def</span> <span class="token function">assimilate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> HMM<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        muC <span class="token operator">=</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>xx<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        AC  <span class="token operator">=</span> xx <span class="token operator">-</span> muC
+        PC  <span class="token operator">=</span> CovMat<span class="token punctuation">(</span>AC<span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>muC<span class="token punctuation">,</span> Cov<span class="token operator">=</span>PC<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>trHK<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+
+        <span class="token keyword">for</span> k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _ <span class="token keyword">in</span> progbar<span class="token punctuation">(</span>HMM<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>ticker<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            fau <span class="token operator">=</span> <span class="token string">'u'</span> <span class="token keyword">if</span> ko <span class="token keyword">is</span> <span class="token boolean">None</span> <span class="token keyword">else</span> <span class="token string">'fau'</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> fau<span class="token punctuation">,</span> mu<span class="token operator">=</span>muC<span class="token punctuation">,</span> Cov<span class="token operator">=</span>PC<span class="token punctuation">)</span>
+
+
+<span class="token decorator annotation punctuation">@da_method</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">OptInterp</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Optimal Interpolation -- a baseline/reference method.
+
+    Uses the Kalman filter equations,
+    but with a prior from the Climatology.
+    """</span>
+
+    <span class="token keyword">def</span> <span class="token function">assimilate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> HMM<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        Id <span class="token operator">=</span> np<span class="token punctuation">.</span>eye<span class="token punctuation">(</span>HMM<span class="token punctuation">.</span>Nx<span class="token punctuation">)</span>
+
+        <span class="token comment"># Compute "climatological" Kalman gain</span>
+        muC <span class="token operator">=</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>xx<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        AC  <span class="token operator">=</span> xx <span class="token operator">-</span> muC
+        PC  <span class="token operator">=</span> <span class="token punctuation">(</span>AC<span class="token punctuation">.</span>T @ AC<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>xx<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># Setup scalar "time-series" covariance dynamics.</span>
+        <span class="token comment"># ONLY USED FOR DIAGNOSTICS, not to affect the Kalman gain.</span>
+        L  <span class="token operator">=</span> series<span class="token punctuation">.</span>estimate_corr_length<span class="token punctuation">(</span>AC<span class="token punctuation">.</span>ravel<span class="token punctuation">(</span>order<span class="token operator">=</span><span class="token string">'F'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        SM <span class="token operator">=</span> fit_sigmoid<span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span> L<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># Init</span>
+        mu <span class="token operator">=</span> muC
+        self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>mu<span class="token punctuation">,</span> Cov<span class="token operator">=</span>PC<span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> t<span class="token punctuation">,</span> dt <span class="token keyword">in</span> progbar<span class="token punctuation">(</span>HMM<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>ticker<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># Forecast</span>
+            mu <span class="token operator">=</span> HMM<span class="token punctuation">.</span>Dyn<span class="token punctuation">(</span>mu<span class="token punctuation">,</span> t<span class="token operator">-</span>dt<span class="token punctuation">,</span> dt<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> ko <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> <span class="token string">'f'</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>muC<span class="token punctuation">,</span> Cov<span class="token operator">=</span>PC<span class="token punctuation">)</span>
+
+                <span class="token comment"># Analysis</span>
+                H  <span class="token operator">=</span> HMM<span class="token punctuation">.</span>Obs<span class="token punctuation">.</span>linear<span class="token punctuation">(</span>muC<span class="token punctuation">,</span> t<span class="token punctuation">)</span>
+                KG  <span class="token operator">=</span> mrdiv<span class="token punctuation">(</span>PC@H<span class="token punctuation">.</span>T<span class="token punctuation">,</span> H@PC@H<span class="token punctuation">.</span>T <span class="token operator">+</span> HMM<span class="token punctuation">.</span>Obs<span class="token punctuation">.</span>noise<span class="token punctuation">.</span>C<span class="token punctuation">.</span>full<span class="token punctuation">)</span>
+                mu <span class="token operator">=</span> muC <span class="token operator">+</span> KG@<span class="token punctuation">(</span>yy<span class="token punctuation">[</span>ko<span class="token punctuation">]</span> <span class="token operator">-</span> HMM<span class="token punctuation">.</span>Obs<span class="token punctuation">(</span>muC<span class="token punctuation">,</span> t<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+                P  <span class="token operator">=</span> <span class="token punctuation">(</span>Id <span class="token operator">-</span> KG@H<span class="token punctuation">)</span> @ PC
+                SM <span class="token operator">=</span> fit_sigmoid<span class="token punctuation">(</span>P<span class="token punctuation">.</span>trace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">/</span>PC<span class="token punctuation">.</span>trace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> L<span class="token punctuation">,</span> k<span class="token punctuation">)</span>
+
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> mu<span class="token operator">=</span>mu<span class="token punctuation">,</span> Cov<span class="token operator">=</span><span class="token number">2</span><span class="token operator">*</span>PC<span class="token operator">*</span>SM<span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token decorator annotation punctuation">@da_method</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Var3D</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""3D-Var -- a baseline/reference method.
+
+    This implementation is not "Var"-ish: there is no *iterative* optimzt.
+    Instead, it does the full analysis update in one step: the Kalman filter,
+    with the background covariance being user specified, through B and xB.
+    """</span>
+
+    B<span class="token punctuation">:</span> Optional<span class="token punctuation">[</span>np<span class="token punctuation">.</span>ndarray<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">None</span>
+    xB<span class="token punctuation">:</span> <span class="token builtin">float</span>               <span class="token operator">=</span> <span class="token number">1.0</span>
+
+    <span class="token keyword">def</span> <span class="token function">assimilate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> HMM<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        Id <span class="token operator">=</span> np<span class="token punctuation">.</span>eye<span class="token punctuation">(</span>HMM<span class="token punctuation">.</span>Nx<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>B<span class="token punctuation">,</span> np<span class="token punctuation">.</span>ndarray<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># compare ndarray 1st to avoid == error for ndarray</span>
+            B <span class="token operator">=</span> self<span class="token punctuation">.</span>B<span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">float</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> self<span class="token punctuation">.</span>B <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token string">'clim'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># Use climatological cov, estimated from truth</span>
+            B <span class="token operator">=</span> np<span class="token punctuation">.</span>cov<span class="token punctuation">(</span>xx<span class="token punctuation">.</span>T<span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> self<span class="token punctuation">.</span>B <span class="token operator">==</span> <span class="token string">'eye'</span><span class="token punctuation">:</span>
+            B <span class="token operator">=</span> Id
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">raise</span> ValueError<span class="token punctuation">(</span><span class="token string">"Bad input B."</span><span class="token punctuation">)</span>
+        B <span class="token operator">*=</span> self<span class="token punctuation">.</span>xB
+
+        <span class="token comment"># ONLY USED FOR DIAGNOSTICS, not to change the Kalman gain.</span>
+        CC <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>cov<span class="token punctuation">(</span>xx<span class="token punctuation">.</span>T<span class="token punctuation">)</span>
+        L  <span class="token operator">=</span> series<span class="token punctuation">.</span>estimate_corr_length<span class="token punctuation">(</span>center<span class="token punctuation">(</span>xx<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>ravel<span class="token punctuation">(</span>order<span class="token operator">=</span><span class="token string">'F'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        P  <span class="token operator">=</span> HMM<span class="token punctuation">.</span>X0<span class="token punctuation">.</span>C<span class="token punctuation">.</span>full
+        SM <span class="token operator">=</span> fit_sigmoid<span class="token punctuation">(</span>P<span class="token punctuation">.</span>trace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">/</span>CC<span class="token punctuation">.</span>trace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> L<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># Init</span>
+        mu <span class="token operator">=</span> HMM<span class="token punctuation">.</span>X0<span class="token punctuation">.</span>mu
+        self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>mu<span class="token punctuation">,</span> Cov<span class="token operator">=</span>P<span class="token punctuation">)</span>
+
+        <span class="token keyword">for</span> k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> t<span class="token punctuation">,</span> dt <span class="token keyword">in</span> progbar<span class="token punctuation">(</span>HMM<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>ticker<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># Forecast</span>
+            mu <span class="token operator">=</span> HMM<span class="token punctuation">.</span>Dyn<span class="token punctuation">(</span>mu<span class="token punctuation">,</span> t<span class="token operator">-</span>dt<span class="token punctuation">,</span> dt<span class="token punctuation">)</span>
+            P  <span class="token operator">=</span> CC<span class="token operator">*</span>SM<span class="token punctuation">(</span>k<span class="token punctuation">)</span>
+
+            <span class="token keyword">if</span> ko <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> <span class="token string">'f'</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>mu<span class="token punctuation">,</span> Cov<span class="token operator">=</span>P<span class="token punctuation">)</span>
+
+                <span class="token comment"># Analysis</span>
+                H  <span class="token operator">=</span> HMM<span class="token punctuation">.</span>Obs<span class="token punctuation">.</span>linear<span class="token punctuation">(</span>mu<span class="token punctuation">,</span> t<span class="token punctuation">)</span>
+                KG <span class="token operator">=</span> mrdiv<span class="token punctuation">(</span>B@H<span class="token punctuation">.</span>T<span class="token punctuation">,</span> H@B@H<span class="token punctuation">.</span>T <span class="token operator">+</span> HMM<span class="token punctuation">.</span>Obs<span class="token punctuation">.</span>noise<span class="token punctuation">.</span>C<span class="token punctuation">.</span>full<span class="token punctuation">)</span>
+                mu <span class="token operator">=</span> mu <span class="token operator">+</span> KG@<span class="token punctuation">(</span>yy<span class="token punctuation">[</span>ko<span class="token punctuation">]</span> <span class="token operator">-</span> HMM<span class="token punctuation">.</span>Obs<span class="token punctuation">(</span>mu<span class="token punctuation">,</span> t<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+                <span class="token comment"># Re-calibrate fit_sigmoid with new W0 = Pa/B</span>
+                P <span class="token operator">=</span> <span class="token punctuation">(</span>Id <span class="token operator">-</span> KG@H<span class="token punctuation">)</span> @ B
+                SM <span class="token operator">=</span> fit_sigmoid<span class="token punctuation">(</span>P<span class="token punctuation">.</span>trace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">/</span>CC<span class="token punctuation">.</span>trace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> L<span class="token punctuation">,</span> k<span class="token punctuation">)</span>
+
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> mu<span class="token operator">=</span>mu<span class="token punctuation">,</span> Cov<span class="token operator">=</span>P<span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">fit_sigmoid</span><span class="token punctuation">(</span>Sb<span class="token punctuation">,</span> L<span class="token punctuation">,</span> kb<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Return a sigmoid [function S(k)] for approximating error dynamics.
+
+    We use the logistic function for the sigmoid; it's the solution of the
+    "population growth" ODE: dS/dt = a*S*(1-S/S(∞)).
+    NB: It might be better to use the "error growth ODE" of Lorenz/Dalcher/Kalnay,
+    but this has a significantly more complicated closed-form solution,
+    and reduces to the above ODE when there's no model error (ODE source term).
+
+    The "normalized" sigmoid, S1, is symmetric around 0, and S1(-∞)=0 and S1(∞)=1.
+
+    The sigmoid S(k) = S1(a*(k-kb) + b) is fitted (see docs/snippets/sigmoid.jpg) with
+
+    - a corresponding to a given corr. length L.
+    - b to match values of S(kb) and Sb
+    """</span>
+
+    <span class="token keyword">def</span> <span class="token function">sigmoid</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> <span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">+</span>np<span class="token punctuation">.</span>exp<span class="token punctuation">(</span><span class="token operator">-</span>k<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># normalized sigmoid</span>
+    <span class="token keyword">def</span> <span class="token function">inv_sig</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">return</span> np<span class="token punctuation">.</span>log<span class="token punctuation">(</span>s<span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">-</span>s<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># its inverse</span>
+
+    a <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">/</span>L
+    b <span class="token operator">=</span> inv_sig<span class="token punctuation">(</span>Sb<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">S</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> sigmoid<span class="token punctuation">(</span>b <span class="token operator">+</span> a<span class="token operator">*</span><span class="token punctuation">(</span>k<span class="token operator">-</span>kb<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> S
+
+
+<span class="token decorator annotation punctuation">@da_method</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Persistence</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Sets estimate to the **true state** at the previous time index.
+
+    The analysis (.a) stat uses the previous obs. time.
+    The forecast and universal (.f and .u) stats use previous integration time index.
+    """</span>
+
+    <span class="token keyword">def</span> <span class="token function">assimilate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> HMM<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        prev <span class="token operator">=</span> xx<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>prev<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> _t<span class="token punctuation">,</span> _dt <span class="token keyword">in</span> progbar<span class="token punctuation">(</span>HMM<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>ticker<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> <span class="token string">'fu'</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>xx<span class="token punctuation">[</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> ko <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>prev<span class="token punctuation">)</span>
+                prev <span class="token operator">=</span> xx<span class="token punctuation">[</span>k<span class="token punctuation">]</span>
+
+
+<span class="token decorator annotation punctuation">@da_method</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">PreProg</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Simply look-up the estimates in user-specified function (`schedule`).
+
+    For example, with `schedule` given by `lambda k, xx, yy: xx[k]`
+    the error (err.rms, err.ma, ...) should be 0.
+    """</span>
+
+    schedule<span class="token punctuation">:</span> Callable
+    tag<span class="token punctuation">:</span> <span class="token builtin">str</span> <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">def</span> <span class="token function">assimilate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> HMM<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>self<span class="token punctuation">.</span>schedule<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> _t<span class="token punctuation">,</span> _dt <span class="token keyword">in</span> progbar<span class="token punctuation">(</span>HMM<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>ticker<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> <span class="token string">'fu'</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>self<span class="token punctuation">.</span>schedule<span class="token punctuation">(</span>k<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> ko <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>assess<span class="token punctuation">(</span>k<span class="token punctuation">,</span> ko<span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> mu<span class="token operator">=</span>self<span class="token punctuation">.</span>schedule<span class="token punctuation">(</span>k<span class="token punctuation">,</span> xx<span class="token punctuation">,</span> yy<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="函数：fit-sigmoid"><a href="#函数：fit-sigmoid" class="headerlink" title="函数：fit_sigmoid"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/da_methods/baseline.html#dapper.da_methods.baseline.fit_sigmoid">函数：fit_sigmoid</a></h5><p>Return a sigmoid [function S(k)] for approximating error dynamics.</p>
+<h5 id="Climatology"><a href="#Climatology" class="headerlink" title="Climatology"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/da_methods/baseline.html#dapper.da_methods.baseline.Climatology">Climatology</a></h5><p>A baseline/reference method.</p>
+<p>Note that the “climatology” is computed from truth, which might be (unfairly) advantageous if the simulation is too short (vs <strong>mixing time</strong>).</p>
+<h5 id="QT-climatology"><a href="#QT-climatology" class="headerlink" title="QT: climatology???"></a>QT: climatology???</h5><h5 id="OptInterp"><a href="#OptInterp" class="headerlink" title="OptInterp"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/da_methods/baseline.html#dapper.da_methods.baseline.OptInterp">OptInterp</a></h5><p>Optimal Interpolation – a baseline/reference method.</p>
+<p>Uses the Kalman filter equations, <strong>but with a prior from the Climatology</strong>.</p>
+<h5 id="Var3D"><a href="#Var3D" class="headerlink" title="Var3D"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/da_methods/baseline.html#dapper.da_methods.baseline.Var3D">Var3D</a></h5><p>3D-Var – a baseline/reference method.</p>
+<p>This implementation is not “Var”-ish: there is no <em>iterative</em> optimzt. Instead, it does the full analysis update <strong>in one step</strong>: the Kalman filter, with the background covariance being user specified, through B and xB.</p>
+<h5 id="Persistence"><a href="#Persistence" class="headerlink" title="Persistence"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/da_methods/baseline.html#dapper.da_methods.baseline.Persistence">Persistence</a></h5><p>Sets estimate to the <strong>true state</strong> at the previous time index.</p>
+<p>The analysis (.a) stat uses the previous obs. time. The forecast and universal (.f and .u) stats use previous integration time index.</p>
+<h5 id="PreProg"><a href="#PreProg" class="headerlink" title="PreProg"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/da_methods/baseline.html#dapper.da_methods.baseline.PreProg">PreProg</a></h5><p>Simply look-up the estimates in user-specified function (<code>schedule</code>).</p>
+<p>For example, with <code>schedule</code> given by <code>lambda k, xx, yy: xx[k]</code> the error (err.rms, err.ma, …) should be 0.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="dapper-da-methods-ensemble"><a href="#dapper-da-methods-ensemble" class="headerlink" title="dapper.da_methods.ensemble"></a>dapper.da_methods.ensemble</h4><p>The EnKF and other ensemble-based methods.</p>
+<pre class="line-numbers language-none"><code class="language-none">```
+
+##### [EnKF](https://nansencenter.github.io/DAPPER/dapper/da_methods/ensemble.html#dapper.da_methods.ensemble.EnKF)
+
+The ensemble Kalman filter.
+
+Refs: `evensen2009ensemble`.
+
+&gt; **Evensen**, **G** 2009 The ensemble Kalman filter for combined state and parameter estimation. *Control Systems, IEEE*, 29(3): 83–104.
+
+##### [EnKS](https://nansencenter.github.io/DAPPER/dapper/da_methods/ensemble.html#dapper.da_methods.ensemble.EnKS)
+
+The ensemble Kalman smoother.
+
+Refs: `evensen2009ensemble`
+
+&gt; 同EnKF
+
+The only difference to the EnKF is the management of the lag and the reshapings.
+
+##### [EnRTS](https://nansencenter.github.io/DAPPER/dapper/da_methods/ensemble.html#dapper.da_methods.ensemble.EnRTS)
+
+EnRTS (Rauch-Tung-Striebel) smoother.
+
+Refs: `raanes2016thesis`
+
+&gt; **Raanes**, **Patrick N** 2016 Improvements to ensemble methods for data assimilation in the geosciences (PhD thesis). University of Oxford.
+
+##### [SL_EAKF](https://nansencenter.github.io/DAPPER/dapper/da_methods/ensemble.html#dapper.da_methods.ensemble.SL_EAKF)
+
+Serial, covariance-localized EAKF.
+
+Refs: `karspeck2007experimental`.
+
+&gt; **Karspeck**, **A R** and **Anderson**, **J L** 2007 Experimental implementation of an ensemble adjustment filter for an intermediate ENSO model. *Journal of Climate*, 20(18): 4638–4658.
+
+In contrast with LETKF, this iterates over the observations rather than over the state (batches).
+
+Used without localization, this should be equivalent (full ensemble equality) to the `EnKF` with `upd_a='Serial'`.
+
+##### [LETKF](https://nansencenter.github.io/DAPPER/dapper/da_methods/ensemble.html#dapper.da_methods.ensemble.LETKF)
+
+Same as EnKF (Sqrt), but with localization.
+
+Refs: `hunt2007efficient`.
+
+&gt; **Hunt**, **B R**, **Kostelich**, **E J**, and **Szunyogh**, **I** 2007 Efficient data assimilation for spatiotemporal chaos: A local ensemble transform Kalman filter. *Physica D: Nonlinear Phenomena*, 230(1): 112–126.
+
+NB: Multiproc. yields slow-down for `dapper.mods.Lorenz96`, even with `batch_size=(1,)`. But for `dapper.mods.QG` (`batch_size=(2,2)` or less) it is quicker.
+
+NB: If `len(ii)` is small, analysis may be slowed-down with '-N' infl.
+
+##### [EnKF_N](https://nansencenter.github.io/DAPPER/dapper/da_methods/ensemble.html#dapper.da_methods.ensemble.EnKF_N)
+
+This implementation is pedagogical, prioritizing the "dual" form. In consequence, the efficiency of the "primal" form suffers a bit. The primal form is included for completeness and to demonstrate equivalence. In `iEnKS`, however, the primal form is preferred because it already does optimization for w (as treatment for nonlinear models).
+
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+#### dapper.da_methods.extended
+
+The extended KF (EKF) and the (Rauch-Tung-Striebel) smoother.
+
+##### [ExtKF](https://nansencenter.github.io/DAPPER/dapper/da_methods/extended.html#dapper.da_methods.extended.ExtKF)
+
+The extended Kalman filter.
+
+If everything is linear-Gaussian, this provides the exact solution to the Bayesian filtering equations.
+
+##### [ExtRTS](https://nansencenter.github.io/DAPPER/dapper/da_methods/extended.html#dapper.da_methods.extended.ExtRTS)
+
+The extended Rauch-Tung-Striebel (or "two-pass") smoother.
+
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+#### dapper.da_methods.other
+
+More experimental or esoteric DA methods.
+
+##### [RHF](https://nansencenter.github.io/DAPPER/dapper/da_methods/other.html#dapper.da_methods.other.RHF)
+
+Rank histogram filter.
+
+Refs: `anderson2010non`.
+
+Quick &amp; dirty implementation without attention to (de)tails.
+
+##### [LNETF](https://nansencenter.github.io/DAPPER/dapper/da_methods/other.html#dapper.da_methods.other.LNETF)
+
+The Nonlinear-Ensemble-Transform-Filter (localized).
+
+Refs: `wiljes2016second`, `todter2015second`.
+
+It is (supposedly) a deterministic upgrade of the NLEAF of `lei2011moment`.
+
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+#### dapper.da_methods.particle
+
+Weight- &amp; resampling-based DA methods.
+
+##### [PartFilt](https://nansencenter.github.io/DAPPER/dapper/da_methods/particle.html#dapper.da_methods.particle.PartFilt)
+
+Particle filter ≡ Sequential importance (re)sampling SIS (SIR).
+
+Refs: `wikle2007bayesian`, `van2009particle`, `chen2003bayesian`
+
+This is the bootstrap version: the proposal density is just
+
+&lt;img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220317212246.png" style="zoom:67%;" /&gt;
+
+##### [OptPF](https://nansencenter.github.io/DAPPER/dapper/da_methods/particle.html#dapper.da_methods.particle.OptPF)
+
+'Optimal proposal' particle filter, also known as 'Implicit particle filter'.
+
+Ref: `bocquet2010beyond`.
+
+&gt; Note: Regularization (`Qs`) is here added BEFORE Bayes' rule.
+&gt;
+&gt; If `Qs==0`: OptPF should be equal to the bootstrap filter `PartFilt`.
+
+##### [PFa](https://nansencenter.github.io/DAPPER/dapper/da_methods/particle.html#dapper.da_methods.particle.PFa)
+
+PF with weight adjustment withOUT compensating for the bias it introduces.
+
+'alpha' sets wroot before resampling such that N_effective becomes &gt;alpha*N.
+
+Using alpha≈NER usually works well.
+
+Explanation: Recall that the bootstrap particle filter has "no" bias, but significant variance (which is reflected in the weights). The EnKF is quite the opposite. Similarly, by adjusting the weights we play on the bias-variance spectrum.
+
+NB: This does not mean that we make a PF-EnKF hybrid – we're only playing on the weights.
+
+Hybridization with xN did not show much promise.
+
+##### [PFxN_EnKF](https://nansencenter.github.io/DAPPER/dapper/da_methods/particle.html#dapper.da_methods.particle.PFxN_EnKF)
+
+Particle filter with EnKF-based proposal, q.
+
+Also employs xN duplication, as in PFxN.
+
+Recall that the proposals: Opt.: q_n(x) = c_n·N(x|x_n,Q )·N(y|Hx,R) (1) EnKF: q_n(x) = c_n·N(x|x_n,bar{B})·N(y|Hx,R) (2) with c_n = p(y|x^{k-1}_n) being the composite proposal-analysis weight, and with Q possibly from regularization (rather than actual model noise).
+
+Here, we will use the posterior mean of (2) and cov of (1). Or maybe we should use x_a^n distributed according to a sqrt update?
+
+##### [PFxN](https://nansencenter.github.io/DAPPER/dapper/da_methods/particle.html#dapper.da_methods.particle.PFxN)
+
+Particle filter with buckshot duplication during analysis.
+
+Idea: sample xN duplicates from each of the N kernels. Let resampling reduce it to N.
+
+Additional idea: employ w-adjustment to obtain N unique particles, without jittering.
+
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+#### dapper.da_methods.variational
+
+Variational DA methods (iEnKS, 4D-Var, etc).
+
+##### [iEnKS](https://nansencenter.github.io/DAPPER/dapper/da_methods/variational.html#dapper.da_methods.variational.iEnKS)
+
+Iterative EnKS.
+
+Special cases: EnRML, ES-MDA, iEnKF, EnKF `raanes2019revising`.
+
+As in `bocquet2014iterative`, optimization uses Gauss-Newton. See `bocquet2012combining` for Levenberg-Marquardt. If MDA=True, then there's not really any optimization, but rather Gaussian annealing.
+
+##### [Var4D](https://nansencenter.github.io/DAPPER/dapper/da_methods/variational.html#dapper.da_methods.variational.Var4D)
+
+4D-Var.
+
+Cycling scheme is same as in iEnKS (i.e. the shift is always 1*ko).
+
+This implementation does NOT do gradient decent (nor quasi-Newton) in an inner loop, with simplified models. Instead, each (outer) iteration is computed non-iteratively as a Gauss-Newton step. Thus, since the full (approximate) Hessian is formed, there is no benefit to the adjoint trick (back-propagation). =&gt; This implementation is not suited for big systems.
+
+Incremental formulation is used, so the formulae look like the ones in iEnKS.
+
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+### dapper.da_config
+
+Load default and user configurations into the `rc` dict …
+
+The `rc` dict can be updated (after startup) as any normal dict. See the [source](https://github.com/nansencenter/DAPPER/blob/master/dapper/dpr_config.yaml) for the default configuration.
+
+&gt; crtl+/，pycharm，批量注释
+
+&gt; 修改了data的路径
+
+```python
+"""Load default and user configurations into the `rc` dict.
+
+The `rc` dict can be updated (after startup) as any normal dict. See the
+[source](https://github.com/nansencenter/DAPPER/blob/master/dapper/dpr_config.yaml)
+for the default configuration.
+"""
+
+import os
+from pathlib import Path
+
+import matplotlib as mpl
+import yaml
+from mpl_tools import is_using_interactive_backend
+from struct_tools import DotDict
+
+
+##################################
+# Load configurations
+##################################
+dapper_dir = Path(__file__).absolute().parent
+#dapper_dir = Path('__file__').absolute().parent
+rc = DotDict()
+rc.loaded_from = []
+for d in [dapper_dir, "~", "~/.config", "."]:
+    d = Path(d).expanduser().absolute()
+    for prefix in [".", ""]:
+        f = d / (prefix+"dpr_config.yaml")
+        if f.is_file():
+            dct = yaml.load(open(f), Loader=yaml.SafeLoader)
+            rc.loaded_from.append(str(f))
+            if dct:
+                if d == dapper_dir:
+                    rc.update(dct)
+                else:
+                    for k in dct:
+                        if k in rc:
+                            rc[k] = dct[k]
+                        else:
+                            print(f"Warning: invalid key '{k}' in '{f}'")
+
+
+##################################
+设置路径=0
+# Setup dir paths
+##################################
+rc.dirs = DotDict()
+rc.dirs.dapper = dapper_dir
+rc.dirs.DAPPER = rc.dirs.dapper.parent
+# Data path
+# x = rc.pop("data_root")
+# if x.lower() in ["$cwd", "$pwd"]:
+#     x = Path.cwd()
+# elif x.lower() == "$dapper":
+#     x = rc.dirs.DAPPER
+# else:
+#     x = Path(x)
+
+x = rc.dirs.DAPPER
+rc.dirs.data = x / "dpr_data"
+rc.dirs.samples = rc.dirs.data / "samples"
+
+# Expanduser, create dir
+for d in rc.dirs:
+    rc.dirs[d] = rc.dirs[d].expanduser()
+    os.makedirs(rc.dirs[d], exist_ok=True)
+
+
+##################################
+# Disable rc.liveplotting in case of non-interactive backends
+##################################
+# Otherwise, warnings are thrown on every occurence of plt.pause
+# (though not plot_pause), and (who knows) maybe errors too.
+# Also, the assimilation slows down, even though nothing is shown.
+LP = rc.liveplotting
+if LP and not is_using_interactive_backend():
+    # Note: plot_pause could maybe be adapted to also work for
+    # "inline" backend (which is not striclty interactive), but I think
+    # this would be buggy, and is incompatible with a "stop" button.
+    print("\nWarning: You have not disableed interactive/live plotting",
+          "in your dpr_config.yaml,",
+          "but this is not supported by the current matplotlib backend:",
+          f"{mpl.get_backend()}. To enable it, try using another backend.\n")
+    LP = False
+rc.liveplotting = LP<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="dapper-mods"><a href="#dapper-mods" class="headerlink" title="dapper.mods"></a>dapper.mods</h3><p>Models included with DAPPER …</p>
+<p>请参阅关于测试用例(模型)的README部分，以获得DAPPER中包含的模型的概述。</p>
+<p>这些模型都很简单;这有助于提高实验结果的可靠性、可重复性和可归因性。</p>
+<h4 id="定义自己的模型"><a href="#定义自己的模型" class="headerlink" title="定义自己的模型"></a>定义自己的模型</h4><p>以“dapper/mods”文件夹中的一个模型为例。本质上，你只需要定义一个“HiddenMarkovModel”的所有属性。为了确保这是有效的，我们建议以下结构:</p>
+<ul>
+<li><p>创建一个目录:<code>my_model</code></p>
+</li>
+<li><p>创建一个文件:<code>my_model/__init__.py</code>，在其中定义模型的核心工作。</p>
+<ul>
+<li><p>通常，这在<code>step(x, t, dt)</code>函数中结束，它定义了从一个时间t到另一个时间t + dt的状态x的动态模型/系统映射。他的模型“operator”必须支持2d阵列(即集成)和1d阵列(单实现)输入，并返回与输入相同维数的输出。See:</p>
+<ul>
+<li><p><code>dapper.mods.Lorenz63</code>: use of <code>ens_compatible</code>.</p>
+</li>
+<li><p><code>dapper.mods.Lorenz96</code>: use of relatively clever slice notation.</p>
+</li>
+<li><p><code>dapper.mods.LorenzUV</code>:use of cleverer slice notation: <code>…</code> (ellipsis). Consider pre-defining the slices like so:</p>
+<pre class="line-numbers language-none"><code class="language-none">iiX = (..., slice(None, Nx))
+iiP = (..., slice(Nx, None))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>to abbreviate the indexing elsewhere.</p>
+</li>
+<li><p><code>dapper.mods.QG</code>: use of parallelized for loop (map).</p>
+</li>
+</ul>
+<blockquote>
+<p><code>↑ 感觉好难呀</code></p>
+</blockquote>
+</li>
+<li><p>可选：定义一个建议/示例初始状态x0。这有助于说明不同合成实验的初始条件，因为随机变量以x0为中心。将系统大小指定为len(x0)也是一种方便的方法。在许多实验中，x0的具体值并不重要，因为大多数系统是混乱的，并且统计的平均值只计算time&gt; BurnIn &gt; 0，如果实验足够长，它将不依赖于x0。尽管如此，在吸引器或盆地上预先定义一个点通常是很方便的，或至少确保“物理”，以便更快地旋转(老化)。</p>
+</li>
+<li><p>可选：定义一个被调用的数字<code>Tplot</code>，该数字定义诊断的实时绘图使用的（滑动）时间窗口。</p>
+</li>
+<li><p>可选：要使用（扩展）卡尔曼滤波器或 4D-Var，您需要定义模型线性化，通常称为<code>dstep_dx</code>. 注意：这里只需要支持一维输入（单实现）</p>
+</li>
+</ul>
+</li>
+<li><p>大多数模型是使用基于程序和函数的样式定义的。但是，<code>dapper.mods.LorenzUV</code>并<code>dapper.mods.QG</code>使用 OOP。当要研究不同的控制变量设置时，这更加灵活和稳健，并且更适合。</p>
+<blockquote>
+<p>在参数估计问题中，参数被视为“前向模型”的输入变量。这不一定需要 OOP。见<code>examples/param_estim.py</code>。</p>
+</blockquote>
+</li>
+<li><p>制作文件：<code>my_model/demo.py</code>直观地展示模型的模拟，并验证它是否正常工作。</p>
+<blockquote>
+<p>首先，测试模型是否适用于 1 个实现，然后运行多个（同时）。此外，在使用更有效/更冒险的时间步之前，从一个小的积分时间步开始。请注意，同化的时间步长可能需要更短，因为它可能会导致不稳定。</p>
+</blockquote>
+</li>
+<li><p>理想情况下，两者<code>my_model/__init__.py</code>都不<code>my_model/demo.py</code> 依赖于 DAPPER <code>dapper.mods</code>之外的组件。</p>
+</li>
+<li><p>创建一个文件:<code>my_model/my_settings_1.py</code>，它定义了(或“配置”，因为通常很少进行实际编程)一个完整的隐马尔可夫模型，用于合成实验(也称为“孪生实验”或OSSE)。关于这需要什么，请参阅HiddenMarkovModel 每个现有的模型都有几个文献中模型设置的例子。看，例如，dapper.mods.Lorenz63.sakov2012。</p>
+<blockquote>
+<p>这些配置并不一定具有很高的编程标准，因为它们可能是为了复制某些实验而在短时间内匆忙创建的，并不是为了重用。</p>
+</blockquote>
+<blockquote>
+<p>然而，有时它们会被另一个配置脚本重用，从而导致一个主要的陷阱:对导入的HMM(或模型的模块本身)所做的更改也会影响原始对象(因为它们是可变的，因此会被引用)。这通常不是问题，因为很少会导入两个或更多单独的配置。然而，测试套件导入了所有的配置，这些配置可能会无意间交互。为了避免这种情况，您应该在对HMM进行任何更改之前使用HMM的复制方法。</p>
+</blockquote>
+<p>一旦你做了一些实验,你认为值得注意的你应该添加一个评论中“建议设置/调优”部分的底部my_model / my_settings_1.py清单的一些相关DA方法配置测试,随着RMSE(或其他数据),你获得了这些方法。在DAPPER中已经有很多例子，用于与文献交叉引用，以验证DAPPER的工作方式(以及出版物的可复制性)。</p>
+</li>
+</ul>
+<h4 id="HiddenMarkovModel-HMM"><a href="#HiddenMarkovModel-HMM" class="headerlink" title="HiddenMarkovModel(HMM)"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/mods/index.html#dapper.mods.HiddenMarkovModel">HiddenMarkovModel</a>(HMM)</h4><p>隐马尔可夫模型(HMM)的容器。</p>
+<p>这应该包含运行合成DA实验所需的细节，也被称为“孪生实验”，或**OSSE(观察系统模拟实验)**。然后可以通过运行HiddenMarkovModel.simulate()来获得合成的事实和观测结果。</p>
+<p>更多细节请参见示例中的脚本。</p>
+<h5 id="Dyn-算子"><a href="#Dyn-算子" class="headerlink" title="Dyn 算子"></a>Dyn 算子</h5><h5 id="Obs-算子"><a href="#Obs-算子" class="headerlink" title="Obs 算子"></a>Obs 算子</h5><h4 id="Operator"><a href="#Operator" class="headerlink" title="Operator"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/mods/index.html#dapper.mods.Operator">Operator</a></h4><p>Container for the dynamical and the observational maps.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="dapper-stats"><a href="#dapper-stats" class="headerlink" title="dapper.stats"></a>dapper.stats</h3><p>Statistics for the assessment of DA methods …</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="dapper-tools"><a href="#dapper-tools" class="headerlink" title="dapper.tools"></a>dapper.tools</h3><p>If the only tool you have is a hammer, it’s hard to eat spaghetti.</p>
+<h4 id="rounding"><a href="#rounding" class="headerlink" title="rounding"></a>rounding</h4><h5 id="round2sigfig函数"><a href="#round2sigfig函数" class="headerlink" title="round2sigfig函数"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/tools/rounding.html#dapper.tools.rounding.round2sigfig">round2sigfig函数</a></h5><p>Round to significant figures.</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220319174520.png" style="zoom:60%;">
+
+<h4 id="datafiles"><a href="#datafiles" class="headerlink" title="datafiles"></a>datafiles</h4><h5 id="create-run-dir函数"><a href="#create-run-dir函数" class="headerlink" title="create_run_dir函数"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/tools/datafiles.html#dapper.tools.datafiles.create_run_dir">create_run_dir</a>函数</h5><p>Validate <code>save_as</code> and create dir <code>rc.dirs.data / save_as</code> and sub-dirs.</p>
+<p>The data gets saved here unless <code>save_as</code> is <code>False</code>/<code>None</code>.</p>
+<p>Note: multiprocessing (locally or in the cloud) requires saving/loading data.</p>
+<blockquote>
+<p><strong>from</strong> dapper.dpr_config <strong>import</strong> rc</p>
+</blockquote>
+<h4 id="seeding"><a href="#seeding" class="headerlink" title="seeding"></a>seeding</h4><p><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/tools/seeding.html#dapper.tools.seeding.set_seed">set_seed函数</a></p>
+<p>本质上是rnd.seed(sd)，但也返回sd。</p>
+<p>rnd.seed()的缺点是它产生的RandomState不能用简单的seed表示(映射的seed - &gt;状态是非满射的)。相反，当sd在[None， “clock”]， set_seed()从时间(微秒)生成一个种子，然后可以返回。</p>
+<p>如果sd==False:什么都不做。</p>
+<p>**为什么种子管理?**它使随机实验的重现性成为可能。此外，在比较实验中，对每一种方法使用相同的种子可以产生一种“方差减少”的形式，例如。CRN,参考维基百科。这种CRN技巧通常有助于加速比较，但不应在出版物中使用，出版物应该简单地使用聚合统计。</p>
+<p>**为什么我们使用全局生成器?**因为这是我们习惯的。我们并不担心线程安全。</p>
+<p>**为什么DAPPER中的许多地方使用sd=3000 ?**因为我喜欢这个数字。例如:“André 3000”，“我爱你3000”。</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="dapper-xp-launch"><a href="#dapper-xp-launch" class="headerlink" title="dapper.xp_launch"></a>dapper.xp_launch</h3><p>Tools (notably <code>xpList</code>) for setup and running of experiments (known as <code>xp</code>s) …</p>
+<h4 id="xpList"><a href="#xpList" class="headerlink" title="xpList"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/xp_launch.html#dapper.xp_launch.xpList">xpList</a></h4><p>Subclass of <code>list</code> specialized for experiment (“xp”) objects.</p>
+<p>Main use: administrate experiment launches.</p>
+<h5 id="tabulate-avrgs"><a href="#tabulate-avrgs" class="headerlink" title="tabulate_avrgs"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/xp_launch.html#dapper.xp_launch.xpList.tabulate_avrgs">tabulate_avrgs</a></h5><p>Tabulate avrgs (val±prec).</p>
+<h5 id="launch"><a href="#launch" class="headerlink" title="launch"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/xp_launch.html#dapper.xp_launch.xpList.launch">launch</a></h5><p>Essentially: <code>for xp in self: run_experiment(xp, ..., **kwargs)</code>.</p>
+<p>See <code>run_experiment()</code> for documentation on the <code>kwargs</code> and <code>fail_gently</code>. </p>
+<p>See <code>create_run_dir()</code> for documentation <code>save_as</code>.</p>
+<h4 id="combinator函数"><a href="#combinator函数" class="headerlink" title="combinator函数"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/xp_launch.html#dapper.xp_launch.combinator">combinator函数</a></h4><p>通过组合param_dict中的值列表来大量创建xp。</p>
+<p>返回一个函数(for_params)，该函数为给定的da_method()创建所有可能的参数组合(从参数值列表中)。这比依赖于xpList的unique要高效得多。参数</p>
+<ul>
+<li>在给定的DA方法的参数中找不到的会被for_params忽略。</li>
+<li>指定为关键字for_params的值，防止使用param_dict中相应的值列表(如果有)</li>
+</ul>
+<blockquote>
+<p>Beware! If, eg., <code>infl</code> or <code>rot</code> are in <code>param_dict</code>, aimed at the <code>EnKF</code>, but you forget that they are also attributes some method where you don’t actually want to use them (eg. <code>SVGDF</code>), then you’ll create many more than you intend.</p>
+</blockquote>
+<h4 id="run-experiment函数"><a href="#run-experiment函数" class="headerlink" title="run_experiment函数"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/xp_launch.html#dapper.xp_launch.run_experiment&amp;gsc.tab=0">run_experiment</a>函数</h4><p>Used by <code>xpList.launch()</code> to run each single (DA) experiment (“xp”).</p>
+<p>This involves steps similar to <code>examples/basic_1.py</code>, i.e.:</p>
+<ul>
+<li><code>setup</code> : Initialize experiment.</li>
+<li><code>xp.assimilate</code> : run DA, pass on exception if fail_gently</li>
+<li><code>xp.stats.average_in_time</code> : result averaging</li>
+<li><code>xp.avrgs.tabulate</code> : result printing</li>
+<li><code>dill.dump</code> : result storage</li>
+</ul>
+<p>参数：</p>
+<ul>
+<li><p>setup</p>
+<p>这个函数必须接受两个参数:HMM和xp，并返回DA方法要使用的HMM(通常与输入HMM相同，但可以修改)，以及(通常是合成的)真值和obs时间序列。</p>
+<p>这让你能够在批量启动的实验中定制单个实验的几乎任何方面(即不仅仅是DA的参数)。方法)。通常你会抓取一个或多个参数值存储在xp(参阅da_method())，并对它们进行操作，通常是通过将它们分配给一些影响实验的对象。因此，通过为每个这样的参数值生成一个新的xp，您可以调查结果对该参数的影响/敏感性。例子包括:</p>
+<ul>
+<li><p>设置种子。查看默认设置，即seed_and_simulation()，了解如何或应该如何完成。</p>
+</li>
+<li><p>设置HMM的某些方面，比如观测噪声，或者观测间隔。这可以通过以下方法实现:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">setup</span><span class="token punctuation">(</span>hmm<span class="token punctuation">,</span> xp<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    hmm<span class="token punctuation">.</span>Obs<span class="token punctuation">.</span>noise <span class="token operator">=</span> GaussRV<span class="token punctuation">(</span>M<span class="token operator">=</span>hmm<span class="token punctuation">.</span>Nx<span class="token punctuation">,</span> C<span class="token operator">=</span>xp<span class="token punctuation">.</span>obs_noise<span class="token punctuation">)</span>
+    hmm<span class="token punctuation">.</span>tseq<span class="token punctuation">.</span>dkObs <span class="token operator">=</span> xp<span class="token punctuation">.</span>time_between_obs
+    <span class="token keyword">import</span> dapper <span class="token keyword">as</span> dpr
+    <span class="token keyword">return</span> dpr<span class="token punctuation">.</span>seed_and_simulate<span class="token punctuation">(</span>hmm<span class="token punctuation">,</span> xp<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这个过程可能涉及更多的步骤,例如从一个数据文件加载一个完整的协方差矩阵,作为obs_noise指定的参数,分配到c之前还要注意,import语句并不是必需的(假设衣冠楚楚的已经进口的外范围,通常是主要的脚本),除非在远程服务器上运行实验。</p>
+<p>有时，您想要设置的参数不能作为HMM的常规属性之一访问。例如，洛伦兹-96模型中的力。在这种情况下，你可以将这些行添加到setup函数中:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> dapper<span class="token punctuation">.</span>mods<span class="token punctuation">.</span>Lorenz96 <span class="token keyword">as</span> core
+core<span class="token punctuation">.</span>Force <span class="token operator">=</span> xp<span class="token punctuation">.</span>the_force_parameter<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>但是，如果您的模型是一个OOP实例，那么导入方法将不起作用，因为它将为您提供原始的模型实例，而setup()将处理它的一个副本。相反，您可以在setup()中重新初始化整个模型，并覆盖HMM.Dyn。然而，在启动实验之前，将实例分配给一些自定义属性可能会更容易一些，例如HMM.Dyn.object = the_model_instance，这使您能够在setup()中设置HMM.Dyn.object的参数。请注意，这种方法不适用于模块(例如，结合上面的例子，HMM.Dyn.object = core)，因为模块是不可序列化的。</p>
+</li>
+<li><p>使用完全不同的HMM来生成truth/obs (xx/yy)，而不是DA将使用的HMM。或者从文件中加载truth/obs时间序列。在这两种情况下，您可能还必须在返回xx和yy之前对它们进行一些裁剪或切片。</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>dapper.tools.datafiles.create_run_dir</p>
+</blockquote>
+<h4 id="seed-and-simulate"><a href="#seed-and-simulate" class="headerlink" title="seed_and_simulate"></a><a target="_blank" rel="noopener" href="https://nansencenter.github.io/DAPPER/dapper/xp_launch.html#dapper.xp_launch.seed_and_simulate">seed_and_simulate</a></h4><p>Default experiment setup (sets seed and simulates truth and obs).</p>
+<p>Used by <code>xpList.launch()</code> via <code>run_experiment()</code>.</p>
+<blockquote>
+<p>HMM.simulate?</p>
+</blockquote>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="dapper-xp-process"><a href="#dapper-xp-process" class="headerlink" title="dapper.xp_process"></a>dapper.xp_process</h3><p>Tools (notably <code>xpSpace</code>) for processing and presenting experiment data.</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/03/17/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/08-code-dapper/">https://Liu-Jincan.github.io/2022/03/17/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/08-code-dapper/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/03/21/yan-jiu-sheng-justtry-target/yan-yi-xia-yun-ji-suan-he-gao/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327150505.png" class="responsive-img" alt="研一下-云计算合稿">
+                        
+                        <span class="card-title">研一下-云计算合稿</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-21
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                    研究生JustTry
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/05/yan-jiu-sheng-justtry-target/yan-yi-xia-hai-biao-mian-feng-he-hai-lang-duo-yuan-shu-ju-rong-he-shi-kuang/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151746.png" class="responsive-img" alt="研一下-海表面风和海浪多源数据融合实况">
+                        
+                        <span class="card-title">研一下-海表面风和海浪多源数据融合实况</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                    研究生JustTry
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">430.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

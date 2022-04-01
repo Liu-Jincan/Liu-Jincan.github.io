@@ -1,0 +1,1936 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="07-阅读：nansencenter-DA-tutorials-2021, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>07-阅读：nansencenter-DA-tutorials-2021 | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327135302.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">07-阅读：nansencenter-DA-tutorials-2021</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%90%8C%E5%8C%96/" class="post-category">
+                                数据同化
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-02-28
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-03-27
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    4.5k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="参考资料：nansencenter-DA-tutorials-2021"><a href="#参考资料：nansencenter-DA-tutorials-2021" class="headerlink" title="参考资料：nansencenter-DA-tutorials-2021"></a><center>参考资料：nansencenter-DA-tutorials-2021</center></h2><ul>
+<li>github仓库：<a target="_blank" rel="noopener" href="https://github.com/nansencenter/DA-tutorials">https://github.com/nansencenter/DA-tutorials</a></li>
+</ul>
+<h2 id="README-md：Introduction-to-data-assimilation-and-the-EnKF"><a href="#README-md：Introduction-to-data-assimilation-and-the-EnKF" class="headerlink" title="README.md：Introduction to data assimilation and the EnKF"></a>README.md：Introduction to data assimilation and the EnKF</h2><h3 id="Cloud-computing"><a href="#Cloud-computing" class="headerlink" title="Cloud computing"></a>Cloud computing</h3><p>Jump right in using one of these cloud computing providers:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://colab.research.google.com/github/nansencenter/DA-tutorials/blob/Colab"><img src="https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab"></a> (requires Google login)</li>
+<li><a target="_blank" rel="noopener" href="https://mybinder.org/v2/gh/nansencenter/DA-tutorials/master"><img src="https://camo.githubusercontent.com/581c077bdbc6ca6899c86d0acc6145ae85e9d80e6f805a1071793dbe48917982/68747470733a2f2f6d7962696e6465722e6f72672f62616467655f6c6f676f2e737667" alt="Binder"></a> (no login but can be slow to start)</li>
+</ul>
+<h3 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h3><ul>
+<li>Interactive (Jupyter notebook)</li>
+<li>Contains theory, code (Python), and exercises.</li>
+<li>Recommendation: work in pairs.</li>
+<li>Each tutorial takes ≈75 min.</li>
+<li>The tutor will circulate to assist with the exercises,<br>and summarize each section after you have worked on them.</li>
+</ul>
+<h3 id="Instructions-for-working-locally"><a href="#Instructions-for-working-locally" class="headerlink" title="Instructions for working locally"></a>Instructions for working locally</h3><p>You can also run these notebooks on your own (Linux/Windows/Mac) computer. This is a bit snappier than running them online.</p>
+<ol>
+<li><p><strong>Prerequisite</strong>: Python 3.7.<br>If you’re an expert, setup a python environment however you like. Otherwise: Install <a target="_blank" rel="noopener" href="https://www.anaconda.com/download">Anaconda</a>, then open the <a target="_blank" rel="noopener" href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#starting-conda">Anaconda terminal</a> and run the following commands:</p>
+<pre class="line-numbers language-none"><code class="language-none">conda create --yes --name my-env python=3.7
+conda activate my-env
+python --version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>Ensure the printed version is 3.7.<br><em>Keep using the same terminal for the commands below.</em></p>
+</li>
+<li><p><strong>Install</strong>:</p>
+<ul>
+<li>Download and unzip (or <code>git clone</code>) this repository (see the green button up top)</li>
+<li>Move the resulting folder wherever you like</li>
+<li><code>cd</code> into the folder</li>
+<li>Install requirements:<br><code>pip install -r path/to/requirements.txt</code></li>
+</ul>
+</li>
+<li><p><strong>Launch the Jupyter notebooks</strong>:</p>
+<ul>
+<li>Launch the “notebook server” by executing:<br><code>jupyter-notebook</code><br>This will open up a page in your web browser that is a file navigator.</li>
+<li>Enter the folder <code>DA-tutorials/notebooks</code>, and click on a tutorial (<code>T1... .ipynb</code>).</li>
+</ul>
+</li>
+</ol>
+<h2 id="Jupyter-实现-code"><a href="#Jupyter-实现-code" class="headerlink" title="Jupyter 实现 code"></a>Jupyter 实现 code</h2><h3 id="环境搭建-打开Jupyter"><a href="#环境搭建-打开Jupyter" class="headerlink" title="环境搭建+打开Jupyter"></a>环境搭建+打开Jupyter</h3><ol>
+<li><p>下载github项目的文件夹<code>DA-tutorials-master</code>，在pycharm上以项目的形式打开<code>DA-tutorials-master</code>文件夹，通过Anaconda，为项目创建一个新环境<code>DA-tutorials-master</code>。（<strong>py3.7版本</strong>）</p>
+<blockquote>
+<p>在pycharm~~</p>
+</blockquote>
+</li>
+<li><p>安装依赖包<code>requirements.txt</code>；</p>
+<ul>
+<li><p>pycharm下</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220228201752.png"></p>
+<p><strong>pycharm上可能还是会出现一些包没有安装上</strong></p>
+</li>
+<li><p>建议在Anaconda Prompt中下载（<strong>这种批量安装形式，太棒了</strong>~~）</p>
+<pre class="line-numbers language-none"><code class="language-none">conda info -e
+conda activate DA-tutorials-master
+
+进入下载的github项目的文件夹目录下
+d:
+cd D:\DA-tutorials-master
+
+pip install -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+<li><p>在Anaconda Prompt中激活<code>DA-tutorials-master</code>环境，进入下载的github项目的文件夹目录下，<code>jupyter-notebook</code></p>
+</li>
+<li><p>在<code>jupyter</code>验证是不是对应的环境：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220228210213.png"></p>
+</li>
+</ol>
+<h3 id="T1-Data-assimilation-DA-amp-the-ensemble-Kalman-filter-EnKF"><a href="#T1-Data-assimilation-DA-amp-the-ensemble-Kalman-filter-EnKF" class="headerlink" title="T1: Data assimilation (DA) &amp; the ensemble Kalman filter (EnKF)"></a>T1: Data assimilation (DA) &amp; the ensemble Kalman filter (EnKF)</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220228212309.png"></p>
+<h4 id="Jupyter-notebooks-is"><a href="#Jupyter-notebooks-is" class="headerlink" title="Jupyter notebooks is:"></a>Jupyter notebooks is:</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301121353.png"></p>
+<h4 id="Data-assimilation-DA-is"><a href="#Data-assimilation-DA-is" class="headerlink" title="Data assimilation (DA) is:"></a>Data assimilation (DA) is:</h4><ul>
+<li>the calibration of big models with big data;</li>
+<li>the fusion of forecasts with observations.</li>
+</ul>
+<p>This illustrated on the right (source: Data Assimilation Research Team, <a target="_blank" rel="noopener" href="http://www.aics.riken.jp/">www.aics.riken.jp</a>) as a “bridge” between data and models.</p>
+<p>The problem of <strong>DA</strong> fits well within the math/stats theory of <strong>state estimation</strong> and <strong>sequential inference</strong>. A concise theoretical overview of DA is given by Wikle and Berliner: <a target="_blank" rel="noopener" href="http://web-static-aws.seas.harvard.edu/climate/pdf/2007/Wikle_Berliner_InPress.pdf">A Bayesian tutorial for data assimilation</a></p>
+<p>Modern DA builds on state estimation techniques such as the <strong>Kalman filter (KF)</strong>, which is an algorithm that recursively performs a form of least-squares regression. It was developed to steer the Apollo mission rockets to the moon, but also has applications outside of control systems, such as speech recognition, video tracking, and finance. An <a target="_blank" rel="noopener" href="http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/">introduction by pictures</a> is provided by Tim Babb. An <a target="_blank" rel="noopener" href="https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python">interactive tutorial</a> has been made by Roger Labbe.</p>
+<p>When it was first proposed to apply the KF to DA (specifically, weather forecasting), the idea sounded ludicrous because of some severe <strong>technical challenges in DA (vs. “classic” state estimation)</strong>:</p>
+<ul>
+<li>size of data and models;</li>
+<li>nonlinearity of models;</li>
+<li>sparsity and inhomogeneous-ness of data.</li>
+</ul>
+<p>Some of these challenges may be recognized in the video below.</p>
+<h4 id="The-EnKF-is"><a href="#The-EnKF-is" class="headerlink" title="The EnKF is:"></a>The EnKF is:</h4><p>an ensemble (Monte-Carlo) formulation of the KF that manages (fairly well) to deal with the above challenges in DA.</p>
+<p>For those familiar with the method of 4D-Var, <strong>further advantages of the EnKF</strong> include it being:</p>
+<ul>
+<li>Non-invasive: the models are treated as black boxes, and no explicit Jacobian is required.</li>
+<li>Bayesian:<ul>
+<li>provides ensemble of possible realities;<ul>
+<li>arguably the most practical form of “uncertainty quantification”;</li>
+<li>ideal way to initialize “ensemble forecasts”;</li>
+</ul>
+</li>
+<li>uses “flow-dependent” background covariances in the analysis.</li>
+</ul>
+</li>
+<li>Embarrassingly parallelizable:<ul>
+<li>distributed across realizations for model forecasting;</li>
+<li>distributed across local domains for observation analysis.</li>
+</ul>
+</li>
+</ul>
+<p>The rest of this tutorial provides an EnKF-centric presentation of DA; it also has a <a target="_blank" rel="noopener" href="http://127.0.0.1:8888/notebooks/notebooks/resources/companion/DA_tut.pdf">theoretical companion</a>.</p>
+<h4 id="DAPPER-example"><a href="#DAPPER-example" class="headerlink" title="DAPPER example"></a>DAPPER example</h4><p>This tutorial builds on the underlying package, DAPPER, made for academic research in DA and its dissemination. For example, the code below is taken from <code>DAPPER/example_1.py</code>. It illustrates DA on a small toy problem.</p>
+<p>Run the cells in order and try to interpret the output.</p>
+<p><em>Don’t worry</em> if you can’t understand what’s going on – we will discuss it later throughout the tutorials.</p>
+<h4 id="图说卡尔曼滤波，一份通俗易懂的教程"><a href="#图说卡尔曼滤波，一份通俗易懂的教程" class="headerlink" title="图说卡尔曼滤波，一份通俗易懂的教程"></a>图说卡尔曼滤波，一份通俗易懂的教程</h4><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/39912633">https://zhuanlan.zhihu.com/p/39912633</a></p>
+<h4 id="Exercises"><a href="#Exercises" class="headerlink" title="Exercises"></a>Exercises</h4><p>Exercises marked with an asterisk (*) are <em>optional.</em></p>
+<hr>
+<p><strong>Exc 1.2:</strong> Word association. Fill in the <code>X</code>‘s in the table to group the words according to meaning.</p>
+<pre class="line-numbers language-none"><code class="language-none">Filtering, Sample, Random, Measurements, Kalman filter (KF), Monte-Carlo, Observations, Set of draws, State estimation, Data fusion
+Data Assimilation (DA)     Ensemble      Stochastic     Data        
+------------------------------------------------------------
+X                          X             X              X           
+X                          X             X              X           
+X                          
+X<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">show_answer('thesaurus 1')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>executed in 15ms, finished 21:18:09 2022-02-28</p>
+<pre class="line-numbers language-none"><code class="language-none">Data Assimilation (DA)     Ensemble      Stochastic     Data        
+Filtering                  Sample        Random         Measurements
+Kalman filter (KF)         Set of draws  Monte-Carlo    Observations
+State estimation           
+Data fusion                <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>“The answer” is given from the perspective of DA. Do you agree with it?</li>
+<li>Can you describe the (important!) nuances between the similar words?</li>
+</ul>
+<hr>
+<p><strong>Exc 1.3*:</strong> Word association (advanced). Group these words:</p>
+<pre class="line-numbers language-none"><code class="language-none">Inverse problems, Sample point, Probability, Particle, Sequential, Inversion, Realization, Relative frequency, Iterative, Estimation, Single draw, Serial, Approximation, Regression, Fitting
+Statistical inference    Ensemble member     Quantitative belief    Recursive 
+-----------------------------------------------------------------------------
+X                        X                   X                      X         
+X                        X                   X                      X         
+X                        X                                          X         
+X                        X
+X                        
+X                        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">show_answer('thesaurus 2')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>executed in 24ms, finished 21:37:56 2022-02-28</p>
+<pre class="line-numbers language-none"><code class="language-none">Statistical inference    Ensemble member     Quantitative belief    Recursive 
+Inverse problems         Sample point        Probability            Sequential
+Inversion                Realization         Relative frequency     Iterative 
+Estimation               Single draw                                Serial    
+Approximation            Particle
+Regression               
+Fitting                  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<p><strong>Exc 1.5*:</strong> Prepare to discuss the following questions. Use any tool at your disposal.</p>
+<ul>
+<li>(a) What is DA?</li>
+<li>(b) What are “state variables”? How do they differ from parameters?</li>
+<li>(c) What is a “dynamical system”?</li>
+<li>(d) Is DA a science, an engineering art, or a dark art?</li>
+<li>(e) What is the point of “Hidden Markov Models”?</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">show_answer('Discussion topics 1')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>executed in 32ms, finished 21:38:46 2022-02-28</p>
+<ul>
+<li>(a). State estimation for large systems.</li>
+<li>(b). States are (unknown) variables that change in time.<br>For a given dynamical system, the chosen parameterisation<br>should contain all prognostic variables, and be fairly non-redundant.</li>
+<li>(c). Stuff that changes in time.</li>
+<li>(d). In principle it’s a science. In practice…</li>
+<li>(e). Abstract concept to break the problem down into smaller, recursive, problems.<br>DAGs. Formalises the concept of hidden variables (states).</li>
+</ul>
+<h3 id="QT：非常好的一个jupyter交互方式（workspace）"><a href="#QT：非常好的一个jupyter交互方式（workspace）" class="headerlink" title="QT：非常好的一个jupyter交互方式（workspace）"></a>QT：非常好的一个jupyter交互方式（workspace）</h3><p><code>from resources.workspace import *</code>：</p>
+<p><code>resources</code>文件夹下的<code>workspace.py</code>：</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token triple-quoted-string string">"""Load tutorials workspace."""</span>
+
+<span class="token keyword">import</span> matplotlib <span class="token keyword">as</span> mpl
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    <span class="token keyword">import</span> google<span class="token punctuation">.</span>colab
+    <span class="token comment"># Colab only supports mpl inline backend =&gt; no point loading other.</span>
+
+    <span class="token comment"># Make figures and fonts larger.</span>
+    <span class="token comment"># This must not be in 1st cell of the notebook, coz Colab does</span>
+    <span class="token comment"># %matplotlib inline at startup (I think), which resets rcParams.</span>
+    mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'font.size'</span><span class="token punctuation">:</span> <span class="token number">15</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'figure.figsize'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">except</span> ImportError<span class="token punctuation">:</span>
+    <span class="token comment"># Use INLINE and INTERACTIVE (zoom, pan, etc) backend,</span>
+    <span class="token comment"># before dapper does plt.ion().</span>
+    mpl<span class="token punctuation">.</span>use<span class="token punctuation">(</span><span class="token string">'nbAgg'</span><span class="token punctuation">)</span> <span class="token comment"># = %matplotlib notebook in newer jupyter.</span>
+    <span class="token comment"># Note: Why do I sometimes use %matplotlib inline?</span>
+    <span class="token comment"># Coz interactive steals focus from sliders when using arrow keys.</span>
+    <span class="token comment"># Since Colab is inline anyways, this should not be in its branch,</span>
+    <span class="token comment"># to avoid resetting the rcParams.</span>
+
+
+<span class="token comment"># Load DAPPER</span>
+<span class="token keyword">from</span> dapper <span class="token keyword">import</span> <span class="token operator">*</span>
+
+<span class="token comment"># Load answers</span>
+<span class="token keyword">from</span> <span class="token punctuation">.</span>answers <span class="token keyword">import</span> answers<span class="token punctuation">,</span> show_answer<span class="token punctuation">,</span> show_example
+
+<span class="token comment"># Load widgets</span>
+<span class="token keyword">from</span> ipywidgets <span class="token keyword">import</span> <span class="token operator">*</span>
+
+
+<span class="token comment">####################################</span>
+<span class="token comment"># DA video</span>
+<span class="token comment">####################################</span>
+<span class="token keyword">import</span> io
+<span class="token keyword">import</span> base64
+<span class="token keyword">from</span> IPython<span class="token punctuation">.</span>display <span class="token keyword">import</span> HTML
+<span class="token keyword">def</span> <span class="token function">envisat_video</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  caption <span class="token operator">=</span> <span class="token triple-quoted-string string">"""Illustration of DA for the ozone layer in 2002.
+  &lt;br&gt;&lt;br&gt;
+  LEFT: Satellite data (i.e. all that is observed).
+  RIGHT: Simulation model with assimilated data.
+  &lt;br&gt;&lt;br&gt;
+  Could you have perceived the &lt;a href='http://dx.doi.org/10.1175/JAS-3337.1'&gt;splitting of the ozone hole.&lt;/a&gt; only from the satellite data?
+  &lt;br&gt;&lt;br&gt;
+  Attribution: William A. Lahoz, DARC.
+  """</span>
+  video <span class="token operator">=</span> io<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'./resources/darc_envisat_analyses.mp4'</span><span class="token punctuation">,</span> <span class="token string">'r+b'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  encoded <span class="token operator">=</span> base64<span class="token punctuation">.</span>b64encode<span class="token punctuation">(</span>video<span class="token punctuation">)</span>
+  vid <span class="token operator">=</span> HTML<span class="token punctuation">(</span>data<span class="token operator">=</span><span class="token triple-quoted-string string">'''
+  &lt;figure style="width:580px;"&gt;
+  &lt;video alt="{1}" controls style="width:550px;"&gt;
+  &lt;source src="data:video/mp4;base64,{0}" type="video/mp4" /&gt;
+  &lt;/video&gt;
+  &lt;figcaption style="background-color:#d9e7ff;"&gt;{1}&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  '''</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>encoded<span class="token punctuation">.</span>decode<span class="token punctuation">(</span><span class="token string">'ascii'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>caption<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> vid
+
+
+<span class="token comment">####################################</span>
+<span class="token comment"># EnKF animation</span>
+<span class="token comment">####################################</span>
+<span class="token comment"># Init image</span>
+wI <span class="token operator">=</span> Image<span class="token punctuation">(</span>
+    value<span class="token operator">=</span><span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"./resources/illust_EnKF/illust_EnKF_0.png"</span><span class="token punctuation">,</span> <span class="token string">"rb"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token builtin">format</span><span class="token operator">=</span><span class="token string">'png'</span><span class="token punctuation">,</span>
+    width<span class="token operator">=</span><span class="token number">800</span><span class="token punctuation">,</span>
+    height<span class="token operator">=</span><span class="token number">600</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment"># Update</span>
+<span class="token keyword">def</span> <span class="token function">set_image</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    img <span class="token operator">=</span> <span class="token string">"./resources/illust_EnKF/illust_EnKF_"</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">".png"</span>
+    wI<span class="token punctuation">.</span>value<span class="token operator">=</span><span class="token builtin">open</span><span class="token punctuation">(</span>img<span class="token punctuation">,</span> <span class="token string">"rb"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Slider</span>
+wS <span class="token operator">=</span> interactive<span class="token punctuation">(</span>set_image<span class="token punctuation">,</span>i<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Stack elements</span>
+EnKF_animation <span class="token operator">=</span> VBox<span class="token punctuation">(</span><span class="token punctuation">[</span>wS<span class="token punctuation">,</span>wI<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">####################################</span>
+<span class="token comment"># Misc</span>
+<span class="token comment">####################################</span>
+<span class="token keyword">def</span> <span class="token function">weave_fa</span><span class="token punctuation">(</span>xf<span class="token punctuation">,</span>xa<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token string">"Make piece-wise graph for plotting f/a lines together"</span>
+    <span class="token keyword">if</span> xa <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        xa <span class="token operator">=</span> xf
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">len</span><span class="token punctuation">(</span>xf<span class="token punctuation">)</span><span class="token operator">==</span><span class="token builtin">len</span><span class="token punctuation">(</span>xa<span class="token punctuation">)</span>
+    <span class="token comment"># Assemble piece-wise lines for plotting purposes</span>
+    pw_f  <span class="token operator">=</span> array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span>xa<span class="token punctuation">[</span>k  <span class="token punctuation">]</span><span class="token punctuation">,</span> xf<span class="token punctuation">[</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> nan<span class="token punctuation">]</span> <span class="token keyword">for</span> k <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>xf<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>ravel<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    pw_a  <span class="token operator">=</span> array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span>xf<span class="token punctuation">[</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> xa<span class="token punctuation">[</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> nan<span class="token punctuation">]</span> <span class="token keyword">for</span> k <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>xf<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>ravel<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> pw_f<span class="token punctuation">,</span> pw_a
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="T2-Bayesian-inference"><a href="#T2-Bayesian-inference" class="headerlink" title="T2: Bayesian inference"></a>T2: Bayesian inference</h3><h4 id="The-Gaussian-i-e-Normal-distribution"><a href="#The-Gaussian-i-e-Normal-distribution" class="headerlink" title="The Gaussian (i.e. Normal) distribution"></a>The Gaussian (i.e. Normal) distribution</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301121112.png"></p>
+<h4 id="Bayes’-rule"><a href="#Bayes’-rule" class="headerlink" title="Bayes’ rule"></a>Bayes’ rule</h4><p>Bayes’ rule is how we do inference.<br>It defines how we should merge our prior (quantitative belief) about $x$,<br>when given an observation $y$ somehow related to $x$.</p>
+<p>For continuous random variables, $x$ and $y$, it reads:</p>
+<p>$$<br>\begin{align}<br>p(x|y) = \frac{p(x) , p(y|x)}{p(y)} , , \tag{2}<br>\end{align}<br>$$</p>
+<p>or, in words:</p>
+<p>$$<br>\text{“posterior” (pdf of $x$ given $y$)}<br>; = ;<br>\frac{\text{“prior” (pdf of $x$)}<br>; \times ;<br>\text{“likelihood” (pdf of $y$ given $x$)}}<br>{\text{“normalization” (pdf of $y$)}} , .<br>$$</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">Bayes_rule</span><span class="token punctuation">(</span>prior_values<span class="token punctuation">,</span> lklhd_values<span class="token punctuation">,</span> dx<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token string">"Numerical (pointwise) implementation of Bayes' rule."</span>
+    pp <span class="token operator">=</span> prior_values <span class="token operator">*</span> lklhd_values   <span class="token comment"># pointwise multiplication</span>
+    posterior_values <span class="token operator">=</span> pp<span class="token operator">/</span><span class="token punctuation">(</span><span class="token builtin">sum</span><span class="token punctuation">(</span>pp<span class="token punctuation">)</span><span class="token operator">*</span>dx<span class="token punctuation">)</span> <span class="token comment"># normalization</span>
+    <span class="token keyword">return</span> posterior_values<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="Derive-Bayes’-rule"><a href="#Derive-Bayes’-rule" class="headerlink" title="Derive Bayes’ rule"></a>Derive Bayes’ rule</h4><p>from the definition of <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Conditional_probability#Kolmogorov_definition">conditional pdf’s</a>.</p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Bayes'_theorem#Derivation">Wikipedia</a>.</p>
+<h4 id="Bayes规则中-为什么x表示未知，y表示已知数据，（因果论）"><a href="#Bayes规则中-为什么x表示未知，y表示已知数据，（因果论）" class="headerlink" title="Bayes规则中    为什么x表示未知，y表示已知数据，（因果论）"></a>Bayes规则中    为什么x表示未知，y表示已知数据，（因果论）</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301170323.png"></p>
+<p>由因到果，P(y|x)，是容易得到的，</p>
+<p><strong>由果到因，P(x|y)，很难得到，</strong>，（贝叶斯的因果论）</p>
+<h4 id="Bayes’-rule-in-action"><a href="#Bayes’-rule-in-action" class="headerlink" title="Bayes’ rule in action."></a>Bayes’ rule in action.</h4><p>The code below shows Bayes’ rule in action.  </p>
+<p>Again, remember that the only thing it’s doing is multiplying the <code>prior value</code> and <code>likelihood value</code> at each gridpoint.  </p>
+<p>Move the sliders with the arrow keys to animate it.</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Fix the prior's parameters</span>
+b <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment"># mean</span>
+B <span class="token operator">=</span> <span class="token number">1</span> <span class="token comment"># variance</span>
+
+<span class="token decorator annotation punctuation">@interact</span><span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>R<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">animate_Bayes</span><span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token number">4.0</span><span class="token punctuation">,</span>R<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    prior_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>b<span class="token punctuation">,</span>B<span class="token punctuation">)</span>
+    lklhd_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>y<span class="token punctuation">,</span>xx<span class="token punctuation">,</span>R<span class="token punctuation">)</span>
+    
+    postr_vals <span class="token operator">=</span> Bayes_rule<span class="token punctuation">(</span>prior_vals<span class="token punctuation">,</span> lklhd_vals<span class="token punctuation">,</span> xx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>xx<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>prior_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'prior $\mathcal{N}(x|b,B)$'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>lklhd_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'likelihood $\mathcal{N}(y|x,R)$'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>postr_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'posterior - pointwise'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 2.24 ###</span>
+    <span class="token comment"># xhat, P = Bayes_rule_G1(b,B,y,R)</span>
+    <span class="token comment"># postr_vals2 = pdf_G1(xx,xhat,P)</span>
+    <span class="token comment"># plt.plot(xx,postr_vals2,'--',label='posterior - parametric\n $\mathcal{N}(x|\hat{x},P)$')</span>
+    
+    plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span>ymax<span class="token operator">=</span><span class="token number">0.6</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Bayes’-rule-如何融合信息"><a href="#Bayes’-rule-如何融合信息" class="headerlink" title="Bayes’ rule 如何融合信息"></a>Bayes’ rule 如何融合信息</h4><ul>
+<li><p>What happens to the posterior when $R \rightarrow \infty$ ?</p>
+<p>Likelihood becomes flat.<br><strong>Posterior is dominated by the prior</strong>, and becomes (in the limit) superimposed on it.</p>
+</li>
+<li><p>What happens to the posterior when $R \rightarrow 0$ ?</p>
+<p>Likelihood becomes a delta function.</p>
+<p><strong>Posterior is dominated by the likelihood</strong>, and becomes superimposed on it.</p>
+</li>
+<li><p>Move around $y$. What is the posterior’s location (mean/mode) when $R = B$ ?</p>
+<p>It’s <strong>located halfway</strong> between the prior/likelihood ∀𝑦.</p>
+</li>
+<li><p>Does the posterior scale (width) depend on $y$?</p>
+<p>No</p>
+</li>
+<li><p>Consider the shape (ignoring location &amp; scale) of the posterior. Does it depend on $R$ or $y$?</p>
+<p>No (in fact, we’ll see later that it remains Gaussian, and is therefore fully characterized by its mean and its variance).</p>
+</li>
+<li><p>Can you see a shortcut to computing this posterior <strong>rather than having to do the pointwise multiplication</strong>?</p>
+<p>It would seem we only need to compute its location and scale (otherwise, the shape remains unchanged).</p>
+</li>
+</ul>
+<h4 id="Bayes’-rule-一般不写出p-y"><a href="#Bayes’-rule-一般不写出p-y" class="headerlink" title="Bayes’ rule 一般不写出p(y)"></a>Bayes’ rule 一般不写出p(y)</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301173251.png"></p>
+<h4 id="高维Bayes计算量极大"><a href="#高维Bayes计算量极大" class="headerlink" title="高维Bayes计算量极大"></a>高维Bayes计算量极大</h4><p>The above animation shows Bayes’ rule in 1 dimension. Previously, we saw <strong>how a Gaussian looks in 2 dimensions</strong>. Can you imagine how Bayes’ rule looks in 2 dimensions? In higher dimensions, these things get difficult to imagine, let alone visualize.</p>
+<p>Similarly, the size of the calculations required for Bayes’ rule poses a difficulty. Indeed, the following exercise shows that (pointwise) multiplication for all grid points becomes <strong>preposterous</strong> in high dimensions.</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301174906.png"></p>
+<blockquote>
+<p><code>↑ M 表示Bayes中变量x的维度，例如，维度为20，表示有 20个变量</code></p>
+<p><code>↑ N 表示Bayes中每个变量的？？？？</code></p>
+</blockquote>
+<h4 id="解决高维贝叶斯的问题：高斯-高斯贝叶斯"><a href="#解决高维贝叶斯的问题：高斯-高斯贝叶斯" class="headerlink" title="解决高维贝叶斯的问题：高斯-高斯贝叶斯"></a>解决高维贝叶斯的问题：高斯-高斯贝叶斯</h4><p>In response to this computational difficulty, we try to be smart and do something more analytical (“pen-and-paper”): we <strong>only compute the parameters (mean and (co)variance)</strong> of the posterior pdf.</p>
+<p>This is <strong>doable and quite simple in the Gaussian-Gaussian case</strong>:  </p>
+<p>With a prior $p(x) = \mathcal{N}(x \mid b,B)$ and a likelihood $p(y|x) = \mathcal{N}(y \mid x,R)$,<br>the posterior is<br>$$<br>\begin{align}<br>p(x|y)<br>&amp;= \mathcal{N}(x \mid \hat{x},P) \tag{4} , ,<br>\end{align}<br>$$<br>where, in the <strong>univariate (1-dimensional) case</strong>:<br>$$<br>\begin{align}<br>    P &amp;= 1/(1/B + 1/R) , , \tag{5} \<br>  \hat{x} &amp;= P(b/B + y/R) , .  \tag{6}<br>\end{align}<br>$$</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301180048.png"></p>
+</blockquote>
+<p>Do some light algebra to show that eqns (5) and (6) can be rewritten as<br>$$<br>\begin{align}<br>    P &amp;= (1-K)B , ,  \tag{8} \<br>  \hat{x} &amp;= b + K (y-b) \tag{9} , ,<br>\end{align}<br>$$<br>where $K = B/(B+R)$, which is called the “<strong>Kalman gain</strong>“. This form of the update becomes highly interesting in the multivariate case (later).</p>
+<blockquote>
+<p>Consider the formula for $K$ and its role in the previous couple of equations. Why do you think $K$ is called a “gain”?</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301180458.png"></p>
+</blockquote>
+<p>Implement a Gaussian-Gaussian Bayes’ rule (eqns 5 and 6, or eqns 8 and 9) by completing the code below.</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">Bayes_rule_G1</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span>B<span class="token punctuation">,</span>y<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    P    <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span>B<span class="token operator">+</span><span class="token number">1</span><span class="token operator">/</span>R<span class="token punctuation">)</span>
+    xhat <span class="token operator">=</span> P<span class="token operator">*</span><span class="token punctuation">(</span>b<span class="token operator">/</span>B<span class="token operator">+</span>y<span class="token operator">/</span>R<span class="token punctuation">)</span>
+    <span class="token comment"># Gain version:</span>
+    <span class="token comment">#     KG   = B/(B+R)</span>
+    <span class="token comment">#     P    = (1-KG)*B</span>
+    <span class="token comment">#     xhat = b + KG*(y-b)</span>
+    <span class="token keyword">return</span> xhat<span class="token punctuation">,</span>P
+    <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Go back to the above animation code, and uncomment the block that uses <code>Bayes_rule_G1()</code>. Re-run.<br>Make sure its curve coincides with that which uses pointwise multiplication (i.e. <code>Bayes_rule()</code>).<br><strong>This is the main secret of the “Kalman filter”</strong>.</p>
+<blockquote>
+<p><code>↑ 卡尔曼滤波的秘密~~核心~</code></p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Fix the prior's parameters</span>
+b <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment"># mean</span>
+B <span class="token operator">=</span> <span class="token number">1</span> <span class="token comment"># variance</span>
+
+<span class="token decorator annotation punctuation">@interact</span><span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>R<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">animate_Bayes</span><span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token number">4.0</span><span class="token punctuation">,</span>R<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    prior_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>b<span class="token punctuation">,</span>B<span class="token punctuation">)</span>
+    lklhd_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>y<span class="token punctuation">,</span>xx<span class="token punctuation">,</span>R<span class="token punctuation">)</span>
+    
+    postr_vals <span class="token operator">=</span> Bayes_rule<span class="token punctuation">(</span>prior_vals<span class="token punctuation">,</span> lklhd_vals<span class="token punctuation">,</span> xx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>xx<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>prior_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'prior $\mathcal{N}(x|b,B)$'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>lklhd_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'likelihood $\mathcal{N}(y|x,R)$'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>postr_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'posterior - pointwise'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 2.24 ###</span>
+    xhat<span class="token punctuation">,</span> P <span class="token operator">=</span> Bayes_rule_G1<span class="token punctuation">(</span>b<span class="token punctuation">,</span>B<span class="token punctuation">,</span>y<span class="token punctuation">,</span>R<span class="token punctuation">)</span>
+    postr_vals2 <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>xhat<span class="token punctuation">,</span>P<span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>postr_vals2<span class="token punctuation">,</span><span class="token string">'--'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'posterior - parametric\n $\mathcal{N}(x|\hat{x},P)$'</span><span class="token punctuation">)</span>
+    
+    plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span>ymax<span class="token operator">=</span><span class="token number">0.6</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Questions related to the above animation:</p>
+<p>…</p>
+<h4 id="Why-are-we-so-fond-of-the-Gaussian-assumption"><a href="#Why-are-we-so-fond-of-the-Gaussian-assumption" class="headerlink" title="Why are we so fond of the Gaussian assumption?"></a>Why are we so fond of the Gaussian assumption?</h4><h3 id="T3-Univariate-Kalman-filtering"><a href="#T3-Univariate-Kalman-filtering" class="headerlink" title="T3: Univariate Kalman filtering"></a>T3: Univariate Kalman filtering</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> resources<span class="token punctuation">.</span>workspace <span class="token keyword">import</span> <span class="token operator">*</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Many mathematical methods are tagged as “least squares”. They typically have one thing in common: some sum of squared terms is being minimized. </p>
+<p>Both (least-squares) linear regression and Kalman filtering (KF) may be derived from “least squares”. Do they yield the same estimate (when applied to the linear regression problem)? That’s what we’ll investigate…</p>
+<blockquote>
+<p><code>↑ 线性回归中最小二乘，KF中的最小二乘，的理解</code></p>
+</blockquote>
+<h4 id="A-straight-line-example"><a href="#A-straight-line-example" class="headerlink" title="A straight-line example"></a>A straight-line example</h4><p>Consider the straight line<br>$$<br>\begin{align}<br>x_k = a k , , \tag{1}<br>\end{align}<br>$$<br>and suppose we have observations ($y$) of the line, but corrupted by noise ($r$):<br>$$<br>\begin{align}<br>y_k &amp;= x_k + r_k , , \tag{2}<br>\end{align}<br>$$<br>where $r_k \sim \mathcal{N}(0, R)$ for some $R&gt;0$.</p>
+<p>The code below sets up an experiment based on eqns. (1) and (2).</p>
+<p>Parameters:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">0.4</span>  <span class="token comment"># Slope (xx[k] = a*k) parameter. Unknown to be estimated.</span>
+K <span class="token operator">=</span> <span class="token number">10</span>   <span class="token comment"># Length of experiment (final time index)</span>
+R <span class="token operator">=</span> <span class="token number">1</span>    <span class="token comment"># Observation noise strength</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>Simulate a sequence of truth (x) and observation (y).</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Recall the naming convention: xx and yy hold time series of x and y.</span>
+xx <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># truth states</span>
+yy <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># obs</span>
+
+<span class="token keyword">for</span> k <span class="token keyword">in</span> <span class="token number">1</span><span class="token operator">+</span>arange<span class="token punctuation">(</span>K<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    xx<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> a<span class="token operator">*</span>k
+    yy<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> xx<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">+</span> sqrt<span class="token punctuation">(</span>R<span class="token punctuation">)</span><span class="token operator">*</span>randn<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># The obs at k==0 should not be used (since we know xx[0]==0, it is worthless).</span>
+yy<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>nan<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Let’s visualize the experiment:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token decorator annotation punctuation">@interact</span><span class="token punctuation">(</span>k<span class="token operator">=</span>IntSlider<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">max</span><span class="token operator">=</span>K<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">plot_experiment</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    kk <span class="token operator">=</span> arange<span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>xx<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'true state ($x$)'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>yy<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k*'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'noisy obs ($y$)'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 3.4 ###</span>
+    <span class="token comment"># plt.plot(kk,kk*lin_reg(k) ,'r' ,label='Linear regress.')</span>
+
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 3.8 ###</span>
+    <span class="token comment"># pw_bb, pw_xxhat = weave_fa(bb,xxhat)</span>
+    <span class="token comment"># pw_kf, pw_ka    = weave_fa(arange(K+1))    </span>
+    <span class="token comment"># plt.plot(pw_kf[:3*k],pw_bb[:3*k]     ,'c'  ,label='KF forecasts')</span>
+    <span class="token comment"># plt.plot(pw_ka[:3*k],pw_xxhat[:3*k]  ,'b'  ,label='KF analyses')</span>
+    <span class="token comment"># #plt.plot(kk,kk*xxhat[k]/k           ,'g--',label='KF extrapolated')</span>
+
+    plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1.01</span><span class="token operator">*</span>K<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1.2</span><span class="token operator">*</span>a<span class="token operator">*</span>K<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'time index (k)'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'$x$, $y$, and $\hat{x}$'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'upper left'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301141030.png" style="zoom:100%;">
+
+<h4 id="Estimation-by-linear-regression"><a href="#Estimation-by-linear-regression" class="headerlink" title="Estimation by linear regression"></a>Estimation by linear regression</h4><p>The observations eqn. (2)<br>yields the <strong>likelihood</strong><br>$$<br>\begin{align}<br>p(y_k|x_k) = \mathcal{N}(y_k \mid x_k,R) , . \tag{3}<br>\end{align}<br>$$<br>Hopefully this is intuitive; otherwise, a derivation is provided in T4.</p>
+<p>(Least-squares) linear regression minimizes the <strong>cost/objective function</strong><br>$$<br>\begin{align}<br>J_K(a) = \sum_{k=1}^K (y_k - a k)^2 , ,  \tag{4}<br>\end{align}<br>$$</p>
+<h5 id="Exc-3-2-3-4-The-minimization-estimator"><a href="#Exc-3-2-3-4-The-minimization-estimator" class="headerlink" title="Exc 3.2-3.4: The minimization estimator"></a><strong>Exc 3.2-3.4: The minimization estimator</strong></h5><p>Use eqns. (1) and (2) to show that minimizing $J_K$ yields <strong>the same optimum location</strong>, $\hat{a}$, as maximizing the likelihood $p, (y_1, \ldots, y_K ;|; a)$.</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">show_answer<span class="token punctuation">(</span><span class="token string">'LinReg deriv a'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301141750.png" style="zoom:100%;">
+
+<p>The minimization yields the estimator<br>$$<br>\begin{align}<br>\hat{a} = \frac{\sum_{k=1}^K {k} y_{k}}{\sum_{k=1}^K {k}^2} , . \tag{6}<br>\end{align}<br>$$<br>Derive (6) from (4).</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301142103.png" style="zoom:100%;">
+
+<p>Code up the linear regression estimator (6).</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">lin_reg</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token string">"Liner regression estimator based on observations y_1, ..., y_k."</span>
+    <span class="token comment">### INSERT ANSWER HERE ###</span>
+    kk <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">+</span>arange<span class="token punctuation">(</span>k<span class="token punctuation">)</span>
+    a <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>kk<span class="token operator">*</span>yy<span class="token punctuation">[</span>kk<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>kk<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Then, go back to the animation above and uncomment the block that plots the its estimates. If you did it right, then the estimated line should look reasonable.</p>
+<p>In the following we tackle the same problem, but using the KF.</p>
+<p>Let’s visualize the experiment:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token decorator annotation punctuation">@interact</span><span class="token punctuation">(</span>k<span class="token operator">=</span>IntSlider<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">max</span><span class="token operator">=</span>K<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">plot_experiment</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    kk <span class="token operator">=</span> arange<span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>xx<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'true state ($x$)'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>yy<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k*'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'noisy obs ($y$)'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 3.4 ###</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>kk<span class="token operator">*</span>lin_reg<span class="token punctuation">(</span>k<span class="token punctuation">)</span> <span class="token punctuation">,</span><span class="token string">'r'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'Linear regress.'</span><span class="token punctuation">)</span>
+
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 3.8 ###</span>
+    <span class="token comment"># pw_bb, pw_xxhat = weave_fa(bb,xxhat)</span>
+    <span class="token comment"># pw_kf, pw_ka    = weave_fa(arange(K+1))    </span>
+    <span class="token comment"># plt.plot(pw_kf[:3*k],pw_bb[:3*k]     ,'c'  ,label='KF forecasts')</span>
+    <span class="token comment"># plt.plot(pw_ka[:3*k],pw_xxhat[:3*k]  ,'b'  ,label='KF analyses')</span>
+    <span class="token comment"># #plt.plot(kk,kk*xxhat[k]/k           ,'g--',label='KF extrapolated')</span>
+
+    plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1.01</span><span class="token operator">*</span>K<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1.2</span><span class="token operator">*</span>a<span class="token operator">*</span>K<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'time index (k)'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'$x$, $y$, and $\hat{x}$'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'upper left'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301142719.png"></p>
+<h4 id="Estimation-by-the-univariate-Kalman-filter-KF"><a href="#Estimation-by-the-univariate-Kalman-filter-KF" class="headerlink" title="Estimation by the (univariate) Kalman filter (KF)"></a>Estimation by the (univariate) Kalman filter (KF)</h4><p>The KF assumes that the truth (or “true state”, or “nature”), $x_k$, “evolves in time (indexed by $k$)” according to some <strong>linear dynamical model</strong>:<br>$$<br>\begin{align}<br>x_{k} = \mathcal{M}<em>{k-1} x</em>{k-1} + q_{k-1} , , \tag{Dyn} , .<br>\end{align}<br>$$<br>where $q_k$ is a random noise (process) that accounts for <strong>model errors</strong>.</p>
+<blockquote>
+<p><code>↑ DA中的模型误差，知道是啥了~~</code></p>
+</blockquote>
+<p>For now, $\mathcal{M}_{k-1}$ is just a number. In later tutorials it will be generalized to <strong>matrices, and eventually nonlinear operators</strong>.</p>
+<h5 id="Exc-3-6-a-reformulate-problem"><a href="#Exc-3-6-a-reformulate-problem" class="headerlink" title="Exc 3.6 (a): reformulate  problem"></a><strong>Exc 3.6 (a):</strong> reformulate  problem</h5><p>For the KF we need to <strong>reformulate the problem</strong> of estimating the parameter $a$ as the problem of estimating $x_k$.  </p>
+<blockquote>
+<p><code>↑ 将原来的问题转变成KF形式</code></p>
+</blockquote>
+<p>Derive the “forecast/dynamical model” $\mathcal{M}<em>k$ (a function of $k&gt;0$ only) such that the recursion $x</em>{k+1} = \mathcal{M}_k x_k$ is <strong>equivalent to eqn (1)</strong>.</p>
+<p>Then implement it below:</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">Mod</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment">#return ### INSERT ANSWER HERE ###</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span>k<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="Exc-3-6-a-KF-is-optimal"><a href="#Exc-3-6-a-KF-is-optimal" class="headerlink" title="Exc 3.6 (a): KF is optimal"></a>Exc 3.6 (a): KF is optimal</h5><p>Explain in which sense the <strong>KF is optimal</strong> for a larger class of problems than linear regression.</p>
+<p><strong>Linear regression is only</strong> optimal if the truth is a straight line, i.e. if  $\mathcal{M}_{k}=(k+1)/k$.</p>
+<p>Compared to the KF, which accepts a general $\mathcal{M}_{k}$, that is <strong>so restrictive</strong> that one does not usually think of the methods as belonging to the same class at all.</p>
+<blockquote>
+<p><code>↑ 线性回归太严格，KF更具有普遍性</code></p>
+</blockquote>
+<p>So although the KF (and its implementation below) may seem like “overkill” for this problem, this “heavy machinery” can do a lot more, and will pay off later.</p>
+<h5 id="Exc-3-7-The-KF-recursively-estimates-x-k-in-successive-cycles-which-consist-of-two-steps"><a href="#Exc-3-7-The-KF-recursively-estimates-x-k-in-successive-cycles-which-consist-of-two-steps" class="headerlink" title="Exc 3.7:  The KF recursively estimates $x_k$ in successive cycles which consist of two steps"></a>Exc 3.7:  The KF recursively estimates $x_k$ in successive cycles which consist of two steps</h5><ul>
+<li><strong>The forecast step</strong></li>
+</ul>
+<p>It is supposed that $;;;\quad x_{k-1} \sim \mathcal{N}(\hat{x}<em>{k-1}, P</em>{k-1})$,  </p>
+<p>and that (independently) $q_{k-1} \sim \mathcal{N}(0, Q)$.  </p>
+<p>Show that <strong>the mean and variance of $x_k$</strong>, respectively, are given by:<br>$$<br>b_k = \mathcal{M}<em>{k-1} \hat{x}</em>{k-1}<br>$$</p>
+<p>$$<br>B_k = \mathcal{M}<em>{k-1}^2 P</em>{k-1} + Q<br>$$</p>
+<blockquote>
+<p><code>↑ 求解KF过程中的均值和方差</code></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301151946.png"></p>
+</blockquote>
+<p>It can be shown that <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Sum_of_normally_distributed_random_variables#Proof_using_convolutions">the sum of two Gaussian random variables</a>  is again a Gaussian.  </p>
+<p>Thus, <strong>the forecast step just requires computing the new moments (mean and variance)</strong>.</p>
+<ul>
+<li><strong>The analysis step</strong></li>
+</ul>
+<p>“updates” the prior (forecast), $\mathcal{N}(x_k \mid ; b_k,; B_k)$,  </p>
+<p>based on the likelihood, $\quad;;;, \mathcal{N}(y_k \mid , x_k, ; R)$,  </p>
+<p>into the posterior (analysis), $; ; , \mathcal{N}(x_k \mid ; \hat{x}<em>{k}, , P</em>{k})$.  </p>
+<p>The update formulae was derived as the <strong>Gaussian-Gaussian Bayes’ rule</strong> in <a href="T2%20-%20Bayesian%20inference.ipynb#Gaussian-Gaussian-Bayes">the previous tutorial</a>.</p>
+<p>This completes the cycle, which can then restart with the forecast from $k$ to $k+1$.</p>
+<hr>
+<h5 id="Exc-3-8-Implement-the-KF-to-estimate-x-k-for-k-1-ldots-K"><a href="#Exc-3-8-Implement-the-KF-to-estimate-x-k-for-k-1-ldots-K" class="headerlink" title="Exc 3.8: Implement the KF to estimate $x_k$ for $k=1,\ldots, K$."></a><strong>Exc 3.8:</strong> Implement the KF to estimate $x_k$ for $k=1,\ldots, K$.</h5><p><strong>NB</strong>: for this example, do not use the “<strong>Kalman gain</strong>“ form of the analysis update. This problem involves the <strong>peculiar, unrealistic situation</strong> of infinities (related to “improper priors”) at <code>k==1</code>, yielding platform-dependent behaviour. These peculiarities are of mainly of academic interest.</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">Q <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment"># Dynamical model noise strength</span>
+
+<span class="token comment"># Allocation</span>
+bb    <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># mean estimates -- prior/forecast values</span>
+xxhat <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># mean estimates -- post./analysis values</span>
+BB    <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># var  estimates -- prior/forecast values</span>
+PP    <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># var  estimates -- post./analysis values</span>
+
+<span class="token keyword">def</span> <span class="token function">KF</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token string">"Cycle k of the Kalman filter"</span>
+    <span class="token comment"># Forecast</span>
+    <span class="token keyword">if</span> k<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">:</span>
+        BB<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>inf <span class="token comment"># The "initial" prior uncertainty is infinite...</span>
+        bb<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>      <span class="token comment"># ... thus the corresponding mean is inconsequential.</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        BB<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> Mod<span class="token punctuation">(</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>PP<span class="token punctuation">[</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>Mod<span class="token punctuation">(</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> Q
+        bb<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> Mod<span class="token punctuation">(</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>xxhat<span class="token punctuation">[</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+    <span class="token comment"># Analysis</span>
+    PP<span class="token punctuation">[</span>k<span class="token punctuation">]</span>    <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span>BB<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token operator">/</span>R<span class="token punctuation">)</span>
+    xxhat<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> PP<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>bb<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">/</span>BB<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">+</span> yy<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">/</span>R<span class="token punctuation">)</span>
+    <span class="token comment"># Kalman gain form:</span>
+    <span class="token comment"># KG       = BB[k] / (BB[k] + R)</span>
+    <span class="token comment"># PP[k]    = (1-KG)*BB[k]</span>
+    <span class="token comment"># xxhat[k] = bb[k]+KG*(yy[k]-bb[k])</span>
+
+<span class="token comment"># Run estimations/computations</span>
+<span class="token keyword">for</span> k <span class="token keyword">in</span> <span class="token number">1</span><span class="token operator">+</span>arange<span class="token punctuation">(</span>K<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    KF<span class="token punctuation">(</span>k<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Go back to the animation above and uncomment the block that plots the KF estimates.  </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token decorator annotation punctuation">@interact</span><span class="token punctuation">(</span>k<span class="token operator">=</span>IntSlider<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">max</span><span class="token operator">=</span>K<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">plot_experiment</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    kk <span class="token operator">=</span> arange<span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>xx<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'true state ($x$)'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>yy<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k*'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'noisy obs ($y$)'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 3.4 ###</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>kk<span class="token operator">*</span>lin_reg<span class="token punctuation">(</span>k<span class="token punctuation">)</span> <span class="token punctuation">,</span><span class="token string">'r'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'Linear regress.'</span><span class="token punctuation">)</span>
+
+    <span class="token comment">### Uncomment this block AFTER doing the Exc 3.8 ###</span>
+    pw_bb<span class="token punctuation">,</span> pw_xxhat <span class="token operator">=</span> weave_fa<span class="token punctuation">(</span>bb<span class="token punctuation">,</span>xxhat<span class="token punctuation">)</span>
+    pw_kf<span class="token punctuation">,</span> pw_ka    <span class="token operator">=</span> weave_fa<span class="token punctuation">(</span>arange<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>pw_kf<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span><span class="token punctuation">,</span>pw_bb<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span>     <span class="token punctuation">,</span><span class="token string">'c'</span>  <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'KF forecasts'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>pw_ka<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span><span class="token punctuation">,</span>pw_xxhat<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span>  <span class="token punctuation">,</span><span class="token string">'b'</span>  <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'KF analyses'</span><span class="token punctuation">)</span>
+    <span class="token comment">#plt.plot(kk,kk*xxhat[k]/k           ,'g--',label='KF extrapolated')</span>
+
+    plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1.01</span><span class="token operator">*</span>K<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1.2</span><span class="token operator">*</span>a<span class="token operator">*</span>K<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'time index (k)'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'$x$, $y$, and $\hat{x}$'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'upper left'</span><span class="token punctuation">)</span>
+    plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301154004.png"></p>
+<p>Visually: what is the relationship between the estimates provided by the KF and by linear regression?</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301154653.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301155218.png"></p>
+<h3 id="T4-Multivariate-Kalman"><a href="#T4-Multivariate-Kalman" class="headerlink" title="T4 - Multivariate Kalman"></a>T4 - Multivariate Kalman</h3><h4 id="prior-forcast-：P-x-，在预测步，求均值和方差"><a href="#prior-forcast-：P-x-，在预测步，求均值和方差" class="headerlink" title="prior(forcast)：P(x)，在预测步，求均值和方差"></a>prior(forcast)：P(x)，在预测步，求均值和方差</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301195049.png"></p>
+<h4 id="likelihood：P-y-x"><a href="#likelihood：P-y-x" class="headerlink" title="likelihood：P(y|x)"></a>likelihood：P(y|x)</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301195401.png"></p>
+<h4 id="posterior-analysis-：P-x-y-，在分析步，The-‘precision’-form-of-the-KF"><a href="#posterior-analysis-：P-x-y-，在分析步，The-‘precision’-form-of-the-KF" class="headerlink" title="posterior(analysis)：P(x|y)，在分析步，The ‘precision’ form of the KF"></a>posterior(analysis)：P(x|y)，在分析步，The ‘precision’ form of the KF</h4><p><img src="C:\Users\Liujincan2\AppData\Roaming\Typora\typora-user-images\image-20220301195821439.png" alt="image-20220301195821439"></p>
+<blockquote>
+<p><code>↑ KF的precision形式</code></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301200239.png"></p>
+<h4 id="KF的precision形式的计算很昂贵"><a href="#KF的precision形式的计算很昂贵" class="headerlink" title="KF的precision形式的计算很昂贵"></a>KF的precision形式的计算很昂贵</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301200751.png"></p>
+<h4 id="Sherman-Morrison-Woodbury-lemma-identity"><a href="#Sherman-Morrison-Woodbury-lemma-identity" class="headerlink" title="Sherman-Morrison-Woodbury lemma/identity"></a>Sherman-Morrison-Woodbury lemma/identity</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301200956.png"></p>
+<blockquote>
+<p><code>↑ SMW求逆公式</code></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301201233.png"></p>
+<blockquote>
+<p><code>↑ SMW求逆公式对B,R,V,U的要求</code></p>
+</blockquote>
+<h4 id="SMW推论1"><a href="#SMW推论1" class="headerlink" title="SMW推论1"></a>SMW推论1</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301201441.png"></p>
+<h4 id="SMW推论2"><a href="#SMW推论2" class="headerlink" title="SMW推论2"></a>SMW推论2</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301201533.png"></p>
+<h4 id="posterior-analysis-：KF的gain形式"><a href="#posterior-analysis-：KF的gain形式" class="headerlink" title="posterior(analysis)：KF的gain形式"></a>posterior(analysis)：KF的gain形式</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301201648.png"></p>
+<h3 id="T5-Time-series-analysis"><a href="#T5-Time-series-analysis" class="headerlink" title="T5 - Time series analysis"></a>T5 - Time series analysis</h3><h4 id="The-example-model"><a href="#The-example-model" class="headerlink" title="The example model"></a>The example model</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301202420.png"></p>
+<h4 id="Estimation-by-the-Kalman-filter-and-smoother-with-DAPPER"><a href="#Estimation-by-the-Kalman-filter-and-smoother-with-DAPPER" class="headerlink" title="Estimation by the Kalman filter (and smoother) with DAPPER"></a>Estimation by the Kalman filter (and smoother) with DAPPER</h4><blockquote>
+<p><code>ValueError: path is on mount 'C:', start on mount 'D:'</code></p>
+<p><code>在pycharm上运行~</code></p>
+</blockquote>
+<blockquote>
+<p><code>AttributeError: 'NoneType' object has no attribute 'session'</code></p>
+</blockquote>
+<h4 id="Estimation-by-“time-series-analysis”"><a href="#Estimation-by-“time-series-analysis”" class="headerlink" title="Estimation by “time series analysis”"></a>Estimation by “time series analysis”</h4><h4 id="Comparison"><a href="#Comparison" class="headerlink" title="Comparison"></a>Comparison</h4>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/02/28/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/07-code-nansencenter-da-tutorials-2021/">https://Liu-Jincan.github.io/2022/02/28/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/07-code-nansencenter-da-tutorials-2021/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/03/02/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/03-yue-du-ji-he-qia-er-man-lu-bo-de-li-lun-zhi-ding-yu-shi-ji-shi-xian-2003/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327135302.png" class="responsive-img" alt="03-阅读：集合卡尔曼滤波的理论制定与实际实现-2003">
+                        
+                        <span class="card-title">03-阅读：集合卡尔曼滤波的理论制定与实际实现-2003</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%90%8C%E5%8C%96/" class="post-category">
+                                    数据同化
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/02/25/yan-jiu-sheng-justtry-function/endnote-shu-ju-tong-hua/04-yue-du-shi-yong-xun-huan-shen-jing-wang-luo-jin-xing-shu-ju-tong-hua-de-guan-ce-wu-chai-xie-fang-chai-gui-fan-2021/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327135302.png" class="responsive-img" alt="04-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021">
+                        
+                        <span class="card-title">04-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%90%8C%E5%8C%96/" class="post-category">
+                                    数据同化
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">430.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
