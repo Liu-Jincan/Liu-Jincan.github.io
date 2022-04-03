@@ -1,0 +1,2464 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="03-FAQ：寻找关于fortran的项目管理方法, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>03-FAQ：寻找关于fortran的项目管理方法 | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">03-FAQ：寻找关于fortran的项目管理方法</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Fortran/" class="post-category">
+                                Fortran
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-04-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-04-03
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    7.8k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="FAQ：寻找关于fortran的项目管理方法"><a href="#FAQ：寻找关于fortran的项目管理方法" class="headerlink" title="FAQ：寻找关于fortran的项目管理方法"></a><center>FAQ：寻找关于fortran的项目管理方法</center></h1><blockquote>
+<p>关于c和C++的makefile项目：<a target="_blank" rel="noopener" href="https://github.com/mbcrawfo/GenericMakefile">https://github.com/mbcrawfo/GenericMakefile</a></p>
+<ul>
+<li>A generic makefile for use with small/medium C and C++ projects. Allows for easy project setup without the need to create tedious build rules or dependency lists. The c directory contains a makefile configured for C, while the makefile in the cpp directory is configured for C++.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>fmake：<a target="_blank" rel="noopener" href="https://github.com/szaghi/fmake">https://github.com/szaghi/fmake</a></p>
+<ul>
+<li><p><em>fmake</em> is a small script for the easy creation of makefile for Fortran (standard 90 or higher) projects. The aim is to easily create the compiling rules with the correct hierarchy for inter-dependent modules, a task that could be very boring for big project with many source files.</p>
+<p>The created makefile can produce colorful std-output and save compilation errors and warnings on separate log files.</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="umake-make，2020"><a href="#umake-make，2020" class="headerlink" title="umake/make，2020"></a>umake/make，2020</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/umake/make">https://github.com/umake/make</a></p>
+<ul>
+<li><p>The Ultimate Makefile to compile all your C, C++, Assembly and Fortran projects.</p>
+<p>Tired of installing aditional tools to compile your projects? (Automake, CMake and Ant). Missing the old days, when all you needed to do was typing <code>make</code>? Here is the solution! A single generalized Makefile which aims to compile and mix almost everything related to C, C++, Assembly and Fortran projects - with support to many executables, static and shared libraries, lexer and parser generators, dependency management,file creation and much more! Everything just 4 letters away from you.</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="starting"><a href="#starting" class="headerlink" title="starting"></a>starting</h3><p>Good tools are simple. That’s why <code>make</code> is so successful. And that’s the goal of Ultimate Makefile.</p>
+<p>In order to start, just download the Makefile:</p>
+<pre class="line-numbers language-none"><code class="language-none">curl -O https://raw.githubusercontent.com/umake/make/master/Makefile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401110032.png"></p>
+<p>To begin a new project, just type:</p>
+<pre class="line-numbers language-none"><code class="language-none">make init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>A group of directories and a git repository are now ready for you!</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401110945.png"></p>
+<h3 id="运行fortran单个文件"><a href="#运行fortran单个文件" class="headerlink" title="运行fortran单个文件"></a>运行fortran单个文件</h3><p>umake例子：<a target="_blank" rel="noopener" href="https://github.com/umake/make/blob/master/test/fortran/test_single-file.sh">https://github.com/umake/make/blob/master/test/fortran/test_single-file.sh</a></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401115840.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401122030.png"></p>
+<blockquote>
+<p>运行时间及其缓慢，7000+行代码，可读性…；</p>
+</blockquote>
+<p>This is a simple CMake tutorial project which contains some different scenarios.</p>
+<ul>
+<li><code>hello-world</code>: Demo a simplest CMake project.</li>
+<li><code>hello-world-clear</code>: Separate the output files and src files.</li>
+<li><code>hello-world-lib</code>: Demo how to make a static/shared library.</li>
+<li><code>hello-world-shared</code>: Demo how to utilize external static/shared library.</li>
+<li><code>curl</code>: Demo how to use cmake with curl.</li>
+<li><code>hello-module</code>: Demo how to use cmake find module.</li>
+<li><code>config-file</code>: Demo how to work with config.h.</li>
+<li><code>hunter-simple</code>: Demo how to use hunter and gtest.</li>
+<li><code>boost</code>: Demo how to use boost library.</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="Akagi201-learning-cmake"><a href="#Akagi201-learning-cmake" class="headerlink" title="Akagi201/learning-cmake"></a><a target="_blank" rel="noopener" href="https://github.com/Akagi201">Akagi201</a>/<strong><a target="_blank" rel="noopener" href="https://github.com/Akagi201/learning-cmake">learning-cmake</a></strong></h2><h2 id="SSSSSSSSSSSSSSSSSS-FPM"><a href="#SSSSSSSSSSSSSSSSSS-FPM" class="headerlink" title="SSSSSSSSSSSSSSSSSS FPM"></a>SSSSSSSSSSSSSSSSSS FPM</h2><h2 id="我创建的对应FPM的github项目（nice）"><a href="#我创建的对应FPM的github项目（nice）" class="headerlink" title="我创建的对应FPM的github项目（nice）"></a>我创建的对应FPM的github项目（nice）</h2><p><a target="_blank" rel="noopener" href="https://github.com/Liu-Jincan/study-fpm">https://github.com/Liu-Jincan/study-fpm</a></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="国外老哥对fpm介绍"><a href="#国外老哥对fpm介绍" class="headerlink" title="国外老哥对fpm介绍"></a>国外老哥对fpm介绍</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV145411w7Pr?p=26">https://www.bilibili.com/video/BV145411w7Pr?p=26</a></p>
+<h3 id="00-35-Outline"><a href="#00-35-Outline" class="headerlink" title="00:35 Outline"></a>00:35 Outline</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401185329.png"></p>
+<h3 id="00-53-what-problems-does-a-package-manager-solve"><a href="#00-53-what-problems-does-a-package-manager-solve" class="headerlink" title="00:53 what problems does a package manager solve?"></a>00:53 what problems does a package manager solve?</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401185211.png"></p>
+<h3 id="01-57-How-does-fpm-solve-these-problems"><a href="#01-57-How-does-fpm-solve-these-problems" class="headerlink" title="01:57 How does fpm solve these problems?"></a>01:57 How does fpm solve these problems?</h3><h4 id="01-57-managing-dependecies"><a href="#01-57-managing-dependecies" class="headerlink" title="01:57 managing dependecies"></a>01:57 managing dependecies</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401185239.png"></p>
+<h4 id="02-50-building"><a href="#02-50-building" class="headerlink" title="02:50 building"></a>02:50 building</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401185709.png"></p>
+<h4 id="03-25-testing"><a href="#03-25-testing" class="headerlink" title="03:25 testing"></a>03:25 testing</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401185843.png"></p>
+<h4 id="04-11-new-projects"><a href="#04-11-new-projects" class="headerlink" title="04:11 new projects"></a>04:11 new projects</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401185952.png"></p>
+<h4 id="04-58-finding-libraries"><a href="#04-58-finding-libraries" class="headerlink" title="04:58 finding libraries"></a>04:58 finding libraries</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401190058.png"></p>
+<h3 id="05-32-demo"><a href="#05-32-demo" class="headerlink" title="05:32 demo"></a>05:32 demo</h3><h4 id="05-32-new-projects"><a href="#05-32-new-projects" class="headerlink" title="05:32 new projects"></a>05:32 new projects</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401190319.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401190347.png"></p>
+<h4 id="07-50-testing"><a href="#07-50-testing" class="headerlink" title="07:50 testing"></a>07:50 testing</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401190501.png"></p>
+<h4 id="08-10-managing-dependencies"><a href="#08-10-managing-dependencies" class="headerlink" title="08:10 managing dependencies"></a>08:10 managing dependencies</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401190751.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401190823.png"></p>
+<h3 id="12-11-future-development"><a href="#12-11-future-development" class="headerlink" title="12:11 future development"></a>12:11 future development</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401191022.png"></p>
+<h3 id="13-25-fortran-fpm"><a href="#13-25-fortran-fpm" class="headerlink" title="13:25 fortran/fpm"></a>13:25 fortran/fpm</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401191158.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401191220.png"></p>
+<h3 id="14-08-question-听不懂…"><a href="#14-08-question-听不懂…" class="headerlink" title="14:08 question (听不懂…)"></a>14:08 question (听不懂…)</h3><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="fortran-lang-fpm"><a href="#fortran-lang-fpm" class="headerlink" title="fortran-lang/fpm"></a>fortran-lang/fpm</h2><p><a target="_blank" rel="noopener" href="https://github.com/fortran-lang/fpm">https://github.com/fortran-lang/fpm</a></p>
+<h3 id="Setting-up-fpm"><a href="#Setting-up-fpm" class="headerlink" title="Setting up fpm"></a>Setting up fpm</h3><p><a target="_blank" rel="noopener" href="https://www.msys2.org/">MSYS2</a></p>
+<p>Fpm is available as MinGW package in the MSYS2 package manager. To install fpm with pacman use</p>
+<pre class="line-numbers language-none"><code class="language-none">pacman -S mingw-w64-x86_64-fpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>Afterwards fpm will be available for usage. Currently <code>i686</code>, <code>x86_64</code> and <code>ucrt-x86_64</code> are supported MinGW architectures for fpm. For more details check the package information <a target="_blank" rel="noopener" href="https://packages.msys2.org/base/mingw-w64-fpm">here</a>.</p>
+<h3 id="Creating-a-new-project"><a href="#Creating-a-new-project" class="headerlink" title="Creating a new project"></a>Creating a new project</h3><p>Creating a new <em>fpm</em> project is as simple as running the command <code>fpm new project_name</code>. This will create a new folder in your current directory with the following contents and initialized as a git repository.</p>
+<ul>
+<li><code>fpm.toml</code> – with your project’s name and some default standard meta-data</li>
+<li><code>README.md</code> – with your project’s name</li>
+<li><code>.gitignore</code></li>
+<li><code>src/project_name.f90</code> – with a simple hello world subroutine</li>
+<li><code>app/main.f90</code> (if <code>--app</code> flag used) – a program that calls the subroutine</li>
+<li><code>test/main.f90</code> (if <code>--test</code> flag used) – an empty test program</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401130222.png"></p>
+<h3 id="Building-your-Fortran-project-with-fpm"><a href="#Building-your-Fortran-project-with-fpm" class="headerlink" title="Building your Fortran project with fpm"></a>Building your Fortran project with fpm</h3><p>Enter your Fortran project <code>cd $project_name</code>.</p>
+<p><em>fpm</em> understands the basic commands:</p>
+<ul>
+<li><p><code>fpm build</code> – build your library, executables and tests</p>
+</li>
+<li><p><code>fpm run</code> – run executables</p>
+<blockquote>
+<p>进入到project，直接就<code>fpm run</code>，会出错：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401130521.png"></p>
+<p>删掉<code>src</code>文件夹，<code>fpm run</code>，还是会出错；</p>
+</blockquote>
+</li>
+<li><p><code>fpm test</code> – run tests</p>
+</li>
+<li><p><code>fpm install</code> - installs the executables locally</p>
+</li>
+</ul>
+<p>The command <code>fpm run</code> can optionally accept the name of the specific executable to run, as can <code>fpm test</code>; like <code>fpm run specific_executable</code>. Command line arguments can also be passed to the executable(s) or test(s) with the option <code>-- some arguments</code>.</p>
+<p>See additional instructions in the <a target="_blank" rel="noopener" href="https://github.com/fortran-lang/fpm/blob/main/PACKAGING.md">Packaging guide</a> or the <a target="_blank" rel="noopener" href="https://github.com/fortran-lang/fpm/blob/main/manifest-reference.md">manifest reference</a>.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="fpm-手册doc（有中文cn）"><a href="#fpm-手册doc（有中文cn）" class="headerlink" title="fpm 手册doc（有中文cn）"></a>fpm 手册doc（有中文cn）</h2><p><a target="_blank" rel="noopener" href="https://fpm.fortran-lang.org/en/">https://fpm.fortran-lang.org/en/</a></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401132611.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="First-steps-with-fpm"><a href="#First-steps-with-fpm" class="headerlink" title="First steps with fpm"></a>First steps with fpm</h3><p>This tutorial covers the basic usage of the Fortran Package Manager (fpm) command line. It will cover the generation of a new project and the possibility to compile a project into an executable as well as the possibility to run the resulting program.</p>
+<p>To start a new project with fpm use the <em>fpm new</em> command</p>
+<pre class="line-numbers language-none"><code class="language-none">❯ fpm new first_steps<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>By default fpm creates a git repository with a dummy project in the fpm standard layout</p>
+<pre class="line-numbers language-none"><code class="language-none">❯ cd first_steps
+❯ tree .
+.
+├── README.md
+├── app
+│   └── main.f90
+├── fpm.toml
+├── src
+│   └── first_steps.f90
+└── test
+    └── check.f90
+
+3 directories, 5 files<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401134542.png"></p>
+<p>This is everything we need to start our new project. First, we inspect the package manifest, <code>fpm.toml</code>, which is populated with stub entries for us:</p>
+<p><strong>fpm.toml</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">name = "first_steps"
+version = "0.1.0"
+license = "license"
+author = "Jane Doe"
+maintainer = "jane.doe@example.com"
+copyright = "Copyright 2021, Jane Doe"
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+[install]
+library = false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>The package manifest contains all the required meta data for the new project. Next we checkout the main executable, <code>app/main.f90</code>, fpm has generated for us:</p>
+<p><strong>app/main.f90</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">program main
+  use first_steps, only: say_hello
+  implicit none
+
+  call say_hello()
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>The program already uses a module from our library, which we can find in <code>src/first_steps.f90</code>:</p>
+<p><strong>src/first_steps.f90</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">module first_steps
+  implicit none
+  private
+
+  public :: say_hello
+contains
+  subroutine say_hello
+    print *, "Hello, first_steps!"
+  end subroutine say_hello
+end module first_steps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>We can run the executable directly with the command <code>fpm run</code>:</p>
+<pre class="line-numbers language-none"><code class="language-none">❯ fpm run
+...
+ Hello, first_steps!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401135057.png"></p>
+<p>Similarly, fpm has already created a stub for testing, which can be invoked with <code>fpm test</code>:</p>
+<pre class="line-numbers language-none"><code class="language-none">❯ fpm test
+...
+ Put some tests in here!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401135235.png"></p>
+<p>Fpm will automatically track changes in your project when running your project using the <em>run</em> and <em>test</em> commands.</p>
+<p><strong>Summary</strong></p>
+<p>In this tutorial you learned how to</p>
+<ul>
+<li>create a new project from the fpm command line</li>
+<li>build and run your project executables with fpm</li>
+<li>run tests with fpm</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Adding-dependency"><a href="#Adding-dependency" class="headerlink" title="Adding dependency"></a>Adding dependency</h3><p>This tutorial covers the usage of dependencies with fpm and how to reuse existing fpm projects.</p>
+<p>In this tutorial you learned how to</p>
+<ul>
+<li>depend on another fpm project in the package manifest</li>
+<li>add development dependencies for testing</li>
+<li>use dependencies for executables</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="Using-the-standard-library（失败-gt-成功）"><a href="#Using-the-standard-library（失败-gt-成功）" class="headerlink" title="Using the standard library（失败->成功）"></a>Using the standard library（失败-&gt;成功）</h4><p>We start with a new project with fpm, we want to build a command line application to read a file, find a certain pattern and replace it. Since we do not want to write the replace function ourselves, we will use the Fortran standard library (<a target="_blank" rel="noopener" href="https://github.com/fortran-lang/stdlib">stdlib</a>) as dependency. In the package manifest we define <em>stdlib</em> in the <em>dependencies</em> table:</p>
+<p><strong>fpm.toml</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">name = "demo"
+version = "0.1.0"
+
+[dependencies]
+stdlib.git = "https://github.com/fortran-lang/stdlib"
+stdlib.branch = "stdlib-fpm"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401164308.png"></p>
+<p>Now we create a module with a procedure to perform the <strong>substitution</strong>. It requires three steps:</p>
+<ol>
+<li>reading a whole line from one unit</li>
+<li>replace the pattern in the string</li>
+<li>write the new string to an output</li>
+</ol>
+<p>We will use the <em>replace_all</em> function from the <em>stdlib_strings</em> module for this purpose. The implementation is shown here</p>
+<p><strong>src/demo.f90</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">module demo
+  use stdlib_io, only : getline
+  use stdlib_strings, only : replace_all
+  implicit none
+  private
+
+  public :: substitute
+
+contains
+
+  !&gt; Read all lines from input, replace pattern and print it to output
+  subroutine substitute(input, output, pattern, replacement)
+    !&gt; Formatted input unit
+    integer, intent(in) :: input
+    !&gt; Formatted output unit
+    integer, intent(in) :: output
+    !&gt; Pattern to replace in input
+    character(len=*), intent(in) :: pattern
+    !&gt; Replacement for pattern in output
+    character(len=*), intent(in) :: replacement
+
+    character(len=:), allocatable :: line
+    integer :: stat
+
+    do
+      call getline(input, line, stat)
+      if (stat /= 0) exit
+      write(output, '(a)') replace_all(line, pattern, replacement)
+    end do
+  end subroutine substitute
+
+end module demo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401164437.png"></p>
+<p>Finally, we need a command line driver to make use of our new function.</p>
+<p><strong>app/main.f90</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">program main
+  use, intrinsic :: iso_fortran_env, only : output_unit
+  use demo, only : substitute
+  implicit none
+  character(len=256) :: pattern, replacement, input_file
+  integer :: input
+
+  call get_command_argument(1, pattern)
+  call get_command_argument(2, replacement)
+  call get_command_argument(3, input_file)
+
+  open(newunit=input, file=input_file, status='old')
+  call substitute(input, output_unit, trim(pattern), trim(replacement))
+  close(input)
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401164554.png"></p>
+<p>We can check our command line driver by running it with fpm:</p>
+<pre class="line-numbers language-none"><code class="language-none">❯ fpm run -- demo substitute fpm.toml
+name = "substitute"
+version = "0.1.0"
+
+[dependencies]
+stdlib.git = "https://github.com/fortran-lang/stdlib"
+stdlib.branch = "stdlib-fpm"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>运行失败：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401165953.png"></p>
+<p>刘锦灿@LAPTOP-085N0595  /d/zetero/VScode/Fortran/fpm/demo<br>$ gfortran -c build/dependencies/stdlib/src/stdlib_hash_64bit.f90 -g -I build/gfortran_2A42023B310FA28D -o build/gfortran_2A42023B310FA28D/demo/build_dependencies_stdlib_src_stdlib_io_npy.f90.o</p>
+<p>错误：<strong>f951.exe: Fatal Error: Reading module ‘build/gfortran_2A42023B310FA28D/stdlib_kinds.mod’ at line 18 column 1: Unexpected EOF  compilation terminated.</strong></p>
+<p>使用 MSYS2-MinGW 64 解决</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401233324.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="Adding-a-testing-framework"><a href="#Adding-a-testing-framework" class="headerlink" title="Adding a testing framework"></a>Adding a testing framework</h4><p>Before we continue implementing new features, we want to add some tests to verify that our implementation keeps worked as we modify it. A minimalist testing framework is available with <a target="_blank" rel="noopener" href="https://github.com/fortran-lang/test-drive">test-drive</a>. Since the testing framework is only required when developing the package itself, but not for other packages which might in the future make use of our modules, we add a local dependency. The <em>test-drive</em> package is added in the <em>dev-dependencies</em> table as shown below</p>
+<p><strong>fpm.toml</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">name = "demo"
+version = "0.1.0"
+
+[dependencies]
+stdlib.git = "https://github.com/fortran-lang/stdlib"
+stdlib.branch = "stdlib-fpm"
+
+[dev-dependencies]
+test-drive.git = "https://github.com/fortran-lang/test-drive"
+test-drive.tag = "v0.4.0"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Note</p>
+<p>For a development dependency like a testing framework we choose a strict version pin by specifying the <em>tag</em> we want to use.</p>
+<hr>
+<p>Now we can write a simple unit test, since our function works with units, we will create scratch units to create the input and capture the output. For now we will add a simple one line substitution as single test case</p>
+<p><strong>test/main.f90</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">module test_demo
+  use demo, only : substitute
+  use stdlib_io, only : getline
+  use testdrive, only : error_type, unittest_type, new_unittest, check
+  implicit none
+  private
+
+  public :: collect_demo
+
+contains
+
+  !&gt; Collect all exported unit tests
+  subroutine collect_demo(testsuite)
+    !&gt; Collection of tests
+    type(unittest_type), allocatable, intent(out) :: testsuite(:)
+
+    testsuite = [new_unittest("substitute", test_substitute)]
+  end subroutine collect_demo
+
+  !&gt; Check substitution of a single line
+  subroutine test_substitute(error)
+    !&gt; Error handling
+    type(error_type), allocatable, intent(out) :: error
+    integer :: input, output, stat
+    character(len=:), allocatable :: line
+    open(newunit=input, status="scratch")
+    write(input, '(a)') "This is a valid test"
+    rewind(input)
+
+    open(newunit=output, status="scratch")
+    call substitute(input, output, "test", "example")
+    close(input)
+
+    rewind(output)
+    call getline(output, line, stat)
+    close(output)
+
+    call check(error, line, "This is a valid example")
+  end subroutine test_substitute
+end module test_demo
+
+program tester
+  use, intrinsic :: iso_fortran_env, only : error_unit
+  use testdrive, only : run_testsuite
+  use test_demo, only : collect_demo
+  implicit none
+  integer :: stat
+
+  stat = 0
+  call run_testsuite(collect_demo, error_unit, stat)
+
+  if (stat &gt; 0) then
+    write(error_unit, '(i0, 1x, a)') stat, "test(s) failed!"
+    error stop
+  end if
+
+end program tester<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>We run our new test using fpm</p>
+<pre class="line-numbers language-none"><code class="language-none">❯ fpm test
+  Starting substitute ... (1/1)
+       ... substitute [PASSED]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>Creating the scratch units for multiple unit tests will be repetitive, this kind of tasks can usually be done in a separate procedure and reused in several tests.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="Target-specific-dependencies"><a href="#Target-specific-dependencies" class="headerlink" title="Target-specific dependencies"></a>Target-specific dependencies</h4><p>Dependencies can also be used for specific targets only. This can be used for adding a command line interface package, which is only used for the executable but not part of the library dependencies.</p>
+<p><strong>fpm.toml</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">name = "demo"
+version = "0.1.0"
+
+[dependencies]
+stdlib.git = "https://github.com/fortran-lang/stdlib"
+stdlib.branch = "stdlib-fpm"
+
+[dev-dependencies]
+test-drive.git = "https://github.com/fortran-lang/test-drive"
+test-drive.tag = "v0.4.0"
+
+[[executable]]
+name = "demo"
+[executable.dependencies]
+M_CLI2.git = "https://github.com/urbanjost/M_CLI2"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>We restructure our main program a bit for using <a target="_blank" rel="noopener" href="https://github.com/urbanjost/M_CLI2">M_CLI2</a> to handle the command line input. The <em>unnamed</em> array contains all positional command line arguments, we still use the first two as pattern and replacement, and use all remaining arguments as input. We also add an option to redirect the output. Our final main program looks like</p>
+<p><strong>app/main.f90</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">program main
+  use, intrinsic :: iso_fortran_env, only : output_unit
+  use demo, only : substitute
+  use m_cli2, only : set_args, unnamed, sget
+  implicit none
+  character(len=:), allocatable :: input_file, output_file, pattern, replacement
+  integer :: input, output, i
+
+  call set_args("--output:o ''")
+
+  output_file = trim(sget("output"))
+  if (len(output_file) &gt; 0) then
+    open(file=output_file, newunit=output)
+  else
+    output = output_unit
+  end if
+
+  pattern = trim(unnamed(1))
+  replacement = trim(unnamed(2))
+
+  do i = 3, size(unnamed)
+    input_file = trim(unnamed(i))
+    open(file=input_file, newunit=input, status='old')
+    call substitute(input, output_unit, trim(pattern), trim(replacement))
+    close(input)
+  end do
+
+  if (output /= output_unit) close(output)
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Again we run a quick check using fpm</p>
+<pre class="line-numbers language-none"><code class="language-none">❯ fpm run -- demo substitute fpm.toml
+name = "substitute"
+version = "0.1.0"
+
+[dependencies]
+stdlib.git = "https://github.com/fortran-lang/stdlib"
+stdlib.branch = "stdlib-fpm"
+
+[dev-dependencies]
+test-drive.git = "https://github.com/fortran-lang/test-drive"
+test-drive.tag = "v0.4.0"
+
+[[executable]]
+name = "substitute"
+[executable.dependencies]
+M_CLI2.git = "https://github.com/urbanjost/M_CLI2"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>The output looks as expected with two substitutions.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Extending-fpm-with-plugins"><a href="#Extending-fpm-with-plugins" class="headerlink" title="Extending fpm with plugins"></a>Extending fpm with plugins</h3><p>The Fortran package manager has a plugin system which allows to easily extend its functionality. This tutorial will show how to install a plugin with fpm and use it.</p>
+<p>In this tutorial you learned how to</p>
+<ul>
+<li>installing an fpm plugin</li>
+<li>use the fpm-search plugin to query the registry</li>
+<li>generate a dependency entry from a query result</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="注册表搜索工具（失败）"><a href="#注册表搜索工具（失败）" class="headerlink" title="注册表搜索工具（失败）"></a>注册表搜索工具（失败）</h4><p>The <a target="_blank" rel="noopener" href="https://github.com/urbanjost/fpm-search">fpm-search</a> project is a plugin to query the package registry. Since it is built with fpm we can easily install it on our system with</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https://github.com/urbanjost/fpm-search
+cd fpm-search
+fpm install --profile release<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>这会将二进制文件<code>fpm-search</code>安装到<code>~/.local/bin</code>（或在Windows上的<code>%APPDATA%\local\bin</code>）。</p>
+<p>…</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Manifest-reference"><a href="#Manifest-reference" class="headerlink" title="Manifest reference"></a>Manifest reference</h3><p>The <code>fpm.toml</code> file for each project is called its <em>manifest</em>. It is written using the <a target="_blank" rel="noopener" href="https://toml.io/">TOML</a> format. </p>
+<h4 id="项目目标"><a href="#项目目标" class="headerlink" title="项目目标"></a>项目目标</h4><p>每个fpm项目都可以定义函数库、可执行程序和测试目标。库目标被导出并可用于其他项目。</p>
+<h5 id="库配置"><a href="#库配置" class="headerlink" title="库配置"></a>库配置</h5><p>定义项目的导出库目标。如果在项目中找到源目录或包含目录，则会生成库。默认的源目录和包含目录是<code>src</code>和<code>include</code>；这些可以在库（<em>library</em>）部分中使用源目录（<em>source-dir</em>）和包含目录（<em>include-dir</em>）条目进行修改。源目录和包含目录的目录相对于项目根目录给出，并在所有平台上使用<code>/</code>用作目录分隔符。</p>
+<p><em>例如：</em></p>
+<pre class="line-numbers language-none"><code class="language-none">[library]
+source-dir = "lib"
+include-dir = "inc"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>包含目录</p>
+<p>备注</p>
+<p>仅在Fortran fpm中受支持。</p>
+<p>使用Fortran语句或C预处理器语句的项目可以使用包含目录（<em>include-dir</em>）键为包含的文件指定搜索目录。包含目录（<em>include-dir</em>）可以包含一个或多个目录，其中使用字符串列表指定多个目录。所有项目依赖项中的包含目录都使用相应的编译器标志传递给编译器。</p>
+<p><em>例如：</em></p>
+<pre class="line-numbers language-none"><code class="language-none">[library]
+include-dir = ["include", "third_party/include"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<p>备注</p>
+<p>包含目录（<em>include-dir</em>）当前不允许使用预构建的<code>.mod</code>模块文件。</p>
+<h5 id="可执行目标"><a href="#可执行目标" class="headerlink" title="可执行目标"></a>可执行目标</h5><p>可执行目标是定义为可执行部分的Fortran程序。如果未指定可执行文件（<em>executable</em>）部分，则会在<code>app</code>目录中搜索程序定义。对于显式指定的可执行文件，必须始终指定名称（<em>name</em>）条目。每个可执行文件的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅指定依赖项。</p>
+<p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅外部库。</p>
+<p>备注</p>
+<p>仅在Fortran fpm中支持针对库的链接。</p>
+<p><em>例如：</em></p>
+<pre class="line-numbers language-none"><code class="language-none">[[executable]]
+name = "app-name"
+source-dir = "prog"
+main = "program.f90"
+
+[[executable]]
+name = "app-tool"
+link = "z"
+[executable.dependencies]
+helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁。</p>
+<pre class="line-numbers language-none"><code class="language-none">executable = [
+  { name = "a-prog" },
+  { name = "app-tool", source-dir = "tool" },
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="示例目标"><a href="#示例目标" class="headerlink" title="示例目标"></a>示例目标</h5><p>项目的示例应用程序被定义为示例部分。如果未指定示例（<em>example</em>）部分，则会在<code>example</code>目录中搜索程序定义。对于显式指定的示例，必须始终指定名称（<em>name</em>）条目。每个示例的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅指定依赖项。</p>
+<p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅外部库。</p>
+<p>备注</p>
+<p>仅在Fortran fpm中支持针对库的链接。</p>
+<p><em>例如：</em></p>
+<pre class="line-numbers language-none"><code class="language-none">[[example]]
+name = "demo-app"
+source-dir = "demo"
+main = "program.f90"
+
+[[example]]
+name = "example-tool"
+link = "z"
+[example.dependencies]
+helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="测试目标"><a href="#测试目标" class="headerlink" title="测试目标"></a>测试目标</h5><p>测试目标是定义为测试部分的Fortran程序。它们遵循与可执行目标类似的规则。如果未指定测试（<em>test</em>）部分，则会在<code>test</code>目录中搜索程序定义。对于显式指定的测试，必须始终指定名称（<em>name</em>）条目。每个测试的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅指定依赖项。</p>
+<p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅外部库。</p>
+<p>备注</p>
+<p>仅在Fortran fpm中支持针对库的链接。</p>
+<p><em>例如：</em></p>
+<pre class="line-numbers language-none"><code class="language-none">[[test]]
+name = "test-name"
+source-dir = "testing"
+main = "tester.F90"
+
+[[test]]
+name = "tester"
+link = ["blas", "lapack"]
+[test.dependencies]
+helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="链接外部库"><a href="#链接外部库" class="headerlink" title="链接外部库"></a>链接外部库</h4><p>备注</p>
+<p>仅在Fortran fpm中受支持。</p>
+<p>要声明外部库的链接时间依赖关系，可以在链接（<em>link</em>）条目中指定本机库的列表。将一个库指定为字符串，或指定一个字符串列表，以防应链接多个库。如果可能，项目应仅链接一个本机库。库依赖项列表将导出到从属包。</p>
+<p><em>例如：</em></p>
+<p>使用zlib链接库：</p>
+<pre class="line-numbers language-none"><code class="language-none">[build]
+link = "z"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<p>要依赖LAPACK，BLAS也应该被链接起来。在这种情况下，库的顺序很重要：</p>
+<pre class="line-numbers language-none"><code class="language-none">[build]
+link = ["blas", "lapack"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="使用系统安装的模块"><a href="#使用系统安装的模块" class="headerlink" title="使用系统安装的模块"></a>使用系统安装的模块</h4><p>若要使用未在fpm包或其依赖项中定义的模块，请使用生成（<em>build</em>）表中的外部模块（<em>external-modules</em>）键指定模块名称。</p>
+<p>重要</p>
+<p><em>fpm</em>无法自动定位外部模块文件；用户有责任使用编译器标志指定必要的包含目录，以便编译器可以在编译期间找到外部模块文件。</p>
+<p><em>例如：</em></p>
+<pre class="line-numbers language-none"><code class="language-none">[build]
+external-modules = "netcdf"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<p>可以将多个外部模块指定为一个列表。</p>
+<p><em>例如：</em></p>
+<pre class="line-numbers language-none"><code class="language-none">[build]
+external-modules = ["netcdf", "h5lt"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="目标自动发现"><a href="#目标自动发现" class="headerlink" title="目标自动发现"></a>目标自动发现</h4><p>备注</p>
+<p>仅在Fortran fpm中受支持。</p>
+<p>可执行文件和测试可以在其默认目录中自动发现。自动发现以递归方式在<code>app</code>、<code>example</code>和<code>test</code>目录中搜索定义，并分别将它们声明为可执行目标、示例目标和测试目标。默认情况下，自动发现处于启用状态。</p>
+<p>要禁用目标的自动发现，请将自动可执行文件（<em>auto-executables</em>）、自动示例（<em>auto-examples</em>）和自动测试（<em>auto-tests</em>）条目设置为<em>false</em>。</p>
+<pre class="line-numbers language-none"><code class="language-none">[build]
+auto-executables = false
+auto-examples = false
+auto-tests = false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="指定依赖项"><a href="#指定依赖项" class="headerlink" title="指定依赖项"></a>指定依赖项</h4><h4 id="…"><a href="#…" class="headerlink" title="…"></a>…</h4><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="Preparing-your-package-for-FPM"><a href="#Preparing-your-package-for-FPM" class="headerlink" title="Preparing your package for FPM"></a>Preparing your package for FPM</h2><p><a target="_blank" rel="noopener" href="https://github.com/fortran-lang/fpm/blob/main/PACKAGING.md">https://github.com/fortran-lang/fpm/blob/main/PACKAGING.md</a></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="What-kind-of-package-can-fpm-build"><a href="#What-kind-of-package-can-fpm-build" class="headerlink" title="What kind of package can fpm build?"></a>What kind of package can fpm build?</h3><p>You can use <em>fpm</em> to build:</p>
+<ul>
+<li>Applications (program only)</li>
+<li>Libraries (modules only)</li>
+<li>Combination of the two (programs and modules combined)</li>
+</ul>
+<p>Let’s look at some examples of different kinds of package layouts that you can use with <em>fpm</em>.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Single-program-（失败，简单的例子，体现的也是前面的失败，WHY？已解决）"><a href="#Single-program-（失败，简单的例子，体现的也是前面的失败，WHY？已解决）" class="headerlink" title="Single program （失败，简单的例子，体现的也是前面的失败，WHY？已解决）"></a>Single program （失败，简单的例子，体现的也是前面的失败，WHY？已解决）</h3><p>Let’s start with the simplest package imaginable—a single program without dependencies or modules. Here’s what the layout of the top-level directory looks like:</p>
+<pre class="line-numbers language-none"><code class="language-none">.
+├── app
+│   └── main.f90
+└── fpm.toml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>We have one source file (<code>main.f90</code>) in one directory (<code>app</code>). Its contents are:</p>
+<pre class="line-numbers language-none"><code class="language-none">program main
+    print *, 'Hello, World!'
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>This program prints the usual greeting to the standard output, and nothing more.</p>
+<p>There’s another important file in the top-level directory, <code>fpm.toml</code>. This is <em>fpm</em>’s configuration file specific to your package. It includes all the data that <em>fpm</em> needs to build your app. In our simple case, it looks like this:</p>
+<pre class="line-numbers language-none"><code class="language-none">name = "hello"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>The <strong>preamble</strong> includes some metadata, such as <code>license</code>, <code>author</code>, and similar, that you may have seen in other package manager configuration files. The one option that matters here right now is:</p>
+<pre class="line-numbers language-none"><code class="language-none">name = "hello"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>This line specifies the name of your package, which <strong>determines the name of the executable file of your program</strong>. In this example, our program executable, once built, will be called <code>hello</code>.</p>
+<p>Let’s now build this program using <em>fpm</em>:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ fpm build
+# gfortran (for build/debug/app/main.o)
+# gfortran (for build/debug/app/hello)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>On the first line, we ran <code>fpm build</code> to compile and link the application. The latter two lines are emitted by <em>fpm</em>, and indicate which command was executed at each build step (<code>gfortran</code>), and which files have been output by it: object file <code>main.o</code>, and executable <code>hello</code>.</p>
+<p>We can now run the app with <code>fpm run</code>:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ fpm run
+ Hello, World!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401205715.png"></p>
+<p>If your application needs to <strong>use a module internally</strong>, but you don’t intend to build it as a library to be used in other projects, you can include the module in your program source file as well. For example:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ cat app/main.f90
+module math_constants
+    real, parameter :: pi = 4 * atan(1.)
+end module math_constants
+
+program main
+    use math_constants, only: pi
+    print *, 'Hello, World!'
+    print *, 'pi = ', pi
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Now, run this using <code>fpm run</code>:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ fpm run
+# gfortran (for build/debug/app/main.o)
+# gfortran (for build/debug/app/hello)
+ Hello, World!
+ pi =    3.14159274<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>Notice that you can run <code>fpm run</code>, and if the package hasn’t been built yet, <code>fpm build</code> will run automatically for you. This is true if the source files have been updated since the last build. Thus, if you want to run your application, you can skip the <code>fpm build</code> step, and go straight to <code>fpm run</code>.</p>
+</li>
+<li><p>Although we have named our program <code>hello</code>, which is the same name as the package name in <code>fpm.toml</code>, you can name it anything you want as long as it’s permitted by the language.</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401210952.png"></p>
+<p>==》</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401225020.png"></p>
+<p>FAQ已解决</p>
+<p>==》</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401225615.png"></p>
+<p>In this last example, our source file defined a <code>math_constants</code> module inside the same source file as the main program. Let’s see how we can define an <em>fpm</em> package that makes this module available as a library.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Multi-module-library"><a href="#Multi-module-library" class="headerlink" title="Multi-module library"></a>Multi-module library</h3><p>In this example, we’ll use another module to define a 64-bit real kind parameter and make it available in <code>math_constants</code> to define <code>pi</code> with higher precision. To make this exercise worthwhile, we’ll define another math constant, Euler’s number.</p>
+<p>Our package layout looks like this:</p>
+<pre class="line-numbers language-none"><code class="language-none">.
+├── fpm.toml
+└── src
+    ├── math_constants.f90
+    └── type_kinds.f90<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>And our source file contents are:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ cat src/math_constants.f90
+module math_constants
+    use type_kinds, only: rk
+    real(rk), parameter :: pi = 4 * atan(1._rk)
+    real(rk), parameter :: e = exp(1._rk)
+end module math_constants
+
+$ cat src/type_kinds.f90
+module type_kinds
+    use iso_fortran_env, only: real64
+    integer, parameter :: rk = real64
+end module type_kinds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>and there are no changes to our <code>fpm.toml</code> relative to previous examples.</p>
+<ul>
+<li><p>Like before, notice that the module <code>type_kinds</code> is name exactly as the source file that contains it. This is important.</p>
+<p><strong>模块名称和其文件名称一致</strong>；</p>
+</li>
+</ul>
+<p>By now you know how to build the package:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ fpm build
+# gfortran (for build/debug/library/type_kinds.o build/debug/library/type_kinds.mod)
+# gfortran (for build/debug/library/math_constants.o build/debug/library/math_constants.mod)
+# ar (for build/debug/library/math_constants.a)
+ar: creating build/debug/library/math_constants.a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402111945.png"></p>
+<p>Our build path now contains:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ ls build/debug/library/
+math_constants.a  math_constants.mod  math_constants.o  type_kinds.mod  type_kinds.o<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<ul>
+<li>没看到<code>build/debug/library</code>,</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402112210.png"></p>
+</blockquote>
+<p>And the <strong>static library</strong> includes all the object files:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ nm build/debug/library/math_constants.a
+
+math_constants.o:
+
+type_kinds.o:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<ul>
+<li>没看到<code>math_constants.a</code>，</li>
+<li>nm命令是什么，</li>
+</ul>
+</blockquote>
+<hr>
+<p>The takeaways from this example are that:</p>
+<ul>
+<li><p><em>fpm</em> automatically scanned the <code>src</code> directory for any source files.</p>
+<p>自动浏览资源文件，</p>
+</li>
+<li><p>It also resolved the dependency order between different modules.</p>
+<p><strong>解决了不同modules的依赖问题</strong>（👍），</p>
+</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Single-program-Multi-module-library"><a href="#Single-program-Multi-module-library" class="headerlink" title="Single program+Multi-module library"></a>Single program+Multi-module library</h3><p>Let’s now combine the two previous examples into one: We’ll build the math constants library <em>and</em> an executable program that uses it. We’ll use this program as a demo, and to verify that defining higher-precision constants from the previous example actually worked.</p>
+<p>Here’s the package layout for your application + library package:</p>
+<pre class="line-numbers language-none"><code class="language-none">.
+├── app
+│   └── main.f90
+├── fpm.toml
+└── src
+    ├── math_constants.f90
+    └── type_kinds.f90<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Our <code>fpm.toml</code> remains unchanged and our executable program source file is:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ cat app/main.f90
+program main
+    use math_constants, only: e, pi
+    print *, 'math_constants library demo'
+    print *, 'pi = ', pi
+    print *, 'e = ', e
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Let’s go straight to running the demo program:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ fpm run
+# gfortran (for build/debug/library/type_kinds.o build/debug/library/type_kinds.mod)
+# gfortran (for build/debug/library/math_constants.o build/debug/library/math_constants.mod)
+# ar (for build/debug/library/math_constants.a)
+ar: creating build/debug/library/math_constants.a
+# gfortran (for build/debug/app/main.o)
+# gfortran (for build/debug/app/math_constants)
+ math_constants library demo
+ pi =    3.1415926535897931
+ e =    2.7182818284590451<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<ul>
+<li><p>直接运行<code>fpm run</code>会出错，</p>
+<pre class="line-numbers language-none"><code class="language-none">刘锦灿@LAPTOP-085N0595 MINGW64 /d/zetero/VScode/Fortran/fpm/multi-module
+$ fpm run
+&lt;INFO&gt; No executables to run
+STOP 0
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/zetero/VScode/Fortran/fpm/multi-module
+$ fpm build
+
+刘锦灿@LAPTOP-085N0595 MINGW64 /d/zetero/VScode/Fortran/fpm/multi-module
+$ fpm run
+&lt;INFO&gt; No executables to run
+STOP 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>解决方法：删除mod文件和<code>build</code>文件夹，再<code>fpm run</code>,</p>
+<pre class="line-numbers language-none"><code class="language-none">RM -f ./src/*.mod &amp;&amp; RM -f -R build &amp;&amp; RM -f ./app/*.mod &amp;&amp; fpm run<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402115745.png"></p>
+</li>
+</ul>
+</blockquote>
+<p>The <em>fpm</em> build + run process works as expected, and our program correctly outputs higher-precision constants.</p>
+<hr>
+<p>So far we covered how <em>fpm</em> builds:</p>
+<ul>
+<li>A single program</li>
+<li>A single-module library</li>
+<li>A multi-module library</li>
+<li>A program and a library</li>
+</ul>
+<p>However, all our modules so far have been organized in the top level source directory. More complex libraries may organize their modules in subdirectories. Let’s see how we can build this with <em>fpm</em>.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Single-program-Multi-level-library"><a href="#Single-program-Multi-level-library" class="headerlink" title="Single program+Multi-level library"></a>Single program+Multi-level library</h3><p>In this example, we’ll define our library as a collection of modules, two of which are defined in a subdirectory:</p>
+<pre class="line-numbers language-none"><code class="language-none">.
+├── app
+│   └── main.f90
+├── fpm.toml
+└── src
+    ├── math_constants
+    │   ├── derived.f90
+    │   └── fundamental.f90
+    ├── math_constants.f90
+    └── type_kinds.f90<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>First, <code>fpm.toml</code> and <code>src/type_kinds.f90</code> remain unchanged relative to the previous example.</p>
+<p>The rest of the source files are:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ cat src/math_constants.f90
+module math_constants
+    use math_constants_fundamental, only: e, pi
+    use math_constants_derived, only: half_pi, two_pi
+end module math_constants
+
+$ cat src/math_constants/fundamental.f90
+module math_constants_fundamental
+    use type_kinds, only: rk
+    real(rk), parameter :: pi = 4 * atan(1._rk)
+    real(rk), parameter :: e = exp(1._rk)
+end module math_constants_fundamental
+
+$ cat src/math_constants/derived.f90
+module math_constants_derived
+    use math_constants_fundamental, only: pi
+    use type_kinds, only: rk
+    real(rk), parameter :: two_pi = 2 * pi
+    real(rk), parameter :: half_pi = pi / 2
+end module math_constants_derived
+
+$ cat app/main.f90
+program main
+    use math_constants, only: e, pi, half_pi, two_pi
+    print *, 'math_constants library demo'
+    print *, 'pi = ', pi
+    print *, '2*pi = ', two_pi
+    print *, 'pi/2 = ', half_pi
+    print *, 'e = ', e
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Our top-level <code>math_constants</code> module now doesn’t define the constants, but imports them from the two modules in the subdirectory. Constants <code>e</code> and <code>pi</code> we define in the <code>math_constants_fundamental</code> module, and <code>two_pi</code> and <code>half_pi</code> in the <code>math_constants_derived</code> module. From the main program, we access all the constants from the top-level module <code>math_constants</code>.</p>
+<p>Let’s build and run this package:</p>
+<pre class="line-numbers language-none"><code class="language-none">$ fpm run
+# gfortran (for build/debug/library/type_kinds.o build/debug/library/type_kinds.mod)
+# gfortran (for build/debug/library/math_constants_fundamental.o build/debug/library/math_constants_fundamental.mod)
+# gfortran (for build/debug/library/math_constants_derived.o build/debug/library/math_constants_derived.mod)
+# gfortran (for build/debug/library/math_constants.o build/debug/library/math_constants.mod)
+# ar (for build/debug/library/math_constants.a)
+ar: creating build/debug/library/math_constants.a
+# gfortran (for build/debug/app/main.o)
+# gfortran (for build/debug/app/math_constants)
+ math_constants library demo
+ pi =    3.1415926535897931
+ 2*pi =    6.2831853071795862
+ pi/2 =    1.5707963267948966
+ e =    2.7182818284590451<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402125839.png"></p>
+<p>Again, <em>fpm</em> built and run the package as expected.</p>
+<ul>
+<li><p>Recall from an earlier example that <em>fpm</em> required the modules in the top-level <code>src</code> directory to be named the same as their source file. This is why <code>src/math_constants.f90</code> defines <code>module math_constants</code>.</p>
+</li>
+<li><p>For modules defined in subdirectories, <strong>there’s an additional requirement: module name must contain the path components of the directory that its source file is in</strong>. In our case, <code>src/math_constants/fundamental.f90</code> defines the <code>math_constants_fundamental</code> module. Likewise, <code>src/math_constants/derived.f90</code> defines the <code>math_constants_derived</code> module.</p>
+<p>This rule applies generally to any number of nested directories and modules. For example, <code>src/a/b/c/d.f90</code> must define a module called <code>a_b_c_d</code>.</p>
+<blockquote>
+<p>很重要的一点；</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>Takeaways from this example are that:</p>
+<ul>
+<li>You can place your module source files in any levels of subdirectories inside <code>src</code>.</li>
+<li>The module name must include the path components and the source file name–for example, <code>src/a/b/c/d.f90</code> must define a module called <code>a_b_c_d</code>.</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="fpm-toml-library-executable"><a href="#fpm-toml-library-executable" class="headerlink" title="fpm.toml: [library],[[executable]]"></a>fpm.toml: [library],[[executable]]</h3><p>So far we’ve let <em>fpm</em> use its defaults to determine the layout of our package. It determined where our library sources would live, what the name of the executable will be, and some other things. But we can be more explicit about it, and make some changes to those things.</p>
+<p>Let’s look at what the <code>fpm.toml</code> file from our last example would look like if we specified everything.</p>
+<pre class="line-numbers language-none"><code class="language-none">name = "math_constants"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"
+
+[library]
+source-dir="src"
+
+[[ executable ]]
+name="math_constants"
+source-dir="app"
+main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>You can see that by making these explicit in the <code>fpm.toml</code> we are able to change many of the settings that <em>fpm</em> used by default. We can change the folders where our sources are stored, we can change the name of our executable, and we can change the name of the file our program is defined in.</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402133321.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="FAQ：如何实现每一个application文件与一个executable对应？"><a href="#FAQ：如何实现每一个application文件与一个executable对应？" class="headerlink" title="FAQ：如何实现每一个application文件与一个executable对应？"></a>FAQ：如何实现每一个application文件与一个executable对应？</h4><ol>
+<li><p>为了明确每一个<code>executable</code>与每一个application文件的对应关系，将<code>auto-executables</code>设置为false，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402173533.png"></p>
+<p>可以通过<code>fpm run --list</code>查询<code>executable</code>的个数，</p>
+<blockquote>
+<p><code>fpm run --list</code></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402173717.png"></p>
+<p>如果<code>auto-executables</code>不设置为false，其默认为true，那么按照上面的操作会出错，因为<code>auto=executables</code>会对应一个application文件，加上<code>executable</code>对应的三个application文件，而实际上只有三个application文件，肯定存在某一个application文件有重复的<code>executable</code>文件，这在<code>fpm</code>中是不允许的。</p>
+</li>
+<li><p>想运行某一个文件可以，例如<code>fpn run "app1_exe2"</code>，</p>
+<p>像运行所有的target文件，即executable文件，可以<code>fpm run --all</code>，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402174651.png"></p>
+</li>
+</ol>
+<blockquote>
+<p><code>example</code>和<code>test</code>与<code>executable</code>类似；</p>
+</blockquote>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="FAQ：每次fpm-run都要删除mod和build文件夹？"><a href="#FAQ：每次fpm-run都要删除mod和build文件夹？" class="headerlink" title="FAQ：每次fpm run都要删除mod和build文件夹？"></a>FAQ：每次<code>fpm run</code>都要删除<code>mod</code>和<code>build</code>文件夹？</h4><p>不是的，</p>
+<p>在每次<code>fpm run</code>前可以删除<code>mod</code>，（因为<code>mod</code>文件时自动生成的，<code>fpm</code>实际运行是不需要<code>mod</code>）</p>
+<p>但是对于<code>build</code>文件夹不应该删除，否则信息会丢失，</p>
+<p>建议：find . -name *.mod | xargs rm -f &amp;&amp; fpm run</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="fpm-toml-test"><a href="#fpm-toml-test" class="headerlink" title="fpm.toml: [test]"></a>fpm.toml: [test]</h3><p><em>fpm</em> also provides support for unit testing. By default, <em>fpm</em> looks for a program in <code>test/main.f90</code> which it will compile and execute with the command <code>fpm test</code>. The tests are treated pretty much exactly like the executables. </p>
+<blockquote>
+<p>[test]和[executable]不是相似，现在看来，是基本一摸一样；</p>
+</blockquote>
+<p>Let’s define one explicitly in our <code>fpm.toml</code> file. We’ll make sure that our definition of <code>pi</code> satisfies the property <code>sin(pi) == 0.0</code>. Here’s the <code>fpm.toml</code> file:</p>
+<pre class="line-numbers language-none"><code class="language-none">name = "math_constants"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"
+
+[library]
+source-dir="src"
+
+[[ executable ]]
+name="math_constants"
+source-dir="app"
+main="main.f90"
+
+[[ test ]]
+name="runTests"
+source-dir="test"
+main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>where the contents of the <code>main.f90</code> file are</p>
+<pre class="line-numbers language-none"><code class="language-none">program main
+    use math_constants, only: pi
+    print *, "sin(pi) = ", sin(pi)
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>With this setup, we can run our tests.</p>
+<pre class="line-numbers language-none"><code class="language-none">$ fpm test
+# gfortran (for build/debug/library/type_kinds.o build/debug/library/type_kinds.mod)
+# gfortran (for build/debug/library/math_constants_fundamental.o build/debug/library/math_constants_fundamental.mod)
+# gfortran (for build/debug/library/math_constants_derived.o build/debug/library/math_constants_derived.mod)
+# gfortran (for build/debug/library/math_constants.o build/debug/library/math_constants.mod)
+# ar (for build/debug/library/math_constants.a)
+ar: creating build/debug/library/math_constants.a
+# gfortran (for build/debug/app/main.o)
+# gfortran (for build/debug/app/math_constants)
+# gfortran (for build/debug/test/main.o)
+# gfortran (for build/debug/test/runTests)
+ sin(pi) =    1.2246467991473532E-016<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402134849.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402134829.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="fpm-toml-example"><a href="#fpm-toml-example" class="headerlink" title="fpm.toml: [example]"></a>fpm.toml: [example]</h3><p>Here’s the <code>fpm.toml</code> file:</p>
+<pre class="line-numbers language-none"><code class="language-none">[build]
+auto-examples=false
+
+[[ example ]]
+name="math_constants"
+source-dir="app"
+main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Adding-dependencies"><a href="#Adding-dependencies" class="headerlink" title="Adding dependencies"></a>Adding dependencies</h3><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="fpm-toml：-dependencies"><a href="#fpm-toml：-dependencies" class="headerlink" title="fpm.toml：[dependencies]"></a>fpm.toml：[dependencies]</h4><p>Inevitably, you’ll want to be able to include other libraries in your project. fpm makes this incredibly simple, by taking care of fetching and compiling your dependencies for you. You just tell it what your dependencies are, and where to find them. Let’s add a dependency to our library. Now our <code>fpm.toml</code> file looks like this:</p>
+<pre class="line-numbers language-none"><code class="language-none">name = "math_constants"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"
+
+[library]
+source-dir="src"
+
+[dependencies]
+helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }
+
+[[ executable ]]
+name="math_constants"
+source-dir="app"
+main="main.f90"
+
+[[ test ]]
+name="runTests"
+source-dir="test"
+main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Now you can use any modules from this library anywhere in your code. Just like this:</p>
+<pre class="line-numbers language-none"><code class="language-none">program main
+    use helloff, only: create_greeting
+    use math_constants, only: e, pi, half_pi, two_pi
+    print *, 'math_constants library demo'
+    print *, 'pi = ', pi
+    print *, '2*pi = ', two_pi
+    print *, 'pi/2 = ', half_pi
+    print *, 'e = ', e
+    print *, create_greeting("fpm")
+end program main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<ul>
+<li><p>这里<code>use helloff</code>中，<code>helloff</code>是一个module</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402194208.png"></p>
+</li>
+</ul>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402193756.png"></p>
+<p>And now, <code>fpm run</code> will output the following:</p>
+<pre class="line-numbers language-none"><code class="language-none">math_constants library demo
+pi =    3.1415926535897931
+2*pi =    6.2831853071795862
+pi/2 =    1.5707963267948966
+e =    2.7182818284590451
+Hello, fpm!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402193833.png"></p>
+<p>You can also be specific about which version of a dependency you’d like. </p>
+<ul>
+<li>You can specify a branch to use like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", branch = "master" }</code>, </li>
+<li>or a tag like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", tag = "v1.2.3" }</code>, </li>
+<li>or even a specific commit like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", rev = "a1b2c3" }</code>. </li>
+</ul>
+<p>You can even specify the path to another folder, if for example you’ve got another fpm package in the same repository. Like this: <code>helloff = { path = "helloff" }</code>. Note that you should <em>not</em> specify paths outside of your repository, or things won’t work for your users.</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="fpm-toml-executable-dependencies"><a href="#fpm-toml-executable-dependencies" class="headerlink" title="fpm.toml: [executable.dependencies]"></a>fpm.toml: [executable.dependencies]</h4><p>Additionally, any users of your library will now automatically depend on your dependencies too. So if you don’t need that dependency for the library, like in the above example, then you can specify it for the specific executable like below. Then fpm will still fetch and compile it when building your executable, but users of your library won’t have to.</p>
+<pre class="line-numbers language-none"><code class="language-none">name = "math_constants"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"
+
+[library]
+source-dir="src"
+
+[[ executable ]]
+name="math_constants"
+source-dir="app"
+main="main.f90"
+[executable.dependencies]
+helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }
+
+[[ test ]]
+name="runTests"
+source-dir="test"
+main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>You can also specify dependencies for your tests in a similar way, with <code>[test.dependencies]</code> instead of <code>[executable.dependencies]</code>. There’s also another option for test dependencies. </p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="fpm-toml-dev-dependencies"><a href="#fpm-toml-dev-dependencies" class="headerlink" title="fpm.toml: [dev-dependencies]"></a>fpm.toml: [dev-dependencies]</h4><p>The below example makes the dependencies available for all the tests, but again your users won’t depend on these.</p>
+<pre class="line-numbers language-none"><code class="language-none">name = "math_constants"
+version = "0.1.0"
+license = "MIT"
+author = "Jane Programmer"
+maintainer = "jane@example.com"
+copyright = "2020 Jane Programmer"
+
+[library]
+source-dir="src"
+
+[dev-dependencies]
+helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }
+
+[[ executable ]]
+name="math_constants"
+source-dir="app"
+main="main.f90"
+
+[[ test ]]
+name="runTests"
+source-dir="test"
+main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="FAQ：这几类的dependencies有什么区别吗？"><a href="#FAQ：这几类的dependencies有什么区别吗？" class="headerlink" title="FAQ：这几类的dependencies有什么区别吗？"></a>FAQ：这几类的dependencies有什么区别吗？</h4><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="Custom-build-scripts-（FAQ：不知道在干什么）"><a href="#Custom-build-scripts-（FAQ：不知道在干什么）" class="headerlink" title="Custom build scripts （FAQ：不知道在干什么）"></a>Custom build scripts （FAQ：不知道在干什么）</h3><h4 id="fpm-toml-build-script"><a href="#fpm-toml-build-script" class="headerlink" title="fpm.toml: build-script"></a>fpm.toml: build-script</h4><p>If there is something special about your library that makes fpm unable to build it, you can provide your own build script. fpm will then simply call your build script to build the library.</p>
+<p>To specify a build script to be used, put it in the library section of your <code>fpm.toml</code> file, like:</p>
+<pre class="line-numbers language-none"><code class="language-none">[library]
+source-dir="src"
+build-script="my_build_script"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h4><p><em>fpm</em> will set the following environment variables to specify some parameters to the build script:</p>
+<ul>
+<li><code>FC</code> – The Fortran compiler to be used.</li>
+<li><code>FFLAGS</code> – The flags that should be passed to the Fortran compiler.</li>
+<li><code>BUILD_DIR</code> – Where the compiled files should be placed.</li>
+<li><code>INCLUDE_DIRS</code> – The folders where any dependencies can be found, space separated. It is then the responsibility of the build script to generate the appropriate include flags.</li>
+</ul>
+<p>Additionally, script will be called with the name of the archive (<code>*.a</code> file) that should be produced as the command line argument.</p>
+<blockquote>
+<p>Note: If the name of the build script is <code>Makefile</code> or ends with <code>.mk</code>, then the make program will be used to run it. Not the the archive file is explicitly specified as the target to be built</p>
+</blockquote>
+<blockquote>
+<p>Note: All file and directory names are specified with their full canonical path.</p>
+</blockquote>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="FAQ：求助，ReadingModule问题（code-block大哥解决）"><a href="#FAQ：求助，ReadingModule问题（code-block大哥解决）" class="headerlink" title="FAQ：求助，ReadingModule问题（code:block大哥解决）"></a>FAQ：求助，ReadingModule问题（code:block大哥解决）</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">@LAPTOP-085N0595  /d/zetero/VScode/Fortran/fpm/demo
+$ gfortran -c build/dependencies/stdlib/src/stdlib_hash_64bit.f90 -g -Ibuild/gfortran_2A42023B310FA28D -o build/gfortran_2A42023B310FA28D/demo/build_dependencies_stdlib_src_stdlib_io_npy.f90.o<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>错误：<strong>f951.exe: Fatal Error: Reading module ‘build/gfortran_2A42023B310FA28D/stdlib_kinds.mod’ at line 18 column 1: Unexpected EOF compilation terminated</strong>.</p>
+<p>==》</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401225020.png"></p>
+<p>【管理员】code::blocks(1943133009) 21:37:58<br><a target="_blank" rel="noopener" href="https://github.com/msys2/MINGW-packages/issues/6908">https://github.com/msys2/MINGW-packages/issues/6908</a></p>
+<p>【新进】Win10+VScode+Gfortran(3079779149) 21:38:59<br>用的是msys2的bash</p>
+<p>【新进】Win10+VScode+Gfortran(3079779149) 22:03:36<br>code::blocks   <a target="_blank" rel="noopener" href="https://github.com/msys2/MINGW-packages/issues/6908">https://github.com/msys2/MINGW-packages/issues/6908</a><br>@code::blocks 十分感谢<del>，我遇到的情况和这个issue一样</del>。在VScode中即使使用msys2的bash还是会发生这种问题，将module名称换成更短的情况可能编译成功，保险起见，还是<strong>建议在WSYS2 MinGW中使用gfortran</strong>。再次感谢~~</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/4PMR%7E3S%60W6C4RGVQT25Z04B.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401231444.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="FAQ：fpm中git下载依赖问题"><a href="#FAQ：fpm中git下载依赖问题" class="headerlink" title="FAQ：fpm中git下载依赖问题"></a>FAQ：fpm中git下载依赖问题</h2><pre class="line-numbers language-none"><code class="language-none">刘锦灿@LAPTOP-085N0595  /d/zetero/VScode/Fortran/fpm/fpm-search
+$ fpm install --profile release
+Initialized empty Git repository in D:/zetero/VScode/Fortran/fpm/fpm-search/build/dependencies/M_CLI2/.git/
+fatal: unable to access 'https://github.com/urbanjost/M_CLI2/': OpenSSL SSL_read: Connection was aborted, errno 10053
+&lt;ERROR&gt;Error while fetching git repository for remote dependency
+STOP 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>设计到git安装依赖库的命令，总是会发病，需要多试几次，</p>
+<blockquote>
+<p>对应不是dev依赖库的安装，<strong>记住安装失败后，去build指定位置删除对应文件夹</strong>，否则：</p>
+<pre class="line-numbers language-none"><code class="language-none">刘锦灿@LAPTOP-085N0595  /d/zetero/VScode/Fortran/fpm/fpm-search
+$ fpm install --profile release
+fatal: your current branch 'main' does not have any commits yet
+&lt;ERROR&gt;Error while retrieving commit information
+STOP 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="FAQ：NotGNU问题"><a href="#FAQ：NotGNU问题" class="headerlink" title="FAQ：NotGNU问题"></a>FAQ：NotGNU问题</h2><pre class="line-numbers language-none"><code class="language-none">刘锦灿@LAPTOP-085N0595 MINGW64 /d/zetero/VScode/Fortran/fpm/multi-module
+$ fpm build
+ + mkdir build\dependencies
+ + mkdir build\gfortran_2A42023B310FA28D
+ + mkdir build\gfortran_2A42023B310FA28D\hello\
+ + gfortran -c .\.\src\type_kinds.f90  -Wall -Wextra -Wimplicit-interface -fPIC -fmax-errors=1 -g -fcheck=bounds -fcheck=array-temps -fbacktrace -fcoarray=single -J build\gfortran_2A42023B310FA28D -Ibuild\gfortran_2A42023B310FA28D -o build\gfortran_2A42023B310FA28D\hello\src_type_kinds.f90.o
+ + gfortran -c .\.\src\math_constants.f90  -Wall -Wextra -Wimplicit-interface -fPIC -fmax-errors=1 -g -fcheck=bounds -fcheck=array-temps -fbacktrace -fcoarray=single -J build\gfortran_2A42023B310FA28D -Ibuild\gfortran_2A42023B310FA28D -o build\gfortran_2A42023B310FA28D\hello\src_math_constants.f90.o
+.\.\src\math_constants.f90:2:9:
+
+    2 |     use type_kinds, only: rk
+      |         1
+Fatal Error: File '.\.\src/type_kinds.mod' opened at (1) is not a GNU Fortran module file
+compilation terminated.
+&lt;ERROR&gt; Compilation failed for object " src_math_constants.f90.o "
+&lt;ERROR&gt;stopping due to failed compilation
+STOP 1
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>解决方法：</p>
+<pre class="line-numbers language-none"><code class="language-none">RM -f ./src/*.mod &amp;&amp; RM -f -R build &amp;&amp; RM -f ./app/*.mod &amp;&amp; fpm run
+
+find --help
+find ./app ./src ./lib -name *.mod | xargs rm -f &amp;&amp; RM -f -R build &amp;&amp; fpm run
+
+find . -name *.mod | xargs rm -f &amp;&amp; fpm run<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="FAQ：Fortran-runtime-error-File-cannot-be-deleted"><a href="#FAQ：Fortran-runtime-error-File-cannot-be-deleted" class="headerlink" title="FAQ：Fortran runtime error: File cannot be deleted"></a>FAQ：Fortran runtime error: File cannot be deleted</h2><p>解决方法：多运行几次</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402195301.png"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/04/02/yan-jiu-sheng-justtry-function/fortran/03-faq-xun-zhao-guan-yu-fortran-de-xiang-mu-guan-li-fang-fa/">https://Liu-Jincan.github.io/2022/04/02/yan-jiu-sheng-justtry-function/fortran/03-faq-xun-zhao-guan-yu-fortran-de-xiang-mu-guan-li-fang-fa/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2022/04/02/yan-jiu-sheng-justtry-function/fortran/03-faq-xun-zhao-guan-yu-fortran-de-xiang-mu-guan-li-fang-fa/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png" class="responsive-img" alt="03-FAQ：寻找关于fortran的项目管理方法">
+                        
+                        <span class="card-title">03-FAQ：寻找关于fortran的项目管理方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Fortran/" class="post-category">
+                                    Fortran
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/31/yan-jiu-sheng-justtry-function/bian-yi-qi-bian-ji-qi-ji-cheng-kai-fa-huan-jing/make-02-makefile-bian-yi-linux-c-he-c-xiang-mu-kuai-su-ru-men/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="make-02-makefile-编译Linux_C和C++项目快速入门.md">
+                        
+                        <span class="card-title">make-02-makefile-编译Linux_C和C++项目快速入门.md</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-31
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/makefile/" class="post-category">
+                                    makefile
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">440.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
