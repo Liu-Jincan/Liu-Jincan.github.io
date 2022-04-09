@@ -385,7 +385,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    974
+                    999
                 </div>
                 
 
@@ -579,29 +579,13 @@ export matlab_2021b=$bin/matlab<span aria-hidden="true" class="line-numbers-rows
 <span class="token comment">##### 添加如下内容, $user, 使用绝对路径</span>
 <span class="token comment">#!/bin/bash</span>
 <span class="token builtin class-name">cd</span> <span class="token variable">$user</span>/.config/clash
-nohub ./clash <span class="token operator">&gt;</span> test.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
-<span class="token comment">#####</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">#nohub ./clash &gt; test.log 2&gt;&amp;1 &amp;</span>
+<span class="token function">nohup</span> ./clash <span class="token operator">&gt;</span> test.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+<span class="token comment">#####</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<blockquote>
+<p>2022-04-07，不是<code>nohub</code>，是<code>p</code>，搞了我1个小时，🤮，</p>
+</blockquote>
 
                 
             </div>
@@ -839,12 +823,12 @@ nohub ./clash <span class="token operator">&gt;</span> test.log <span class="tok
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/12/25/yan-jiu-sheng-justtry-function/hexo-typora-matery/05-typora-guan-fang-zhu-ti/">
+                <a href="/2021/12/25/yan-jiu-sheng-justtry-function/hexo-typora-matery/05-typora-xia-zai-he-an-zhuang/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327152322.png" class="responsive-img" alt="05-Typora官方主题">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327152322.png" class="responsive-img" alt="05-Typora下载和安装">
                         
-                        <span class="card-title">05-Typora官方主题</span>
+                        <span class="card-title">05-Typora下载和安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1135,7 +1119,7 @@ nohub ./clash <span class="token operator">&gt;</span> test.log <span class="tok
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">450k</span>
+                        class="white-color">453.6k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

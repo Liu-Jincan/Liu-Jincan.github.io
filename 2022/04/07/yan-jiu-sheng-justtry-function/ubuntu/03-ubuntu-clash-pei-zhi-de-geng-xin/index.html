@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="06-ubuntu+VScode+GFortran+fpm+Git, Jincan">
+    <meta name="keywords" content="03-ubuntu20.04中clash配置的更新, Jincan">
     <meta name="description" content="~~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>06-ubuntu+VScode+GFortran+fpm+Git | Jincan</title>
+    <title>03-ubuntu20.04中clash配置的更新 | Jincan</title>
     <link rel="icon" type="image/png" href="/favicon_hua.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -229,12 +229,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407153833.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">06-ubuntu+VScode+GFortran+fpm+Git</h1>
+                    <h1 class="description center-align post-title">03-ubuntu20.04中clash配置的更新</h1>
                 </div>
             </div>
         </div>
@@ -358,8 +358,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Fortran/" class="post-category">
-                                Fortran
+                            <a href="/categories/ubuntu/" class="post-category">
+                                ubuntu
                             </a>
                         
                     </div>
@@ -385,7 +385,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    5
+                    344
                 </div>
                 
 
@@ -405,7 +405,43 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="ubuntu-VScode-GFortran-fpm-Git"><a href="#ubuntu-VScode-GFortran-fpm-Git" class="headerlink" title="ubuntu+VScode+GFortran+fpm+Git"></a><center>ubuntu+VScode+GFortran+fpm+Git</center></h1>
+                <h1 id="ubuntu20-04中clash配置的更新"><a href="#ubuntu20-04中clash配置的更新" class="headerlink" title="ubuntu20.04中clash配置的更新"></a><center>ubuntu20.04中clash配置的更新</center></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="ubuntu20-04中clash配置的更新-1"><a href="#ubuntu20-04中clash配置的更新-1" class="headerlink" title="ubuntu20.04中clash配置的更新"></a>ubuntu20.04中clash配置的更新</h2><p>在<code>ubuntu-新装系统的基本配置</code>博客中介绍了<code>clash的安装、配置、使用</code>，但是对于具体如何配置<code>clash压缩包</code>并未介绍，另外，由于最近更换了科学上网的账号，需要重新配置clash，在这里就一并介绍了。</p>
+<blockquote>
+<p>ps：千万别泄露自己配置好的<code>clash包</code>，否则你的账号流量会被盗刷~</p>
+</blockquote>
+<ol>
+<li><p>在<a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/releases%E4%B8%8B%E8%BD%BDclash%E7%9A%84%60gz%60%E6%96%87%E4%BB%B6%EF%BC%8C">https://github.com/Dreamacro/clash/releases下载clash的`gz`文件，</a></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407165319.png"></p>
+</li>
+<li><p>解压，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407170036.png"></p>
+</li>
+<li><p>运行解压后的可执行文件，重命名为<code>clash</code>，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407170901.png"></p>
+<p>此时会在<code>~/.config/clash</code>增添<code>config.yaml</code>文件，另外，运行时出现了一个信息<code>can't find MMDB</code>并提供了一个网站，此时需要我们点开网站手动下载<code>MMDB</code>文件，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407170643.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407171506.png"></p>
+</li>
+<li><p>下载自己的<code>config.yaml</code>文件，覆盖原先的<code>config.yaml</code>文件，</p>
+<blockquote>
+<p>千万别泄露自己的<code>config.yaml</code>文件，否则流量会被盗刷；</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407172309.png"></p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407172404.png" style="zoom:50%;">
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407172622.png"></p>
+</li>
+<li><p>将<code>clash</code>可执行文件添加到<code>~/.config/clash</code>路径，运行此文件，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407173042.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407173115.png"></p>
+<p>这样，我们就配置好了<code>clash</code>文件夹了，</p>
+<ul>
+<li>当我们需要到另一台电脑使用时，只需要这个文件夹就可以了，具体看<code>ubuntu-新装系统的基本配置</code>博客中的<code>clash的安装、配置、使用</code>。</li>
+<li>需要更新配置信息时，仅需要更换<code>config.yaml</code>即可，是不是很简单~~</li>
+</ul>
+</li>
+</ol>
+
                 
             </div>
             <hr/>
@@ -431,7 +467,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Liu-Jincan.github.io/2022/04/07/yan-jiu-sheng-justtry-function/fortran/06-ubuntu-vscode-gfortran-fpm-git/">https://Liu-Jincan.github.io/2022/04/07/yan-jiu-sheng-justtry-function/fortran/06-ubuntu-vscode-gfortran-fpm-git/</a>
+                    <a href="https://Liu-Jincan.github.io/2022/04/07/yan-jiu-sheng-justtry-function/ubuntu/03-ubuntu-clash-pei-zhi-de-geng-xin/">https://Liu-Jincan.github.io/2022/04/07/yan-jiu-sheng-justtry-function/ubuntu/03-ubuntu-clash-pei-zhi-de-geng-xin/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -638,17 +674,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/07/yan-jiu-sheng-justtry-function/fortran/06-ubuntu-vscode-gfortran-fpm-git/">
+                <a href="/2022/04/07/yan-jiu-sheng-justtry-function/ubuntu/04-ubuntu-lei-si-win10-zhong-everything-de-ruan-jian-fsearch/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png" class="responsive-img" alt="06-ubuntu+VScode+GFortran+fpm+Git">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407153833.png" class="responsive-img" alt="04-ubuntu类似win10中everything的软件？（fsearch）">
                         
-                        <span class="card-title">06-ubuntu+VScode+GFortran+fpm+Git</span>
+                        <span class="card-title">04-ubuntu类似win10中everything的软件？（fsearch）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-07
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/ubuntu/" class="post-category">
+                                    ubuntu
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/07/yan-jiu-sheng-justtry-function/fortran/06-ubuntu-vscode-conda-gfortran-fpm-git/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png" class="responsive-img" alt="06-ubuntu+VScode+conda+GFortran+fpm+Git">
+                        
+                        <span class="card-title">06-ubuntu+VScode+conda+GFortran+fpm+Git</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -660,47 +735,6 @@
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2022-04-07
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Fortran/" class="post-category">
-                                    Fortran
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/04/06/yan-jiu-sheng-justtry-function/fortran/05-c-he-fortran-hun-bian/">
-                    <div class="card-image">
-                        
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png" class="responsive-img" alt="05-C和Fortran混编">
-                        
-                        <span class="card-title">05-C和Fortran混编</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ~~
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-06
                             </span>
                         <span class="publish-author">
                             
@@ -940,7 +974,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">450k</span>
+                        class="white-color">453.6k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

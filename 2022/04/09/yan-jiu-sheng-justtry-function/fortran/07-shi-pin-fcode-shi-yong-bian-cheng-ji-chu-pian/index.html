@@ -1,0 +1,1696 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="07-视频：fcode实用编程基础篇, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>07-视频：fcode实用编程基础篇 | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">07-视频：fcode实用编程基础篇</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Fortran/" class="post-category">
+                                Fortran
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-04-09
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-04-09
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    2k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="视频：fcode实用编程基础篇"><a href="#视频：fcode实用编程基础篇" class="headerlink" title="视频：fcode实用编程基础篇"></a><center>视频：fcode实用编程基础篇</center></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="视频选集"><a href="#视频选集" class="headerlink" title="视频选集"></a>视频选集</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1x4411b7Sn?spm_id_from=333.337.search-card.all.click">https://www.bilibili.com/video/BV1x4411b7Sn?spm_id_from=333.337.search-card.all.click</a></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P1第-1-期-了解Fortran及相关概念"><a href="#P1第-1-期-了解Fortran及相关概念" class="headerlink" title="P1第 1 期  了解Fortran及相关概念"></a>P1第 1 期  了解Fortran及相关概念</h3><p>35:35</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P2第-2-期-常见编译环境的操作"><a href="#P2第-2-期-常见编译环境的操作" class="headerlink" title="P2第 2 期  常见编译环境的操作"></a>P2第 2 期  常见编译环境的操作</h3><p>51:23</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P3第-3-期-常见问题的检测和排查"><a href="#P3第-3-期-常见问题的检测和排查" class="headerlink" title="P3第 3 期 常见问题的检测和排查"></a>P3第 3 期 常见问题的检测和排查</h3><p>50:41</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P4第-4-期-语法之源代码结构，14-30"><a href="#P4第-4-期-语法之源代码结构，14-30" class="headerlink" title="P4第 4 期 语法之源代码结构，14:30"></a>P4第 4 期 语法之源代码结构，14:30</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409094119.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409094152.png"></p>
+<h4 id="01-45-固定格式和自由格式"><a href="#01-45-固定格式和自由格式" class="headerlink" title="01:45 固定格式和自由格式"></a>01:45 固定格式和自由格式</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409094251.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409094423.png"></p>
+<h4 id="05-35-程序单元"><a href="#05-35-程序单元" class="headerlink" title="05:35 程序单元"></a>05:35 程序单元</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409094559.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409094626.png"></p>
+<ul>
+<li>fortran可以跨平台的原因，<code>运行时库</code>，<code>系统调用</code>，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409094749.png"></p>
+<h4 id="09-43-语句类型"><a href="#09-43-语句类型" class="headerlink" title="09:43 语句类型"></a>09:43 语句类型</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095010.png"></p>
+<ul>
+<li>声明语句</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095039.png"></p>
+<ul>
+<li>执行语句</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095107.png"></p>
+<h4 id="11-18-变量的定义和声明"><a href="#11-18-变量的定义和声明" class="headerlink" title="11:18 变量的定义和声明"></a>11:18 变量的定义和声明</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095231.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095453.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095628.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P5第-5-期-语法之数据类型与浮点数，57-56"><a href="#P5第-5-期-语法之数据类型与浮点数，57-56" class="headerlink" title="P5第 5 期 语法之数据类型与浮点数，57:56"></a>P5第 5 期 语法之数据类型与浮点数，57:56</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095740.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409095926.png"></p>
+<h4 id="02-25-数据类型【法则，标准数据类型，parameter属性】"><a href="#02-25-数据类型【法则，标准数据类型，parameter属性】" class="headerlink" title="02:25 数据类型【法则，标准数据类型，parameter属性】"></a>02:25 数据类型【法则，标准数据类型，parameter属性】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409100415.png"></p>
+<ul>
+<li>不同的法则，不同的数据类型，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409100658.png"></p>
+<ul>
+<li>不同的法则，不同的数据类型，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409100752.png"></p>
+<ul>
+<li>Type类型，是结构体</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409101007.png"></p>
+<ul>
+<li>属性，形容词，符号常量，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409101153.png"></p>
+<h4 id="15-18-Kind，整数的kind"><a href="#15-18-Kind，整数的kind" class="headerlink" title="15:18 Kind，整数的kind"></a>15:18 Kind，整数的kind</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409101305.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409101451.png"></p>
+<ul>
+<li>整数的Kind，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409101734.png"></p>
+<ul>
+<li>整数的Kind，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409101922.png"></p>
+<ul>
+<li>整数的Kind，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409101828.png"></p>
+<ul>
+<li>整数的Kind，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409102055.png"></p>
+<ul>
+<li>整数的kind</li>
+</ul>
+<h4 id="22-43-浮点数的kind"><a href="#22-43-浮点数的kind" class="headerlink" title="22:43 浮点数的kind"></a>22:43 浮点数的kind</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409102234.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409102351.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409102603.png"></p>
+<ul>
+<li>1.6_DP，表示1.6的kind值为<code>DP</code>；</li>
+<li>kind()函数，能查看变量的kind值；</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409102857.png"></p>
+<ul>
+<li><code>4.2..2384</code>，为什么不是4.2，因为1.6是单精度的，<strong>常数必须有kind值，否则会有误差</strong>，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409103015.png"></p>
+<h4 id="31-29-复数的kind"><a href="#31-29-复数的kind" class="headerlink" title="31.29 复数的kind"></a>31.29 复数的kind</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409103247.png"></p>
+<h4 id="32-29-字符型的kind"><a href="#32-29-字符型的kind" class="headerlink" title="32.29 字符型的kind"></a>32.29 字符型的kind</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409103341.png"></p>
+<h4 id="33-08-逻辑性的kind"><a href="#33-08-逻辑性的kind" class="headerlink" title="33.08 逻辑性的kind"></a>33.08 逻辑性的kind</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409103421.png"></p>
+<h4 id="33-36-整型和字符型，子字符串，动态format"><a href="#33-36-整型和字符型，子字符串，动态format" class="headerlink" title="33.36 整型和字符型，子字符串，动态format"></a>33.36 整型和字符型，子字符串，动态format</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409103559.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409103639.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409103738.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409104024.png"></p>
+<ul>
+<li>Open，文件通道号，&gt;10，<code>//</code>挂靠，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409104226.png"></p>
+<ul>
+<li>动态format</li>
+</ul>
+<h4 id="40-45-浮点数"><a href="#40-45-浮点数" class="headerlink" title="40.45 浮点数"></a>40.45 浮点数</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409104318.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409104547.png"></p>
+<ul>
+<li>解释了浮点数~，0.5，0.05，0.005，…</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409104807.png"></p>
+<ul>
+<li>实数数学中的，实型是计算机中的，去接近实数，</li>
+</ul>
+<h4 id="46-25-浮点数IEEE表示规则"><a href="#46-25-浮点数IEEE表示规则" class="headerlink" title="46.25 浮点数IEEE表示规则"></a>46.25 浮点数IEEE表示规则</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409104945.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409105145.png"></p>
+<h4 id="50-40-浮点数误差，精度，浮点数需避免操作，误差放大和累加"><a href="#50-40-浮点数误差，精度，浮点数需避免操作，误差放大和累加" class="headerlink" title="50.40 浮点数误差，精度，浮点数需避免操作，误差放大和累加"></a>50.40 浮点数误差，精度，浮点数需避免操作，误差放大和累加</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409105432.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409105514.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409105948.png"></p>
+<p>没有误差累积的例子：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110048.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110147.png"></p>
+<p>误差累积的例子：</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110240.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409105921.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P6第-6-期-语法之流程控制，24-50"><a href="#P6第-6-期-语法之流程控制，24-50" class="headerlink" title="P6第 6 期 语法之流程控制，24:50"></a>P6第 6 期 语法之流程控制，24:50</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110354.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110430.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110459.png"></p>
+<h4 id="02-06-条件判断，【if，ifelse，else，数组相等，署名，case】"><a href="#02-06-条件判断，【if，ifelse，else，数组相等，署名，case】" class="headerlink" title="02.06 条件判断，【if，ifelse，else，数组相等，署名，case】"></a>02.06 条件判断，【if，ifelse，else，数组相等，署名，case】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110600.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110731.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110827.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409110929.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111038.png"></p>
+<ul>
+<li>数组相等的判断；</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111234.png"></p>
+<ul>
+<li>署名；</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111312.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111428.png"></p>
+<ul>
+<li>case</li>
+</ul>
+<h4 id="11-00-条件判断，【SELECT-TYPE】"><a href="#11-00-条件判断，【SELECT-TYPE】" class="headerlink" title="11.00 条件判断，【SELECT TYPE】"></a>11.00 条件判断，【SELECT TYPE】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111547.png"></p>
+<h4 id="11-27-循环，【DO】"><a href="#11-27-循环，【DO】" class="headerlink" title="11.27 循环，【DO】"></a>11.27 循环，【DO】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111747.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111805.png"></p>
+<h4 id="12-40-循环，【DO-WHILE】"><a href="#12-40-循环，【DO-WHILE】" class="headerlink" title="12.40 循环，【DO WHILE】"></a>12.40 循环，【DO WHILE】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409111849.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112116.png"></p>
+<h4 id="13-30-循环，【Implied-DO】"><a href="#13-30-循环，【Implied-DO】" class="headerlink" title="13.30 循环，【Implied DO】"></a>13.30 循环，【Implied DO】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112155.png"></p>
+<h4 id="14-24-循环，【DO，无穷循环，署名】"><a href="#14-24-循环，【DO，无穷循环，署名】" class="headerlink" title="14.24 循环，【DO，无穷循环，署名】"></a>14.24 循环，【DO，无穷循环，署名】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112400.png"></p>
+<h4 id="15-07-循环，【控制】"><a href="#15-07-循环，【控制】" class="headerlink" title="15.07 循环，【控制】"></a>15.07 循环，【控制】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112446.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112547.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112631.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112819.png"></p>
+<h4 id="17-50-循环，【注意】"><a href="#17-50-循环，【注意】" class="headerlink" title="17.50 循环，【注意】"></a>17.50 循环，【注意】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112852.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112927.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409112955.png"></p>
+<h4 id="20-40-FORTRAN77的替代，【GOTO】"><a href="#20-40-FORTRAN77的替代，【GOTO】" class="headerlink" title="20.40 FORTRAN77的替代，【GOTO】"></a>20.40 FORTRAN77的替代，【GOTO】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409113222.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409113328.png"></p>
+<h4 id="22-40-FORTRAN77的替代，【循环】"><a href="#22-40-FORTRAN77的替代，【循环】" class="headerlink" title="22.40 FORTRAN77的替代，【循环】"></a>22.40 FORTRAN77的替代，【循环】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409113433.png"></p>
+<h4 id="23-43，FORTRAN77的替代，【IF】"><a href="#23-43，FORTRAN77的替代，【IF】" class="headerlink" title="23.43，FORTRAN77的替代，【IF】"></a>23.43，FORTRAN77的替代，【IF】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409113550.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P7第-7-期-语法之数组和结构体，44-21"><a href="#P7第-7-期-语法之数组和结构体，44-21" class="headerlink" title="P7第 7 期 语法之数组和结构体，44:21"></a>P7第 7 期 语法之数组和结构体，44:21</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409151257.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409151416.png"></p>
+<h4 id="00-01-元数据"><a href="#00-01-元数据" class="headerlink" title="00.01 元数据"></a>00.01 元数据</h4><h4 id="03-55-聚合数据"><a href="#03-55-聚合数据" class="headerlink" title="03.55 聚合数据"></a>03.55 聚合数据</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409151622.png"></p>
+<h4 id="04-30-聚合数据，【枚举类型】"><a href="#04-30-聚合数据，【枚举类型】" class="headerlink" title="04.30 聚合数据，【枚举类型】"></a>04.30 聚合数据，【枚举类型】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409151734.png"></p>
+<h4 id="05-50-聚合数据，【数组类型】"><a href="#05-50-聚合数据，【数组类型】" class="headerlink" title="05.50 聚合数据，【数组类型】"></a>05.50 聚合数据，【数组类型】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409151831.png"></p>
+<h4 id="07-35-聚合数据，【结构体类型】"><a href="#07-35-聚合数据，【结构体类型】" class="headerlink" title="07.35 聚合数据，【结构体类型】"></a>07.35 聚合数据，【结构体类型】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409152042.png"></p>
+<h4 id="09-35-聚合数据，【类，面向对象】"><a href="#09-35-聚合数据，【类，面向对象】" class="headerlink" title="09.35 聚合数据，【类，面向对象】"></a>09.35 聚合数据，【类，面向对象】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409152255.png"></p>
+<ul>
+<li>面向对象：数据的封装，类方法的多义性，类的扩展，类的继承，…</li>
+</ul>
+<h4 id="13-43-数组，【数组的分类】"><a href="#13-43-数组，【数组的分类】" class="headerlink" title="13.43 数组，【数组的分类】"></a>13.43 数组，【数组的分类】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409152755.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409152857.png"></p>
+<h4 id="17-30-数组，【数组的声明】"><a href="#17-30-数组，【数组的声明】" class="headerlink" title="17.30 数组，【数组的声明】"></a>17.30 数组，【数组的声明】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409153118.png"></p>
+<h4 id="21-25-数组，【数组的访问】"><a href="#21-25-数组，【数组的访问】" class="headerlink" title="21.25 数组，【数组的访问】"></a>21.25 数组，【数组的访问】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409153442.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409153938.png"></p>
+<ul>
+<li>隐藏函数，</li>
+<li>数组函数<code>FUNARR</code>，<strong>数值会发生变化</strong>，</li>
+<li>不连续的赋值，</li>
+<li>数组函数<code>FUNARR</code>，当传递给数组函数<strong>不连续</strong>的数组片段时，数值不会发生变化，</li>
+</ul>
+<h4 id="33-38-数组，【数组的函数】"><a href="#33-38-数组，【数组的函数】" class="headerlink" title="33.38 数组，【数组的函数】"></a>33.38 数组，【数组的函数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409154659.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409154837.png"></p>
+<h4 id="38-10-结构体"><a href="#38-10-结构体" class="headerlink" title="38.10 结构体"></a>38.10 结构体</h4><ul>
+<li>抽象数据，</li>
+<li>和指针结合起来，</li>
+</ul>
+<h4 id="39-10-结构体，【结构体的声明、访问】"><a href="#39-10-结构体，【结构体的声明、访问】" class="headerlink" title="39.10 结构体，【结构体的声明、访问】"></a>39.10 结构体，【结构体的声明、访问】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409155145.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409155232.png"></p>
+<h4 id="学习正确的书写代码可以减少不必要的麻烦和错误"><a href="#学习正确的书写代码可以减少不必要的麻烦和错误" class="headerlink" title="学习正确的书写代码可以减少不必要的麻烦和错误"></a>学习正确的书写代码可以减少不必要的麻烦和错误</h4><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P8第-8-期-语法之函数和子例行程序，58-53"><a href="#P8第-8-期-语法之函数和子例行程序，58-53" class="headerlink" title="P8第 8 期 语法之函数和子例行程序，58:53"></a>P8第 8 期 语法之函数和子例行程序，58:53</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409155950.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409160034.png"></p>
+<h4 id="02-25-函数和子例行程序，【函数优缺点】"><a href="#02-25-函数和子例行程序，【函数优缺点】" class="headerlink" title="02.25 函数和子例行程序，【函数优缺点】"></a>02.25 函数和子例行程序，【函数优缺点】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409161631.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409161942.png"></p>
+<ul>
+<li>文件的输入输出，消息的发送，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409162023.png"></p>
+<h4 id="11-46-函数和子例行程序，【函数和子例程的声明】"><a href="#11-46-函数和子例行程序，【函数和子例程的声明】" class="headerlink" title="11.46 函数和子例行程序，【函数和子例程的声明】"></a>11.46 函数和子例行程序，【函数和子例程的声明】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409162427.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409162512.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409162551.png"></p>
+<ul>
+<li><code>传址</code>，</li>
+</ul>
+<h4 id="15-15-虚参和实参"><a href="#15-15-虚参和实参" class="headerlink" title="15.15 虚参和实参"></a>15.15 虚参和实参</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409162835.png"></p>
+<h4 id="17-25-虚参和实参，【参数传递方式】"><a href="#17-25-虚参和实参，【参数传递方式】" class="headerlink" title="17.25 虚参和实参，【参数传递方式】"></a>17.25 虚参和实参，【参数传递方式】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409163057.png"></p>
+<ul>
+<li>默认传址，</li>
+</ul>
+<h4 id="21-10-虚参和实参，【example】"><a href="#21-10-虚参和实参，【example】" class="headerlink" title="21.10 虚参和实参，【example】"></a>21.10 虚参和实参，【example】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409163228.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409163407.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409163510.png"></p>
+<h4 id="24-52-传递数组和结构体"><a href="#24-52-传递数组和结构体" class="headerlink" title="24.52 传递数组和结构体"></a>24.52 传递数组和结构体</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409163653.png"></p>
+<h4 id="26-42-传递数组和结构体，【传递数组】"><a href="#26-42-传递数组和结构体，【传递数组】" class="headerlink" title="26.42 传递数组和结构体，【传递数组】"></a>26.42 传递数组和结构体，【传递数组】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409163903.png"></p>
+<ul>
+<li>假定形状默认的下限是<code>1</code>，推荐<code>假定形状</code>，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409164105.png"></p>
+<p>30.15传递数组和结构体，【传递结构体】</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409164252.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409164409.png"></p>
+<h4 id="33-44-特殊用法，【save属性】"><a href="#33-44-特殊用法，【save属性】" class="headerlink" title="33.44 特殊用法，【save属性】"></a>33.44 特殊用法，【save属性】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409164654.png"></p>
+<ul>
+<li>赋初值是在编译的时候进行的，不是在运行的时候</li>
+</ul>
+<h4 id="35-35-特殊用法，【intent属性】"><a href="#35-35-特殊用法，【intent属性】" class="headerlink" title="35.35 特殊用法，【intent属性】"></a>35.35 特殊用法，【intent属性】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409164909.png"></p>
+<ul>
+<li>默认是中性属性</li>
+<li>intent的检查是在编译的时候进行的，不是在运行的时候</li>
+</ul>
+<h4 id="37-15-特殊用法，【value属性】"><a href="#37-15-特殊用法，【value属性】" class="headerlink" title="37.15 特殊用法，【value属性】"></a>37.15 特殊用法，【value属性】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409165122.png"></p>
+<h4 id="38-14-特殊用法，【optional属性，可选参数】"><a href="#38-14-特殊用法，【optional属性，可选参数】" class="headerlink" title="38.14 特殊用法，【optional属性，可选参数】"></a>38.14 特殊用法，【optional属性，可选参数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409165248.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409165319.png"></p>
+<h4 id="40-00-特殊用法，【更改参数顺序】"><a href="#40-00-特殊用法，【更改参数顺序】" class="headerlink" title="40.00 特殊用法，【更改参数顺序】"></a>40.00 特殊用法，【更改参数顺序】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409165516.png"></p>
+<h4 id="42-24-特殊用法，【函数名作为参数】"><a href="#42-24-特殊用法，【函数名作为参数】" class="headerlink" title="42.24 特殊用法，【函数名作为参数】"></a>42.24 特殊用法，【函数名作为参数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409165735.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409165921.png"></p>
+<ul>
+<li><code>x2</code>和<code>x3</code>是传递的函数</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409165947.png"></p>
+<h4 id="46-11-特殊用法，【result后缀】"><a href="#46-11-特殊用法，【result后缀】" class="headerlink" title="46.11 特殊用法，【result后缀】"></a>46.11 特殊用法，【result后缀】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409170451.png"></p>
+<h4 id="49-00-特殊用法，【recursive，递归子程序】"><a href="#49-00-特殊用法，【recursive，递归子程序】" class="headerlink" title="49.00 特殊用法，【recursive，递归子程序】"></a>49.00 特殊用法，【recursive，递归子程序】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409170722.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409170912.png"></p>
+<p>图解，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409170950.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171044.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171112.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171207.png"></p>
+<h4 id="54-43-特殊用法，【递归一进多出，递归使用原则】"><a href="#54-43-特殊用法，【递归一进多出，递归使用原则】" class="headerlink" title="54.43 特殊用法，【递归一进多出，递归使用原则】"></a>54.43 特殊用法，【递归一进多出，递归使用原则】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171321.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171437.png"></p>
+<h4 id="57-46-特殊用法，【不建议使用的特殊用法】"><a href="#57-46-特殊用法，【不建议使用的特殊用法】" class="headerlink" title="57.46 特殊用法，【不建议使用的特殊用法】"></a>57.46 特殊用法，【不建议使用的特殊用法】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171553.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P9第-9-期-语法之Module，1-02-31"><a href="#P9第-9-期-语法之Module，1-02-31" class="headerlink" title="P9第 9 期 语法之Module，1:02:31"></a>P9第 9 期 语法之Module，1:02:31</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171727.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409171957.png"></p>
+<h4 id="03-07-Interface，【interface产生原因】"><a href="#03-07-Interface，【interface产生原因】" class="headerlink" title="03.07 Interface，【interface产生原因】"></a>03.07 Interface，【interface产生原因】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409172203.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409172352.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409172424.png"></p>
+<h4 id="07-55-Interface，【Interface必须使用的情况】"><a href="#07-55-Interface，【Interface必须使用的情况】" class="headerlink" title="07.55 Interface，【Interface必须使用的情况】"></a>07.55 Interface，【Interface必须使用的情况】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409172612.png"></p>
+<h4 id="09-10-Interface，【interface声明】"><a href="#09-10-Interface，【interface声明】" class="headerlink" title="09.10 Interface，【interface声明】"></a>09.10 Interface，【interface声明】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409172836.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409172938.png"></p>
+<ul>
+<li>module自带interface，</li>
+</ul>
+<h4 id="12-13-module，【module产生原因】"><a href="#12-13-module，【module产生原因】" class="headerlink" title="12.13 module，【module产生原因】"></a>12.13 module，【module产生原因】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409173059.png"></p>
+<h4 id="13-45-module，【module与函数的区别】"><a href="#13-45-module，【module与函数的区别】" class="headerlink" title="13.45 module，【module与函数的区别】"></a>13.45 module，【module与函数的区别】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409173235.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409173254.png"></p>
+<h4 id="15-00-module，【module-use，use时默认增加了相关interface的声明】"><a href="#15-00-module，【module-use，use时默认增加了相关interface的声明】" class="headerlink" title="15.00 module，【module use，use时默认增加了相关interface的声明】"></a>15.00 module，【module use，use时默认增加了相关interface的声明】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409173424.png"></p>
+<ul>
+<li><p>在主程序改变a, b, c</p>
+<p>module的子程序默认<strong>继承</strong>新的值，神奇，</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409173904.png"></p>
+<h4 id="18-50-module，【Fortran没有全局变量】"><a href="#18-50-module，【Fortran没有全局变量】" class="headerlink" title="18.50 module，【Fortran没有全局变量】"></a>18.50 module，【Fortran没有全局变量】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409174301.png"></p>
+<h4 id="20-00-module，【module的声明，权限属性-public-protected-private，外部视角-内部视角】"><a href="#20-00-module，【module的声明，权限属性-public-protected-private，外部视角-内部视角】" class="headerlink" title="20.00 module，【module的声明，权限属性-public-protected-private，外部视角-内部视角】"></a>20.00 module，【module的声明，权限属性-public-protected-private，外部视角-内部视角】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409174420.png"></p>
+<ul>
+<li>u, v, w 时<code>Private</code>的</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409175134.png"></p>
+<ul>
+<li>module中的相互调用都是带有interface接口的，</li>
+</ul>
+<h4 id="27-49-module，【】"><a href="#27-49-module，【】" class="headerlink" title="27.49 module，【】"></a>27.49 module，【】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409175302.png"></p>
+<h4 id="28-26-module，【module的继承，模块树】"><a href="#28-26-module，【module的继承，模块树】" class="headerlink" title="28.26 module，【module的继承，模块树】"></a>28.26 module，【module的继承，模块树】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409175656.png"></p>
+<ul>
+<li><code>=&gt;</code>改名字，从<code>tv</code>到<code>screen</code>，</li>
+<li>推荐，moduleA中的变量和函数，带有module的名称，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409175925.png"></p>
+<h4 id="34-16-module，【module的缺点】"><a href="#34-16-module，【module的缺点】" class="headerlink" title="34.16 module，【module的缺点】"></a>34.16 module，【module的缺点】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409180047.png"></p>
+<ul>
+<li>底层模块</li>
+</ul>
+<h4 id="35-58-module，【一个例子】"><a href="#35-58-module，【一个例子】" class="headerlink" title="35.58 module，【一个例子】"></a>35.58 module，【一个例子】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409185855.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409185958.png"></p>
+<h4 id="47-32-特殊用法，【统一接口】"><a href="#47-32-特殊用法，【统一接口】" class="headerlink" title="47.32 特殊用法，【统一接口】"></a>47.32 特殊用法，【统一接口】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409191056.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409191313.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409191355.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409191450.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409191549.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409191738.png"></p>
+<h4 id="55-54-特殊用法，【自定义操作符】"><a href="#55-54-特殊用法，【自定义操作符】" class="headerlink" title="55.54 特殊用法，【自定义操作符】"></a>55.54 特殊用法，【自定义操作符】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409192059.png"></p>
+<h4 id="58-58-特殊用法，【重复的话，为调用者服务】"><a href="#58-58-特殊用法，【重复的话，为调用者服务】" class="headerlink" title="58.58 特殊用法，【重复的话，为调用者服务】"></a>58.58 特殊用法，【重复的话，为调用者服务】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409192331.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409192444.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409192509.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409192551.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P10第-10-期-语法之文件读写-上-，57-55"><a href="#P10第-10-期-语法之文件读写-上-，57-55" class="headerlink" title="P10第 10 期 语法之文件读写(上)，57:55"></a>P10第 10 期 语法之文件读写(上)，57:55</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409192730.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409192918.png"></p>
+<h4 id="02-35-文件和路径，【文件，扩展名】"><a href="#02-35-文件和路径，【文件，扩展名】" class="headerlink" title="02.35 文件和路径，【文件，扩展名】"></a>02.35 文件和路径，【文件，扩展名】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409193141.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409193240.png"></p>
+<ul>
+<li><code>.dat</code>可以是任何文件，仅仅只是扩展名；</li>
+</ul>
+<h4 id="07-10-文件和路径，【文本文件，二进制文件】"><a href="#07-10-文件和路径，【文本文件，二进制文件】" class="headerlink" title="07.10 文件和路径，【文本文件，二进制文件】"></a>07.10 文件和路径，【文本文件，二进制文件】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409193540.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409193706.png"></p>
+<ul>
+<li>用拼音来看英文，</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409193810.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409194002.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409194033.png"></p>
+<h4 id="14-02-文件和路径，【二进制文件专属的应用程序】"><a href="#14-02-文件和路径，【二进制文件专属的应用程序】" class="headerlink" title="14.02 文件和路径，【二进制文件专属的应用程序】"></a>14.02 文件和路径，【二进制文件专属的应用程序】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409194237.png"></p>
+<h4 id="16-45-文件和路径，【二进制文件的解释？需要格式说明】"><a href="#16-45-文件和路径，【二进制文件的解释？需要格式说明】" class="headerlink" title="16.45 文件和路径，【二进制文件的解释？需要格式说明】"></a>16.45 文件和路径，【二进制文件的解释？需要格式说明】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409194500.png"></p>
+<h4 id="19-30-文件和路径，【两种文件的读取方式及其对比，两种文件对比】"><a href="#19-30-文件和路径，【两种文件的读取方式及其对比，两种文件对比】" class="headerlink" title="19.30 文件和路径，【两种文件的读取方式及其对比，两种文件对比】"></a>19.30 文件和路径，【两种文件的读取方式及其对比，两种文件对比】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409194737.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409195015.png"></p>
+<h4 id="26-38-顺序读写有格式文件，【Open语句】"><a href="#26-38-顺序读写有格式文件，【Open语句】" class="headerlink" title="26.38 顺序读写有格式文件，【Open语句】"></a>26.38 顺序读写有格式文件，【Open语句】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409195204.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409195400.png"></p>
+<ul>
+<li><code>通道号</code>，相当一个标签</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409195454.png"></p>
+<h4 id="30-45-顺序读写有格式文件，【通道号与句柄区别】"><a href="#30-45-顺序读写有格式文件，【通道号与句柄区别】" class="headerlink" title="30.45 顺序读写有格式文件，【通道号与句柄区别】"></a>30.45 顺序读写有格式文件，【通道号与句柄区别】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409195700.png"></p>
+<h4 id="32-19-顺序读写有格式文件，【Read语句，跳过一部分读取】"><a href="#32-19-顺序读写有格式文件，【Read语句，跳过一部分读取】" class="headerlink" title="32.19 顺序读写有格式文件，【Read语句，跳过一部分读取】"></a>32.19 顺序读写有格式文件，【Read语句，跳过一部分读取】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409195807.png"></p>
+<ul>
+<li>星号表示一种格式，也存在其它的输出格式，可以尝试去了解，不过一般星号格式够了~~</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409200258.png"></p>
+<p>SSSS</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409200612.png"></p>
+<ul>
+<li>隐秘函数</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409200750.png"></p>
+<h4 id="41-56-顺序读写有格式文件，【Read语句，未知行数、列数】"><a href="#41-56-顺序读写有格式文件，【Read语句，未知行数、列数】" class="headerlink" title="41.56 顺序读写有格式文件，【Read语句，未知行数、列数】"></a>41.56 顺序读写有格式文件，【Read语句，未知行数、列数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409201008.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409201119.png"></p>
+<ul>
+<li>动态读取</li>
+</ul>
+<h4 id="44-44-顺序读写有格式文件，【Read语句，读取行的特定内容】"><a href="#44-44-顺序读写有格式文件，【Read语句，读取行的特定内容】" class="headerlink" title="44.44 顺序读写有格式文件，【Read语句，读取行的特定内容】"></a>44.44 顺序读写有格式文件，【Read语句，读取行的特定内容】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409201344.png"></p>
+<h4 id="48-10-直接读取有格式文件，【直接读取方法的要求】"><a href="#48-10-直接读取有格式文件，【直接读取方法的要求】" class="headerlink" title="48.10 直接读取有格式文件，【直接读取方法的要求】"></a>48.10 直接读取有格式文件，【直接读取方法的要求】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409201637.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409201753.png"></p>
+<h4 id="50-42-直接读取有格式文件，【Open，Read】"><a href="#50-42-直接读取有格式文件，【Open，Read】" class="headerlink" title="50.42 直接读取有格式文件，【Open，Read】"></a>50.42 直接读取有格式文件，【Open，Read】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202006.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202105.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202203.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202334.png"></p>
+<h4 id="56-30-小结"><a href="#56-30-小结" class="headerlink" title="56.30 小结"></a>56.30 小结</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202415.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P11第-11-期-语法之文件读写-下-，38-52"><a href="#P11第-11-期-语法之文件读写-下-，38-52" class="headerlink" title="P11第 11 期 语法之文件读写(下)，38:52"></a>P11第 11 期 语法之文件读写(下)，38:52</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202530.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202629.png"></p>
+<h4 id="02-20-顺序读写无格式文件，【安全，十六进制编辑器查看二进制】"><a href="#02-20-顺序读写无格式文件，【安全，十六进制编辑器查看二进制】" class="headerlink" title="02.20 顺序读写无格式文件，【安全，十六进制编辑器查看二进制】"></a>02.20 顺序读写无格式文件，【安全，十六进制编辑器查看二进制】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409202809.png"></p>
+<h4 id="05-17-顺序读写无格式文件，【MiniHex】"><a href="#05-17-顺序读写无格式文件，【MiniHex】" class="headerlink" title="05.17 顺序读写无格式文件，【MiniHex】"></a>05.17 顺序读写无格式文件，【MiniHex】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409203135.png"></p>
+<h4 id="07-55-顺序读写无格式文件，【…】"><a href="#07-55-顺序读写无格式文件，【…】" class="headerlink" title="07.55 顺序读写无格式文件，【…】"></a>07.55 顺序读写无格式文件，【…】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409203731.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409203800.png"></p>
+<h4 id="13-30-直接读写无格式文件，【…】"><a href="#13-30-直接读写无格式文件，【…】" class="headerlink" title="13.30  直接读写无格式文件，【…】"></a>13.30  直接读写无格式文件，【…】</h4><h4 id="24-16-流文件读写无格式文件，【…】"><a href="#24-16-流文件读写无格式文件，【…】" class="headerlink" title="24.16 流文件读写无格式文件，【…】"></a>24.16 流文件读写无格式文件，【…】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409203959.png"></p>
+<h4 id="29-50-读写无格式文件小结"><a href="#29-50-读写无格式文件小结" class="headerlink" title="29.50 读写无格式文件小结"></a>29.50 读写无格式文件小结</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409204324.png"></p>
+<h4 id="30-29-其他问题，【字节序】"><a href="#30-29-其他问题，【字节序】" class="headerlink" title="30.29 其他问题，【字节序】"></a>30.29 其他问题，【字节序】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409204542.png"></p>
+<ul>
+<li><code>E5</code> 一个字节，8位数bit</li>
+</ul>
+<h4 id="33-13-其他问题，【关于文件路径】"><a href="#33-13-其他问题，【关于文件路径】" class="headerlink" title="33.13 其他问题，【关于文件路径】"></a>33.13 其他问题，【关于文件路径】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409204736.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409204836.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409204950.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409205024.png"></p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="P12第-12-期-语法之标准函数，43-37"><a href="#P12第-12-期-语法之标准函数，43-37" class="headerlink" title="P12第 12 期 语法之标准函数，43:37"></a>P12第 12 期 语法之标准函数，43:37</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409205320.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409205422.png"></p>
+<h4 id="01-55-标准函数的一般问题，【IVF帮助文档】"><a href="#01-55-标准函数的一般问题，【IVF帮助文档】" class="headerlink" title="01.55 标准函数的一般问题，【IVF帮助文档】"></a>01.55 标准函数的一般问题，【IVF帮助文档】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409205549.png"></p>
+<h4 id="05-20-标准函数的一般问题，【很多语法函数并没有提供所有数据类型的版本】"><a href="#05-20-标准函数的一般问题，【很多语法函数并没有提供所有数据类型的版本】" class="headerlink" title="05.20  标准函数的一般问题，【很多语法函数并没有提供所有数据类型的版本】"></a>05.20  标准函数的一般问题，【很多语法函数并没有提供所有数据类型的版本】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409205759.png"></p>
+<h4 id="06-15-标准函数的一般问题，【GenericName】"><a href="#06-15-标准函数的一般问题，【GenericName】" class="headerlink" title="06.15  标准函数的一般问题，【GenericName】"></a>06.15  标准函数的一般问题，【GenericName】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409210031.png"></p>
+<h4 id="08-00-标准函数的一般问题，【逐元函数】"><a href="#08-00-标准函数的一般问题，【逐元函数】" class="headerlink" title="08.00  标准函数的一般问题，【逐元函数】"></a>08.00  标准函数的一般问题，【逐元函数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409210226.png"></p>
+<h4 id="09-21-标准函数的一般问题，【关于优化】"><a href="#09-21-标准函数的一般问题，【关于优化】" class="headerlink" title="09.21 标准函数的一般问题，【关于优化】"></a>09.21 标准函数的一般问题，【关于优化】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409210446.png"></p>
+<h4 id="12-40-数学数值函数，【类型转换】"><a href="#12-40-数学数值函数，【类型转换】" class="headerlink" title="12.40 数学数值函数，【类型转换】"></a>12.40 数学数值函数，【类型转换】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409210619.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409210810.png"></p>
+<h4 id="14-25-数学数值函数，【一般数值函数，三角函数，其他数学函数，向量矩阵函数】"><a href="#14-25-数学数值函数，【一般数值函数，三角函数，其他数学函数，向量矩阵函数】" class="headerlink" title="14.25 数学数值函数，【一般数值函数，三角函数，其他数学函数，向量矩阵函数】"></a>14.25 数学数值函数，【一般数值函数，三角函数，其他数学函数，向量矩阵函数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409210913.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409210958.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409211056.png"></p>
+<h4 id="17-40-字符串和数组函数，【批量化处理，字符串函数】"><a href="#17-40-字符串和数组函数，【批量化处理，字符串函数】" class="headerlink" title="17.40 字符串和数组函数，【批量化处理，字符串函数】"></a>17.40 字符串和数组函数，【批量化处理，字符串函数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409211315.png"></p>
+<ul>
+<li>不同操作系统回车符不一样；</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409211458.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409211608.png"></p>
+<h4 id="24-40-字符串和数组函数，【数组函数】"><a href="#24-40-字符串和数组函数，【数组函数】" class="headerlink" title="24.40 字符串和数组函数，【数组函数】"></a>24.40 字符串和数组函数，【数组函数】</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409211753.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409211849.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409211922.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212022.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212044.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212118.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212150.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212241.png"></p>
+<h4 id="36-47-其他函数"><a href="#36-47-其他函数" class="headerlink" title="36.47 其他函数"></a>36.47 其他函数</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212451.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212549.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220409212706.png"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/04/09/yan-jiu-sheng-justtry-function/fortran/07-shi-pin-fcode-shi-yong-bian-cheng-ji-chu-pian/">https://Liu-Jincan.github.io/2022/04/09/yan-jiu-sheng-justtry-function/fortran/07-shi-pin-fcode-shi-yong-bian-cheng-ji-chu-pian/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2022/04/09/yan-jiu-sheng-justtry-function/fortran/07-shi-pin-fcode-shi-yong-bian-cheng-ji-chu-pian/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png" class="responsive-img" alt="07-视频：fcode实用编程基础篇">
+                        
+                        <span class="card-title">07-视频：fcode实用编程基础篇</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Fortran/" class="post-category">
+                                    Fortran
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/07/yan-jiu-sheng-justtry-function/ubuntu/04-ubuntu-lei-si-win10-zhong-everything-de-ruan-jian-fsearch/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407153833.png" class="responsive-img" alt="04-ubuntu类似win10中everything的软件？（fsearch）">
+                        
+                        <span class="card-title">04-ubuntu类似win10中everything的软件？（fsearch）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/ubuntu/" class="post-category">
+                                    ubuntu
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">453.6k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

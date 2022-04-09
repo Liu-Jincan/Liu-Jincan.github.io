@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-04-06
+                    2022-04-08
                 </div>
                 
 
@@ -1346,30 +1346,43 @@ Copyright (C) 1988-2020 Free Software Foundation, Inc.
 </ul>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h4 id="【FAQ：fortran语言服务器-help-from-清风徐来-codeblock】"><a href="#【FAQ：fortran语言服务器-help-from-清风徐来-codeblock】" class="headerlink" title="【FAQ：fortran语言服务器-help from 清风徐来+codeblock】"></a>【FAQ：fortran语言服务器-help from 清风徐来+codeblock】</h4><ul>
-<li><p>```<br>【新进】Win10+VScode+Gfortran(3079779149) 18:01:57<br>询问关于VScode安装语言服务器Fortran IntelliSence的问题：<br>1、已经在VScode安装了Modern Fortran和Fortran IntelliSence的扩展；<br>2、已经在msys2中安装了python和fortran-language-server；<br>可是都安装后，就只有语法高亮的功能，…<br>求助~~</p>
-<p>【少帅】清风徐来(1325686572) 2022/4/5 18:34:55<br>还需要配置环境路径和必要的vscode插件设置</p>
-<pre class="line-numbers language-none"><code class="language-none">
-  &gt; 自己又思考了一下：**pip安装的fortran-language-server与VScode之间缺少联系**！！！；
+<li><p>1，</p>
+<pre class="line-numbers language-none"><code class="language-none">【新进】Win10+VScode+Gfortran(3079779149) 18:01:57
+询问关于VScode安装语言服务器Fortran IntelliSence的问题：
+1、已经在VScode安装了Modern Fortran和Fortran IntelliSence的扩展；
+2、已经在msys2中安装了python和fortran-language-server；
+可是都安装后，就只有语法高亮的功能，...
+求助~~
 
-* ![](https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405190824.png)
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>【新进】Win10+VScode+Gfortran(3079779149)  19:06:33<br>请问有什么具体的细节吗，查了很久，感觉还是很模糊~</p>
-<pre class="line-numbers language-none"><code class="language-none">
-* ```
-  【管理员】code::blocks(1943133009)  19:08:36
-  fortls的位置
-  
-  【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:28:15
-  找不到fortls.exe，┭┮﹏┭┮
-  
-  【管理员】code::blocks(1943133009) 2022/4/5 19:32:43
-  usr/bin下面
-  
-  【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:38:35
-  只有fortls文件，(⊙_⊙;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+【少帅】清风徐来(1325686572) 2022/4/5 18:34:55
+还需要配置环境路径和必要的vscode插件设置
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>  <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/OVUI_BMDY02%7B()%60_%24O16K%7EF.png"></p>
-  <pre class="line-numbers language-none"><code class="language-none">【管理员】code::blocks(1943133009) 2022/4/5 19:55:09
+<blockquote>
+<p>自己又思考了一下：<strong>pip安装的fortran-language-server与VScode之间缺少联系</strong>！！！；</p>
+</blockquote>
+</li>
+<li><p>2，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405190824.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">【新进】Win10+VScode+Gfortran(3079779149)  19:06:33
+请问有什么具体的细节吗，查了很久，感觉还是很模糊~<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>3，</p>
+<pre class="line-numbers language-none"><code class="language-none">【管理员】code::blocks(1943133009)  19:08:36
+fortls的位置
+
+【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:28:15
+找不到fortls.exe，┭┮﹏┭┮
+
+【管理员】code::blocks(1943133009) 2022/4/5 19:32:43
+usr/bin下面
+
+【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:38:35
+只有fortls文件，(⊙_⊙;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/OVUI_BMDY02%7B()%60_%24O16K%7EF.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">【管理员】code::blocks(1943133009) 2022/4/5 19:55:09
 神奇
 
 【管理员】code::blocks(1943133009) 2022/4/5 19:55:20
@@ -1378,109 +1391,211 @@ msys2里面居然是linux文件<span aria-hidden="true" class="line-numbers-rows
 <blockquote>
 <p>思考原因：可能是因为我在<code>msys2 msys</code>中安装的<code>fortran-language-service</code>（即<code>fortls</code>），接下来的<code>清风徐来</code>给出了一个方法，用conda安装；</p>
 </blockquote>
-<ul>
-<li>```<br>【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:17:36<br>你安装是什么版本的modern fortran @Win10+VScode+Gfortran 【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:18:23<br>用windows，还是vs好用哦【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:18:34<br>清风徐来-Fortran<br>你安装是什么版本的modern fortran @Win10+VScode+Gfortran<br>@清风徐来-Fortran  v2.6.2的版本…【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:19:22<br>想着在windows学了VScode，linux系统基本也一样…【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:20:47<br>你可以安装预览版本的modern fortran 【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:21:16<br>那个好用些【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:22:04<br>跳转功能你应该已经有了【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:22:22<br>你想要什么插件功能？【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:22:46<br>fortran 插件没那么完美【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:22:54<br>函数跳转、悬挂信息~~【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:24:08<br>这个在2.6版本应该属于intellisense的功能【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:24:28<br>只要fortls装对了，按理说没问题【少帅】清风徐来-Fortran<a href="mailto:zuo.zhihua@qq.com">zuo.zhihua@qq.com</a> 2022/4/5 19:24:40<br>你查一下fortls —version<pre class="line-numbers language-none"><code class="language-none">
-    ![](https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405225827.png)
+</li>
+<li><p>4，</p>
+<pre class="line-numbers language-none"><code class="language-none">【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:17:36
+你安装是什么版本的modern fortran @Win10+VScode+Gfortran 
 
-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:18:23
+用windows，还是vs好用哦
 
-#### 【FAQ：fortran语言服务器-help from 清风徐来】（解决）
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-清风徐来  19:27:02<br>我是清风徐来，10分钟后远程看看？</li>
+【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:18:34
+清风徐来-Fortran  
+你安装是什么版本的modern fortran @Win10+VScode+Gfortran 
+@清风徐来-Fortran  v2.6.2的版本...
+
+【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:19:22
+想着在windows学了VScode，linux系统基本也一样...
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:20:47
+你可以安装预览版本的modern fortran 
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:21:16
+那个好用些
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:22:04
+跳转功能你应该已经有了
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:22:22
+你想要什么插件功能？
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:22:46
+fortran 插件没那么完美
+
+【新进】Win10+VScode+Gfortran(3079779149) 2022/4/5 19:22:54
+函数跳转、悬挂信息~~
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:24:08
+这个在2.6版本应该属于intellisense的功能
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:24:28
+只要fortls装对了，按理说没问题
+
+【少帅】清风徐来-Fortran&lt;zuo.zhihua@qq.com&gt; 2022/4/5 19:24:40
+你查一下fortls —version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405225827.png"></p>
+</li>
 </ul>
 </li>
 </ul>
-<p>MyLifeStyle  19:27:42<br>可以可以，十分感谢大佬~~</p>
-<p>清风徐来  19:28:22<br>vscode非常不适合新手，祝你好运，待会给你远程</p>
-<p>清风徐来  19:28:29<br>你有向日葵吗？</p>
-<p>MyLifeStyle  19:29:34<br>有的有的，学习vscode主要是出于兴趣，感觉很强大~~</p>
-<p>MyLifeStyle  19:31:11<br>可能这就是越菜越爱玩吧</p>
-<p>清风徐来-Fortran  19:40:36<br>你把你的向日葵账号截图发过来吧</p>
-<p>MyLifeStyle  19:42:21<br>596795618</p>
-<p>MyLifeStyle  19:42:31<br>84n01y</p>
-<pre class="line-numbers language-none"><code class="language-none">
-1. `Modern Fortran`扩展变为预发布版本，
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="【FAQ：fortran语言服务器-help-from-清风徐来】（解决）"><a href="#【FAQ：fortran语言服务器-help-from-清风徐来】（解决）" class="headerlink" title="【FAQ：fortran语言服务器-help from 清风徐来】（解决）"></a>【FAQ：fortran语言服务器-help from 清风徐来】（解决）</h4><pre class="line-numbers language-none"><code class="language-none">清风徐来  19:27:02
+我是清风徐来，10分钟后远程看看？
 
-   ![](https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405230458.png)
+MyLifeStyle  19:27:42
+可以可以，十分感谢大佬~~
 
-   `Fortran configuration`的设置，
+清风徐来  19:28:22
+vscode非常不适合新手，祝你好运，待会给你远程
 
-   ![](https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405231034.png)
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>   清风徐来-Fortran  19:58:33<br>   默认开启了gfortran linter，它会生成很多.mod文件</p>
-<p>   清风徐来-Fortran  19:59:00<br>   你可以使用这个选项控制输出.mod文件到特定路径<br>   </p><pre class="line-numbers language-none"><code class="language-none">
-   ![](https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405231353.png)
+清风徐来  19:28:29
+你有向日葵吗？
 
-   &gt; `${workspaceFolder}/build/dependencies/`，貌似与`fpm`联系在了一起；
+MyLifeStyle  19:29:34
+有的有的，学习vscode主要是出于兴趣，感觉很强大~~
 
-2. ```
-   清风徐来-Fortran  19:59:26
-   我给你安装的modern fortran预览版本，这个更开箱即用。
-   
-   清风徐来-Fortran  19:59:56
-   你看看有问题没有
-   
-   清风徐来-Fortran  20:00:15
-   好像我默认使用的pip是conda的python的pip
-   
-   清风徐来-Fortran  20:00:23
-   不是msys2的pip
-   
-   清风徐来-Fortran  20:00:39
-   不过差别不大，能用就行
-   
-   MyLifeStyle  20:00:49
-   太强了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
-<p>   <code>msys-bash</code>操作，</p>
-<p>   <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405231942.png"></p>
-<p>   <code>fortls.exe</code>，</p>
-<p>   <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405233630.png"></p>
-   <pre class="line-numbers language-none"><code class="language-none">清风徐来-Fortran 20:01:14
+MyLifeStyle  19:31:11
+可能这就是越菜越爱玩吧
+
+清风徐来-Fortran  19:40:36
+你把你的向日葵账号截图发过来吧
+
+MyLifeStyle  19:42:21
+596795618
+
+MyLifeStyle  19:42:31
+84n01y
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ol>
+<li><p><code>Modern Fortran</code>扩展变为预发布版本，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405230458.png"></p>
+<p><code>Fortran configuration</code>的设置，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405231034.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">清风徐来-Fortran  19:58:33
+默认开启了gfortran linter，它会生成很多.mod文件
+
+清风徐来-Fortran  19:59:00
+你可以使用这个选项控制输出.mod文件到特定路径<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405231353.png"></p>
+<blockquote>
+<p><code>${workspaceFolder}/build/dependencies/</code>，貌似与<code>fpm</code>联系在了一起；</p>
+</blockquote>
+</li>
+<li><p>SSS，</p>
+<pre class="line-numbers language-none"><code class="language-none">清风徐来-Fortran  19:59:26
+我给你安装的modern fortran预览版本，这个更开箱即用。
+
+清风徐来-Fortran  19:59:56
+你看看有问题没有
+
+清风徐来-Fortran  20:00:15
+好像我默认使用的pip是conda的python的pip
+
+清风徐来-Fortran  20:00:23
+不是msys2的pip
+
+清风徐来-Fortran  20:00:39
+不过差别不大，能用就行
+
+MyLifeStyle  20:00:49
+太强了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>msys-bash</code>操作，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405231942.png"></p>
+<p><code>fortls.exe</code>，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405233630.png"></p>
+<pre class="line-numbers language-none"><code class="language-none">清风徐来-Fortran 20:01:14
 另外给你安装了一个**everything**，用来查找全局文件的
 
 MyLifeStyle 20:01:44
 好勒，十分感谢大佬!，之前也想弄这个，这次都知道了<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>   <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/6ED1AEBC48A9F5C7291BA741640D09E9.jpg"></p>
-<ol start="3">
-<li><p>```<br>清风徐来-Fortran  20:01:52<br>vs code的好处是可以联网存储设置，以后换笔记本比较方便。</p>
-<p>清风徐来-Fortran  20:02:30<br>我已经好久没配置过fortran了，不是很熟练了</p>
-<p>MyLifeStyle  20:03:12<br>最近一直在配置文件，fortran代码都还没具体看</p>
-<p>MyLifeStyle  20:03:43<br>十分感谢呀</p>
-<p>清风徐来-Fortran  20:04:01<br>我主要在windows上使用、开发fortran，vs code难度不适合新手。</p>
-<p>清风徐来-Fortran  20:04:15<br>你使用什么make工具构建代码？</p>
-<p>MyLifeStyle  20:04:35<br>最近刚学make，也学了fpm</p>
-<p>MyLifeStyle  20:04:45<br>cmake就没看了</p>
-<p>清风徐来-Fortran  20:05:08<br>用fpm，有点赶潮流啊</p>
-<p>清风徐来-Fortran  20:05:41<br>fpm还是不适合正经项目</p>
-<p>清风徐来-Fortran  20:06:06<br>cmake比较难，make不是非常适合跨平台、跨编译器。</p>
-<p>清风徐来-Fortran  20:06:19<br>Fortran环境、生态一地鸡毛</p>
-<p>MyLifeStyle  20:06:39<br>我也觉得很难</p>
-<p>清风徐来-Fortran  20:06:48<br>你怎么了解到fpm的，为什么突然开始做fortran代码？</p>
-<p>清风徐来-Fortran  20:07:01<br>我看你对python也有涉猎啊</p>
-<p>MyLifeStyle  20:07:42<br>做项目接触到的，很多代码都是fortran</p>
-<p>清风徐来-Fortran  20:07:54<br>你是研究生吗？</p>
-<p>MyLifeStyle  20:08:02<br>最近任务都还没做，一直在弄环境</p>
-<p>MyLifeStyle  20:08:20<br>嗯嗯，还很弱鸡</p>
-<p>清风徐来-Fortran  20:08:30<br>可能你们实验室的技术栈就有fortran，我们实验室也是fortran为主。</p>
-<p>清风徐来-Fortran  20:08:43<br>但还是vs适合新手更多</p>
-<p>MyLifeStyle  20:09:47<br>VS很久没用了，实验室电脑是Linux的，我电脑是windows的，没办法</p>
-<pre class="line-numbers language-none"><code class="language-none">
-4. ```
-   清风徐来-Fortran  20:09:49
-   fortran-lang有望在其命名空间下维护vs code的Fortran插件。
-   
-   清风徐来-Fortran  20:10:12
-   我们这都是windows用fortran，计算量不大
-   
-   清风徐来-Fortran  20:10:21
-   你们可能计算量更大
-   
-   MyLifeStyle  20:11:09
-   对，需要跑模式，计算量很大，可能还要去学并行相关的知识，好难
-   
-   MyLifeStyle  20:12:07
-   再次感谢啦<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/6ED1AEBC48A9F5C7291BA741640D09E9.jpg"></p>
+</li>
+<li><p>SSS，</p>
+<pre class="line-numbers language-none"><code class="language-none">清风徐来-Fortran  20:01:52
+vs code的好处是可以联网存储设置，以后换笔记本比较方便。
+
+清风徐来-Fortran  20:02:30
+我已经好久没配置过fortran了，不是很熟练了
+
+MyLifeStyle  20:03:12
+最近一直在配置文件，fortran代码都还没具体看
+
+MyLifeStyle  20:03:43
+十分感谢呀
+
+清风徐来-Fortran  20:04:01
+我主要在windows上使用、开发fortran，vs code难度不适合新手。
+
+清风徐来-Fortran  20:04:15
+你使用什么make工具构建代码？
+
+MyLifeStyle  20:04:35
+最近刚学make，也学了fpm
+
+MyLifeStyle  20:04:45
+cmake就没看了
+
+清风徐来-Fortran  20:05:08
+用fpm，有点赶潮流啊
+
+清风徐来-Fortran  20:05:41
+fpm还是不适合正经项目
+
+清风徐来-Fortran  20:06:06
+cmake比较难，make不是非常适合跨平台、跨编译器。
+
+清风徐来-Fortran  20:06:19
+Fortran环境、生态一地鸡毛
+
+MyLifeStyle  20:06:39
+我也觉得很难
+
+清风徐来-Fortran  20:06:48
+你怎么了解到fpm的，为什么突然开始做fortran代码？
+
+清风徐来-Fortran  20:07:01
+我看你对python也有涉猎啊
+
+MyLifeStyle  20:07:42
+做项目接触到的，很多代码都是fortran
+
+清风徐来-Fortran  20:07:54
+你是研究生吗？
+
+MyLifeStyle  20:08:02
+最近任务都还没做，一直在弄环境
+
+MyLifeStyle  20:08:20
+嗯嗯，还很弱鸡
+
+清风徐来-Fortran  20:08:30
+可能你们实验室的技术栈就有fortran，我们实验室也是fortran为主。
+
+清风徐来-Fortran  20:08:43
+但还是vs适合新手更多
+
+MyLifeStyle  20:09:47
+VS很久没用了，实验室电脑是Linux的，我电脑是windows的，没办法<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>SSS，</p>
+<pre class="line-numbers language-none"><code class="language-none">清风徐来-Fortran  20:09:49
+fortran-lang有望在其命名空间下维护vs code的Fortran插件。
+
+清风徐来-Fortran  20:10:12
+我们这都是windows用fortran，计算量不大
+
+清风徐来-Fortran  20:10:21
+你们可能计算量更大
+
+MyLifeStyle  20:11:09
+对，需要跑模式，计算量很大，可能还要去学并行相关的知识，好难
+
+MyLifeStyle  20:12:07
+再次感谢啦<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220405232757.png"></p>
 <blockquote>
@@ -2056,7 +2171,7 @@ MyLifeStyle 20:01:44
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">450k</span>
+                        class="white-color">453.6k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
