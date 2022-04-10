@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-04-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    6.8k
+                    7.3k
                 </div>
                 
 
@@ -1060,6 +1060,106 @@ end program<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220330175525.png" alt="img"></p>
 </li>
 </ol>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h4 id="f90的跨文件调试（launch-json）（成功）"><a href="#f90的跨文件调试（launch-json）（成功）" class="headerlink" title=".f90的跨文件调试（launch.json）（成功）"></a>.f90的跨文件调试（launch.json）（成功）</h4><p>【问题来源】</p>
+<pre class="line-numbers language-none"><code class="language-none">【新进】400mm(137391659) 2022/4/10 20:37:59
+@ubuntu+VScode+Gfortran 我有一个问题请教，fortran77 程序文件，调用（CALL）另外一个fortran77文件中的子程序（SUBROUTINE），在VScode中，无法调试运行，错误提示为：子程序没有定义。如何解决？
+
+【新进】400mm(137391659) 2022/4/10 20:39:09
+就是要，多个文件联合在一起，调试才行，可是我不知道在vscode怎么设置
+
+【新进】400mm(137391659) 2022/4/10 20:40:02
+单个文件的可以正常调试
+
+【管理员】code::blocks(1943133009) 2022/4/10 20:52:59
+{fileDirname}\\*.for 或者你的相关文件如果都在这一个文件夹里面 写成这样也行
+
+【新进】400mm(137391659) 2022/4/10 21:23:54
+@code::blocks 方法可以实现多个for文件编译调试，大佬，还想请教一个问题，还有一个*.C文件要一起编译调试，就是for文件和C文件一起编译调试，如何设置？
+
+【管理员】code::blocks(1943133009) 2022/4/10 21:25:22
+把c文件加上就行
+
+【管理员】code::blocks(1943133009) 2022/4/10 21:25:30
+gfortran可以直接编译c文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>【接下来是对.f90的跨文件调试】</p>
+<ul>
+<li><p>项目为<code>test_multi_f90file</code>，位于<code>Fortran</code>文件夹中，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220410224851.png"></p>
+<p><code>launch_json</code>位于<code>.vscode</code>中，其内容如下，</p>
+<pre class="line-numbers language-none"><code class="language-none">{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "by-gdb",
+            "request": "launch",
+            "name": "Launch(gdb)",
+            "program": "${workspaceRoot}\\test_multi_f90file\\main.exe",
+            "args": [
+                "${workspaceRoot}\\test_multi_f90file\\mod_parms.o"
+            ],
+            "cwd": "${workspaceRoot}"
+        }
+    ]
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+</blockquote>
+<p><code>Makefile</code>，</p>
+<pre class="line-numbers language-none"><code class="language-none">FC = gfortran
+FFLAGS = -g
+runOBJS =  mod_parms.o main.o 
+
+%.o:%.f90
+	$(FC) -c $(FFLAGS) $&lt;
+
+# $(runOBJS) 中.o文件顺序反过来会错误，说明，越是底层的.o文件，越是在前面；
+# main.exe
+run:$(runOBJS)  
+	$(FC) $(FFLAGS) $(runOBJS) -o main 
+
+clean:
+	rm -f *.o *.exe *.mod<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>main.f90</code>，</p>
+<pre class="line-numbers language-none"><code class="language-none">subroutine abc
+    implicit none
+    print *, 'hello world.'
+    print *, 'hello world.'
+end subroutine abc
+
+program main
+    use mod_parms
+    implicit none
+    real :: tmp
+    call abc
+    call abcd
+    tmp = 0.0
+    print *, 'hello world.'
+end program<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>mod_parms.f90</code>，</p>
+<pre class="line-numbers language-none"><code class="language-none">module mod_parms
+   implicit none
+   integer, parameter :: NN = 121
+contains
+   subroutine abcd
+      implicit none
+      print *, 'hello world.'
+      print *, 'hello world.'
+   end subroutine abcd
+
+end module mod_parms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<ol>
+<li>进入<code>test_multi_f90file</code>，在msys-bash输入命令<code>make clean</code>，<code>make run</code>，</li>
+<li>打断点，</li>
+<li>在<code>运行和调试</code>中，开始调试，</li>
+</ol>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h3 id="VScode-中fortran90用户代码片段"><a href="#VScode-中fortran90用户代码片段" class="headerlink" title="VScode 中fortran90用户代码片段"></a>VScode 中fortran90用户代码片段</h3><blockquote>
 <p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/350471140/answer/855566722">https://www.zhihu.com/question/350471140/answer/855566722</a></p>
@@ -1636,7 +1736,7 @@ MyLifeStyle  20:12:07
 <li>工作区另存为</li>
 </ul>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
-<h3 id="VScode-任务json（help-from-Vscode新人）"><a href="#VScode-任务json（help-from-Vscode新人）" class="headerlink" title="VScode 任务json（help from Vscode新人）"></a>VScode 任务json（help from Vscode新人）</h3><blockquote>
+<h3 id="VScode-tasks-json（help-from-Vscode新人）"><a href="#VScode-tasks-json（help-from-Vscode新人）" class="headerlink" title="VScode tasks.json（help from Vscode新人）"></a>VScode tasks.json（help from Vscode新人）</h3><blockquote>
 <p>VSCode 配置文件的变量索引：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/44967536%EF%BC%8C">https://zhuanlan.zhihu.com/p/44967536，</a></p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/6I1U(WBC9F%7E((QW)S__BPGO.png"></p>
@@ -2171,7 +2271,7 @@ MyLifeStyle  20:12:07
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">453.6k</span>
+                        class="white-color">455.1k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

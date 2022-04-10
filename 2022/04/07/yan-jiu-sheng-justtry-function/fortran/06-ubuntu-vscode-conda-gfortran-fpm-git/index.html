@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-04-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    577
+                    876
                 </div>
                 
 
@@ -499,6 +499,98 @@
 <p>base环境下pip list没有fortls包。</p>
 </li>
 <li><p>验证能否跳转…；</p>
+</li>
+</ol>
+<p>SSSSSSSSSSSSSSSSS</p>
+<h3 id="VScode-扩展-gdb-跨文件调试（ubuntu）"><a href="#VScode-扩展-gdb-跨文件调试（ubuntu）" class="headerlink" title="VScode 扩展 gdb 跨文件调试（ubuntu）"></a>VScode 扩展 gdb 跨文件调试（ubuntu）</h3><ul>
+<li>基于<code>Win10+VScode+Msys2+Mingw64+GFortran+Git</code>博客中Win10的gdb多文件调试写得；</li>
+</ul>
+<ol>
+<li><p>确定安装了gdb，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220410233330.png"></p>
+</li>
+<li><p>确定安装了gdb扩展；</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220330125428.png" alt="img"></p>
+</li>
+<li><p>项目为<code>test_multi_f90file</code>，位于<code>Data-Assimilation-for-Ocean-Current-Forcast</code>的github仓库<code>make_v0.2.0</code>分支，（<a target="_blank" rel="noopener" href="https://github.com/Liu-Jincan/Data-Assimilation-for-Ocean-Current-Forecasts/tree/v0.2.0-make%EF%BC%89">https://github.com/Liu-Jincan/Data-Assimilation-for-Ocean-Current-Forecasts/tree/v0.2.0-make）</a></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220410233704.png"></p>
+<p><code>launch_json</code>位于<code>.vscode</code>中，其内容如下，</p>
+<pre class="line-numbers language-none"><code class="language-none">{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "by-gdb",
+            "request": "launch",
+            "name": "Launch(gdb)",
+            "program": "${workspaceRoot}\\test_multi_f90file\\main.exe",
+            "args": [
+                "${workspaceRoot}\\test_multi_f90file\\mod_parms.o"
+            ],
+            "cwd": "${workspaceRoot}"
+        }
+    ]
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p><code>Makefile</code>，</p>
+<pre class="line-numbers language-none"><code class="language-none">FC = gfortran
+FFLAGS = -g
+runOBJS =  mod_parms.o main.o 
+
+%.o:%.f90
+	$(FC) -c $(FFLAGS) $&lt;
+
+# $(runOBJS) 中.o文件顺序反过来会错误，说明，越是底层的.o文件，越是在前面；
+# main.exe
+run:$(runOBJS)  
+	$(FC) $(FFLAGS) $(runOBJS) -o main 
+
+clean:
+	rm -f *.o *.exe *.mod<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>main.f90</code>，</p>
+<pre class="line-numbers language-none"><code class="language-none">subroutine abc
+    implicit none
+    print *, 'hello world.'
+    print *, 'hello world.'
+end subroutine abc
+
+program main
+    use mod_parms
+    implicit none
+    real :: tmp
+    call abc
+    call abcd
+    tmp = 0.0
+    print *, 'hello world.'
+end program<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>mod_parms.f90</code>，</p>
+<pre class="line-numbers language-none"><code class="language-none">module mod_parms
+   implicit none
+   integer, parameter :: NN = 121
+contains
+   subroutine abcd
+      implicit none
+      print *, 'hello world.'
+      print *, 'hello world.'
+   end subroutine abcd
+
+end module mod_parms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>进入<code>test_multi_f90file</code>，在bash输入命令<code>make clean</code>，<code>make run</code>，</p>
+</li>
+<li><p>打断点，</p>
+</li>
+<li><p>在<code>运行和调试</code>中，开始调试，</p>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ol>
 
@@ -1034,7 +1126,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">453.6k</span>
+                        class="white-color">455.1k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
