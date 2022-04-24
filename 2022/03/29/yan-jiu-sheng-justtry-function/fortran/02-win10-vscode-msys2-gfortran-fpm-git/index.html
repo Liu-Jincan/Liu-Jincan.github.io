@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-04-10
+                    2022-04-18
                 </div>
                 
 
@@ -1309,17 +1309,24 @@ Copyright (C) 1988-2020 Free Software Foundation, Inc.
 </blockquote>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h3 id="SSSSSSSSSSSSSSSSSSSSSS（以下文件丢失过一次，我感觉好恶心，🤮）"><a href="#SSSSSSSSSSSSSSSSSSSSSS（以下文件丢失过一次，我感觉好恶心，🤮）" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSS（以下文件丢失过一次，我感觉好恶心，🤮）"></a>SSSSSSSSSSSSSSSSSSSSSS（以下文件丢失过一次，我感觉好恶心，🤮）</h3><h3 id="VScode-git源代码管理"><a href="#VScode-git源代码管理" class="headerlink" title="VScode-git源代码管理"></a>VScode-git源代码管理</h3><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
-<h4 id="推送：git-bash-把项目第一次推送到github仓库上"><a href="#推送：git-bash-把项目第一次推送到github仓库上" class="headerlink" title="推送：git bash 把项目第一次推送到github仓库上"></a>推送：git bash 把项目第一次推送到github仓库上</h4><blockquote>
-<p>git 推送本地文件到远程仓库</p>
+<h4 id="推送：git-bash-把项目第一次推送到github仓库上"><a href="#推送：git-bash-把项目第一次推送到github仓库上" class="headerlink" title="推送：git bash 把项目第一次推送到github仓库上"></a>推送：git bash 把项目第一次推送到github仓库上</h4><p>【1】github创建远程仓库，（以AddTimestamp为例）</p>
+<blockquote>
+<p>没想到创建完远程仓库有指导怎么推送，真智能；</p>
 </blockquote>
-<ol>
-<li>在需要建立本地仓库的位置调出git bash</li>
-<li>输入git init，初始化本地仓库</li>
-<li>输入git add .，将文件存入本地仓库</li>
-<li>输入git commit，提交</li>
-<li>输入git remote add origin 仓库地址， 添加远程仓库</li>
-<li>输入git push -u origin master，将之前已commit的本地仓库文件推到远程仓库</li>
-</ol>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220418095055.png"></p>
+<p>【2】VScode git-bash 按照上图进行操作，</p>
+<ul>
+<li>git init</li>
+<li>git commit -m “first commit”</li>
+<li>git branch -M v0.1.0<blockquote>
+<p>v0.1.0可以换成main等</p>
+</blockquote>
+</li>
+<li>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/Liu-Jincan/AddTimestamp.git">https://github.com/Liu-Jincan/AddTimestamp.git</a></li>
+<li>git push -u origin v0.1.0</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220418095742.png"></p>
+<p>【3】以后就用VScode进行操作即可，当然也可按照上图操作，<br>nice~</p>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h4 id="推送：VScode-修改本地仓库（以fpm项目为例）"><a href="#推送：VScode-修改本地仓库（以fpm项目为例）" class="headerlink" title="推送：VScode 修改本地仓库（以fpm项目为例）"></a>推送：VScode 修改本地仓库（以<code>fpm</code>项目为例）</h4><blockquote>
 <p>核心：”添-提-拉-推”方法</p>
@@ -2271,7 +2278,7 @@ MyLifeStyle  20:12:07
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">458.7k</span>
+                        class="white-color">465.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
