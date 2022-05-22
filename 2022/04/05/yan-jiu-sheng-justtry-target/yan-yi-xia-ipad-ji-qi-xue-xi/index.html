@@ -1,0 +1,1817 @@
+<!DOCTYPE HTML>
+<!-- 01 语言选择 -->
+<html lang="En">
+
+<!-- 02 head是哪里？ok~~，首页，分类～～ -->
+<!-- 下面的这个ejs语句，添加网站的head部分，即主页，分类等及其图标 -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="研一下-ipad, Jincan">
+    <meta name="description" content="~~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>研一下-ipad | Jincan</title>
+    <link rel="icon" type="image/png" href="/favicon_hua.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    
+    <!-- aliyun网站教程添加图标所需的导入css，放到 matery 中的 my.css中 -->
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    
+    
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+     
+<meta name="generator" content="Hexo 5.4.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+<!-- 03 background是什么？网站背景图 -->
+
+
+
+<body>
+    <!--04 header是什么？logo，navigation，githublink -->
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo_hua.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Jincan</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo_hua.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Jincan</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">研一下-ipad</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: scroll;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                研究生JustTry
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2022-04-05
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2022-05-22
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    4.9k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="研一下-ipad"><a href="#研一下-ipad" class="headerlink" title="研一下-ipad"></a><center>研一下-ipad</center></h1><h2 id="文档托管"><a href="#文档托管" class="headerlink" title="文档托管"></a>文档托管</h2><ul>
+<li>百度网盘：<ul>
+<li>【MasterG1S2_xmind-ipad-内购解密】</li>
+<li>【MasterG1S2_xmind-win-内购解密】</li>
+</ul>
+</li>
+</ul>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="双双今天更好了嘛，iPad-Air3-Apple-pencil一代-珞小希笔尖-磁吸类纸膜"><a href="#双双今天更好了嘛，iPad-Air3-Apple-pencil一代-珞小希笔尖-磁吸类纸膜" class="headerlink" title="双双今天更好了嘛，iPad Air3+Apple pencil一代+珞小希笔尖+磁吸类纸膜"></a>双双今天更好了嘛，iPad Air3+Apple pencil一代+珞小希笔尖+磁吸类纸膜</h2><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="【学习型iPad打造指南】"><a href="#【学习型iPad打造指南】" class="headerlink" title="【学习型iPad打造指南】"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bU4y177pA?spm_id_from=333.337.search-card.all.click">【学习型iPad打造指南】</a></h3><p>不全面 为字幕中所提到的app<br>1、桌面便签<br>2、自带日历<br>3、倒数日•Days Matter<br>4、<strong>微信读书</strong><br>5、欧路词典<br>6、goodnotes或Notability<br>7、<strong>Xmind</strong><br>8、marginnote<br>9、蒙哥英语原版阅读器<br>10、中国之网<br>11、<strong>每日听力</strong><br>12、哔哩哔哩（众所周知的学习软件<img src="https://i0.hdslb.com/bfs/emote/b4cb77159d58614a9b787b91b1cd22a81f383535.png@100w_100h.png" alt="img"><br>13、podcast<br>14、网易云音乐（听英语听力<img src="https://i0.hdslb.com/bfs/emote/bf7e00ecab02171f8461ee8cf439c73db9797748.png@100w_100h.png" alt="img"><br>15、喜马拉雅</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="【如何用iPad做出整洁美观的电子笔记】"><a href="#【如何用iPad做出整洁美观的电子笔记】" class="headerlink" title="【如何用iPad做出整洁美观的电子笔记】"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1tq4y1d7p4/?spm_id_from=333.788">【如何用iPad做出整洁美观的电子笔记】</a></h3><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h3 id="【iPad学英语有被爽到！】"><a href="#【iPad学英语有被爽到！】" class="headerlink" title="【iPad学英语有被爽到！】"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1h44y1v7uV/?spm_id_from=333.788">【iPad学英语有被爽到！】</a></h3><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="FAQ：ipad能否下载typora和piggo？"><a href="#FAQ：ipad能否下载typora和piggo？" class="headerlink" title="FAQ：ipad能否下载typora和piggo？"></a>FAQ：ipad能否下载typora和piggo？</h2><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="字丑，我劝你别买iPad做笔记，5600买的air4，半年4200卖出"><a href="#字丑，我劝你别买iPad做笔记，5600买的air4，半年4200卖出" class="headerlink" title="字丑，我劝你别买iPad做笔记，5600买的air4，半年4200卖出!"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1F3411L7mP?spm_id_from=333.337.search-card.all.click">字丑，我劝你别买iPad做笔记，5600买的air4，半年4200卖出!</a></h2><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="ipad保护套怎么选？ipad保护壳三折还是书本式？ipad保护壳软壳好还是硬壳好？ipadpro-2021保护壳推荐"><a href="#ipad保护套怎么选？ipad保护壳三折还是书本式？ipad保护壳软壳好还是硬壳好？ipadpro-2021保护壳推荐" class="headerlink" title="ipad保护套怎么选？ipad保护壳三折还是书本式？ipad保护壳软壳好还是硬壳好？ipadpro 2021保护壳推荐"></a>ipad保护套怎么选？ipad保护壳三折还是书本式？ipad保护壳软壳好还是硬壳好？ipadpro 2021保护壳推荐</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/396369287">https://zhuanlan.zhihu.com/p/396369287</a></p>
+<h2 id="2022-04-24-晚上10点购买，3695，心在滴血，😥"><a href="#2022-04-24-晚上10点购买，3695，心在滴血，😥" class="headerlink" title="2022-04-24 晚上10点购买，3695，心在滴血，😥"></a>2022-04-24 晚上10点购买，3695，心在滴血，😥</h2><ul>
+<li>7天的价保申请，</li>
+<li>预计25号09~15点到达，</li>
+</ul>
+<h2 id="2022-04-25-早上收到，为了英语"><a href="#2022-04-25-早上收到，为了英语" class="headerlink" title="2022-04-25 早上收到，为了英语~~"></a>2022-04-25 早上收到，为了英语~~</h2><h3 id="【充电器-充电线】"><a href="#【充电器-充电线】" class="headerlink" title="【充电器+充电线】"></a>【充电器+充电线】</h3><h3 id="【保修卡】"><a href="#【保修卡】" class="headerlink" title="【保修卡】"></a>【保修卡】</h3><p>位于宿舍个人位置奖状袋子的下面，在快递包裹里面，</p>
+<h3 id="【指纹】"><a href="#【指纹】" class="headerlink" title="【指纹】"></a>【指纹】</h3><p>个人食指</p>
+<h3 id="【校园网网络问题】–成功"><a href="#【校园网网络问题】–成功" class="headerlink" title="【校园网网络问题】–成功"></a>【校园网网络问题】–成功</h3><p>先用手机的热点，</p>
+<p>找人借一个？</p>
+<p>已解决~~</p>
+<h3 id="【语言更换为英语】"><a href="#【语言更换为英语】" class="headerlink" title="【语言更换为英语】"></a>【语言更换为英语】</h3><p>更改语言设置，<a target="_blank" rel="noopener" href="https://support.google.com/calendar/answer/50640?hl=zh-Hans&amp;co=GENIE.Platform=iOS">https://support.google.com/calendar/answer/50640?hl=zh-Hans&amp;co=GENIE.Platform%3DiOS</a></p>
+<h3 id="【锁屏】"><a href="#【锁屏】" class="headerlink" title="【锁屏】"></a>【锁屏】</h3><p>有个按键，</p>
+<p>解锁，（可以指纹解锁），</p>
+<h3 id="【声音】–ok"><a href="#【声音】–ok" class="headerlink" title="【声音】–ok"></a>【声音】–ok</h3><h3 id="【贴膜】–ok"><a href="#【贴膜】–ok" class="headerlink" title="【贴膜】–ok"></a>【贴膜】–ok</h3><p>自己贴的优点问题，气泡，灰尘，</p>
+<h3 id="【ipad外套】–ok"><a href="#【ipad外套】–ok" class="headerlink" title="【ipad外套】–ok"></a>【ipad外套】–ok</h3><h3 id="【ipad翻墙】–成功"><a href="#【ipad翻墙】–成功" class="headerlink" title="【ipad翻墙】–成功"></a>【ipad翻墙】–成功</h3><ul>
+<li><p>ipad 翻墙神器 小火箭 Shadowrocket 免费安装！稳定不闪退！内附免费节点一键导入！免费V2Ray节点分享 翻墙VPN 支持4K，<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=jn0_Zn0ZIDQ">https://www.youtube.com/watch?v=jn0_Zn0ZIDQ</a></p>
+<p>01.09 美区的苹果ID，shadowrocket，</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.ip-adress.com/what-is-my-ip-address%EF%BC%8C">https://www.ip-adress.com/what-is-my-ip-address，</a></p>
+<p>获取ID地址，</p>
+<p>美国的ID有吗？，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220425130510.png"></p>
+</li>
+</ul>
+<h4 id="【ipad、网页端成功登录美国Apple-ID】"><a href="#【ipad、网页端成功登录美国Apple-ID】" class="headerlink" title="【ipad、网页端成功登录美国Apple ID】"></a>【ipad、网页端成功登录美国Apple ID】</h4><p>最新美国Apple ID注册方法，亲测非常简单，苹果id怎么注册教程，apple id美区更改国家，shadowrocke和tiktok ios下载，<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=rFeJvozMaDk">https://www.youtube.com/watch?v=rFeJvozMaDk</a></p>
+<p>00.29 不同国家的App store 是不一样的，</p>
+<p>00.48 注册美区的Apple ID,</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://appleid.apple.com/account%EF%BC%8C">https://appleid.apple.com/account，</a></p>
+<p>1068 W Baltimore Ave，</p>
+<p>307，</p>
+<p>Delaware，</p>
+<p>19063，</p>
+<p>4842279400，</p>
+</li>
+<li><p>网页端登录Apple ID</p>
+<p><a target="_blank" rel="noopener" href="https://appleid.apple.com/account/manage/section/information%EF%BC%8C">https://appleid.apple.com/account/manage/section/information，</a></p>
+</li>
+</ul>
+<p>06.32 ipad 中登录美区的Apple ID，</p>
+<p>07.47 tictok，</p>
+<p>07.57 shadowrocket，Apple 礼品卡，淘宝，</p>
+<p>08.33 …</p>
+<p>09.05 总结，</p>
+<h4 id="【paypal链接失败】"><a href="#【paypal链接失败】" class="headerlink" title="【paypal链接失败】"></a>【paypal链接失败】</h4><p>要使用PayPal支付对Apple Services的预核准付款，您的PayPal账户和Apple Services账户必须在同一个国家或地区注册。请返回到Apple Services并选择其他付款方式。</p>
+<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220425133955.png" alt=" " style="zoom:80%;">
+
+<h4 id="【礼品卡进行购买】"><a href="#【礼品卡进行购买】" class="headerlink" title="【礼品卡进行购买】"></a>【礼品卡进行购买】</h4><p>建议2+2美金进行购买，实现下载shadowrocket，</p>
+<p><a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-24107574692.16.63b5689cFvQGWE&amp;id=670136687945%EF%BC%8C">https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-24107574692.16.63b5689cFvQGWE&amp;id=670136687945，</a></p>
+<h4 id="【shadowrocket成功添加节点-登录youtube】"><a href="#【shadowrocket成功添加节点-登录youtube】" class="headerlink" title="【shadowrocket成功添加节点+登录youtube】"></a>【shadowrocket成功添加节点+登录youtube】</h4><p>苹果手机翻墙方法，小火箭shadowrocket使用教程，分流规则配置，科学上网 ios vpn推荐，苹果手机怎么用小火箭翻墙，iPhone和iPad翻墙软件，<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PYMF9A4wKgo">https://www.youtube.com/watch?v=PYMF9A4wKgo</a></p>
+<p>00.47 美区的苹果ID，</p>
+<p>02.00 小火箭，添加节点-第一种方法-通过机场网站添加，</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://sgi.anycast.gay/user%E6%9C%BA%E5%9C%BA%E7%BD%91%E7%AB%99%E5%8F%AF%E8%A1%8C%EF%BC%8C">https://sgi.anycast.gay/user机场网站可行，</a></li>
+</ul>
+<p>05.00 第二种方法~~，（不用看了）</p>
+<h3 id="【Chrome】"><a href="#【Chrome】" class="headerlink" title="【Chrome】"></a>【Chrome】</h3><p>…</p>
+<p>OK…</p>
+<h3 id="【telegram】–成功"><a href="#【telegram】–成功" class="headerlink" title="【telegram】–成功"></a>【telegram】–成功</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220425151129.png"></p>
+<h3 id="【tictoc】–成功"><a href="#【tictoc】–成功" class="headerlink" title="【tictoc】–成功"></a>【tictoc】–成功</h3><p>​    【教学 tiktok】TIktok（国际版抖音）教学 | tiktok运营环境搭建全教程！史上最详细 Youtube独家</p>
+<ul>
+<li>4.47 系统语言+时区选择+IP设置+GPS定位 </li>
+</ul>
+<h3 id="【Twitter】–需要外网–需要GV？"><a href="#【Twitter】–需要外网–需要GV？" class="headerlink" title="【Twitter】–需要外网–需要GV？"></a>【Twitter】–需要外网–需要GV？</h3><h3 id="【ipad划词翻译】–ok"><a href="#【ipad划词翻译】–ok" class="headerlink" title="【ipad划词翻译】–ok"></a>【ipad划词翻译】–ok</h3><p>截图可以实现任何的翻译，</p>
+<h2 id="2022-05-01，02"><a href="#2022-05-01，02" class="headerlink" title="2022-05-01，02"></a>2022-05-01，02</h2><h3 id="FAQ：如何将ipad的学习系统内化到博客？"><a href="#FAQ：如何将ipad的学习系统内化到博客？" class="headerlink" title="FAQ：如何将ipad的学习系统内化到博客？"></a>FAQ：如何将ipad的学习系统内化到博客？</h3><h3 id="【配合电容笔的备忘录的使用】"><a href="#【配合电容笔的备忘录的使用】" class="headerlink" title="【配合电容笔的备忘录的使用】"></a>【配合电容笔的备忘录的使用】</h3><h3 id="【备忘录的导出？截图形式放在博客？】"><a href="#【备忘录的导出？截图形式放在博客？】" class="headerlink" title="【备忘录的导出？截图形式放在博客？】"></a>【备忘录的导出？截图形式放在博客？】</h3><h3 id="【ipad和Win10的sme共享文件夹，失败】"><a href="#【ipad和Win10的sme共享文件夹，失败】" class="headerlink" title="【ipad和Win10的sme共享文件夹，失败】"></a>【ipad和Win10的sme共享文件夹，失败】</h3><p>ipad备忘录记录，</p>
+<h3 id="【ipad和Win10的WPS云同步文件夹，成功，同步】–需在电脑开启WPS办公助手，ψ-｀∇´-ψ"><a href="#【ipad和Win10的WPS云同步文件夹，成功，同步】–需在电脑开启WPS办公助手，ψ-｀∇´-ψ" class="headerlink" title="【ipad和Win10的WPS云同步文件夹，成功，同步】–需在电脑开启WPS办公助手，ψ(｀∇´)ψ"></a>【ipad和Win10的WPS云同步文件夹，成功，同步】–需在电脑开启WPS办公助手，ψ(｀∇´)ψ</h3><ol>
+<li><p>WPS办公助手-同步文件夹-添加同步文件夹-选择文件夹，ok，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220502140948.png"></p>
+<p>会员同步文件夹为1个，超级会员同步文件夹5个，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220502141620.png"></p>
+<blockquote>
+<p>百度网盘+WPS云网盘结合（每年￥400+），基本可实现同步需求~</p>
+<p>还有每个月的话费30*12=360，再加上科学20×12=240，</p>
+<p>1000+…，知识付费呀~~</p>
+</blockquote>
+<p>WPS网盘同步后文件夹和文件都有个绿色图标，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220502142028.png"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220502142100.png"></p>
+</li>
+<li><p>ipad”文件”下，进入WPS云网盘，进行相关文件的修改，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/BB1CB7D59361A08158C85720240E27AC.png"></p>
+<p>最好是<strong>进入ipad中的WPS Office下进行文件的修改</strong>，这样不用生成另外的文件，直接在云端修改~~</p>
+</li>
+<li><p>；</p>
+</li>
+</ol>
+<h4 id="FAQ：ipad“文件”app上完成的操作，而笔记本电脑关机了，同步什么时候完成？"><a href="#FAQ：ipad“文件”app上完成的操作，而笔记本电脑关机了，同步什么时候完成？" class="headerlink" title="FAQ：ipad“文件”app上完成的操作，而笔记本电脑关机了，同步什么时候完成？"></a>FAQ：ipad“文件”app上完成的操作，而笔记本电脑关机了，同步什么时候完成？</h4><h4 id="FAQ：”数据同化“，ipad”文件“-“WPS-Office”app与Endnote项目的兼容问题？"><a href="#FAQ：”数据同化“，ipad”文件“-“WPS-Office”app与Endnote项目的兼容问题？" class="headerlink" title="FAQ：”数据同化“，ipad”文件“/“WPS Office”app与Endnote项目的兼容问题？"></a>FAQ：”数据同化“，ipad”文件“/“WPS Office”app与Endnote项目的兼容问题？</h4><h4 id="FAQ：“博客”，ipad“文件”-“WPS-Office”app编写md文件的能力？"><a href="#FAQ：“博客”，ipad“文件”-“WPS-Office”app编写md文件的能力？" class="headerlink" title="FAQ：“博客”，ipad“文件”/“WPS Office”app编写md文件的能力？"></a>FAQ：“博客”，ipad“文件”/“WPS Office”app编写md文件的能力？</h4><p>不太友好，但能查看，</p>
+<p>😥，</p>
+<p>在linux下安装WPS office后，再加上typora这样一个编辑md的app，可实现对md文件的编辑，</p>
+<p>那么ipad能否实现这样的功能呢？</p>
+<h4 id="FAQ：“小看一下”，ipad“文件”-“WPS-Office”下app解压缩zip的能力？"><a href="#FAQ：“小看一下”，ipad“文件”-“WPS-Office”下app解压缩zip的能力？" class="headerlink" title="FAQ：“小看一下”，ipad“文件”/“WPS Office”下app解压缩zip的能力？"></a>FAQ：“小看一下”，ipad“文件”/“WPS Office”下app解压缩zip的能力？</h4><p>可能出现解压不完整的情况，危险，</p>
+<p>😥</p>
+<h4 id="FAQ：WPS云文档同步后会不会更改文件的修改日期为同步日期？"><a href="#FAQ：WPS云文档同步后会不会更改文件的修改日期为同步日期？" class="headerlink" title="FAQ：WPS云文档同步后会不会更改文件的修改日期为同步日期？"></a>FAQ：WPS云文档同步后会不会更改文件的修改日期为同步日期？</h4><p>不会，</p>
+<p>😍</p>
+<h4 id="FAQ：ipad能否从chrome知网上下载pdf到WPS云文档对应文件夹位置？"><a href="#FAQ：ipad能否从chrome知网上下载pdf到WPS云文档对应文件夹位置？" class="headerlink" title="FAQ：ipad能否从chrome知网上下载pdf到WPS云文档对应文件夹位置？"></a>FAQ：ipad能否从chrome知网上下载pdf到WPS云文档对应文件夹位置？</h4><p>wvpn.upc.edu.cn，</p>
+<p>会下载到ipad的chrome文件夹下，转移文件到WPS云文档对应文件夹下即可，<strong>不能剪切，只能拷贝，所以ipad下保存的内容不能太重要，要能删除</strong>，…</p>
+<p>😍</p>
+<h4 id="FAQ：ipad能否从scihub上下载pdf到WPS云文档？"><a href="#FAQ：ipad能否从scihub上下载pdf到WPS云文档？" class="headerlink" title="FAQ：ipad能否从scihub上下载pdf到WPS云文档？"></a>FAQ：ipad能否从scihub上下载pdf到WPS云文档？</h4><p>…</p>
+<p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+<h2 id="2022-05-17，18，19，20，21"><a href="#2022-05-17，18，19，20，21" class="headerlink" title="2022-05-17，18，19，20，21"></a>2022-05-17，18，19，20，21</h2><h3 id="FAQ：ipad学习方式-MWeb"><a href="#FAQ：ipad学习方式-MWeb" class="headerlink" title="FAQ：ipad学习方式-MWeb"></a>FAQ：ipad学习方式-MWeb</h3><h4 id="【05-17】"><a href="#【05-17】" class="headerlink" title="【05-17】"></a>【05-17】</h4><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/65783027/answer/1739589503?ivk_sa=1024320u%EF%BC%9Amd">https://www.zhihu.com/question/65783027/answer/1739589503?ivk_sa=1024320u：md</a> 文件在 iPhone 和 iPad 上怎么预览，比如有没有简单方便的浏览软件？</p>
+<p>谢谢你推荐的mweb，<strong>导入功能</strong>很棒~~</p>
+</li>
+<li><p>方法一：先在app store下载 one markdown ，然后下载MWeb，在one markdown 里面点击wps云文档中相关的某篇 md,然后可以在MWeb中编缉该md文档。<br>［one markdown, wps, “文件＂都能得到存储的树形结构．］</p>
+<p>【实际上，不用one markdown也可以，<strong>直接用mweb的文档搜索就可以了，强大哈哈</strong>】</p>
+<p>［下面是在mweb 中生成的相关标记］</p>
+<ul>
+<li><input disabled="" type="checkbox"> 新的标记</li>
+</ul>
+<blockquote>
+<p>熟悉的标记</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">熟悉的代码块<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><code>熟悉的代码块</code></p>
+<p>| 新接触的表格 |  |  |  |<br>|————|—|—|—|<br>|              |  |  |  |</p>
+<p><code>新的标记</code></p>
+<pre class="line-numbers language-none"><code class="language-none">math<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>-——<br>2022-05-17 02:34:44 上午<br>缩进</p>
+</li>
+<li><p>如何使用MWeb？【官方教程】</p>
+<ul>
+<li><input disabled="" type="checkbox"> MWeb的基本使用：文档库模式，外部文件夹模式</li>
+<li><input disabled="" type="checkbox"> Markdown语法：MD的涉及哲学，MWeb特有语法，画图（mermaid,echarts），LaTex，TOC</li>
+<li><input disabled="" type="checkbox"> MWeb的编辑器介绍：图片，表格，Latex公式</li>
+<li><input disabled="" type="checkbox"> 快速笔记</li>
+<li><input disabled="" type="checkbox"> MWeb文档库详细说明</li>
+<li><input disabled="" type="checkbox"> 搜索和快速搜索</li>
+<li><input disabled="" type="checkbox"> Markdown输出</li>
+<li><input disabled="" type="checkbox"> MWeb的发布服务介绍</li>
+<li><input disabled="" type="checkbox"> MWeb的图片上传服务介绍</li>
+<li><input disabled="" type="checkbox"> 静态网站生成功能</li>
+</ul>
+</li>
+<li><p>如何才能快速地用电容笔在iPad上编缉md? ［电容笔使用问题］</p>
+<blockquote>
+<p>点击要编辑的位置，出现光标，点击键盘（在有键盘的模式下编辑md舒服一些），另外开启预览功能。</p>
+</blockquote>
+</li>
+<li><p>如何能在iPad的mweb上添加图床图片？［图床问题］</p>
+<blockquote>
+<p>iPad图床怎么建立？mweb中官方给了部分图床过程，但是官方没有提供GitHub图床的介绍，。</p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.extutorial.com/blog/487454">https://www.extutorial.com/blog/487454</a>  sm,Ms的帐号注册</p>
+</blockquote>
+<blockquote>
+<p>Mweb中添加 Sm.Ms图床时，如果默认浏缆器已登录 sm.ms帐号，可直接跳转到生成API token的界面。</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2022/05/17/QVKamXYvwgbxi8D.jpg"></p>
+<p><img src="https://s2.loli.net/2022/05/17/yYckT1HjMGmNKAI.jpg"></p>
+<p>到晚上9点</p>
+<blockquote>
+<p>密码已换，</p>
+</blockquote>
+<blockquote>
+<p>SM.MC的dashboard模式，可以查看上传的图片，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220517211258.png"></p>
+<p>到晚上9点20，</p>
+</blockquote>
+<blockquote>
+<p>git bash 上传后，博客可看到图片，到晚上9点30，</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="【05-20】"><a href="#【05-20】" class="headerlink" title="【05-20】"></a>【05-20】</h4><ul>
+<li>直接远程向日葵不香吗？O(∩_∩)O</li>
+</ul>
+<h3 id="FAQ：ipad-win10学习方式-endnote"><a href="#FAQ：ipad-win10学习方式-endnote" class="headerlink" title="FAQ：ipad+win10学习方式-endnote"></a>FAQ：ipad+win10学习方式-endnote</h3><h4 id="【05-17】-1"><a href="#【05-17】-1" class="headerlink" title="【05-17】"></a>【05-17】</h4><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BJ411m7Ms/%EF%BC%8C%E5%A6%82%E4%BD%95%E5%9C%A8iPad%E4%B8%8A%E4%BD%BF%E7%94%A8Endnote%EF%BC%8C2019%EF%BC%8C">https://www.bilibili.com/video/BV1BJ411m7Ms/，如何在iPad上使用Endnote，2019，</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14V411Z7ki/?spm_id_from=333.788.recommend_more_video.-1%EF%BC%8C%E3%80%90%E7%A0%94%E7%A9%B6%E7%94%9F%E6%97%A5%E5%B8%B8%5D%E5%B9%B3%E6%9D%BF%E7%9C%8B%E6%96%87%E7%8C%AE%E4%B8%8D%E8%A6%81%E7%94%A8Goodnotes%E8%BD%AF%E4%BB%B6%E4%BA%86%EF%BD%9CEndnote%E5%AE%9E%E7%8E%B0%E7%94%B5%E8%84%91%E7%AB%AF%E5%92%8C%E5%B9%B3%E6%9D%BF%E7%AB%AF%E5%90%8C%E6%AD%A5%E9%98%85%E8%AF%BB%EF%BC%8C2020%EF%BC%8C">https://www.bilibili.com/video/BV14V411Z7ki/?spm_id_from=333.788.recommend_more_video.-1，【研究生日常]平板看文献不要用Goodnotes软件了｜Endnote实现电脑端和平板端同步阅读，2020，</a></p>
+<ul>
+<li><input disabled="" type="checkbox"> 00.01 notability </li>
+<li><input disabled="" type="checkbox"> 03.48 endnotes </li>
+<li><input disabled="" type="checkbox"> 05.00 电脑和平板结合，</li>
+<li><input disabled="" type="checkbox"> 06.36 电脑同步按钮，</li>
+<li><input disabled="" type="checkbox"> 06.55 平板同步按钮，</li>
+<li><input disabled="" type="checkbox"> 07.46 平板pdf笔记，</li>
+<li><input disabled="" type="checkbox"> 11.20 加入NOTES，</li>
+</ul>
+</li>
+<li><p>【FAQ】可以有声音的记录？<strong>cool</strong>，但是在电脑没有，</p>
+</li>
+<li><p>【FAQ】同步去哪里了？</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220517234207.png"></p>
+</li>
+<li><p>【FAQ】只能同步一个library？同步两个library会融合，怎么解决，重置同步？</p>
+<p><img src="https://s2.loli.net/2022/05/18/dyHJLE6CXet8gqM.jpg"><a target="_blank" rel="noopener" href="https://endnote.cn/endnote-%E5%90%8C%E6%AD%A5%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D-2/">https://endnote.cn/endnote-%E5%90%8C%E6%AD%A5%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D-2/</a>      endnote同步原理<br><img src="https://s2.loli.net/2022/05/18/LhaoSnHiCrUP84j.png"></p>
+</li>
+</ul>
+<ul>
+<li>【FAQ】同步的效率怎么样？效率还可以以，电脑和平板在第1次同步时比较慢，但在后面的同步过程中会很快。</li>
+</ul>
+<h4 id="【05-18】"><a href="#【05-18】" class="headerlink" title="【05-18】"></a>【05-18】</h4><ul>
+<li><p>【FAQ】官方，如何在ipad上使用endnote？，<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BJ411m7Ms/">https://www.bilibili.com/video/BV1BJ411m7Ms/</a></p>
+<ul>
+<li><input disabled="" type="checkbox"> 20.00 Web的使用~~</li>
+<li><input disabled="" type="checkbox"> 00.01 帐户登录，同步</li>
+<li><input disabled="" type="checkbox"> 【FAQ】我的iPad的endnote和他的为什么不一样？</li>
+<li><input disabled="" type="checkbox"> 18.15 can I input reference to endnote? →web,更改 homepage, pubmed,→ send to → citation manager → number → create file → import to endnote, yes, unfilled</li>
+<li><input disabled="" type="checkbox"> 20.55 create new group, move, e-mail,</li>
+<li><input disabled="" type="checkbox"> 23.16 web of science,all records on page, full record, endnote</li>
+<li><input disabled="" type="checkbox"> 26.00 PDF attach <strong>,为什么我的不能open in endnote</strong></li>
+</ul>
+</li>
+<li><p>【FAQ】<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av50585692/?spm_id_from=333.788.video.desc.click">https://www.bilibili.com/video/av50585692/?spm_id_from=333.788.video.desc.click</a>  博士汪8分钟，</p>
+<ul>
+<li><input disabled="" type="checkbox"> 00.48 准备，文献数据库，Google scholar, web of science,联动和文献下载；文献管理；在endnote文献批注</li>
+<li><input disabled="" type="checkbox"> 01.55 IEEE xplored,校园网买过数据库，export → citations → RIS → citation ＆abstract → export →点击下载后的文件会自动导入到endnote的unfilled → find full text需要购买过数据库？</li>
+<li><input disabled="" type="checkbox"> 04.39  Google scholar → cite → end note → Google scholar的find full text不太好用，手动导入，下载PDF, attach.</li>
+<li><input disabled="" type="checkbox"> 05.45 web of science → export → endnote desktop →点击下载后的文件会自动导入到endnote的unfilled → find full text</li>
+<li><input disabled="" type="checkbox"> 06.30 电脑与iPad的同步</li>
+</ul>
+</li>
+<li><p>在endnote查看PDF没有目录，适合文献的阅读．但对于<strong>书籍的阅读</strong>，还是使用wps，在endnote记录WPS云文档对应文献所在位置，OK~~</p>
+</li>
+<li><p>【FAQ，解决】<strong>endnote与欧路词典</strong>怎么结合？</p>
+<p>选取单词片段→share →eudic，good try，</p>
+</li>
+<li><p>【FAQ】ENDNOTE - HOW TO RESET SYNC</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.avondale.edu.au/library/faqs/endnote/how-to-reset-sync%EF%BC%8C">https://www.avondale.edu.au/library/faqs/endnote/how-to-reset-sync，</a></li>
+</ul>
+</li>
+<li><p>【FAQ，<strong>待解决</strong>】ipad实时下载文献？<strong>批量导入reference</strong>以及批量下载？</p>
+<ul>
+<li>CNKI，chrome → wypn,指纹登录密匙→cnki→下载pdf →打开方式选择endnote →中文文章title和author需要修改</li>
+<li>Scihub</li>
+<li>WebOfScience</li>
+<li>GoogleScholar</li>
+</ul>
+</li>
+<li><p>【FAQ】ipad如何快速导入文献至endnote？</p>
+<ul>
+<li>手动导入太费劲了，</li>
+<li>下载pdf后到任意位置，打开pdf分享至endnote，<strong>英文文献一般可以自动填写相关信息</strong>，中文文献可以吗？</li>
+</ul>
+</li>
+<li><p>【FAQ】电脑实时下载文献、导入endnote怎么样？</p>
+</li>
+<li><p>【FAQ】ipad中endnote修改了一次pdf，然后在WPS能否看到修改的痕迹？<strong>猜测看不到</strong>，┭┮﹏┭┮</p>
+<blockquote>
+<p>建议：</p>
+<p><strong>在WPS修改的pdf不在endnote打开，</strong></p>
+<p><strong>在endnote修改的pdf不在WPS打开</strong>，</p>
+<p>这样同步时，<strong>不会出现覆盖的现象</strong>~~</p>
+</blockquote>
+<blockquote>
+<p>**坐在电脑前操作时，使用WPS即可，但必须确保ipad中endnote和WPS的同步内容已在电脑更新~~**，</p>
+</blockquote>
+</li>
+<li><p>【FAQ】ipad 的endnote如何 find full text？</p>
+</li>
+<li><p>【FAQ】电脑endnote如何 find full text？</p>
+<p>chrome（有小飞机也可以），WVPN登录，选择web of science → 登录web of science账号，需要是学校的账号 → 可在 endnote 中使用find full text，<strong>但是没有进度的显示</strong>；有进度，在find full text的group中，如何将<strong>记录清零</strong>？；</p>
+<p>–【FAQ，需要校园网UPC，手机流量WVPN可以吗？】</p>
+<p>–【<a target="_blank" rel="noopener" href="http://tul.blog.ntu.edu.tw/archives/1677%EF%BC%8CEndNote">http://tul.blog.ntu.edu.tw/archives/1677，EndNote</a> 提供 Find Full Text 功能】</p>
+</li>
+<li><p>【FAQ】电脑endnote如何 Open URL Link? </p>
+<p>石油大学的<strong>OpenURL是什么</strong>？？？？</p>
+<p>–【<a target="_blank" rel="noopener" href="http://tul.blog.ntu.edu.tw/archives/4549%EF%BC%8C%E8%AB%8B%E5%96%84%E7%94%A8Open">http://tul.blog.ntu.edu.tw/archives/4549，請善用Open</a> URL Link！】</p>
+<p>–【<a target="_blank" rel="noopener" href="https://endnote.cn/endnote-%E6%9F%A5%E6%89%BE%E5%85%A8%E6%96%87%E5%8A%9F%E8%83%BD/%EF%BC%8C%E5%9B%BE%E4%B9%A6%E9%A6%86%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%EF%BC%8C%E8%8E%B7%E5%8F%96%E6%AD%A3%E7%A1%AE%E7%9A%84%E7%94%B5%E5%AD%90%E8%B5%84%E6%BA%90OpenURL%EF%BC%8C%E5%B9%B6%E5%A1%AB%E5%86%99%E5%88%B0OpenURL">https://endnote.cn/endnote-%E6%9F%A5%E6%89%BE%E5%85%A8%E6%96%87%E5%8A%9F%E8%83%BD/，图书馆工作人员，获取正确的电子资源OpenURL，并填写到OpenURL</a> Path中。】</p>
+<blockquote>
+<p>若学校没有电子资源全文链接系统的设置，那么用户只能下载到开放获取文章的全文。</p>
+</blockquote>
+</li>
+<li><p>【FAQ】电脑endnote的web of science搜索怎么使用？</p>
+<p>不知道</p>
+</li>
+<li><p>【FAQ】网页版的web of science搜索怎么使用？</p>
+</li>
+</ul>
+<h4 id="【05-20】-1"><a href="#【05-20】-1" class="headerlink" title="【05-20】"></a>【05-20】</h4><ul>
+<li><p>win10电脑版的endnote有必要升级20版本嘛？</p>
+<p>没必要~~</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/428328294%EF%BC%8C%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7Endnote">https://www.zhihu.com/question/428328294，如何评价Endnote</a> 20？</li>
+</ul>
+</li>
+</ul>
+<h3 id="FAQ：ipad学习方式-Xmind"><a href="#FAQ：ipad学习方式-Xmind" class="headerlink" title="FAQ：ipad学习方式-Xmind"></a>FAQ：ipad学习方式-Xmind</h3><h4 id="【05-17】-2"><a href="#【05-17】-2" class="headerlink" title="【05-17】"></a>【05-17】</h4><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1tL4y1W7Ev?spm_id_from=333.337.search-card.all.click%EF%BC%8C%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E4%BD%A0%E5%8F%97%E7%94%A8%E4%B8%80%E7%94%9F%E7%9A%84%E3%80%90%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E3%80%91%E5%85%AC%E7%9B%8A%E8%AF%BE%E7%A8%8B%EF%BC%8C%E5%85%88%E5%AF%BC%E8%AF%BE">https://www.bilibili.com/video/BV1tL4y1W7Ev?spm_id_from=333.337.search-card.all.click，这可能是你受用一生的【思维导图】公益课程，先导课</a></p>
+<ul>
+<li><input disabled="" type="checkbox"> 先导课</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1tL4y1W7Ev?p=2%EF%BC%8C%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E4%BD%A0%E5%8F%97%E7%94%A8%E4%B8%80%E7%94%9F%E7%9A%84%E3%80%90%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E3%80%91%E5%85%AC%E7%9B%8A%E8%AF%BE%E7%A8%8B%EF%BC%8C%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BEXMIND%E5%85%A8%E9%9D%A2%E6%95%99%E7%A8%8B%EF%BC%8C">https://www.bilibili.com/video/BV1tL4y1W7Ev?p=2，这可能是你受用一生的【思维导图】公益课程，思维导图XMIND全面教程，</a></p>
+<ul>
+<li><p><input disabled="" type="checkbox">  00.01</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220517225835.png"></p>
+</li>
+<li><p><input disabled="" type="checkbox">  01.20 XMIND的安装（有些贵呀）</p>
+</li>
+<li><p><input disabled="" type="checkbox">  【FAQ】WPS超级会员脑图也不错？</p>
+</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1kK4y1m7ci?spm_id_from=333.337.search-card.all.click%EF%BC%8CXMind%E5%81%9A%E7%AC%94%E8%AE%B0%E6%9C%89%E5%A4%9A%E7%88%BD%EF%BC%81%E5%AD%A6%E9%9C%B8%E5%81%B7%E5%AD%A6%E7%9A%84%E7%A7%98%E5%AF%86">https://www.bilibili.com/video/BV1kK4y1m7ci?spm_id_from=333.337.search-card.all.click，XMind做笔记有多爽！学霸偷学的秘密</a></p>
+</li>
+</ul>
+<h4 id="【05-18】-1"><a href="#【05-18】-1" class="headerlink" title="【05-18】"></a>【05-18】</h4><ul>
+<li><p>【【ipad使用学习】超实用！Xmind思维导图使用技巧教程，干货！！-哔哩哔哩】 <a target="_blank" rel="noopener" href="https://b23.tv/AXy9yjZ">https://b23.tv/AXy9yjZ</a>,</p>
+<ul>
+<li><input disabled="" type="checkbox"> 弹幕：小丹籽，美女手很好看</li>
+<li><input disabled="" type="checkbox"> 评论：免费的功能够用了。</li>
+<li><input disabled="" type="checkbox"> FAQ: 请问up怎么删除画布和修改画布名称呀，画布列表，左滑要修改的画布，会弹出“重命名、新建、删除”按钮。</li>
+</ul>
+<p>iPad可以复制B站的评论，good …<br>iPad可以复制B站的视频链接</p>
+</li>
+</ul>
+<h4 id="【05-19】"><a href="#【05-19】" class="headerlink" title="【05-19】"></a>【05-19】</h4><ul>
+<li><p>【FAQ】ipad xmind 插入图片需要<strong>会员</strong>，怎么解决？OK</p>
+<p>–PDD</p>
+<p>–某宝</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220519152120.png"></p>
+<p>27元；</p>
+<ul>
+<li><p>操作视频+pdf+内购解锁文件在百度网盘，</p>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_78d_k1Mgwqhli5rIHMGBw?pwd=hur1%EF%BC%8C">https://pan.baidu.com/s/1_78d_k1Mgwqhli5rIHMGBw?pwd=hur1，</a></p>
+<p>与视频完全一致</p>
+</li>
+<li><p>更换<strong>safari浏览器</strong>为默认浏览器，</p>
+</li>
+<li><p>退出账号后需要重新按照视频进行操作~~~</p>
+</li>
+</ul>
+<p>+28元 http cacher；</p>
+<p>2286 年，希望不会被封吧~~</p>
+</blockquote>
+</li>
+<li><p>【FAQ】ipad xmind 插入图片，是本地图片还是已经在.xmind文件里了？</p>
+</li>
+<li><p>【FAQ】ipad xmind 和 win10 xmind 的<strong>同步</strong>，</p>
+<p>–在win10 下载xmind软件，OK</p>
+<p>–某宝</p>
+<blockquote>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220519154834.png"></p>
+<p><a target="_blank" rel="noopener" href="https://xmind.lanzouf.com/iBoUy04s848d">https://xmind.lanzouf.com/iBoUy04s848d</a></p>
+<p>28.5元</p>
+<ul>
+<li><p>操作视频+pdf+内购解锁文件在百度网盘，</p>
+<p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1eq3_psy7AW1KNKrLhp2aZw?pwd=egn3%EF%BC%8C">https://pan.baidu.com/s/1eq3_psy7AW1KNKrLhp2aZw?pwd=egn3，</a></p>
+<ul>
+<li><p><strong>如果没登陆，就不要登录，如果登录，就不要退出；</strong></p>
+</li>
+<li><p>bat文件打开秒退，</p>
+<p>todesk远程帮助实现，</p>
+<p>感觉稳定性不是很好，不如ipad，容易出现问题，一出现问题有需要找商家，</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220519163755.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>【FAQ】wps 的xmind文件如何快速在win10打开，能否在博客以链接的形式打开，还是只能去wps的云文档打开？</p>
+<p>–可以实时分享文件，</p>
+<blockquote>
+<p>【金山文档】 研一下-钟澄老师讲科研<br><a target="_blank" rel="noopener" href="https://kdocs.cn/l/csvnriJKEOLX">https://kdocs.cn/l/csvnriJKEOLX</a></p>
+</blockquote>
+<p>–<strong>但是.xmind文件不能实时查看</strong>，只能去wps的云文档打开~~</p>
+<p>–能否以交互的形式在typora打开wps云文档指定的文件？</p>
+<p>–【FAQ，<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52935929%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E9%93%BE%E6%8E%A5%E6%89%93%E5%BC%80%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%90%97%EF%BC%9F%E3%80%91">https://www.zhihu.com/question/52935929，可以使用markdown文件中链接打开本地文件吗？】</a></p>
+<p><a href="D:/1.txt">猫111</a>，OK，D盘绝对路径txt文件，</p>
+<p><a href="D:/小看一下/周报.pdf">猫111</a>，OK，D盘绝对路径pdf文件，（WPS网盘这么打开不可以）</p>
+<blockquote>
+<p>typora打不开，</p>
+<p>浏览器试试~</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="FAQ：ipad-win10学习方式-todesk（推荐）"><a href="#FAQ：ipad-win10学习方式-todesk（推荐）" class="headerlink" title="FAQ：ipad+win10学习方式-todesk（推荐）"></a>FAQ：ipad+win10学习方式-todesk（推荐）</h3><h4 id="【05-19】-1"><a href="#【05-19】-1" class="headerlink" title="【05-19】"></a>【05-19】</h4><ul>
+<li><p>怎么切换不同APP窗口？<strong>任务窗口</strong>，多个桌面切换都没问题</p>
+</li>
+<li><p>ipad中键盘满足不了的需求，例如输入tab键，可以使用<strong>todesk里面的键盘模式</strong>~~</p>
+<p>一般还是iPad的小键盘更好用，但是手写功能用不了–</p>
+</li>
+<li><p>ipad的三种键盘方式，<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/1836981489545635380.html">https://zhidao.baidu.com/question/1836981489545635380.html</a></p>
+<ul>
+<li>固定</li>
+<li>浮动，todesk</li>
+<li>拆分</li>
+</ul>
+</li>
+<li><p>win10永不熄灭，可以熄灭，用ubuntu代替即可~~</p>
+</li>
+</ul>
+<h4 id="【05-20】-2"><a href="#【05-20】-2" class="headerlink" title="【05-20】"></a>【05-20】</h4><ul>
+<li>怎么有些卡呀？</li>
+</ul>
+<h4 id="【05-21】"><a href="#【05-21】" class="headerlink" title="【05-21】"></a>【05-21】</h4><ul>
+<li><p>我又回来了，还是你好用呀，呜呜，</p>
+<p>其也有<strong>触控模式和指针模式</strong>的切换。</p>
+</li>
+<li><p><strong>隐私屏</strong>，好评呀</p>
+</li>
+<li><p><strong>todesk吧</strong>，<a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7783682498">https://tieba.baidu.com/p/7783682498</a></p>
+</li>
+<li><p>键盘还是使用<strong>固定底端</strong>的吧，打起字来很舒服，跟在键盘上使用没什么区别～</p>
+<p>另外<strong>todesk的鼠标可以打开</strong>，当键盘覆盖所需输入的行时，可以点一下鼠标的⬇️按钮，【记住需要把<strong>鼠标的中键</strong>点开】～</p>
+<p>还是<strong>建议养成一个习惯</strong>：能在所需输入行被覆盖的前提下，继续在键盘上整理语言～～</p>
+</li>
+<li><p>todesk iPad 能否控制多台电脑？</p>
+</li>
+</ul>
+<h3 id="FAQ：ipad-linux学习方式-向日葵（不推荐）"><a href="#FAQ：ipad-linux学习方式-向日葵（不推荐）" class="headerlink" title="FAQ：ipad+linux学习方式-向日葵（不推荐）"></a>FAQ：ipad+linux学习方式-向日葵（不推荐）</h3><h4 id="【05-20】-3"><a href="#【05-20】-3" class="headerlink" title="【05-20】"></a>【05-20】</h4><ul>
+<li><p>有触摸模式，✔，太香了┭┮﹏┭┮，</p>
+</li>
+<li><p>能快速返回桌面，✔</p>
+</li>
+<li><p>键盘选择”底部固定+合并“模式，✔，（完美体验~~，ipad下半部分虽然是键盘，上半部分也只显示部分ubuntu内容，但是<strong>上半部分可以单指拖动</strong>呀~）</p>
+</li>
+<li><p><strong>千万别使用pencil</strong>，✔</p>
+<blockquote>
+<p>其实在ipad中一般也不建议使用pencil，除了涂鸦~~</p>
+</blockquote>
+</li>
+<li><p>【FAQ】ubuntu类似win10的任务视图在哪里呀？</p>
+<p>在ubuntu左上角的<strong>活动</strong>那里，good~~</p>
+</li>
+<li><p>向日葵远程时，ipad的左上角会提示现在的操作，好贴心呀~~，i了i了，</p>
+</li>
+</ul>
+<h3 id="FAQ：ipad-win10学习方式-向日葵（不推荐）"><a href="#FAQ：ipad-win10学习方式-向日葵（不推荐）" class="headerlink" title="FAQ：ipad+win10学习方式-向日葵（不推荐）"></a>FAQ：ipad+win10学习方式-向日葵（不推荐）</h3><h4 id="【05-20】-4"><a href="#【05-20】-4" class="headerlink" title="【05-20】"></a>【05-20】</h4><ul>
+<li><p>【FAQ】ipad的向日葵显示win10离线，可是win10的向日葵显示win10在线；</p>
+<blockquote>
+<p>win10的向日葵退出，<strong>重新开启</strong>，在ipad的向日葵上点击<strong>刷新按钮</strong>即可，</p>
+</blockquote>
+</li>
+<li><p>【FAQ】向日葵的windows系统账户名？</p>
+<blockquote>
+<p>账户名可以在控制面板，用户账号，用户账号中查看，</p>
+<p>可以使用<strong>邮箱作为用户名</strong>，</p>
+<p>第一次输入完成以后，后面不用再输入了～</p>
+</blockquote>
+</li>
+<li><p><strong>win10键盘的输入法应该用英文</strong>，远程可以通过<strong>shift进行切换</strong>，用中文的话会出现iPad向日葵想打英文可是最后在win10确实中文。</p>
+</li>
+<li><p>【FAQ】ipad的键盘模式可以小一点吗？</p>
+<p><a target="_blank" rel="noopener" href="https://m.idongde.com/q/Bd6A950e6Ec2836E.shtml%EF%BC%8Cipad%E9%94%AE%E7%9B%98%E6%98%AF%E4%B8%8D%E6%94%AF%E6%8C%81%E8%AE%BE%E7%BD%AE%E5%A4%A7%E5%B0%8F%E7%9A%84%E3%80%82">https://m.idongde.com/q/Bd6A950e6Ec2836E.shtml，ipad键盘是不支持设置大小的。</a></p>
+</li>
+<li><p>【FAQ】远程时，点击 win10某处，再点击键盘，键盘会覆盖所需写入的地方，只能移动才能看到。而在iPad的软件中，点击键盘，会<strong>自动跳转到所需写入的位置</strong>。如果这能实现的话，会舒服很多。</p>
+<p>暂时的解决方法是使用<strong>iPad的浮动键盘</strong>，也还可以感觉。</p>
+</li>
+<li><p>远程时，iPad上会有<strong>快捷键指令</strong>，里面有复制、粘贴、撤销、切换窗口等，非常好用！</p>
+</li>
+<li><p>双指实现滚动划动时，方向只能是<strong>标准的上下</strong>，不能有倾斜～</p>
+</li>
+<li><p>可以自己<strong>定义快捷键</strong>，用起来很舒服。</p>
+</li>
+<li><p>【FAQ】win10<strong>合上盖子不休眠</strong>怎么设置？</p>
+<p><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/ac6a9a5e15bf506a643eac5b.html%EF%BC%8Cnice%EF%BC%9B">https://jingyan.baidu.com/article/ac6a9a5e15bf506a643eac5b.html，nice；</a></p>
+<ul>
+<li><p>设置10分钟的屏幕黑屏，</p>
+</li>
+<li><p>设置2小时睡眠，</p>
+</li>
+</ul>
+<blockquote>
+<p>不建议这么设置，很容易出现bug，</p>
+<p>但还是<strong>只能这么设置呀</strong>~~</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="【05-21】-1"><a href="#【05-21】-1" class="headerlink" title="【05-21】"></a>【05-21】</h4><ul>
+<li><p>win10屏幕亮度无法调节，原因在于向日葵的开启黑屏的插件，不兼容的问题，</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1L54y1n7U7?p=1&amp;share_medium=iphone&amp;share_plat=ios&amp;share_source=QQ&amp;share_tag=s_i&amp;timestamp=1653104736&amp;unique_k=JS8S1pd%EF%BC%8C%E5%90%91%E6%97%A5%E8%91%B5%E7%9A%84%E5%BC%80%E5%90%AF%E9%BB%91%E5%B1%8F%E4%B8%8E%E7%94%B5%E8%84%91%E4%B8%8D%E5%85%BC%E5%AE%B9%EF%BC%8C%E9%87%8D%E8%A3%85%E5%8D%B3%E5%8F%AF%EF%BC%8C">https://www.bilibili.com/video/BV1L54y1n7U7?p=1&amp;share_medium=iphone&amp;share_plat=ios&amp;share_source=QQ&amp;share_tag=s_i&amp;timestamp=1653104736&amp;unique_k=JS8S1pd，向日葵的开启黑屏与电脑不兼容，重装即可，</a></p>
+</blockquote>
+</li>
+<li><p>win10有个平板模式，</p>
+<ul>
+<li><p>平板模式的键盘感觉不是特别好用，还是先用iPad的浮动键盘吧~</p>
+</li>
+<li><p>平板模式的界面还是很好的，</p>
+</li>
+<li><p>如何退出电脑的平板模式？</p>
+<p>电脑右下角，</p>
+</li>
+</ul>
+</li>
+<li><p>win10设置<strong>狐火浏览器为默认浏览器</strong>，</p>
+<blockquote>
+<p>设置–&gt; 应用–&gt;默认应用，</p>
+</blockquote>
+</li>
+<li><p>【FAQ】ipad键盘、鼠标、外壳一套</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411Z7Px?spm_id_from=333.337.search-card.all.click%EF%BC%8C">https://www.bilibili.com/video/BV1JV411Z7Px?spm_id_from=333.337.search-card.all.click，</a></p>
+<p>罗技K380键盘 学生党自习室和谐共处的神器</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1iZ4y1K7Ct/?spm_id_from=333.788.recommend_more_video.3%EF%BC%8C">https://www.bilibili.com/video/BV1iZ4y1K7Ct/?spm_id_from=333.788.recommend_more_video.3，</a></p>
+<p>iPad Pro妙控键盘最佳替代者？罗技Folio Touch评测</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/369409915?ivk_sa=1024320u%EF%BC%8C">https://zhuanlan.zhihu.com/p/369409915?ivk_sa=1024320u，</a></p>
+<p>有哪些适合 iPad 使用的蓝牙键盘？iPad 蓝牙键盘推荐</p>
+</li>
+</ul>
+<blockquote>
+<p>想了想ipad的优势并不在于真正意义上的办公，轻便才是其永恒的主题，加上键盘和鼠标，问题会更多呀~~，所以暂时先不买吧</p>
+</blockquote>
+</li>
+<li><p>怎么网络又抽风了，另外，突然发现todesk也有这些功能，我他妈的还用个屁的向日葵呀，推荐todesk。</p>
+</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Jincan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Liu-Jincan.github.io/2022/04/05/yan-jiu-sheng-justtry-target/yan-yi-xia-ipad-ji-qi-xue-xi/">https://Liu-Jincan.github.io/2022/04/05/yan-jiu-sheng-justtry-target/yan-yi-xia-ipad-ji-qi-xue-xi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">Jincan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">Thanks for your reward</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2022/04/06/yan-jiu-sheng-justtry-function/fortran/04-shi-pin-yong-bao-kai-yuan-fortran-huan-jing-gao-xiao-shi-yong-xian-dai-fortran/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png" class="responsive-img" alt="04-视频：拥抱开源Fortran环境+高效使用现代化">
+                        
+                        <span class="card-title">04-视频：拥抱开源Fortran环境+高效使用现代化</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-06
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Fortran/" class="post-category">
+                                    Fortran
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/02/yan-jiu-sheng-justtry-function/fortran/03-faq-xun-zhao-guan-yu-fortran-de-xiang-mu-guan-li-fang-fa-fpm/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220327151112.png" class="responsive-img" alt="03-FAQ：寻找关于fortran的项目管理方法（FPM）">
+                        
+                        <span class="card-title">03-FAQ：寻找关于fortran的项目管理方法（FPM）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Fortran/" class="post-category">
+                                    Fortran
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    
+    <!-- 05 footer是什么？页脚 -->
+    <footer class="page-footer bg-color">
+    <!-- 音乐  -->
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="6992203508"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+	style="margin-bottom: 15px !important;">
+	
+	
+	
+	
+	
+	<!--  copyright那本分的div -->
+	<div class="col s12 m8 l8 copy-right">
+            
+            <!-- 这里是 Copyright @, &nbsp是空格, &copy是那个符号哟 -->
+            <!-- https://zhidao.baidu.com/question/745714487580680772.html, JavaScript中的“&nbsp”是什么意思, 转义符号  -->
+            Copyright&nbsp;&copy;
+            
+            <!-- 这里是2021, 默认的theme.time.year是2019,在这里我指定为2021,因为我是2021-12月份创建的博客,good job -->
+            
+            
+                <span id="year">2021-2022</span>
+            
+            
+            <!-- 这里是Jincan Liu, 还包括了对应的超链接哦 -->
+            <a href="/about" target="_blank">Jincan Liu</a>
+            
+            <!-- 这里是关于 Hexo -->
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            
+            <!-- 这里是关于 matery -->
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <!-- br表示换行, https://zhidao.baidu.com/question/187056327.html -->
+            <br>
+            
+            <!-- 这里是为了显示站点总字数 -->
+            
+            	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
+            	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">480.7k</span>
+            
+            
+            <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
+            
+            
+                
+            
+                            
+            <!-- 这显示总访问量 -->    <!-- 显示每篇文章的访问量的方法, https://blog.csdn.net/qq_23590921/article/details/103864482 -->
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+            <!-- 这里显示总访问人数 -->
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+                         
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "12";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'En';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+            <!-- 不知道干什么 -->
+            
+        </div>
+	
+	
+	
+	
+		
+	
+	<!-- 联系图标的 div -->
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3079779149" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 3079779149" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="mailto:3079779149@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: jincanliu@qq.com; jincan8liu@gmail.com" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.researchgate.net/profile/Jincan-Liu" class="tooltipped" target="_blank" data-tooltip="访问我的ResearchGate" data-position="top" data-delay="50">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+
+
+    <a href="https://github.com/Liu-Jincan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/JincanLiu" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a> 
+
+
+
+    <a href="https://space.bilibili.com/341192538" class="tooltipped" target="_blank" data-tooltip="访问我的bilibili" data-position="top" data-delay="50">
+        <i class="iconfont icon-bilibili-fill"></i>
+    </a>
+
+
+
+</div>        
+        
+
+    </div>
+</footer>
+
+
+<!-- 回到顶部的div -->
+<div class="progress-bar"></div>
+
+
+    <!-- 06 search是什么？搜索遮照栏 -->
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    
+    <!-- 07 back-top是什么？回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <!-- fa-arrow-up -->
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <!-- 08 ??? -->
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+    
+    <!-- 09 图标绘制工具 -->
+    
+
+    <!-- 10 ???-->
+    
+
+    <!-- 11 雪花特效 -->
+    
+
+    <!-- 12 鼠标星星特效 -->
+    
+
+
+    <!-- 13 -->
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- 14 -->
+    <!-- Baidu Analytics -->
+
+    
+    <!-- 15 -->
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <!-- 16 -->
+    
+    
+    <!-- 17 -->
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+
+    <!-- 18 -->
+    
+    
+    <!-- 19 -->
+    
+
+    <!-- 20 腾讯兔小巢-->
+    
+    
+    <!-- 21 canvas_nest特效 -->
+    
+	
+    <!-- 22 ribbon特效 -->
+    
+    
+    <!-- 23 -->
+    
+
+    <!-- 24 -->
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
