@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-05-26
+                    2022-05-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    776
+                    1.2k
                 </div>
                 
 
@@ -477,6 +477,20 @@
 <h2 id="2022-05-26-update-restart"><a href="#2022-05-26-update-restart" class="headerlink" title="2022-05-26 update restart"></a>2022-05-26 update restart</h2><p>Uprstr问题.xmind，</p>
 <blockquote>
 <p>齐鹏老师的一篇文章，给了我一个新思路，ww3_shel的同化模块并入，</p>
+</blockquote>
+<h2 id="2022-05-27-【Uprstr问题-xmind】【ww3-develop-20220527-xmind】-【FAQ：现在用一个sh文件管理整个项目可以嘛？】【给老师回复】"><a href="#2022-05-27-【Uprstr问题-xmind】【ww3-develop-20220527-xmind】-【FAQ：现在用一个sh文件管理整个项目可以嘛？】【给老师回复】" class="headerlink" title="2022-05-27 【Uprstr问题.xmind】【ww3-develop-20220527.xmind】 【FAQ：现在用一个sh文件管理整个项目可以嘛？】【给老师回复】"></a>2022-05-27 【Uprstr问题.xmind】【ww3-develop-20220527.xmind】 【FAQ：现在用一个sh文件管理整个项目可以嘛？】【给老师回复】</h2><p>Uprstr问题.xmind</p>
+<p>给老师回复：</p>
+<blockquote>
+<p>老师，这一周我主要做的内容：</p>
+<p>1、对于第一个同化时刻，有WW3模式和没WW3模式同化输出的结果不一样，我认为是合理的，因为WW3模式的海浪是以二维波谱的形式出现，使用SWH分析场数据是为了重构相应的二维海浪谱，然后进行模式积分运算。</p>
+<p>我也没有进行严格的验证，如果需要尝试检验的话，可以用WW3模式给出的同化接口，结合ww3_prnc生成data0.ww3（data0.ww3是波参数同化预处理生成的文件），再ww3_shel运行生成同化分析场数据重构二维海浪谱。我认为这个方法和uprstr restart是基本一致的。如果这个结果和update restart的结果一致，基本就没问题了。</p>
+<p><img src="C:\Users\Liujincan2\AppData\Roaming\Typora\typora-user-images\image-20220527193935893.png" alt="image-20220527193935893"></p>
+<p>2、将之前关于带有WW3模式同化的实验部分进行了补充，同化的实验结果也很好。</p>
+</blockquote>
+<blockquote>
+<p>接下来准备做：</p>
+<p>1、对海浪数值预报、数据同化相关的文献进行一个较全面的检索，对研究领域的文献进行分类，寻找创新点（准备重点做）。</p>
+<p>2、最近WW3的github代码更新成用cmake进行项目管理，原来的ftn源代码更新成了F90代码，可能更易于对代码进行调试，而且F90代码相较于ftn代码补充了一些内容，准备了解一下这个。</p>
 </blockquote>
 
                 
@@ -1011,7 +1025,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">494.5k</span>
+                        class="white-color">494.9k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
