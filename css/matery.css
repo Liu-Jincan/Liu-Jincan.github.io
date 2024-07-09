@@ -1626,10 +1626,13 @@ thead {
 }
 
 .profile .avatar-img {
-    max-width: 160px;
+    max-width: 225px;
+    /* max-width: 160px; */
+    height: auto;    /* 自动调整高度 */
     width: 100%;
     margin: 0 auto;
     transform: translate3d(0, -65%, 0);
+    object-fit: cover; /* 确保图片按比例缩放并覆盖整个区域 */
 }
 
 .profile .author {
