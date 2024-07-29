@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="参考资料：nansencenter-DA-tutorials-2021"><a href="#参考资料：nansencenter-DA-tutorials-2021" class="headerlink" title="参考资料：nansencenter-DA-tutorials-2021"></a><center>参考资料：nansencenter-DA-tutorials-2021</center></h2><ul>
+                <h2 id="lt-center-gt-参考资料：nansencenter-DA-tutorials-2021-lt-center-gt"><a href="#lt-center-gt-参考资料：nansencenter-DA-tutorials-2021-lt-center-gt" class="headerlink" title="<center>参考资料：nansencenter-DA-tutorials-2021 </center>"></a><code>&lt;center&gt;</code>参考资料：nansencenter-DA-tutorials-2021 <code>&lt;/center&gt;</code></h2><ul>
 <li>github仓库：<a target="_blank" rel="noopener" href="https://github.com/nansencenter/DA-tutorials">https://github.com/nansencenter/DA-tutorials</a></li>
 </ul>
 <h2 id="Git托管（待）"><a href="#Git托管（待）" class="headerlink" title="Git托管（待）"></a>Git托管（待）</h2><p>目前保存在D盘中</p>
@@ -446,12 +446,12 @@ python --version<span aria-hidden="true" class="line-numbers-rows"><span></span>
 </li>
 </ol>
 <h2 id="Jupyter-实现-code"><a href="#Jupyter-实现-code" class="headerlink" title="Jupyter 实现 code"></a>Jupyter 实现 code</h2><h3 id="环境搭建-打开Jupyter"><a href="#环境搭建-打开Jupyter" class="headerlink" title="环境搭建+打开Jupyter"></a>环境搭建+打开Jupyter</h3><ol>
-<li><p>下载github项目的文件夹<code>DA-tutorials-master</code>，在pycharm上以项目的形式打开<code>DA-tutorials-master</code>文件夹，通过Anaconda，为项目创建一个新环境<code>DA-tutorials-master</code>。（<strong>py3.7版本</strong>）</p>
+<li><p>下载github项目的文件夹 <code>DA-tutorials-master</code>，在pycharm上以项目的形式打开 <code>DA-tutorials-master</code>文件夹，通过Anaconda，为项目创建一个新环境 <code>DA-tutorials-master</code>。（<strong>py3.7版本</strong>）</p>
 <blockquote>
 <p>在pycharm~~</p>
 </blockquote>
 </li>
-<li><p>安装依赖包<code>requirements.txt</code>；</p>
+<li><p>安装依赖包 <code>requirements.txt</code>；</p>
 <ul>
 <li><p>pycharm下</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220228201752.png"></p>
@@ -468,9 +468,9 @@ cd D:\DA-tutorials-master
 pip install -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 </li>
-<li><p>在Anaconda Prompt中激活<code>DA-tutorials-master</code>环境，进入下载的github项目的文件夹目录下，<code>jupyter-notebook</code></p>
+<li><p>在Anaconda Prompt中激活 <code>DA-tutorials-master</code>环境，进入下载的github项目的文件夹目录下，<code>jupyter-notebook</code></p>
 </li>
-<li><p>在<code>jupyter</code>验证是不是对应的环境：</p>
+<li><p>在 <code>jupyter</code>验证是不是对应的环境：</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220228210213.png"></p>
 </li>
 </ol>
@@ -518,21 +518,21 @@ pip install -r requirements.txt<span aria-hidden="true" class="line-numbers-rows
 <hr>
 <p><strong>Exc 1.2:</strong> Word association. Fill in the <code>X</code>‘s in the table to group the words according to meaning.</p>
 <pre class="line-numbers language-none"><code class="language-none">Filtering, Sample, Random, Measurements, Kalman filter (KF), Monte-Carlo, Observations, Set of draws, State estimation, Data fusion
-Data Assimilation (DA)     Ensemble      Stochastic     Data        
+Data Assimilation (DA)     Ensemble      Stochastic     Data    
 ------------------------------------------------------------
-X                          X             X              X           
-X                          X             X              X           
-X                          
+X                          X             X              X       
+X                          X             X              X       
+X                      
 X<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <pre class="line-numbers language-none"><code class="language-none">show_answer('thesaurus 1')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>executed in 15ms, finished 21:18:09 2022-02-28</p>
-<pre class="line-numbers language-none"><code class="language-none">Data Assimilation (DA)     Ensemble      Stochastic     Data        
+<pre class="line-numbers language-none"><code class="language-none">Data Assimilation (DA)     Ensemble      Stochastic     Data    
 Filtering                  Sample        Random         Measurements
 Kalman filter (KF)         Set of draws  Monte-Carlo    Observations
-State estimation           
-Data fusion                <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+State estimation       
+Data fusion            <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <ul>
 <li>“The answer” is given from the perspective of DA. Do you agree with it?</li>
@@ -543,12 +543,12 @@ Data fusion                <span aria-hidden="true" class="line-numbers-rows"><s
 <pre class="line-numbers language-none"><code class="language-none">Inverse problems, Sample point, Probability, Particle, Sequential, Inversion, Realization, Relative frequency, Iterative, Estimation, Single draw, Serial, Approximation, Regression, Fitting
 Statistical inference    Ensemble member     Quantitative belief    Recursive 
 -----------------------------------------------------------------------------
-X                        X                   X                      X         
-X                        X                   X                      X         
-X                        X                                          X         
+X                        X                   X                      X     
+X                        X                   X                      X     
+X                        X                                          X     
 X                        X
-X                        
-X                        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+X                    
+X                    <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <pre class="line-numbers language-none"><code class="language-none">show_answer('thesaurus 2')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -556,10 +556,10 @@ X                        <span aria-hidden="true" class="line-numbers-rows"><spa
 <pre class="line-numbers language-none"><code class="language-none">Statistical inference    Ensemble member     Quantitative belief    Recursive 
 Inverse problems         Sample point        Probability            Sequential
 Inversion                Realization         Relative frequency     Iterative 
-Estimation               Single draw                                Serial    
+Estimation               Single draw                                Serial  
 Approximation            Particle
-Regression               
-Fitting                  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+Regression           
+Fitting              <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 <p><strong>Exc 1.5*:</strong> Prepare to discuss the following questions. Use any tool at your disposal.</p>
@@ -581,7 +581,7 @@ Fitting                  <span aria-hidden="true" class="line-numbers-rows"><spa
 <li>(e). Abstract concept to break the problem down into smaller, recursive, problems.<br>DAGs. Formalises the concept of hidden variables (states).</li>
 </ul>
 <h3 id="QT：非常好的一个jupyter交互方式（workspace）"><a href="#QT：非常好的一个jupyter交互方式（workspace）" class="headerlink" title="QT：非常好的一个jupyter交互方式（workspace）"></a>QT：非常好的一个jupyter交互方式（workspace）</h3><p><code>from resources.workspace import *</code>：</p>
-<p><code>resources</code>文件夹下的<code>workspace.py</code>：</p>
+<p><code>resources</code>文件夹下的 <code>workspace.py</code>：</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token triple-quoted-string string">"""Load tutorials workspace."""</span>
 
 <span class="token keyword">import</span> matplotlib <span class="token keyword">as</span> mpl
@@ -682,8 +682,6 @@ EnKF_animation <span class="token operator">=</span> VBox<span class="token punc
     <span class="token keyword">return</span> pw_f<span class="token punctuation">,</span> pw_a
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
 <h3 id="T2-Bayesian-inference"><a href="#T2-Bayesian-inference" class="headerlink" title="T2: Bayesian inference"></a>T2: Bayesian inference</h3><h4 id="The-Gaussian-i-e-Normal-distribution"><a href="#The-Gaussian-i-e-Normal-distribution" class="headerlink" title="The Gaussian (i.e. Normal) distribution"></a>The Gaussian (i.e. Normal) distribution</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301121112.png"></p>
 <h4 id="Bayes’-rule"><a href="#Bayes’-rule" class="headerlink" title="Bayes’ rule"></a>Bayes’ rule</h4><p>Bayes’ rule is how we do inference.<br>It defines how we should merge our prior (quantitative belief) about $x$,<br>when given an observation $y$ somehow related to $x$.</p>
 <p>For continuous random variables, $x$ and $y$, it reads:</p>
@@ -696,15 +694,13 @@ EnKF_animation <span class="token operator">=</span> VBox<span class="token punc
     posterior_values <span class="token operator">=</span> pp<span class="token operator">/</span><span class="token punctuation">(</span><span class="token builtin">sum</span><span class="token punctuation">(</span>pp<span class="token punctuation">)</span><span class="token operator">*</span>dx<span class="token punctuation">)</span> <span class="token comment"># normalization</span>
     <span class="token keyword">return</span> posterior_values<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
-<h4 id="Derive-Bayes’-rule"><a href="#Derive-Bayes’-rule" class="headerlink" title="Derive Bayes’ rule"></a>Derive Bayes’ rule</h4><p>from the definition of <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Conditional_probability#Kolmogorov_definition">conditional pdf’s</a>.</p>
+<h4 id="Derive-Bayes’-rule"><a href="#Derive-Bayes’-rule" class="headerlink" title="Derive Bayes’ rule"></a>Derive Bayes’ rule</h4><p>from the definition of <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Conditional_probability#Kolmogorov_definition">conditional pdf's</a>.</p>
 <p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Bayes'_theorem#Derivation">Wikipedia</a>.</p>
 <h4 id="Bayes规则中-为什么x表示未知，y表示已知数据，（因果论）"><a href="#Bayes规则中-为什么x表示未知，y表示已知数据，（因果论）" class="headerlink" title="Bayes规则中    为什么x表示未知，y表示已知数据，（因果论）"></a>Bayes规则中    为什么x表示未知，y表示已知数据，（因果论）</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301170323.png"></p>
 <p>由因到果，P(y|x)，是容易得到的，</p>
 <p><strong>由果到因，P(x|y)，很难得到，</strong>，（贝叶斯的因果论）</p>
-<h4 id="Bayes’-rule-in-action"><a href="#Bayes’-rule-in-action" class="headerlink" title="Bayes’ rule in action."></a>Bayes’ rule in action.</h4><p>The code below shows Bayes’ rule in action.  </p>
-<p>Again, remember that the only thing it’s doing is multiplying the <code>prior value</code> and <code>likelihood value</code> at each gridpoint.  </p>
+<h4 id="Bayes’-rule-in-action"><a href="#Bayes’-rule-in-action" class="headerlink" title="Bayes’ rule in action."></a>Bayes’ rule in action.</h4><p>The code below shows Bayes’ rule in action.</p>
+<p>Again, remember that the only thing it’s doing is multiplying the <code>prior value</code> and <code>likelihood value</code> at each gridpoint.</p>
 <p>Move the sliders with the arrow keys to animate it.</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># Fix the prior's parameters</span>
 b <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment"># mean</span>
@@ -714,19 +710,19 @@ B <span class="token operator">=</span> <span class="token number">1</span> <spa
 <span class="token keyword">def</span> <span class="token function">animate_Bayes</span><span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token number">4.0</span><span class="token punctuation">,</span>R<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     prior_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>b<span class="token punctuation">,</span>B<span class="token punctuation">)</span>
     lklhd_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>y<span class="token punctuation">,</span>xx<span class="token punctuation">,</span>R<span class="token punctuation">)</span>
-    
+  
     postr_vals <span class="token operator">=</span> Bayes_rule<span class="token punctuation">(</span>prior_vals<span class="token punctuation">,</span> lklhd_vals<span class="token punctuation">,</span> xx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>xx<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 
     plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>prior_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'prior $\mathcal{N}(x|b,B)$'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>lklhd_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'likelihood $\mathcal{N}(y|x,R)$'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>postr_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'posterior - pointwise'</span><span class="token punctuation">)</span>
-    
+  
     <span class="token comment">### Uncomment this block AFTER doing the Exc 2.24 ###</span>
     <span class="token comment"># xhat, P = Bayes_rule_G1(b,B,y,R)</span>
     <span class="token comment"># postr_vals2 = pdf_G1(xx,xhat,P)</span>
     <span class="token comment"># plt.plot(xx,postr_vals2,'--',label='posterior - parametric\n $\mathcal{N}(x|\hat{x},P)$')</span>
-    
+  
     plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span>ymax<span class="token operator">=</span><span class="token number">0.6</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
@@ -761,12 +757,14 @@ B <span class="token operator">=</span> <span class="token number">1</span> <spa
 <p><code>↑ N 表示Bayes中每个变量的？？？？</code></p>
 </blockquote>
 <h4 id="解决高维贝叶斯的问题：高斯-高斯贝叶斯"><a href="#解决高维贝叶斯的问题：高斯-高斯贝叶斯" class="headerlink" title="解决高维贝叶斯的问题：高斯-高斯贝叶斯"></a>解决高维贝叶斯的问题：高斯-高斯贝叶斯</h4><p>In response to this computational difficulty, we try to be smart and do something more analytical (“pen-and-paper”): we <strong>only compute the parameters (mean and (co)variance)</strong> of the posterior pdf.</p>
-<p>This is <strong>doable and quite simple in the Gaussian-Gaussian case</strong>:  </p>
-<p>With a prior $p(x) = \mathcal{N}(x \mid b,B)$ and a likelihood $p(y|x) = \mathcal{N}(y \mid x,R)$,<br>the posterior is<br>$$<br>\begin{align}<br>p(x|y)<br>&amp;= \mathcal{N}(x \mid \hat{x},P) \tag{4} , ,<br>\end{align}<br>$$<br>where, in the <strong>univariate (1-dimensional) case</strong>:<br>$$<br>\begin{align}<br>    P &amp;= 1/(1/B + 1/R) , , \tag{5} \<br>  \hat{x} &amp;= P(b/B + y/R) , .  \tag{6}<br>\end{align}<br>$$</p>
-<blockquote>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301180048.png"></p>
-</blockquote>
-<p>Do some light algebra to show that eqns (5) and (6) can be rewritten as<br>$$<br>\begin{align}<br>    P &amp;= (1-K)B , ,  \tag{8} \<br>  \hat{x} &amp;= b + K (y-b) \tag{9} , ,<br>\end{align}<br>$$<br>where $K = B/(B+R)$, which is called the “<strong>Kalman gain</strong>“. This form of the update becomes highly interesting in the multivariate case (later).</p>
+<p>This is <strong>doable and quite simple in the Gaussian-Gaussian case</strong>:</p>
+<p>With a prior $p(x) = \mathcal{N}(x \mid b,B)$ and a likelihood $p(y|x) = \mathcal{N}(y \mid x,R)$,<br>the posterior is</p>
+<p>$$<br>\begin{align}<br>p(x|y)<br>&amp;= \mathcal{N}(x \mid \hat{x},P) \tag{4} , ,<br>\end{align}<br>$$</p>
+<p>where, in the <strong>univariate (1-dimensional) case</strong>:</p>
+<p>$$<br>\begin{align}<br>    P &amp;= 1/(1/B + 1/R) , , \tag{5} \<br>  \hat{x} &amp;= P(b/B + y/R) , .  \tag{6}<br>\end{align}<br>$$</p>
+<p>Do some light algebra to show that eqns (5) and (6) can be rewritten as</p>
+<p>$$<br>\begin{align}<br>    P &amp;= (1-K)B , ,  \tag{8} \<br>  \hat{x} &amp;= b + K (y-b) \tag{9} , ,<br>\end{align}<br>$$</p>
+<p>where $K = B/(B+R)$, which is called the “<strong>Kalman gain</strong>“. This form of the update becomes highly interesting in the multivariate case (later).</p>
 <blockquote>
 <p>Consider the formula for $K$ and its role in the previous couple of equations. Why do you think $K$ is called a “gain”?</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301180458.png"></p>
@@ -780,9 +778,9 @@ B <span class="token operator">=</span> <span class="token number">1</span> <spa
     <span class="token comment">#     P    = (1-KG)*B</span>
     <span class="token comment">#     xhat = b + KG*(y-b)</span>
     <span class="token keyword">return</span> xhat<span class="token punctuation">,</span>P
-    <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>Go back to the above animation code, and uncomment the block that uses <code>Bayes_rule_G1()</code>. Re-run.<br>Make sure its curve coincides with that which uses pointwise multiplication (i.e. <code>Bayes_rule()</code>).<br><strong>This is the main secret of the “Kalman filter”</strong>.</p>
+<p>Go back to the above animation code, and uncomment the block that uses <code>Bayes_rule_G1()</code>. Re-run.Make sure its curve coincides with that which uses pointwise multiplication (i.e. <code>Bayes_rule()</code>).<br><strong>This is the main secret of the “Kalman filter”</strong>.</p>
 <blockquote>
 <p><code>↑ 卡尔曼滤波的秘密~~核心~</code></p>
 </blockquote>
@@ -794,19 +792,19 @@ B <span class="token operator">=</span> <span class="token number">1</span> <spa
 <span class="token keyword">def</span> <span class="token function">animate_Bayes</span><span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token number">4.0</span><span class="token punctuation">,</span>R<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     prior_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>b<span class="token punctuation">,</span>B<span class="token punctuation">)</span>
     lklhd_vals <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>y<span class="token punctuation">,</span>xx<span class="token punctuation">,</span>R<span class="token punctuation">)</span>
-    
+  
     postr_vals <span class="token operator">=</span> Bayes_rule<span class="token punctuation">(</span>prior_vals<span class="token punctuation">,</span> lklhd_vals<span class="token punctuation">,</span> xx<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>xx<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 
     plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>prior_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'prior $\mathcal{N}(x|b,B)$'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>lklhd_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'likelihood $\mathcal{N}(y|x,R)$'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>postr_vals<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'posterior - pointwise'</span><span class="token punctuation">)</span>
-    
+  
     <span class="token comment">### Uncomment this block AFTER doing the Exc 2.24 ###</span>
     xhat<span class="token punctuation">,</span> P <span class="token operator">=</span> Bayes_rule_G1<span class="token punctuation">(</span>b<span class="token punctuation">,</span>B<span class="token punctuation">,</span>y<span class="token punctuation">,</span>R<span class="token punctuation">)</span>
     postr_vals2 <span class="token operator">=</span> pdf_G1<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>xhat<span class="token punctuation">,</span>P<span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xx<span class="token punctuation">,</span>postr_vals2<span class="token punctuation">,</span><span class="token string">'--'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'posterior - parametric\n $\mathcal{N}(x|\hat{x},P)$'</span><span class="token punctuation">)</span>
-    
+  
     plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span>ymax<span class="token operator">=</span><span class="token number">0.6</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
@@ -815,12 +813,16 @@ B <span class="token operator">=</span> <span class="token number">1</span> <spa
 <p>…</p>
 <h4 id="Why-are-we-so-fond-of-the-Gaussian-assumption"><a href="#Why-are-we-so-fond-of-the-Gaussian-assumption" class="headerlink" title="Why are we so fond of the Gaussian assumption?"></a>Why are we so fond of the Gaussian assumption?</h4><h3 id="T3-Univariate-Kalman-filtering"><a href="#T3-Univariate-Kalman-filtering" class="headerlink" title="T3: Univariate Kalman filtering"></a>T3: Univariate Kalman filtering</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> resources<span class="token punctuation">.</span>workspace <span class="token keyword">import</span> <span class="token operator">*</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>Many mathematical methods are tagged as “least squares”. They typically have one thing in common: some sum of squared terms is being minimized. </p>
+<p>Many mathematical methods are tagged as “least squares”. They typically have one thing in common: some sum of squared terms is being minimized.</p>
 <p>Both (least-squares) linear regression and Kalman filtering (KF) may be derived from “least squares”. Do they yield the same estimate (when applied to the linear regression problem)? That’s what we’ll investigate…</p>
 <blockquote>
 <p><code>↑ 线性回归中最小二乘，KF中的最小二乘，的理解</code></p>
 </blockquote>
-<h4 id="A-straight-line-example"><a href="#A-straight-line-example" class="headerlink" title="A straight-line example"></a>A straight-line example</h4><p>Consider the straight line<br>$$<br>\begin{align}<br>x_k = a k , , \tag{1}<br>\end{align}<br>$$<br>and suppose we have observations ($y$) of the line, but corrupted by noise ($r$):<br>$$<br>\begin{align}<br>y_k &amp;= x_k + r_k , , \tag{2}<br>\end{align}<br>$$<br>where $r_k \sim \mathcal{N}(0, R)$ for some $R&gt;0$.</p>
+<h4 id="A-straight-line-example"><a href="#A-straight-line-example" class="headerlink" title="A straight-line example"></a>A straight-line example</h4><p>Consider the straight line</p>
+<p>$$<br>\begin{align}<br>x_k = a k , , \tag{1}<br>\end{align}<br>$$</p>
+<p>and suppose we have observations ($y$) of the line, but corrupted by noise ($r$):</p>
+<p>$$<br>\begin{align}<br>y_k &amp;= x_k + r_k , , \tag{2}<br>\end{align}<br>$$</p>
+<p>where $r_k \sim \mathcal{N}(0, R)$ for some $R&gt;0$.</p>
 <p>The code below sets up an experiment based on eqns. (1) and (2).</p>
 <p>Parameters:</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">a <span class="token operator">=</span> <span class="token number">0.4</span>  <span class="token comment"># Slope (xx[k] = a*k) parameter. Unknown to be estimated.</span>
@@ -846,13 +848,13 @@ yy<span class="token punctuation">[</span><span class="token number">0</span><sp
     kk <span class="token operator">=</span> arange<span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>xx<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'true state ($x$)'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>yy<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k*'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'noisy obs ($y$)'</span><span class="token punctuation">)</span>
-    
+  
     <span class="token comment">### Uncomment this block AFTER doing the Exc 3.4 ###</span>
     <span class="token comment"># plt.plot(kk,kk*lin_reg(k) ,'r' ,label='Linear regress.')</span>
 
     <span class="token comment">### Uncomment this block AFTER doing the Exc 3.8 ###</span>
     <span class="token comment"># pw_bb, pw_xxhat = weave_fa(bb,xxhat)</span>
-    <span class="token comment"># pw_kf, pw_ka    = weave_fa(arange(K+1))    </span>
+    <span class="token comment"># pw_kf, pw_ka    = weave_fa(arange(K+1))  </span>
     <span class="token comment"># plt.plot(pw_kf[:3*k],pw_bb[:3*k]     ,'c'  ,label='KF forecasts')</span>
     <span class="token comment"># plt.plot(pw_ka[:3*k],pw_xxhat[:3*k]  ,'b'  ,label='KF analyses')</span>
     <span class="token comment"># #plt.plot(kk,kk*xxhat[k]/k           ,'g--',label='KF extrapolated')</span>
@@ -866,14 +868,19 @@ yy<span class="token punctuation">[</span><span class="token number">0</span><sp
 
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301141030.png" style="zoom:100%;">
 
-<h4 id="Estimation-by-linear-regression"><a href="#Estimation-by-linear-regression" class="headerlink" title="Estimation by linear regression"></a>Estimation by linear regression</h4><p>The observations eqn. (2)<br>yields the <strong>likelihood</strong><br>$$<br>\begin{align}<br>p(y_k|x_k) = \mathcal{N}(y_k \mid x_k,R) , . \tag{3}<br>\end{align}<br>$$<br>Hopefully this is intuitive; otherwise, a derivation is provided in T4.</p>
-<p>(Least-squares) linear regression minimizes the <strong>cost/objective function</strong><br>$$<br>\begin{align}<br>J_K(a) = \sum_{k=1}^K (y_k - a k)^2 , ,  \tag{4}<br>\end{align}<br>$$</p>
+<h4 id="Estimation-by-linear-regression"><a href="#Estimation-by-linear-regression" class="headerlink" title="Estimation by linear regression"></a>Estimation by linear regression</h4><p>The observations eqn. (2)<br>yields the <strong>likelihood</strong></p>
+<p>$$<br>\begin{align}<br>p(y_k|x_k) = \mathcal{N}(y_k \mid x_k,R) , . \tag{3}<br>\end{align}<br>$$</p>
+<p>Hopefully this is intuitive; otherwise, a derivation is provided in T4.</p>
+<p>(Least-squares) linear regression minimizes the <strong>cost/objective function</strong></p>
+<p>$$<br>\begin{align}<br>J_K(a) = \sum_{k=1}^K (y_k - a k)^2 , ,  \tag{4}<br>\end{align}<br>$$</p>
 <h5 id="Exc-3-2-3-4-The-minimization-estimator"><a href="#Exc-3-2-3-4-The-minimization-estimator" class="headerlink" title="Exc 3.2-3.4: The minimization estimator"></a><strong>Exc 3.2-3.4: The minimization estimator</strong></h5><p>Use eqns. (1) and (2) to show that minimizing $J_K$ yields <strong>the same optimum location</strong>, $\hat{a}$, as maximizing the likelihood $p, (y_1, \ldots, y_K ;|; a)$.</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">show_answer<span class="token punctuation">(</span><span class="token string">'LinReg deriv a'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301141750.png" style="zoom:100%;">
 
-<p>The minimization yields the estimator<br>$$<br>\begin{align}<br>\hat{a} = \frac{\sum_{k=1}^K {k} y_{k}}{\sum_{k=1}^K {k}^2} , . \tag{6}<br>\end{align}<br>$$<br>Derive (6) from (4).</p>
+<p>The minimization yields the estimator</p>
+<p>$$<br>\begin{align}<br>\hat{a} = \frac{\sum_{k=1}^K {k} y_{k}}{\sum_{k=1}^K {k}^2} , . \tag{6}<br>\end{align}<br>$$</p>
+<p>Derive (6) from (4).</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301142103.png" style="zoom:100%;">
 
 <p>Code up the linear regression estimator (6).</p>
@@ -893,13 +900,13 @@ yy<span class="token punctuation">[</span><span class="token number">0</span><sp
     kk <span class="token operator">=</span> arange<span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>xx<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'true state ($x$)'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>yy<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k*'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'noisy obs ($y$)'</span><span class="token punctuation">)</span>
-    
+  
     <span class="token comment">### Uncomment this block AFTER doing the Exc 3.4 ###</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>kk<span class="token operator">*</span>lin_reg<span class="token punctuation">(</span>k<span class="token punctuation">)</span> <span class="token punctuation">,</span><span class="token string">'r'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'Linear regress.'</span><span class="token punctuation">)</span>
 
     <span class="token comment">### Uncomment this block AFTER doing the Exc 3.8 ###</span>
     <span class="token comment"># pw_bb, pw_xxhat = weave_fa(bb,xxhat)</span>
-    <span class="token comment"># pw_kf, pw_ka    = weave_fa(arange(K+1))    </span>
+    <span class="token comment"># pw_kf, pw_ka    = weave_fa(arange(K+1))  </span>
     <span class="token comment"># plt.plot(pw_kf[:3*k],pw_bb[:3*k]     ,'c'  ,label='KF forecasts')</span>
     <span class="token comment"># plt.plot(pw_ka[:3*k],pw_xxhat[:3*k]  ,'b'  ,label='KF analyses')</span>
     <span class="token comment"># #plt.plot(kk,kk*xxhat[k]/k           ,'g--',label='KF extrapolated')</span>
@@ -912,12 +919,14 @@ yy<span class="token punctuation">[</span><span class="token number">0</span><sp
     plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301142719.png"></p>
-<h4 id="Estimation-by-the-univariate-Kalman-filter-KF"><a href="#Estimation-by-the-univariate-Kalman-filter-KF" class="headerlink" title="Estimation by the (univariate) Kalman filter (KF)"></a>Estimation by the (univariate) Kalman filter (KF)</h4><p>The KF assumes that the truth (or “true state”, or “nature”), $x_k$, “evolves in time (indexed by $k$)” according to some <strong>linear dynamical model</strong>:<br>$$<br>\begin{align}<br>x_{k} = \mathcal{M}<em>{k-1} x</em>{k-1} + q_{k-1} , , \tag{Dyn} , .<br>\end{align}<br>$$<br>where $q_k$ is a random noise (process) that accounts for <strong>model errors</strong>.</p>
+<h4 id="Estimation-by-the-univariate-Kalman-filter-KF"><a href="#Estimation-by-the-univariate-Kalman-filter-KF" class="headerlink" title="Estimation by the (univariate) Kalman filter (KF)"></a>Estimation by the (univariate) Kalman filter (KF)</h4><p>The KF assumes that the truth (or “true state”, or “nature”), $x_k$, “evolves in time (indexed by $k$)” according to some <strong>linear dynamical model</strong>:</p>
+<p>$$<br>\begin{align}<br>x_{k} = \mathcal{M}<em>{k-1} x</em>{k-1} + q_{k-1} , , \tag{Dyn} , .<br>\end{align}<br>$$</p>
+<p>where $q_k$ is a random noise (process) that accounts for <strong>model errors</strong>.</p>
 <blockquote>
 <p><code>↑ DA中的模型误差，知道是啥了~~</code></p>
 </blockquote>
 <p>For now, $\mathcal{M}_{k-1}$ is just a number. In later tutorials it will be generalized to <strong>matrices, and eventually nonlinear operators</strong>.</p>
-<h5 id="Exc-3-6-a-reformulate-problem"><a href="#Exc-3-6-a-reformulate-problem" class="headerlink" title="Exc 3.6 (a): reformulate  problem"></a><strong>Exc 3.6 (a):</strong> reformulate  problem</h5><p>For the KF we need to <strong>reformulate the problem</strong> of estimating the parameter $a$ as the problem of estimating $x_k$.  </p>
+<h5 id="Exc-3-6-a-reformulate-problem"><a href="#Exc-3-6-a-reformulate-problem" class="headerlink" title="Exc 3.6 (a): reformulate  problem"></a><strong>Exc 3.6 (a):</strong> reformulate  problem</h5><p>For the KF we need to <strong>reformulate the problem</strong> of estimating the parameter $a$ as the problem of estimating $x_k$.</p>
 <blockquote>
 <p><code>↑ 将原来的问题转变成KF形式</code></p>
 </blockquote>
@@ -937,22 +946,23 @@ yy<span class="token punctuation">[</span><span class="token number">0</span><sp
 <h5 id="Exc-3-7-The-KF-recursively-estimates-x-k-in-successive-cycles-which-consist-of-two-steps"><a href="#Exc-3-7-The-KF-recursively-estimates-x-k-in-successive-cycles-which-consist-of-two-steps" class="headerlink" title="Exc 3.7:  The KF recursively estimates $x_k$ in successive cycles which consist of two steps"></a>Exc 3.7:  The KF recursively estimates $x_k$ in successive cycles which consist of two steps</h5><ul>
 <li><strong>The forecast step</strong></li>
 </ul>
-<p>It is supposed that $;;;\quad x_{k-1} \sim \mathcal{N}(\hat{x}<em>{k-1}, P</em>{k-1})$,  </p>
-<p>and that (independently) $q_{k-1} \sim \mathcal{N}(0, Q)$.  </p>
-<p>Show that <strong>the mean and variance of $x_k$</strong>, respectively, are given by:<br>$$<br>b_k = \mathcal{M}<em>{k-1} \hat{x}</em>{k-1}<br>$$</p>
+<p>It is supposed that $;;;\quad x_{k-1} \sim \mathcal{N}(\hat{x}<em>{k-1}, P</em>{k-1})$,</p>
+<p>and that (independently) $q_{k-1} \sim \mathcal{N}(0, Q)$.</p>
+<p>Show that <strong>the mean and variance of $x_k$</strong>, respectively, are given by:</p>
+<p>$$<br>b_k = \mathcal{M}<em>{k-1} \hat{x}</em>{k-1}<br>$$</p>
 <p>$$<br>B_k = \mathcal{M}<em>{k-1}^2 P</em>{k-1} + Q<br>$$</p>
 <blockquote>
 <p><code>↑ 求解KF过程中的均值和方差</code></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220301151946.png"></p>
 </blockquote>
-<p>It can be shown that <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Sum_of_normally_distributed_random_variables#Proof_using_convolutions">the sum of two Gaussian random variables</a>  is again a Gaussian.  </p>
+<p>It can be shown that <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Sum_of_normally_distributed_random_variables#Proof_using_convolutions">the sum of two Gaussian random variables</a>  is again a Gaussian.</p>
 <p>Thus, <strong>the forecast step just requires computing the new moments (mean and variance)</strong>.</p>
 <ul>
 <li><strong>The analysis step</strong></li>
 </ul>
-<p>“updates” the prior (forecast), $\mathcal{N}(x_k \mid ; b_k,; B_k)$,  </p>
-<p>based on the likelihood, $\quad;;;, \mathcal{N}(y_k \mid , x_k, ; R)$,  </p>
-<p>into the posterior (analysis), $; ; , \mathcal{N}(x_k \mid ; \hat{x}<em>{k}, , P</em>{k})$.  </p>
+<p>“updates” the prior (forecast), $\mathcal{N}(x_k \mid ; b_k,; B_k)$,</p>
+<p>based on the likelihood, $\quad;;;, \mathcal{N}(y_k \mid , x_k, ; R)$,</p>
+<p>into the posterior (analysis), $; ; , \mathcal{N}(x_k \mid ; \hat{x}<em>{k}, , P</em>{k})$.</p>
 <p>The update formulae was derived as the <strong>Gaussian-Gaussian Bayes’ rule</strong> in <a href="T2%20-%20Bayesian%20inference.ipynb#Gaussian-Gaussian-Bayes">the previous tutorial</a>.</p>
 <p>This completes the cycle, which can then restart with the forecast from $k$ to $k+1$.</p>
 <hr>
@@ -986,20 +996,20 @@ PP    <span class="token operator">=</span> np<span class="token punctuation">.<
 <span class="token keyword">for</span> k <span class="token keyword">in</span> <span class="token number">1</span><span class="token operator">+</span>arange<span class="token punctuation">(</span>K<span class="token punctuation">)</span><span class="token punctuation">:</span>
     KF<span class="token punctuation">(</span>k<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>Go back to the animation above and uncomment the block that plots the KF estimates.  </p>
+<p>Go back to the animation above and uncomment the block that plots the KF estimates.</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token decorator annotation punctuation">@interact</span><span class="token punctuation">(</span>k<span class="token operator">=</span>IntSlider<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">max</span><span class="token operator">=</span>K<span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">def</span> <span class="token function">plot_experiment</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">:</span>
     plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     kk <span class="token operator">=</span> arange<span class="token punctuation">(</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>xx<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'true state ($x$)'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>yy<span class="token punctuation">[</span>kk<span class="token punctuation">]</span>        <span class="token punctuation">,</span><span class="token string">'k*'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'noisy obs ($y$)'</span><span class="token punctuation">)</span>
-    
+  
     <span class="token comment">### Uncomment this block AFTER doing the Exc 3.4 ###</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kk<span class="token punctuation">,</span>kk<span class="token operator">*</span>lin_reg<span class="token punctuation">(</span>k<span class="token punctuation">)</span> <span class="token punctuation">,</span><span class="token string">'r'</span> <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'Linear regress.'</span><span class="token punctuation">)</span>
 
     <span class="token comment">### Uncomment this block AFTER doing the Exc 3.8 ###</span>
     pw_bb<span class="token punctuation">,</span> pw_xxhat <span class="token operator">=</span> weave_fa<span class="token punctuation">(</span>bb<span class="token punctuation">,</span>xxhat<span class="token punctuation">)</span>
-    pw_kf<span class="token punctuation">,</span> pw_ka    <span class="token operator">=</span> weave_fa<span class="token punctuation">(</span>arange<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    
+    pw_kf<span class="token punctuation">,</span> pw_ka    <span class="token operator">=</span> weave_fa<span class="token punctuation">(</span>arange<span class="token punctuation">(</span>K<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>pw_kf<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span><span class="token punctuation">,</span>pw_bb<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span>     <span class="token punctuation">,</span><span class="token string">'c'</span>  <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'KF forecasts'</span><span class="token punctuation">)</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>pw_ka<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span><span class="token punctuation">,</span>pw_xxhat<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token operator">*</span>k<span class="token punctuation">]</span>  <span class="token punctuation">,</span><span class="token string">'b'</span>  <span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'KF analyses'</span><span class="token punctuation">)</span>
     <span class="token comment">#plt.plot(kk,kk*xxhat[k]/k           ,'g--',label='KF extrapolated')</span>
@@ -1582,7 +1592,7 @@ PP    <span class="token operator">=</span> np<span class="token punctuation">.<
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

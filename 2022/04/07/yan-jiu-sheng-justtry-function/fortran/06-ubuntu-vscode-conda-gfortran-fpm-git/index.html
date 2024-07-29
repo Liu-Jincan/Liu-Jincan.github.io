@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    876
+                    886
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="ubuntu-VScode-conda-GFortran-fpm-Git"><a href="#ubuntu-VScode-conda-GFortran-fpm-Git" class="headerlink" title="ubuntu+VScode+conda+GFortran+fpm+Git"></a><center>ubuntu+VScode+conda+GFortran+fpm+Git</center></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="安装VScode（官网）"><a href="#安装VScode（官网）" class="headerlink" title="安装VScode（官网）"></a>安装VScode（官网）</h2><ol>
+                <h1 id="lt-center-gt-ubuntu-VScode-conda-GFortran-fpm-Git-lt-center-gt"><a href="#lt-center-gt-ubuntu-VScode-conda-GFortran-fpm-Git-lt-center-gt" class="headerlink" title="<center>ubuntu+VScode+conda+GFortran+fpm+Git</center>"></a><code>&lt;center&gt;</code>ubuntu+VScode+conda+GFortran+fpm+Git<code>&lt;/center&gt;</code></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="安装VScode（官网）"><a href="#安装VScode（官网）" class="headerlink" title="安装VScode（官网）"></a>安装VScode（官网）</h2><ol>
 <li><p>官网下载deb安装包，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407155756.png"></p>
 </li>
@@ -443,7 +443,7 @@
 </ul>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407202935.png"></p>
 <ul>
-<li>对每个条目根据需要选择<code>接受远程</code>，<code>接受本地</code>，<code>合并</code>中的一个，</li>
+<li>对每个条目根据需要选择 <code>接受远程</code>，<code>接受本地</code>，<code>合并</code>中的一个，</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407203135.png"></p>
 <ul>
@@ -467,13 +467,13 @@
 <li><p>使用conda安装fpm（【<a target="_blank" rel="noopener" href="https://github.com/fortran-lang/fpm%E3%80%91%EF%BC%89%EF%BC%8C">https://github.com/fortran-lang/fpm】），</a></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220408101146.png"></p>
 <blockquote>
-<p>可使用<code>Anaconda</code>，<code>miniconda</code>，<code>miniforge</code>安装<code>conda</code>，在这里没写怎么安装<code>conda</code>；</p>
+<p>可使用 <code>Anaconda</code>，<code>miniconda</code>，<code>miniforge</code>安装 <code>conda</code>，在这里没写怎么安装 <code>conda</code>；</p>
 </blockquote>
 </li>
-<li><p>进入<code>fpm</code>环境，验证fpm命令能正常使用，</p>
+<li><p>进入 <code>fpm</code>环境，验证fpm命令能正常使用，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220408101931.png"></p>
 </li>
-<li><p>git clone 我的<code>study-fpm</code>项目（【<a target="_blank" rel="noopener" href="https://github.com/Liu-Jincan/study-fpm%E3%80%91%EF%BC%89%EF%BC%8C%E6%B7%BB%E5%8A%A0%E5%88%B0VScode%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8B%EF%BC%8C%E8%AF%A5%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%BF%87%E7%A8%8B%E5%9C%A8%60FAQ%EF%BC%9A%E5%AF%BB%E6%89%BE%E5%85%B3%E4%BA%8Efortran%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95%EF%BC%88FPM%EF%BC%89%60%E5%8D%9A%E5%AE%A2%EF%BC%8C">https://github.com/Liu-Jincan/study-fpm】），添加到VScode工作区下，该项目创建过程在`FAQ：寻找关于fortran的项目管理方法（FPM）`博客，</a></p>
+<li><p>git clone 我的 <code>study-fpm</code>项目（【<a target="_blank" rel="noopener" href="https://github.com/Liu-Jincan/study-fpm%E3%80%91%EF%BC%89%EF%BC%8C%E6%B7%BB%E5%8A%A0%E5%88%B0VScode%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8B%EF%BC%8C%E8%AF%A5%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%BF%87%E7%A8%8B%E5%9C%A8">https://github.com/Liu-Jincan/study-fpm】），添加到VScode工作区下，该项目创建过程在</a> <code>FAQ：寻找关于fortran的项目管理方法（FPM）</code>博客，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220408103347.png"></p>
 <p>验证fpm能正常编译运行fortran，</p>
 <ul>
@@ -490,7 +490,7 @@
 </li>
 </ol>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSS</p>
-<h3 id="FAQ：VScode同步后如何使语言服务器fortls正常使用？"><a href="#FAQ：VScode同步后如何使语言服务器fortls正常使用？" class="headerlink" title="FAQ：VScode同步后如何使语言服务器fortls正常使用？"></a>FAQ：VScode同步后如何使语言服务器fortls正常使用？</h3><p>同步后，<code>modern fortran</code>扩展会自动安装，相关的扩展设置也会自动同步，此时要使得fortran语言服务器fortls正常使用，还需要安装<code>fortls</code>，（【<code>Win10+VScode+Msys2+Mingw64+GFortran+Git</code>博客】）</p>
+<h3 id="FAQ：VScode同步后如何使语言服务器fortls正常使用？"><a href="#FAQ：VScode同步后如何使语言服务器fortls正常使用？" class="headerlink" title="FAQ：VScode同步后如何使语言服务器fortls正常使用？"></a>FAQ：VScode同步后如何使语言服务器fortls正常使用？</h3><p>同步后，<code>modern fortran</code>扩展会自动安装，相关的扩展设置也会自动同步，此时要使得fortran语言服务器fortls正常使用，还需要安装 <code>fortls</code>，（【<code>Win10+VScode+Msys2+Mingw64+GFortran+Git</code>博客】）</p>
 <ol>
 <li><p>在fpm环境下pip安装fortls，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220408105542.png"></p>
@@ -503,7 +503,7 @@
 </ol>
 <p>SSSSSSSSSSSSSSSSS</p>
 <h3 id="VScode-扩展-gdb-跨文件调试（ubuntu）"><a href="#VScode-扩展-gdb-跨文件调试（ubuntu）" class="headerlink" title="VScode 扩展 gdb 跨文件调试（ubuntu）"></a>VScode 扩展 gdb 跨文件调试（ubuntu）</h3><ul>
-<li>基于<code>Win10+VScode+Msys2+Mingw64+GFortran+Git</code>博客中Win10的gdb多文件调试写得；</li>
+<li>基于 <code>Win10+VScode+Msys2+Mingw64+GFortran+Git</code>博客中Win10的gdb多文件调试写得；</li>
 </ul>
 <ol>
 <li><p>确定安装了gdb，</p>
@@ -512,9 +512,9 @@
 <li><p>确定安装了gdb扩展；</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220330125428.png" alt="img"></p>
 </li>
-<li><p>项目为<code>test_multi_f90file</code>，位于<code>Data-Assimilation-for-Ocean-Current-Forcast</code>的github仓库<code>make_v0.2.0</code>分支，（<a target="_blank" rel="noopener" href="https://github.com/Liu-Jincan/Data-Assimilation-for-Ocean-Current-Forecasts/tree/v0.2.0-make%EF%BC%89">https://github.com/Liu-Jincan/Data-Assimilation-for-Ocean-Current-Forecasts/tree/v0.2.0-make）</a></p>
+<li><p>项目为 <code>test_multi_f90file</code>，位于 <code>Data-Assimilation-for-Ocean-Current-Forcast</code>的github仓库 <code>make_v0.2.0</code>分支，（<a target="_blank" rel="noopener" href="https://github.com/Liu-Jincan/Data-Assimilation-for-Ocean-Current-Forecasts/tree/v0.2.0-make%EF%BC%89">https://github.com/Liu-Jincan/Data-Assimilation-for-Ocean-Current-Forecasts/tree/v0.2.0-make）</a></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220410233704.png"></p>
-<p><code>launch_json</code>位于<code>.vscode</code>中，其内容如下，</p>
+<p><code>launch_json</code>位于 <code>.vscode</code>中，其内容如下，</p>
 <pre class="line-numbers language-none"><code class="language-none">{
     // 使用 IntelliSense 了解相关属性。 
     // 悬停以查看现有属性的描述。
@@ -533,7 +533,6 @@
         }
     ]
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li><p><code>Makefile</code>，</p>
 <pre class="line-numbers language-none"><code class="language-none">FC = gfortran
@@ -550,7 +549,6 @@ run:$(runOBJS)
 
 clean:
 	rm -f *.o *.exe *.mod<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><code>main.f90</code>，</p>
 <pre class="line-numbers language-none"><code class="language-none">subroutine abc
     implicit none
@@ -567,7 +565,6 @@ program main
     tmp = 0.0
     print *, 'hello world.'
 end program<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p><code>mod_parms.f90</code>，</p>
 <pre class="line-numbers language-none"><code class="language-none">module mod_parms
    implicit none
@@ -580,14 +577,10 @@ contains
    end subroutine abcd
 
 end module mod_parms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <ul>
-<li><p>进入<code>test_multi_f90file</code>，在bash输入命令<code>make clean</code>，<code>make run</code>，</p>
-</li>
-<li><p>打断点，</p>
-</li>
-<li><p>在<code>运行和调试</code>中，开始调试，</p>
-</li>
+<li>进入 <code>test_multi_f90file</code>，在bash输入命令 <code>make clean</code>，<code>make run</code>，</li>
+<li>打断点，</li>
+<li>在 <code>运行和调试</code>中，开始调试，</li>
 </ul>
 </li>
 </ul>
@@ -1126,7 +1119,7 @@ end module mod_parms<span aria-hidden="true" class="line-numbers-rows"><span></s
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

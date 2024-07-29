@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    344
+                    353
                 </div>
                 
 
@@ -405,39 +405,39 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="ubuntu20-04中clash配置的更新"><a href="#ubuntu20-04中clash配置的更新" class="headerlink" title="ubuntu20.04中clash配置的更新"></a><center>ubuntu20.04中clash配置的更新</center></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="ubuntu20-04中clash配置的更新-1"><a href="#ubuntu20-04中clash配置的更新-1" class="headerlink" title="ubuntu20.04中clash配置的更新"></a>ubuntu20.04中clash配置的更新</h2><p>在<code>ubuntu-新装系统的基本配置</code>博客中介绍了<code>clash的安装、配置、使用</code>，但是对于具体如何配置<code>clash压缩包</code>并未介绍，另外，由于最近更换了科学上网的账号，需要重新配置clash，在这里就一并介绍了。</p>
+                <h1 id="lt-center-gt-ubuntu20-04中clash配置的更新-lt-center-gt"><a href="#lt-center-gt-ubuntu20-04中clash配置的更新-lt-center-gt" class="headerlink" title="<center>ubuntu20.04中clash配置的更新</center>"></a><code>&lt;center&gt;</code>ubuntu20.04中clash配置的更新<code>&lt;/center&gt;</code></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="ubuntu20-04中clash配置的更新"><a href="#ubuntu20-04中clash配置的更新" class="headerlink" title="ubuntu20.04中clash配置的更新"></a>ubuntu20.04中clash配置的更新</h2><p>在 <code>ubuntu-新装系统的基本配置</code>博客中介绍了 <code>clash的安装、配置、使用</code>，但是对于具体如何配置 <code>clash压缩包</code>并未介绍，另外，由于最近更换了科学上网的账号，需要重新配置clash，在这里就一并介绍了。</p>
 <blockquote>
-<p>ps：千万别泄露自己配置好的<code>clash包</code>，否则你的账号流量会被盗刷~</p>
+<p>ps：千万别泄露自己配置好的 <code>clash包</code>，否则你的账号流量会被盗刷~</p>
 </blockquote>
 <ol>
-<li><p>在<a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/releases%E4%B8%8B%E8%BD%BDclash%E7%9A%84%60gz%60%E6%96%87%E4%BB%B6%EF%BC%8C">https://github.com/Dreamacro/clash/releases下载clash的`gz`文件，</a></p>
+<li><p>在<a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/releases%E4%B8%8B%E8%BD%BDclash%E7%9A%84">https://github.com/Dreamacro/clash/releases下载clash的</a> <code>gz</code>文件，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407165319.png"></p>
 </li>
 <li><p>解压，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407170036.png"></p>
 </li>
-<li><p>运行解压后的可执行文件，重命名为<code>clash</code>，</p>
+<li><p>运行解压后的可执行文件，重命名为 <code>clash</code>，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407170901.png"></p>
-<p>此时会在<code>~/.config/clash</code>增添<code>config.yaml</code>文件，另外，运行时出现了一个信息<code>can't find MMDB</code>并提供了一个网站，此时需要我们点开网站手动下载<code>MMDB</code>文件，</p>
+<p>此时会在 <code>~/.config/clash</code>增添 <code>config.yaml</code>文件，另外，运行时出现了一个信息 <code>can't find MMDB</code>并提供了一个网站，此时需要我们点开网站手动下载 <code>MMDB</code>文件，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407170643.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407171506.png"></p>
 </li>
-<li><p>下载自己的<code>config.yaml</code>文件，覆盖原先的<code>config.yaml</code>文件，</p>
+<li><p>下载自己的 <code>config.yaml</code>文件，覆盖原先的 <code>config.yaml</code>文件，</p>
 <blockquote>
-<p>千万别泄露自己的<code>config.yaml</code>文件，否则流量会被盗刷；</p>
+<p>千万别泄露自己的 <code>config.yaml</code>文件，否则流量会被盗刷；</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407172309.png"></p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407172404.png" style="zoom:50%;">
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407172622.png"></p>
 </li>
-<li><p>将<code>clash</code>可执行文件添加到<code>~/.config/clash</code>路径，运行此文件，</p>
+<li><p>将 <code>clash</code>可执行文件添加到 <code>~/.config/clash</code>路径，运行此文件，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407173042.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220407173115.png"></p>
-<p>这样，我们就配置好了<code>clash</code>文件夹了，</p>
+<p>这样，我们就配置好了 <code>clash</code>文件夹了，</p>
 <ul>
-<li>当我们需要到另一台电脑使用时，只需要这个文件夹就可以了，具体看<code>ubuntu-新装系统的基本配置</code>博客中的<code>clash的安装、配置、使用</code>。</li>
-<li>需要更新配置信息时，仅需要更换<code>config.yaml</code>即可，是不是很简单~~</li>
+<li>当我们需要到另一台电脑使用时，只需要这个文件夹就可以了，具体看 <code>ubuntu-新装系统的基本配置</code>博客中的 <code>clash的安装、配置、使用</code>。</li>
+<li>需要更新配置信息时，仅需要更换 <code>config.yaml</code>即可，是不是很简单~~</li>
 </ul>
 </li>
 </ol>
@@ -974,7 +974,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    10.6k
+                    10.7k
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"><a href="#参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020" class="headerlink" title="参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020"></a><center>参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020</center></h2><ul>
+                <h2 id="lt-center-gt-参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020-lt-center-gt"><a href="#lt-center-gt-参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020-lt-center-gt" class="headerlink" title="<center>参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020 </center>"></a><code>&lt;center&gt;</code>参考资料：用于3D变分数据同化的基于注意力的卷积自动编码器-2020 <code>&lt;/center&gt;</code></h2><ul>
 <li><p>英文名：<strong>Attention-based Convolutional Autoencoders for 3D-Variational Data Assimilation</strong></p>
 </li>
 <li><p>期刊：《Computer methods in applied mechanics and engineering》，LetPub，<a target="_blank" rel="noopener" href="https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search">https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search</a></p>
@@ -422,9 +422,9 @@
 </li>
 </ul>
 <h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>We propose a new <strong>‘Bi-Reduced Space’ approach</strong> to solving <strong>3D Variational Data Assimilation</strong> using <strong>Convolutional Autoencoders</strong>. We prove that our approach has the same solution as previous methods but has significantly lower computational complexity; in other words,<strong>we reduce the computational cost without affecting the data assimilation accuracy</strong>.</p>
-<p>We tested our proposal with data from <strong>a real-world application</strong>: a pollution model of a site in Elephant and Castle (London, UK) and found that we could </p>
+<p>We tested our proposal with data from <strong>a real-world application</strong>: a pollution model of a site in Elephant and Castle (London, UK) and found that we could</p>
 <ul>
-<li><p>(1) reduce the size of the <strong>background covariance matrix representation</strong> by O(10<sup>3</sup> ), and </p>
+<li><p>(1) reduce the size of the <strong>background covariance matrix representation</strong> by O(10 <code>&lt;sup&gt;</code>3 <code>&lt;/sup&gt;</code> ), and</p>
 <blockquote>
 <p><code>reduce by, increase by</code></p>
 </blockquote>
@@ -433,12 +433,12 @@
 </li>
 </ul>
 <h3 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h3><p>This work is supported by the EPSRC, UK Grand Challenge grant “Managing Air for Green Inner Cities”(MAGIC) EP/N010221/1, by the EPSRC, UK Centre for Mathematics of Precision Healthcare EP/N0145291/1 and the EP/T003189/1 Health assessment across biological length scales for personal pollution exposure and its mitigation (INHALE). Thanks to Dr. Laetitia Mottet for the set up of the full model in Fluidity. M. Molina-Solana was supported by European Union’s H2020 MSCA-IF (ga. No.743623) and Athenea3i (ga. No.754446) programmes.</p>
-<h3 id="9-Conclusions-and-future-work"><a href="#9-Conclusions-and-future-work" class="headerlink" title="9. Conclusions and future work"></a>9. Conclusions and future work</h3><p>We have presented a new <strong>Bi-reduced space 3D-VarDA formulation</strong> and show that, in combination with the Zhou et al or <em>‘Tucodec’</em> image compression CAE, this method gives superior data assimilation performance in comparison with <strong>reduced space VarDA</strong> regardless of the parameters used in the latter case. We have demonstrated that our method is also faster in the majority of scenarios. On the theoretical side, we show that our method produces approximately equivalent solutions to the traditional method at lower computational complexity. Unlike the previous approach which is in O(<em>M<sup>2</sup></em>) for large <em>M</em>, our method does not penalise the collection of more observation data.</p>
+<h3 id="9-Conclusions-and-future-work"><a href="#9-Conclusions-and-future-work" class="headerlink" title="9. Conclusions and future work"></a>9. Conclusions and future work</h3><p>We have presented a new <strong>Bi-reduced space 3D-VarDA formulation</strong> and show that, in combination with the Zhou et al or <em>‘Tucodec’</em> image compression CAE, this method gives superior data assimilation performance in comparison with <strong>reduced space VarDA</strong> regardless of the parameters used in the latter case. We have demonstrated that our method is also faster in the majority of scenarios. On the theoretical side, we show that our method produces approximately equivalent solutions to the traditional method at lower computational complexity. Unlike the previous approach which is in O(<em>M <code>&lt;sup&gt;</code>2 <code>&lt;/sup&gt;</code></em>) for large <em>M</em>, our method does not penalise the collection of more observation data.</p>
 <p>We have released our work in a well tested Python module <strong>VarDACAE</strong>.</p>
 <blockquote>
 <p><code>↑在 python 的 module 上发布的</code></p>
 </blockquote>
-<p>There were many extensions to this work which we would have liked to explore further. We feel that the most important of these is the validation of our hypothesis that is possible to create an observation encoder network <em>f<sup>o</sup></em> to calculate the latent misfits <strong>d</strong><sub>l</sub> . We would also have liked to a<strong>pply our approach to 4D-VarDA</strong>, validate it on other data sets and investigate alternatives to the L-BFGS minimisation routine. A more substantial extension would involve integrating our method with CAE-based ROM approaches to produce a single end-to-end network for reduced space data assimilation and we believe this would be complemented by the use of data assimilation localisation techniques [66]. Finally, there is also potential for the use of VAEs within the proposed system to enforce orthogonality in the CAE latent dimension.</p>
+<p>There were many extensions to this work which we would have liked to explore further. We feel that the most important of these is the validation of our hypothesis that is possible to create an observation encoder network <em>f <code>&lt;sup&gt;</code>o <code>&lt;/sup&gt;</code></em> to calculate the latent misfits <strong>d</strong> <code>&lt;sub&gt;</code>l <code>&lt;/sub&gt;</code> . We would also have liked to a<strong>pply our approach to 4D-VarDA</strong>, validate it on other data sets and investigate alternatives to the L-BFGS minimisation routine. A more substantial extension would involve integrating our method with CAE-based ROM approaches to produce a single end-to-end network for reduced space data assimilation and we believe this would be complemented by the use of data assimilation localisation techniques [66]. Finally, there is also potential for the use of VAEs within the proposed system to enforce orthogonality in the CAE latent dimension.</p>
 <h3 id="github-code"><a href="#github-code" class="headerlink" title="github code"></a>github code</h3><p>VarDACAE：<a target="_blank" rel="noopener" href="https://github.com/scheng1992/Data_Assimilation">https://github.com/scheng1992/Data_Assimilation</a></p>
 <h4 id="Readme-md"><a href="#Readme-md" class="headerlink" title="Readme.md"></a>Readme.md</h4><p>—<strong>VarDACAE</strong></p>
 <p>This module is used to create Convolutional AutoEncoders for Variational Data Assimilation. A user can define, create and train an AE for Data Assimilation with just a few lines of code. It is the accompanying code to the paper <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2101.02121">here</a>, published in <em>Computer Methods in Applied Mechanics and Engineering</em>.</p>
@@ -467,34 +467,34 @@
 <p>—<strong>Getting Started</strong></p>
 <p>—<strong>Settings Instance</strong></p>
 <p>—<strong>Train a model on your own data</strong></p>
-<h3 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>Data Assimilation (DA) is an uncertainty quantification technique in which observation data and a forecasting model are used in <strong>tandem</strong> to generate predictions that are more accurate than those that would be produced using <strong>either component</strong> independently. </p>
+<h3 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>Data Assimilation (DA) is an uncertainty quantification technique in which observation data and a forecasting model are used in <strong>tandem</strong> to generate predictions that are more accurate than those that would be produced using <strong>either component</strong> independently.</p>
 <blockquote>
 <p><code>↑ DA的定义</code></p>
 </blockquote>
-<p>DA is computationally costly for large systems [1] and under <strong>operational constraints</strong>, it is often necessary to solve the problem in <strong>a reduced space</strong> in order to achieve real-time assimilation. </p>
+<p>DA is computationally costly for large systems [1] and under <strong>operational constraints</strong>, it is often necessary to solve the problem in <strong>a reduced space</strong> in order to achieve real-time assimilation.</p>
 <blockquote>
 <p><code>↑ operational 可以翻译成业务化吧</code></p>
 </blockquote>
 <ul>
-<li><p>In most relevant DA operational software, <strong>a variable transformation</strong> is performed on the variational functional to reduce the computational cost needed for computing the covariance matrix explicitly; to reduce the space, only <strong>Empirical Orthogonal Functions (EOFs)</strong> of the first largest eigenvalues of the error covariance matrix are considered. </p>
+<li><p>In most relevant DA operational software, <strong>a variable transformation</strong> is performed on the variational functional to reduce the computational cost needed for computing the covariance matrix explicitly; to reduce the space, only <strong>Empirical Orthogonal Functions (EOFs)</strong> of the first largest eigenvalues of the error covariance matrix are considered.</p>
 <blockquote>
 <p><code>↑ 变量变换，经验正交函数(EOF)</code></p>
 </blockquote>
-<p>Since its introduction to meteorology by Edward Lorenz, <strong>EOFs analysis</strong>, which is essentially based on a <strong>Truncated Singular Value Decomposition (TSVD)</strong>, has become a fundamental tool in computational fluid dynamic modelling for <strong>data diagnostics</strong> and <strong>dynamical model reduction</strong>. </p>
+<p>Since its introduction to meteorology by Edward Lorenz, <strong>EOFs analysis</strong>, which is essentially based on a <strong>Truncated Singular Value Decomposition (TSVD)</strong>, has become a fundamental tool in computational fluid dynamic modelling for <strong>data diagnostics</strong> and <strong>dynamical model reduction</strong>.</p>
 <blockquote>
 <p><code>↑ EOF分析基于阶段奇异值分解（TSVD）</code></p>
 </blockquote>
-<p>Real world applications of TSVD (EOFs) basically <strong>exploit the fact</strong> that these methods allow a decomposition of a data function into a set of orthogonal functions, which are designed so that only a few of these functions are needed in <strong>lower-dimensional approximations</strong>. </p>
+<p>Real world applications of TSVD (EOFs) basically <strong>exploit the fact</strong> that these methods allow a decomposition of a data function into a set of orthogonal functions, which are designed so that only a few of these functions are needed in <strong>lower-dimensional approximations</strong>.</p>
 <blockquote>
 <p><code>↑ TSVD的原理：降维</code></p>
 <p><code>exploit 利用</code></p>
 </blockquote>
-<p>Nevertheless, the accuracy of the solution obtained by truncating, exhibits a high sensitivity to the variation of the value of the <strong>truncation parameter</strong> [2,3], so that a suitable truncation parameter is needed. This is a severe drawback of truncation-based methods and limits the utility of operational software based on these methods. </p>
+<p>Nevertheless, the accuracy of the solution obtained by truncating, exhibits a high sensitivity to the variation of the value of the <strong>truncation parameter</strong> [2,3], so that a suitable truncation parameter is needed. This is a severe drawback of truncation-based methods and limits the utility of operational software based on these methods.</p>
 <blockquote>
 <p><code>↑ TSVD的缺点，结果对truncation参数极其敏感</code></p>
 </blockquote>
 </li>
-<li><p><strong>Convolutional Autoencoders (CAEs)</strong> are a type of neural network that can be used to compress <strong>inputs that exhibit local smoothness</strong>. CAEs have had huge successes in computer vision [4,5] and particularly in image compression [6,7]. </p>
+<li><p><strong>Convolutional Autoencoders (CAEs)</strong> are a type of neural network that can be used to compress <strong>inputs that exhibit local smoothness</strong>. CAEs have had huge successes in computer vision [4,5] and particularly in image compression [6,7].</p>
 <blockquote>
 <p><code>↑ 卷积自编码（CAE）的原理：压缩具有局部光滑的输入。</code></p>
 </blockquote>
@@ -504,44 +504,40 @@
 <blockquote>
 <p><code>↑ DA-CAE 和 DA-TSVD 对比 </code></p>
 </blockquote>
-<p>The structure of this paper is as follows: </p>
+<p>The structure of this paper is as follows:</p>
 <ul>
-<li>in Section 2 we cover related work and we present the contribution of the present work. </li>
-<li>Section 3 provides preliminary concepts and definitions, </li>
-<li>Section 4 provides <strong>background on Autoenconders</strong>, and Section 5 introduces our theoretical contribution. </li>
-<li>As the success of our approach is heavily conditioned on the choice of a CAE architecture, in Section 6 we summarise the results of our extensive architecture search before evaluating our approach against existing VarDA methods in Section 7. </li>
+<li>in Section 2 we cover related work and we present the contribution of the present work.</li>
+<li>Section 3 provides preliminary concepts and definitions,</li>
+<li>Section 4 provides <strong>background on Autoenconders</strong>, and Section 5 introduces our theoretical contribution.</li>
+<li>As the success of our approach is heavily conditioned on the choice of a CAE architecture, in Section 6 we summarise the results of our extensive architecture search before evaluating our approach against existing VarDA methods in Section 7.</li>
 <li>The paper ends with a discussion in Section 8 and some conclusions and further remarks in Section 9.</li>
 </ul>
-<h3 id="2-Related-work-and-contribution-of-the-present-work"><a href="#2-Related-work-and-contribution-of-the-present-work" class="headerlink" title="2 Related work and contribution of the present work"></a>2 Related work and contribution of the present work</h3><p>Forecasting models introduce uncertainty from numerous sources. These include, but are not limited to, uncertainty in initial conditions, imperfect representations of the underlying physical processes and numerical errors. As a result, a model without access to real-time data will accumulate errors until its predictions no longer correspond to reality [8]. Similarly, all observations will have an irreducible uncertainty as a result of imperfect measuring devices. </p>
+<h3 id="2-Related-work-and-contribution-of-the-present-work"><a href="#2-Related-work-and-contribution-of-the-present-work" class="headerlink" title="2 Related work and contribution of the present work"></a>2 Related work and contribution of the present work</h3><p>Forecasting models introduce uncertainty from numerous sources. These include, but are not limited to, uncertainty in initial conditions, imperfect representations of the underlying physical processes and numerical errors. As a result, a model without access to real-time data will accumulate errors until its predictions no longer correspond to reality [8]. Similarly, all observations will have an irreducible uncertainty as a result of imperfect measuring devices.</p>
 <blockquote>
 <p><code>↑ 预测模型的不确定性包括...</code></p>
 </blockquote>
-<p>The key idea in DA is that the overall uncertainty in a forecast can be reduced by producing <strong>a weighed average of model forecasts and observations</strong>. </p>
+<p>The key idea in DA is that the overall uncertainty in a forecast can be reduced by producing <strong>a weighed average of model forecasts and observations</strong>.</p>
 <blockquote>
 <p><code>↑ QT：DA 中的 a weighed average 怎么理解？</code></p>
 </blockquote>
-<p>The canonical application of Data Assimilation (DA) [9,10] is Numerical Weather Prediction (NWP) [11–13] but the technique has been utilised in contexts as diverse as oceanic modelling [14,15], solar wind prediction [16] and inner city pollution modelling [17,18]. </p>
+<p>The canonical application of Data Assimilation (DA) [9,10] is Numerical Weather Prediction (NWP) [11–13] but the technique has been utilised in contexts as diverse as oceanic modelling [14,15], solar wind prediction [16] and inner city pollution modelling [17,18].</p>
 <p>Our proposed approach is agnostic to the details of the forecasting model (i.e. <strong>it is non-intrusive</strong>) and is therefore applicable to any DA problem in which <strong>a reduced order system</strong> is used.</p>
 <blockquote>
 <p><code>↑ non-intrusive 非侵入性的怎么理解？</code></p>
 </blockquote>
-<p>Our proposed formulation of Variational DA [12,13] extends the incremental formulation [11]. In 1992, Parrish et al. [19] proposed using a <strong>Control Variable Transform (CVT) to reduce the space of the background error covariance matrix B</strong> by performing Cholesky factorisation as B = V V<sup>T</sup> . Since then, many authors have used eigenanalysis techniques such as PCA or TSVD to reduce the rank of V [17]. <strong>In this work, we propose replacing these eigenanalysis approaches with a CAE that learns to compress V more efficiently, and with less information-loss than the removal of eigen-modes.</strong></p>
+<p>Our proposed formulation of Variational DA [12,13] extends the incremental formulation [11]. In 1992, Parrish et al. [19] proposed using a <strong>Control Variable Transform (CVT) to reduce the space of the background error covariance matrix B</strong> by performing Cholesky factorisation as B = V V <code>&lt;sup&gt;</code>T <code>&lt;/sup&gt;</code> . Since then, many authors have used eigenanalysis techniques such as PCA or TSVD to reduce the rank of V [17]. <strong>In this work, we propose replacing these eigenanalysis approaches with a CAE that learns to compress V more efficiently, and with less information-loss than the removal of eigen-modes.</strong></p>
 <blockquote>
 <p><code>↑ 本文的创新点，使用CAE更有效的压缩V</code></p>
 </blockquote>
 <p><strong>This work builds on</strong> a previous publication [17] in which <strong>TSVD was used to precondition V</strong>. The original authors used a test-site location in South London and synthetic data generated by Fluidity, an open-source finite-element fluid dynamic software (<a target="_blank" rel="noopener" href="http://fluidityproject.github.io/">http://fluidityproject.github.io/</a>). We test our approach on the same domain and data to enable a clear comparison. We find that our method gives considerably more accurate predictions and, in most cases, provides them sooner than the previous approach. <strong>In fact, our method is also more accurate (and much faster) than the CVT formulation of Parrish et al. [19]</strong>.</p>
-<p>In this paper we make <strong>the following contributions</strong>: </p>
+<p>In this paper we make <strong>the following contributions</strong>:</p>
 <ol>
-<li><p>We propose <strong>a new ‘Bi-reduced space’ 3D Variational Data Assimilation (3D-VarDA) formulation</strong> that has an online complexity that is independent of the number of assimilated observations (i.e. it can be used with arbitrarily dense sensor networks). We show that our approach has lower online complexity than [17] while also giving equivalent forecasts.</p>
-</li>
-<li><p>We create and evaluate <strong>3D extensions of a range of state-of-the-art CAEs</strong> for 2D image compression. To our knowledge, we are the first to extend the image compression network of [20] and image restoration GRDN of [21] to three-dimensions. We find that Zhou et al.’s attention-based model [20] performs best, and make some small improvements to this system including the replacement of vanilla residual blocks [22] with ‘NeXt’ residual blocks [23] in order to reduce decoder inference time.</p>
-</li>
-<li><p><strong>This adapted CAE, in combination with our proposed DA formulation</strong>, achieves a substantial relative reduction in DA error of 37% compared with Arcucci et al.’s TSVD approach [17]. Depending on the number of assimilated observations, our method is up x30 faster. We discuss the speed–accuracy tradeoff at length in Section 7.</p>
-</li>
-<li><p>We release a well tested open-source <strong>Python module VarDACAE</strong> that enables users to easily replicate our experiments, use our model implementations, and train CAEs for any Variational data assimilation problem. The repository can be found at <a target="_blank" rel="noopener" href="https://github.com/julianmack/Data">https://github.com/julianmack/Data</a> Assimilation.</p>
-</li>
+<li>We propose <strong>a new ‘Bi-reduced space’ 3D Variational Data Assimilation (3D-VarDA) formulation</strong> that has an online complexity that is independent of the number of assimilated observations (i.e. it can be used with arbitrarily dense sensor networks). We show that our approach has lower online complexity than [17] while also giving equivalent forecasts.</li>
+<li>We create and evaluate <strong>3D extensions of a range of state-of-the-art CAEs</strong> for 2D image compression. To our knowledge, we are the first to extend the image compression network of [20] and image restoration GRDN of [21] to three-dimensions. We find that Zhou et al.’s attention-based model [20] performs best, and make some small improvements to this system including the replacement of vanilla residual blocks [22] with ‘NeXt’ residual blocks [23] in order to reduce decoder inference time.</li>
+<li><strong>This adapted CAE, in combination with our proposed DA formulation</strong>, achieves a substantial relative reduction in DA error of 37% compared with Arcucci et al.’s TSVD approach [17]. Depending on the number of assimilated observations, our method is up x30 faster. We discuss the speed–accuracy tradeoff at length in Section 7.</li>
+<li>We release a well tested open-source <strong>Python module VarDACAE</strong> that enables users to easily replicate our experiments, use our model implementations, and train CAEs for any Variational data assimilation problem. The repository can be found at <a target="_blank" rel="noopener" href="https://github.com/julianmack/Data">https://github.com/julianmack/Data</a> Assimilation.</li>
 </ol>
-<h2 id="参考资料：基于数据同化的地下水模型不确定性分析"><a href="#参考资料：基于数据同化的地下水模型不确定性分析" class="headerlink" title="参考资料：基于数据同化的地下水模型不确定性分析"></a><center>参考资料：基于数据同化的地下水模型不确定性分析</center></h2><ul>
+<h2 id="lt-center-gt-参考资料：基于数据同化的地下水模型不确定性分析-lt-center-gt"><a href="#lt-center-gt-参考资料：基于数据同化的地下水模型不确定性分析-lt-center-gt" class="headerlink" title="<center>参考资料：基于数据同化的地下水模型不确定性分析 </center>"></a><code>&lt;center&gt;</code>参考资料：基于数据同化的地下水模型不确定性分析 <code>&lt;/center&gt;</code></h2><ul>
 <li><p>期刊：《Journal of Glaciology and Geocryology》，</p>
 <blockquote>
 <p>这个期刊查不到</p>
@@ -651,10 +647,10 @@
 <blockquote>
 <p><code>↑ ES 和 ESMDA 的联系</code></p>
 </blockquote>
-<p>在每个循环中，ESMDA 并不是简单重复了 ES 过程，而是在每个循环中对观测误差添加了一个<strong>膨胀系数</strong> α<sub>i</sub> ，并令</p>
+<p>在每个循环中，ESMDA 并不是简单重复了 ES 过程，而是在每个循环中对观测误差添加了一个<strong>膨胀系数</strong> α <code>&lt;sub&gt;</code>i <code>&lt;/sub&gt;</code> ，并令</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302172004.png" alt="" style="zoom:72%;">
 
-<p>显然地， α<sub>i</sub>  有许多种取值方式，然而文献［40］指出，随着循环次数的增加而逐渐减小的膨胀系数对于同化效果并无明显提升。因此，在每次循环中，采用<strong>相同的膨胀系数</strong>。</p>
+<p>显然地， α <code>&lt;sub&gt;</code>i <code>&lt;/sub&gt;</code>  有许多种取值方式，然而文献［40］指出，随着循环次数的增加而逐渐减小的膨胀系数对于同化效果并无明显提升。因此，在每次循环中，采用<strong>相同的膨胀系数</strong>。</p>
 <h4 id="2-2-3-ESMDA-ENKF"><a href="#2-2-3-ESMDA-ENKF" class="headerlink" title="2.2.3 ESMDA-ENKF"></a>2.2.3 ESMDA-ENKF</h4><p>ESMDA-EnKF 在每次循环中采用 EnKF 对参数进行更新，其更新公式如下：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302172404.png" style="zoom:72%;">
 
@@ -675,7 +671,9 @@
 <blockquote>
 <p><code>↑ 超参数</code></p>
 </blockquote>
-<p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
+<p>$$</p>
+<p>$$</p>
+<p>$$</p>
 <h5 id="3-1-1-ESMDA执行次数对不确定性分析的影响"><a href="#3-1-1-ESMDA执行次数对不确定性分析的影响" class="headerlink" title="3.1.1 ESMDA执行次数对不确定性分析的影响"></a><strong>3.1.1 ESMDA执行次数对不确定性分析的影响</strong></h5><p>ESMDA 采用 EnKF 算法对地下水模型参数进行更新，因此，<strong>EnKF 算法的执行次数</strong>将直接影响模型参数的更新效果。然而，目前尚没有关于执行次数的理论研究，而在文献［40］给出的例子中，分别执行了2次、4次算法以对比同化效果。考虑到计算消耗问题，本节评价了执行 1 次、2 次、3 次、4 次 En⁃ KF算法后的同化效果（<strong>图4</strong>）。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302173806.png" style="zoom:72%;">
 
@@ -688,16 +686,18 @@
 </li>
 </ul>
 <blockquote>
-<p><code>↑ QT：有必要进行多次同化吗，观测不是也有不确定性吗，用RMSE？</code></p>
+<p><code>↑ QT：有必要进行多次同化吗，观测不是也有不确定性吗，用RMSE？</code><br>$$</p>
 </blockquote>
-<p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
+<p>$$<br>$$$$$$$$$$$$$$$$$$$$$$<br>$$</p>
+<p>$$</p>
 <h5 id="3-1-2-观测资料数对不确定性分析的影响"><a href="#3-1-2-观测资料数对不确定性分析的影响" class="headerlink" title="3.1.2 观测资料数对不确定性分析的影响"></a><strong>3.1.2 观测资料数对不确定性分析的影响</strong></h5><p>数据同化的目的即是最大限度的融合不同来源、不同时间、空间分辨率的直接、间接观测数据以用于提高模型的估计精度，以获得更加准确的状态变量的时空分布［44-45］。然而由于成本原因，对系统内相关因素进行<strong>无限制观测是不现实的</strong>。因此，<strong>研究观测资料对同化效果的影响是必要的</strong>。选择 42 个水位观测井处的观测水位以及高崖和正义峡水文观测站处的黑河流量观测数据，分别研究观测数 为 7、14、21、28、35、42 以及 44 时对同化效果的影响。</p>
 <p><strong>图 5</strong> 显示了经过 2 次参数更新过程之后，不同观测资料数的 RMSE 值。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220302175448.png" style="zoom:72%;">
 
 <p>由于涉及到不同类型的观测值、输出值（地下水位、流量），所以，图中对地下水水位、流量的观测值及输出值进行了归一化处理，将观测值、输出值限定于［0，1］之间。</p>
-<p>由图 5 总体趋势上可以看出，随着观测资料的增加，参数逐渐接近真实值，地下水位的 RMSE 值逐渐降低。然而，观测数从 7个增加至 14个对同化效果影响不明显；观测井数增加至 21 个之后，同化效果基本保持不变；增加流量观测（42 至 44）对同化效果影响较为显著。由此可见，一种类型的观测数据确实会 提升同化效果，但是当一种类型的观测数据增加到 一定程度时（本实验中为 21 个），观测数据对同化效果的影响有限；然而，继续增加不同类型的观测数据（河流流量观测数据）将进一步提升同化效果。</p>
-<p>$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</p>
+<p>由图 5 总体趋势上可以看出，随着观测资料的增加，参数逐渐接近真实值，地下水位的 RMSE 值逐渐降低。然而，观测数从 7个增加至 14个对同化效果影响不明显；观测井数增加至 21 个之后，同化效果基本保持不变；增加流量观测（42 至 44）对同化效果影响较为显著。由此可见，一种类型的观测数据确实会 提升同化效果，但是当一种类型的观测数据增加到 一定程度时（本实验中为 21 个），观测数据对同化效果的影响有限；然而，继续增加不同类型的观测数据（河流流量观测数据）将进一步提升同化效果。<br>$$</p>
+<p>$$<br>$$$$$$$$$$$$$$$$$$$$$$<br>$$</p>
+<p>$$</p>
 <h5 id="3-1-3-集合大小对不确定性分析的影响"><a href="#3-1-3-集合大小对不确定性分析的影响" class="headerlink" title="3.1.3 集合大小对不确定性分析的影响"></a><strong>3.1.3 集合大小对不确定性分析的影响</strong></h5><p>EnKF 采用<strong>样本集合</strong>的方式表示<strong>模型状态变量的先验概率分布</strong>，估计误差协方差［46］。</p>
 <blockquote>
 <p><code>↑ 怎么理解ENKF的先验？（预测步）</code></p>
@@ -783,8 +783,8 @@
 </blockquote>
 <p>研究结果表明：<strong>云导风资料同化模拟的台风路径、强度和最大风速与实况更加接近</strong>。与控制试验相比，云导风资料同化能够为背景场提供丰富的风矢量信息，增强台风周围对流云及其引导气流的强度，从而较好地模拟台风的内部结构，对影响其发展和维持的水汽条件与动力条件进行改进。</p>
 <h3 id="6-结论"><a href="#6-结论" class="headerlink" title="6 结论"></a>6 结论</h3><p>本文选取了2017年8月22日登陆我国的强台风 “天鸽”，使用3.9.1版本的WRF模式及其同化系统， 考察FY-2G卫星云导风资料同化对台风数值预报的影响，并进行了30 h的<strong>确定性预报</strong>，同时对影响台风发展移动的多个要素进行考察分析。结论如下：</p>
-<p>（1）同化试验模拟的台风路径预报误差更小。由于云导风资料集中在中高层大气，模拟出的台风强度不会因为台风登陆后受到地面的摩擦而产生较大误差。 </p>
-<p>（2）同化卫星云导风资料能够增加模式初始场中台风周围的风矢量信息，并且为中高层台风周围的大气增加正的风矢量。中高层之间的垂直动量输送使得台风向北移动的引导气流加强，台风路径 也随之得到准确调整。 </p>
+<p>（1）同化试验模拟的台风路径预报误差更小。由于云导风资料集中在中高层大气，模拟出的台风强度不会因为台风登陆后受到地面的摩擦而产生较大误差。</p>
+<p>（2）同化卫星云导风资料能够增加模式初始场中台风周围的风矢量信息，并且为中高层台风周围的大气增加正的风矢量。中高层之间的垂直动量输送使得台风向北移动的引导气流加强，台风路径 也随之得到准确调整。</p>
 <p>（3）卫星云导风资料同化能够使模式更好地模拟台风结构。同化试验在台风中心附近模拟出了正的相对湿度增量，有利于台风的维持；同时，同化试验模拟的T-logP探空图也更接近观测。</p>
 <p>本研究实现了 FY-2G 云导风资料的三维变分同化试验，个例的总体效果表明，云导风资料的同化能够有效改进台风“天鸽”的数值预报效果。</p>
 <p>需要指出的是：</p>
@@ -833,48 +833,48 @@
 <li><p><code>创新点：国内2020同化研究的内容</code></p>
 </li>
 </ul>
-<h3 id="1-Introduction-1"><a href="#1-Introduction-1" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>This special section is the scientific legacy of the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China, which was held in Changsha, China during December 3–4, 2020 with more than 160 participants from 35 units in China. It continued a series of National Ocean Data Assimilation conferences which began in 2003, which played an important role in the development of ocean data assimilation in China. </p>
-<p>In this 13th conference, there were 41 oral presentations and 15 posters, which focused on </p>
+<h3 id="1-Introduction-1"><a href="#1-Introduction-1" class="headerlink" title="1 Introduction"></a>1 Introduction</h3><p>This special section is the scientific legacy of the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China, which was held in Changsha, China during December 3–4, 2020 with more than 160 participants from 35 units in China. It continued a series of National Ocean Data Assimilation conferences which began in 2003, which played an important role in the development of ocean data assimilation in China.</p>
+<p>In this 13th conference, there were 41 oral presentations and 15 posters, which focused on</p>
 <ul>
-<li><strong>ocean data assimilation methods,</strong> </li>
-<li><strong>ocean reanalysis data,</strong> </li>
-<li><strong>developments and operational application of ocean data assimilation systems,</strong> </li>
-<li><strong>assimilation of new type ocean observations,</strong> </li>
-<li><strong>ocean targeted observation analysis,</strong> </li>
-<li><strong>coupled data assimilation,</strong> </li>
+<li><strong>ocean data assimilation methods,</strong></li>
+<li><strong>ocean reanalysis data,</strong></li>
+<li><strong>developments and operational application of ocean data assimilation systems,</strong></li>
+<li><strong>assimilation of new type ocean observations,</strong></li>
+<li><strong>ocean targeted observation analysis,</strong></li>
+<li><strong>coupled data assimilation,</strong></li>
 <li><strong>ocean models,</strong></li>
-<li><strong>parameter estimation, etc.</strong> </li>
+<li><strong>parameter estimation, etc.</strong></li>
 </ul>
 <blockquote>
 <p><code>↑ 国内2020同化研究的内容</code></p>
 </blockquote>
 <p>This conference was hosted by National University of Defense Technology, and cohosted by the Institute of Atmospheric Physics of Chinese Academy of Sciences, the South China Sea Institute of Oceanology of Chinese Academy of Sciences, the Second Institute of Oceanography of the Ministry of Natural Resources, Ocean University of China, Tianjin University and Hohai University.</p>
-<p>From this conference, we can see that ocean data assimilation has made great progress. In summary, there are six main aspects as follows: </p>
+<p>From this conference, we can see that ocean data assimilation has made great progress. In summary, there are six main aspects as follows:</p>
 <ul>
-<li>firstly, ocean data assimilation methods are improved continuously, especially new progress in <strong>hybrid data assimilation</strong>; </li>
-<li>secondly, there are continuous breakthroughs in data assimilation application of <strong>new type ocean observations</strong>, such as Glider data, ocean current data, acoustic information, etc; </li>
-<li>thirdly, <strong>the combination of ocean data assimilation and machine learning</strong> is showing more and more good prospects; </li>
-<li>fourthly, with the development of the Earth system model technology, <strong>the coupled data assimilation</strong> has become a hot spot; </li>
-<li>fifthly, <strong>ocean reanalysis and data fusion products</strong> are important for ocean study, some ocean reanalysis products, such as China’s CORA 2.0 reanalysis, have been greatly improved on the spatial and temporal resolution, and other new data fusion products, including the fusion of multi-source altimeter products, sea ice reanalysis dateset have been developed; </li>
+<li>firstly, ocean data assimilation methods are improved continuously, especially new progress in <strong>hybrid data assimilation</strong>;</li>
+<li>secondly, there are continuous breakthroughs in data assimilation application of <strong>new type ocean observations</strong>, such as Glider data, ocean current data, acoustic information, etc;</li>
+<li>thirdly, <strong>the combination of ocean data assimilation and machine learning</strong> is showing more and more good prospects;</li>
+<li>fourthly, with the development of the Earth system model technology, <strong>the coupled data assimilation</strong> has become a hot spot;</li>
+<li>fifthly, <strong>ocean reanalysis and data fusion products</strong> are important for ocean study, some ocean reanalysis products, such as China’s CORA 2.0 reanalysis, have been greatly improved on the spatial and temporal resolution, and other new data fusion products, including the fusion of multi-source altimeter products, sea ice reanalysis dateset have been developed;</li>
 <li>sixthly, some <strong>new ocean model parameter estimation</strong> have been proposed and show good results.</li>
 </ul>
-<p>During the conference, the organizing committee announced <em>Acta Oceanologica Sinica</em> for publishing the research results on Ocean Data Assimilation. There are ten papers accepted for this special section, <strong>mainly from the first two aspects above</strong>, which are very important.In this special section, </p>
+<p>During the conference, the organizing committee announced <em>Acta Oceanologica Sinica</em> for publishing the research results on Ocean Data Assimilation. There are ten papers accepted for this special section, <strong>mainly from the first two aspects above</strong>, which are very important.In this special section,</p>
 <ul>
-<li>Shen et al. (2022a) used the hybrid data assimilation method called <strong>Localized Weighted Ensemble Kalman Filter (LWEnKF)</strong> to assimilate along-track sea surface height (AT-SSH), swath sea surface temperature (S-SST) and in-situ temperature and salinity (T/S) profiles for checking the operational application potential of this filter; </li>
-<li>Zhao et al. (2022) presented an improved approach based on the <strong>equivalent-weights particle filter (EWPF)</strong> that uses the proposal density to effectively improve the traditional particle filter, which was tested with the Lorenz 96 model numerical experiments ; </li>
-<li>Song et al. (2022) proposed a new nudging scheme for the operational prediction system of the National Marine Environmental Forecasting Center (NMEFC) of China, which mainly aimed at improving El Niño–Southern Oscillation (ENSO) and Indian Ocean Dipole (IOD) predictions; </li>
-<li>Yang et al. (2022) designed a reconstruction method called the <strong>multi-scale high-order recursive filter (MHRF)</strong> to reproduce the refined structure of sea <strong>ice field</strong>, which is a combination of Van Vliet fourth-order recursive filter and the three-dimensional variational (3D-VAR) analysis; </li>
+<li>Shen et al. (2022a) used the hybrid data assimilation method called <strong>Localized Weighted Ensemble Kalman Filter (LWEnKF)</strong> to assimilate along-track sea surface height (AT-SSH), swath sea surface temperature (S-SST) and in-situ temperature and salinity (T/S) profiles for checking the operational application potential of this filter;</li>
+<li>Zhao et al. (2022) presented an improved approach based on the <strong>equivalent-weights particle filter (EWPF)</strong> that uses the proposal density to effectively improve the traditional particle filter, which was tested with the Lorenz 96 model numerical experiments ;</li>
+<li>Song et al. (2022) proposed a new nudging scheme for the operational prediction system of the National Marine Environmental Forecasting Center (NMEFC) of China, which mainly aimed at improving El Niño–Southern Oscillation (ENSO) and Indian Ocean Dipole (IOD) predictions;</li>
+<li>Yang et al. (2022) designed a reconstruction method called the <strong>multi-scale high-order recursive filter (MHRF)</strong> to reproduce the refined structure of sea <strong>ice field</strong>, which is a combination of Van Vliet fourth-order recursive filter and the three-dimensional variational (3D-VAR) analysis;</li>
 <li>Chen et al. (2022) designed two comparative reconstruction schemes under the optimal interpolation framework to diagnose and evaluate the contribution from satellite measurements and Argo observations to the reconstructed analysis, allowing for better configuration of assimilation parameters;</li>
-<li>Zhang et al. (2022) applied the gradient-dependent optimal interpolation to reconstruct daily subsurface oceanic environmental information according to fishery dates and locations based on Argo temperature and salinity profiles; </li>
-<li>Liu et al. (2022) investigated the sensitive areas in targeted observation for predicting the Kuroshio large meander (LM) path using the conditional nonlinear optimal perturbation approach with the Regional Ocean Modeling System (ROMS); </li>
-<li>Shen et al. (2022b) developed a two-stage inflation method for parameter estimation, which can address the collapse of parameter ensemble due to the constant evolution of parameters and was applied in observation system simulation experiment with CESM; </li>
-<li>Wu et al. (2022) applied <strong>empirical orthogonal function (EOF) analysis</strong> to a 50-year long time series of monthly mean positions of the Kuroshio path south of Japan from a regional reanalysis to explore temporal-spatial oceanic variation in relation with the three typical Kuroshio paths; </li>
+<li>Zhang et al. (2022) applied the gradient-dependent optimal interpolation to reconstruct daily subsurface oceanic environmental information according to fishery dates and locations based on Argo temperature and salinity profiles;</li>
+<li>Liu et al. (2022) investigated the sensitive areas in targeted observation for predicting the Kuroshio large meander (LM) path using the conditional nonlinear optimal perturbation approach with the Regional Ocean Modeling System (ROMS);</li>
+<li>Shen et al. (2022b) developed a two-stage inflation method for parameter estimation, which can address the collapse of parameter ensemble due to the constant evolution of parameters and was applied in observation system simulation experiment with CESM;</li>
+<li>Wu et al. (2022) applied <strong>empirical orthogonal function (EOF) analysis</strong> to a 50-year long time series of monthly mean positions of the Kuroshio path south of Japan from a regional reanalysis to explore temporal-spatial oceanic variation in relation with the three typical Kuroshio paths;</li>
 <li>Han et al. (2022) developed two <strong>offline bias correction methods for sea surface temperature (SST)</strong> forecasts and validated the performances using bias correction experiments implemented in the South China Sea with six-year (2003–2008) datasets.</li>
 </ul>
-<p>This special section systematically summarizes some, but not all, of the research results from the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China. <strong>In the future</strong>, </p>
+<p>This special section systematically summarizes some, but not all, of the research results from the 13th National Ocean Data Assimilation and Numerical Simulation Conference of China. <strong>In the future</strong>,</p>
 <ul>
-<li>ocean models will develop to higher resolution, and ocean data assimilation will also face the problem of processing <strong>non-linear non-Gaussian information</strong>. </li>
-<li>With the development of earth system model, ocean model will also be coupled with atmosphere, land surface, ocean waves and sea ice models, the <strong>coupled data assimilation</strong> will be a hot topic; </li>
+<li>ocean models will develop to higher resolution, and ocean data assimilation will also face the problem of processing <strong>non-linear non-Gaussian information</strong>.</li>
+<li>With the development of earth system model, ocean model will also be coupled with atmosphere, land surface, ocean waves and sea ice models, the <strong>coupled data assimilation</strong> will be a hot topic;</li>
 <li>and the development of <strong>machine learning</strong> also prompt us to seek the combination of data assimilation and machine learning.</li>
 </ul>
 <h2 id="参考资料：Data-Assimilation-for-Chaotic-Dynamics"><a href="#参考资料：Data-Assimilation-for-Chaotic-Dynamics" class="headerlink" title="参考资料：Data Assimilation for Chaotic Dynamics"></a>参考资料：Data Assimilation for Chaotic Dynamics</h2><ul>
@@ -886,6 +886,7 @@
 <blockquote>
 <p><code>实际情况中，可能不仅仅是减少初始条件的不确定性~，还有模型的不确定性~，参数的不确定性~</code></p>
 </blockquote>
+<p>$$</p>
 </li>
 </ul>
 
@@ -1428,7 +1429,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

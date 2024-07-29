@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    750
+                    756
                 </div>
                 
 
@@ -405,12 +405,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="参考资料：集合卡尔曼滤波的理论制定与实际实现-2003"><a href="#参考资料：集合卡尔曼滤波的理论制定与实际实现-2003" class="headerlink" title="参考资料：集合卡尔曼滤波的理论制定与实际实现-2003"></a><center>参考资料：集合卡尔曼滤波的理论制定与实际实现-2003</center></h2><ul>
+                <h2 id="lt-center-gt-参考资料：集合卡尔曼滤波的理论制定与实际实现-2003-lt-center-gt"><a href="#lt-center-gt-参考资料：集合卡尔曼滤波的理论制定与实际实现-2003-lt-center-gt" class="headerlink" title="<center>参考资料：集合卡尔曼滤波的理论制定与实际实现-2003</center>"></a><code>&lt;center&gt;</code>参考资料：集合卡尔曼滤波的理论制定与实际实现-2003<code>&lt;/center&gt;</code></h2><ul>
 <li><p>英文名：<strong>The Ensemble Kalman Filter theoretical formulation and practical implementation 2003</strong></p>
 </li>
 <li><p>期刊：《Ocean Dynamics》，LetPub，<a target="_blank" rel="noopener" href="https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search">https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search</a></p>
-<blockquote>
-</blockquote>
 </li>
 <li><p>作者：Geir Evensen</p>
 <p>机构：Nansen Environmental and Remote Sensing Center</p>
@@ -418,9 +416,9 @@
 <li><p>From Wjc teacher.</p>
 </li>
 </ul>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>The purpose of this paper is to provide a comprehensive presentation and interpretation of <strong>the Ensemble Kalman Filter (EnKF)</strong> and its numerical implementation. The EnKF has a large user group, and numerous publications have discussed applications and theoretical aspects of it. This paper reviews the important results from these studies and also presents new ideas and alternative interpretations which further explain the success of the EnKF. In addition to providing the theoretical framework needed for using the EnKF, there is also a focus on the algorithmic formulation and optimal numerical implementation. A program listing is given for some of the key subroutines. The paper also touches upon specific issues such as the use of nonlinear measurements, in situ profiles of temperature and salinity, and data which are available with high frequency in time. <strong>An ensemble based optimal interpolation (EnOI)</strong> scheme is presented as a cost-effective approach which may serve as an alternative to the EnKF in some applications. </p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>The purpose of this paper is to provide a comprehensive presentation and interpretation of <strong>the Ensemble Kalman Filter (EnKF)</strong> and its numerical implementation. The EnKF has a large user group, and numerous publications have discussed applications and theoretical aspects of it. This paper reviews the important results from these studies and also presents new ideas and alternative interpretations which further explain the success of the EnKF. In addition to providing the theoretical framework needed for using the EnKF, there is also a focus on the algorithmic formulation and optimal numerical implementation. A program listing is given for some of the key subroutines. The paper also touches upon specific issues such as the use of nonlinear measurements, in situ profiles of temperature and salinity, and data which are available with high frequency in time. <strong>An ensemble based optimal interpolation (EnOI)</strong> scheme is presented as a cost-effective approach which may serve as an alternative to the EnKF in some applications.</p>
 <p>A fairly extensive discussion is devoted to the use of time <strong>correlated model errors</strong> and the <strong>estimation of model bias</strong>.</p>
-<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>The <strong>Ensemble Kalman Filter</strong> has been examined and applied in a number of studies since it was <strong>first introduced by Evensen (1994b)</strong>. </p>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>The <strong>Ensemble Kalman Filter</strong> has been examined and applied in a number of studies since it was <strong>first introduced by Evensen (1994b)</strong>.</p>
 <blockquote>
 <p><code>↑ ENKF 第一次被提出</code></p>
 </blockquote>
@@ -428,27 +426,27 @@
 <blockquote>
 <p><code>↑ ENKF的优势</code></p>
 </blockquote>
-<p>This paper gives a comprehensive presentation of the Ensemble Kalman Filter (EnKF), and it may <strong>serve as an EnKF reference document</strong>. </p>
+<p>This paper gives a comprehensive presentation of the Ensemble Kalman Filter (EnKF), and it may <strong>serve as an EnKF reference document</strong>.</p>
 <ul>
-<li>For a user of the EnKF it provides citations from hopefully all previous publications where the EnKF has been examined or used. It also provides a detailed presentation of the method in terms of both theoretical aspects and practical implementation. </li>
+<li>For a user of the EnKF it provides citations from hopefully all previous publications where the EnKF has been examined or used. It also provides a detailed presentation of the method in terms of both theoretical aspects and practical implementation.</li>
 <li>For experienced EnKF users it will provide a better understanding of the EnKF through the presentation of a new and alternative interpretation and implementation of the analysis scheme.</li>
 </ul>
 <blockquote>
 <p><code>↑ 可以作为ENKF的参考文档</code></p>
 </blockquote>
-<p>Structure of this paper: </p>
+<p>Structure of this paper:</p>
 <ul>
-<li>In the <strong>next section</strong>, an overview is given of previous works involving the EnKF. </li>
-<li>Further, in <strong>Section 3</strong>, an overview of the theoretical formulation of the EnKF will be given. </li>
-<li>Thereafter the focus will be on implementation issues, starting with the generation of the initial ensemble in <strong>Section 4.1</strong> and the stochastic integration of the ensemble members in <strong>Section 4.2</strong>. </li>
-<li>The major discussion in this paper relates to the EnKF analysis scheme, which is given in <strong>Section 4.3</strong>. </li>
-<li><strong>Section 5</strong> discusses particular aspects of the numerical implementation. </li>
-<li><strong>Appendix A</strong> presents an approach for examining the consistency of the EnKF based on comparisons of innovations and predicted error statistics. </li>
-<li>In <strong>Appendix B</strong> an optimal interpolation algorithm is presented. It uses a stationary ensemble but is otherwise similar to the EnKF, and it can thus be denoted Ensemble Optimal Interpolation (EnOI). </li>
-<li>In <strong>Appendix C</strong> we have given an algorithm which is currently used for assimilation of observations of subsurface quantities. </li>
-<li>In <strong>Appendix D</strong> the Ensemble Kalman Smoother (EnKS) is presented in terms of the terminology developed in this paper. It is illustrated how the smoother solution can be very efficiently computed as a reanalysis following the use of the EnKF. </li>
-<li>In <strong>Appendix E</strong> we have reviewed and detailed the presentation of the algorithm used for the generation of pseudorandom fields. </li>
-<li>Finally, in <strong>Appendix F</strong> an example is given illustrating the EnKF and EnKS with a simple stochastic scalar model. This illustrates the use of time-correlated model errors and how these can be estimated. </li>
+<li>In the <strong>next section</strong>, an overview is given of previous works involving the EnKF.</li>
+<li>Further, in <strong>Section 3</strong>, an overview of the theoretical formulation of the EnKF will be given.</li>
+<li>Thereafter the focus will be on implementation issues, starting with the generation of the initial ensemble in <strong>Section 4.1</strong> and the stochastic integration of the ensemble members in <strong>Section 4.2</strong>.</li>
+<li>The major discussion in this paper relates to the EnKF analysis scheme, which is given in <strong>Section 4.3</strong>.</li>
+<li><strong>Section 5</strong> discusses particular aspects of the numerical implementation.</li>
+<li><strong>Appendix A</strong> presents an approach for examining the consistency of the EnKF based on comparisons of innovations and predicted error statistics.</li>
+<li>In <strong>Appendix B</strong> an optimal interpolation algorithm is presented. It uses a stationary ensemble but is otherwise similar to the EnKF, and it can thus be denoted Ensemble Optimal Interpolation (EnOI).</li>
+<li>In <strong>Appendix C</strong> we have given an algorithm which is currently used for assimilation of observations of subsurface quantities.</li>
+<li>In <strong>Appendix D</strong> the Ensemble Kalman Smoother (EnKS) is presented in terms of the terminology developed in this paper. It is illustrated how the smoother solution can be very efficiently computed as a reanalysis following the use of the EnKF.</li>
+<li>In <strong>Appendix E</strong> we have reviewed and detailed the presentation of the algorithm used for the generation of pseudorandom fields.</li>
+<li>Finally, in <strong>Appendix F</strong> an example is given illustrating the EnKF and EnKS with a simple stochastic scalar model. This illustrates the use of time-correlated model errors and how these can be estimated.</li>
 <li>The use of the EnKF and EnKS for estimation of model bias is given in <strong>Appendix G</strong>.</li>
 </ul>
 
@@ -991,7 +989,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="FAQ：寻找关于fortran的项目管理方法（FPM）"><a href="#FAQ：寻找关于fortran的项目管理方法（FPM）" class="headerlink" title="FAQ：寻找关于fortran的项目管理方法（FPM）"></a><center>FAQ：寻找关于fortran的项目管理方法（FPM）</center></h1><h2 id="SSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSS</h2><h2 id="umake-make，2020"><a href="#umake-make，2020" class="headerlink" title="umake/make，2020"></a>umake/make，2020</h2><blockquote>
+                <h1 id="lt-center-gt-FAQ：寻找关于fortran的项目管理方法（FPM）-lt-center-gt"><a href="#lt-center-gt-FAQ：寻找关于fortran的项目管理方法（FPM）-lt-center-gt" class="headerlink" title="<center>FAQ：寻找关于fortran的项目管理方法（FPM）</center>"></a><code>&lt;center&gt;</code>FAQ：寻找关于fortran的项目管理方法（FPM）<code>&lt;/center&gt;</code></h1><h2 id="SSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSS</h2><h2 id="umake-make，2020"><a href="#umake-make，2020" class="headerlink" title="umake/make，2020"></a>umake/make，2020</h2><blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/umake/make">https://github.com/umake/make</a></p>
 <ul>
 <li><p>The Ultimate Makefile to compile all your C, C++, Assembly and Fortran projects.</p>
@@ -481,9 +481,9 @@
 </li>
 <li><p><code>fpm run</code> – run executables</p>
 <blockquote>
-<p>进入到project，直接就<code>fpm run</code>，会出错：</p>
+<p>进入到project，直接就 <code>fpm run</code>，会出错：</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401130521.png"></p>
-<p>删掉<code>src</code>文件夹，<code>fpm run</code>，还是会出错；</p>
+<p>删掉 <code>src</code>文件夹，<code>fpm run</code>，还是会出错；</p>
 </blockquote>
 </li>
 <li><p><code>fpm test</code> – run tests</p>
@@ -837,12 +837,12 @@ M_CLI2.git = "https://github.com/urbanjost/M_CLI2"<span aria-hidden="true" class
 cd fpm-search
 fpm install --profile release<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>这会将二进制文件<code>fpm-search</code>安装到<code>~/.local/bin</code>（或在Windows上的<code>%APPDATA%\local\bin</code>）。</p>
+<p>这会将二进制文件 <code>fpm-search</code>安装到 <code>~/.local/bin</code>（或在Windows上的 <code>%APPDATA%\local\bin</code>）。</p>
 <p>…</p>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
-<h3 id="Manifest-reference"><a href="#Manifest-reference" class="headerlink" title="Manifest reference"></a>Manifest reference</h3><p>The <code>fpm.toml</code> file for each project is called its <em>manifest</em>. It is written using the <a target="_blank" rel="noopener" href="https://toml.io/">TOML</a> format. </p>
+<h3 id="Manifest-reference"><a href="#Manifest-reference" class="headerlink" title="Manifest reference"></a>Manifest reference</h3><p>The <code>fpm.toml</code> file for each project is called its <em>manifest</em>. It is written using the <a target="_blank" rel="noopener" href="https://toml.io/">TOML</a> format.</p>
 <h4 id="项目目标"><a href="#项目目标" class="headerlink" title="项目目标"></a>项目目标</h4><p>每个fpm项目都可以定义函数库、可执行程序和测试目标。库目标被导出并可用于其他项目。</p>
-<h5 id="库配置"><a href="#库配置" class="headerlink" title="库配置"></a>库配置</h5><p>定义项目的导出库目标。如果在项目中找到源目录或包含目录，则会生成库。默认的源目录和包含目录是<code>src</code>和<code>include</code>；这些可以在库（<em>library</em>）部分中使用源目录（<em>source-dir</em>）和包含目录（<em>include-dir</em>）条目进行修改。源目录和包含目录的目录相对于项目根目录给出，并在所有平台上使用<code>/</code>用作目录分隔符。</p>
+<h5 id="库配置"><a href="#库配置" class="headerlink" title="库配置"></a>库配置</h5><p>定义项目的导出库目标。如果在项目中找到源目录或包含目录，则会生成库。默认的源目录和包含目录是 <code>src</code>和 <code>include</code>；这些可以在库（<em>library</em>）部分中使用源目录（<em>source-dir</em>）和包含目录（<em>include-dir</em>）条目进行修改。源目录和包含目录的目录相对于项目根目录给出，并在所有平台上使用 <code>/</code>用作目录分隔符。</p>
 <p><em>例如：</em></p>
 <pre class="line-numbers language-none"><code class="language-none">[library]
 source-dir = "lib"
@@ -856,11 +856,9 @@ include-dir = "inc"<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <pre class="line-numbers language-none"><code class="language-none">[library]
 include-dir = ["include", "third_party/include"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-
-
 <p>备注</p>
-<p>包含目录（<em>include-dir</em>）当前不允许使用预构建的<code>.mod</code>模块文件。</p>
-<h5 id="可执行目标"><a href="#可执行目标" class="headerlink" title="可执行目标"></a>可执行目标</h5><p>可执行目标是定义为可执行部分的Fortran程序。如果未指定可执行文件（<em>executable</em>）部分，则会在<code>app</code>目录中搜索程序定义。对于显式指定的可执行文件，必须始终指定名称（<em>name</em>）条目。每个可执行文件的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<p>包含目录（<em>include-dir</em>）当前不允许使用预构建的 <code>.mod</code>模块文件。</p>
+<h5 id="可执行目标"><a href="#可执行目标" class="headerlink" title="可执行目标"></a>可执行目标</h5><p>可执行目标是定义为可执行部分的Fortran程序。如果未指定可执行文件（<em>executable</em>）部分，则会在 <code>app</code>目录中搜索程序定义。对于显式指定的可执行文件，必须始终指定名称（<em>name</em>）条目。每个可执行文件的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用 <code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
 <p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅指定依赖项。</p>
 <p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅外部库。</p>
 <p>备注</p>
@@ -877,17 +875,13 @@ link = "z"
 [executable.dependencies]
 helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
 <p>指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁。</p>
 <pre class="line-numbers language-none"><code class="language-none">executable = [
   { name = "a-prog" },
   { name = "app-tool", source-dir = "tool" },
 ]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
-<h5 id="示例目标"><a href="#示例目标" class="headerlink" title="示例目标"></a>示例目标</h5><p>项目的示例应用程序被定义为示例部分。如果未指定示例（<em>example</em>）部分，则会在<code>example</code>目录中搜索程序定义。对于显式指定的示例，必须始终指定名称（<em>name</em>）条目。每个示例的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<h5 id="示例目标"><a href="#示例目标" class="headerlink" title="示例目标"></a>示例目标</h5><p>项目的示例应用程序被定义为示例部分。如果未指定示例（<em>example</em>）部分，则会在 <code>example</code>目录中搜索程序定义。对于显式指定的示例，必须始终指定名称（<em>name</em>）条目。每个示例的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用 <code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
 <p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅指定依赖项。</p>
 <p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅外部库。</p>
 <p>备注</p>
@@ -904,9 +898,7 @@ link = "z"
 [example.dependencies]
 helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
-<h5 id="测试目标"><a href="#测试目标" class="headerlink" title="测试目标"></a>测试目标</h5><p>测试目标是定义为测试部分的Fortran程序。它们遵循与可执行目标类似的规则。如果未指定测试（<em>test</em>）部分，则会在<code>test</code>目录中搜索程序定义。对于显式指定的测试，必须始终指定名称（<em>name</em>）条目。每个测试的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<h5 id="测试目标"><a href="#测试目标" class="headerlink" title="测试目标"></a>测试目标</h5><p>测试目标是定义为测试部分的Fortran程序。它们遵循与可执行目标类似的规则。如果未指定测试（<em>test</em>）部分，则会在 <code>test</code>目录中搜索程序定义。对于显式指定的测试，必须始终指定名称（<em>name</em>）条目。每个测试的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用 <code>/</code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
 <p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅指定依赖项。</p>
 <p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅外部库。</p>
 <p>备注</p>
@@ -923,8 +915,6 @@ link = ["blas", "lapack"]
 [test.dependencies]
 helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
 <h4 id="链接外部库"><a href="#链接外部库" class="headerlink" title="链接外部库"></a>链接外部库</h4><p>备注</p>
 <p>仅在Fortran fpm中受支持。</p>
 <p>要声明外部库的链接时间依赖关系，可以在链接（<em>link</em>）条目中指定本机库的列表。将一个库指定为字符串，或指定一个字符串列表，以防应链接多个库。如果可能，项目应仅链接一个本机库。库依赖项列表将导出到从属包。</p>
@@ -933,13 +923,9 @@ helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }<span a
 <pre class="line-numbers language-none"><code class="language-none">[build]
 link = "z"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-
-
 <p>要依赖LAPACK，BLAS也应该被链接起来。在这种情况下，库的顺序很重要：</p>
 <pre class="line-numbers language-none"><code class="language-none">[build]
 link = ["blas", "lapack"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
 
 <h4 id="使用系统安装的模块"><a href="#使用系统安装的模块" class="headerlink" title="使用系统安装的模块"></a>使用系统安装的模块</h4><p>若要使用未在fpm包或其依赖项中定义的模块，请使用生成（<em>build</em>）表中的外部模块（<em>external-modules</em>）键指定模块名称。</p>
 <p>重要</p>
@@ -948,18 +934,14 @@ link = ["blas", "lapack"]<span aria-hidden="true" class="line-numbers-rows"><spa
 <pre class="line-numbers language-none"><code class="language-none">[build]
 external-modules = "netcdf"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-
-
 <p>可以将多个外部模块指定为一个列表。</p>
 <p><em>例如：</em></p>
 <pre class="line-numbers language-none"><code class="language-none">[build]
 external-modules = ["netcdf", "h5lt"]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-
-
 <h4 id="目标自动发现"><a href="#目标自动发现" class="headerlink" title="目标自动发现"></a>目标自动发现</h4><p>备注</p>
 <p>仅在Fortran fpm中受支持。</p>
-<p>可执行文件和测试可以在其默认目录中自动发现。自动发现以递归方式在<code>app</code>、<code>example</code>和<code>test</code>目录中搜索定义，并分别将它们声明为可执行目标、示例目标和测试目标。默认情况下，自动发现处于启用状态。</p>
+<p>可执行文件和测试可以在其默认目录中自动发现。自动发现以递归方式在 <code>app</code>、<code>example</code>和 <code>test</code>目录中搜索定义，并分别将它们声明为可执行目标、示例目标和测试目标。默认情况下，自动发现处于启用状态。</p>
 <p>要禁用目标的自动发现，请将自动可执行文件（<em>auto-executables</em>）、自动示例（<em>auto-examples</em>）和自动测试（<em>auto-tests</em>）条目设置为<em>false</em>。</p>
 <pre class="line-numbers language-none"><code class="language-none">[build]
 auto-executables = false
@@ -1050,10 +1032,8 @@ end program main<span aria-hidden="true" class="line-numbers-rows"><span></span>
  pi =    3.14159274<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <ul>
-<li><p>Notice that you can run <code>fpm run</code>, and if the package hasn’t been built yet, <code>fpm build</code> will run automatically for you. This is true if the source files have been updated since the last build. Thus, if you want to run your application, you can skip the <code>fpm build</code> step, and go straight to <code>fpm run</code>.</p>
-</li>
-<li><p>Although we have named our program <code>hello</code>, which is the same name as the package name in <code>fpm.toml</code>, you can name it anything you want as long as it’s permitted by the language.</p>
-</li>
+<li>Notice that you can run <code>fpm run</code>, and if the package hasn’t been built yet, <code>fpm build</code> will run automatically for you. This is true if the source files have been updated since the last build. Thus, if you want to run your application, you can skip the <code>fpm build</code> step, and go straight to <code>fpm run</code>.</li>
+<li>Although we have named our program <code>hello</code>, which is the same name as the package name in <code>fpm.toml</code>, you can name it anything you want as long as it’s permitted by the language.</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220401210952.png"></p>
 <p>==》</p>
@@ -1105,7 +1085,7 @@ math_constants.a  math_constants.mod  math_constants.o  type_kinds.mod  type_kin
 
 <blockquote>
 <ul>
-<li>没看到<code>build/debug/library</code>,</li>
+<li>没看到 <code>build/debug/library</code>,</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402112210.png"></p>
 </blockquote>
@@ -1118,7 +1098,7 @@ type_kinds.o:<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 
 <blockquote>
 <ul>
-<li>没看到<code>math_constants.a</code>，</li>
+<li>没看到 <code>math_constants.a</code>，</li>
 <li>nm命令是什么，</li>
 </ul>
 </blockquote>
@@ -1166,7 +1146,7 @@ ar: creating build/debug/library/math_constants.a
 
 <blockquote>
 <ul>
-<li><p>直接运行<code>fpm run</code>会出错，</p>
+<li><p>直接运行 <code>fpm run</code>会出错，</p>
 <pre class="line-numbers language-none"><code class="language-none">刘锦灿@LAPTOP-085N0595 MINGW64 /d/zetero/VScode/Fortran/fpm/multi-module
 $ fpm run
 &lt;INFO&gt; No executables to run
@@ -1179,7 +1159,7 @@ $ fpm build
 $ fpm run
 &lt;INFO&gt; No executables to run
 STOP 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>解决方法：删除mod文件和<code>build</code>文件夹，再<code>fpm run</code>,</p>
+<li><p>解决方法：删除mod文件和 <code>build</code>文件夹，再 <code>fpm run</code>,</p>
 <pre class="line-numbers language-none"><code class="language-none">RM -f ./src/*.mod &amp;&amp; RM -f -R build &amp;&amp; RM -f ./app/*.mod &amp;&amp; fpm run<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402115745.png"></p>
@@ -1299,30 +1279,30 @@ main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402133321.png"></p>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h4 id="FAQ：如何实现每一个application文件与一个executable对应？"><a href="#FAQ：如何实现每一个application文件与一个executable对应？" class="headerlink" title="FAQ：如何实现每一个application文件与一个executable对应？"></a>FAQ：如何实现每一个application文件与一个executable对应？</h4><ol>
-<li><p>为了明确每一个<code>executable</code>与每一个application文件的对应关系，将<code>auto-executables</code>设置为false，</p>
+<li><p>为了明确每一个 <code>executable</code>与每一个application文件的对应关系，将 <code>auto-executables</code>设置为false，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402173533.png"></p>
-<p>可以通过<code>fpm run --list</code>查询<code>executable</code>的个数，</p>
+<p>可以通过 <code>fpm run --list</code>查询 <code>executable</code>的个数，</p>
 <blockquote>
 <p><code>fpm run --list</code></p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402173717.png"></p>
-<p>如果<code>auto-executables</code>不设置为false，其默认为true，那么按照上面的操作会出错，因为<code>auto=executables</code>会对应一个application文件，加上<code>executable</code>对应的三个application文件，而实际上只有三个application文件，肯定存在某一个application文件有重复的<code>executable</code>文件，这在<code>fpm</code>中是不允许的。</p>
+<p>如果 <code>auto-executables</code>不设置为false，其默认为true，那么按照上面的操作会出错，因为 <code>auto=executables</code>会对应一个application文件，加上 <code>executable</code>对应的三个application文件，而实际上只有三个application文件，肯定存在某一个application文件有重复的 <code>executable</code>文件，这在 <code>fpm</code>中是不允许的。</p>
 </li>
-<li><p>想运行某一个文件可以，例如<code>fpn run "app1_exe2"</code>，</p>
-<p>像运行所有的target文件，即executable文件，可以<code>fpm run --all</code>，</p>
+<li><p>想运行某一个文件可以，例如 <code>fpn run "app1_exe2"</code>，</p>
+<p>像运行所有的target文件，即executable文件，可以 <code>fpm run --all</code>，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402174651.png"></p>
 </li>
 </ol>
 <blockquote>
-<p><code>example</code>和<code>test</code>与<code>executable</code>类似；</p>
+<p><code>example</code>和 <code>test</code>与 <code>executable</code>类似；</p>
 </blockquote>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
-<h4 id="FAQ：每次fpm-run都要删除mod和build文件夹？"><a href="#FAQ：每次fpm-run都要删除mod和build文件夹？" class="headerlink" title="FAQ：每次fpm run都要删除mod和build文件夹？"></a>FAQ：每次<code>fpm run</code>都要删除<code>mod</code>和<code>build</code>文件夹？</h4><p>不是的，</p>
-<p>在每次<code>fpm run</code>前可以删除<code>mod</code>，（因为<code>mod</code>文件时自动生成的，<code>fpm</code>实际运行是不需要<code>mod</code>）</p>
-<p>但是对于<code>build</code>文件夹不应该删除，否则信息会丢失，</p>
+<h4 id="FAQ：每次-fpm-run都要删除-mod和-build文件夹？"><a href="#FAQ：每次-fpm-run都要删除-mod和-build文件夹？" class="headerlink" title="FAQ：每次 fpm run都要删除 mod和 build文件夹？"></a>FAQ：每次 <code>fpm run</code>都要删除 <code>mod</code>和 <code>build</code>文件夹？</h4><p>不是的，</p>
+<p>在每次 <code>fpm run</code>前可以删除 <code>mod</code>，（因为 <code>mod</code>文件时自动生成的，<code>fpm</code>实际运行是不需要 <code>mod</code>）</p>
+<p>但是对于 <code>build</code>文件夹不应该删除，否则信息会丢失，</p>
 <p>建议：find . -name *.mod | xargs rm -f &amp;&amp; fpm run</p>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
-<h3 id="fpm-toml-test"><a href="#fpm-toml-test" class="headerlink" title="fpm.toml: [test]"></a>fpm.toml: [test]</h3><p><em>fpm</em> also provides support for unit testing. By default, <em>fpm</em> looks for a program in <code>test/main.f90</code> which it will compile and execute with the command <code>fpm test</code>. The tests are treated pretty much exactly like the executables. </p>
+<h3 id="fpm-toml-test"><a href="#fpm-toml-test" class="headerlink" title="fpm.toml: [test]"></a>fpm.toml: [test]</h3><p><em>fpm</em> also provides support for unit testing. By default, <em>fpm</em> looks for a program in <code>test/main.f90</code> which it will compile and execute with the command <code>fpm test</code>. The tests are treated pretty much exactly like the executables.</p>
 <blockquote>
 <p>[test]和[executable]不是相似，现在看来，是基本一摸一样；</p>
 </blockquote>
@@ -1419,7 +1399,7 @@ end program main<span aria-hidden="true" class="line-numbers-rows"><span></span>
 
 <blockquote>
 <ul>
-<li><p>这里<code>use helloff</code>中，<code>helloff</code>是一个module</p>
+<li><p>这里 <code>use helloff</code>中，<code>helloff</code>是一个module</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402194208.png"></p>
 </li>
 </ul>
@@ -1434,11 +1414,11 @@ e =    2.7182818284590451
 Hello, fpm!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402193833.png"></p>
-<p>You can also be specific about which version of a dependency you’d like. </p>
+<p>You can also be specific about which version of a dependency you’d like.</p>
 <ul>
-<li>You can specify a branch to use like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", branch = "master" }</code>, </li>
-<li>or a tag like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", tag = "v1.2.3" }</code>, </li>
-<li>or even a specific commit like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", rev = "a1b2c3" }</code>. </li>
+<li>You can specify a branch to use like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", branch = "master" }</code>,</li>
+<li>or a tag like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", tag = "v1.2.3" }</code>,</li>
+<li>or even a specific commit like <code>helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git", rev = "a1b2c3" }</code>.</li>
 </ul>
 <p>You can even specify the path to another folder, if for example you’ve got another fpm package in the same repository. Like this: <code>helloff = { path = "helloff" }</code>. Note that you should <em>not</em> specify paths outside of your repository, or things won’t work for your users.</p>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
@@ -1465,7 +1445,7 @@ name="runTests"
 source-dir="test"
 main="main.f90"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>You can also specify dependencies for your tests in a similar way, with <code>[test.dependencies]</code> instead of <code>[executable.dependencies]</code>. There’s also another option for test dependencies. </p>
+<p>You can also specify dependencies for your tests in a similar way, with <code>[test.dependencies]</code> instead of <code>[executable.dependencies]</code>. There’s also another option for test dependencies.</p>
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h4 id="fpm-toml-dev-dependencies"><a href="#fpm-toml-dev-dependencies" class="headerlink" title="fpm.toml: [dev-dependencies]"></a>fpm.toml: [dev-dependencies]</h4><p>The below example makes the dependencies available for all the tests, but again your users won’t depend on these.</p>
 <pre class="line-numbers language-none"><code class="language-none">name = "math_constants"
@@ -1573,7 +1553,7 @@ find . -name *.mod | xargs rm -f &amp;&amp; fpm run<span aria-hidden="true" clas
 
 <h2 id="FAQ：Fortran-runtime-error-File-cannot-be-deleted"><a href="#FAQ：Fortran-runtime-error-File-cannot-be-deleted" class="headerlink" title="FAQ：Fortran runtime error: File cannot be deleted"></a>FAQ：Fortran runtime error: File cannot be deleted</h2><p>解决方法：多运行几次</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220402195301.png"></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+
                 
             </div>
             <hr/>
@@ -2107,7 +2087,7 @@ find . -name *.mod | xargs rm -f &amp;&amp; fpm run<span aria-hidden="true" clas
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

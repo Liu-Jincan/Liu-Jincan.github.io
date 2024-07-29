@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    564
+                    581
                 </div>
                 
 
@@ -405,16 +405,16 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="06-TUTORIALS-COUPLING-耦合"><a href="#06-TUTORIALS-COUPLING-耦合" class="headerlink" title="06-TUTORIALS-COUPLING-耦合"></a><center>06-TUTORIALS-COUPLING-耦合</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-couping.pdf</code>；（**<font color="red">代码没有完全实现，卡 在了PBS，qsub命令</font>**）</p>
+                <h1 id="lt-center-gt-06-TUTORIALS-COUPLING-耦合-lt-center-gt"><a href="#lt-center-gt-06-TUTORIALS-COUPLING-耦合-lt-center-gt" class="headerlink" title="<center>06-TUTORIALS-COUPLING-耦合</center>"></a><code>&lt;center&gt;</code>06-TUTORIALS-COUPLING-耦合<code>&lt;/center&gt;</code></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-couping.pdf</code>；（**<code>&lt;font color='red'&gt;</code>代码没有完全实现，卡 在了PBS，qsub命令<code>&lt;/font&gt;</code>**）</p>
 <blockquote>
 <ul>
 <li>是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-COUPLING</code> 里面的内容；<br><code>TUTORIALS</code> 目录的链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1S4qGSGGyJizdSAeFIerewA">https://pan.baidu.com/s/1S4qGSGGyJizdSAeFIerewA</a>  密码: jpi1</li>
-<li>TUTORIAL 是会更新的，关于 <strong>2019</strong> 版本的； </li>
+<li>TUTORIAL 是会更新的，关于 <strong>2019</strong> 版本的；</li>
 <li>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1bYlCpCjf9Me7Wnlvu0GgLg">https://pan.baidu.com/s/1bYlCpCjf9Me7Wnlvu0GgLg</a><br>提取码：yg5u<br>–来自百度网盘</li>
 </ul>
 </blockquote>
 <hr>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在这个教程练习中，我们将通过使用<code>耦合器OASIS3-MCT</code>运行<code>耦合模式</code>的步骤，以允许<code>波浪模式WAVEWATCHIII（r）</code>和<code>海洋环流模式CROCO</code>之间的交流。我们将使用netcdf和WW3的<strong>并行实现</strong>来运行该代码。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在这个教程练习中，我们将通过使用 <code>耦合器OASIS3-MCT</code>运行 <code>耦合模式</code>的步骤，以允许 <code>波浪模式WAVEWATCHIII（r）</code>和 <code>海洋环流模式CROCO</code>之间的交流。我们将使用netcdf和WW3的<strong>并行实现</strong>来运行该代码。</p>
 <h2 id="COUPING-工作目录创建"><a href="#COUPING-工作目录创建" class="headerlink" title="COUPING 工作目录创建"></a>COUPING 工作目录创建</h2><p>创建一个 COUPING 工作目录，假如为 <code>work-coupling</code> ，在目录下打开终端，输入以下命令</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span>   -r   /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/COURS/WAVES-SHORT-COURSE/TUTORIALS/TUTORIAL_COUPING   <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -422,15 +422,14 @@
 <center><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220106110415.png" alt=" " style="zoom:70%;">
     <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220106110532.png" alt=" " style="zoom:71.5%;"></center>
 
-
-<h2 id="如何耦合"><a href="#如何耦合" class="headerlink" title="如何耦合"></a>如何耦合</h2><p>一个典型的波浪模型和海洋模型之间的耦合运行将由一个<code>耦合时间步长</code>来定义，它将用于<strong>模型之间的场交换</strong>。为了正确工作，它必须是两个模型时间步长的倍数。在下面的方案中，耦合时间步长可以定义为360s，波浪模型的时间步长为90s，所以它将每4个时间步长交换一次，海洋模型的时间为180s，所以它将每2个时间步长交换一次。</p>
-<p>另一个耦合参数是<code>lag（滞后）</code>，它被<code>oasis耦合器</code>用来同步发送（send）和接收（receive）功能。<code>lag</code>必须为每个模型定义与它的时间步长相同的值。因此，在你的模型实现中，你不需要担心你的发送和接收函数的这个<code>lag</code>，因为它只被oasis的内部函数使用。</p>
+<h2 id="如何耦合"><a href="#如何耦合" class="headerlink" title="如何耦合"></a>如何耦合</h2><p>一个典型的波浪模型和海洋模型之间的耦合运行将由一个 <code>耦合时间步长</code>来定义，它将用于<strong>模型之间的场交换</strong>。为了正确工作，它必须是两个模型时间步长的倍数。在下面的方案中，耦合时间步长可以定义为360s，波浪模型的时间步长为90s，所以它将每4个时间步长交换一次，海洋模型的时间为180s，所以它将每2个时间步长交换一次。</p>
+<p>另一个耦合参数是 <code>lag（滞后）</code>，它被 <code>oasis耦合器</code>用来同步发送（send）和接收（receive）功能。<code>lag</code>必须为每个模型定义与它的时间步长相同的值。因此，在你的模型实现中，你不需要担心你的发送和接收函数的这个 <code>lag</code>，因为它只被oasis的内部函数使用。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220106111710.png" style="zoom:70%;">
 
-<p>每个模型中的<code>耦合顺序</code>是：</p>
+<p>每个模型中的 <code>耦合顺序</code>是：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220106112302.png" style="zoom:70%;">
 
-<p>你需要为耦合器创建初始fields，变量名称与<code>OASIS namcouple</code>对应。在下面的例子中，OASIS的初始文件将被命名为<code>oasis_oce.nc</code>和<code>oasis_wave.nc</code>（<code>oce_ini</code>和<code>wave_ini</code>与OASIS无关，它们是你的海洋和波浪模型的通常<code>初始化</code>或<code>重启文件</code>）。</p>
+<p>你需要为耦合器创建初始fields，变量名称与 <code>OASIS namcouple</code>对应。在下面的例子中，OASIS的初始文件将被命名为 <code>oasis_oce.nc</code>和 <code>oasis_wave.nc</code>（<code>oce_ini</code>和 <code>wave_ini</code>与OASIS无关，它们是你的海洋和波浪模型的通常 <code>初始化</code>或 <code>重启文件</code>）。</p>
 <p><code>重启文件</code>的摘要：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220106113249.png" alt=" " style="zoom:75%;">
 
@@ -974,7 +973,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

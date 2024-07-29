@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
@@ -405,12 +405,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="研一下-海表面风和海浪多源数据融合实况"><a href="#研一下-海表面风和海浪多源数据融合实况" class="headerlink" title="研一下-海表面风和海浪多源数据融合实况"></a><center>研一下-海表面风和海浪多源数据融合实况</center></h2><h2 id="文档托管"><a href="#文档托管" class="headerlink" title="文档托管"></a>文档托管</h2><ul>
+                <h2 id="lt-center-gt-研一下-海表面风和海浪多源数据融合实况-lt-center-gt"><a href="#lt-center-gt-研一下-海表面风和海浪多源数据融合实况-lt-center-gt" class="headerlink" title="<center>研一下-海表面风和海浪多源数据融合实况</center>"></a><code>&lt;center&gt;</code>研一下-海表面风和海浪多源数据融合实况<code>&lt;/center&gt;</code></h2><h2 id="文档托管"><a href="#文档托管" class="headerlink" title="文档托管"></a>文档托管</h2><ul>
 <li><p>WPS云文档：【MasterG1S2_海表面风和海浪高多源数据融合实况】</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220417160749.png"></p>
 </li>
 </ul>
-<h2 id="2022-03-05-wjc老师反馈"><a href="#2022-03-05-wjc老师反馈" class="headerlink" title="2022-03-05 wjc老师反馈"></a>2022-03-05 wjc老师反馈</h2><p>什么是<code>实况</code>：</p>
+<h2 id="2022-03-05-wjc老师反馈"><a href="#2022-03-05-wjc老师反馈" class="headerlink" title="2022-03-05 wjc老师反馈"></a>2022-03-05 wjc老师反馈</h2><p>什么是 <code>实况</code>：</p>
 <ul>
 <li>不是预报</li>
 <li>QT：是对当前时刻的前几个小时的观测，进行融合？；</li>
@@ -754,18 +754,12 @@
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305161427.png" style="zoom:80%;">
 
 <h5 id="（2）数据处理流程"><a href="#（2）数据处理流程" class="headerlink" title="（2）数据处理流程"></a>（2）数据处理流程</h5><ul>
-<li><p><strong>数据读取</strong>：主要是实现HY-2和METOP卫星微波散射计L2B级产品和背景风场产品的数据读取；</p>
-</li>
-<li><p><strong>数据自检</strong>：根据残差和风单元质量标识符提取HY-2和METOP卫星微波散射计有效的海面风场信息，以便用于后续的网格转化处理和时空统计分析。；</p>
-</li>
-<li><p><strong>网格转化</strong>：网格转化模块承接数据自检的输出，将按刈幅排列的风场数据转换成按经纬度规则排列的风场数据。</p>
-</li>
-<li><p><strong>时空统计</strong>：根据网格化的散射计风场和数值天气预报模式提供的背景风场，统计分析每个网格点两种风场经向（u）和纬向（v）分量的均值和方差。</p>
-</li>
-<li><p><strong>质量分析</strong>：根据时空统计分析模块的结果，分析每个网格点数据统计分显著程度，如果统计显著性小于设定的阈值，将该网格点的风场设置成缺省值。</p>
-</li>
-<li><p><strong>订正系数</strong>：根据HY-2和METOP卫星微波散射计L2B级产品的统计分析和质量分析结果，计算多源洋面风场数据的订正系数。</p>
-</li>
+<li><strong>数据读取</strong>：主要是实现HY-2和METOP卫星微波散射计L2B级产品和背景风场产品的数据读取；</li>
+<li><strong>数据自检</strong>：根据残差和风单元质量标识符提取HY-2和METOP卫星微波散射计有效的海面风场信息，以便用于后续的网格转化处理和时空统计分析。；</li>
+<li><strong>网格转化</strong>：网格转化模块承接数据自检的输出，将按刈幅排列的风场数据转换成按经纬度规则排列的风场数据。</li>
+<li><strong>时空统计</strong>：根据网格化的散射计风场和数值天气预报模式提供的背景风场，统计分析每个网格点两种风场经向（u）和纬向（v）分量的均值和方差。</li>
+<li><strong>质量分析</strong>：根据时空统计分析模块的结果，分析每个网格点数据统计分显著程度，如果统计显著性小于设定的阈值，将该网格点的风场设置成缺省值。</li>
+<li><strong>订正系数</strong>：根据HY-2和METOP卫星微波散射计L2B级产品的统计分析和质量分析结果，计算多源洋面风场数据的订正系数。</li>
 </ul>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305160700.png" style="zoom:63%;">
 
@@ -871,17 +865,13 @@
 <li><p><code>↑ 最优插值算法的公式</code></p>
 </li>
 </ul>
-<h3 id="一、洋面风融合现状及趋势"><a href="#一、洋面风融合现状及趋势" class="headerlink" title="一、洋面风融合现状及趋势"></a>一、洋面风融合现状及趋势</h3><p><strong>洋面风（Sea surface wind）</strong>是决定海洋和大气之间动量、能量和质量交换的重要因素之一, </p>
+<h3 id="一、洋面风融合现状及趋势"><a href="#一、洋面风融合现状及趋势" class="headerlink" title="一、洋面风融合现状及趋势"></a>一、洋面风融合现状及趋势</h3><p><strong>洋面风（Sea surface wind）</strong>是决定海洋和大气之间动量、能量和质量交换的重要因素之一,</p>
 <p><strong>洋面风场</strong>是气象业务中广泛使用的基本要素之一, 在海洋和大气科学的研究中受到广泛关注。</p>
 <ul>
-<li><p>高质量、高时空分辨率的洋面风数据对于影响大气和海洋的<strong>海气相互作用</strong>是至关重要的。</p>
-</li>
-<li><p>洋面风数据可以为海洋模式提供驱动场，</p>
-</li>
-<li><p>在计算海表热通量、湿度等要素时需要洋面风场，</p>
-</li>
-<li><p>同时，洋面风场可以为大气模式提供初始场和对模式结果进行验证。</p>
-</li>
+<li>高质量、高时空分辨率的洋面风数据对于影响大气和海洋的<strong>海气相互作用</strong>是至关重要的。</li>
+<li>洋面风数据可以为海洋模式提供驱动场，</li>
+<li>在计算海表热通量、湿度等要素时需要洋面风场，</li>
+<li>同时，洋面风场可以为大气模式提供初始场和对模式结果进行验证。</li>
 </ul>
 <h4 id="1-常规数据、再分析数据、卫星数据"><a href="#1-常规数据、再分析数据、卫星数据" class="headerlink" title="1. 常规数据、再分析数据、卫星数据"></a>1. 常规数据、再分析数据、卫星数据</h4><p><strong>获取洋面风的常规手段</strong>主要是</p>
 <ul>
@@ -1088,18 +1078,18 @@
 <p>ADEOS: Advanced Earth Observing Satellite</p>
 <p>AMI: Active Microwave Instrument</p>
 <p>AMSR-E: Advanced Microwave Scanning Radiometer - Earth Observing System</p>
-<p>ASCAT: Advanced Scatterometer </p>
+<p>ASCAT: Advanced Scatterometer</p>
 <p>CNSA: China National Space Administration</p>
 <p>DMSP: Defense Meteorological Satellite Program</p>
 <p>KU-RFSCAT: Ku-band Rotational Fan-beam Scatterometer</p>
 <p>ERS: European Remote-Sensing Satellite</p>
 <p>MWRI: Microwave Radiometer Imager</p>
-<p>NCAR: National Center for Atmospheric Research </p>
-<p>NCEP: National Center for Environmental Prediction </p>
+<p>NCAR: National Center for Atmospheric Research</p>
+<p>NCEP: National Center for Environmental Prediction</p>
 <p>SASS: SEASAT-A Scatterometer System</p>
 <p>SMMR: Scanning Multichannel Microwave Radiometer</p>
-<p>SSM/I: Special Sensor Microwave Imager </p>
-<p>SSMIS: Special Sensor Microwave Imager Sounder </p>
+<p>SSM/I: Special Sensor Microwave Imager</p>
+<p>SSMIS: Special Sensor Microwave Imager Sounder</p>
 <p>TMI: TRMM Microwave Imager</p>
 <p>TRMM: Tropical Rainfall Measuring Mission.</p>
 <h4 id="2-融合产品及必要性"><a href="#2-融合产品及必要性" class="headerlink" title="2. 融合产品及必要性"></a>2. 融合产品及必要性</h4><p>卫星搭载的<strong>微波散射计</strong>和<strong>扫描微波辐射计</strong>的沿轨数据仍<strong>不能完全覆盖全球海域</strong>，并且大气和海洋环境预报等部门在实际使用卫星遥感数据中通常需要用到全球化网格化的、具有较高的空间和时间分辨率标准数据。为了解决上述问题，<strong>数据融合被认为是非常有效的手段之一</strong>，通过数据融合可以优化遥感信息资源利用实现多源数据的优势互补。</p>
@@ -1166,7 +1156,7 @@
 <p><strong>权函数</strong>由极小化一个误差协方差得到，可由解下面的公式得到：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305175238.png" style="zoom:70%;">
 
-<p>在进行网格化之前，用以下公式对 <em>μ<sup>B</sup></em> 和 <em>μ<sup>O</sup></em> 进行估计</p>
+<p>在进行网格化之前，用以下公式对 <em>μ<code>&lt;sup&gt;</code>B<code>&lt;/sup&gt;</code></em> 和 <em>μ<code>&lt;sup&gt;</code>O<code>&lt;/sup&gt;</code></em> 进行估计</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305175507.png" style="zoom:70%;">
 
 <blockquote>
@@ -1208,23 +1198,16 @@
 <p><code>↑ passive sensor 无源传感器，active sensor 有源传感器</code></p>
 <p><code>↑ 介绍有源和无源传感器https://zhidao.baidu.com/question/1540081867768312507.html</code></p>
 </blockquote>
-<h3 id="Passive-sensors"><a href="#Passive-sensors" class="headerlink" title="Passive sensors"></a>Passive sensors</h3><p>Passive sensors include different types of <strong>radiometers</strong> and <strong>spectrometers</strong>. Most passive systems used in remote sensing applications operate <strong>in the visible, infrared, thermal infrared, and microwave portions of the electromagnetic spectrum</strong>. </p>
+<h3 id="Passive-sensors"><a href="#Passive-sensors" class="headerlink" title="Passive sensors"></a>Passive sensors</h3><p>Passive sensors include different types of <strong>radiometers</strong> and <strong>spectrometers</strong>. Most passive systems used in remote sensing applications operate <strong>in the visible, infrared, thermal infrared, and microwave portions of the electromagnetic spectrum</strong>.</p>
 <p>Passive remote sensors include the following:</p>
 <ul>
-<li><p><strong>Accelerometer</strong>—An instrument that measures acceleration (change in velocity per unit time). There are two general types of accelerometers. One measures translational accelerations (changes in linear motions in one or more dimensions), and the other measures angular accelerations (changes in rotation rate per unit time).</p>
-</li>
-<li><p><strong>Radiometer</strong>—An instrument that quantitatively measures the intensity of electromagnetic radiation in some bands within the spectrum. Usually, a radiometer is further identified by the portion of the spectrum it covers; for example, visible, infrared, or microwave.</p>
-</li>
-<li><p><strong>Imaging radiometer</strong>—A radiometer that has a scanning capability to provide a two-dimensional array of pixels from which an image may be produced. Scanning can be performed mechanically or electronically by using an array of detectors.</p>
-</li>
-<li><p><strong>Spectrometer</strong>—A device that is designed to detect, measure, and analyze the spectral content of incident electromagnetic radiation. Conventional imaging spectrometers use gratings or prisms to disperse the radiation for spectral discrimination.</p>
-</li>
-<li><p><strong>Spectroradiometer</strong>—A radiometer that measures the intensity of radiation in multiple wavelength bands (i.e., multispectral). Many times the bands are of high-spectral resolution, designed for remotely sensing specific geophysical parameters</p>
-</li>
-<li><p><strong>Hyperspectral radiometer</strong>—An advanced multispectral sensor that detects hundreds of very narrow spectral bands throughout the visible, near-infrared, and mid-infrared portions of the electromagnetic spectrum. This sensor’s very high spectral resolution facilitates fine discrimination between different targets based on their spectral response in each of the narrow bands.</p>
-</li>
-<li><p><strong>Sounder</strong>—An instrument that measures vertical distributions of atmospheric parameters such as temperature, pressure, and composition from multispectral information.</p>
-</li>
+<li><strong>Accelerometer</strong>—An instrument that measures acceleration (change in velocity per unit time). There are two general types of accelerometers. One measures translational accelerations (changes in linear motions in one or more dimensions), and the other measures angular accelerations (changes in rotation rate per unit time).</li>
+<li><strong>Radiometer</strong>—An instrument that quantitatively measures the intensity of electromagnetic radiation in some bands within the spectrum. Usually, a radiometer is further identified by the portion of the spectrum it covers; for example, visible, infrared, or microwave.</li>
+<li><strong>Imaging radiometer</strong>—A radiometer that has a scanning capability to provide a two-dimensional array of pixels from which an image may be produced. Scanning can be performed mechanically or electronically by using an array of detectors.</li>
+<li><strong>Spectrometer</strong>—A device that is designed to detect, measure, and analyze the spectral content of incident electromagnetic radiation. Conventional imaging spectrometers use gratings or prisms to disperse the radiation for spectral discrimination.</li>
+<li><strong>Spectroradiometer</strong>—A radiometer that measures the intensity of radiation in multiple wavelength bands (i.e., multispectral). Many times the bands are of high-spectral resolution, designed for remotely sensing specific geophysical parameters</li>
+<li><strong>Hyperspectral radiometer</strong>—An advanced multispectral sensor that detects hundreds of very narrow spectral bands throughout the visible, near-infrared, and mid-infrared portions of the electromagnetic spectrum. This sensor’s very high spectral resolution facilitates fine discrimination between different targets based on their spectral response in each of the narrow bands.</li>
+<li><strong>Sounder</strong>—An instrument that measures vertical distributions of atmospheric parameters such as temperature, pressure, and composition from multispectral information.</li>
 </ul>
 <p>The following table lists and describes many of the passive sensors whose data are supported by <strong>EOSDIS</strong>. Some of these sensors may overlap categories.</p>
 <table>
@@ -1492,18 +1475,12 @@
 </tbody></table>
 <h3 id="Active-sensors"><a href="#Active-sensors" class="headerlink" title="Active sensors"></a>Active sensors</h3><p>The majority of active sensors operate in the microwave portion of the electromagnetic spectrum, which makes them able to penetrate the atmosphere under most conditions. An active technique views the target from either end of a baseline of known length. The change in apparent view direction (parallax) is related to the absolute distance between the instrument and target.</p>
 <ul>
-<li><p>Radar—An active radio detection and ranging sensor that provides its own source of electromagnetic energy. An active radar sensor, whether airborne or spaceborne, emits microwave radiation in a series of pulses from an antenna. When the energy reaches the target, some of the energy is reflected back toward the sensor. This backscattered microwave radiation is detected, measured, and timed. The time required for the energy to travel to the target and return back to the sensor determines the distance or range to the target. By recording the range and magnitude of the energy reflected from all targets as the system passes by, a two-dimensional image of the surface can be produced.</p>
-</li>
-<li><p>Ranging Instrument—A device that measures the distance between the instrument and a target object. Radars and altimeters work by determining the time a transmitted pulse (microwaves or light) takes to reflect from a target and return to the instrument. Another technique employs identical microwave instruments on a pair of platforms. Signals are transmitted from each instrument to the other, with the distance between the two determined from the difference between the received signal phase and transmitted (reference) phase. These are examples of active techniques. An active technique views the target from either end of a baseline of known length. The change in apparent view direction (parallax) is related to the absolute distance between the instrument and target.</p>
-</li>
-<li><p>Scatterometer—A high-frequency microwave radar designed specifically to measure backscattered radiation. Over ocean surfaces, measurements of backscattered radiation in the microwave spectral region can be used to derive maps of surface wind speed and direction.</p>
-</li>
-<li><p>Lidar—A light detection and ranging sensor that uses a laser (light amplification by stimulated emission of radiation) radar to transmit a light pulse and a receiver with sensitive detectors to measure the backscattered or reflected light. Distance to the object is determined by recording the time between transmitted and backscattered pulses and by using the speed of light to calculate the distance traveled.</p>
-</li>
-<li><p>Laser altimeter—An instrument that uses a lidar to measure the height of the platform (spacecraft or aircraft) above the surface. The height of the platform with respect to the mean Earth’s surface is used to determine the topography of the underlying surface.</p>
-</li>
-<li><p>Sounder—An instrument that measures vertical distribution of precipitation and other atmospheric characteristics such as temperature, humidity, and cloud composition.</p>
-</li>
+<li>Radar—An active radio detection and ranging sensor that provides its own source of electromagnetic energy. An active radar sensor, whether airborne or spaceborne, emits microwave radiation in a series of pulses from an antenna. When the energy reaches the target, some of the energy is reflected back toward the sensor. This backscattered microwave radiation is detected, measured, and timed. The time required for the energy to travel to the target and return back to the sensor determines the distance or range to the target. By recording the range and magnitude of the energy reflected from all targets as the system passes by, a two-dimensional image of the surface can be produced.</li>
+<li>Ranging Instrument—A device that measures the distance between the instrument and a target object. Radars and altimeters work by determining the time a transmitted pulse (microwaves or light) takes to reflect from a target and return to the instrument. Another technique employs identical microwave instruments on a pair of platforms. Signals are transmitted from each instrument to the other, with the distance between the two determined from the difference between the received signal phase and transmitted (reference) phase. These are examples of active techniques. An active technique views the target from either end of a baseline of known length. The change in apparent view direction (parallax) is related to the absolute distance between the instrument and target.</li>
+<li>Scatterometer—A high-frequency microwave radar designed specifically to measure backscattered radiation. Over ocean surfaces, measurements of backscattered radiation in the microwave spectral region can be used to derive maps of surface wind speed and direction.</li>
+<li>Lidar—A light detection and ranging sensor that uses a laser (light amplification by stimulated emission of radiation) radar to transmit a light pulse and a receiver with sensitive detectors to measure the backscattered or reflected light. Distance to the object is determined by recording the time between transmitted and backscattered pulses and by using the speed of light to calculate the distance traveled.</li>
+<li>Laser altimeter—An instrument that uses a lidar to measure the height of the platform (spacecraft or aircraft) above the surface. The height of the platform with respect to the mean Earth’s surface is used to determine the topography of the underlying surface.</li>
+<li>Sounder—An instrument that measures vertical distribution of precipitation and other atmospheric characteristics such as temperature, humidity, and cloud composition.</li>
 </ul>
 <p>The following table lists and describes many of the active sensors whose data are supported by EOSDIS. Some of these sensors may overlap categories.</p>
 <table>
@@ -1596,7 +1573,7 @@
 <tr>
 <td>SAR</td>
 <td>Synthetic aperature radar</td>
-<td>ERS-1   ERS-2   JERS-1   <a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/radarsat/">RADARSAT-1</a>   PALSAR   UAVSAR</td>
+<td>ERS-1   ERS-2   JERS-1<a target="_blank" rel="noopener" href="http://science1.nasa.gov/missions/radarsat/">RADARSAT-1</a>   PALSAR   UAVSAR</td>
 <td><a target="_blank" rel="noopener" href="http://www.asf.alaska.edu/program/sdc">ASF DAAC</a>   <a target="_blank" rel="noopener" href="http://nsidc.org/daac/index.html">NSIDC DAAC</a>   <a target="_blank" rel="noopener" href="http://daac.ornl.gov/">ORNL DAAC</a></td>
 <td>Provides high-resolution surface imagery at 7 to 240 m.   Multiple polarizations are utilized by some SAR instruments.</td>
 </tr>
@@ -1651,10 +1628,8 @@
 </tr>
 </tbody></table>
 <h2 id="待了解：earthdata-nasa-gov-learn-remote-sensors"><a href="#待了解：earthdata-nasa-gov-learn-remote-sensors" class="headerlink" title="待了解：earthdata.nasa.gov/learn/remote-sensors"></a>待了解：earthdata.nasa.gov/learn/remote-sensors</h2><ul>
-<li><p>earthdata网站待了解</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#ed-passive-sensors">https://earthdata.nasa.gov/learn/remote-sensors#ed-passive-sensors</a></p>
-</li>
+<li>earthdata网站待了解</li>
+<li><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#ed-passive-sensors">https://earthdata.nasa.gov/learn/remote-sensors#ed-passive-sensors</a></li>
 </ul>
 <h3 id="Overview-1"><a href="#Overview-1" class="headerlink" title="Overview"></a>Overview</h3><p>Remote sensing instruments are of two primary types:</p>
 <ul>
@@ -1667,7 +1642,7 @@
 <h3 id="Table-sensors"><a href="#Table-sensors" class="headerlink" title="Table sensors"></a>Table sensors</h3><p>The following tables list and describe many of the active and passive sensors whose data are supported by EOSDIS.  Some of these sensors may  overlap categories. They are listed by <strong><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#current">current</a></strong>, <strong><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#future">future</a></strong>, and <strong><a target="_blank" rel="noopener" href="https://earthdata.nasa.gov/learn/remote-sensors#historic">historic</a></strong> missions.</p>
 <p>Search the remote sensors tables by clicking in the search boxes  below and entering in a keyword term, such as a DAAC (ASDC, NSIDC,  SEDAC, etc), a platform (ABoVE, CALIPSO, LIS ISS, etc), an instrument  (GRACE, MODIS, TROPOMI, etc) or science term (surface mass, snow cover,  tomography, etc). The search results will narrow down the table entries  applicable to the search keyword entered.</p>
 <h3 id="Current-Missions"><a href="#Current-Missions" class="headerlink" title="Current Missions"></a>Current Missions</h3><h3 id="Future-Missions"><a href="#Future-Missions" class="headerlink" title="Future Missions"></a>Future Missions</h3><h3 id="Historic-Missions"><a href="#Historic-Missions" class="headerlink" title="Historic Missions"></a>Historic Missions</h3><h2 id="阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和-NWP-模拟风与浮标数据的比较-2014"><a href="#阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和-NWP-模拟风与浮标数据的比较-2014" class="headerlink" title="阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和 NWP 模拟风与浮标数据的比较-2014"></a>阅读6：伊比利亚半岛沿岸再分析、分析、卫星反演和 NWP 模拟风与浮标数据的比较-2014</h2><ul>
-<li><p>英文名：Comparison of reanalyzed, analyzed, satellite- retrieved and NWP modelled winds with buoy data along the Iberian Peninsula coast  </p>
+<li><p>英文名：Comparison of reanalyzed, analyzed, satellite- retrieved and NWP modelled winds with buoy data along the Iberian Peninsula coast</p>
 </li>
 <li><p>2014</p>
 </li>
@@ -1682,7 +1657,6 @@
 <li><p>机构：CESAM, Department of Physics, <strong>University of Aveiro</strong>, Campus Universitário de Santiago, 3810-193 Aveiro, Portugal</p>
 </li>
 <li><p>创新点：</p>
-<p>* </p>
 </li>
 <li><p>good</p>
 <ul>
@@ -1710,8 +1684,8 @@
 <p><strong>Abstract</strong></p>
 <p>Offshore wind data derived from the below were compared to in situ measurements, in order to assess which one of these products is the best alternative to in situ offshore measured wind data.</p>
 <ul>
-<li>satellite measurements (CCMP, QuikSCAT, NCDC Blended Sea Winds and IFREMER Blended Wind Fields), </li>
-<li>reanalyses (NCEP-CFSR, ERA-Interim, NASA-MERRA and NCEP-RII), </li>
+<li>satellite measurements (CCMP, QuikSCAT, NCDC Blended Sea Winds and IFREMER Blended Wind Fields),</li>
+<li>reanalyses (NCEP-CFSR, ERA-Interim, NASA-MERRA and NCEP-RII),</li>
 <li>analyses (NCEP-FNL and NCEP-GFS),</li>
 <li>WRF modelled</li>
 </ul>
@@ -1719,12 +1693,12 @@
 <blockquote>
 <p><code>↑ 四种数据：卫星、再分析、分析、WRF model，good</code></p>
 </blockquote>
-<p>Results show that </p>
+<p>Results show that</p>
 <ul>
-<li><p><strong>WRF modelled offshore winds</strong> are <strong>the best alternative</strong> to in situ measured offshore wind data, showing the highest temporal accuracy (the ability in representing the wind speed and direction at a given time instant) and lowest errors in terms of offshore wind power flux estimations. </p>
+<li><p><strong>WRF modelled offshore winds</strong> are <strong>the best alternative</strong> to in situ measured offshore wind data, showing the highest temporal accuracy (the ability in representing the wind speed and direction at a given time instant) and lowest errors in terms of offshore wind power flux estimations.</p>
 </li>
-<li><p>However, offshore wind data taken from CCMP shows the lowest errors in terms of the mean wind speeds and, together with IFREMER-BWF, the best wind temporal accuracy after WRF simulation. </p>
-<p>Therefore, in general <strong>CCMP and IFREMER-BWF can be considered as the best alternatives to WRF</strong> high resolution modelled offshore winds, if the latter is not available. </p>
+<li><p>However, offshore wind data taken from CCMP shows the lowest errors in terms of the mean wind speeds and, together with IFREMER-BWF, the best wind temporal accuracy after WRF simulation.</p>
+<p>Therefore, in general <strong>CCMP and IFREMER-BWF can be considered as the best alternatives to WRF</strong> high resolution modelled offshore winds, if the latter is not available.</p>
 </li>
 <li><p>Specifically for offshore wind energy resource assessment, NCEP-CFSR reanalysis or NCEP-GFS analysis data can also be used with confidence as an alternative to WRF modelled data, showing better wind power flux estimates than CCMP and IFREMER-BWF.</p>
 </li>
@@ -1743,14 +1717,14 @@
 <p><strong>4 Conclusions</strong></p>
 <p>This study evaluates and compares offshore wind data derived from satellites (Cross-Calibrated Multi-Platform ocean wind vectors, QuikSCAT scaterometter, NCDC Blended Sea Winds and IFREMER Blended Wind Fields), reanalyses (NCEP-CFSR, ERA-Interim, NASA-MERRA and NCEP-RII), analyses (NCEP-FNL and NCEP-GFS) and WRF modelled offshore winds, aiming to determine which one of these databases offers the offshore wind data closest to measurements collected by buoys moored offshore the Iberian Peninsula Atlantic coast. The findings presented here can be of great value for climate, oceanic, meteorological and offshore wind energy resource assessment applications that focus on ocean areas where in situ measured wind data is either not available or is insufficient and, therefore, alternative sources of offshore wind data have to be considered.</p>
 <p>The results presented in this study show that WRF offshore wind simulation is the best alternative source to in situ measured offshore wind data, showing the highest temporal accuracy (RMSE, STDE and correlation coefficients) and offshore wind power flux estimations. However, offshore wind data taken from CCMP database shows the lowest errors in terms of the mean wind speeds (biases and mean wind speed) and, together with IFREMER-BWF, a temporal accuracy similar to the WRF simulation. Therefore, in general CCMP and IFREMER-BWF can be seen as the best alternatives to WRF high resolution modelled offshore winds, if such results are unavailable. Specifically for offshore wind energy resource assessment, NCEP-CFSR reanalysis and NCEP-GFS analysis data can also be used with confidence as alternative to WRF modelled data, with better performances than CCMP and IFREMER-BWF.</p>
-<p>While WRF, QuikSCAT, NCDC-BWF, IFREMER-BWF, ERA-Interim, NCEP-RII and NCEP-FNL show a tendency to overestimate the wind speeds and wind power fluxes estimates, NASA-MERRA shows an opposite tendency. CCMP, NCEP-CFSR and NCEP-GFS do not seem to have any tendency to over/underestimate wind velocities and wind power fluxes estimates (except CCMP, which seems to systematically underestimate the wind power fluxes). <strong>A common feature to all databases is that all of them overestimate low wind speeds and underestimate strong winds (except QuikSCAT, which sows an overestimation tendency transversal to all wind velocities magnitudes). The best performances are usually obtained in the presence of intermediate wind speeds</strong> (4–12 m·s<sup>−1</sup> ).</p>
+<p>While WRF, QuikSCAT, NCDC-BWF, IFREMER-BWF, ERA-Interim, NCEP-RII and NCEP-FNL show a tendency to overestimate the wind speeds and wind power fluxes estimates, NASA-MERRA shows an opposite tendency. CCMP, NCEP-CFSR and NCEP-GFS do not seem to have any tendency to over/underestimate wind velocities and wind power fluxes estimates (except CCMP, which seems to systematically underestimate the wind power fluxes). <strong>A common feature to all databases is that all of them overestimate low wind speeds and underestimate strong winds (except QuikSCAT, which sows an overestimation tendency transversal to all wind velocities magnitudes). The best performances are usually obtained in the presence of intermediate wind speeds</strong> (4–12 m·s<code>&lt;sup&gt;</code>−1<code>&lt;/sup&gt;</code> ).</p>
 <blockquote>
 <p><code>↑ 所有数据库的一个共同特点是，它们都高估了低风速而低估了强风</code></p>
 </blockquote>
-<p>Spatial resolution seems to have an important impact on the databases accuracy. </p>
+<p>Spatial resolution seems to have an important impact on the databases accuracy.</p>
 <ul>
-<li>The ones with finer spatial resolution are typically the ones with the best results (with some exceptions such as NASA-MERRA and NCDC-BSW). Since the in situ data here used is <strong>strongly influenced by the neighbouring topography, terrain characteristics and land-sea discontinuities</strong>, products with finer spatial resolutions are more likely to attain better performances. </li>
-<li>Although satellite-derived winds have finer spatial resolutions when compared to reanalysis and analysis products, <strong>they suffer from land masking issues</strong> that limit their accuracy in retrieving coastal winds. </li>
+<li>The ones with finer spatial resolution are typically the ones with the best results (with some exceptions such as NASA-MERRA and NCDC-BSW). Since the in situ data here used is <strong>strongly influenced by the neighbouring topography, terrain characteristics and land-sea discontinuities</strong>, products with finer spatial resolutions are more likely to attain better performances.</li>
+<li>Although satellite-derived winds have finer spatial resolutions when compared to reanalysis and analysis products, <strong>they suffer from land masking issues</strong> that limit their accuracy in retrieving coastal winds.</li>
 </ul>
 <blockquote>
 <p><code>↑ 空间分辨率对结果的影响</code></p>
@@ -1765,7 +1739,7 @@
 <p><code>↑ 本研究中提供的结论和结果可以放心地考虑到其他地区，特别是沿海地区</code></p>
 </blockquote>
 <p><strong>1 Introduction</strong></p>
-<p>Climatic, atmospheric and oceanic modelling applications require accurate oceanic surface wind data to, realistically, represent the oceanic forcing fields and interactions between air and sea. Moreover, data regarding ocean winds is very valuable in the context of offshore wind energy, which is expected to constitute a significant part of the future wind-derived energy as a whole (Carvalho, Rocha, Gómez-Gesteira, &amp; Santos, 2012; Carvalho, Rocha, Santos, &amp; Pereira, 2013). </p>
+<p>Climatic, atmospheric and oceanic modelling applications require accurate oceanic surface wind data to, realistically, represent the oceanic forcing fields and interactions between air and sea. Moreover, data regarding ocean winds is very valuable in the context of offshore wind energy, which is expected to constitute a significant part of the future wind-derived energy as a whole (Carvalho, Rocha, Gómez-Gesteira, &amp; Santos, 2012; Carvalho, Rocha, Santos, &amp; Pereira, 2013).</p>
 <blockquote>
 <p><code>↑ 洋面风的价值：建模、风能</code></p>
 </blockquote>
@@ -1773,17 +1747,17 @@
 <blockquote>
 <p><code>↑ 海洋区域严重缺乏测风数据：高成本和技术挑战</code></p>
 </blockquote>
-<p>Thus, it becomes paramount to search and validate alternative data sources to in situ measured wind data over ocean areas. These alternative sources of offshore wind data consist, basically, in <strong>satellite-derived measurements</strong>, <strong>data simulated by numerical weather prediction (NWP) models</strong> and <strong>products that combine observed and NWP simulated data (mainly reanalysis and analysis datasets)</strong>. </p>
+<p>Thus, it becomes paramount to search and validate alternative data sources to in situ measured wind data over ocean areas. These alternative sources of offshore wind data consist, basically, in <strong>satellite-derived measurements</strong>, <strong>data simulated by numerical weather prediction (NWP) models</strong> and <strong>products that combine observed and NWP simulated data (mainly reanalysis and analysis datasets)</strong>.</p>
 <blockquote>
 <p><code>↑ 四种数据：卫星、再分析、分析、WRF model，good</code></p>
 </blockquote>
 <ul>
-<li><p>While satellite-derived wind data is available at a near-global scale and in a time-continuous way, they are <strong>indirect measurements</strong> (that is, they are derived from other measurements and processed using complex geophysical models) and often <strong>suffer from low spatial and/or temporal resolutions, together with large missing/erroneous data gaps (data records affected by rain, malfunction of instruments, etc.)</strong>. </p>
+<li><p>While satellite-derived wind data is available at a near-global scale and in a time-continuous way, they are <strong>indirect measurements</strong> (that is, they are derived from other measurements and processed using complex geophysical models) and often <strong>suffer from low spatial and/or temporal resolutions, together with large missing/erroneous data gaps (data records affected by rain, malfunction of instruments, etc.)</strong>.</p>
 <blockquote>
 <p><code>↑ 卫星数据的缺点：间接测量+受到低分辨率的影响+数据缺失问题</code></p>
 </blockquote>
 </li>
-<li><p>NWP models, in particular regional circulation models (RCMs, also known as <strong>mesoscale models</strong>), are able to produce meteorological data at high spatial and temporal resolutions for any area of the globe, and in a relatively fast way (depending on the available computational resources, NWP model configuration, desired resolutions and spatial/time coverage). In the recent past, <strong>NWP modelling has found a number of applications focused on deriving wind information to study meteorological and climatic events, drive oceanic models and in the preliminary search and identification of potential sites for wind energy exploitation</strong>. However, NWP modelled wind data usually shows <strong>non-negligible deviations</strong> when compared to observed data, mainly due to their <strong>inability in accurately resolving medium- to small scale meteorological processes</strong> (Carvalho, Rocha, Gómez-Gesteira, &amp; Silva Santos, 2014). </p>
+<li><p>NWP models, in particular regional circulation models (RCMs, also known as <strong>mesoscale models</strong>), are able to produce meteorological data at high spatial and temporal resolutions for any area of the globe, and in a relatively fast way (depending on the available computational resources, NWP model configuration, desired resolutions and spatial/time coverage). In the recent past, <strong>NWP modelling has found a number of applications focused on deriving wind information to study meteorological and climatic events, drive oceanic models and in the preliminary search and identification of potential sites for wind energy exploitation</strong>. However, NWP modelled wind data usually shows <strong>non-negligible deviations</strong> when compared to observed data, mainly due to their <strong>inability in accurately resolving medium- to small scale meteorological processes</strong> (Carvalho, Rocha, Gómez-Gesteira, &amp; Silva Santos, 2014).</p>
 <blockquote>
 <p><code>↑ NWP 研究气象和气候事件、驱动海洋模型以及初步搜索和确定风能开发的潜在地点</code></p>
 </blockquote>
@@ -1791,44 +1765,40 @@
 <li><p>Reanalysis and analysis products combine data simulated by global circulation models (GCMs) with large amounts of meteorological measurements, providing a complete and homogeneous synthesis of the available global observations assimilated into a continuous and coherent physical structure (Trenberth et al., 2010). However, these kinds of products are usually available <strong>at low spatial resolutions (250 to 50 km)</strong>, insufficient to accurately characterize local wind regimes and adequately represent medium and small scale meteorological features.</p>
 </li>
 </ul>
-<p>The aim of this study is to evaluate and compare several alternative sources of offshore wind data with in situ ocean surface wind measurements, with the main objective of determining which of these alternative offshore wind sources best describe the local wind regimes at the selected buoy locations and, thus, can be considered as the best alternative to in situ measured offshore wind data. For this, one complete year of satellite-derived wind data, NWP modeled and reanalysis/analysis products are compared with in situ offshore wind measurements collected by five buoys moored offshore the Iberian Peninsula Atlantic coast (Gulf of Cádiz, West and North Galician coast). </p>
+<p>The aim of this study is to evaluate and compare several alternative sources of offshore wind data with in situ ocean surface wind measurements, with the main objective of determining which of these alternative offshore wind sources best describe the local wind regimes at the selected buoy locations and, thus, can be considered as the best alternative to in situ measured offshore wind data. For this, one complete year of satellite-derived wind data, NWP modeled and reanalysis/analysis products are compared with in situ offshore wind measurements collected by five buoys moored offshore the Iberian Peninsula Atlantic coast (Gulf of Cádiz, West and North Galician coast).</p>
 <ul>
-<li>The NWP chosen to run the offshore wind simulation for the area under study is <strong>the Weather Research and Forecasting (WRF) mesoscale model</strong>. </li>
-<li>The sources of satellite-derived offshore wind data used in this study are: NASA’s SeaWinds scatterometer installed onboard the QuikSCAT satellite platform (henceforth referred to as QuikSCAT); the National Climatic Data Center Blended Sea Winds (NCDC-BSW); the French Research Institute for Exploitation of the Sea Blended Wind Fields (IFREMER-BWF); and the Cross-Calibrated Multi-Platform Ocean Surface Wind Vectors (CCMP). </li>
-<li>The reanalyses and analyses considered in this study are: the National Centres for Environmental Prediction Reanalysis 2 (NCEP-R2); the European Centre for Medium-Range Weather Forecasts (ECMWF) Interim reanalysis (ERA-Interim); the National Centre for Environmental Prediction Climate Forecast System Reanalysis (NCEP-CFSR); NASA’s Modern Era Retrospective Analysis for Research and Applications (NASA-MERRA); the National Centre for Environmental Prediction Global Forecast System (NCEP-GFS) and the National Centre for Environmental Prediction Final Analysis (NCEP-FNL). </li>
+<li>The NWP chosen to run the offshore wind simulation for the area under study is <strong>the Weather Research and Forecasting (WRF) mesoscale model</strong>.</li>
+<li>The sources of satellite-derived offshore wind data used in this study are: NASA’s SeaWinds scatterometer installed onboard the QuikSCAT satellite platform (henceforth referred to as QuikSCAT); the National Climatic Data Center Blended Sea Winds (NCDC-BSW); the French Research Institute for Exploitation of the Sea Blended Wind Fields (IFREMER-BWF); and the Cross-Calibrated Multi-Platform Ocean Surface Wind Vectors (CCMP).</li>
+<li>The reanalyses and analyses considered in this study are: the National Centres for Environmental Prediction Reanalysis 2 (NCEP-R2); the European Centre for Medium-Range Weather Forecasts (ECMWF) Interim reanalysis (ERA-Interim); the National Centre for Environmental Prediction Climate Forecast System Reanalysis (NCEP-CFSR); NASA’s Modern Era Retrospective Analysis for Research and Applications (NASA-MERRA); the National Centre for Environmental Prediction Global Forecast System (NCEP-GFS) and the National Centre for Environmental Prediction Final Analysis (NCEP-FNL).</li>
 </ul>
 <p>The main characteristics of all these sources of offshore wind data are presented in <strong>Table 1</strong>, and in Sections 2.1, 2.2 and 2.3 additional information about these datasets are presented.</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220305214507.png"></p>
-<p>The published literature includes several studies that </p>
+<p>The published literature includes several studies that</p>
 <ul>
-<li><p>compare NWP offshore wind simulations with observations (eg.: Berge, Byrkjedal, Ydersbond, &amp; Kindler, 2009; Carvalho, Rocha, &amp; Gómez-Gesteira, 2012; Carvalho, Rocha, Gómez-Gesteira, &amp; Silva Santos, in press-a,b; Jiménez, Durante, Lange, Kreutzer, &amp; Tambke, 2007; Ohsawa et al., 2007; Shimada &amp; Ohsawa, 2011; Shimada, Ohsawa, &amp; Yatsu, 2009), </p>
-</li>
-<li><p>or that compare satellite-derived offshore winds with buoy measurements (eg.: Ebuchi, Graber, &amp; Caruso, 2002; Moore, Pickart, &amp; Renfrew, 2008; Pensieri, Bozzano, &amp; Schiano, 2010; Pickett, Tang, Rosenfeld, &amp; Wash, 2003; Sánchez et al., 2007; Satheesan, Sarkar, Parekh, Ramesh Kumar, &amp; Kuroda, 2007; Tang, Liu, &amp; Stiles, 2004). </p>
-</li>
-<li><p>Also studies that compare satellite-derived, reanalyses, and/or blended satellite-derived offshore winds with measurements are available (eg.: Kent, Fangohr, &amp; Berry, 2013; Li et al., 2013; Ruti, Marullo, D’Ortenzio, &amp; Tremant, 2008), </p>
-</li>
-<li><p>as well as studies that focus on the comparison of NWP and satellitederived offshore winds with observations (eg.: Accadia, Zecchetto, Lavagnini, &amp; Speranza, 2007; Karagali et al., 2013; Wallcraft et al., 2009). </p>
-</li>
+<li>compare NWP offshore wind simulations with observations (eg.: Berge, Byrkjedal, Ydersbond, &amp; Kindler, 2009; Carvalho, Rocha, &amp; Gómez-Gesteira, 2012; Carvalho, Rocha, Gómez-Gesteira, &amp; Silva Santos, in press-a,b; Jiménez, Durante, Lange, Kreutzer, &amp; Tambke, 2007; Ohsawa et al., 2007; Shimada &amp; Ohsawa, 2011; Shimada, Ohsawa, &amp; Yatsu, 2009),</li>
+<li>or that compare satellite-derived offshore winds with buoy measurements (eg.: Ebuchi, Graber, &amp; Caruso, 2002; Moore, Pickart, &amp; Renfrew, 2008; Pensieri, Bozzano, &amp; Schiano, 2010; Pickett, Tang, Rosenfeld, &amp; Wash, 2003; Sánchez et al., 2007; Satheesan, Sarkar, Parekh, Ramesh Kumar, &amp; Kuroda, 2007; Tang, Liu, &amp; Stiles, 2004).</li>
+<li>Also studies that compare satellite-derived, reanalyses, and/or blended satellite-derived offshore winds with measurements are available (eg.: Kent, Fangohr, &amp; Berry, 2013; Li et al., 2013; Ruti, Marullo, D’Ortenzio, &amp; Tremant, 2008),</li>
+<li>as well as studies that focus on the comparison of NWP and satellitederived offshore winds with observations (eg.: Accadia, Zecchetto, Lavagnini, &amp; Speranza, 2007; Karagali et al., 2013; Wallcraft et al., 2009).</li>
 </ul>
-<p>From these studies there are evidences that products that combine satellite and NWP data, and in particular CCMP, can offer improvements when compared to individual satellite records. </p>
+<p>From these studies there are evidences that products that combine satellite and NWP data, and in particular CCMP, can offer improvements when compared to individual satellite records.</p>
 <blockquote>
 <p><code>↑ </code></p>
 </blockquote>
-<p>However, satellite-derived records are usually more accurate than reanalyses/analyses. </p>
+<p>However, satellite-derived records are usually more accurate than reanalyses/analyses.</p>
 <blockquote>
 <p><code>↑</code></p>
 </blockquote>
-<p>Furthermore, NWP-derived data, in particular the ones obtained with mesoscale NWP models, seems to show better performance in terms of wind variability but higher biases when compared to satellitederived winds. </p>
+<p>Furthermore, NWP-derived data, in particular the ones obtained with mesoscale NWP models, seems to show better performance in terms of wind variability but higher biases when compared to satellitederived winds.</p>
 <blockquote>
 <p><code>↑</code></p>
 </blockquote>
-<p>In particular for the area here under study, the following studies should be highlighted: </p>
+<p>In particular for the area here under study, the following studies should be highlighted:</p>
 <ul>
-<li>Penabad et al. (2008) compared 4 years (2002–2005) of QuikSCAT and two NWP (MM5 and ARPS) modelled winds with measured wind data collected offshore the Galician Coast, concluding that no significant differences between models and satellite data were found. </li>
-<li>Otero and Ruiz-Vilarreal (2008) evaluated the reliability of different meteorological models through the comparison with observed winds around the north-west and north Iberia during autumn 2002 showing significant differences among modeled wind data products. </li>
-<li>Carvalho, Rocha, Gómez-Gesteira, Alvarez, and Silva Santos (2013) compared 3 different QuikSCAT products (gridded L3 and swath L2B with 25 and 12.5 km) and CCMP with measured winds collected in the same buoys considered in this study, for the same time period (2008), concluding that the high resolution QuikSCAT L2B product showed the best results for the wind speed variability and wind direction means, while CCMP showed the best results for wind speed means and wind direction variability. </li>
-<li>Alvarez, Gomez-Gesteira, deCastro, and Carvalho (2013) compared 10 years (2000–2009) of wind data from six databases (NCEP-R2, ERA-Interim, NASA-MERRA, NCEP-CFSR, QuikSCAT and CCMP) with wind measurements collected by four buoys moored in the southern limit of the Bay of Biscay, concluding that the wind products with finer spatial resolution provide the best results, especially in nearshore areas. </li>
-<li>Sousa, Alvarez, Vaz, Gomez-Gesteira, and Dias (2013) evaluated 1 year of QuikSCAT and WRF modelled winds with in situ measurements collected by three buoys moored offshore the Galician coast, reporting that the wind speeds derived from QuikSCAT and WRF do not show significant differences along the coast. </li>
+<li>Penabad et al. (2008) compared 4 years (2002–2005) of QuikSCAT and two NWP (MM5 and ARPS) modelled winds with measured wind data collected offshore the Galician Coast, concluding that no significant differences between models and satellite data were found.</li>
+<li>Otero and Ruiz-Vilarreal (2008) evaluated the reliability of different meteorological models through the comparison with observed winds around the north-west and north Iberia during autumn 2002 showing significant differences among modeled wind data products.</li>
+<li>Carvalho, Rocha, Gómez-Gesteira, Alvarez, and Silva Santos (2013) compared 3 different QuikSCAT products (gridded L3 and swath L2B with 25 and 12.5 km) and CCMP with measured winds collected in the same buoys considered in this study, for the same time period (2008), concluding that the high resolution QuikSCAT L2B product showed the best results for the wind speed variability and wind direction means, while CCMP showed the best results for wind speed means and wind direction variability.</li>
+<li>Alvarez, Gomez-Gesteira, deCastro, and Carvalho (2013) compared 10 years (2000–2009) of wind data from six databases (NCEP-R2, ERA-Interim, NASA-MERRA, NCEP-CFSR, QuikSCAT and CCMP) with wind measurements collected by four buoys moored in the southern limit of the Bay of Biscay, concluding that the wind products with finer spatial resolution provide the best results, especially in nearshore areas.</li>
+<li>Sousa, Alvarez, Vaz, Gomez-Gesteira, and Dias (2013) evaluated 1 year of QuikSCAT and WRF modelled winds with in situ measurements collected by three buoys moored offshore the Galician coast, reporting that the wind speeds derived from QuikSCAT and WRF do not show significant differences along the coast.</li>
 </ul>
 <p>Despite all of this research, no study was found that makes a joint comparison of all these sources of offshore wind data, objectively assessing through an integrated comparison which one of these products is the best alternative to in situ offshore wind measurements, nor for the area here under study nor for any other areas of the globe. Such findings can be of great value for areas where no in situ offshore measured data are available (or the available data is insufficient and/or inadequate for the desired purposes) and, therefore, valid alternatives have to be found. This is the case for the area under study, since the Iberian Peninsula is presently one of the areas with the highest percentage of installed onshore wind power per capita worldwide due to its attractive wind conditions. This asset, combined with its large coastal line, makes this area a promising one for future installation of offshore wind farms.</p>
 <blockquote>
@@ -1882,7 +1852,7 @@
 <p>全球 10km，区域 5km，时间 3小时；</p>
 <p>模式三角形网格，反插值成正常网格；</p>
 <p>分辨率 12.5 km，</p>
-<p> <strong>方法是软东西，产品是真东西</strong>（）</p>
+<p><strong>方法是软东西，产品是真东西</strong>（）</p>
 <p>指标要求：三角形网格，平均 10km，3 小时</p>
 </li>
 <li><p>补充资料1.docx</p>
@@ -1993,7 +1963,7 @@
 <li>最后简述国内星载散射计神州 4 号(SZ-4)散射计(CN/SCAT)和海洋卫星 2 (HY-2)号散射计的特点及研究现状。</li>
 </ul>
 <p><strong>2 散射计探测原理</strong></p>
-<p><strong>3 散射计观测计划</strong> </p>
+<p><strong>3 散射计观测计划</strong></p>
 <ul>
 <li><p>散射计<strong>扫描方式</strong></p>
 <p>笔形波束散射计相较于扇形波束散射计的优势</p>
@@ -2005,22 +1975,20 @@
 <li><p>现役 Seawinds 和 ASCAT 散射计的<strong>技术参数</strong>以供参考</p>
 </li>
 </ul>
-<p><strong>4 散射计应用研究</strong> </p>
+<p><strong>4 散射计应用研究</strong></p>
 <ul>
 <li><strong>海面风场应用</strong></li>
 <li><strong>海冰制图与监测</strong></li>
-<li><strong>陆面应用研究</strong> </li>
+<li><strong>陆面应用研究</strong></li>
 </ul>
-<p><strong>5 散射计研究发展趋势</strong> </p>
+<p><strong>5 散射计研究发展趋势</strong></p>
 <ul>
 <li><strong>美国全国研究理事会(NRC)<strong>制定了空间技术应用于地球科学的十年规划，其中，</strong>对散射计未来的发展提出三个计划</strong></li>
 </ul>
 <p><strong>6</strong> <strong>国内散射计研究现状</strong></p>
 <ul>
-<li><p>**我国第一个多模态微波遥感器(M3RS)**于 2002 年 12 月，由 sz-4 送入太空</p>
-</li>
-<li><p>HY-2 散射计性能技术参数</p>
-</li>
+<li>**我国第一个多模态微波遥感器(M3RS)**于 2002 年 12 月，由 sz-4 送入太空</li>
+<li>HY-2 散射计性能技术参数</li>
 </ul>
 <h2 id="阅读8：卫星高度计及其应用-1989"><a href="#阅读8：卫星高度计及其应用-1989" class="headerlink" title="阅读8：卫星高度计及其应用-1989"></a>阅读8：卫星高度计及其应用-1989</h2><p><strong>一、星载高度计-ATL</strong></p>
 <p><strong>二、海面高度测量</strong></p>
@@ -2030,14 +1998,10 @@
 </ul>
 <h2 id="阅读9：多源卫星高度计新融合产品的研发与评估-2020"><a href="#阅读9：多源卫星高度计新融合产品的研发与评估-2020" class="headerlink" title="阅读9：多源卫星高度计新融合产品的研发与评估-2020"></a>阅读9：多源卫星高度计新融合产品的研发与评估-2020</h2><p><strong>摘要</strong></p>
 <ul>
-<li><p><strong>当前在轨运行的高度计卫星已达5颗(Sentinel-3A、Jason-3、Cryosat-2、Saral/AltiKa以及HY-2A)</strong>, 观测精度不断提高, 但卫星高度计融合产品的有效分辨率(可分辨海面涡旋的最小尺度)仍需进一步提升. </p>
-</li>
-<li><p>本研究以变分原理为基础, 改进背景场、背景误差协方差矩阵以及观测误差, 建立一种<strong>新的多源卫星高度计资料融合方法</strong>. </p>
-</li>
-<li><p>以南海及其附近海域为目标区域, 在格距为0.08°的规则网格上, 融合所有在轨运行的5颗卫星高度计的沿轨数据, 得到<strong>逐日融合产品</strong>. </p>
-</li>
-<li><p>评估分析表明: 新方法得到的融合产品的有效分辨率达到125 km左右, 与国际上广泛应用的<strong>AVISO产品</strong>相比(格距0.25°, 有效分辨率240 km), 有效分辨率提高近一倍, 融合产品的精度进一步提高, 可用于描述更小尺度的海洋环流结构.</p>
-</li>
+<li><strong>当前在轨运行的高度计卫星已达5颗(Sentinel-3A、Jason-3、Cryosat-2、Saral/AltiKa以及HY-2A)</strong>, 观测精度不断提高, 但卫星高度计融合产品的有效分辨率(可分辨海面涡旋的最小尺度)仍需进一步提升.</li>
+<li>本研究以变分原理为基础, 改进背景场、背景误差协方差矩阵以及观测误差, 建立一种<strong>新的多源卫星高度计资料融合方法</strong>.</li>
+<li>以南海及其附近海域为目标区域, 在格距为0.08°的规则网格上, 融合所有在轨运行的5颗卫星高度计的沿轨数据, 得到<strong>逐日融合产品</strong>.</li>
+<li>评估分析表明: 新方法得到的融合产品的有效分辨率达到125 km左右, 与国际上广泛应用的<strong>AVISO产品</strong>相比(格距0.25°, 有效分辨率240 km), 有效分辨率提高近一倍, 融合产品的精度进一步提高, 可用于描述更小尺度的海洋环流结构.</li>
 </ul>
 <p><strong>引言</strong></p>
 <ul>
@@ -2292,20 +2256,13 @@
 </ul>
 <h2 id="2022-03-10-wjc老师反馈-2"><a href="#2022-03-10-wjc老师反馈-2" class="headerlink" title="2022-03-10 wjc老师反馈"></a>2022-03-10 wjc老师反馈</h2><p>晚上</p>
 <ul>
-<li><p>二位海浪谱一般表现为频率-方向谱的矩阵，分水岭将矩阵处理为图像，进而将图像当作大地测量学的…，集水盆，…</p>
-</li>
-<li><p>海浪谱分割，…</p>
-</li>
-<li><p>CAFSTO，波谱仪，海浪谱，分水岭，分割，。hjshshjdhjssakdsadsaui，skdjskjksdjasjkdssjdskdksadsadkjdsakjdskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkssssssssssssssssssskkkkkkkkkkkkkkksallllllllllsdjsak., sd sd sss sdsd sdhg jhsds shd</p>
-</li>
-<li><p>集合最优插值，输入：集合数、误差分布规律、标准化的海浪预测数据、模式背景场，</p>
-</li>
-<li><p>沿轨的~~</p>
-</li>
-<li><p>jkdsjd~~</p>
-</li>
-<li><p>顶不住了，12点回了宿舍，老师~~</p>
-</li>
+<li>二位海浪谱一般表现为频率-方向谱的矩阵，分水岭将矩阵处理为图像，进而将图像当作大地测量学的…，集水盆，…</li>
+<li>海浪谱分割，…</li>
+<li>CAFSTO，波谱仪，海浪谱，分水岭，分割，。hjshshjdhjssakdsadsaui，skdjskjksdjasjkdssjdskdksadsadkjdsakjdskkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkssssssssssssssssssskkkkkkkkkkkkkkksallllllllllsdjsak., sd sd sss sdsd sdhg jhsds shd</li>
+<li>集合最优插值，输入：集合数、误差分布规律、标准化的海浪预测数据、模式背景场，</li>
+<li>沿轨的~~</li>
+<li>jkdsjd~~</li>
+<li>顶不住了，12点回了宿舍，老师~~</li>
 </ul>
 
                 
@@ -2840,7 +2797,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

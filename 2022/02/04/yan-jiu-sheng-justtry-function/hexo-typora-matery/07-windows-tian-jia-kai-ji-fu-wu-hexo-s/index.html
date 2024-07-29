@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    417
+                    424
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="07-windows添加开机服务hexo-s"><a href="#07-windows添加开机服务hexo-s" class="headerlink" title="07-windows添加开机服务hexo s"></a><center>07-windows添加开机服务hexo s</center></h1><h2 id="————————–"><a href="#————————–" class="headerlink" title="————————–"></a>————————–</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/circle_do/article/details/84861028">https://blog.csdn.net/circle_do/article/details/84861028</a></p>
+                <h1 id="lt-center-gt-07-windows添加开机服务hexo-s-lt-center-gt"><a href="#lt-center-gt-07-windows添加开机服务hexo-s-lt-center-gt" class="headerlink" title="<center>07-windows添加开机服务hexo s</center>"></a><code>&lt;center&gt;</code>07-windows添加开机服务hexo s<code>&lt;/center&gt;</code></h1><h2 id="————————–"><a href="#————————–" class="headerlink" title="————————–"></a>————————–</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/circle_do/article/details/84861028">https://blog.csdn.net/circle_do/article/details/84861028</a></p>
 <blockquote>
 <p>Windows10系统设置定时任务 开机启动.bat文件</p>
 </blockquote>
@@ -417,12 +417,12 @@
 <blockquote>
 <p>解决 CMD 命令行中文件路径有空格</p>
 </blockquote>
-<h2 id="windows开机执行-hexo-s-（-bat文件方法）"><a href="#windows开机执行-hexo-s-（-bat文件方法）" class="headerlink" title="windows开机执行 hexo s （.bat文件方法）"></a>windows开机执行 hexo s （.bat文件方法）</h2><h3 id="1-确定git-bash-exe位置："><a href="#1-确定git-bash-exe位置：" class="headerlink" title="1. 确定git-bash.exe位置："></a>1. 确定<code>git-bash.exe</code>位置：</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220205104414.png"></p>
+<h2 id="windows开机执行-hexo-s-（-bat文件方法）"><a href="#windows开机执行-hexo-s-（-bat文件方法）" class="headerlink" title="windows开机执行 hexo s （.bat文件方法）"></a>windows开机执行 hexo s （.bat文件方法）</h2><h3 id="1-确定-git-bash-exe位置："><a href="#1-确定-git-bash-exe位置：" class="headerlink" title="1. 确定 git-bash.exe位置："></a>1. 确定 <code>git-bash.exe</code>位置：</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220205104414.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220205104724.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220205104918.png"></p>
 <p>确定的位置为：D:\Program Files\Git\git-bash.exe</p>
-<h3 id="2-在hexo博客文件夹下创建hexo-s-bat文件："><a href="#2-在hexo博客文件夹下创建hexo-s-bat文件：" class="headerlink" title="2. 在hexo博客文件夹下创建hexo_s.bat文件："></a>2. 在hexo博客文件夹下创建<code>hexo_s.bat</code>文件：</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220205110804.png"></p>
-<p>在<code>hexo_s.bat</code>下输入以下命令：</p>
+<h3 id="2-在hexo博客文件夹下创建-hexo-s-bat文件："><a href="#2-在hexo博客文件夹下创建-hexo-s-bat文件：" class="headerlink" title="2. 在hexo博客文件夹下创建 hexo_s.bat文件："></a>2. 在hexo博客文件夹下创建 <code>hexo_s.bat</code>文件：</h3><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220205110804.png"></p>
+<p>在 <code>hexo_s.bat</code>下输入以下命令：</p>
 <pre class="line-numbers language-bat" data-language="bat"><code class="language-bat">start D:\"Program Files"\Git\git-bash.exe --cd=D:\Liu-Jincan.github.io -c "pwd &amp;&amp; nohup hexo s &gt; test.log 2&gt;&amp;1 &amp;"
 
 
@@ -1005,7 +1005,7 @@ pwd 和 nohup hexo s &gt; test.log 2&gt;&amp;1 &amp; 是要启动的命令<span 
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

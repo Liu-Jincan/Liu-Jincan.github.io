@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    11.3k
+                    12.5k
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021"><a href="#07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021" class="headerlink" title="07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021"></a><center>07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+                <h1 id="lt-center-gt-07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021-lt-center-gt"><a href="#lt-center-gt-07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021-lt-center-gt" class="headerlink" title="<center>07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021 </center>"></a><code>&lt;center&gt;</code>07-阅读：使用循环神经网络进行数据同化的观测误差协方差规范-2021 <code>&lt;/center&gt;</code></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li><p>英文名：<strong>Observation error covariance specification in dynamical systems for data assimilation using recurrent neural networks</strong></p>
 </li>
 <li><p>期刊：《Neural Computing and Applications》，LetPub，<a target="_blank" rel="noopener" href="https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search">https://www.letpub.com.cn/index.php?page=journalapp&amp;view=search</a></p>
@@ -415,27 +415,27 @@
 </li>
 <li><p>作者：Sibo Cheng， Mingming Qiu</p>
 </li>
-<li><p>来自于Wjc老师的分享，用于<strong>2022创新基金</strong>的思考的出发点； </p>
+<li><p>来自于Wjc老师的分享，用于<strong>2022创新基金</strong>的思考的出发点；</p>
 </li>
 <li><p><code>谷歌浏览器无法阅读的公式，火狐浏览器可以~~~😎，但是翻译质量没有谷歌翻译好┭┮﹏┭┮</code></p>
 </li>
 <li><p><code>思维流记录更好吧~</code></p>
 </li>
 </ul>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>Data assimilation techniques are widely used to predict complex dynamical systems with uncertainties, based on timeseries observation data. <strong>Error covariance matrices modeling</strong> is an important element in data assimilation algorithms which can considerably impact the forecasting accuracy. The estimation of these covariances, which usually relies on <strong>empirical assumptions</strong> and <strong>physical constraints</strong>, is often imprecise and computationally expensive, especially for systems of large dimensions. In this work, we propose a <strong>data-driven approach based on long short term memory (LSTM) recurrent neural networks (RNN)</strong> to improve both the accuracy and the efficiency of observation covariance specification in data assimilation for dynamical systems. </p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>Data assimilation techniques are widely used to predict complex dynamical systems with uncertainties, based on timeseries observation data. <strong>Error covariance matrices modeling</strong> is an important element in data assimilation algorithms which can considerably impact the forecasting accuracy. The estimation of these covariances, which usually relies on <strong>empirical assumptions</strong> and <strong>physical constraints</strong>, is often imprecise and computationally expensive, especially for systems of large dimensions. In this work, we propose a <strong>data-driven approach based on long short term memory (LSTM) recurrent neural networks (RNN)</strong> to improve both the accuracy and the efficiency of observation covariance specification in data assimilation for dynamical systems.</p>
 <blockquote>
 <ul>
 <li><code>误差协方差矩阵建模是数据同化算法中的一个重要元素，它会极大地影响预测的准确性。</code></li>
 <li><code>这些协方差的估计通常依赖于经验假设和物理约束，通常不精确且计算成本很高，尤其是对于大尺寸系统。</code></li>
 </ul>
 </blockquote>
-<p>Learning the covariance matrix from observed/simulated time-series data, the proposed approach <strong>does not require any knowledge or assumption about prior error distribution</strong>, unlike classical posterior tuning methods. </p>
+<p>Learning the covariance matrix from observed/simulated time-series data, the proposed approach <strong>does not require any knowledge or assumption about prior error distribution</strong>, unlike classical posterior tuning methods.</p>
 <blockquote>
 <ul>
 <li><code>与经典的后验调整方法不同，所提出的方法不需要任何关于先验误差分布的知识或假设。</code></li>
 </ul>
 </blockquote>
-<p>We have compared the novel approach with <strong>two state-of-the-art covariance tuning algorithms, namely DI01 and D05</strong>, first in a <strong>Lorenz dynamical system</strong> and then in a <strong>2D shallow water</strong> twin experiments framework with different covariance parameterization using ensemble assimilation. </p>
+<p>We have compared the novel approach with <strong>two state-of-the-art covariance tuning algorithms, namely DI01 and D05</strong>, first in a <strong>Lorenz dynamical system</strong> and then in a <strong>2D shallow water</strong> twin experiments framework with different covariance parameterization using ensemble assimilation.</p>
 <blockquote>
 <ul>
 <li><code>两种最先进的协方差调整算法（即 DI01 和 D05）</code></li>
@@ -452,7 +452,7 @@
 <h2 id="Acknowledgments"><a href="#Acknowledgments" class="headerlink" title="Acknowledgments"></a>Acknowledgments</h2><p>S.Cheng would like to thank Dr. D.Lucor, Dr. J-P.Argaud, Dr. B.Iooss, and Dr. A.Ponc¸ot for <strong>fruitful discussions about the error covariance computation</strong>. This research was supported by EDF R&amp;D. This research was partially funded by the Leverhulme Centre for Wildfires, Environment and Society through the Leverhulme Trust, grant number RC-2018-023.</p>
 <h2 id="Declarations-with-code"><a href="#Declarations-with-code" class="headerlink" title="Declarations (with code)"></a>Declarations (with code)</h2><p><strong>Conflict of interest statement</strong></p>
 <p>…</p>
-<p><strong>Code availability</strong> </p>
+<p><strong>Code availability</strong></p>
 <p>Code for the proposed LSTM-based covariance specification, together with DI01, D05 methods, for both Lorenz and shallow water models is available at <a target="_blank" rel="noopener" href="https://github.com/scheng1992/">https://github.com/scheng1992/</a> LSTM_Covariance.</p>
 <p><strong>Contribution statement</strong></p>
 <p>…</p>
@@ -465,11 +465,11 @@
 <li><code>什么是？：时变后验创新量</code></li>
 </ul>
 </blockquote>
-<p>In this study, we have proposed a novel machine learning approach based on LSTM neural networks to predict the $\mathbf{R}$ matrix using time series observation data as model input. Similar to the work of <strong>[23, 24]</strong>, $\mathbf{R}$ is assumed to be <strong>time-invariant, at least over a sufficiently long time period</strong>. Both the <strong>Kalman- and variational-type assimilation methods</strong> can benefit from the method proposed in this paper for improving the assimilation accuracy. The proposed data-driven approach also contributes to tackling <strong>one of the major bottlenecks of DA: it is time-consuming and computationally expensive to update covariance matrix, by mapping raw sensor observations to observation error covariance matrix</strong>. In both the Lorenz96 and the shallow water models presented in this paper, the LSTM-based approach displays significant strength, compared to classical posterior tuning methods DI01 and D05, in terms of: </p>
+<p>In this study, we have proposed a novel machine learning approach based on LSTM neural networks to predict the $\mathbf{R}$ matrix using time series observation data as model input. Similar to the work of <strong>[23, 24]</strong>, $\mathbf{R}$ is assumed to be <strong>time-invariant, at least over a sufficiently long time period</strong>. Both the <strong>Kalman- and variational-type assimilation methods</strong> can benefit from the method proposed in this paper for improving the assimilation accuracy. The proposed data-driven approach also contributes to tackling <strong>one of the major bottlenecks of DA: it is time-consuming and computationally expensive to update covariance matrix, by mapping raw sensor observations to observation error covariance matrix</strong>. In both the Lorenz96 and the shallow water models presented in this paper, the LSTM-based approach displays significant strength, compared to classical posterior tuning methods DI01 and D05, in terms of:</p>
 <ul>
-<li>(i) estimation accuracy of the observation covariance $\mathbf{R}$; </li>
-<li>(ii) reconstruction and prediction accuracy of the DA schema, using the estimated $\mathbf{R}$ matrix; </li>
-<li>(iii) computational efficiency of the online covariance estimation; </li>
+<li>(i) estimation accuracy of the observation covariance $\mathbf{R}$;</li>
+<li>(ii) reconstruction and prediction accuracy of the DA schema, using the estimated $\mathbf{R}$ matrix;</li>
+<li>(iii) computational efficiency of the online covariance estimation;</li>
 <li>(iv) flexibility of different model parameterization. It is worth mentioning that an important limitation of the proposed LSTM-based method is the specification of $\Phi_{\mathbf{R}}$ which defines the range of parameters for training.</li>
 </ul>
 <blockquote>
@@ -477,7 +477,7 @@
 <li><code>-&gt; 很强大，可以做很多这方面的工作</code></li>
 </ul>
 </blockquote>
-<p>Since we assume that the observation matrix is timeinvariant, the proposed approach could <strong>only deal with fixed sensor placement for dynamical systems</strong>, which is also the case of DI01 and D05 tuning algorithms. The possibility of time-variant sensor placement warrants further investigation. As pointed out by <strong>[55]</strong>, the DL model can be stolen or reverse engineered, by model inversion or model extraction attack. Despite the fact that all data used in the current study is generated from <strong>toy models</strong>, it is important to ensure the data privacy when applying the model to real applications. </p>
+<p>Since we assume that the observation matrix is timeinvariant, the proposed approach could <strong>only deal with fixed sensor placement for dynamical systems</strong>, which is also the case of DI01 and D05 tuning algorithms. The possibility of time-variant sensor placement warrants further investigation. As pointed out by <strong>[55]</strong>, the DL model can be stolen or reverse engineered, by model inversion or model extraction attack. Despite the fact that all data used in the current study is generated from <strong>toy models</strong>, it is important to ensure the data privacy when applying the model to real applications.</p>
 <blockquote>
 <ul>
 <li><code>限制只能在空间点上进行？：只能处理动态系统的固定传感器放置</code></li>
@@ -490,17 +490,17 @@
 <li><code>创新工作：为了减少计算成本，压缩的低维空间</code></li>
 </ul>
 </blockquote>
-<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>In order to <strong>improve the reconstruction and prediction of dynamical systems with uncertainties</strong>, <strong>data assimilation (DA) techniques</strong>, originally developed in <strong>numerical weather prediction (NWP) [1]</strong> and geosciences [2], are widely applied to industrial problems, such as hydrology [3], wildfire forecasting [4], drought monitoring[5] and nuclear engineering [6]. </p>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>In order to <strong>improve the reconstruction and prediction of dynamical systems with uncertainties</strong>, <strong>data assimilation (DA) techniques</strong>, originally developed in <strong>numerical weather prediction (NWP) [1]</strong> and geosciences [2], are widely applied to industrial problems, such as hydrology [3], wildfire forecasting [4], drought monitoring[5] and nuclear engineering [6].</p>
 <ul>
-<li><p>DA algorithms aim to find the optimal approximation (also known as the analyzed state) of the state variables (usually representing a physical field of interest, such as velocity, temperature, etc.,), relying on prior estimations and real-time observations, both assumed to be noisy. Due to the large dimension (often ranging from $10^6$ to $10^{10}$ in NWP and geoscience problems), <strong>prior errors are supposed to be Gaussian distributed</strong> for the sake of simplicity [7]. As a consequence, the prior error distribution can be perfectly characterized by the <strong>first (mean) and the second (covariance)</strong> moment. </p>
+<li><p>DA algorithms aim to find the optimal approximation (also known as the analyzed state) of the state variables (usually representing a physical field of interest, such as velocity, temperature, etc.,), relying on prior estimations and real-time observations, both assumed to be noisy. Due to the large dimension (often ranging from $10^6$ to $10^{10}$ in NWP and geoscience problems), <strong>prior errors are supposed to be Gaussian distributed</strong> for the sake of simplicity [7]. As a consequence, the prior error distribution can be perfectly characterized by the <strong>first (mean) and the second (covariance)</strong> moment.</p>
 <blockquote>
 <p><code>DA算法：改进具有不确定性的动力系统的重建和预测，依靠先前的估计和实时观察来找到状态变量，为了简单起见，先验误差应该是高斯分布的</code></p>
 </blockquote>
 </li>
-<li><p>The output of the DA algorithms is determined through some <strong>optimization function</strong> where <strong>the weight of prior simulations and observations is determined by the associated error covariance matrices, respectively named as background and observation covariances</strong>. </p>
+<li><p>The output of the DA algorithms is determined through some <strong>optimization function</strong> where <strong>the weight of prior simulations and observations is determined by the associated error covariance matrices, respectively named as background and observation covariances</strong>.</p>
 <p><code>解释了DA中误差协方差矩阵的实质：模拟和观察的权重由相关的误差协方差矩阵确定，分别称为背景和观察协方差。</code></p>
 </li>
-<li><p>These error covariance matrices thus <strong>provide crucial information</strong> in DA algorithms [8], for not only the <strong>estimation of the analyzed state but also specifying posterior error distributions</strong> [9]. </p>
+<li><p>These error covariance matrices thus <strong>provide crucial information</strong> in DA algorithms [8], for not only the <strong>estimation of the analyzed state but also specifying posterior error distributions</strong> [9].</p>
 <blockquote>
 <p><code>DA中误差协方差矩阵的意义：不仅用于估计分析状态，还用于指定后验误差分布</code></p>
 </blockquote>
@@ -511,20 +511,17 @@
 </blockquote>
 </li>
 </ul>
-<p>In statistics, the covariance matrix of a random vector is often obtained via empirical estimation where <strong>a sufficient number of simultaneous samplings</strong> is required to avoid estimation bias [12]. Moreover, when the sampling number is inferior to the problem dimension, the estimated covariance will be <strong>rank deficient</strong>. In DA problems, <strong>the high dimensionality and lack of simultaneous data (i.e., several backgrounds or observation trajectories in the same time window) represent significant obstacles of covariance computation in data assimilation</strong> [13]. </p>
+<p>In statistics, the covariance matrix of a random vector is often obtained via empirical estimation where <strong>a sufficient number of simultaneous samplings</strong> is required to avoid estimation bias [12]. Moreover, when the sampling number is inferior to the problem dimension, the estimated covariance will be <strong>rank deficient</strong>. In DA problems, <strong>the high dimensionality and lack of simultaneous data (i.e., several backgrounds or observation trajectories in the same time window) represent significant obstacles of covariance computation in data assimilation</strong> [13].</p>
 <blockquote>
 <ul>
 <li><code>DA中协方差计算的重大障碍：高维和缺乏同时数据</code></li>
 </ul>
 </blockquote>
-<p>To overcome these difficulties, we often rely on <strong>calibration (e.g., least-square) methods based on some generic correlation kernels</strong>, often with <strong>homogeneous and isotropic characteristics</strong> [14]. </p>
+<p>To overcome these difficulties, we often rely on <strong>calibration (e.g., least-square) methods based on some generic correlation kernels</strong>, often with <strong>homogeneous and isotropic characteristics</strong> [14].</p>
 <ul>
-<li><p>Balanced operators can be employed for <strong>multivariate systems</strong> [15]. </p>
-</li>
-<li><p>In terms of correlation kernels, <strong>the family of Matérn functions</strong>, including the Exponential kernel (Matérn 1/2), the Balgovind kernel (Matérn  3/2, also known as second-order auto-regressive (SOAR) function), and the Gaussian kernel (Matérn  5/2), is often prioritized for covariance computing <strong>owing to its smoothness and capability to capture spatial correlations in physical processes</strong> [10, 16, 17]. </p>
-</li>
-<li><p><strong>Other stationary covariance models</strong> involve, for instance, <strong>convolution formulation</strong> [18] or <strong>diffusion-based operators</strong> [19], both contribute to an efficient storage of the covariance matrices. However, limited by homogeneous and isotropic assumptions, it remains cumbersome to represent complex spatial correlation (often multi-dimensional and multivariate) using <strong>these one-dimensional kernels</strong>.</p>
-</li>
+<li>Balanced operators can be employed for <strong>multivariate systems</strong> [15].</li>
+<li>In terms of correlation kernels, <strong>the family of Matérn functions</strong>, including the Exponential kernel (Matérn 1/2), the Balgovind kernel (Matérn  3/2, also known as second-order auto-regressive (SOAR) function), and the Gaussian kernel (Matérn  5/2), is often prioritized for covariance computing <strong>owing to its smoothness and capability to capture spatial correlations in physical processes</strong> [10, 16, 17].</li>
+<li><strong>Other stationary covariance models</strong> involve, for instance, <strong>convolution formulation</strong> [18] or <strong>diffusion-based operators</strong> [19], both contribute to an efficient storage of the covariance matrices. However, limited by homogeneous and isotropic assumptions, it remains cumbersome to represent complex spatial correlation (often multi-dimensional and multivariate) using <strong>these one-dimensional kernels</strong>.</li>
 </ul>
 <blockquote>
 <ul>
@@ -538,11 +535,11 @@
 </ul>
 </blockquote>
 <p>The paper is organized as follows. In Section 2, we introduce the related work for error covariance specification. The problem statement and the contribution of this paper are described in Section 3. Data assimilation techniques and the ensemble methods are introduced briefly in Section 4. We then describe traditional posterior covariance tuning algorithms DI01 and D05 in Section 5. The novel LSTM-based method is introduced in Section 6, followed by the comparison in the Lorenz (Section 7) and the shallow water twin experiments (Section 8). We close the paper with a discussion in Section 9.</p>
-<h2 id="2-Related-work"><a href="#2-Related-work" class="headerlink" title="2 Related work"></a>2 Related work</h2><p>To gain a clearer insight into covariance evolution, </p>
+<h2 id="2-Related-work"><a href="#2-Related-work" class="headerlink" title="2 Related work"></a>2 Related work</h2><p>To gain a clearer insight into covariance evolution,</p>
 <ul>
-<li><p>some <strong>ensemble-based methods such as [1] (NMC) and [20] (EnKF)</strong>, have been developed to provide a <strong>non-parametric covariance estimation</strong>. These methods depend on <strong>the propagation of an ensemble of simulated trajectories</strong>, initialized either at different forecasting time steps (NMC) or by adding some artificially set perturbations to the current state (EnKF). <strong>These methods are more appropriate for modeling the background matrix compared rather than the observation matrix</strong>. The latter, independent from the numerical simulations, can not be represented by the propagation of artificially added noises. </p>
+<li><p>some <strong>ensemble-based methods such as [1] (NMC) and [20] (EnKF)</strong>, have been developed to provide a <strong>non-parametric covariance estimation</strong>. These methods depend on <strong>the propagation of an ensemble of simulated trajectories</strong>, initialized either at different forecasting time steps (NMC) or by adding some artificially set perturbations to the current state (EnKF). <strong>These methods are more appropriate for modeling the background matrix compared rather than the observation matrix</strong>. The latter, independent from the numerical simulations, can not be represented by the propagation of artificially added noises.</p>
 </li>
-<li><p><strong>The Particle-Aided Unscented Kalman Filter [21]</strong> can estimate systems with high nonlinearity with a real-time updating of the background matrix. However, the observation matrix can not be estimated directly via the Particle-Aided Unscented Kalman Filter. </p>
+<li><p><strong>The Particle-Aided Unscented Kalman Filter [21]</strong> can estimate systems with high nonlinearity with a real-time updating of the background matrix. However, the observation matrix can not be estimated directly via the Particle-Aided Unscented Kalman Filter.</p>
 <blockquote>
 <p><code>上面两点说明，NFC，EnKF,PAUKF,这些方法是适用于背景误差协方差的，不适用于观测误差协方差。</code></p>
 </blockquote>
@@ -553,46 +550,46 @@
 </blockquote>
 </li>
 </ul>
-<p>Several methods of <strong>data-derived posterior diagnosis</strong> have also been developed <strong>based on the analysis of innovation quantities</strong>.(The innovation quantities consist of the difference <strong>between the observations and the projected background/analyzed state in the observation space</strong>). </p>
+<p>Several methods of <strong>data-derived posterior diagnosis</strong> have also been developed <strong>based on the analysis of innovation quantities</strong>.(The innovation quantities consist of the difference <strong>between the observations and the projected background/analyzed state in the observation space</strong>).</p>
 <blockquote>
 <ul>
 <li><code>innovation quantities，应该是个专有名称，可能不叫创新量，可能可以在同化课程那个pdf笔记中找到相关的介绍</code></li>
 </ul>
 </blockquote>
 <ul>
-<li><p>As a strong contributor to this topic, the meteorology community developed several well-known <strong>posterior diagnoses and their improved versions</strong> [23–25] to <strong>adjust the background/observation ratio</strong>, <strong>the correlation scale length</strong>, or <strong>the full covariance structure in the observation space</strong> (both the observation matrix and the projected background matrix). </p>
+<li><p>As a strong contributor to this topic, the meteorology community developed several well-known <strong>posterior diagnoses and their improved versions</strong> [23–25] to <strong>adjust the background/observation ratio</strong>, <strong>the correlation scale length</strong>, or <strong>the full covariance structure in the observation space</strong> (both the observation matrix and the projected background matrix).</p>
 </li>
-<li><p>Some iterative processes [26, 27] based on the <strong>fixed-point theory</strong> have also been proposed for <strong>error covariance tuning</strong>. </p>
-<p>Recent works of [28, 29] have proved the convergence of so-called <strong>Desroziers iterative methods[24] (also known as D05)</strong> in the ideal case. In brief, they have mathematically proved that, by using a semi-positive definite matrix as an initial guess, D05 iterative method converges on the <strong>exact time-invariant (at least over a sufficiently long time period) observation error covariance</strong>, when the background matrix and the transformation operator (which maps the state variables to real-time observations) are perfectly known <strong>a priori</strong>.  (Here, by the term ‘‘exact’’, we refer to the covariance truly corresponding to the remaining errors present in the observation space). </p>
-<p>On the other hand, it is also mentioned by [29] that <strong>a regularization step</strong> is necessary for practice for applying D05 and the convergence of the regularized iterations remains an open question [3, 29]. </p>
+<li><p>Some iterative processes [26, 27] based on the <strong>fixed-point theory</strong> have also been proposed for <strong>error covariance tuning</strong>.</p>
+<p>Recent works of [28, 29] have proved the convergence of so-called <strong>Desroziers iterative methods[24] (also known as D05)</strong> in the ideal case. In brief, they have mathematically proved that, by using a semi-positive definite matrix as an initial guess, D05 iterative method converges on the <strong>exact time-invariant (at least over a sufficiently long time period) observation error covariance</strong>, when the background matrix and the transformation operator (which maps the state variables to real-time observations) are perfectly known <strong>a priori</strong>.  (Here, by the term ‘‘exact’’, we refer to the covariance truly corresponding to the remaining errors present in the observation space).</p>
+<p>On the other hand, it is also mentioned by [29] that <strong>a regularization step</strong> is necessary for practice for applying D05 and the convergence of the regularized iterations remains an open question [3, 29].</p>
 </li>
-<li><p>To deal with <strong>timevarying systems</strong>, <strong>lag-innovation statistics</strong> are used for error covariance estimation [30]. The essential idea is to build a secondary Kalman-filtering process for adjusting error covariances using time-shifted innovation vectors. </p>
+<li><p>To deal with <strong>timevarying systems</strong>, <strong>lag-innovation statistics</strong> are used for error covariance estimation [30]. The essential idea is to build a secondary Kalman-filtering process for adjusting error covariances using time-shifted innovation vectors.</p>
 </li>
 <li><p>For <strong>more details of the innovation-based methods</strong>, we refer to the overview of [13] which also covers some other estimation methods, such as the family of <strong>likelihood-based approaches</strong> and <strong>expectation-maximum(EM) methods</strong>.</p>
 </li>
 </ul>
-<h2 id="3-Problem-statement-and-contribution-（Q）"><a href="#3-Problem-statement-and-contribution-（Q）" class="headerlink" title="3 Problem statement and contribution （Q）"></a>3 Problem statement and contribution （Q）</h2><p>Our work lies in a similar condition of [24, 29] where both the state <strong>forward model</strong> and the <strong>transformation operator</strong> are presumed to be well known. </p>
+<h2 id="3-Problem-statement-and-contribution-（Q）"><a href="#3-Problem-statement-and-contribution-（Q）" class="headerlink" title="3 Problem statement and contribution （Q）"></a>3 Problem statement and contribution （Q）</h2><p>Our work lies in a similar condition of [24, 29] where both the state <strong>forward model</strong> and the <strong>transformation operator</strong> are presumed to be well known.</p>
 <blockquote>
 <p><code>↑ 前向模型，应该是动力模式，本文是M的斜体加粗</code></p>
 <p><code>↑ 转换算子，应该是观测算子，本文是H的斜体，线性是H</code></p>
 </blockquote>
 <ul>
-<li><p>As the main difficulty concerns the <strong>non-synchronous time-variant observations</strong> in dynamical systems (which prevents empirical estimation), in this work we propose <strong>the use of recurrent neural networks (RNNs) [31]</strong> for <strong>the specification of the observation matrix across the underlying dynamics of the observed quantities</strong>. </p>
+<li><p>As the main difficulty concerns the <strong>non-synchronous time-variant observations</strong> in dynamical systems (which prevents empirical estimation), in this work we propose <strong>the use of recurrent neural networks (RNNs) [31]</strong> for <strong>the specification of the observation matrix across the underlying dynamics of the observed quantities</strong>.</p>
 </li>
-<li><p>RNN has been widely adapted for <strong>the prediction/reconstruction of dynamical systems</strong>, especially in <strong>natural language processing (NLP)</strong> [32] and image/video processing [33] due to its convincing capacity for dealing with time series. More recently, RNN has also made their way to other engineering fields such as biomedical applications and computational fluid mechanics [34]. </p>
+<li><p>RNN has been widely adapted for <strong>the prediction/reconstruction of dynamical systems</strong>, especially in <strong>natural language processing (NLP)</strong> [32] and image/video processing [33] due to its convincing capacity for dealing with time series. More recently, RNN has also made their way to other engineering fields such as biomedical applications and computational fluid mechanics [34].</p>
 <blockquote>
 <p><code>↑ RNN 的优点，广泛被应用</code></p>
 </blockquote>
 </li>
-<li><p>In general, the combination of deep learning and data assimilation methods [35, 36] has been widely adapted and analyzed in a variety of industrial applications, including air pollution [37] and ocean-atmosphere modeling [38]. </p>
+<li><p>In general, the combination of deep learning and data assimilation methods [35, 36] has been widely adapted and analyzed in a variety of industrial applications, including air pollution [37] and ocean-atmosphere modeling [38].</p>
 </li>
-<li><p><strong>A convolutional neural network (CNN) for covariance estimation</strong> has also been suggested in the work of [39]. </p>
+<li><p><strong>A convolutional neural network (CNN) for covariance estimation</strong> has also been suggested in the work of [39].</p>
 </li>
-<li><p>In this study, we propose a novel methodology for <strong>LSTM-based covariance estimation</strong> which can be easily integrated into any DA schema for dynamical systems. </p>
+<li><p>In this study, we propose a novel methodology for <strong>LSTM-based covariance estimation</strong> which can be easily integrated into any DA schema for dynamical systems.</p>
 <blockquote>
 <p><code>Q：↑ 新方法，真的很容易用进去吗？~</code></p>
 </blockquote>
-<p>Here, we first construct a set of <strong>training covariance matrices</strong>, being either parametric or non-parametric, within a certain range defined <strong>a priori</strong>. For each matrix in the training set, we then <strong>simulate a dynamic trajectory</strong> of the observation vector relying on the knowledge of the forward model where the noises at each time step are generated following a centered Gaussian distribution characterized by the error covariance. These trajectories are later used as input variables to train the long-short-term-memory (LSTM) RNN regression model where <strong>the time-invariant observation matrices stand for the learning target</strong>. For <strong>the online evaluation</strong>, only the historical observation data is needed to predict the error covariances. </p>
+<p>Here, we first construct a set of <strong>training covariance matrices</strong>, being either parametric or non-parametric, within a certain range defined <strong>a priori</strong>. For each matrix in the training set, we then <strong>simulate a dynamic trajectory</strong> of the observation vector relying on the knowledge of the forward model where the noises at each time step are generated following a centered Gaussian distribution characterized by the error covariance. These trajectories are later used as input variables to train the long-short-term-memory (LSTM) RNN regression model where <strong>the time-invariant observation matrices stand for the learning target</strong>. For <strong>the online evaluation</strong>, only the historical observation data is needed to predict the error covariances.</p>
 <blockquote>
 <p><code>↑ 新方法，实现过程</code></p>
 </blockquote>
@@ -602,14 +599,14 @@
 </blockquote>
 </li>
 </ul>
-<p>In order to make a comprehensive comparison with traditional methods, <strong>two different twin experiment frameworks</strong> are implemented in this paper, using respectively <strong>the Lorenz96 and the 2D shallow-water models</strong>. </p>
+<p>In order to make a comprehensive comparison with traditional methods, <strong>two different twin experiment frameworks</strong> are implemented in this paper, using respectively <strong>the Lorenz96 and the 2D shallow-water models</strong>.</p>
 <ul>
-<li><p>The Lorenz system, characterized by only three state variables, is associated with <strong>a non-parametric covariance modeling</strong> while we use <strong>an isotropic correlation kernel</strong> to parameterize the observation matrix in the shallow water dynamics. </p>
+<li><p>The Lorenz system, characterized by only three state variables, is associated with <strong>a non-parametric covariance modeling</strong> while we use <strong>an isotropic correlation kernel</strong> to parameterize the observation matrix in the shallow water dynamics.</p>
 <blockquote>
 <p><code>↑ 非参数化方法和各向同性相关核，两种方法的区别？</code></p>
 </blockquote>
 </li>
-<li><p>In both cases, we compare the performance of the proposed <strong>LSTM-based method</strong> against the state-of-the-art tuning approaches D05 and DI01 in terms of both the covariance specification and the posterior DA accuracy. </p>
+<li><p>In both cases, we compare the performance of the proposed <strong>LSTM-based method</strong> against the state-of-the-art tuning approaches D05 and DI01 in terms of both the covariance specification and the posterior DA accuracy.</p>
 </li>
 <li><p>An <strong>ensemble DA schema</strong> is used for estimating t<strong>he time-variant background matrix</strong> for each of these methods.</p>
 <blockquote>
@@ -621,12 +618,12 @@
 <p><code>在markdown中如何加入上标、下标？：</code></p>
 <p><code> 用公式，网页翻译会出问题，不用公式的方法 https://www.jianshu.com/p/13b3366f0260</code></p>
 </blockquote>
-<p>The objective of data assimilation algorithms is to approach the estimation of system’s states <strong>x</strong> to its true values <strong>x<sub>true</sub></strong>, also known as the true state, by taking advantage of <strong>two sources of information</strong>: </p>
+<p>The objective of data assimilation algorithms is to approach the estimation of system’s states <strong>x</strong> to its true values <strong>x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code></strong>, also known as the true state, by taking advantage of <strong>two sources of information</strong>:</p>
 <ul>
-<li>the prior estimation or forecast <strong>x<sub>b</sub></strong>, which is also called the background state, </li>
-<li>and the measurement or observation <strong>y</strong>. </li>
+<li>the prior estimation or forecast <strong>x <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code></strong>, which is also called the background state,</li>
+<li>and the measurement or observation <strong>y</strong>.</li>
 </ul>
-<p>DA algorithms aim to find an optimally weighted compromise between <strong>x<sub>b</sub></strong> and <strong>y</strong> by minimizing the lost function <em><strong>J</strong></em> defined as:</p>
+<p>DA algorithms aim to find an optimally weighted compromise between <strong>x <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code></strong> and <strong>y</strong> by minimizing the lost function <em><strong>J</strong></em> defined as:</p>
 <blockquote>
 <p><code>Q：↓ 为什么J是这个形式？</code></p>
 </blockquote>
@@ -635,14 +632,14 @@
 <p>where <em><strong>H</strong></em> denotes the transformation operator from the state space to observation space. <strong>B</strong> and <strong>R</strong> are, respectively, the background and the observation error covariance matrices, i.e.</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225150048.png" style="zoom:72%;">
 
-<p>Errors <strong>ε<sub>b</sub>, ε<sub>y&nbsp;</sub></strong> are supposed to be <strong>centered Gaussian</strong> following:</p>
+<p>Errors <strong>ε <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code>, ε <code>&lt;sub&gt;</code>y&nbsp;<code>&lt;/sub&gt;</code></strong> are supposed to be <strong>centered Gaussian</strong> following:</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225150304.png" style="zoom:72%;">
 
 <blockquote>
 <p><code>↑ 假设1：高斯分布</code></p>
 </blockquote>
-<p>In <strong>Eq 1</strong>, the left side strives for incorporating the prior information <strong>x<sub>b</sub></strong> , and the right side penalizes the difference between the observation <strong>y</strong> and the state variables after having been mapped to the observation space <em><strong>H(x)</strong></em> . Both terms are weighted by the corresponding inverse of error covariance matrix (<strong>B<sup>-1</sup></strong>, <strong>R<sup>-1</sup></strong>) to <strong>reflect confidences for each of them</strong>.</p>
-<p>The optimization problem of <strong>Eq 1</strong>, so called <strong>three-dimensional variational (3D-Var)</strong> formulation, is a general representation of variational assimilation which <strong>does not take into account model errors</strong>. The output of <strong>Eq 1</strong> is denoted as <strong>x<sub>a</sub></strong>, i.e.</p>
+<p>In <strong>Eq 1</strong>, the left side strives for incorporating the prior information <strong>x <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code></strong> , and the right side penalizes the difference between the observation <strong>y</strong> and the state variables after having been mapped to the observation space <em><strong>H(x)</strong></em> . Both terms are weighted by the corresponding inverse of error covariance matrix (<strong>B <code>&lt;sup&gt;</code>-1 <code>&lt;/sup&gt;</code></strong>, <strong>R <code>&lt;sup&gt;</code>-1 <code>&lt;/sup&gt;</code></strong>) to <strong>reflect confidences for each of them</strong>.</p>
+<p>The optimization problem of <strong>Eq 1</strong>, so called <strong>three-dimensional variational (3D-Var)</strong> formulation, is a general representation of variational assimilation which <strong>does not take into account model errors</strong>. The output of <strong>Eq 1</strong> is denoted as <strong>x <code>&lt;sub&gt;</code>a <code>&lt;/sub&gt;</code></strong>, i.e.</p>
 <blockquote>
 <p><code>↑ Q：模式误差，是什么？</code></p>
 </blockquote>
@@ -654,17 +651,17 @@
 </blockquote>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225151004.png" style="zoom:72%;">
 
-<p>where <strong>A</strong> =Cov( <strong>x<sub>a</sub></strong>- <strong>x<sub>true</sub></strong>) is the analyzed error covariance, and <strong>K</strong> is the <strong>Kalman gain matrix</strong> described by </p>
+<p>where <strong>A</strong> =Cov( <strong>x <code>&lt;sub&gt;</code>a <code>&lt;/sub&gt;</code></strong>- <strong>x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code></strong>) is the analyzed error covariance, and <strong>K</strong> is the <strong>Kalman gain matrix</strong> described by</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225151432.png" style="zoom:72%;">
 
 <p>In the rest of this paper, we define <strong>H</strong> as a linear transformation operator. Nevertheless, it is usually more challenging to find the minimum of <strong>Eq 1</strong> when <strong>H</strong> is nonlinear, even more, challenging when states are high-dimensional. The solution for the minimization often involves <strong>gradient descent algorithms such as ‘‘L-BFGS-B’’ [41] or adjoint-based [42] numerical techniques</strong>.</p>
-<p>DA algorithms could be <strong>applied to dynamical systems thanks to sequential applications</strong> expressed by a transition operator  <strong><em>M</em><sub>t<sup>k</sup>→t<sup>k+1</sup></sub></strong> (from discrete time <strong>t<sup>k</sup> to t<sup>k+1</sup></strong>), where</p>
+<p>DA algorithms could be <strong>applied to dynamical systems thanks to sequential applications</strong> expressed by a transition operator  <strong><em>M</em> <code>&lt;sub&gt;</code>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code>→t <code>&lt;sup&gt;</code>k+1 <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong> (from discrete time <strong>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code> to t <code>&lt;sup&gt;</code>k+1 <code>&lt;/sup&gt;</code></strong>), where</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225152151.png" style="zoom:78%;">
 
-<p><strong>x<sub>b,t<sup>k+1</sup></sub></strong> thus depends on the knowledge of <strong><em>M</em><sub>t<sup>k</sup>→t<sup>k+1</sup></sub></strong> and the DA correcting state <strong>x<sub>a,t<sup>k</sup></sub></strong> , i.e.</p>
+<p><strong>x <code>&lt;sub&gt;</code>b,t <code>&lt;sup&gt;</code>k+1 <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong> thus depends on the knowledge of <strong><em>M</em> <code>&lt;sub&gt;</code>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code>→t <code>&lt;sup&gt;</code>k+1 <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong> and the DA correcting state <strong>x <code>&lt;sub&gt;</code>a,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong> , i.e.</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225152602.png" style="zoom:78%;">
 
-<p>Obviously, the more accurate <strong>x<sub>a,t<sup>k</sup></sub></strong>  is, the more reliable <strong>x<sub>b,t<sup>k+1</sup></sub></strong> would be.</p>
+<p>Obviously, the more accurate <strong>x <code>&lt;sub&gt;</code>a,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong>  is, the more reliable <strong>x <code>&lt;sub&gt;</code>b,t <code>&lt;sup&gt;</code>k+1 <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong> would be.</p>
 <p>To leverage the information embedded in the background state and observations, <strong>covariance matrices modeling is a pivotal point in DA</strong> as they influence not only how prior errors spread but may also change the DA results [26].</p>
 <h3 id="4-2-Ensemble-methods-（Q）"><a href="#4-2-Ensemble-methods-（Q）" class="headerlink" title="4.2 Ensemble methods （Q）"></a>4.2 Ensemble methods （Q）</h3><p><strong>Ensemble data assimilation (EnDA)</strong> [43, 44] methods have shown a strong performance in dealing with <strong>non-linear chaotic DA systems</strong> by creating <strong>an ensemble with size</strong> <em>M</em> <strong>of the system state</strong> depicted as:</p>
 <blockquote>
@@ -673,12 +670,12 @@
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225162140.png"></p>
 <ul>
-<li><p><strong>The latter</strong> is used to represent both the prior and the posterior probability distribution of the state variables. </p>
+<li><p><strong>The latter</strong> is used to represent both the prior and the posterior probability distribution of the state variables.</p>
 <blockquote>
 <p><code>Q：↑ 后者，指的是哪个？</code></p>
 </blockquote>
 </li>
-<li><p>The system states of the ensemble evolve under  <strong><em>M</em><sub>t<sup>k</sup>→t<sup>k+1</sup></sub></strong> and DA is applied to each of these ensemble states at <strong>every assimilation windows</strong>. </p>
+<li><p>The system states of the ensemble evolve under  <strong><em>M</em> <code>&lt;sub&gt;</code>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code>→t <code>&lt;sup&gt;</code>k+1 <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong> and DA is applied to each of these ensemble states at <strong>every assimilation windows</strong>.</p>
 <blockquote>
 <p><code>↑ 意思指的是，对系统状态集合中的每一个系统状态都进行同化</code></p>
 </blockquote>
@@ -688,24 +685,24 @@
 
 <p>where</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225161336.png"></p>
-<p>and the estimation becomes <strong>more reliable with the increases of</strong> <em>M</em> . </p>
+<p>and the estimation becomes <strong>more reliable with the increases of</strong> <em>M</em> .</p>
 </li>
-<li><p>For applications in this study, EnDA, with a sufficiently large number of examples, is used to estimate <strong>x<sub>b,t<sup>k</sup></sub></strong>  and <strong>B<sub>b,t<sup>k</sup></sub></strong>  so that we can focus on the comparison of <strong>R</strong> matrix modelings.</p>
+<li><p>For applications in this study, EnDA, with a sufficiently large number of examples, is used to estimate <strong>x <code>&lt;sub&gt;</code>b,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong>  and <strong>B <code>&lt;sub&gt;</code>b,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong>  so that we can focus on the comparison of <strong>R</strong> matrix modelings.</p>
 </li>
 </ul>
-<h3 id="4-3-Observation-error-covariances-specification"><a href="#4-3-Observation-error-covariances-specification" class="headerlink" title="4.3 Observation error covariances specification"></a>4.3 Observation error covariances specification</h3><p>For the estimation of <strong>R</strong>, under the assumption that the system model is stationary, </p>
+<h3 id="4-3-Observation-error-covariances-specification"><a href="#4-3-Observation-error-covariances-specification" class="headerlink" title="4.3 Observation error covariances specification"></a>4.3 Observation error covariances specification</h3><p>For the estimation of <strong>R</strong>, under the assumption that the system model is stationary,</p>
 <blockquote>
 <p><code>↑ 假设3：系统模型平衡</code></p>
 </blockquote>
 <ul>
-<li><p>a wide variety of methods have been explored, for example, the DI01 [23] method which adjusts accordingly the ratio between <em>Tr</em>(<strong>B</strong>) and <em>Tr</em>(<strong>R</strong>) and the D05 [24] approach which estimates the full observation space iteratively. </p>
-<p>However, these methods, based on posterior innovation quantities (i.e., <strong>y</strong> - <strong><em>H</em>(x<sub>a</sub>)</strong>) which requires several applications of DA algorithms, can be <strong>computationally expensive</strong>. </p>
-<p>Moreover, these tuning methods, especially the D05 which estimates the full matrix, are <strong>not suitable for different matrix parameterizations</strong>. </p>
+<li><p>a wide variety of methods have been explored, for example, the DI01 [23] method which adjusts accordingly the ratio between <em>Tr</em>(<strong>B</strong>) and <em>Tr</em>(<strong>R</strong>) and the D05 [24] approach which estimates the full observation space iteratively.</p>
+<p>However, these methods, based on posterior innovation quantities (i.e., <strong>y</strong> - <strong><em>H</em>(x <code>&lt;sub&gt;</code>a <code>&lt;/sub&gt;</code>)</strong>) which requires several applications of DA algorithms, can be <strong>computationally expensive</strong>.</p>
+<p>Moreover, these tuning methods, especially the D05 which estimates the full matrix, are <strong>not suitable for different matrix parameterizations</strong>.</p>
 </li>
 <li><p>In this paper, working with time-series observation data, we use LSTM to predict the corresponding <strong>R</strong> matrix under similar assumptions of DI01 and D05. The two classical methods, introduced in Section 5, are implemented to compare the results with the proposed machine learning approach.</p>
 </li>
 </ul>
-<h2 id="5-Posterior-covariance-tuning-algorithms"><a href="#5-Posterior-covariance-tuning-algorithms" class="headerlink" title="5 Posterior covariance tuning algorithms"></a>5 Posterior covariance tuning algorithms</h2><h3 id="5-1-Desroziers-and-Ivanov-DI01-tuning-algorithm-（Q）"><a href="#5-1-Desroziers-and-Ivanov-DI01-tuning-algorithm-（Q）" class="headerlink" title="5.1 Desroziers and Ivanov (DI01) tuning algorithm （Q）"></a>5.1 Desroziers and Ivanov (DI01) tuning algorithm （Q）</h3><p>Because <strong>B</strong> and <strong>R</strong> determine the weight of background and observation information in the loss function ( <strong>Eq 1</strong>), the knowledge of Tr(<strong>B</strong>) and Tr(<strong>R</strong>) is crucial to DA accuracy. </p>
+<h2 id="5-Posterior-covariance-tuning-algorithms"><a href="#5-Posterior-covariance-tuning-algorithms" class="headerlink" title="5 Posterior covariance tuning algorithms"></a>5 Posterior covariance tuning algorithms</h2><h3 id="5-1-Desroziers-and-Ivanov-DI01-tuning-algorithm-（Q）"><a href="#5-1-Desroziers-and-Ivanov-DI01-tuning-algorithm-（Q）" class="headerlink" title="5.1 Desroziers and Ivanov (DI01) tuning algorithm （Q）"></a>5.1 Desroziers and Ivanov (DI01) tuning algorithm （Q）</h3><p>Because <strong>B</strong> and <strong>R</strong> determine the weight of background and observation information in the loss function ( <strong>Eq 1</strong>), the knowledge of Tr(<strong>B</strong>) and Tr(<strong>R</strong>) is crucial to DA accuracy.</p>
 <blockquote>
 <p><code>Q：↑ 为什么B和R矩阵的Tr()很重要？</code></p>
 </blockquote>
@@ -726,8 +723,8 @@
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225202603.png" style="zoom:93%;">
 
 <p>where <em>q</em> is the current iteration.</p>
-<p>Acting as scaling coefficients, the sequences {<em>s</em><sub><em>b,q</em></sub>} and {<em>s</em><sub><em>o,q</em></sub>} modify the error variance magnitude in the iterative process. It is worth reminding that both the analyzed state <strong>x<sub>a</sub></strong> and the gain matrix <strong>K<sub><em>q</em></sub></strong> are obtained using <strong>B<sub><em>q</em></sub></strong> ,  <strong>R<sub><em>q</em></sub></strong>  which depend on <em>s</em><sub><em>b,q</em></sub> and <em>s</em><sub><em>o,q</em></sub>. When the correlation patterns of both <strong>B</strong> and <strong>R</strong> are well known, <strong>DI01 is equivalent to a maximum-likelihood parameter tuning</strong>, as pointed out in [28, 47].</p>
-<p>Unlike other posterior covariance diagnosis/computations, such as [24, 26], the estimation of the full matrices is not needed in DI01. Instead, <strong>only the estimation of two scalar values (<em>J</em><sub>b</sub>, <em>J</em><sub>o</sub>) is required</strong>, which significantly <strong>reduce the computational cost</strong>. As a consequence, <strong>this method could be more appropriate for online covariance tuning</strong>.</p>
+<p>Acting as scaling coefficients, the sequences {<em>s</em> <code>&lt;sub&gt;</code><em>b,q</em> <code>&lt;/sub&gt;</code>} and {<em>s</em> <code>&lt;sub&gt;</code><em>o,q</em> <code>&lt;/sub&gt;</code>} modify the error variance magnitude in the iterative process. It is worth reminding that both the analyzed state <strong>x <code>&lt;sub&gt;</code>a <code>&lt;/sub&gt;</code></strong> and the gain matrix <strong>K <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong> are obtained using <strong>B <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong> ,  <strong>R <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong>  which depend on <em>s</em> <code>&lt;sub&gt;</code><em>b,q</em> <code>&lt;/sub&gt;</code> and <em>s</em> <code>&lt;sub&gt;</code><em>o,q</em> <code>&lt;/sub&gt;</code>. When the correlation patterns of both <strong>B</strong> and <strong>R</strong> are well known, <strong>DI01 is equivalent to a maximum-likelihood parameter tuning</strong>, as pointed out in [28, 47].</p>
+<p>Unlike other posterior covariance diagnosis/computations, such as [24, 26], the estimation of the full matrices is not needed in DI01. Instead, <strong>only the estimation of two scalar values (<em>J</em> <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code>, <em>J</em> <code>&lt;sub&gt;</code>o <code>&lt;/sub&gt;</code>) is required</strong>, which significantly <strong>reduce the computational cost</strong>. As a consequence, <strong>this method could be more appropriate for online covariance tuning</strong>.</p>
 <blockquote>
 <p><code>Q: ↑ DI01为什么不需要对整个矩阵进行估计？因为增益是验证指标吗？</code></p>
 </blockquote>
@@ -740,17 +737,17 @@
 <blockquote>
 <p><code>↑ D05迭代方法的收敛指标，当收敛时，趋近0</code></p>
 </blockquote>
-<p>can be used as a validation indicator of the <strong>R</strong> matrix estimation where ||.||<sub><em>F</em></sub>  denotes the Frobenius norm. Applying this method, time variant observation/background data can contribute to the estimation of the <strong>R</strong> matrix because the expectation in <strong>Eq 18</strong> could be evaluated using residuals at different time steps. When the <strong>B</strong> matrix is well known, an iterative process has been introduced to estimate the <strong>R</strong> matrix:</p>
+<p>can be used as a validation indicator of the <strong>R</strong> matrix estimation where ||.||<code>&lt;sub&gt;</code><em>F</em> <code>&lt;/sub&gt;</code>  denotes the Frobenius norm. Applying this method, time variant observation/background data can contribute to the estimation of the <strong>R</strong> matrix because the expectation in <strong>Eq 18</strong> could be evaluated using residuals at different time steps. When the <strong>B</strong> matrix is well known, an iterative process has been introduced to estimate the <strong>R</strong> matrix:</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225204210.png" style="zoom:95%;">
 
 <blockquote>
 <p><code>↑ D05迭代方法要求 B 矩阵已知~</code></p>
 </blockquote>
-<p>based on the fixed-point theory [29]. The current analysis state <strong>x<sub><em>a,q</em></sub></strong> is obtained using the specification of  <strong>R<sub><em>q</em></sub></strong> while  <strong>x<sub><em>b</em></sub></strong> , <strong>B</strong>,  <strong>y</strong> remains invariant. As proved in [28, 29], under the assumption of sufficient observation data and well known <strong>B</strong> matrix, the iterative process of <strong>Eq 20</strong> converges to the exact observation error covariance. However, as shown in [29], the intermediate matrices <strong>R<sub><em>q</em></sub></strong>  could be non-symmetric and possibly contain negative or complex eigenvalues, which is cumbersome for DA algorithms to deal with.</p>
-<p>In practice, a posterior regularization at each iteration step is often required to ensure the positive definiteness of <strong>R<sub><em>q</em></sub></strong> [29] where the first step of the regularization could be symmetrizing the estimated <strong>R<sub><em>q</em></sub></strong>  matrix, i.e.,</p>
+<p>based on the fixed-point theory [29]. The current analysis state <strong>x <code>&lt;sub&gt;</code><em>a,q</em> <code>&lt;/sub&gt;</code></strong> is obtained using the specification of  <strong>R <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong> while  <strong>x <code>&lt;sub&gt;</code><em>b</em> <code>&lt;/sub&gt;</code></strong> , <strong>B</strong>,  <strong>y</strong> remains invariant. As proved in [28, 29], under the assumption of sufficient observation data and well known <strong>B</strong> matrix, the iterative process of <strong>Eq 20</strong> converges to the exact observation error covariance. However, as shown in [29], the intermediate matrices <strong>R <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong>  could be non-symmetric and possibly contain negative or complex eigenvalues, which is cumbersome for DA algorithms to deal with.</p>
+<p>In practice, a posterior regularization at each iteration step is often required to ensure the positive definiteness of <strong>R <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong> [29] where the first step of the regularization could be symmetrizing the estimated <strong>R <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong>  matrix, i.e.,</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225204611.png" style="zoom:96%;">
 
-<p>The spectrum of  <strong>R<sub><em>q</em></sub></strong>  now contains only real numbers but they are not necessarily positive. The hybrid method[2] is a standard approach in ensemble-based DA methods to ensure the positive definiteness, which consists of combining a prior defined covariance matrix <strong>C</strong> with the one obtained from empirical estimation. We thus obtain the formulation of the regularized observation matrix  <strong>R<sub>r,n</sub></strong> :</p>
+<p>The spectrum of  <strong>R <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong>  now contains only real numbers but they are not necessarily positive. The hybrid method[2] is a standard approach in ensemble-based DA methods to ensure the positive definiteness, which consists of combining a prior defined covariance matrix <strong>C</strong> with the one obtained from empirical estimation. We thus obtain the formulation of the regularized observation matrix  <strong>R <code>&lt;sub&gt;</code>r,n <code>&lt;/sub&gt;</code></strong> :</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225204748.png" style="zoom:95%;">
 
 <blockquote>
@@ -762,47 +759,47 @@
 <blockquote>
 <p><code>↓ 正则化的观测矩阵收敛性仍未解决~</code></p>
 </blockquote>
-<p>so that <em>Tr</em>(<strong>R<sub><em>q</em></sub></strong>) will not be modified due to the post regularization. As mentioned in the discussion of [3, 29], <strong>the convergence of regularized observation matrices remains an open question</strong>. Therefore, a small iteration number is often assigned for D05 tuning in industrial problems (e.g., <em>q</em> = 2 in [3, 49]). Since the right side of <strong>Eq 20</strong> can be estimated using residual quantities at different time steps, D05 is often used to <strong>deal with time series observation data</strong> (e.g., [3, 49]) when assuming the <strong>R</strong> matrix is time-invariant.</p>
+<p>so that <em>Tr</em>(<strong>R <code>&lt;sub&gt;</code><em>q</em> <code>&lt;/sub&gt;</code></strong>) will not be modified due to the post regularization. As mentioned in the discussion of [3, 29], <strong>the convergence of regularized observation matrices remains an open question</strong>. Therefore, a small iteration number is often assigned for D05 tuning in industrial problems (e.g., <em>q</em> = 2 in [3, 49]). Since the right side of <strong>Eq 20</strong> can be estimated using residual quantities at different time steps, D05 is often used to <strong>deal with time series observation data</strong> (e.g., [3, 49]) when assuming the <strong>R</strong> matrix is time-invariant.</p>
 <h2 id="6-LSTM-for-error-covariance-estimation"><a href="#6-LSTM-for-error-covariance-estimation" class="headerlink" title="6 LSTM for error covariance estimation"></a>6 LSTM for error covariance estimation</h2><h3 id="6-1-Introduction-of-RNN-and-LSTM"><a href="#6-1-Introduction-of-RNN-and-LSTM" class="headerlink" title="6.1 Introduction of RNN and LSTM"></a>6.1 Introduction of RNN and LSTM</h3><p>LSTM, first introduced in [50], is a kind of RNN [31], capable of solving <strong>long-term dependency problems</strong> [51] that traditional RNN could not handle. As with other recurrent neural networks, LSTM has a chain-like structure. This structure is created by repeating the same module shown on the left side in <strong>Fig. 1</strong>. In addition, the repeating module comprises four neural networks instead of only one. The specific structure of the <strong>repeating module</strong> is on the right side in <strong>Fig. 1</strong>.</p>
 <blockquote>
 <p><code>↑ 李宏毅老师的视频对RNN，讲的很详细~ </code></p>
 </blockquote>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225211508.png" style="zoom:100%;">
 
-<p>An essential part of LSTM is the <strong>cell state</strong> C<sub><em>t<sup>k-1</sup></em></sub>  which is the long-term memory storing information about past behaviors. LSTM uses <strong>three gates</strong> with each composed out of <strong>a sigmoid layer neural network</strong> (single layer neural network with sigmoid activation function at the output layer) and a <strong>pointwise multiplication operation</strong>, to protect and control information of the cell state as shown in <strong>Fig. 1</strong>.</p>
+<p>An essential part of LSTM is the <strong>cell state</strong> C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k-1 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  which is the long-term memory storing information about past behaviors. LSTM uses <strong>three gates</strong> with each composed out of <strong>a sigmoid layer neural network</strong> (single layer neural network with sigmoid activation function at the output layer) and a <strong>pointwise multiplication operation</strong>, to protect and control information of the cell state as shown in <strong>Fig. 1</strong>.</p>
 <p><strong>The first gate is the forget gate</strong> following:</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225211732.png" style="zoom:95%;">
 
-<p>where the <strong>recurrent variable</strong> h<sub><em>t<sup>k-1</sup></em></sub> summarizing all the information about past behaviors,  x<sub><em>t<sup>k</sup></em></sub>  resuming information about current behaviors, and  W<sub><em>f</em></sub>  and <em>b</em><sub><em>f</em></sub>  are weights and bias, respectively, parameterizing the sigma layer neural network.  The forget gate decides what kind of information is going to be ignored in C<sub><em>t<sup>k-1&nbsp;</sup></em></sub>.</p>
-<p><strong>The second gate is the input gate</strong>, and it determines which new information is added into C<sub><em>t<sup>k-1</sup></em></sub> . This new information, $\tilde{\mathbf{C}}_{t^{k}}$, as conforming to</p>
+<p>where the <strong>recurrent variable</strong> h <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k-1 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> summarizing all the information about past behaviors,  x <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  resuming information about current behaviors, and  W <code>&lt;sub&gt;</code><em>f</em> <code>&lt;/sub&gt;</code>  and <em>b</em> <code>&lt;sub&gt;</code><em>f</em> <code>&lt;/sub&gt;</code>  are weights and bias, respectively, parameterizing the sigma layer neural network.  The forget gate decides what kind of information is going to be ignored in C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k-1&nbsp;<code>&lt;/sup&gt;</code></em><code>&lt;/sub&gt;</code>.</p>
+<p><strong>The second gate is the input gate</strong>, and it determines which new information is added into C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k-1 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> . This new information, $\tilde{\mathbf{C}}_{t^{k}}$, as conforming to</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225212609.png" style="zoom:95%;">
 
-<p>is attained by passing h<sub><em>t<sup>k-1</sup></em></sub> and x<sub><em>t<sup>k</sup></em></sub> to a tanh layer neural network (single layer neural network with tanh activation function at the output layer) with parameters W<sub><em>c</em></sub>  and <em>b</em><sub><em>c</em></sub> .</p>
-<p>$\tilde{\mathbf{C}}_{t^{k}}$ is then multiplied by weight coefficients i<sub><em>t<sup>k</sup></em></sub>  which is acquired by the input gate, i.e.,</p>
+<p>is attained by passing h <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k-1 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> and x <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> to a tanh layer neural network (single layer neural network with tanh activation function at the output layer) with parameters W <code>&lt;sub&gt;</code><em>c</em> <code>&lt;/sub&gt;</code>  and <em>b</em> <code>&lt;sub&gt;</code><em>c</em> <code>&lt;/sub&gt;</code> .</p>
+<p>$\tilde{\mathbf{C}}_{t^{k}}$ is then multiplied by weight coefficients i <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  which is acquired by the input gate, i.e.,</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225212927.png" style="zoom:95%;">
 
-<p>i<sub><em>t<sup>k</sup></em></sub> is applied to decide which new information would be employed to update C<sub><em>t<sup>k-1</sup></em></sub>.</p>
-<p>Hence, the state cell C<sub><em>t<sup>k</sup></em></sub> at the current time step <em>t<sup>k</sup></em> can be attained using</p>
+<p>i <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> is applied to decide which new information would be employed to update C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k-1 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>.</p>
+<p>Hence, the state cell C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> at the current time step <em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> can be attained using</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225213116.png" alt=" " style="zoom:95%;">
 
-<p>Finally, the acquisition of h<sub><em>t<sup>k</sup></em></sub> requires the participation of the output gate and a tanh activation function: first, the tanh activation function <em>tanh</em> is used to create a cell state candidate information <em>tanh</em>(C<sub><em>t<sup>k</sup></em></sub>). <em>tanh</em>(C<sub><em>t<sup>k</sup></em></sub>) is then multiplied by some weight coefficients following</p>
+<p>Finally, the acquisition of h <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> requires the participation of the output gate and a tanh activation function: first, the tanh activation function <em>tanh</em> is used to create a cell state candidate information <em>tanh</em>(C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>). <em>tanh</em>(C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>) is then multiplied by some weight coefficients following</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225213356.png" alt=" " style="zoom:95%;">
 
-<p>to decide which information of  <em>tanh</em>(C<sub><em>t<sup>k</sup></em></sub>)  would contribute to the obtainment of  h<sub><em>t<sup>k</sup></em></sub>  . Among them, o<sub><em>t<sup>k</sup></em></sub>, is generated by the output gate with neural network parameters  W<sub><em>o</em></sub>  and <em>b</em><sub><em>o</em></sub> , i.e.,</p>
+<p>to decide which information of  <em>tanh</em>(C <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>)  would contribute to the obtainment of  h <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  . Among them, o <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>, is generated by the output gate with neural network parameters  W <code>&lt;sub&gt;</code><em>o</em> <code>&lt;/sub&gt;</code>  and <em>b</em> <code>&lt;sub&gt;</code><em>o</em> <code>&lt;/sub&gt;</code> , i.e.,</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220225213556.png" style="zoom:95%;">
 
-<h3 id="6-2-LSTM-for-R-matrix-estimation-using-time-series-observation-data-Q"><a href="#6-2-LSTM-for-R-matrix-estimation-using-time-series-observation-data-Q" class="headerlink" title="6.2 LSTM for R matrix estimation using time series observation data (Q)"></a>6.2 LSTM for R matrix estimation using time series observation data (Q)</h3><p>The tuning methods presented in Section 5 have been applied in various engineering applications with significant improvement of covariance specification and DA accuracy. However, these methods which require several applications of DA algorithms can be computationally expensive for high-dimensional problems. Another important drawback stands for the requirement of precise knowledge on either the <strong>correlation patterns</strong> of <strong>B</strong> and <strong>R</strong> (for DI01) or the full <strong>B</strong> matrix (for D05). </p>
+<h3 id="6-2-LSTM-for-R-matrix-estimation-using-time-series-observation-data-Q"><a href="#6-2-LSTM-for-R-matrix-estimation-using-time-series-observation-data-Q" class="headerlink" title="6.2 LSTM for R matrix estimation using time series observation data (Q)"></a>6.2 LSTM for R matrix estimation using time series observation data (Q)</h3><p>The tuning methods presented in Section 5 have been applied in various engineering applications with significant improvement of covariance specification and DA accuracy. However, these methods which require several applications of DA algorithms can be computationally expensive for high-dimensional problems. Another important drawback stands for the requirement of precise knowledge on either the <strong>correlation patterns</strong> of <strong>B</strong> and <strong>R</strong> (for DI01) or the full <strong>B</strong> matrix (for D05).</p>
 <blockquote>
 <p><code>Q: ↑ 还是不能理解 DI01 做什么？correlation pattern 是 full matrix吗？</code></p>
 </blockquote>
-<p>In this study, we aim to build a data-driven surrogate model for efficient online <strong>R</strong> matrix specification using LSTM. Unlike DI01 or D05, no specific knowledge about the error covariances or the state/observation dynamical systems other than the transformation operator <em><strong>H</strong></em> and the forward model  <strong><em>M</em><sub>t<sup>k</sup>→t<sup>k+1</sup></sub></strong> (which is also indispensable for standard DA algorithms including variational methods and Kalman-filters) is required.</p>
+<p>In this study, we aim to build a data-driven surrogate model for efficient online <strong>R</strong> matrix specification using LSTM. Unlike DI01 or D05, no specific knowledge about the error covariances or the state/observation dynamical systems other than the transformation operator <em><strong>H</strong></em> and the forward model  <strong><em>M</em> <code>&lt;sub&gt;</code>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code>→t <code>&lt;sup&gt;</code>k+1 <code>&lt;/sup&gt;&lt;/sub&gt;</code></strong> (which is also indispensable for standard DA algorithms including variational methods and Kalman-filters) is required.</p>
 <blockquote>
 <p><code>↑ 指出了本算法的需要，观测算子、前向模型，不需要，B和R的相关特定信息</code></p>
 <p><code>😎~win+. emoji表情包</code></p>
 </blockquote>
 <h4 id="Algorithm-1：Simulated-observations-generating-process"><a href="#Algorithm-1：Simulated-observations-generating-process" class="headerlink" title="Algorithm 1：Simulated observations generating process"></a>Algorithm 1：Simulated observations generating process</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226134527.png" style="zoom:67%;">
 
-<p><strong>our main idea is to build a training set for the specific problem</strong>, including predefined time-invariant observation matrices {$\mathbf{R}^{[\text{iter}]}$}  within certain range and generated dynamical observation vector {$\mathbf{y}_{t^{k}}^{[\text {iter }]}$}.  </p>
+<p><strong>our main idea is to build a training set for the specific problem</strong>, including predefined time-invariant observation matrices {$\mathbf{R}^{[\text{iter}]}$}  within certain range and generated dynamical observation vector {$\mathbf{y}_{t^{k}}^{[\text {iter }]}$}.</p>
 <blockquote>
 <p><code>↑ 算法1：目的</code></p>
 </blockquote>
@@ -833,36 +830,32 @@
 <p>Different from classical covariance tuning algo-rithms, the LSTM network only makes use of historical observation data, requiring neither the background states nor the error covariance matrix. The advantage of using LSTM is more salient <strong>when the observation dimension is large</strong>, for example, millions or even billions, while such dimension is not uncommon in real-world applications [2, 7].</p>
 <p>To estimate <strong>R</strong>, LSTM is first trained to learn: <strong>related variables</strong></p>
 <ul>
-<li>– <strong>either</strong> which can be used to constitute the symmetry observation error covariance matrix (i.e., input variables of the g<sup>R</sup>(.) function) <strong>in a parametric modeling</strong>;</li>
-<li> –<strong>or</strong> elements of the <strong>R</strong> matrix (e.g., variables in the upper triangle and those in the diagonal of the covariance matrix) <strong>in a non-parametric modeling</strong>. </li>
+<li>– <strong>either</strong> which can be used to constitute the symmetry observation error covariance matrix (i.e., input variables of the g <code>&lt;sup&gt;</code>R <code>&lt;/sup&gt;</code>(.) function) <strong>in a parametric modeling</strong>;</li>
+<li>–<strong>or</strong> elements of the <strong>R</strong> matrix (e.g., variables in the upper triangle and those in the diagonal of the covariance matrix) <strong>in a non-parametric modeling</strong>.</li>
 </ul>
 <p>The whole process for <strong>R</strong> estimation using LSTM is described in <strong>Algorithm 2</strong>.</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226140352.png" style="zoom:100%;">
 
-<p>In Algorithm 2, it is suggested that LSTM training process is consisted of <strong>training and validation processes</strong>: </p>
+<p>In Algorithm 2, it is suggested that LSTM training process is consisted of <strong>training and validation processes</strong>:</p>
 <ul>
-<li><p><strong>the training process</strong> is comprised of the forward prediction and the backward neural network weight parameters updating processes; </p>
-</li>
-<li><p>and <strong>validation process</strong> is used to predict desirable outputs or objectives and then calculate validation loss between predicted output and prior true output values. </p>
-</li>
-<li><p><strong>N_epoch</strong> indicates the number of times that the entire example data set is passed forward and backward through the LSTM during the training process. </p>
-</li>
-<li><p><strong>Early stopping</strong>, which terminates the training process when the validation loss reaches the minimum and is always the minimum value after N_patience_epoch epochs, is applied to reduce the LSTM training time.</p>
-</li>
+<li><strong>the training process</strong> is comprised of the forward prediction and the backward neural network weight parameters updating processes;</li>
+<li>and <strong>validation process</strong> is used to predict desirable outputs or objectives and then calculate validation loss between predicted output and prior true output values.</li>
+<li><strong>N_epoch</strong> indicates the number of times that the entire example data set is passed forward and backward through the LSTM during the training process.</li>
+<li><strong>Early stopping</strong>, which terminates the training process when the validation loss reaches the minimum and is always the minimum value after N_patience_epoch epochs, is applied to reduce the LSTM training time.</li>
 </ul>
 <p>It is important to note that the offline data generation and LSTM training processes need to be carried out individually for different DA applications (<strong>Fig 4</strong>).</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226140509.png"></p>
-<h2 id="7-Lorenz-twin-experiment"><a href="#7-Lorenz-twin-experiment" class="headerlink" title="7 Lorenz twin experiment"></a>7 Lorenz twin experiment</h2><h3 id="7-1-Twin-experiment-principle"><a href="#7-1-Twin-experiment-principle" class="headerlink" title="7.1 Twin experiment principle"></a>7.1 Twin experiment principle</h3><p>In order to overcome the drawback that, in a realistic experiment, <strong>x</strong><sub>true</sub> is usually unknown and <strong>y</strong> is often mixed with noises, twin experiment, in which a prototypical test case is selected to simulate real situations, is applied so as to provide <strong>x</strong><sub>true</sub> for comparison. </p>
+<h2 id="7-Lorenz-twin-experiment"><a href="#7-Lorenz-twin-experiment" class="headerlink" title="7 Lorenz twin experiment"></a>7 Lorenz twin experiment</h2><h3 id="7-1-Twin-experiment-principle"><a href="#7-1-Twin-experiment-principle" class="headerlink" title="7.1 Twin experiment principle"></a>7.1 Twin experiment principle</h3><p>In order to overcome the drawback that, in a realistic experiment, <strong>x</strong> <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code> is usually unknown and <strong>y</strong> is often mixed with noises, twin experiment, in which a prototypical test case is selected to simulate real situations, is applied so as to provide <strong>x</strong> <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code> for comparison.</p>
 <blockquote>
 <p><code>↑ 解释了什么是孪生实验</code></p>
 </blockquote>
-<p>In this experiment, a mapping is applied to some sampling true trajectory <strong>x</strong><sub>true,<em>t<sup>k</sup></em></sub> at some points in space and time and arbitrary random noises are added to obtain simulated raw measurements  <strong>y</strong><sub><em>t<sup>k</sup></em></sub>  . DA is then implemented starting from the initial background state <strong>x</strong><sub>b,<em>t<sup>0</sup></em></sub> representing the prior information that could be obtained about corresponding state <strong>x</strong><sub>true,<em>t<sup>0</sup></em></sub>  , along with initial raw measurement  <strong>y</strong><sub><em>t<sup>0</sup></em></sub>  . The output state is then compared against <strong>x</strong><sub>true</sub> , verifying the distance of these two states and minimizing it to evaluate and improve the performance of DA. </p>
+<p>In this experiment, a mapping is applied to some sampling true trajectory <strong>x</strong> <code>&lt;sub&gt;</code>true,<em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> at some points in space and time and arbitrary random noises are added to obtain simulated raw measurements  <strong>y</strong> <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  . DA is then implemented starting from the initial background state <strong>x</strong> <code>&lt;sub&gt;</code>b,<em>t <code>&lt;sup&gt;</code>0 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> representing the prior information that could be obtained about corresponding state <strong>x</strong> <code>&lt;sub&gt;</code>true,<em>t <code>&lt;sup&gt;</code>0 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  , along with initial raw measurement  <strong>y</strong> <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>0 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  . The output state is then compared against <strong>x</strong> <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code> , verifying the distance of these two states and minimizing it to evaluate and improve the performance of DA.</p>
 <p>In this section, we use a twin experiment to evaluate the performance of applying DA to a simple Lorenz system in which raw measurement error covariance is estimated/adjusted using, respectively, DI01, D05 and LSTM.</p>
-<h3 id="7-2-Experiment-set-up-（Q）"><a href="#7-2-Experiment-set-up-（Q）" class="headerlink" title="7.2 Experiment set up （Q）"></a>7.2 Experiment set up （Q）</h3><p>The Lorenz system, first studied by Edward Lorenz, is a system of ordinary differential equations. For certain parameter values and initial conditions, the Lorenz system is notable for having chaotic solutions, in particular the Lorenz attractor, toward which a system tends to evolve. The Lorenz 96 system[52] has been widely used as a prototypical test case to compare the performance of DA algorithms[34, 35, 53]. </p>
+<h3 id="7-2-Experiment-set-up-（Q）"><a href="#7-2-Experiment-set-up-（Q）" class="headerlink" title="7.2 Experiment set up （Q）"></a>7.2 Experiment set up （Q）</h3><p>The Lorenz system, first studied by Edward Lorenz, is a system of ordinary differential equations. For certain parameter values and initial conditions, the Lorenz system is notable for having chaotic solutions, in particular the Lorenz attractor, toward which a system tends to evolve. The Lorenz 96 system[52] has been widely used as a prototypical test case to compare the performance of DA algorithms[34, 35, 53].</p>
 <blockquote>
 <p><code>↑ 洛伦兹系统广泛应用于DA中</code></p>
 </blockquote>
-<p>Here we build a twin experiment framework with a simple three dimensional Lorenz system in which the state vector is denoted as <strong>x</strong>=[x<sub>(0)</sub>, x<sub>(1)</sub>, x<sub>(2)</sub>]. The studied <strong>Lorenz system</strong> can be characterized as:</p>
+<p>Here we build a twin experiment framework with a simple three dimensional Lorenz system in which the state vector is denoted as <strong>x</strong>=[x <code>&lt;sub&gt;</code>(0)<code>&lt;/sub&gt;</code>, x <code>&lt;sub&gt;</code>(1)<code>&lt;/sub&gt;</code>, x <code>&lt;sub&gt;</code>(2)<code>&lt;/sub&gt;</code>]. The studied <strong>Lorenz system</strong> can be characterized as:</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226143503.png" style="zoom:95%;">
 
 <!--- The initial values of the true state **x**<sub>true,*t<sup>0</sup>*</sub> are set to be [0, 1, 1.05] while the initial background state **x**<sub>b,*t<sup>0</sup>*</sub> is generated by combining **x**<sub>true,*t<sup>0</sup>*</sub> with a centered Gaussian noise **ε**<sub>*b,t<sup>0</sup>*</sub> : <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226144151.png" style="zoom:95%;" /> Then both of true states  **x**<sub>true</sub> ={**x**<sub>true,*t<sup>0</sup>*</sub>,...,**x**<sub>true,*t<sup>T</sup>*</sub> } and background states  **x**<sub>b</sub> ={ **x**<sub>b,*t<sup>0</sup>*</sub> ,..., **x**<sub>b,*t<sup>T</sup>*</sub> } of the Lorenz system evolve by conforming, respectively, to the Lorenz equation in Eq 32 until t=1s with total *T* =1000 time steps.  -->
@@ -883,7 +876,7 @@
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226151107.png" style="zoom:95%;">
 
 <blockquote>
-<p> ↑ 参数化<strong>R</strong>生成对称正定矩阵的网站：<a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_spd_matrix.html">https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_spd_matrix.html</a></p>
+<p>↑ 参数化<strong>R</strong>生成对称正定矩阵的网站：<a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_spd_matrix.html">https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_spd_matrix.html</a></p>
 </blockquote>
 <p>the input, output and structure of <strong>LSTM function</strong></p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226152701.png" style="zoom:90%;">
@@ -898,7 +891,7 @@
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226155018.png" style="zoom:67%;">
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226155112.png"></p>
-<p>The averaged DA performance </p>
+<p>The averaged DA performance</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226163134.png" style="zoom:80%;">
 
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226163708.png" style="zoom:80%;">
@@ -908,70 +901,70 @@
 <blockquote>
 <p>↑ <code>averaged</code> 是因为EnDA有100个背景轨迹；</p>
 </blockquote>
-<h2 id="8-Application-to-shallow-water-equations"><a href="#8-Application-to-shallow-water-equations" class="headerlink" title="8 Application to shallow water equations"></a>8 Application to shallow water equations</h2><h3 id="8-1-Experiment-setup"><a href="#8-1-Experiment-setup" class="headerlink" title="8.1 Experiment setup"></a>8.1 Experiment setup</h3><p>For further evaluating the performance of error covariance estimation using LSTM when incorporated with predefined correlation kernels, we also set up a twin experiment framework with <strong>a simplified 2D shallow-water dynamical model</strong>, which is frequently used for <strong>testing data assimilation algorithms</strong> ( e.g., [26, 42]). </p>
-<p>A cylinder of water is positioned in the middle of the study field with size 20<em>mm</em> × 20<em>mm</em> and released at the initial time step <em>t<sup>k</sup>=t<sup>0</sup></em> s (i.e., with no initial speed), leading to a non-linear wave-propagation. The dynamics of the water level <em>h</em> (in <em>mm</em>), as well as the horizontal and vertical velocity field (respectively denoted as <em>u</em> and <em>v</em> in 0.1<em>m/s</em>), is given by the nonconservative shallow water equations,</p>
+<h2 id="8-Application-to-shallow-water-equations"><a href="#8-Application-to-shallow-water-equations" class="headerlink" title="8 Application to shallow water equations"></a>8 Application to shallow water equations</h2><h3 id="8-1-Experiment-setup"><a href="#8-1-Experiment-setup" class="headerlink" title="8.1 Experiment setup"></a>8.1 Experiment setup</h3><p>For further evaluating the performance of error covariance estimation using LSTM when incorporated with predefined correlation kernels, we also set up a twin experiment framework with <strong>a simplified 2D shallow-water dynamical model</strong>, which is frequently used for <strong>testing data assimilation algorithms</strong> ( e.g., [26, 42]).</p>
+<p>A cylinder of water is positioned in the middle of the study field with size 20<em>mm</em> × 20<em>mm</em> and released at the initial time step <em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code>=t <code>&lt;sup&gt;</code>0 <code>&lt;/sup&gt;</code></em> s (i.e., with no initial speed), leading to a non-linear wave-propagation. The dynamics of the water level <em>h</em> (in <em>mm</em>), as well as the horizontal and vertical velocity field (respectively denoted as <em>u</em> and <em>v</em> in 0.1<em>m/s</em>), is given by the nonconservative shallow water equations,</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227201158.png" style="zoom:80%;">
 
 <blockquote>
 <p><code>↑ 潜水模型</code></p>
 </blockquote>
-<p>The evolution of the reference state (x<sub>true</sub>), together with the error-free model <strong>equivalent observations</strong> (i.e., H(x<sub>true</sub>)), is illustrated in <strong>Fig 8</strong>. </p>
+<p>The evolution of the reference state (x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code>), together with the error-free model <strong>equivalent observations</strong> (i.e., H(x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code>)), is illustrated in <strong>Fig 8</strong>.</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227201917.png"></p>
-<p>Spatially <strong>correlated prior observation errors</strong> are generated artificially and combined with the transformation operator to simulate real-time observations. More precisely, the observations are generated from the model equivalent  H(x<sub>true</sub>) <strong>separately for the fields u and v</strong>. H is defined as a <strong>sparse matrix to imply the fact that measurements in real-world applications are sparser than true states</strong> due to the interference existing in the former situations as well as the limited performances of sensors.</p>
+<p>Spatially <strong>correlated prior observation errors</strong> are generated artificially and combined with the transformation operator to simulate real-time observations. More precisely, the observations are generated from the model equivalent  H(x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code>) <strong>separately for the fields u and v</strong>. H is defined as a <strong>sparse matrix to imply the fact that measurements in real-world applications are sparser than true states</strong> due to the interference existing in the former situations as well as the limited performances of sensors.</p>
 <blockquote>
 <p><code>↑ 这里对H算子与观测的关系说的非常到位，对H算子的稀疏性也讲的很好</code></p>
 </blockquote>
-<p>As shown in <strong>Fig 7</strong>, the spatial observations at time <em>t<sup>k</sup></em> is defined as the average of u<sub><em>t<sup>k</sup></em></sub> and v<sub><em>t<sup>k</sup></em></sub>  in a 2 × 2 cells area with an observation error ε<sub>y<sub><em>t<sup>k</sup></em></sub></sub> ,</p>
+<p>As shown in <strong>Fig 7</strong>, the spatial observations at time <em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> is defined as the average of u <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> and v <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>  in a 2 × 2 cells area with an observation error ε <code>&lt;sub&gt;</code>y <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;&lt;/sub&gt;</code> ,</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227204749.png" alt=" " style="zoom:80%;">
 
-<p>and identical for y<sub><em>v,i,j,t<sup>k</sup></em></sub> . </p>
+<p>and identical for y <code>&lt;sub&gt;</code><em>v,i,j,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> .</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227204957.png" style="zoom:80%;">
 
-<p>Therefore, the dimension of the observation vector y = [ y<sub><em>u,t<sup>k</sup></em></sub>, y<sub><em>v,t<sup>k</sup></em></sub>] is 200.</p>
+<p>Therefore, the dimension of the observation vector y = [ y <code>&lt;sub&gt;</code><em>u,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>, y <code>&lt;sub&gt;</code><em>v,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>] is 200.</p>
 <blockquote>
 <p><code>↑ 上面介绍的是某一时刻的观测是什么，H 观测算子依此构建</code></p>
 </blockquote>
-<p>In this experiment, we suppose that the observation error  ε<sub>y<sub><em>u,i,j,t<sup>k</sup></em></sub></sub>  and ε<sub>y<sub><em>v,i,j,t<sup>k</sup></em></sub></sub>  , respectively of the velocity fields u and v, follow the same <strong>Gaussian distribution</strong> N(0,R). Thus, the observation error covariance in this shallow water system can be fully characterized by a 100 × 100 <strong>R</strong> matrix after the observations (originally in a 2D grid) being converted to a 1D vector.</p>
+<p>In this experiment, we suppose that the observation error  ε <code>&lt;sub&gt;</code>y <code>&lt;sub&gt;</code><em>u,i,j,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;&lt;/sub&gt;</code>  and ε <code>&lt;sub&gt;</code>y <code>&lt;sub&gt;</code><em>v,i,j,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;&lt;/sub&gt;</code>  , respectively of the velocity fields u and v, follow the same <strong>Gaussian distribution</strong> N(0,R). Thus, the observation error covariance in this shallow water system can be fully characterized by a 100 × 100 <strong>R</strong> matrix after the observations (originally in a 2D grid) being converted to a 1D vector.</p>
 <blockquote>
 <p><code>↑ 上面介绍的是某一时刻观测误差协方差的维数</code></p>
 </blockquote>
-<p>Here we adopt a different parameterization of the R matrix thanks to an <strong>isotropic correlation function</strong> ψ<sub>R</sub>(.),</p>
+<p>Here we adopt a different parameterization of the R matrix thanks to an <strong>isotropic correlation function</strong> ψ <code>&lt;sub&gt;</code>R <code>&lt;/sub&gt;</code>(.),</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227210650.png" style="zoom:80%;">
 
 <ul>
-<li><p>where <strong>D</strong>=[<em>D</em><sub>0</sub>,…, <em>D</em><sub>99</sub>], representing the error variances in the 2D (10 × 10) velocity field. Each element of D is generated individually following an uniform distribution,</p>
+<li><p>where <strong>D</strong>=[<em>D</em> <code>&lt;sub&gt;</code>0 <code>&lt;/sub&gt;</code>,…, <em>D</em> <code>&lt;sub&gt;</code>99 <code>&lt;/sub&gt;</code>], representing the error variances in the 2D (10 × 10) velocity field. Each element of D is generated individually following an uniform distribution,</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227210854.png" style="zoom:80%;">
 
 <p>which produces only positive elements to guarantee the positive definiteness of R.</p>
 </li>
-<li><p>ψ<sub>R</sub>(.) is the <strong>second-order auto-aggressive (also known as Balgovind) function</strong>,</p>
+<li><p>ψ <code>&lt;sub&gt;</code>R <code>&lt;/sub&gt;</code>(.) is the <strong>second-order auto-aggressive (also known as Balgovind) function</strong>,</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227211048.png" style="zoom:80%;">
 
-<p>where <em>L</em><sub>R</sub> is the correlation scale length, fixed as <em>L</em><sub>R</sub> = 10 in this application. <em>r</em> denotes the correlation scale length in the 2D space and is also generated uniformly with  <em>r</em> ~U(1,5). </p>
-<p>Being part of Matern kernels, <strong>the SOAR function is often used in DA</strong> for prior error covariance modeling [6, 26] thanks to its smoothness and good conditioning. </p>
+<p>where <em>L</em> <code>&lt;sub&gt;</code>R <code>&lt;/sub&gt;</code> is the correlation scale length, fixed as <em>L</em> <code>&lt;sub&gt;</code>R <code>&lt;/sub&gt;</code> = 10 in this application. <em>r</em> denotes the correlation scale length in the 2D space and is also generated uniformly with  <em>r</em> ~U(1,5).</p>
+<p>Being part of Matern kernels, <strong>the SOAR function is often used in DA</strong> for prior error covariance modeling [6, 26] thanks to its smoothness and good conditioning.</p>
 </li>
 </ul>
 <blockquote>
 <p><code>↑ 上面介绍了观测误差协方差的构建</code></p>
 </blockquote>
-<p>The simulation of x<sub><em>b,t<sup>k</sup></em></sub>=[u<sub><em>b,t<sup>k</sup></em></sub>, v<sub><em>b,t<sup>k</sup></em></sub>] via the same discretization of <strong>Eq 39</strong> (except the initial conditions) is used as background states at time <em>t<sup>k</sup></em> in the DA modeling. Similar to the Lorenz experiment(i.e., <strong>Eq 35</strong>), {x<sub><em>b,t<sup>k</sup></em></sub>} is acquired by combining {x<sub><em>a,t<sup>k</sup></em></sub>} with randomly generated Gaussian errors, while {x<sub><em>a,t<sup>k</sup></em></sub>} is obtained every 100 time steps (i.e., 0.01s) from ensemble DA with time series observation data {y<sub><em>t<sup>k</sup></em></sub>} and the estimated observation error covariance R.</p>
+<p>The simulation of x <code>&lt;sub&gt;</code><em>b,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>=[u <code>&lt;sub&gt;</code><em>b,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>, v <code>&lt;sub&gt;</code><em>b,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>] via the same discretization of <strong>Eq 39</strong> (except the initial conditions) is used as background states at time <em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> in the DA modeling. Similar to the Lorenz experiment(i.e., <strong>Eq 35</strong>), {x <code>&lt;sub&gt;</code><em>b,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>} is acquired by combining {x <code>&lt;sub&gt;</code><em>a,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>} with randomly generated Gaussian errors, while {x <code>&lt;sub&gt;</code><em>a,t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>} is obtained every 100 time steps (i.e., 0.01s) from ensemble DA with time series observation data {y <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>} and the estimated observation error covariance R.</p>
 <blockquote>
 <p><code>↑ 上面介绍了某一时刻的背景场是什么</code></p>
 </blockquote>
-<h3 id="8-2-DA-with-LSTM-estimated-R"><a href="#8-2-DA-with-LSTM-estimated-R" class="headerlink" title="8.2 DA with LSTM estimated R"></a>8.2 DA with LSTM estimated R</h3><p>As with the Lorenz experiment, simulated observations {y<sub><em>t<sup>k</sup></em></sub>}, generated in the same process with that in the Lorenz system, are used as input training data for the LSTM model, while the <strong>D</strong> vector and the correlation scale <strong>r</strong> served as training output. </p>
+<h3 id="8-2-DA-with-LSTM-estimated-R"><a href="#8-2-DA-with-LSTM-estimated-R" class="headerlink" title="8.2 DA with LSTM estimated R"></a>8.2 DA with LSTM estimated R</h3><p>As with the Lorenz experiment, simulated observations {y <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>}, generated in the same process with that in the Lorenz system, are used as input training data for the LSTM model, while the <strong>D</strong> vector and the correlation scale <strong>r</strong> served as training output.</p>
 <blockquote>
 <p><code>↑ 上面介绍了浅水试验LSTM模型训练集的输入和输出</code></p>
 </blockquote>
-<p>The specific structure of this LSTM network is shown in <strong>Table 3</strong>. This model has the same structure as the one of the Lorenz systems shown in <strong>Table 1</strong>, except the input and output dimensions. Besides, two types of LSTM are also proposed as what have been realized in the Lorenz system: <strong>LSTM1000</strong> employs the whole 1000 time steps observation data as LSTM training and prediction inputs while <strong>LSTM200</strong> makes use of only the first 200 time steps of observation data as the LSTM inputs. </p>
+<p>The specific structure of this LSTM network is shown in <strong>Table 3</strong>. This model has the same structure as the one of the Lorenz systems shown in <strong>Table 1</strong>, except the input and output dimensions. Besides, two types of LSTM are also proposed as what have been realized in the Lorenz system: <strong>LSTM1000</strong> employs the whole 1000 time steps observation data as LSTM training and prediction inputs while <strong>LSTM200</strong> makes use of only the first 200 time steps of observation data as the LSTM inputs.</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220227212912.png"></p>
 <blockquote>
 <p><code>↑ 上面介绍了浅水试验LSTM模型结构，两个试验</code></p>
 </blockquote>
-<p>After the LSTM is well trained on the training set of 173000 generated observation trajectories in this experiment, R can be gained even only observation time-series data {y<sub><em>t<sup>k</sup></em></sub>} is acknowledged.</p>
+<p>After the LSTM is well trained on the training set of 173000 generated observation trajectories in this experiment, R can be gained even only observation time-series data {y <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>k <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code>} is acknowledged.</p>
 <blockquote>
 <p><code>↑ ...</code></p>
 </blockquote>
-<p>Similar to the Lorenz system, EnDA is performed here with an ensemble of 100 state trajectories initialized from the same initial state x<sub><em>t<sup>0</sup></em></sub> for each observation series. <strong>EnDA takes place every 200 time steps</strong> with the R matrix estimated through different methods.</p>
+<p>Similar to the Lorenz system, EnDA is performed here with an ensemble of 100 state trajectories initialized from the same initial state x <code>&lt;sub&gt;</code><em>t <code>&lt;sup&gt;</code>0 <code>&lt;/sup&gt;</code></em> <code>&lt;/sub&gt;</code> for each observation series. <strong>EnDA takes place every 200 time steps</strong> with the R matrix estimated through different methods.</p>
 <blockquote>
 <p><code>↑ EnDA 集合，EnDA 同化窗口</code></p>
 </blockquote>
@@ -981,7 +974,7 @@
 <ul>
 <li><p>主题设置为 <strong>白色</strong>；</p>
 </li>
-<li><p>勾选<code>Run with Python Console</code>，在运行完文件后，<strong>能在Python Console看到变量</strong>;</p>
+<li><p>勾选 <code>Run with Python Console</code>，在运行完文件后，<strong>能在Python Console看到变量</strong>;</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226203810.png"></p>
 </li>
 <li><p>右键执行所选代码，<strong>能在Python Console看到变量</strong>;</p>
@@ -999,7 +992,7 @@
 <p>怎么<strong>感觉pycharm比matlab还好用呀</strong>~~😊</p>
 </blockquote>
 </li>
-<li><p>在pycharm上以项目的形式打开<code>LSTM_Covariance-main</code>文件夹，通过Anaconda，为项目创建一个新环境</p>
+<li><p>在pycharm上以项目的形式打开 <code>LSTM_Covariance-main</code>文件夹，通过Anaconda，为项目创建一个新环境</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220226170212.png"></p>
 </li>
 <li><p>为环境安装相关python包（库）</p>
@@ -1012,7 +1005,7 @@ sklearn
 pandas<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>进入 Anaconda Prompt，输入：</p>
-<pre class="line-numbers language-Anaconda" data-language="Anaconda"><div class="caption"><span>Prompt</span></div><code class="language-Anaconda">conda info -e
+<pre class="line-numbers language-Anaconda" data-language="Anaconda"><code class="language-Anaconda">conda info -e
 conda activate LSTM_Covariance-main
 pip install tensorflow<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ol>
@@ -1042,14 +1035,14 @@ pip install tensorflow<span aria-hidden="true" class="line-numbers-rows"><span><
 <li><p><code>.concatenate axis=0 数组拼接</code></p>
 </li>
 <li><p><code>y = np.dot(H,x)               #why this is this expression to calculate y? </code></p>
-<p>这个 x ，在论文7.2中指出是x<sub>true</sub>，</p>
-<p>而代码中的 x 根据7.2中公式(33)应该是x<sub>b</sub>，</p>
+<p>这个 x ，在论文7.2中指出是x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code>，</p>
+<p>而代码中的 x 根据7.2中公式(33)应该是x <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code>，</p>
 <p><strong>QT：矛盾了吗？</strong></p>
 <p><strong>猜测</strong>：我觉得应该是代码出了问题</p>
 <ul>
-<li><p>代码中出现了两次 x<sub>true</sub> 的定义，有一个应该是x<sub>b</sub>；</p>
+<li><p>代码中出现了两次 x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code> 的定义，有一个应该是x <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code>；</p>
 </li>
-<li><p>从<strong>同化公式</strong>可以看出，y应该等于H(x<sub>true</sub>) ，<strong>如果观测数据y等于H(x<sub>b</sub>)，那还需要同化什么呀</strong>，直接x<sub>a</sub>=x<sub>b</sub> 。</p>
+<li><p>从<strong>同化公式</strong>可以看出，y应该等于H(x <code>&lt;sub&gt;</code>true <code>&lt;/sub&gt;</code>) ，<strong>如果观测数据y等于H(x <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code>)，那还需要同化什么呀</strong>，直接x <code>&lt;sub&gt;</code>a <code>&lt;/sub&gt;</code>=x <code>&lt;sub&gt;</code>b <code>&lt;/sub&gt;</code> 。</p>
 <p>可以看看后面<strong>作者是怎么同化的</strong>~</p>
 <p>往下看~</p>
 </li>
@@ -1108,7 +1101,7 @@ pip install tensorflow<span aria-hidden="true" class="line-numbers-rows"><span><
     M <span class="token operator">=</span> M <span class="token operator">+</span> M<span class="token punctuation">.</span>T
     M <span class="token operator">+=</span> np<span class="token punctuation">.</span>eye<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
     <span class="token keyword">return</span> M
-    
+  
 <span class="token comment">################################################################################</span>
 <span class="token comment">#######################################################################</span>
 <span class="token keyword">def</span> <span class="token function">cov_to_cor</span><span class="token punctuation">(</span>M<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment"># from a covariance matrix to its associated correlation matrix</span>
@@ -1121,7 +1114,7 @@ pip install tensorflow<span aria-hidden="true" class="line-numbers-rows"><span><
     x_dot<span class="token punctuation">,</span> y_dot<span class="token punctuation">,</span> z_dot <span class="token operator">=</span> lorenz<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span>
     x_next <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token punctuation">(</span>x_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>
     y_next <span class="token operator">=</span> y <span class="token operator">+</span> <span class="token punctuation">(</span>y_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>
-    z_next <span class="token operator">=</span> z <span class="token operator">+</span> <span class="token punctuation">(</span>z_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>    
+    z_next <span class="token operator">=</span> z <span class="token operator">+</span> <span class="token punctuation">(</span>z_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>  
     <span class="token keyword">return</span> x_next<span class="token punctuation">,</span> y_next<span class="token punctuation">,</span> z_next
 
 <span class="token keyword">def</span> <span class="token function">VAR_3D</span><span class="token punctuation">(</span>xb<span class="token punctuation">,</span>Y<span class="token punctuation">,</span>H<span class="token punctuation">,</span>B<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment">#booleen=1 garde la trace</span>
@@ -1167,53 +1160,53 @@ x_true<span class="token punctuation">[</span><span class="token number">2</span
 <span class="token keyword">for</span> ii <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword">if</span> ii<span class="token operator">%</span><span class="token number">100</span> <span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
         <span class="token keyword">print</span><span class="token punctuation">(</span>ii<span class="token punctuation">)</span>
-            
+        
 <span class="token comment"># construct observations</span>
-                
+            
 <span class="token comment">#=========================================================================</span>
     <span class="token comment">#generate x with noise</span>
     <span class="token keyword">for</span> repetation <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         xs<span class="token punctuation">,</span>ys<span class="token punctuation">,</span>zs <span class="token operator">=</span> lorenz_attractor<span class="token punctuation">(</span>s<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> r<span class="token operator">=</span><span class="token number">28</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">2.667</span><span class="token punctuation">,</span> dt <span class="token operator">=</span> <span class="token number">0.001</span><span class="token punctuation">,</span> num_steps <span class="token operator">=</span> <span class="token number">1000</span><span class="token punctuation">,</span>x0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span><span class="token operator">+</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
                                     y0<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">.</span><span class="token operator">+</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">)</span><span class="token punctuation">,</span>z0<span class="token operator">=</span><span class="token number">1.05</span><span class="token operator">+</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        
+    
         x_true <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span>num_steps<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        
+    
         x_true<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>xs<span class="token punctuation">)</span>
         x_true<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>ys<span class="token punctuation">)</span>
-        x_true<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>zs<span class="token punctuation">)</span>                
-        
+        x_true<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>zs<span class="token punctuation">)</span>            
+    
 <span class="token comment">#=========================================================================</span>
 
         y_true <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span>num_steps<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
         y_obs <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span>num_steps<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        
+    
         v <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
         R <span class="token operator">=</span> correlation_from_covariance<span class="token punctuation">(</span>sklearn<span class="token punctuation">.</span>datasets<span class="token punctuation">.</span>make_spd_matrix<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">#SPD covariance</span>
-        
+    
         r1 <span class="token operator">=</span> R<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span>
         r2 <span class="token operator">=</span> R<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
         r3 <span class="token operator">=</span> R<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
-        
+    
         R <span class="token operator">=</span> v<span class="token operator">*</span>R   
         <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>num_steps<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
             <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"sample time: "</span><span class="token punctuation">,</span>ii<span class="token punctuation">)</span>
             <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"iteration time: "</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span>
             x <span class="token operator">=</span> x_true<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>i<span class="token punctuation">]</span>
             x<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-            y <span class="token operator">=</span> np<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>H<span class="token punctuation">,</span>x<span class="token punctuation">)</span>               <span class="token comment">#why this is this expression to calculate y?        </span>
+            y <span class="token operator">=</span> np<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>H<span class="token punctuation">,</span>x<span class="token punctuation">)</span>               <span class="token comment">#why this is this expression to calculate y?    </span>
             y<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span>y<span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token punctuation">)</span>
             y_true<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y
-            
+        
             y_noise <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>multivariate_normal<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span>R<span class="token punctuation">)</span>
             y_noise<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span>y_noise<span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token punctuation">)</span>
             y_noise <span class="token operator">+=</span> y 
             y_obs<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y_noise
-            
+        
             parameters <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>r1<span class="token punctuation">,</span>r2<span class="token punctuation">,</span>r3<span class="token punctuation">,</span>v<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">#output for deep learning regression</span>
                         <span class="token comment">#train_row = np.concatenate((y_obs.ravel(),x_true.ravel())) #input for deep learning    #what are the functionalities of these r -&gt;covaraicen! why v is not necessary???</span>
             train_row <span class="token operator">=</span> y_obs<span class="token punctuation">.</span>ravel<span class="token punctuation">(</span><span class="token punctuation">)</span>
             train_row <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">(</span>train_row<span class="token punctuation">.</span>ravel<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>parameters<span class="token punctuation">)</span><span class="token punctuation">)</span>
-            
+        
         train_row<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>train_row<span class="token punctuation">.</span>size<span class="token punctuation">)</span>
         trainning_set <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">(</span>trainning_set<span class="token punctuation">,</span>train_row<span class="token punctuation">)</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
 
@@ -1225,12 +1218,6 @@ trainning_set <span class="token operator">=</span> trainning_set<span class="to
 <span class="token comment">#####################################################################################""</span>
 np<span class="token punctuation">.</span>savetxt<span class="token punctuation">(</span><span class="token string">"lorenz_cov_train_v2/trainset_withx_steps1000_test8.csv"</span><span class="token punctuation">,</span> trainning_set<span class="token punctuation">,</span> delimiter<span class="token operator">=</span><span class="token string">","</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <p><code>simulated_data_generation.py</code> 在released in 2022-02-26 基础上，进行注释</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># -*- coding: utf-8 -*-</span>
 <span class="token comment"># generate the trainning set for keras regression </span>
@@ -1287,7 +1274,7 @@ np<span class="token punctuation">.</span>savetxt<span class="token punctuation"
     M <span class="token operator">=</span> M <span class="token operator">+</span> M<span class="token punctuation">.</span>T
     M <span class="token operator">+=</span> np<span class="token punctuation">.</span>eye<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
     <span class="token keyword">return</span> M
-    
+  
 <span class="token comment">################################################################################</span>
 <span class="token comment">#######################################################################</span>
 <span class="token keyword">def</span> <span class="token function">cov_to_cor</span><span class="token punctuation">(</span>M<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment"># from a covariance matrix to its associated correlation matrix</span>
@@ -1300,7 +1287,7 @@ np<span class="token punctuation">.</span>savetxt<span class="token punctuation"
     x_dot<span class="token punctuation">,</span> y_dot<span class="token punctuation">,</span> z_dot <span class="token operator">=</span> lorenz<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span>
     x_next <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token punctuation">(</span>x_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>
     y_next <span class="token operator">=</span> y <span class="token operator">+</span> <span class="token punctuation">(</span>y_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>
-    z_next <span class="token operator">=</span> z <span class="token operator">+</span> <span class="token punctuation">(</span>z_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>    
+    z_next <span class="token operator">=</span> z <span class="token operator">+</span> <span class="token punctuation">(</span>z_dot <span class="token operator">*</span> dt<span class="token punctuation">)</span>  
     <span class="token keyword">return</span> x_next<span class="token punctuation">,</span> y_next<span class="token punctuation">,</span> z_next
 
 <span class="token keyword">def</span> <span class="token function">VAR_3D</span><span class="token punctuation">(</span>xb<span class="token punctuation">,</span>Y<span class="token punctuation">,</span>H<span class="token punctuation">,</span>B<span class="token punctuation">,</span>R<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment">#booleen=1 garde la trace</span>
@@ -1348,21 +1335,21 @@ x_true<span class="token punctuation">[</span><span class="token number">2</span
 <span class="token keyword">for</span> ii <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># ii = 0   算法1  中的iter?</span>
     <span class="token keyword">if</span> ii<span class="token operator">%</span><span class="token number">100</span> <span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
         <span class="token keyword">print</span><span class="token punctuation">(</span>ii<span class="token punctuation">)</span>
-            
+        
 <span class="token comment"># construct observations</span>
-                
+            
 <span class="token comment">#=========================================================================</span>
     <span class="token keyword">for</span> repetation <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment"># repetation = 0</span>
         <span class="token comment"># 背景场 的生成</span>
         xs<span class="token punctuation">,</span>ys<span class="token punctuation">,</span>zs <span class="token operator">=</span> lorenz_attractor<span class="token punctuation">(</span>s<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> r<span class="token operator">=</span><span class="token number">28</span><span class="token punctuation">,</span> b<span class="token operator">=</span><span class="token number">2.667</span><span class="token punctuation">,</span> dt <span class="token operator">=</span> <span class="token number">0.001</span><span class="token punctuation">,</span> num_steps <span class="token operator">=</span> <span class="token number">1000</span><span class="token punctuation">,</span>x0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">.</span><span class="token operator">+</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
                                     y0<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">.</span><span class="token operator">+</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">)</span><span class="token punctuation">,</span>z0<span class="token operator">=</span><span class="token number">1.05</span><span class="token operator">+</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        
+    
         x_true <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span>num_steps<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 背景场，这里只对初始值进行噪声干扰，是因为lorenz是个混沌系统；</span>
-        
+    
         x_true<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>xs<span class="token punctuation">)</span>
         x_true<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>ys<span class="token punctuation">)</span>
-        x_true<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>zs<span class="token punctuation">)</span>                
-        
+        x_true<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>zs<span class="token punctuation">)</span>            
+    
 <span class="token comment">#=========================================================================</span>
 
         y_true <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span>num_steps<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">#</span>
@@ -1371,11 +1358,11 @@ x_true<span class="token punctuation">[</span><span class="token number">2</span
         <span class="token comment"># R 的构建</span>
         v <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>uniform<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
         R <span class="token operator">=</span> correlation_from_covariance<span class="token punctuation">(</span>sklearn<span class="token punctuation">.</span>datasets<span class="token punctuation">.</span>make_spd_matrix<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">#SPD covariance</span>
-        
+    
         r1 <span class="token operator">=</span> R<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span>
         r2 <span class="token operator">=</span> R<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
         r3 <span class="token operator">=</span> R<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
-        
+    
         R <span class="token operator">=</span> v<span class="token operator">*</span>R
 
         <span class="token comment"># 训练数据集 的构建：Lorenz 3 个参数的时间节点（3*1001），R 的 4 个参数 （+4）</span>
@@ -1385,10 +1372,10 @@ x_true<span class="token punctuation">[</span><span class="token number">2</span
             <span class="token comment"># 观测 y 的生成</span>
             x <span class="token operator">=</span> x_true<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>i<span class="token punctuation">]</span>
             x<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-            y <span class="token operator">=</span> np<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>H<span class="token punctuation">,</span>x<span class="token punctuation">)</span>               <span class="token comment">#why this is this expression to calculate y?        </span>
+            y <span class="token operator">=</span> np<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>H<span class="token punctuation">,</span>x<span class="token punctuation">)</span>               <span class="token comment">#why this is this expression to calculate y?    </span>
             y<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span>y<span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token punctuation">)</span>
             y_true<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> y
-            
+        
             y_noise <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>multivariate_normal<span class="token punctuation">(</span>np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span>R<span class="token punctuation">)</span>
             y_noise<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span>y_noise<span class="token punctuation">.</span>size<span class="token punctuation">,</span><span class="token punctuation">)</span>
             y_noise <span class="token operator">+=</span> y 
@@ -1399,7 +1386,7 @@ x_true<span class="token punctuation">[</span><span class="token number">2</span
                         <span class="token comment">#train_row = np.concatenate((y_obs.ravel(),x_true.ravel())) #input for deep learning    #what are the functionalities of these r -&gt;covaraicen! why v is not necessary???</span>
             train_row <span class="token operator">=</span> y_obs<span class="token punctuation">.</span>ravel<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># .ravel 矩阵向量化，x = np.array([[1,2],[3,4]]),则print(np.ravel(x)) = [1 2 3 4]</span>
             train_row <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">(</span>train_row<span class="token punctuation">.</span>ravel<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>parameters<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># .concatenate 数组拼接</span>
-            
+        
         train_row<span class="token punctuation">.</span>shape <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>train_row<span class="token punctuation">.</span>size<span class="token punctuation">)</span> <span class="token comment"># .shape</span>
         trainning_set <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">(</span>trainning_set<span class="token punctuation">,</span>train_row<span class="token punctuation">)</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment"># .concatenate axis=0 数组拼接</span>
 
@@ -1419,7 +1406,7 @@ np<span class="token punctuation">.</span>savetxt<span class="token punctuation"
 <p>解决方法：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/62707558/importerror-cannot-import-name-adam-from-keras-optimizers/69581798">https://stackoverflow.com/questions/62707558/importerror-cannot-import-name-adam-from-keras-optimizers/69581798</a></p>
 <pre class="line-numbers language-none"><code class="language-none">from tensorflow.keras.optimizers import Adam<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li><p>整个运行时间</p>
-<p>运行开始时间：11:40 </p>
+<p>运行开始时间：11:40</p>
 <p>运行结束时间：14:20</p>
 </li>
 <li><p>相关代码知识点</p>
@@ -1592,7 +1579,7 @@ X2 <span class="token operator">=</span> test_input
 
 
 <span class="token comment">#def my_loss_fn(y_true, y_pred):</span>
-<span class="token comment">#    </span>
+<span class="token comment">#  </span>
 <span class="token comment">#    return K.mean(K.abs(y_true - y_pred) * weight)</span>
 
 <span class="token comment"># ========================================================================================</span>
@@ -2238,7 +2225,7 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    565
+                    575
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="01-VScode安装和搭建Python"><a href="#01-VScode安装和搭建Python" class="headerlink" title="01-VScode安装和搭建Python"></a><center>01-VScode安装和搭建Python</center></h1><h2 id="—————————————"><a href="#—————————————" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YL411L7Sg?spm_id_from=333.851.b_7265636f6d6d656e64.6">https://www.bilibili.com/video/BV1YL411L7Sg?spm_id_from=333.851.b_7265636f6d6d656e64.6</a></p>
+                <h1 id="lt-center-gt-01-VScode安装和搭建Python-lt-center-gt"><a href="#lt-center-gt-01-VScode安装和搭建Python-lt-center-gt" class="headerlink" title="<center>01-VScode安装和搭建Python</center>"></a><code>&lt;center&gt;</code>01-VScode安装和搭建Python<code>&lt;/center&gt;</code></h1><h2 id="—————————————"><a href="#—————————————" class="headerlink" title="—————————————"></a>—————————————</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YL411L7Sg?spm_id_from=333.851.b_7265636f6d6d656e64.6">https://www.bilibili.com/video/BV1YL411L7Sg?spm_id_from=333.851.b_7265636f6d6d656e64.6</a></p>
 <h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><ul>
 <li><p><strong>遇到的问题：</strong></p>
 <p><code>‘***’不是内部或外部命令，也不是可运行的程序或批处理文件。</code></p>
@@ -417,10 +417,10 @@
 </blockquote>
 </li>
 <li><p><strong>解决方法二：</strong></p>
-<p>添加<code>环境变量</code>，在<code>用户变量</code>或者<code>系统变量</code>的<code>Path</code>添加路径即可。</p>
+<p>添加 <code>环境变量</code>，在 <code>用户变量</code>或者 <code>系统变量</code>的 <code>Path</code>添加路径即可。</p>
 <blockquote>
-<p>添加环境变量，类似于linux中在<code>~/.bashrc</code>文件填写<code>export</code>；</p>
-<p>环境变量类似于一个<code>搜索列表</code>；</p>
+<p>添加环境变量，类似于linux中在 <code>~/.bashrc</code>文件填写 <code>export</code>；</p>
+<p>环境变量类似于一个 <code>搜索列表</code>；</p>
 </blockquote>
 </li>
 </ul>
@@ -448,7 +448,7 @@
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115135537.png"></p>
 <blockquote>
-<p>我喜欢<code>浅色</code>主题；</p>
+<p>我喜欢 <code>浅色</code>主题；</p>
 </blockquote>
 </li>
 </ol>
@@ -471,41 +471,37 @@
 <li><p>安装完成</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115160850.png" style="zoom:50%;">
 
-
-
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115160916.png" style="zoom:50%;"></li>
 <li><p>检测安装</p>
 <pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">C:\Users\Liujincan2&gt;python -V                                                         Python 3.10.1 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 </ol>
 <h3 id="VScode搭建Python环境"><a href="#VScode搭建Python环境" class="headerlink" title="VScode搭建Python环境"></a>VScode搭建Python环境</h3><ol>
-<li><p>新建Python环境文件夹<code>Python</code>，在<code>VScode</code>软件中打开此文件夹，选择<code>是，我信任...</code>：</p>
+<li><p>新建Python环境文件夹 <code>Python</code>，在 <code>VScode</code>软件中打开此文件夹，选择 <code>是，我信任...</code>：</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115222953.png"></p>
 <blockquote>
 <ul>
-<li><p>Python环境文件夹放在<code>VScode</code>文件夹的目的，是为了以后将其它环境统一放在<code>VScode</code>文件夹；</p>
-</li>
-<li><p><code>VScode</code>文件夹放在了<code>zotero</code>文件夹的目的，方面以后对<code>VScode</code>软件环境的备份;</p>
-</li>
+<li>Python环境文件夹放在 <code>VScode</code>文件夹的目的，是为了以后将其它环境统一放在 <code>VScode</code>文件夹；</li>
+<li><code>VScode</code>文件夹放在了 <code>zotero</code>文件夹的目的，方面以后对 <code>VScode</code>软件环境的备份;</li>
 </ul>
 </blockquote>
 </li>
-<li><p>在文件夹中新建文件夹<code>Python</code>，再在此文件夹新建文件<code>test.py</code>：</p>
+<li><p>在文件夹中新建文件夹 <code>Python</code>，再在此文件夹新建文件 <code>test.py</code>：</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115223100.png"></p>
 <blockquote>
 <ul>
 <li>此时输入命令<strong>没有提示</strong>；</li>
-<li>此时在<code>VScode</code>中运行py文件需要<code>新建终端</code>；</li>
+<li>此时在 <code>VScode</code>中运行py文件需要 <code>新建终端</code>；</li>
 </ul>
 </blockquote>
 </li>
 <li><p>安装python扩展依赖；</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115170718.png"></p>
 </li>
-<li><p>创建<code>launch.json</code>文件；</p>
+<li><p>创建 <code>launch.json</code>文件；</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115171507.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115223401.png"></p>
 </li>
-<li><p>返回<code>test.py</code>，按<code>F5</code>运行此文件，验证成功。</p>
+<li><p>返回 <code>test.py</code>，按 <code>F5</code>运行此文件，验证成功。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115223546.png"></p>
 </li>
 <li><p><code>格式化文档</code>需求，插件安装；</p>
@@ -516,16 +512,16 @@
 <h3 id="断点调试"><a href="#断点调试" class="headerlink" title="断点调试"></a>断点调试</h3><p>打断点，<code>F5</code>；<code>F10</code>，下一步；</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115225543.png"></p>
 <h3 id="Python个人喜好配置：保存后进行格式化"><a href="#Python个人喜好配置：保存后进行格式化" class="headerlink" title="Python个人喜好配置：保存后进行格式化"></a>Python个人喜好配置：保存后进行格式化</h3><ol>
-<li><p><code>crtl+c+p</code>打开搜索，输入<code>&gt; setting</code>，选择<code>打开设置(json)</code></p>
+<li><p><code>crtl+c+p</code>打开搜索，输入 <code>&gt; setting</code>，选择 <code>打开设置(json)</code></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115230348.png"></p>
 </li>
-<li><p>在<code>settings.json</code>中添加<code>"editor.formatOnSave": true</code>；</p>
+<li><p>在 <code>settings.json</code>中添加 <code>"editor.formatOnSave": true</code>；</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115230812.png"></p>
 </li>
-<li><p>再添加<code>"python.formatting.autopep8Args": ["--ignore", "E402"]</code>，格式化文档。</p>
+<li><p>再添加 <code>"python.formatting.autopep8Args": ["--ignore", "E402"]</code>，格式化文档。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115231641.png"></p>
 <blockquote>
-<p>这是为了解决<code>autopep8</code>自动格式化，把<code>import</code>代码的顺序交换了。</p>
+<p>这是为了解决 <code>autopep8</code>自动格式化，把 <code>import</code>代码的顺序交换了。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220115231043.png"></p>
 </blockquote>
 </li>
@@ -1065,7 +1061,7 @@
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
@@ -412,16 +412,11 @@
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226164149.png"></p>
 <blockquote>
 <ol>
-<li><p><code>comp_wjcLS</code>、<code>link_wjcLS</code>，<code>switch_wjcLS</code> 源项文件；</p>
-</li>
-<li><p><code>.inp</code> 文件的具体介绍需要看手册的附录内容，不过估计看了，也还不是很清楚各个参数的意思，这需要长期的经验积累和深厚的海浪模型背景知识，不过看了，至少知道 <code>.inp</code> 的结构是怎样的；<code>.inp</code> 文件是 user 自己设置的；这里的 <code>.inp</code> 文件只有最基本的几个；</p>
-</li>
-<li><p><code>maine_0125.bot</code>、<code>maine_0125.obst</code>、<code>maine_0125.mask_nobound</code> 文件是通过 <code>waves-workshop-exercise-gridgen.pdf</code> 中实现的，这个pdf文件还蕴藏了一个<strong>打开 ww3 新世界</strong>的宝库钥匙。<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226170632.png"></p>
-</li>
+<li><code>comp_wjcLS</code>、<code>link_wjcLS</code>，<code>switch_wjcLS</code> 源项文件；</li>
+<li><code>.inp</code> 文件的具体介绍需要看手册的附录内容，不过估计看了，也还不是很清楚各个参数的意思，这需要长期的经验积累和深厚的海浪模型背景知识，不过看了，至少知道 <code>.inp</code> 的结构是怎样的；<code>.inp</code> 文件是 user 自己设置的；这里的 <code>.inp</code> 文件只有最基本的几个；</li>
+<li><code>maine_0125.bot</code>、<code>maine_0125.obst</code>、<code>maine_0125.mask_nobound</code> 文件是通过 <code>waves-workshop-exercise-gridgen.pdf</code> 中实现的，这个pdf文件还蕴藏了一个<strong>打开 ww3 新世界</strong>的宝库钥匙。<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226170632.png"></li>
 </ol>
 <!-- 这个新世界 -->
-
-
 </blockquote>
 <hr>
 <h3 id="ww3-生成的-exe-所在位置"><a href="#ww3-生成的-exe-所在位置" class="headerlink" title="ww3 生成的 exe 所在位置"></a>ww3 生成的 exe 所在位置</h3><p>运行 <code>.inp</code> 文件需要 <code>./w3_make</code> 编译生成的 <code>ww3_**</code> 二进制文件，这些文件在 <code>exe</code> 文件夹</p>
@@ -429,12 +424,12 @@
 <hr>
 <h3 id="w3-grid"><a href="#w3-grid" class="headerlink" title="./w3_grid"></a>./w3_grid</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/WaveModel2/2021-11-20~~WW3-6.07/2021-11-18~~test_ww3$ /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/2021-11-20~~WW3-6.07/model/exe/ww3_grid
 
-                   *** WAVEWATCH III Grid preprocessor ***    
+                   *** WAVEWATCH III Grid preprocessor ***  
                <span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
 
   Comment character is <span class="token string">'$'</span>
 
-  Grid name <span class="token builtin class-name">:</span> Maine                         
+  Grid name <span class="token builtin class-name">:</span> Maine                     
 
 
   Spectral discretization <span class="token builtin class-name">:</span> 
@@ -568,7 +563,7 @@
        Cut-off wind sea fract. <span class="token punctuation">(</span>-<span class="token punctuation">)</span> <span class="token builtin class-name">:</span>    <span class="token number">0.333</span>
        Combine wind seas           <span class="token builtin class-name">:</span>  YES/--
        Number of swells <span class="token keyword">in</span> fld out <span class="token builtin class-name">:</span>    <span class="token number">5</span>
-       Partitioning method         <span class="token builtin class-name">:</span>  WW3 default                                  
+       Partitioning method         <span class="token builtin class-name">:</span>  WW3 default                              
 
     Miche-style limiting wave height <span class="token builtin class-name">:</span>
        Hs,max/d factor         <span class="token punctuation">(</span>-<span class="token punctuation">)</span> <span class="token builtin class-name">:</span>    <span class="token number">1.600</span>
@@ -646,7 +641,7 @@
        Scale factor                <span class="token builtin class-name">:</span>    <span class="token number">0.0100</span>
        Layout indicator            <span class="token builtin class-name">:</span>     <span class="token number">1</span>
        Format indicator            <span class="token builtin class-name">:</span>     <span class="token number">1</span>
-       File name                   <span class="token builtin class-name">:</span> maine_0125.obst                                             
+       File name                   <span class="token builtin class-name">:</span> maine_0125.obst                                         
 
   Processing boundary points
   Processing excluded points
@@ -830,10 +825,10 @@
   
   Legend <span class="token builtin class-name">:</span> 
  -----------------------------
-    <span class="token number">0</span> <span class="token builtin class-name">:</span> Land point            
-    <span class="token number">1</span> <span class="token builtin class-name">:</span> Sea point             
+    <span class="token number">0</span> <span class="token builtin class-name">:</span> Land point        
+    <span class="token number">1</span> <span class="token builtin class-name">:</span> Sea point         
     <span class="token number">2</span> <span class="token builtin class-name">:</span> Active boundary point 
-    <span class="token number">3</span> <span class="token builtin class-name">:</span> Excluded point        
+    <span class="token number">3</span> <span class="token builtin class-name">:</span> Excluded point    
 
 
   Output boundary points <span class="token builtin class-name">:</span> 
@@ -844,7 +839,7 @@
   Writing model definition <span class="token function">file</span> <span class="token punctuation">..</span>.
 
  Filling 3D look-up table <span class="token keyword">for</span> SIN4. please <span class="token function">wait</span>
- WAVEWATCH III ST4 TABLE FOR STRESS III  <span class="token number">4.12</span>    <span class="token number">2.54853606</span>       <span class="token number">9</span>.49999969E-03   <span class="token number">1.42999995</span>             <span class="token number">100</span>         <span class="token number">200</span>          <span class="token number">50</span>   <span class="token number">6</span>.00000005E-03  <span class="token number">0.400000006</span>       <span class="token number">9.80599976</span>    
+ WAVEWATCH III ST4 TABLE FOR STRESS III  <span class="token number">4.12</span>    <span class="token number">2.54853606</span>       <span class="token number">9</span>.49999969E-03   <span class="token number">1.42999995</span>             <span class="token number">100</span>         <span class="token number">200</span>          <span class="token number">50</span>   <span class="token number">6</span>.00000005E-03  <span class="token number">0.400000006</span>       <span class="token number">9.80599976</span>  
 
   Summary grid statistics <span class="token builtin class-name">:</span> 
  --------------------------------------------------
@@ -868,18 +863,18 @@
                  *** WAVEWATCH III  Input pre-processing ***  
                <span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
 
-  Grid name <span class="token builtin class-name">:</span> Maine                         
+  Grid name <span class="token builtin class-name">:</span> Maine                     
 
   Comment character is <span class="token string">'$'</span>
 
 
   Description of inputs
  --------------------------------------------------
-       Input <span class="token builtin class-name">type</span>        <span class="token builtin class-name">:</span> winds         
-       Format <span class="token builtin class-name">type</span>       <span class="token builtin class-name">:</span> long.-lat. grid     
+       Input <span class="token builtin class-name">type</span>        <span class="token builtin class-name">:</span> winds     
+       Format <span class="token builtin class-name">type</span>       <span class="token builtin class-name">:</span> long.-lat. grid   
           Field conserves velocity.
 
-           File name         <span class="token builtin class-name">:</span> mywind1.nc                                                                      
+           File name         <span class="token builtin class-name">:</span> mywind1.nc                                                                  
            Dimension along x <span class="token builtin class-name">:</span> lon
            Dimension along y <span class="token builtin class-name">:</span> lat
            Field component <span class="token number">1</span> <span class="token builtin class-name">:</span> windu
@@ -907,7 +902,7 @@ system msg <span class="token keyword">for</span> write_line failure <span class
 <h4 id="cdo"><a href="#cdo" class="headerlink" title="cdo"></a>cdo</h4><h5 id="安装-cdo"><a href="#安装-cdo" class="headerlink" title="安装 cdo"></a>安装 cdo</h5><blockquote>
 <p>cdo 不是python下的一个包，即!pip install cdo后并不能马上调用这个包。 用 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43166192/article/details/102955514">sudo apt-get install cdo</a> 即可。</p>
 </blockquote>
-<p>在 <code>ubuntu</code> 终端输入 <code> cdo -h</code> 是 <code>cdo -V</code> 可以看 <code>cdo</code> 是否被安装，以下是在 <code>jupyter</code> 下运行的，所以加了 <code>!</code> </p>
+<p>在 <code>ubuntu</code> 终端输入 <code> cdo -h</code> 是 <code>cdo -V</code> 可以看 <code>cdo</code> 是否被安装，以下是在 <code>jupyter</code> 下运行的，所以加了 <code>!</code></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226174438.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226174521.png"></p>
 <h5 id="cdo官方教程-cdo入门教程-中文-cdo手册"><a href="#cdo官方教程-cdo入门教程-中文-cdo手册" class="headerlink" title="cdo官方教程 ,cdo入门教程-中文 ,cdo手册"></a><a target="_blank" rel="noopener" href="https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial">cdo官方教程</a> ,<a target="_blank" rel="noopener" href="https://www.cnblogs.com/jiangleads/p/11146721.html">cdo入门教程-中文</a> ,<a target="_blank" rel="noopener" href="https://code.mpimet.mpg.de/projects/cdo/embedded/cdo.pdf">cdo手册</a></h5><h4 id="cdo-修改-nc-文件"><a href="#cdo-修改-nc-文件" class="headerlink" title="cdo 修改 nc 文件"></a>cdo 修改 nc 文件</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226174844.png" alt="当前路径"></p>
@@ -1023,18 +1018,18 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
                  *** WAVEWATCH III  Input pre-processing ***  
                <span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
 
-  Grid name <span class="token builtin class-name">:</span> Maine                         
+  Grid name <span class="token builtin class-name">:</span> Maine                     
 
   Comment character is <span class="token string">'$'</span>
 
 
   Description of inputs
  --------------------------------------------------
-       Input <span class="token builtin class-name">type</span>        <span class="token builtin class-name">:</span> winds         
-       Format <span class="token builtin class-name">type</span>       <span class="token builtin class-name">:</span> long.-lat. grid     
+       Input <span class="token builtin class-name">type</span>        <span class="token builtin class-name">:</span> winds     
+       Format <span class="token builtin class-name">type</span>       <span class="token builtin class-name">:</span> long.-lat. grid   
           Field conserves velocity.
 
-           File name         <span class="token builtin class-name">:</span> mywind1.nc                                                                      
+           File name         <span class="token builtin class-name">:</span> mywind1.nc                                                                  
            Dimension along x <span class="token builtin class-name">:</span> lon
            Dimension along y <span class="token builtin class-name">:</span> lat
            Field component <span class="token number">1</span> <span class="token builtin class-name">:</span> windu
@@ -1569,7 +1564,7 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
 
   Comment character is <span class="token string">'$'</span>
 
-  Grid name <span class="token builtin class-name">:</span> Maine                         
+  Grid name <span class="token builtin class-name">:</span> Maine                     
 
 
   Initial field ITYPE <span class="token operator">=</span> <span class="token number">3</span>
@@ -1585,15 +1580,13 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
          WAVEWATCH III Initial conditions 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
 <hr>
 <h3 id="w3-shell"><a href="#w3-shell" class="headerlink" title="./w3_shell"></a>./w3_shell</h3><blockquote>
 <p>可能运行时间会很长，这里没运行完；</p>
 </blockquote>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/WaveModel2/2021-11-18~~FromTeacherW_RunningTest/test_ww3$ /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/2021-11-20~~WW3-6.07/model/exe/ww3_shel
 
-                     *** WAVEWATCH III Program shell ***      
+                     *** WAVEWATCH III Program shell ***  
                <span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
 
   Comment character is <span class="token string">'$'</span>
@@ -1601,28 +1594,28 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
 
   Input fields <span class="token builtin class-name">:</span> 
  --------------------------------------------------
-       water levels   ---/NO                      
-       currents       ---/NO                      
-       winds          YES/--                      
-       ice fields     ---/NO                      
-       mean param.    ---/NO                      
-       1D spectra     ---/NO                      
-       2D spectra     ---/NO                      
+       water levels   ---/NO                  
+       currents       ---/NO                  
+       winds          YES/--                  
+       ice fields     ---/NO                  
+       mean param.    ---/NO                  
+       1D spectra     ---/NO                  
+       2D spectra     ---/NO                  
  
-            Fields   <span class="token builtin class-name">:</span> Wave height         
+            Fields   <span class="token builtin class-name">:</span> Wave height     
                        Mean wave period<span class="token punctuation">(</span>+2<span class="token punctuation">)</span>
-            Point  <span class="token number">1</span> <span class="token builtin class-name">:</span>   <span class="token number">290.64</span>   <span class="token number">43.72</span>  p44032    
-                   <span class="token number">2</span> <span class="token builtin class-name">:</span>   <span class="token number">290.87</span>   <span class="token number">43.20</span>  p44005    
-                   <span class="token number">3</span> <span class="token builtin class-name">:</span>   <span class="token number">292.12</span>   <span class="token number">43.48</span>  p44037    
-                   <span class="token number">4</span> <span class="token builtin class-name">:</span>   <span class="token number">291.00</span>   <span class="token number">44.06</span>  p44033    
-                   <span class="token number">5</span> <span class="token builtin class-name">:</span>   <span class="token number">290.75</span>   <span class="token number">40.50</span>  p44008    
-                   <span class="token number">6</span> <span class="token builtin class-name">:</span>   <span class="token number">289.86</span>   <span class="token number">43.53</span>  p44007    
-                   <span class="token number">7</span> <span class="token builtin class-name">:</span>   <span class="token number">289.35</span>   <span class="token number">42.35</span>  p44013    
-                   <span class="token number">8</span> <span class="token builtin class-name">:</span>   <span class="token number">290.37</span>   <span class="token number">42.13</span>  p44018    
-                   <span class="token number">9</span> <span class="token builtin class-name">:</span>   <span class="token number">292.69</span>   <span class="token number">44.27</span>  p44027    
-                  <span class="token number">10</span> <span class="token builtin class-name">:</span>   <span class="token number">295.98</span>   <span class="token number">42.50</span>  p44150    
-                  <span class="token number">11</span> <span class="token builtin class-name">:</span>   <span class="token number">293.40</span>   <span class="token number">41.10</span>  p44011    
-                  <span class="token number">12</span> <span class="token builtin class-name">:</span>   <span class="token number">294.07</span>   <span class="token number">42.31</span>  p44024    
+            Point  <span class="token number">1</span> <span class="token builtin class-name">:</span>   <span class="token number">290.64</span>   <span class="token number">43.72</span>  p44032  
+                   <span class="token number">2</span> <span class="token builtin class-name">:</span>   <span class="token number">290.87</span>   <span class="token number">43.20</span>  p44005  
+                   <span class="token number">3</span> <span class="token builtin class-name">:</span>   <span class="token number">292.12</span>   <span class="token number">43.48</span>  p44037  
+                   <span class="token number">4</span> <span class="token builtin class-name">:</span>   <span class="token number">291.00</span>   <span class="token number">44.06</span>  p44033  
+                   <span class="token number">5</span> <span class="token builtin class-name">:</span>   <span class="token number">290.75</span>   <span class="token number">40.50</span>  p44008  
+                   <span class="token number">6</span> <span class="token builtin class-name">:</span>   <span class="token number">289.86</span>   <span class="token number">43.53</span>  p44007  
+                   <span class="token number">7</span> <span class="token builtin class-name">:</span>   <span class="token number">289.35</span>   <span class="token number">42.35</span>  p44013  
+                   <span class="token number">8</span> <span class="token builtin class-name">:</span>   <span class="token number">290.37</span>   <span class="token number">42.13</span>  p44018  
+                   <span class="token number">9</span> <span class="token builtin class-name">:</span>   <span class="token number">292.69</span>   <span class="token number">44.27</span>  p44027  
+                  <span class="token number">10</span> <span class="token builtin class-name">:</span>   <span class="token number">295.98</span>   <span class="token number">42.50</span>  p44150  
+                  <span class="token number">11</span> <span class="token builtin class-name">:</span>   <span class="token number">293.40</span>   <span class="token number">41.10</span>  p44011  
+                  <span class="token number">12</span> <span class="token builtin class-name">:</span>   <span class="token number">294.07</span>   <span class="token number">42.31</span>  p44024  
 
   Initializations <span class="token builtin class-name">:</span>
  --------------------------------------------------
@@ -1652,14 +1645,14 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
             Interval <span class="token builtin class-name">:</span>            01:00:00
 
 
-       Type <span class="token number">2</span> <span class="token builtin class-name">:</span> Point output                  
+       Type <span class="token number">2</span> <span class="token builtin class-name">:</span> Point output              
       -----------------------------------------
             From     <span class="token builtin class-name">:</span> <span class="token number">2019</span>/01/01 00:00:00 UTC
             To       <span class="token builtin class-name">:</span> <span class="token number">2019</span>/01/30 <span class="token number">23</span>:00:00 UTC
             Interval <span class="token builtin class-name">:</span>            01:00:00
 
 
-       Type <span class="token number">4</span> <span class="token builtin class-name">:</span> Restart files                 
+       Type <span class="token number">4</span> <span class="token builtin class-name">:</span> Restart files             
       -----------------------------------------
             From     <span class="token builtin class-name">:</span> <span class="token number">2019</span>/01/30 <span class="token number">23</span>:00:00 UTC
             To       <span class="token builtin class-name">:</span> <span class="token number">2019</span>/01/30 <span class="token number">23</span>:00:00 UTC
@@ -1669,8 +1662,8 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
  --------------------------------------------------
 
   Updating input at <span class="token number">2019</span>/01/01 00:00:00 UTC
-     Updating winds        
-        Past last winds        
+     Updating winds    
+        Past last winds    
   
   WAVEWATCH III calculating <span class="token keyword">for</span> <span class="token number">2019</span>/01/01 00:00:00 UTC at <span class="token number">10</span>:55:08
   WAVEWATCH III calculating <span class="token keyword">for</span> <span class="token number">2019</span>/01/01 00:20:00 UTC at <span class="token number">10</span>:55:09
@@ -2214,12 +2207,8 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
 <span class="token punctuation">(</span>base<span class="token punctuation">)</span> jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/WaveModel2/2021-11-18~~FromTeacherW_RunningTest/test_ww3$ 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
 <hr>
 <h3 id="w3-outp"><a href="#w3-outp" class="headerlink" title="./w3_outp"></a>./w3_outp</h3><pre class="line-numbers language-none"><code class="language-none">(base) jincanliu@jincanliu-Z390-UD:~/BaiduNetdiskWorkspace/WaveModel2/2021-11-18~~FromTeacherW_RunningTest/test_ww3$ /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/2021-11-20~~WW3-6.07/model/exe/ww3_outp <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
 
 <hr>
 
@@ -2459,12 +2448,12 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/12/25/yan-jiu-sheng-justtry-function/wavewatch3/04-cases-wen-jian-jia-guan-fang-gei-de-ww3-yun-xing/">
+                <a href="/2021/12/25/yan-jiu-sheng-justtry-function/wavewatch3/01-ww3-v6.07.1-xia-zai.w3-make/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="04-cases文件夹（官方给的ww3运行）">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="01-WW3 v6.07.1：下载+./w3_make">
                         
-                        <span class="card-title">04-cases文件夹（官方给的ww3运行）</span>
+                        <span class="card-title">01-WW3 v6.07.1：下载+./w3_make</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2755,7 +2744,7 @@ cdo setattribute,windv@_FillValue<span class="token operator">=</span>-1.e32 <sp
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

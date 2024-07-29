@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Manual-v6-0-7"><a href="#Manual-v6-0-7" class="headerlink" title="Manual v6.0.7"></a><center>Manual v6.0.7</center></h1><h2 id="手册下载"><a href="#手册下载" class="headerlink" title="手册下载"></a>手册下载</h2><p><a target="_blank" rel="noopener" href="https://github.com/NOAA-EMC/WW3/wiki/Tech-Docs">https://github.com/NOAA-EMC/WW3/wiki/Tech-Docs</a></p>
+                <h1 id="lt-center-gt-Manual-v6-0-7-lt-center-gt"><a href="#lt-center-gt-Manual-v6-0-7-lt-center-gt" class="headerlink" title="<center>Manual v6.0.7</center>"></a><code>&lt;center&gt;</code>Manual v6.0.7<code>&lt;/center&gt;</code></h1><h2 id="手册下载"><a href="#手册下载" class="headerlink" title="手册下载"></a>手册下载</h2><p><a target="_blank" rel="noopener" href="https://github.com/NOAA-EMC/WW3/wiki/Tech-Docs">https://github.com/NOAA-EMC/WW3/wiki/Tech-Docs</a></p>
 <blockquote>
 <ul>
 <li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211226165254.png"></li>
@@ -479,7 +479,7 @@
 <h4 id="4-4-10-ww3-shel-The-generic-shell"><a href="#4-4-10-ww3-shel-The-generic-shell" class="headerlink" title="4.4.10 ww3_shel: The generic shell"></a>4.4.10 ww3_shel: The generic shell</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221214216.png" style="zoom:71%;">
 
 <blockquote>
-<p>终于知道你这个<code>shell</code>了；</p>
+<p>终于知道你这个 <code>shell</code>了；</p>
 </blockquote>
 <h4 id="4-4-11-ww3-gspl-Automated-grid-splitting-for-ww3-multi-ww3-gspl"><a href="#4-4-11-ww3-gspl-Automated-grid-splitting-for-ww3-multi-ww3-gspl" class="headerlink" title="4.4.11 ww3_gspl: Automated grid splitting for ww3_multi (ww3_gspl)"></a>4.4.11 ww3_gspl: Automated grid splitting for ww3_multi (ww3_gspl)</h4><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220221214431.png" style="zoom:71%;">
 
@@ -549,10 +549,9 @@
 </tr>
 <tr>
 <td><strong>w3split.f</strong></td>
-<td>Generate spectral bulletin identifying individual wave fields within a spectrum from the spectral output of the point output post-processor (see <strong>Section 4.4.18</strong>). This is a legacy code superseded by generating bulletins directly from <strong>ww3_outp</strong>. It is retained here for historical reasons only.</td>
+<td>Generate spectral bulletin identifying individual wave fields within a spectrum from the spectral output of the point output post-processor (see<strong>Section 4.4.18</strong>). This is a legacy code superseded by generating bulletins directly from <strong>ww3_outp</strong>. It is retained here for historical reasons only.</td>
 </tr>
 </tbody></table>
-<p>​    </p>
 <p>The bin directory has various UNIX scripts to manage the WAVEWATCH III framework. The use of these scripts is explained in <strong>Section 5.7</strong>. Note that the following scripts acquire setup information from the WAVEWATCH III environment setup file defined by <strong>WWATCH3_ENV</strong>. Either defined by <strong>w3_setenv</strong> which read the local <strong>wwatch3.env</strong> or by the user environment file.</p>
 <p>Main programs used :</p>
 <table>
@@ -564,7 +563,7 @@
 </thead>
 <tbody><tr>
 <td>w3_setup</td>
-<td>Script for creating/editing the WAVEWATCH III environment setup file. The default setup file is <strong>bin/.wwatch3.env</strong>. switch and compiler are given in arguments. (see options)</td>
+<td>Script for creating/editing the WAVEWATCH III environment setup file. The default setup file is<strong>bin/.wwatch3.env</strong>. switch and compiler are given in arguments. (see options)</td>
 </tr>
 <tr>
 <td>w3_clean</td>
@@ -584,11 +583,11 @@
 </tr>
 <tr>
 <td>ww3_gspl.sh</td>
-<td>Script to automate use of <strong>ww3_gspl</strong> program (see <strong>Section 4.4.11</strong>).</td>
+<td>Script to automate use of<strong>ww3_gspl</strong> program (see <strong>Section 4.4.11</strong>).</td>
 </tr>
 <tr>
 <td>arc_wwatch3_tar</td>
-<td>Program to archive versions of WAVEWATCH III in the directory <strong>arc</strong>.</td>
+<td>Program to archive versions of WAVEWATCH III in the directory<strong>arc</strong>.</td>
 </tr>
 <tr>
 <td>ww3_from_ftp.sh</td>
@@ -614,15 +613,15 @@
 </thead>
 <tbody><tr>
 <td>comp.tmpl</td>
-<td>Compiler script template <strong>comp</strong> used with <strong>cmplr.env</strong>.</td>
+<td>Compiler script template<strong>comp</strong> used with <strong>cmplr.env</strong>.</td>
 </tr>
 <tr>
 <td><code>link.tmpl </code></td>
-<td>Link script template <strong>link</strong> used with <strong>cmplr.env</strong>.</td>
+<td>Link script template<strong>link</strong> used with <strong>cmplr.env</strong>.</td>
 </tr>
 <tr>
 <td>cmplr.env</td>
-<td>compiler options tested on intel, mpt, gnu, pgi with optimized and debugging options. used with <strong>comp.tmpl</strong> and <strong>link.tmpl</strong>.</td>
+<td>compiler options tested on intel, mpt, gnu, pgi with optimized and debugging options. used with<strong>comp.tmpl</strong> and <strong>link.tmpl</strong>.</td>
 </tr>
 <tr>
 <td>make_makefile.sh</td>
@@ -630,15 +629,15 @@
 </tr>
 <tr>
 <td><code>ad3 </code></td>
-<td>Script to run the preprocessor <strong>w3adc</strong> and the compile script <strong>comp</strong> for a given source code file.</td>
+<td>Script to run the preprocessor<strong>w3adc</strong> and the compile script <strong>comp</strong> for a given source code file.</td>
 </tr>
 <tr>
 <td>ad3_test</td>
-<td>Test version of <strong>ad3</strong>, showing modifications to original source file. This script does not compile code.</td>
+<td>Test version of<strong>ad3</strong>, showing modifications to original source file. This script does not compile code.</td>
 </tr>
 <tr>
 <td>all_switches</td>
-<td>Generates a list of all <strong>w3adc</strong> switches present in the source code files.</td>
+<td>Generates a list of all<strong>w3adc</strong> switches present in the source code files.</td>
 </tr>
 <tr>
 <td>find_switch</td>
@@ -663,19 +662,19 @@
 </thead>
 <tbody><tr>
 <td><code>link.xxx </code></td>
-<td>Link script <strong>link</strong> for advanced setting.</td>
+<td>Link script<strong>link</strong> for advanced setting.</td>
 </tr>
 <tr>
 <td>make_MPI</td>
-<td>Script to separately compile MPI and non-MPI programs. (obsolete in future releases - use <strong>w3_automake</strong>)</td>
+<td>Script to separately compile MPI and non-MPI programs. (obsolete in future releases - use<strong>w3_automake</strong>)</td>
 </tr>
 <tr>
 <td>make_OMP</td>
-<td>Script to separately compile OpenMP and single threaded programs. (obsolete in future releases use <strong>w3_automake</strong>)</td>
+<td>Script to separately compile OpenMP and single threaded programs. (obsolete in future releases use<strong>w3_automake</strong>)</td>
 </tr>
 <tr>
 <td>make_HYB</td>
-<td>Script to separately compile hybrid MPI-OpenMP and single threaded programs. (obsolete in future releases - use <strong>w3_automake</strong>)</td>
+<td>Script to separately compile hybrid MPI-OpenMP and single threaded programs. (obsolete in future releases - use<strong>w3_automake</strong>)</td>
 </tr>
 <tr>
 <td>ln3</td>
@@ -745,7 +744,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </thead>
 <tbody><tr>
 <td><code>link</code></td>
-<td>Linker script. This script is based on <strong>link.tmpl</strong> with the provided definition of the linker and its options.</td>
+<td>Linker script. This script is based on<strong>link.tmpl</strong> with the provided definition of the linker and its options.</td>
 </tr>
 <tr>
 <td><code>switch</code></td>
@@ -784,38 +783,38 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <pre class="line-numbers language-none"><code class="language-none">w3_clean -c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="5-8-Detailled-compilation"><a href="#5-8-Detailled-compilation" class="headerlink" title="5.8 Detailled compilation"></a>5.8 Detailled compilation</h3><p>Compilation of WAVEWATCH III is performed using the script <strong>w3_make</strong> in the bin directory (Note that before running <strong>w3_make</strong> several user interventions are needed as described in the remainder of this section.). If this script is used without parameters, all basic programs of WAVEWATCH III are compiled. Optionally, names of programs to be compiled can be given as part of the compile command. For instance, <code>w3_make ww3_grid ww3_strt</code> will compile the grid preprocessor and the initial conditions program only.</p>
-<p><strong>w3_make</strong> uses several of the scripts described in the previous section. A graphical representation is given in <strong>Fig. 5.1</strong>. </p>
+<p><strong>w3_make</strong> uses several of the scripts described in the previous section. A graphical representation is given in <strong>Fig. 5.1</strong>.</p>
 <ul>
-<li><p>If necessary, the script w3_make uses the scripts make_makefile.sh to generate a makefile. make_makefile.sh generates a list of modules to be linked, based on the program switches in the file switch (see Section 5.9), and checks all needed sources for module dependencies. If switches have been changed since the last call to w3_make, w3_new is used to touch relevant source code or to delete relevant object files. </p>
+<li><p>If necessary, the script w3_make uses the scripts make_makefile.sh to generate a makefile. make_makefile.sh generates a list of modules to be linked, based on the program switches in the file switch (see Section 5.9), and checks all needed sources for module dependencies. If switches have been changed since the last call to w3_make, w3_new is used to touch relevant source code or to delete relevant object files.</p>
 <blockquote>
 <p><code>touch</code> ➡ <code>linux bash 创建文件用到时 touch，</code></p>
 <p><code>很好的解释了switch对于ww3_make的意义</code></p>
 </blockquote>
 </li>
-<li><p>After the makefile has been completed, the <code>standard UNIX make utility</code> is used to compile and link the programs. Instead of directly using the FORTRAN compiler, the makefile invokes the <code>preprocessor and compile scripts ad3 and comp, and the link script link</code>. The script <code>ad3</code> uses the extension of the file name to determine the necessary action. Files with extension <code>.ftn</code> are processed by <strong>w3adc</strong>, files with extension <code>.f</code> or <code>.f90</code> are send to the script comp directly. </p>
+<li><p>After the makefile has been completed, the <code>standard UNIX make utility</code> is used to compile and link the programs. Instead of directly using the FORTRAN compiler, the makefile invokes the <code>preprocessor and compile scripts ad3 and comp, and the link script link</code>. The script <code>ad3</code> uses the extension of the file name to determine the necessary action. Files with extension <code>.ftn</code> are processed by <strong>w3adc</strong>, files with extension <code>.f</code> or <code>.f90</code> are send to the script comp directly.</p>
 </li>
 </ul>
 <p><strong>Although a user could try out several of these scripts interactively, he or she generally needs to run w3_make only</strong>.</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220222220514.png" style="zoom:71%;">
 
 <p>The auxiliary scripts <strong>w3_make</strong> etc. use the <code>switch, comp and link</code> files from the <strong>./bin</strong> directory under the WAVEWATCH III home directory, <strong>NOT</strong> from the local directory.</p>
-<p>After the appropriate changes have been made, or the appropriate example scripts have been copied in, (parts of) WAVEWATCH III can be compiled and linked. </p>
+<p>After the appropriate changes have been made, or the appropriate example scripts have been copied in, (parts of) WAVEWATCH III can be compiled and linked.</p>
 <ul>
-<li><p>When the program is compiled for the first time, it is suggested to compile program parts one-by-one to avoid lengthy errors messages, and to set up error capturing in <code>comp</code>. </p>
+<li><p>When the program is compiled for the first time, it is suggested to compile program parts one-by-one to avoid lengthy errors messages, and to set up error capturing in <code>comp</code>.</p>
 </li>
-<li><p>A good place to start is compilation of the simple test code <strong>ctest</strong>. First go to the directory <code>work</code> and make a link to the source code of this routine by typing <code>ln3 ctest</code>. This link is made to facilitate later inclusion of errors to test or set-up error capturing in the script <code>comp</code>. The inner workings of the preprocessor <strong>w3adc</strong> can be seen by typing the command <code>ad3_test ctest</code> which will show how the actual source code is constructed from <strong>ctest.ftn</strong>, include files and program switches. </p>
+<li><p>A good place to start is compilation of the simple test code <strong>ctest</strong>. First go to the directory <code>work</code> and make a link to the source code of this routine by typing <code>ln3 ctest</code>. This link is made to facilitate later inclusion of errors to test or set-up error capturing in the script <code>comp</code>. The inner workings of the preprocessor <strong>w3adc</strong> can be seen by typing the command <code>ad3_test ctest</code> which will show how the actual source code is constructed from <strong>ctest.ftn</strong>, include files and program switches.</p>
 </li>
-<li><p>Next, the compilation of this subroutine can be tested by typing <code>ad3 ctest 1</code> which invokes both the preprocessor <strong>w3adc</strong> and the compile script <code>comp</code>. The 1 at the end of this line activates test output. If it is omitted, this command should result in a single line of output, identifying that the routine is being processed. </p>
+<li><p>Next, the compilation of this subroutine can be tested by typing <code>ad3 ctest 1</code> which invokes both the preprocessor <strong>w3adc</strong> and the compile script <code>comp</code>. The 1 at the end of this line activates test output. If it is omitted, this command should result in a single line of output, identifying that the routine is being processed.</p>
 <p>If <code>ad3</code> works as expected, an object file <strong>obj/ctest.o</strong> is generated. If requested during the initial set up, a source code and listing file (<strong>ctest.f</strong> and <strong>ctest.l</strong>) can be found in the scratch directory. The listing file is also retained if compilation errors are detected by <code>comp</code>. At this time, it is prudent to test error capturing in the script <code>comp</code> by adding errors and warnings to ctest.ftn in the work directory. The error capturing is discussed in some detail in the documentation of comp. After <code>comp</code> has been tested, and the errors in <strong>ctest.ftn</strong> have been removed, the link to the work directory and the file <strong>obj/ctest.o</strong> can be deleted.</p>
 </li>
 </ul>
 <blockquote>
 <p><code>上面这段好难~~</code></p>
 </blockquote>
-<p>After a single routine has been compiled successfully, the next step is to try to compile and link an entire program. </p>
+<p>After a single routine has been compiled successfully, the next step is to try to compile and link an entire program.</p>
 <ul>
-<li>The grid preprocessor can be compiled by typing <code>w3_make ww3_grid</code>. If the compilation appears successful, and if the input files have been installed (see above), the grid preprocessor can be tested by typing <code>ww3_grid</code>  in the work directory. If the input files have been installed, a link to the input file <strong>ww3_grid.inp</strong> will be present in the work directory, and the grid preprocessor will run and send its output to the screen. Output files of the grid preprocessor will appear in the work directory. When a program is compiled for the first time, the operating system might not be able to find the executable. If this occurs, try to type <code>rehash</code> or open a new shell to work from. In this way all separate programs can be compiled and tested. </li>
-<li>To clean up all temporarily files (such as listings) and data files of the test runs, type <code>w3_clean</code>. Note that <strong>w3_make</strong> only checks the switch file for changes. </li>
+<li>The grid preprocessor can be compiled by typing <code>w3_make ww3_grid</code>. If the compilation appears successful, and if the input files have been installed (see above), the grid preprocessor can be tested by typing <code>ww3_grid</code>  in the work directory. If the input files have been installed, a link to the input file <strong>ww3_grid.inp</strong> will be present in the work directory, and the grid preprocessor will run and send its output to the screen. Output files of the grid preprocessor will appear in the work directory. When a program is compiled for the first time, the operating system might not be able to find the executable. If this occurs, try to type <code>rehash</code> or open a new shell to work from. In this way all separate programs can be compiled and tested.</li>
+<li>To clean up all temporarily files (such as listings) and data files of the test runs, type <code>w3_clean</code>. Note that <strong>w3_make</strong> only checks the switch file for changes.</li>
 <li>If the user changes the compile options in the compile and link scripts comp and link, it is advised to force the recompilation of the entire program. This can be achieved by typing <code>w3_new all or w3_new</code> before invoking w3_make. This might also be useful if the compilation is unsuccessful for no apparent reason.</li>
 </ul>
 <h3 id="5-9-Selecting-model-options"><a href="#5-9-Selecting-model-options" class="headerlink" title="5.9 Selecting model options"></a>5.9 Selecting model options</h3><p>The file <code>switch</code> in the <code>bin</code> directory contains a set of strings identifying model options to be selected. Many options are available. Of several groups of options it is mandatory to select exactly one. These mandatory <code>switches</code> are described in Section 5.9.1. Other <code>switches</code> are optional, and are described in Section 5.9.2. Default model setting are identified in Section 5.9.3. The order in which the switches appear in switch is arbitrary. How these <code>switches</code> are included in the source code files is described in Section 6.2.</p>
@@ -1260,7 +1259,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <td>NCEP GRIB2 package for IBM SP.</td>
 </tr>
 </tbody></table>
-<h4 id="5-9-2-Optional-switches"><a href="#5-9-2-Optional-switches" class="headerlink" title="5.9.2 Optional switches"></a>5.9.2 Optional switches</h4><p>All switches below activate model behavior if selected, but do not require particular combinations. </p>
+<h4 id="5-9-2-Optional-switches"><a href="#5-9-2-Optional-switches" class="headerlink" title="5.9.2 Optional switches"></a>5.9.2 Optional switches</h4><p>All switches below activate model behavior if selected, but do not require particular combinations.</p>
 <p>The following switches control <strong>optional output</strong> for WAVEWATCH III programs.</p>
 <table>
 <thead>
@@ -1279,7 +1278,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>o2a</td>
-<td>Generation of land-sea mask file <strong>mask.ww3</strong> in grid preprocessor.</td>
+<td>Generation of land-sea mask file<strong>mask.ww3</strong> in grid preprocessor.</td>
 </tr>
 <tr>
 <td>o2b</td>
@@ -1287,7 +1286,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>o2c</td>
-<td>Print status map in format as read by <strong>ww3_grid</strong>.</td>
+<td>Print status map in format as read by<strong>ww3_grid</strong>.</td>
 </tr>
 <tr>
 <td>o3</td>
@@ -1315,7 +1314,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>o7b</td>
-<td>Idem in <strong>ww3_multi</strong>.</td>
+<td>Idem in<strong>ww3_multi</strong>.</td>
 </tr>
 <tr>
 <td>o8</td>
@@ -1331,7 +1330,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>o11</td>
-<td>Additional log output on management algorithm in <strong>log.mww3</strong>.</td>
+<td>Additional log output on management algorithm in<strong>log.mww3</strong>.</td>
 </tr>
 <tr>
 <td>o12</td>
@@ -1343,15 +1342,15 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>o14</td>
-<td>Generate log file with buoy data <strong>buoy_log.ww3</strong> for output type <strong>ITYPE = 0</strong> in <strong>ww3_outp</strong>.</td>
+<td>Generate log file with buoy data<strong>buoy_log.ww3</strong> for output type <strong>ITYPE = 0</strong> in <strong>ww3_outp</strong>.</td>
 </tr>
 <tr>
 <td>o15</td>
-<td>Generate log file with time stamps of input data file <strong>times.XXX</strong> in <strong>ww3_prep</strong>.</td>
+<td>Generate log file with time stamps of input data file<strong>times.XXX</strong> in <strong>ww3_prep</strong>.</td>
 </tr>
 <tr>
 <td>o16</td>
-<td>Generate GrADS output of grid partitioning in <strong>ww3_gspl</strong>.</td>
+<td>Generate GrADS output of grid partitioning in<strong>ww3_gspl</strong>.</td>
 </tr>
 </tbody></table>
 <p>The following switches <strong>enable parallelization of the model using OpenMP directives</strong>, also known as ‘threading’. Before model version 5.01, threading and parallelization using the mpi switch could no be used simultaneously. With version 5.01, pure MPI,pure OMP and hybrid MPI-OMP approaches became available. Switches used in version 5.01 and higher are not compatible with switches used in previous model versions.</p>
@@ -1424,11 +1423,11 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>FLD1</td>
-<td>Sea-state dependent $\tau$ Reichl et al (2014) (Section 2.5.2).</td>
+<td>Sea-state dependent$\tau$ Reichl et al (2014) (Section 2.5.2).</td>
 </tr>
 <tr>
 <td>FLD2</td>
-<td>Sea-state dependent $\tau$ Donelan et al (2012) (Section 2.5.3).</td>
+<td>Sea-state dependent$\tau$ Donelan et al (2012) (Section 2.5.3).</td>
 </tr>
 <tr>
 <td>IG1</td>
@@ -1448,7 +1447,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>MPRF</td>
-<td>Profiling of individual models and nesting in <strong>ww3_multi</strong>.</td>
+<td>Profiling of individual models and nesting in<strong>ww3_multi</strong>.</td>
 </tr>
 <tr>
 <td>NC4</td>
@@ -1693,7 +1692,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>ww3_tic1.1</td>
-<td>Wave-ice interaction, 1D test of $S_{ice}$.</td>
+<td>Wave-ice interaction, 1D test of$S_{ice}$.</td>
 </tr>
 <tr>
 <td>ww3_tic1.2</td>
@@ -1709,7 +1708,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>ww3_tic2.1</td>
-<td>Wave-ice interaction, 2D test of $S_{ice}$.</td>
+<td>Wave-ice interaction, 2D test of$S_{ice}$.</td>
 </tr>
 <tr>
 <td>ww3_tic2.2</td>
@@ -1721,11 +1720,11 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>ww3_tbt1.1</td>
-<td>Wave-mud interaction, 1D test of $S_{mud}$.</td>
+<td>Wave-mud interaction, 1D test of$S_{mud}$.</td>
 </tr>
 <tr>
 <td>ww3_tbt2.1</td>
-<td>Wave-mud interaction, 2D test of $S_{mud}$.</td>
+<td>Wave-mud interaction, 2D test of$S_{mud}$.</td>
 </tr>
 <tr>
 <td>ww3_tpt1.1</td>
@@ -1757,11 +1756,11 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>mww3_test_06</td>
-<td>Tests for irregular grid(s) w/ <code>ww3_multi</code>.</td>
+<td>Tests for irregular grid(s) w/<code>ww3_multi</code>.</td>
 </tr>
 <tr>
 <td>mww3_test_07</td>
-<td>Tests for unstructured grid(s) w/ <code>ww3_multi</code>.</td>
+<td>Tests for unstructured grid(s) w/<code>ww3_multi</code>.</td>
 </tr>
 <tr>
 <td>mww3_test_08</td>
@@ -1789,7 +1788,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </tr>
 <tr>
 <td>mww3_data_xx</td>
-<td>Specific data needed for script <strong>mww3_case_nn</strong>.</td>
+<td>Specific data needed for script<strong>mww3_case_nn</strong>.</td>
 </tr>
 </tbody></table>
 <h2 id="6-System-documentation"><a href="#6-System-documentation" class="headerlink" title="6 System documentation"></a>6 System documentation</h2><h3 id="6-1-Introduction"><a href="#6-1-Introduction" class="headerlink" title="6.1 Introduction"></a>6.1 Introduction</h3><p>In this chapter a brief system documentation is presented. Discussed are the custom preprocessor used by WAVEWATCH III (Section 6.2), the contents of the different source code files (Section 6.3), optimization (Section 6.4), and the internal data storage (Section 6.5). For a more elaborate documentation, reference is made to the source code itself, which is fully documented.</p>
@@ -1809,8 +1808,8 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 </ul>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220223213401.png" style="zoom:71%;">
 
-<p>A test indicator 0 disables test output, and increasing values increase the detail of the test output. A compress indicator 0 leaves the file as is. </p>
-<p>A compress indicator 1 results in the removal of all comment lines indicated by ’!’, except for empty switches, i.e., lines starting with ’!/’. A compress indicator 2 results in the subsequent removal of all comments. Comment lines are not allowed in this input file. </p>
+<p>A test indicator 0 disables test output, and increasing values increase the detail of the test output. A compress indicator 0 leaves the file as is.</p>
+<p>A compress indicator 1 results in the removal of all comment lines indicated by ’!’, except for empty switches, i.e., lines starting with ’!/’. A compress indicator 2 results in the subsequent removal of all comments. Comment lines are not allowed in this input file.</p>
 <p>The above input for <strong>w3adc</strong> is read using free format. Therefore quotes are needed around strings. Echo and test output is send to the standard output device. To facilitate the use of the preprocessor, <strong>several UNIX scripts are provided with WAVEWATCH III as discussed in Section 5.7</strong>. Note that compiler directives are protected from file compression by defining them using a switch.</p>
 <h3 id="6-3-Program-files"><a href="#6-3-Program-files" class="headerlink" title="6.3 Program files"></a>6.3 Program files</h3><h3 id="6-4-Optimization"><a href="#6-4-Optimization" class="headerlink" title="6.4 Optimization"></a>6.4 Optimization</h3><h3 id="6-5-Internal-data-storage"><a href="#6-5-Internal-data-storage" class="headerlink" title="6.5 Internal data storage"></a>6.5 Internal data storage</h3><h3 id="6-6-Variables-in-modules"><a href="#6-6-Variables-in-modules" class="headerlink" title="6.6 Variables in modules"></a>6.6 Variables in modules</h3><h2 id="附录C-为分布式机器进行设置（MPI）"><a href="#附录C-为分布式机器进行设置（MPI）" class="headerlink" title="附录C    为分布式机器进行设置（MPI）"></a>附录C    为分布式机器进行设置（MPI）</h2><blockquote>
 <ul>
@@ -1818,34 +1817,34 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
 <li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/6920998?fr=aladdin">分布式计算机系统</a>是将多台小型微型机互连组成的一种新型计算机系统。它冲破了传统的集中式单机局面，从分散处理的概念出发来组织计算机系统，具有较高的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%80%A7%E8%83%BD%E4%BB%B7%E6%A0%BC%E6%AF%94/4963335">性能价格比</a>，灵活的系统可扩充性， 良好的实时性、可靠性与容错性等潜在优点，是近几年来计算机科学技术领域中极受重视的新型计算机系统，现已成为迅速发展的一个新方向。</li>
 </ul>
 </blockquote>
-<h3 id="C-1-模型建立"><a href="#C-1-模型建立" class="headerlink" title="C.1    模型建立"></a>C.1    模型建立</h3><p>为了使用<code>MPI</code>在分布式内存机器上运行<code>WAVEWATCH III</code>，需要满足两个要求。</p>
+<h3 id="C-1-模型建立"><a href="#C-1-模型建立" class="headerlink" title="C.1    模型建立"></a>C.1    模型建立</h3><p>为了使用 <code>MPI</code>在分布式内存机器上运行 <code>WAVEWATCH III</code>，需要满足两个要求。</p>
 <blockquote>
 <ol>
-<li>所有的可执行文件需要被正确地编译。这意味着代码的编译要有适当的<code>WAVEWATCH III</code>选项（<code>开关 switches</code>），并有适当的编译器选项。</li>
+<li>所有的可执行文件需要被正确地编译。这意味着代码的编译要有适当的 <code>WAVEWATCH III</code>选项（<code>开关 switches</code>），并有适当的编译器选项。</li>
 <li>模型的并行版本需要在适当的并行环境中运行。这意味着并行代码要在多处理器机器上运行，在该机器上调用适当的并行环境。这两个问题将在下文中详细讨论。</li>
 </ol>
 </blockquote>
-<p>在<code>第4节 Wave Model Structure and Data Flow</code>描述的所有<code>WAVEWATCH III</code>程序中，只有三个程序受益于MPI的并行实现：实际模型运行程序<code>ww3 shel</code>和<code>ww3_multi</code>，以及初始条件程序<code>ww3_strt</code>。</p>
+<p>在 <code>第4节 Wave Model Structure and Data Flow</code>描述的所有 <code>WAVEWATCH III</code>程序中，只有三个程序受益于MPI的并行实现：实际模型运行程序 <code>ww3 shel</code>和 <code>ww3_multi</code>，以及初始条件程序 <code>ww3_strt</code>。</p>
 <blockquote>
 <ul>
-<li><p><code>ww3_strt</code>通常不在运行环境中使用，一般可以在单处理器模式下运行。在多处理器模式下运行<code>ww3_strt</code>的主要原因是为了减少其内存需求。</p>
+<li><p><code>ww3_strt</code>通常不在运行环境中使用，一般可以在单处理器模式下运行。在多处理器模式下运行 <code>ww3_strt</code>的主要原因是为了减少其内存需求。</p>
 </li>
-<li><p>这三个代码是唯一同时处理所有网格点的所有谱的代码，因此需要比其他所有<code>WAVEWATCH III</code>程序多得多的内存。并行运行这些程序的一个额外好处（除了<code>减少运行时间</code>）是，如果增加处理器的数量，这些程序的并行版本对<code>每个处理器的内存要求更低</code>。</p>
+<li><p>这三个代码是唯一同时处理所有网格点的所有谱的代码，因此需要比其他所有 <code>WAVEWATCH III</code>程序多得多的内存。并行运行这些程序的一个额外好处（除了 <code>减少运行时间</code>）是，如果增加处理器的数量，这些程序的并行版本对 <code>每个处理器的内存要求更低</code>。</p>
 <blockquote>
 <ul>
-<li>一个<code>处理器</code>，相当于一台小电脑？</li>
+<li>一个 <code>处理器</code>，相当于一台小电脑？</li>
 </ul>
 </blockquote>
 </li>
-<li><p>考虑到上述情况，对于大多数并行机器上的实现来说，只需要编译带有<code>MPI</code>选项的主程序<code>ww3_shel</code>和<code>ww3_multi</code>就足够了。</p>
+<li><p>考虑到上述情况，对于大多数并行机器上的实现来说，只需要编译带有 <code>MPI</code>选项的主程序 <code>ww3_shel</code>和 <code>ww3_multi</code>就足够了。</p>
 </li>
 </ul>
 </blockquote>
-<p>所有其他的<code>WAVEWATCH III</code>程序都是为<code>单处理器</code>设计的。</p>
+<p>所有其他的 <code>WAVEWATCH III</code>程序都是为 <code>单处理器</code>设计的。</p>
 <blockquote>
 <ul>
 <li>这些程序不应该在并行环境下运行，因为这将导致输出文件的I/O错误。</li>
-<li>此外，由于这些代码的设计，它们在并行环境中的运行时间不可能有任何增益。因为所有的程序都共享<code>子程序</code>，所以必须保证这种编译是正确的，也就是说，<code>子程序</code>和<code>主程序</code>是用兼容的编译器设置编译的。这意味着并行程序和非并行程序之间共享的<code>子程序</code>应该为每个应用程序单独进行编译。</li>
+<li>此外，由于这些代码的设计，它们在并行环境中的运行时间不可能有任何增益。因为所有的程序都共享 <code>子程序</code>，所以必须保证这种编译是正确的，也就是说，<code>子程序</code>和 <code>主程序</code>是用兼容的编译器设置编译的。这意味着并行程序和非并行程序之间共享的 <code>子程序</code>应该为每个应用程序单独进行编译。</li>
 </ul>
 </blockquote>
 <p>编译MPI版本程序的第一步是保证使用适当的编译器和编译器选项。在使用xlf编译器的IBM系统和使用Portland编译器的Linux系统上，可以在WAVEWATCH III发行版中提供的编译和链接脚本示例中找到这方面的例子。</p>
@@ -2389,7 +2388,7 @@ nf-config --has-nc4<span aria-hidden="true" class="line-numbers-rows"><span></sp
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

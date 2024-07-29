@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.1k
+                    1.2k
                 </div>
                 
 
@@ -405,17 +405,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="06-TUTORIALS-DATARMOR-MPI-PBS-qsub-qstat"><a href="#06-TUTORIALS-DATARMOR-MPI-PBS-qsub-qstat" class="headerlink" title="06-TUTORIALS-DATARMOR-MPI_PBS_qsub_qstat"></a><center>06-TUTORIALS-DATARMOR-MPI_PBS_qsub_qstat</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-datarmor.pdf</code>；</p>
+                <h1 id="lt-center-gt-06-TUTORIALS-DATARMOR-MPI-PBS-qsub-qstat-lt-center-gt"><a href="#lt-center-gt-06-TUTORIALS-DATARMOR-MPI-PBS-qsub-qstat-lt-center-gt" class="headerlink" title="<center>06-TUTORIALS-DATARMOR-MPI_PBS_qsub_qstat</center>"></a><code>&lt;center&gt;</code>06-TUTORIALS-DATARMOR-MPI_PBS_qsub_qstat<code>&lt;/center&gt;</code></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-datarmor.pdf</code>；</p>
 <blockquote>
 <ul>
-<li><p>也就是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-DATARMOR</code> 里面的内容；</p>
-</li>
-<li><p>TUTORIAL 是会更新的，此版本为 <strong>2017</strong> 版本的； </p>
-</li>
-<li><p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1-TDvbPuSgVyLJDONf5HnmQ">https://pan.baidu.com/s/1-TDvbPuSgVyLJDONf5HnmQ</a><br>提取码：453w<br>–来自百度网盘</p>
-</li>
-<li><p><font color="red">在inout和multi都有用到qsub命令，但我不知道怎么安装这个命令，之前尝试安装PBS中的torque和openPBS，失败了；本教程包含这个命令，希望可以为我解惑；</font></p>
-</li>
+<li>也就是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-DATARMOR</code> 里面的内容；</li>
+<li>TUTORIAL 是会更新的，此版本为 <strong>2017</strong> 版本的；</li>
+<li>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1-TDvbPuSgVyLJDONf5HnmQ">https://pan.baidu.com/s/1-TDvbPuSgVyLJDONf5HnmQ</a><br>提取码：453w<br>–来自百度网盘</li>
+<li><code>&lt;font color='red'&gt;</code>在inout和multi都有用到qsub命令，但我不知道怎么安装这个命令，之前尝试安装PBS中的torque和openPBS，失败了；本教程包含这个命令，希望可以为我解惑；<code>&lt;/font&gt;</code></li>
 </ul>
 </blockquote>
 <p>PBS（Protable Batch System） 作业管理系统：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/2f6c799ca147">https://www.jianshu.com/p/2f6c799ca147</a></p>
@@ -427,20 +423,20 @@
 <p>…</p>
 </blockquote>
 <hr>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本教程练习中，我们将进入集群<code>datarmor</code>，设置环境并学习如何传输数据和运行 MPI 作业。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本教程练习中，我们将进入集群 <code>datarmor</code>，设置环境并学习如何传输数据和运行 MPI 作业。</p>
 <blockquote>
 <ul>
-<li><code>datarmor</code>是<code>ifremer</code>中的<code>超级计算机 supercomputer</code>。<code>waverun</code>教程有提到。</li>
+<li><code>datarmor</code>是 <code>ifremer</code>中的 <code>超级计算机 supercomputer</code>。<code>waverun</code>教程有提到。</li>
 </ul>
 </blockquote>
-<h2 id="1-如何在集群datarmor-工作"><a href="#1-如何在集群datarmor-工作" class="headerlink" title="1-如何在集群datarmor 工作"></a>1-如何在集群datarmor 工作</h2><p>首先必须让<code>datarmor</code>环境文件在你的本地机器上工作：</p>
+<h2 id="1-如何在集群datarmor-工作"><a href="#1-如何在集群datarmor-工作" class="headerlink" title="1-如何在集群datarmor 工作"></a>1-如何在集群datarmor 工作</h2><p>首先必须让 <code>datarmor</code>环境文件在你的本地机器上工作：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	保存原先的环境文件</span>
 <span class="token function">cp</span> ~/.bashrc ~/.bashrc.save_20220104
 
 <span class="token comment">##	datarmor的环境文件</span>
 <span class="token function">cp</span> <span class="token variable">$WAVES_SHORT_COURSE</span>/TUTORIALS/TUTORIAL_DATARMOR/data/bashrc.iuem ~/.bashrc
 
-<span class="token comment">##	</span>
+<span class="token comment">##</span>
 <span class="token builtin class-name">source</span> ~/.bashrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
@@ -457,18 +453,17 @@ ssh-keygen -t rsa -N <span class="token string">""</span> -f ~/.ssh/id_rsa
 ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232140.png" alt="ssh-keygen -t rsa -N &quot;&quot; -f ~/.ssh/id_rsa" style="zoom:100%;">
-
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232349.png" alt="cat .ssh/id_rsa.pub | echo $datapwd | ssh $datalogin@datarmor 'cat >> .ssh/authorized_keys'"></p>
+<p>&lt;img src=”<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232140.png&quot;">https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232140.png"</a> alt=”ssh-keygen -t rsa -N “” -f ~/.ssh/id_rsa” style=”zoom:100%;” /&gt;</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232349.png" alt="cat .ssh/id_rsa.pub | echo <span class=">datapwd | ssh datapwd | ssh datalogin@datarmor ‘cat &gt;&gt; .ssh/authorized_keys’” /&gt;</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232800.png" alt="ssh-add"></p>
 </blockquote>
 <p>打开一个新终端，无需输入密码即可将您连接到 <code>caparmor</code>：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> <span class="token variable">$datalogin</span>@datarmor -X<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232349.png" alt="cat .ssh/id_rsa.pub | echo $datapwd | ssh $datalogin@datarmor 'cat >> .ssh/authorized_keys'"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232349.png" alt="cat .ssh/id_rsa.pub | echo <span class=">datapwd | ssh datapwd | ssh datalogin@datarmor ‘cat &gt;&gt; .ssh/authorized_keys’” /&gt;</p>
 </blockquote>
-<p>如果这是您的第一次连接，则需要复制一个<code>cshrc</code>环境文件 :</p>
+<p>如果这是您的第一次连接，则需要复制一个 <code>cshrc</code>环境文件 :</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	保存原先的cshrc环境文件（可能原先没有）</span>
 <span class="token function">cp</span> ~/.cshrc ~/.cshrc.save_20220104
 
@@ -478,13 +473,13 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
 <span class="token comment">##</span>
 <span class="token builtin class-name">source</span> ~/.cshrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>在 datarmor 上，每个用户有 3 个可用的存储空间，一个用于脚本和程序的<code>主目录(home)</code>，一个用于模型结果的<code>工作目录(work)</code>和一个用于模型运行的<code>临时目录(scratch)</code>。</p>
+<p>在 datarmor 上，每个用户有 3 个可用的存储空间，一个用于脚本和程序的 <code>主目录(home)</code>，一个用于模型结果的 <code>工作目录(work)</code>和一个用于模型运行的 <code>临时目录(scratch)</code>。</p>
 <blockquote>
 <p>home : /home1/datahome/login - 50G with a back up system.<br>work : /home1/datawork/login - 500G with no back up system.<br>scratch : /home1/datascratch/login - 10T with no back up system and 2 weeks of storage lifespan.</p>
 </blockquote>
 <h2 id="2-从datarmor获取数据-输送数据到datarmor"><a href="#2-从datarmor获取数据-输送数据到datarmor" class="headerlink" title="2-从datarmor获取数据+输送数据到datarmor"></a>2-从datarmor获取数据+输送数据到datarmor</h2><h2 id="3-在datarmor运行工作"><a href="#3-在datarmor运行工作" class="headerlink" title="3-在datarmor运行工作"></a>3-在datarmor运行工作</h2><blockquote>
 <ul>
-<li>运行ww3程序不要超过几分钟的时间，如果每个人都这样做，系统将变得非常慢，甚至关闭。当你必须长时间运行代码或使用大量内存时，好的做法是使用<code>qsub</code>工具在<code>计算节点 computation node</code>而不是<code>前端节点 front-end node</code>上运行你的程序。</li>
+<li>运行ww3程序不要超过几分钟的时间，如果每个人都这样做，系统将变得非常慢，甚至关闭。当你必须长时间运行代码或使用大量内存时，好的做法是使用 <code>qsub</code>工具在 <code>计算节点 computation node</code>而不是 <code>前端节点 front-end node</code>上运行你的程序。</li>
 </ul>
 </blockquote>
 <p>教程中给出了一个例子：<code>data/job_shel.pbs</code>。要运行这个程序，使用这个命令行：</p>
@@ -494,15 +489,15 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
 
 <blockquote>
 <ul>
-<li><p>如果你在复制数据，运行<code>nco</code>工具，或任何fortran可执行文件的<code>顺序模式 sequential mode</code>，你必须在<code>队列顺序 queue sequential </code>上运行。</p>
+<li><p>如果你在复制数据，运行 <code>nco</code>工具，或任何fortran可执行文件的 <code>顺序模式 sequential mode</code>，你必须在 <code>队列顺序 queue sequential </code>上运行。</p>
 </li>
-<li><p>对于<code>MPI</code>程序，你可以使用以下更合适的<code>mpi队列 queue</code>：mpi_1, mpi_2, mpi_3, mpi_4, mpi_6, …, mpi_18 或 big。</p>
+<li><p>对于 <code>MPI</code>程序，你可以使用以下更合适的 <code>mpi队列 queue</code>：mpi_1, mpi_2, mpi_3, mpi_4, mpi_6, …, mpi_18 或 big。</p>
 <ul>
-<li>每个节点有28个<code>mpi任务 tasks</code>，因此例如mpi_2在56个mpi任务上运行。</li>
-<li>如果使用big队列，你必须用变量 <code>select</code>定义使用的处理器数量（例如：<code>#PBS -l select=36:ncpus=28:mpiprocs=28</code>）。然后使用环境变量<code>$MPI_LAUNCH</code>调用你的MPI程序（例如：<code>$MPI_LAUNCH ww3_shel &gt;&amp; ww3_shel.out</code>）。</li>
+<li>每个节点有28个 <code>mpi任务 tasks</code>，因此例如mpi_2在56个mpi任务上运行。</li>
+<li>如果使用big队列，你必须用变量 <code>select</code>定义使用的处理器数量（例如：<code>#PBS -l select=36:ncpus=28:mpiprocs=28</code>）。然后使用环境变量 <code>$MPI_LAUNCH</code>调用你的MPI程序（例如：<code>$MPI_LAUNCH ww3_shel &gt;&amp; ww3_shel.out</code>）。</li>
 </ul>
 </li>
-<li><p>可以进行内存分配（<code>#PBS -l mem=60G</code>）或<code>walltime</code>设置（<code>#PBS -l walltime=2:00:00</code>）。</p>
+<li><p>可以进行内存分配（<code>#PBS -l mem=60G</code>）或 <code>walltime</code>设置（<code>#PBS -l walltime=2:00:00</code>）。</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111225311.png" alt="wall-time解释（有道翻译中查到的）" style="zoom:60%;"></li>
 </ul>
 </blockquote>
@@ -1039,7 +1034,7 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

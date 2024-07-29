@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    4.9k
+                    5k
                 </div>
                 
 
@@ -405,12 +405,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出"><a href="#06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出" class="headerlink" title="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出"></a><center>06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出</center></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-inout.pdf</code>；（**<font color="red">代码基本完全实现，之前卡在了PBS，qsub命令，这里我选择跳过了</font>**）</p>
+                <h1 id="lt-center-gt-06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出-lt-center-gt"><a href="#lt-center-gt-06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出-lt-center-gt" class="headerlink" title="<center>06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出</center>"></a><code>&lt;center&gt;</code>06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出<code>&lt;/center&gt;</code></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-inout.pdf</code>；（**<code>&lt;font color='red'&gt;</code>代码基本完全实现，之前卡在了PBS，qsub命令，这里我选择跳过了<code>&lt;/font&gt;</code>**）</p>
 <blockquote>
 <ul>
 <li><p>也就是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-INOUT</code> 里面的内容；</p>
 </li>
-<li><p>需要知道的一点是，TUTORIAL 是会更新的，下面是关于 <strong>2019</strong> 版本的； </p>
+<li><p>需要知道的一点是，TUTORIAL 是会更新的，下面是关于 <strong>2019</strong> 版本的；</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220102190549.png"></p>
 </li>
 <li><p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1wjsRgnrbUv9gu-RJB6FZ-g">https://pan.baidu.com/s/1wjsRgnrbUv9gu-RJB6FZ-g</a><br>提取码：5p2b<br>–来自百度网盘</p>
@@ -420,8 +420,8 @@
 <hr>
 <h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本教程练习中，我们将</p>
 <ul>
-<li>完成使用<code>不同类型的输入</code>运行模型的步骤，从理想化的强迫场（forcing field）到现实的初始条件；</li>
-<li>了解可能的<code>不同输出</code>，从网格字段到沿轨道的谱数据；</li>
+<li>完成使用 <code>不同类型的输入</code>运行模型的步骤，从理想化的强迫场（forcing field）到现实的初始条件；</li>
+<li>了解可能的 <code>不同输出</code>，从网格字段到沿轨道的谱数据；</li>
 </ul>
 <p>所有输入和输出文件都将使用 <code>NetCDF 格式</code>。</p>
 <hr>
@@ -430,16 +430,16 @@
 <span class="token comment">#  TUTORIAL-INOUT具体的绝对路径需要更改；</span>
 <span class="token function">cp</span>   -r   /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/COURS/WAVES-SHORT-COURSE/TUTORIALS/TUTORIAL_INOUT   <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>现在可以进 <code>./TUTORIAL_INOUT</code>，其中的<code>data</code>文件夹可以发现如下文件：</p>
+<p>现在可以进 <code>./TUTORIAL_INOUT</code>，其中的 <code>data</code>文件夹可以发现如下文件：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220102193641.png" alt="" style="zoom:80%;">
 
 <hr>
-<h2 id="ww3编译生成exe文件夹"><a href="#ww3编译生成exe文件夹" class="headerlink" title="ww3编译生成exe文件夹"></a>ww3编译生成exe文件夹</h2><p>在<code>ftp网站</code>中有<code>已编译的exe文件夹</code>，即<code> $WAVE_DATA/EXE/exe_Ifremer2_datarmor_mpt</code>，</p>
+<h2 id="ww3编译生成exe文件夹"><a href="#ww3编译生成exe文件夹" class="headerlink" title="ww3编译生成exe文件夹"></a>ww3编译生成exe文件夹</h2><p>在 <code>ftp网站</code>中有 <code>已编译的exe文件夹</code>，即 <code> $WAVE_DATA/EXE/exe_Ifremer2_datarmor_mpt</code>，</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112220040.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112220210.png"></p>
 <blockquote>
 <ul>
-<li><code>comp</code>，<code>link</code>，<code>switch</code> 是<code>exe</code> 文件夹（即<code>exe_Ifremer2_datarmor_mpt</code>）中编译需要用到的文件。</li>
+<li><code>comp</code>，<code>link</code>，<code>switch</code> 是 <code>exe</code> 文件夹（即 <code>exe_Ifremer2_datarmor_mpt</code>）中编译需要用到的文件。</li>
 </ul>
 </blockquote>
 <p>如果想自己编译生成exe文件夹，可以运行以下代码：</p>
@@ -463,52 +463,52 @@
 
 <blockquote>
 <ul>
-<li><p>遇到缺少<code>comp.comp</code>，<code>link.comp</code>，<code>switch_switch</code>文件问题（终端显示）</p>
+<li><p>遇到缺少 <code>comp.comp</code>，<code>link.comp</code>，<code>switch_switch</code>文件问题（终端显示）</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	编译</span>
 <span class="token function">cp</span> comp comp.comp
 <span class="token function">cp</span> <span class="token function">link</span> link.comp
 <span class="token function">cp</span> switch switch_switch
 ./w3_setup <span class="token punctuation">..</span>/ -c comp -s switch -q
 ./w3_make<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>遇到<code>ifort: 未找到命令</code>问题（去<code>model/tmp</code>找<code>编译步骤出现问题</code>的文件，此处是<code>ww3_grid.err</code>）</p>
+<li><p>遇到 <code>ifort: 未找到命令</code>问题（去 <code>model/tmp</code>找 <code>编译步骤出现问题</code>的文件，此处是 <code>ww3_grid.err</code>）</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112185109.png"></p>
 <blockquote>
 <ul>
-<li><p><code>ifort</code>即<code>intel fortran</code>；</p>
+<li><p><code>ifort</code>即 <code>intel fortran</code>；</p>
 </li>
-<li><p>我暂时也没办法从根源解决这个问题，应该需要安装<code>ifort</code>命令；（尝试过把<code>comp</code>和<code>link</code>文件中的<code>ifort</code>信息，<code>'ifort -lmpi'</code>转换为<code>mpif90</code>，<code>'ifort'</code>转换为<code>gfortran</code>，编译还是失败）</p>
+<li><p>我暂时也没办法从根源解决这个问题，应该需要安装 <code>ifort</code>命令；（尝试过把 <code>comp</code>和 <code>link</code>文件中的 <code>ifort</code>信息，<code>'ifort -lmpi'</code>转换为 <code>mpif90</code>，<code>'ifort'</code>转换为 <code>gfortran</code>，编译还是失败）</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112190651.png" alt="comp文件中的ifort信息" style="zoom:67%;">
 
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112190920.png" alt="link中的ifort信息" style="zoom:67%;">
 
-<p>治标方法，选择<code>$ww3/model/bin</code>下自带的<code>comp_Gnu</code>和<code>link_Gnu</code>为编译文件。</p>
+<p>治标方法，选择 <code>$ww3/model/bin</code>下自带的 <code>comp_Gnu</code>和 <code>link_Gnu</code>为编译文件。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> comp.Gnu comp.comp.Gnu 
 <span class="token function">cp</span> link.Gnu link.comp.Gnu 
 ./w3_setup <span class="token punctuation">..</span>/ -c comp.Gnu -s switch -q<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112192153.png" alt="治标方法生成的exe文件夹，ww3文件数与ftp中的一致，但是大小却不一样..."></p>
-<p>将生成的文件放在<code>exe2</code>文件夹下，百度网盘链接：</p>
-<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Ypg-ikoX8umhs9_tVZAYFg">https://pan.baidu.com/s/1Ypg-ikoX8umhs9_tVZAYFg</a><br>提取码：p3lp </p>
+<p>将生成的文件放在 <code>exe2</code>文件夹下，百度网盘链接：</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Ypg-ikoX8umhs9_tVZAYFg">https://pan.baidu.com/s/1Ypg-ikoX8umhs9_tVZAYFg</a><br>提取码：p3lp</p>
 </li>
 </ul>
 </blockquote>
 </li>
 </ul>
 </blockquote>
-<p>将<code>exe2</code>文件夹中所有<code>ww3_</code>文件复制进<code>work-inout/TUTORIAL_INOUT</code>的<code>work</code>目录：</p>
+<p>将 <code>exe2</code>文件夹中所有 <code>ww3_</code>文件复制进 <code>work-inout/TUTORIAL_INOUT</code>的 <code>work</code>目录：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /home/jincanliu/BaiduNetdiskWorkspace/WaveModel2/work-inout/TUTORIAL_INOUT
 <span class="token function">mkdir</span> work <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> work
 <span class="token function">cp</span> <span class="token variable">$exe2</span>/ww3_* <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
 <ul>
-<li><p>验证<code>exe2</code>中的ww3文件运行有没有问题~~无问题~</p>
-<p><code>exe_Ifremer2_datarmor_mpt</code>中的ww3文件的运行会出现问题，见<code>INOUT</code>教程运行模型部分~~（<font color="red">MPI</font>）</p>
+<li><p>验证 <code>exe2</code>中的ww3文件运行有没有问题~~无问题~</p>
+<p><code>exe_Ifremer2_datarmor_mpt</code>中的ww3文件的运行会出现问题，见 <code>INOUT</code>教程运行模型部分~~（<code>&lt;font color='red'&gt;</code>MPI<code>&lt;/font&gt;</code>）</p>
 </li>
 </ul>
 </blockquote>
 <hr>
-<h2 id="ww3-grid：定义网格"><a href="#ww3-grid：定义网格" class="headerlink" title="ww3_grid：定义网格"></a>ww3_grid：定义网格</h2><p>使用研究区域的水深和掩码文件 <code>iro1k.bot</code> 和 <code>iro1k.mask</code>（参见教程 <code>gridgen</code>）和namelists文件 <code>ww3_grid.nml</code> 来定义网格设置和 <code>namelists_IROISE.nml</code> 来<font color="red">定义模型参数化</font>（基于激活的switch），在含有编译文件的<code>work</code>目录下，运行程序 <code>ww3_grid</code> 创建<code>模型定义文件</code>，即 <code>mod_def.ww3</code>：</p>
+<h2 id="ww3-grid：定义网格"><a href="#ww3-grid：定义网格" class="headerlink" title="ww3_grid：定义网格"></a>ww3_grid：定义网格</h2><p>使用研究区域的水深和掩码文件 <code>iro1k.bot</code> 和 <code>iro1k.mask</code>（参见教程 <code>gridgen</code>）和namelists文件 <code>ww3_grid.nml</code> 来定义网格设置和 <code>namelists_IROISE.nml</code> 来<code>&lt;font color='red'&gt;</code>定义模型参数化<code>&lt;/font&gt;</code>（基于激活的switch），在含有编译文件的 <code>work</code>目录下，运行程序 <code>ww3_grid</code> 创建 <code>模型定义文件</code>，即 <code>mod_def.ww3</code>：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/iro1k.bot <span class="token builtin class-name">.</span>
 <span class="token function">cp</span> <span class="token punctuation">..</span>/data/iro1k.mask <span class="token builtin class-name">.</span>
 <span class="token function">cp</span> <span class="token punctuation">..</span>/data/ww3_grid.nml <span class="token builtin class-name">.</span>
@@ -524,23 +524,21 @@
 <p>完成后，在您的文件夹中列出最后创建的文件 (<code>ls -lrt</code>)，应该有一个 <code>mod_def.ww3</code>。 该二进制文件包含模型网格的谱和空间定义。 所有 ww3 程序都需要它。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> -lrt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="运行模型（理想谱初始条件）"><a href="#运行模型（理想谱初始条件）" class="headerlink" title="运行模型（理想谱初始条件）"></a>运行模型（理想谱初始条件）</h2><h3 id="ww3-strt：定义初始条件"><a href="#ww3-strt：定义初始条件" class="headerlink" title="ww3_strt：定义初始条件"></a>ww3_strt：定义初始条件</h3><p>在整个网格中<code>定义初始条件</code>的最简单方法是使用 <code>ww3_strt</code> 定义理想化的波谱。 该程序将只读取输入文件 <code>ww3_strt.inp</code> 中定义的参数化，它可以是频率和空间中的高斯或 JONSWAP 频谱。 它将创建一个文件 <code>restart.ww3</code>，其中包含整个模型网格的全谱信息。</p>
+<h2 id="运行模型（理想谱初始条件）"><a href="#运行模型（理想谱初始条件）" class="headerlink" title="运行模型（理想谱初始条件）"></a>运行模型（理想谱初始条件）</h2><h3 id="ww3-strt：定义初始条件"><a href="#ww3-strt：定义初始条件" class="headerlink" title="ww3_strt：定义初始条件"></a>ww3_strt：定义初始条件</h3><p>在整个网格中 <code>定义初始条件</code>的最简单方法是使用 <code>ww3_strt</code> 定义理想化的波谱。 该程序将只读取输入文件 <code>ww3_strt.inp</code> 中定义的参数化，它可以是频率和空间中的高斯或 JONSWAP 频谱。 它将创建一个文件 <code>restart.ww3</code>，其中包含整个模型网格的全谱信息。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/ww3_strt.inp <span class="token builtin class-name">.</span>
 ./ww3_strt <span class="token operator">|</span> <span class="token function">tee</span> ww3_strt.out<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>完成后，在您的文件夹中列出最后创建的文件 (<code>ls -lrt</code>)，您应该有一个 <code>restart.ww3</code>。</p>
-<h3 id="ww3-shel：运行模型（代码运行之前卡在此处，失败在PBS-qsub）"><a href="#ww3-shel：运行模型（代码运行之前卡在此处，失败在PBS-qsub）" class="headerlink" title="ww3_shel：运行模型（代码运行之前卡在此处，失败在PBS,qsub）"></a>ww3_shel：运行模型（<font color="red">代码运行之前卡在此处，失败在PBS,qsub</font>）</h3><p>现在您可以运行模型，为此，复制与 <code>ww3_shel</code> 对应的名称列表文件 <code>ww3_shel.nml</code> 。</p>
+<h3 id="ww3-shel：运行模型（-lt-font-color-39-red-39-gt-代码运行之前卡在此处，失败在PBS-qsub-lt-font-gt-）"><a href="#ww3-shel：运行模型（-lt-font-color-39-red-39-gt-代码运行之前卡在此处，失败在PBS-qsub-lt-font-gt-）" class="headerlink" title="ww3_shel：运行模型（<font color='red'>代码运行之前卡在此处，失败在PBS,qsub</font>）"></a>ww3_shel：运行模型（<code>&lt;font color='red'&gt;</code>代码运行之前卡在此处，失败在PBS,qsub<code>&lt;/font&gt;</code>）</h3><p>现在您可以运行模型，为此，复制与 <code>ww3_shel</code> 对应的名称列表文件 <code>ww3_shel.nml</code> 。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#cp ../data/job_shel.pbs .</span>
 <span class="token function">cp</span> <span class="token punctuation">..</span>/data/ww3_shel.nml <span class="token builtin class-name">.</span>
 ./ww3_shel <span class="token operator">|</span> <span class="token function">tee</span> ww3_shel.out
 <span class="token comment">#qsub job_shel.pbs</span>
 <span class="token comment">#qstat -u $USER (to check if your job is still running : job_shel.pbs $USER 00:03:08 R mpi_1)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
 <blockquote>
 <ul>
-<li>不需要复制<font color="red">MPI 提交作业</font> <code>job_shel.pbs</code> ，也不需要使用<code>qsub</code>命令了；</li>
+<li>不需要复制<code>&lt;font color='red'&gt;</code>MPI 提交作业<code>&lt;/font&gt;</code> <code>job_shel.pbs</code> ，也不需要使用 <code>qsub</code>命令了；</li>
 </ul>
 </blockquote>
 <!-- MPI submisson job 是什么意思 -->
@@ -552,23 +550,17 @@
 (https://www.cnblogs.com/acm-icpcer/p/11239455.html) 
 -->
 
-
-
 <!--
 PBS管理系统
 https://wenku.baidu.com/view/a911611e4228915f804d2b160b4e767f5bcf8059.html
 PBS目前包括 openPBS，PBSpro，Torque
 -->
 
-
-
 <!--
 Linux服务器工作站部署openPBS/PBSPro队列调度系统 
 https://www.bilibili.com/video/BV17K4y1v7z3/ 
 bilibili,留言github
 -->
-
-
 
 <!--
 https://www.optbbs.com/thread-14014845-1-1.html 
@@ -583,29 +575,25 @@ PBS 是公开源代码的作业管理系统，在此环境下运行，用户不�
 (5) qhost 命令--用于看集群资源 
 -->
 
-
-
 <!-- https://github.com/adaptivecomputing/torque, github -->
 
 <!-- https://adaptivecomputing.com/cherry-services/torque-resource-manager/ -->
-
-
 
 <blockquote>
 <ul>
 <li><p><code>job_shel.pbs</code>文件：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111225640.png" alt="job_shel.pbs" style="zoom:80%;"></li>
-<li><p>能否不用 <code>qsub</code> 命令，仅仅只用<code>MPI</code>相关命令，运行<code>ww3_shel</code>？<font color="red">一个很重要的想法，十分希望成功</font>；</p>
+<li><p>能否不用 <code>qsub</code> 命令，仅仅只用 <code>MPI</code>相关命令，运行 <code>ww3_shel</code>？<code>&lt;font color='red'&gt;</code>一个很重要的想法，十分希望成功<code>&lt;/font&gt;</code>；</p>
 <ul>
-<li><p>直接运行<code>./ww3_shel</code>：<code>undefined symbol: mpi_init_</code>；<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111231349.png"></p>
+<li><p>直接运行 <code>./ww3_shel</code>：<code>undefined symbol: mpi_init_</code>；<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111231349.png"></p>
 </li>
 <li><p><code>mpirun</code>命令？</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112170442.png"></p>
 <p>…</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112173342.png"></p>
 </li>
-<li><p>关于<code>WW3模型</code>的并行版本（<code>OpenMP</code>和<code>MPI</code>版本），需要做两点补充说明。第一，准备在MPI环境下运行的可执行文件时，可能会出现复杂的情况，这种复杂情况在<code>附录C</code>中讨论。第二，<code>OpenMP</code>代码应该只使用指令来编译，即不要使用自动运行代码的编译器选项。（<code>2019-ww3v6.07手册5.6</code>）</p>
-<p>去看<code>附录C</code>；</p>
+<li><p>关于 <code>WW3模型</code>的并行版本（<code>OpenMP</code>和 <code>MPI</code>版本），需要做两点补充说明。第一，准备在MPI环境下运行的可执行文件时，可能会出现复杂的情况，这种复杂情况在 <code>附录C</code>中讨论。第二，<code>OpenMP</code>代码应该只使用指令来编译，即不要使用自动运行代码的编译器选项。（<code>2019-ww3v6.07手册5.6</code>）</p>
+<p>去看 <code>附录C</code>；</p>
 </li>
 <li><p>实现了，使用自己编译生成exe文件夹，思路是在请教中找到的：</p>
 <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112223355.png" style="zoom:67%;"></li>
@@ -613,9 +601,9 @@ PBS 是公开源代码的作业管理系统，在此环境下运行，用户不�
 </li>
 </ul>
 </blockquote>
-<p>运行结果是一个二进制文件 <code>out_grd.ww3</code>，其中包含在网格上为每个输出时间步长计算的所有<code>平均波参数</code>。 这个例子中，模型中没有给出<code>输入风</code>，仅仅只含有 <code>ww3_strt</code> 实现的初始理想化条件。当前路径中有<code>ww3_strt</code> 实现的<code>restart.ww3</code>时，模型会自动读取此文件。了解模型是否已考虑<code>restart</code>， 可以阅读 <code>log.ww3</code>文件，本例子显示的是：“Restart file read; cold start (<strong>idealized</strong>)”，说明已考虑<code>restart</code>。 在<code>输出时间线</code>中，您可以在“<code>gridded field</code>”列“<code>g</code>”中看到由“<code>X</code>”符号显示的 I/O 更新（或“<code>L</code>”表示的<code>最后一次 Last</code>更新）。</p>
+<p>运行结果是一个二进制文件 <code>out_grd.ww3</code>，其中包含在网格上为每个输出时间步长计算的所有 <code>平均波参数</code>。 这个例子中，模型中没有给出 <code>输入风</code>，仅仅只含有 <code>ww3_strt</code> 实现的初始理想化条件。当前路径中有 <code>ww3_strt</code> 实现的 <code>restart.ww3</code>时，模型会自动读取此文件。了解模型是否已考虑 <code>restart</code>， 可以阅读 <code>log.ww3</code>文件，本例子显示的是：“Restart file read; cold start (<strong>idealized</strong>)”，说明已考虑 <code>restart</code>。 在 <code>输出时间线</code>中，您可以在“<code>gridded field</code>”列“<code>g</code>”中看到由“<code>X</code>”符号显示的 I/O 更新（或“<code>L</code>”表示的 <code>最后一次 Last</code>更新）。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/%E7%BB%98%E5%9B%BE111.png" alt="gedit log.ww3"></p>
-<p>可以做<code>后处理(Post-Processing)</code>：复制<code>ww3_ounf</code>对应的namelist文件<code>ww3_ounf.nml</code>，运行，对结果进行可视化。</p>
+<p>可以做 <code>后处理(Post-Processing)</code>：复制 <code>ww3_ounf</code>对应的namelist文件 <code>ww3_ounf.nml</code>，运行，对结果进行可视化。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/ww3_ounf.nml <span class="token builtin class-name">.</span>
 ./ww3_ounf <span class="token operator">|</span> <span class="token function">tee</span> ww3_ounf.out
 
@@ -623,18 +611,18 @@ PBS 是公开源代码的作业管理系统，在此环境下运行，用户不�
 <span class="token comment"># sudo apt-get install ncview</span>
 ncview ww3.201109.nc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>查看 <code>MAPSTA 变量</code>，即网格的地图状态，<code>海点</code>设置为 1（图中为绿色），<code>陆地点</code>设置为 0（图中为蓝色），<code>活动边界点</code>设置为 2（图中为红色）。要了解有关地图状态的更多信息，请参阅教程<code> gridgen</code> 中的附录 。</p>
+<p>查看 <code>MAPSTA 变量</code>，即网格的地图状态，<code>海点</code>设置为 1（图中为绿色），<code>陆地点</code>设置为 0（图中为蓝色），<code>活动边界点</code>设置为 2（图中为红色）。要了解有关地图状态的更多信息，请参阅教程 <code> gridgen</code> 中的附录 。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112225325.png" alt="图1"></p>
-<p>在第一个时间步，所有域都初始化为<code>从西边 2.5m 的涌浪</code>，然后在接下来的时间步中，就只是没有任何源项的波浪耗散。 注意未及时更新的边界点。 由于它们在地图状态中设置为 2，因此这些点必须在每个时间步由波谱更新，这里仅在第一个时间步由 <code>restart.ww3</code> 文件更新。</p>
+<p>在第一个时间步，所有域都初始化为 <code>从西边 2.5m 的涌浪</code>，然后在接下来的时间步中，就只是没有任何源项的波浪耗散。 注意未及时更新的边界点。 由于它们在地图状态中设置为 2，因此这些点必须在每个时间步由波谱更新，这里仅在第一个时间步由 <code>restart.ww3</code> 文件更新。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/11.gif" alt="Hs变量随时间步长的变化"></p>
-<h2 id="运行模型（均匀输入场）"><a href="#运行模型（均匀输入场）" class="headerlink" title="运行模型（均匀输入场）"></a>运行模型（均匀输入场）</h2><h3 id="ww3-shel：运行模型"><a href="#ww3-shel：运行模型" class="headerlink" title="ww3_shel：运行模型"></a>ww3_shel：运行模型</h3><p><code>均匀输入场(Homogeneous Input Field )</code>是一个<code>强迫场</code>（风、水流、水位、冰），它可以在整个网格上的给定日期的给定值上定义。 可以添加许多均匀场使<code>其</code>随时间变化，否则<code>它</code>将在所有时间步长中保持其值（<font color="red">其和它指代的是什么？强迫场</font>）。 要定义<code>它</code>，请打开名称列表文件 <code>ww3_shel.nml</code> 以设置<code>输入风场</code>。 在名称列表 <code>INPUT_NML</code> 中，将风输入的强制标志设置为 <code>H</code> 以表示“homogeneous”。</p>
+<h2 id="运行模型（均匀输入场）"><a href="#运行模型（均匀输入场）" class="headerlink" title="运行模型（均匀输入场）"></a>运行模型（均匀输入场）</h2><h3 id="ww3-shel：运行模型"><a href="#ww3-shel：运行模型" class="headerlink" title="ww3_shel：运行模型"></a>ww3_shel：运行模型</h3><p><code>均匀输入场(Homogeneous Input Field )</code>是一个 <code>强迫场</code>（风、水流、水位、冰），它可以在整个网格上的给定日期的给定值上定义。 可以添加许多均匀场使 <code>其</code>随时间变化，否则 <code>它</code>将在所有时间步长中保持其值（<code>&lt;font color='red'&gt;</code>其和它指代的是什么？强迫场<code>&lt;/font&gt;</code>）。 要定义 <code>它</code>，请打开名称列表文件 <code>ww3_shel.nml</code> 以设置 <code>输入风场</code>。 在名称列表 <code>INPUT_NML</code> 中，将风输入的强制标志设置为 <code>H</code> 以表示“homogeneous”。</p>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;INPUT_NML
 INPUT%FORCING%WINDS = 'H' 
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
 <ul>
-<li><p>填写<code>H</code>而不是<code>'H'</code>会报错，显示<code>READ_INPUT_NML</code>读取名单列表有问题，神奇！</p>
+<li><p>填写 <code>H</code>而不是 <code>'H'</code>会报错，显示 <code>READ_INPUT_NML</code>读取名单列表有问题，神奇！</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112234158.png"></p>
 </li>
 </ul>
@@ -645,7 +633,7 @@ INPUT%FORCING%WINDS = 'H'
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;HOMOG_COUNT_NML
 HOMOG_COUNT%N_WND = 1
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li><p>然后在<code>HOMOG_INPUT_NML</code>中定义日期、风速、方向和海气差：</p>
+<li><p>然后在 <code>HOMOG_INPUT_NML</code>中定义日期、风速、方向和海气差：</p>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;HOMOG_INPUT_NML
 HOMOG_INPUT(1)%NAME = 'WND'
 HOMOG_INPUT(1)%DATE = '20110902 000000'
@@ -662,24 +650,24 @@ HOMOG_INPUT(1) = 'WND' '20110902 000000' 20. 315. 2.0
 <p>现在您可以重新运行模型：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_shel <span class="token operator">|</span> <span class="token function">tee</span> ww3_shel.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>在这个例子下，风仅在给定时间更新，然后保持恒定。 您可以读取文件 <code>log.ww3</code> 以验证运行是否已成功终止。 在<code>输入时间轴</code>中，您可以在“<code>w</code>”列中看到关于风的“<code>F</code>”符号，它显示的是第一个 I/O 更新。</p>
+<p>在这个例子下，风仅在给定时间更新，然后保持恒定。 您可以读取文件 <code>log.ww3</code> 以验证运行是否已成功终止。 在 <code>输入时间轴</code>中，您可以在“<code>w</code>”列中看到关于风的“<code>F</code>”符号，它显示的是第一个 I/O 更新。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112234706.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220112234803.png" alt="log.ww3"></p>
 <p>您可以对结果进行后处理和可视化：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_ounf <span class="token operator">|</span> <span class="token function">tee</span> ww3_ounf.out
 ncview ww3.201109.nc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>在第一个时间步，所有域都初始化为<code>从西边 2.5m 的涌浪</code>，然后<code>来自西北的恒定 20 m/s 风</code>在每个时间步长吹向所有网格，产生来自风向的波浪增长。</p>
+<p>在第一个时间步，所有域都初始化为 <code>从西边 2.5m 的涌浪</code>，然后 <code>来自西北的恒定 20 m/s 风</code>在每个时间步长吹向所有网格，产生来自风向的波浪增长。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/12.gif"></p>
 <h2 id="运行模型（真实强迫场）"><a href="#运行模型（真实强迫场）" class="headerlink" title="运行模型（真实强迫场）"></a>运行模型（真实强迫场）</h2><h3 id="风场数据来源"><a href="#风场数据来源" class="headerlink" title="风场数据来源"></a>风场数据来源</h3><p>主要的全球风力再分析是由 <code>NCEP</code> 和 <code>ECMWF</code> 机构完成的。</p>
 <ul>
-<li><p><code>NCEP</code>，历史的 <code>CFSR</code> 从 1979 年到 2010 年：<a target="_blank" rel="noopener" href="http://rda.ucar.edu/datasets/ds093.1/">http://rda.ucar.edu/datasets/ds093.1/</a> </p>
+<li><p><code>NCEP</code>，历史的 <code>CFSR</code> 从 1979 年到 2010 年：<a target="_blank" rel="noopener" href="http://rda.ucar.edu/datasets/ds093.1/">http://rda.ucar.edu/datasets/ds093.1/</a></p>
 <p>最新的一个是从 2011 年到现在的 CFSRR：<a target="_blank" rel="noopener" href="http://rda.ucar.edu/datasets/ds094.1/">http://rda.ucar.edu/datasets/ds094.1/</a></p>
 </li>
 <li><p><code>ECMWF</code>，最新的是 ERA-5：<a target="_blank" rel="noopener" href="https://climate.copernicus.eu/climate-reanalysis">https://climate.copernicus.eu/climate-reanalysis</a></p>
 </li>
 </ul>
-<h3 id="ww3-prnc：定义风场"><a href="#ww3-prnc：定义风场" class="headerlink" title="ww3_prnc：定义风场"></a>ww3_prnc：定义风场</h3><p>在本教程，您只需从数据文件夹中复制风文件。 要将风力场从 <code>netcdf</code> 文件<code> wind.nc</code> 转换为在模型网格上插值的二进制文件 <code>wind.ww3</code>，您需要运行预处理程序 <code>ww3_prnc</code>。 相应的名称列表文件 <code>ww3_prnc.nml</code> 包含转换它所需的所有设置。</p>
+<h3 id="ww3-prnc：定义风场"><a href="#ww3-prnc：定义风场" class="headerlink" title="ww3_prnc：定义风场"></a>ww3_prnc：定义风场</h3><p>在本教程，您只需从数据文件夹中复制风文件。 要将风力场从 <code>netcdf</code> 文件 <code> wind.nc</code> 转换为在模型网格上插值的二进制文件 <code>wind.ww3</code>，您需要运行预处理程序 <code>ww3_prnc</code>。 相应的名称列表文件 <code>ww3_prnc.nml</code> 包含转换它所需的所有设置。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/wind.nc <span class="token builtin class-name">.</span>
 <span class="token function">cp</span> <span class="token punctuation">..</span>/data/ww3_prnc.nml <span class="token builtin class-name">.</span>
 ./ww3_prnc <span class="token operator">|</span> <span class="token function">tee</span> ww3_prnc.out<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -690,7 +678,7 @@ ncview ww3.201109.nc<span aria-hidden="true" class="line-numbers-rows"><span></s
 INPUT%FORCING%WINDS = 'T' 
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>删除或评论<code>均匀场名单</code>的内容。 类似的下面的代码：</p>
+<p>删除或评论 <code>均匀场名单</code>的内容。 类似的下面的代码：</p>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;HOMOG_COUNT_NML
 /
 &amp;HOMOG_INPUT_NML
@@ -699,19 +687,19 @@ INPUT%FORCING%WINDS = 'T'
 <p>现在您可以运行模型：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_shel <span class="token operator">|</span> <span class="token function">tee</span> ww3_shel.out<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>在这种情况下，使用 <code>wind.ww3</code>，输入风在模型中<code>每小时更新一次</code>。 您可以阅读 <code>log.ww3</code> 以了解强迫场更新的频率。 在<code>输入时间线</code>中，您可以在“<code>w</code>”列中看到“<code>F</code>”和“<code>X</code>”符号显示的 I/O 更新。（<code>F</code>指的是<code>First</code>）</p>
+<p>在这种情况下，使用 <code>wind.ww3</code>，输入风在模型中 <code>每小时更新一次</code>。 您可以阅读 <code>log.ww3</code> 以了解强迫场更新的频率。 在 <code>输入时间线</code>中，您可以在“<code>w</code>”列中看到“<code>F</code>”和“<code>X</code>”符号显示的 I/O 更新。（<code>F</code>指的是 <code>First</code>）</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113103745.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113103843.png" alt="log.ww3"></p>
 <p>您可以对结果进行后处理和可视化：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_ounf <span class="token operator">|</span> <span class="token function">tee</span> ww3_ounf.out
 ncview ww3.201109.nc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>在第一个时间步，所有的域都被初始化为<code>从西边 2.5m 的涌浪</code>，然后一个真实的风吹过所有的网格，并且每小时更新一次。</p>
+<p>在第一个时间步，所有的域都被初始化为 <code>从西边 2.5m 的涌浪</code>，然后一个真实的风吹过所有的网格，并且每小时更新一次。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/13.gif"></p>
-<h2 id="运行模型（真实谱边界条件）"><a href="#运行模型（真实谱边界条件）" class="headerlink" title="运行模型（真实谱边界条件）"></a>运行模型（真实谱边界条件）</h2><h3 id="谱边界文件"><a href="#谱边界文件" class="headerlink" title="谱边界文件"></a>谱边界文件</h3><p>现在您已拥有初始条件 (<code>restart.ww3</code>) 和真实的风力场 (<code>wind.ww3</code>)。 所需的最后一个输入是<code>谱边界(spectral boundary)</code>，以迫使你的<font color="red">网格（边界）向大海开放</font>。</p>
+<h2 id="运行模型（真实谱边界条件）"><a href="#运行模型（真实谱边界条件）" class="headerlink" title="运行模型（真实谱边界条件）"></a>运行模型（真实谱边界条件）</h2><h3 id="谱边界文件"><a href="#谱边界文件" class="headerlink" title="谱边界文件"></a>谱边界文件</h3><p>现在您已拥有初始条件 (<code>restart.ww3</code>) 和真实的风力场 (<code>wind.ww3</code>)。 所需的最后一个输入是 <code>谱边界(spectral boundary)</code>，以迫使你的<code>&lt;font color='red'&gt;</code>网格（边界）向大海开放<code>&lt;/font&gt;</code>。</p>
 <ul>
-<li>一种方法是运行<code>多网格模型</code>来传达全球和区域网格之间的谱边界（参见 <code>TUTORIAL_MULTI</code>）。 </li>
-<li>另一种方法是首先运行一个<code>全球网格模型</code>，然后输出区域网格所需的边界点。为此我们做了近 20 年的全球后报，我们在全球海岸线上每0.5度提供一个<code>二维谱点</code>。（请参阅我们的 <code>google-earth</code> 的 <code>kmz</code> 文件）。</li>
+<li>一种方法是运行 <code>多网格模型</code>来传达全球和区域网格之间的谱边界（参见 <code>TUTORIAL_MULTI</code>）。</li>
+<li>另一种方法是首先运行一个 <code>全球网格模型</code>，然后输出区域网格所需的边界点。为此我们做了近 20 年的全球后报，我们在全球海岸线上每0.5度提供一个 <code>二维谱点</code>。（请参阅我们的 <code>google-earth</code> 的 <code>kmz</code> 文件）。</li>
 </ul>
 <p>要可视化所有可用的谱文件，请在 <code>google-earth</code> 上打开我们的 <code>kml</code> 文件。</p>
 <pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">open the google-earth on your local machine
@@ -722,18 +710,18 @@ google-earth $WAVE_DATA/GOOGLE-EARTH-KMZ/IOWAGA_WWATCH_MULTI_output_points.kmz<s
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考网站</span>
 <span class="token comment">#	https://www.codenong.com/f-install-google-earth-ubunu/</span>
 
-<span class="token comment">##	</span>
+<span class="token comment">##</span>
 <span class="token function">mkdir</span> google-earth <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> google-wget https://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
 <span class="token function">sudo</span> dpkg -i google-earth-stable*.deb
 <span class="token comment">#	deb包的百度网盘</span>
 <span class="token comment">#	链接: https://pan.baidu.com/s/1eW-OEXOa2PJv1JPionl0fw  密码: 11ku</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>安装完成后，在软件菜单栏有<code>google-earth</code>的图标，点击进入软件后，打开所需 <code>kml</code> 文件即可。</p>
+<p>安装完成后，在软件菜单栏有 <code>google-earth</code>的图标，点击进入软件后，打开所需 <code>kml</code> 文件即可。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103201741.png"></p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103200541.png" alt="未打开IOWAGA的 kml 的 google-earth"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103200718.png" alt="打开IOWAGA的 kml 的 google-earth"></p>
-<p>要自动查找特定网格所需的谱列表，请参阅教程 <code>GRIDGEN</code> 中的<code>附录 D</code>。 如果没有<code>netcdf谱数据</code>，别担心今年（2019年）应该全部重做。</p>
+<p>要自动查找特定网格所需的谱列表，请参阅教程 <code>GRIDGEN</code> 中的 <code>附录 D</code>。 如果没有 <code>netcdf谱数据</code>，别担心今年（2019年）应该全部重做。</p>
 <blockquote>
 <p><strong>GRIDGEN附录D–Define a polyline as domain boundaries with google-earth</strong></p>
 <blockquote>
@@ -744,12 +732,13 @@ draw your polygon around your area, it can be an opened polygon
 save as kml file
 remove the first line of kml file<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>然后就可以将<code>kml</code>文件转换成多边形文件了。<br>请参阅GRIDGEN附录 C 以安装 <code>gmt</code> 工具。</p>
+<p>然后就可以将 <code>kml</code>文件转换成多边形文件了。<br>请参阅GRIDGEN附录 C 以安装 <code>gmt</code> 工具。</p>
 <pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">run kml2gmt to create .poly file
 rename output file to fname.poly
 put it in data directory
 set SELECT_BOUND =2 in namelist file
 run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 </blockquote>
 </blockquote>
 <p>例如，2016 年北半球在 19W 和 19E 之间：</p>
@@ -758,7 +747,7 @@ run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><s
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> -r <span class="token punctuation">..</span>/data/SPECTRA_NC <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103210844.png" alt="SPECTRA_NC 文件夹内容"></p>
-<h3 id="ww3-bounc：谱边界文件插入"><a href="#ww3-bounc：谱边界文件插入" class="headerlink" title="ww3_bounc：谱边界文件插入"></a>ww3_bounc：谱边界文件插入</h3><p>网格的活动边界在掩码文件中由值 <code>2</code> 定义，如图 1 所示。您不需要在每个活动边界点处提供谱点。 预处理程序 <code>ww3_bounc</code> 将<strong>读取</strong>所有提供的<code>谱边界 netcdf 文件(即SPECTRA_NC文件夹中的内容)</code>，并将它们<strong>插入</strong>到域的边界以创建唯一的二进制文件 <code>nest.ww3</code>。 所有设置都在 <code>ww3_bounc.nml</code> 中定义，要读取的 netcdf 文件在 <code>spec.list</code> 中列出。</p>
+<h3 id="ww3-bounc：谱边界文件插入"><a href="#ww3-bounc：谱边界文件插入" class="headerlink" title="ww3_bounc：谱边界文件插入"></a>ww3_bounc：谱边界文件插入</h3><p>网格的活动边界在掩码文件中由值 <code>2</code> 定义，如图 1 所示。您不需要在每个活动边界点处提供谱点。 预处理程序 <code>ww3_bounc</code> 将<strong>读取</strong>所有提供的 <code>谱边界 netcdf 文件(即SPECTRA_NC文件夹中的内容)</code>，并将它们<strong>插入</strong>到域的边界以创建唯一的二进制文件 <code>nest.ww3</code>。 所有设置都在 <code>ww3_bounc.nml</code> 中定义，要读取的 netcdf 文件在 <code>spec.list</code> 中列出。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103211249.png" alt="spec.list 文件内容，与 SPECTRA_NC 相对应"></p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/spec.list <span class="token builtin class-name">.</span>
 <span class="token function">cp</span> <span class="token punctuation">..</span>/data/ww3_bounc.nml <span class="token builtin class-name">.</span>
@@ -771,17 +760,17 @@ run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><s
 
 ./ww3_shel <span class="token operator">|</span> <span class="token function">tee</span> ww3_shel.out<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>在这种情况下，来自<code>全局域的边界条件</code>（在下一个<code>全局时间步长</code>）每 3 小时更新一次。 当前路径中有<code>nest.ww3</code>时，模型会自动读取此文件。 可以阅读<code>log.ww3 </code>查看输入边界在第一次运行时（即<code>pass=1</code>）已更新，具体更新时间为<code>00:10:00</code>。 在<code>输入时间轴</code>中，对于 <code>restart.ww3</code>， I/O 更新显示为“<code>F</code>”，对于<code>boundary</code>在“<code>b</code>”列I/O 更新显示为“<code>X</code>”。</p>
+<p>在这种情况下，来自 <code>全局域的边界条件</code>（在下一个 <code>全局时间步长</code>）每 3 小时更新一次。 当前路径中有 <code>nest.ww3</code>时，模型会自动读取此文件。 可以阅读 <code>log.ww3 </code>查看输入边界在第一次运行时（即 <code>pass=1</code>）已更新，具体更新时间为 <code>00:10:00</code>。 在 <code>输入时间轴</code>中，对于 <code>restart.ww3</code>， I/O 更新显示为“<code>F</code>”，对于 <code>boundary</code>在“<code>b</code>”列I/O 更新显示为“<code>X</code>”。</p>
 <blockquote>
 <ul>
-<li><code>全局时间步长</code>是<code>10分钟</code>？</li>
+<li><code>全局时间步长</code>是 <code>10分钟</code>？</li>
 </ul>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113110503.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113110622.png" alt="log.ww3"></p>
 <blockquote>
 <ul>
-<li><code>Restart file read</code>从<code>cold start (idealized)</code>变成<code>calm</code>；</li>
+<li><code>Restart file read</code>从 <code>cold start (idealized)</code>变成 <code>calm</code>；</li>
 </ul>
 </blockquote>
 <p>您可以对结果进行后处理和可视化：</p>
@@ -791,9 +780,9 @@ ncview ww3.201109.nc<span aria-hidden="true" class="line-numbers-rows"><span></s
 <p>与以前相同的结果，但现在波能从活动边界向域中传播 1m 涌浪。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/14.gif" alt="图6"></p>
 <h2 id="运行模型（全输出）"><a href="#运行模型（全输出）" class="headerlink" title="运行模型（全输出）"></a>运行模型（全输出）</h2><h3 id="7种输出类型"><a href="#7种输出类型" class="headerlink" title="7种输出类型"></a>7种输出类型</h3><p>ww3 还可以输出不同类型的输出数据。它在 <code>ww3_shel.nml</code> 中名称列表 <code>OUTPUT_TYPE_NML</code> 和 <code>OUTPUT_DATE_NML</code> 中定义，一共有 7 种类型的输出：<code>场的平均波参数</code>、<code>点输出</code>、<code>沿轨迹谱点输出</code>、<code>重启文件</code>、<code>边界数据</code>、分离波场数据、耦合场。</p>
-<p>对于每种输出数据，必须设置开始和停止数据，这些数据可能与运行本身的开始和停止日期不同。 每种输出数据的时间步长必须大于<code>全局时间步长</code>，理想情况下应该是全局时间步长的倍数。 禁用某种输出类型，必须将其时间步幅设置为 0。</p>
+<p>对于每种输出数据，必须设置开始和停止数据，这些数据可能与运行本身的开始和停止日期不同。 每种输出数据的时间步长必须大于 <code>全局时间步长</code>，理想情况下应该是全局时间步长的倍数。 禁用某种输出类型，必须将其时间步幅设置为 0。</p>
 <ul>
-<li><p>第一种输出数据是<code>场的平均波参数</code>。 必须在 <code>OUTPUT_TYPE_NML</code> 中指定要请求的输出参数：</p>
+<li><p>第一种输出数据是 <code>场的平均波参数</code>。 必须在 <code>OUTPUT_TYPE_NML</code> 中指定要请求的输出参数：</p>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;OUTPUT_TYPE_NML
 TYPE%FIELD%LIST = 'HS FP DIR DP CHA UST DPT CUR WND'
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -809,7 +798,7 @@ DATE%FIELD%STOP = '20110902 060000'
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;OUTPUT_DATE_NML
 DATE%FIELD = '20110902 000000' '3600' '20110902 060000' 
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li><p>第二种输出数据是<code>点输出</code>。 要输出的谱点的位置在文本文件 <code>points.list</code> 中列出。该文件包含由经度、纬度和名称定义的点列表。<br>复制<code>谱点输出文件</code>：</p>
+<li><p>第二种输出数据是 <code>点输出</code>。 要输出的谱点的位置在文本文件 <code>points.list</code> 中列出。该文件包含由经度、纬度和名称定义的点列表。<br>复制 <code>谱点输出文件</code>：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/points.list <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><code>points.list</code> 的内容应该是：</p>
@@ -821,7 +810,7 @@ DATE%FIELD = '20110902 000000' '3600' '20110902 060000'
 DATE%FIELD = '20110902 000000' '3600' '20110902 060000'
 DATE%POINT = '20110902 000000' '3600' '20110902 060000' 
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>第三种输出数据是<code>沿轨道输出</code>。要输出的谱点的位置列在文本文件 <code>track_i.ww3</code> 中（在标题行之后）。 该文件包含由<strong>时间</strong>、经度、纬度和名称定义的点列表。 该模型将在<code>最近的输出日期</code>的<code>最近网格点</code>处输出 2D 光谱。<br>复制<code>轨道输入文件</code> :</p>
+<li><p>第三种输出数据是 <code>沿轨道输出</code>。要输出的谱点的位置列在文本文件 <code>track_i.ww3</code> 中（在标题行之后）。 该文件包含由<strong>时间</strong>、经度、纬度和名称定义的点列表。 该模型将在 <code>最近的输出日期</code>的 <code>最近网格点</code>处输出 2D 光谱。<br>复制 <code>轨道输入文件</code> :</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/track_i.ww3 <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><code>track_i.ww3</code> 的内容应该是：</p>
@@ -833,24 +822,24 @@ DATE%POINT = '20110902 000000' '3600' '20110902 060000'
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;OUTPUT_DATE_NML
 DATE%TRACK = '20110902 000000' '3600' '20110902 060000' 
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
-<li><p>第四种输出数据是<code>重启文件(restart files)</code>。 要仅生成一个<code>重启文件</code>（例如在运行结束时），您必须设置开始和停止日期的日期，并设置一个大于 0 的步幅值。然后开始日期、时间步幅和停止日期在<code>OUTPUT_DATE_NML</code> 种定义。 在本教程中，您将在运行结束时输出一个<code>重启文件</code>：</p>
+<li><p>第四种输出数据是 <code>重启文件(restart files)</code>。 要仅生成一个 <code>重启文件</code>（例如在运行结束时），您必须设置开始和停止日期的日期，并设置一个大于 0 的步幅值。然后开始日期、时间步幅和停止日期在 <code>OUTPUT_DATE_NML</code> 种定义。 在本教程中，您将在运行结束时输出一个 <code>重启文件</code>：</p>
 <pre class="line-numbers language-nml" data-language="nml"><code class="language-nml">&amp;OUTPUT_DATE_NML
 DATE%FIELD = '20110902 000000' '3600' '20110902 060000'
 DATE%POINT = '20110902 000000' '3600' '20110902 060000' 
 DATE%RESTART = '20110902 000000' '3600' '20110902 060000' 
 /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>第五种输出数据是<code>边界数据</code>。 输出边界点必须事先在 <code>ww3_grid.nml</code>中定义，以输出内部网格边界处的谱条件。 它不经常使用，首选的方法是通过运行 <code>ww3_bounc</code> 来输出可用作内部谱边界的谱点，就像您在上一个练习中为此运行所做的那样。 它不会在本教程中使用，默认情况下时间步幅设置为 0，因此它被禁用。</p>
+<li><p>第五种输出数据是 <code>边界数据</code>。 输出边界点必须事先在 <code>ww3_grid.nml</code>中定义，以输出内部网格边界处的谱条件。 它不经常使用，首选的方法是通过运行 <code>ww3_bounc</code> 来输出可用作内部谱边界的谱点，就像您在上一个练习中为此运行所做的那样。 它不会在本教程中使用，默认情况下时间步幅设置为 0，因此它被禁用。</p>
 </li>
-<li><p>第六种输出数据是<code>分离波场数据(separated wave field data)</code>。 这个输出是为了获得计算域中所有<code>分量波系统</code>的<code>空间和时间一致的场和时间序列</code>，有一个专门的教程（见<code>TUTORIAL_WAVETRACK</code>）。 它不会在本教程中使用，默认情况下时间步幅设置为 0，因此它被禁用。</p>
+<li><p>第六种输出数据是 <code>分离波场数据(separated wave field data)</code>。 这个输出是为了获得计算域中所有 <code>分量波系统</code>的 <code>空间和时间一致的场和时间序列</code>，有一个专门的教程（见 <code>TUTORIAL_WAVETRACK</code>）。 它不会在本教程中使用，默认情况下时间步幅设置为 0，因此它被禁用。</p>
 </li>
-<li><p>第七种输出数据是<code>耦合(coupling)</code>。 此输出用于在<code>波浪模型</code>和其他<code>被耦合模型</code>之间<strong>交换</strong>场，也有专门的教程（参见 <code>TUTORIAL_COUPLING</code>）。 它不会在本教程中使用，默认情况下时间步幅设置为 0，因此它被禁用。</p>
+<li><p>第七种输出数据是 <code>耦合(coupling)</code>。 此输出用于在 <code>波浪模型</code>和其他 <code>被耦合模型</code>之间<strong>交换</strong>场，也有专门的教程（参见 <code>TUTORIAL_COUPLING</code>）。 它不会在本教程中使用，默认情况下时间步幅设置为 0，因此它被禁用。</p>
 </li>
 </ul>
 <h3 id="ww3-shel：运行模型-3"><a href="#ww3-shel：运行模型-3" class="headerlink" title="ww3_shel：运行模型"></a>ww3_shel：运行模型</h3><p>现在可以再次运行模型以输出所有模型结果。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./ww3_shel <span class="token operator">|</span> <span class="token function">tee</span> ww3_shel.out
 gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>在<code>输出时间线</code>中，可以在“<code>g</code>”列中的“<code>gridded field</code>”、“<code>p</code>”列中的“<code>output points</code>”、”<code>t</code>“列中的”<code>track</code>“、”<code>r</code>“列中的“<code>restart file</code>”看到，由“<code>X</code>”符号显示的 I/O 更新，在最后一个时间步中出现一个“<code>L</code>”符号。</p>
+<p>在 <code>输出时间线</code>中，可以在“<code>g</code>”列中的“<code>gridded field</code>”、“<code>p</code>”列中的“<code>output points</code>”、”<code>t</code>“列中的”<code>track</code>“、”<code>r</code>“列中的“<code>restart file</code>”看到，由“<code>X</code>”符号显示的 I/O 更新，在最后一个时间步中出现一个“<code>L</code>”符号。</p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113123728.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220113123842.png" alt="log.ww3"></p>
 <p>完成后，在您的文件夹中列出最后创建的文件（<code>ls -lrt</code>），应该以下文件：</p>
@@ -863,10 +852,10 @@ gedit log.ww3<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 </li>
 <li><p><code>ww3_trnc</code> 将使用 <code>track_o.ww3</code> 文件来创建输出<strong>轨迹点</strong>。</p>
 </li>
-<li><p><code>restart00*.ww3</code> 文件必须重命名为 <code>restart.ww3</code> 才能用作下次运行的<code>初始条件</code>。</p>
+<li><p><code>restart00*.ww3</code> 文件必须重命名为 <code>restart.ww3</code> 才能用作下次运行的 <code>初始条件</code>。</p>
 <blockquote>
 <ul>
-<li>这里有6个<code>restart</code>文件，如果按照原<code>pdf</code>中设置（<code>DATE%RESTART = '20110902 060000' '3600' '20110902 060000' </code>），即<code>RESTART</code>的开始和终止时间都是<code>'20110902 060000'</code>，那么只会生成的一个<code>restart</code>文件，即<code>restart001.ww3</code>。</li>
+<li>这里有6个 <code>restart</code>文件，如果按照原 <code>pdf</code>中设置（<code>DATE%RESTART = '20110902 060000' '3600' '20110902 060000' </code>），即 <code>RESTART</code>的开始和终止时间都是 <code>'20110902 060000'</code>，那么只会生成的一个 <code>restart</code>文件，即 <code>restart001.ww3</code>。</li>
 </ul>
 </blockquote>
 </li>
@@ -888,7 +877,6 @@ idlww3
 <li><p>… netcdf 轨迹点输出</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> <span class="token punctuation">..</span>/data/ww3_trnc.nml <span class="token builtin class-name">.</span>
 ./ww3_trnc <span class="token operator">|</span> <span class="token function">tee</span> ww3_trnc.out<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <blockquote>
 <ul>
 <li>注意：要可视化结果，必须从给定的位置和时间提取数据，然后使用 idl</li>
@@ -1429,7 +1417,7 @@ idlww3
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->

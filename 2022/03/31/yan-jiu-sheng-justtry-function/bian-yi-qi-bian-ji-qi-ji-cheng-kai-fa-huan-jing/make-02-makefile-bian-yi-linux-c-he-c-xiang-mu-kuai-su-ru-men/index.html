@@ -216,7 +216,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'd4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -378,14 +378,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-09
+                    2024-07-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    860
+                    866
                 </div>
                 
 
@@ -405,7 +405,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="makefile-编译Linux-C和C-项目快速入门-md"><a href="#makefile-编译Linux-C和C-项目快速入门-md" class="headerlink" title="makefile-编译Linux_C和C++项目快速入门.md "></a><center>makefile-编译Linux_C和C++项目快速入门.md </center></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="makefile-编译Linux-C-C-项目快速入门"><a href="#makefile-编译Linux-C-C-项目快速入门" class="headerlink" title="makefile 编译Linux C/C++项目快速入门"></a>makefile 编译Linux C/C++项目快速入门</h2><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+                <h1 id="lt-center-gt-makefile-编译Linux-C和C-项目快速入门-md-lt-center-gt"><a href="#lt-center-gt-makefile-编译Linux-C和C-项目快速入门-md-lt-center-gt" class="headerlink" title="<center>makefile-编译Linux_C和C++项目快速入门.md </center>"></a><code>&lt;center&gt;</code>makefile-编译Linux_C和C++项目快速入门.md <code>&lt;/center&gt;</code></h1><h2 id="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"><a href="#SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS" class="headerlink" title="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"></a>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</h2><h2 id="makefile-编译Linux-C-C-项目快速入门"><a href="#makefile-编译Linux-C-C-项目快速入门" class="headerlink" title="makefile 编译Linux C/C++项目快速入门"></a>makefile 编译Linux C/C++项目快速入门</h2><p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h3 id="P1-makefile介绍"><a href="#P1-makefile介绍" class="headerlink" title="P1 makefile介绍"></a>P1 makefile介绍</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vg41177zT?spm_id_from=333.337.search-card.all.click">https://www.bilibili.com/video/BV1vg41177zT?spm_id_from=333.337.search-card.all.click</a></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220331173242.png"></p>
 <p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220331173431.png"></p>
@@ -439,7 +439,7 @@
 <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h3 id="P3-g-分步编译演示从源码到执行程序的四步"><a href="#P3-g-分步编译演示从源码到执行程序的四步" class="headerlink" title="P3 g++分步编译演示从源码到执行程序的四步"></a>P3 g++分步编译演示从源码到执行程序的四步</h3><h4 id="GCC编译过程"><a href="#GCC编译过程" class="headerlink" title="GCC编译过程"></a>GCC编译过程</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220331184140.png"></p>
 <blockquote>
-<p>汇编后，形成<code>.o</code>文件；</p>
+<p>汇编后，形成 <code>.o</code>文件；</p>
 <p>链接..</p>
 <p>gfortran 类似</p>
 </blockquote>
@@ -454,11 +454,11 @@
 </ul>
 <h4 id="11-30-GCC汇编过程，g-c-test-s"><a href="#11-30-GCC汇编过程，g-c-test-s" class="headerlink" title="11:30 GCC汇编过程，g++ -c test.s"></a>11:30 GCC汇编过程，g++ -c test.s</h4><ul>
 <li>可以做到汇编这一层次（包含预处理、编译、汇编）；</li>
-<li>生成<code>test.o</code>，二进制文件；</li>
+<li>生成 <code>test.o</code>，二进制文件；</li>
 <li>有语法错误，编译时会出错；</li>
 </ul>
 <h4 id="12-10-GCC链接和运行，g-test-o-o-test，-test"><a href="#12-10-GCC链接和运行，g-test-o-o-test，-test" class="headerlink" title="12:10 GCC链接和运行，g++ test.o -o test，./test"></a>12:10 GCC链接和运行，g++ test.o -o test，./test</h4><ul>
-<li>生成<code>test.exe</code>可执行文件，</li>
+<li>生成 <code>test.exe</code>可执行文件，</li>
 <li>找不到定义，动态库引用版本出错，链接会出错；</li>
 <li>找不到正确的动态库，运行会出错；（windows下链接和运行的动态库不一样，linux一样）</li>
 </ul>
@@ -523,16 +523,16 @@ first_make build success!<span aria-hidden="true" class="line-numbers-rows"><spa
 <p> SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
 <h3 id="P5-makefile自动推导目标代码配置和伪目标clean清理"><a href="#P5-makefile自动推导目标代码配置和伪目标clean清理" class="headerlink" title="P5 makefile自动推导目标代码配置和伪目标clean清理"></a>P5 makefile自动推导目标代码配置和伪目标clean清理</h3><h4 id="00-10-自动推导"><a href="#00-10-自动推导" class="headerlink" title="00:10 自动推导"></a>00:10 自动推导</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220331205400.png"></p>
 <ul>
-<li>自动推导涉及<code>.o</code>文件</li>
+<li>自动推导涉及 <code>.o</code>文件</li>
 <li>红色箭头所指示部分，是自动推导出来的；</li>
 </ul>
-<h4 id="01-15-自动推导涉及头文件test-h的引用"><a href="#01-15-自动推导涉及头文件test-h的引用" class="headerlink" title="01:15 自动推导涉及头文件test.h的引用"></a>01:15 自动推导涉及头文件<code>test.h</code>的引用</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220331210053.png"></p>
+<h4 id="01-15-自动推导涉及头文件-test-h的引用"><a href="#01-15-自动推导涉及头文件-test-h的引用" class="headerlink" title="01:15 自动推导涉及头文件 test.h的引用"></a>01:15 自动推导涉及头文件 <code>test.h</code>的引用</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220331210053.png"></p>
 <ul>
 <li>CXXFLAGS，编译器的选项</li>
 </ul>
 <h4 id="06-00-手动清理-伪目标"><a href="#06-00-手动清理-伪目标" class="headerlink" title="06:00 手动清理+伪目标"></a>06:00 手动清理+伪目标</h4><p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220331203544.png"></p>
 <ul>
-<li><p>伪目标<code>.PHONY</code>的意义：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/2145590/what-is-the-purpose-of-phony-in-a-makefile">https://stackoverflow.com/questions/2145590/what-is-the-purpose-of-phony-in-a-makefile</a></p>
+<li><p>伪目标 <code>.PHONY</code>的意义：<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/2145590/what-is-the-purpose-of-phony-in-a-makefile">https://stackoverflow.com/questions/2145590/what-is-the-purpose-of-phony-in-a-makefile</a></p>
 <p>These special targets are called <em>phony</em> and you can explicitly tell Make <strong>they’re not associated with files</strong>.</p>
 <p>Some common <code>make</code> targets that are often phony are: <code>all</code>, <code>install</code>, <code>clean</code>, <code>distclean</code>, <code>TAGS</code>, <code>info</code>, <code>check</code>.</p>
 </li>
@@ -1072,7 +1072,7 @@ first_make build success!<span aria-hidden="true" class="line-numbers-rows"><spa
             	<!-- <i>标签是斜体作用, 这里是为了显示图形? -->
             	<!-- <span>是行内元素, span的意义是添加指定样式,详见https://blog.csdn.net/microcosmv/article/details/51953490 -->
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">481k</span>
+                        class="white-color">481.7k</span>
             
             
             <!-- 不蒜子计数器的使用, https://blog.csdn.net/weixin_46247581/article/details/105848853, hexo s 中显示的不是正确的, 不用担心, 看 hexo d 上的即可 -->
