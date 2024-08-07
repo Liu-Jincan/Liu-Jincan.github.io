@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="06-Prerequisites-了解unix,netcdf,ldl, Jincan">
+    <meta name="keywords" content="博二下-移动硬盘如何购买选取, Jincan">
     <meta name="description" content="~~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>06-Prerequisites-了解unix,netcdf,ldl | Jincan</title>
+    <title>博二下-移动硬盘如何购买选取 | Jincan</title>
     <link rel="icon" type="image/png" href="/favicon_hua.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -229,12 +229,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">06-Prerequisites-了解unix,netcdf,ldl</h1>
+                    <h1 class="description center-align post-title">博二下-移动硬盘如何购买选取</h1>
                 </div>
             </div>
         </div>
@@ -358,8 +358,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/WW3/" class="post-category">
-                                WW3
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                研究生JustTry
                             </a>
                         
                     </div>
@@ -371,21 +371,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-01-04
+                    2024-08-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-29
+                    2024-08-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.1k
+                    2.2k
                 </div>
                 
 
@@ -405,263 +405,323 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="lt-center-gt-06-Prerequisites-了解unix-netcdf-ldl-lt-center-gt"><a href="#lt-center-gt-06-Prerequisites-了解unix-netcdf-ldl-lt-center-gt" class="headerlink" title="<center>06-Prerequisites-了解unix,netcdf,ldl</center>"></a><code>&lt;center&gt;</code>06-Prerequisites-了解unix,netcdf,ldl<code>&lt;/center&gt;</code></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>prerequisites-ww3.pdf</code>；（2017）</p>
-<blockquote>
-<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NXDRX2gP2CywqL6UBiSLlA">https://pan.baidu.com/s/1NXDRX2gP2CywqL6UBiSLlA</a>   提取码：2hrk</p>
-</blockquote>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本文档中，您将学习如何使用最常用的命令行在 <code>UNIX</code> 环境中工作，以及如何使用海洋学中常用的 <code>netCDF</code> 文件进行管理。<br>在附录 A 中，根据您的系统解释了 <code>netCDF库</code>的逐步安装。<br>在附录 B 中，根据您的系统解释了 <code>IDL库</code>的逐步安装。</p>
-<h2 id="Unix-Linux"><a href="#Unix-Linux" class="headerlink" title="Unix/Linux"></a>Unix/Linux</h2><ul>
-<li><p>基本命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	显示当前目录路径</span>
-<span class="token builtin class-name">pwd</span>
-
-<span class="token comment">#	显示当前目录文件和文件夹</span>
-<span class="token function">ls</span>
-
-<span class="token comment">#</span>
-<span class="token builtin class-name">cd</span> Documents
-<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
-
-<span class="token comment">#	回到用户主目录</span>
-<span class="token builtin class-name">cd</span>
-<span class="token comment"># or</span>
-<span class="token builtin class-name">cd</span> ~
-<span class="token comment"># or</span>
-<span class="token builtin class-name">cd</span> <span class="token environment constant">$HOME</span>
-
-<span class="token comment">#	复制，移动，软连接，删除</span>
-<span class="token function">cp</span> fileA <span class="token punctuation">..</span>/fileB
-<span class="token function">mv</span> fileA <span class="token punctuation">..</span>/fileB 
-<span class="token function">ln</span> -s fileA <span class="token punctuation">..</span>/fileB
-<span class="token function">rm</span> fileA
-
-<span class="token comment">#	print</span>
-<span class="token builtin class-name">echo</span> <span class="token environment constant">$HOME</span>
-
-<span class="token comment">#	print 显示文件内容</span>
-<span class="token function">cat</span> readme.txt
-
-<span class="token comment">#	print 重定向文件</span>
-<span class="token function">cat</span> readme.txt <span class="token operator">&gt;</span> result.out 	<span class="token comment">#(to redirect and overwrite the log file result.out) </span>
-<span class="token function">cat</span> readme2.txt <span class="token operator">&gt;&gt;</span> result.out 	<span class="token comment">#(to redirect and append in the log file result.out)</span>
-<span class="token function">cat</span> readme <span class="token operator">|</span> <span class="token function">less</span> 				<span class="token comment">#(to display on the screen page by page)</span>
-<span class="token function">cat</span> readme.txt <span class="token operator">|</span> <span class="token function">tee</span> result.out <span class="token comment">#(to print on the sceen and redirect in the log file result.out)</span>
-
-<span class="token comment">#	终端下的组合快捷键</span>
-Ctrl+C 			<span class="token comment">#(to quit a running application)</span>
-Ctrl+Shift+C 	<span class="token comment">#(to copy the selection)</span>
-Ctrl+Shift+V 	<span class="token comment">#(to paste the selection)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>应用程序</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	安装包</span>
-<span class="token function">apt-get</span> <span class="token function">install</span> package 	<span class="token comment">#(ubuntu)</span>
-yum <span class="token function">install</span> package 		<span class="token comment">#(fedora)</span>
-port <span class="token function">install</span> package 		<span class="token comment">#(mac os x)</span>
-
-<span class="token comment">#	阅读pdf</span>
-okular manual.pdf
-
-<span class="token comment">#	显示或修改图片</span>
-eog figure.jpg
-
-<span class="token comment">#	编辑文件</span>
-gedit readme.txt
-<span class="token comment"># or</span>
-<span class="token function">vi</span> readme.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p>常用的 vi 命令</p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104104325.png"></p>
-</blockquote>
-</li>
-<li><p>高级设置</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	显示是 bash 环境，还是 csh 环境</span>
-<span class="token builtin class-name">echo</span> <span class="token environment constant">$SHELL</span>
-<span class="token comment"># If it display /bin/csh, you are using csh environment</span>
-<span class="token comment"># If it display /bin/bash, you are using bash environment</span>
-
-<span class="token comment">#	以下命令将取决于环境，csh 或 bash。 </span>
-<span class="token comment">#	环境由环境变量和别名定义。环境存储在主目录中的隐藏文件中。</span>
-<span class="token function">ls</span> ~/.cshrc
-<span class="token comment"># or</span>
-<span class="token function">ls</span> ~/.bashrc
-
-<span class="token comment">#	当更改环境文件中的某些内容时，您必须 sourch 该文件以传播环境中的修改。</span>
-<span class="token builtin class-name">source</span> ~/.cshrc
-<span class="token comment"># or</span>
-<span class="token builtin class-name">source</span> ~/.bashrc
-
-<span class="token comment">#	定义（alias）别名的语法将根据 csh 或 bash 环境而变化：</span>
-<span class="token builtin class-name">alias</span> idlww3 idl -rt<span class="token operator">=</span>rt_visumain.sav 	<span class="token comment">#(for csh)</span>
-<span class="token builtin class-name">alias</span> <span class="token assign-left variable">idlww3</span><span class="token operator">=</span><span class="token string">"idl -rt=rt_visumain.sav"</span> 	<span class="token comment">#(for bash)</span>
-
-<span class="token comment">#	环境文件中定义的环境变量的语法也将发生变化：</span>
-setenv OASISDIR /home/<span class="token environment constant">$USER</span>/work_oasis3-mct2.0 <span class="token comment">#(for csh)</span>
-<span class="token builtin class-name">export</span> <span class="token assign-left variable">OASISDIR</span><span class="token operator">=</span>/home/<span class="token environment constant">$USER</span>/work_oasis3-mct2.0 <span class="token comment">#(for bash)</span>
-
-<span class="token comment">#	环境变量是 bin 文件夹的路径定义：</span>
-setenv <span class="token environment constant">PATH</span> <span class="token environment constant">$PATH</span>:/usr/local/bin <span class="token comment">#(for csh)</span>
-<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span>:/usr/local/bin <span class="token comment">#(for bash)</span>
-
-<span class="token comment">#	环境变量是 library 文件夹的路径定义：</span>
-setenv LD_LIBRARY_PATH <span class="token variable">$LD_LIBRARY_PATH</span>:/usr/local/lib <span class="token comment">#(for csh)</span>
-<span class="token builtin class-name">export</span> <span class="token assign-left variable">LD_LIBRARY_PATH</span><span class="token operator">=</span><span class="token variable">$LD_LIBRARY_PATH</span>:/usr/local/lib <span class="token comment">#(for bash)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-</ul>
-<hr>
-<h2 id="netcdf"><a href="#netcdf" class="headerlink" title="netcdf"></a>netcdf</h2><h3 id="为什么选择-netcdf？"><a href="#为什么选择-netcdf？" class="headerlink" title="为什么选择 netcdf？"></a>为什么选择 netcdf？</h3><p>最常见的文件格式是被称为 <code>ASCII格式</code>的文本文件（扩展名为 <code>.doc</code>、<code>.txt</code>），你可以用普通的编辑器（如 <code>word</code>、<code>gedit</code>）阅读。这些 <code>ASCII文件的问题</code>是，它需要大量的空间，所以如果你以 <code>ASCII格式</code>存储模型数据或测量结果，它可以很快填满你的磁盘！</p>
-<p>另一个选择是将你的数据存储为 <code>二进制文件</code>，如netCDF格式（扩展名为.nc），由于每个值都被写入文件中，所以使用的空间会比ASCII格式少得多。另一方面，你不能用之前提到的文本编辑器来阅读这种格式，为此你必须使用特定的工具来处理你的netCDF文件，简单的有 <code>ncdump</code>和 <code>ncview</code>。</p>
-<h3 id="netcdf-的结构组成"><a href="#netcdf-的结构组成" class="headerlink" title="netcdf 的结构组成"></a>netcdf 的结构组成</h3><p>netCDF文件的通常结构分为两部分，<code>文件头(header)</code>和 <code>数据</code>。文件头分为3个部分，分别是 <code>dimensions</code>、<code>variables</code>、<code>global attributes</code>。每个变量由一个或多个维度定义，通常由一个或多个属性描述。</p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104110357.png" alt="netCDF 的头文件(header)" style="zoom:70%;">
-
-<h3 id="ncdump-和-ncview"><a href="#ncdump-和-ncview" class="headerlink" title="ncdump 和 ncview"></a>ncdump 和 ncview</h3><p>以一个 <code>mywind1.nc</code>文件为例。</p>
-<blockquote>
-<p>链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13Hr8m1mrXHsbUeQTk8NfYQ">https://pan.baidu.com/s/13Hr8m1mrXHsbUeQTk8NfYQ</a>   密码: jvdj</p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104115634.png" alt="Panoply 打开 mywind1.nc"></p>
-</blockquote>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#	安装 ncdump</span>
-<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> netcdf-bin
-
-<span class="token comment">#	transcript all the content of your binary file into text:</span>
-ncdump mywind1.nc
-<span class="token comment"># 不具有可读性</span>
-
-<span class="token comment">#	Well, you didn't had time to read all the content, you can either show it on your screen page by page:</span>
-ncdump mywind1.nc <span class="token operator">|</span> <span class="token function">less</span>
-<span class="token comment"># Linux less 命令: https://www.runoob.com/linux/linux-comm-less.html</span>
-<span class="token comment"># q 		退出</span>
-<span class="token comment"># 空格		是下一页</span>
-<span class="token comment"># b			是上一页</span>
-<span class="token comment"># 可读性好，且终端不会显示内容</span>
-
-<span class="token comment">#	redirecting all the transcripted content into a text file:</span>
-ncdump mywind1.nc <span class="token operator">&gt;</span> mywind1.txt
-<span class="token comment"># or</span>
-ncdump mywind1.nc <span class="token operator">|</span> <span class="token function">tee</span> mywind1.txt
-<span class="token comment"># 可读性好，但还需要创建文件</span>
-
-
-<span class="token comment">#	输出 nc 的 header，使用 option '-h';</span>
-ncdump -h mywind1.nc
-
-<span class="token comment">#	输出特定变量，使用 option '-v'，例如 time;</span>
-ncdump mywind1.nc -v <span class="token function">time</span>
-
-<span class="token comment">#	它会给你整数的浮点值，不是人类可读的，所以如果你的时间变量正确定义了属性“units”，</span>
-<span class="token comment">#	你可以使用选项“-t”来转换日期中的值：</span>
-ncdump mywind1.nc -v <span class="token function">time</span> -t
- 
-<span class="token comment">#	变量可视化</span>
-<span class="token comment"># sudo apt install ncview</span>
-ncview mywind1.nc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104131554.png" alt="ncdump mywind1.nc | less (后面还有很多内容，这里只显示第一页)"></p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104115224.png" alt="ncdump -h mywind1.nc | less" style="zoom:60%;">
-
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104130521.png" alt="ncdump mywind1.nc -v time | less"></p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104130356.png" alt="ncdump mywind1.nc -v time -t | less"></p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104131242.png" alt="ncview mywind1.nc | less"></p>
-<hr>
-<h2 id="附录A：如何安装-netCDF-library"><a href="#附录A：如何安装-netCDF-library" class="headerlink" title="附录A：如何安装 netCDF library"></a>附录A：如何安装 netCDF library</h2><p>见原文</p>
-<h2 id="附录B：如何安装-IDL-librery"><a href="#附录B：如何安装-IDL-librery" class="headerlink" title="附录B：如何安装 IDL librery"></a>附录B：如何安装 IDL librery</h2><h3 id="在ubuntu安装"><a href="#在ubuntu安装" class="headerlink" title="在ubuntu安装"></a>在ubuntu安装</h3><ul>
-<li><p>安装 <code>libxp6</code></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libxp6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>如果定位不到 libxp6 库，则需要从存档存储库中获取它。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> -mnH --cut-dirs<span class="token operator">=</span><span class="token number">5</span> http://archive.ubuntu.com/ubuntu/pool/main/libx/libxp/libxp6_1.0.2- 1ubuntu1_amd64.deb 
-<span class="token function">sudo</span> dpkg -i libxp6_1.0.2-1ubuntu1_amd64.deb<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>如果还是无法定位，提供deb下载的百度网盘链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_W7VBcnV4bbpdMQBnexIpA">https://pan.baidu.com/s/1_W7VBcnV4bbpdMQBnexIpA</a>  密码: e8ml，提供的deb版本是 <code>libxp6_1.0.2-1ubuntu1_amd64.deb</code>。</p>
-<blockquote>
-<p>这个 deb 文件是从 <code>ubuntu 中文论坛</code> 得到的：</p>
+                <h1 id="博二下-移动硬盘如何购买选取"><a href="#博二下-移动硬盘如何购买选取" class="headerlink" title="博二下-移动硬盘如何购买选取"></a>博二下-移动硬盘如何购买选取</h1><p>…</p>
+<p>…</p>
+<p>【金山文档 | WPS云文档】 Satellite_wind_fusion_TC_WW3模拟技术报告.docx<br><a target="_blank" rel="noopener" href="https://www.kdocs.cn/l/cfb14VuLkuxQ">https://www.kdocs.cn/l/cfb14VuLkuxQ</a></p>
 <ul>
-<li>原文链接 <a target="_blank" rel="noopener" href="https://forum.ubuntu.org.cn/viewtopic.php?t=483317">https://forum.ubuntu.org.cn/viewtopic.php?t=483317</a></li>
-<li>原文提供的deb下载链接<a target="_blank" rel="noopener" href="http://mirrors.ustc.edu.cn/ubuntu/pool/main/libx/libxp/">http://mirrors.ustc.edu.cn/ubuntu/pool/main/libx/libxp/</a></li>
+<li>下载了1985-2020的全球ERA5风速数据, 两个移动硬盘+电脑固态硬盘的存储有些不够了,<br><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807105526.png" alt="20240807105526"><br><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807104433.png" alt="20240807104433"></li>
+<li>购买新的硬盘的需求,</li>
 </ul>
-</blockquote>
-</li>
-<li><p>下载 <code>IDL</code> 安装文件夹</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$IDL</span>
-<span class="token function">wget</span> -mnH --cut-dirs<span class="token operator">=</span><span class="token number">5</span> ftp://ftp.ifremer.fr/ifremer/ww3/COURS/WAVE_DATA/IDL81/linux<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li><p>安装 <code>IDL</code></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token variable">$IDL</span>/linux
-<span class="token function">chmod</span> <span class="token number">775</span> install.sh
-<span class="token function">sudo</span> ./install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p>安装位置设置在 <code>$IDL/IDL8.1</code></p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104133240.png"></p>
-</li>
-</ul>
-<h2 id="接下来会用到的软件"><a href="#接下来会用到的软件" class="headerlink" title="接下来会用到的软件"></a>接下来会用到的软件</h2><blockquote>
-<p><code>IDL</code> 的下载、安装在<a href="https://liu-jincan.github.io/2022/01/04/hai-lang-shu-zhi-mo-shi/wavewatch3/06-prerequisites/">Prerequisites</a>，基于 <code>IDL</code>的 <code>TWIST</code>的使用位于<a href="https://liu-jincan.github.io/2022/01/06/hai-lang-shu-zhi-mo-shi/wavewatch3/06-polymesh-tutorial-mesh-edit/">MESH-EDIT</a>；</p>
-<p><code>google-earth</code> 在 <code>ubuntu</code> 上的下载安装，<a href="https://liu-jincan.github.io/2022/01/02/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-inout/">INOUT教程</a> 提供了；</p>
-<p><code>polymesh</code>的下载、安装、编译在<a href="https://liu-jincan.github.io/2022/01/07/hai-lang-shu-zhi-mo-shi/wavewatch3/06-polymesh/">polymesh</a> ;</p>
-<p><code>gridgen</code>的下载、安装在<a href="https://liu-jincan.github.io/2021/12/28/hai-lang-shu-zhi-mo-shi/wavewatch3/06-tutorial-gridgen-wang-ge-sheng-cheng/">gridgen</a> ;</p>
-<p><code>parvisu</code>的下载、安装、适应位于 <code>TUTORIAL-POLYMESH</code>的 <code>wave-workshop-exercise-polymesh.pdf</code>额外练习；</p>
-<p><code>ncview</code>和 <code>ncdump</code>的下载使用在<a href="https://liu-jincan.github.io/2022/01/04/hai-lang-shu-zhi-mo-shi/wavewatch3/06-prerequisites/">Prerequisites</a>的 <code>netcdf</code>中；</p>
-<p>MATLAB可视化msh文件和nc文件在 <code>MESH-RUN</code>教程；</p>
-</blockquote>
-<h2 id="风场数据来源"><a href="#风场数据来源" class="headerlink" title="风场数据来源"></a>风场数据来源</h2><p><code>INOUT</code>教程，运行模型（真实强迫场）</p>
-<blockquote>
-<p>主要的全球风力再分析是由 <code>NCEP</code> 和 <code>ECMWF</code> 机构完成的。</p>
+<p>…</p>
+<p>…</p>
+<h3 id="闲鱼上的硬盘为什么这么便宜，可以买吗？"><a href="#闲鱼上的硬盘为什么这么便宜，可以买吗？" class="headerlink" title="闲鱼上的硬盘为什么这么便宜，可以买吗？"></a>闲鱼上的硬盘为什么这么便宜，可以买吗？</h3><p>…</p>
+<p>…</p>
+<p><a target="_blank" rel="noopener" href="https://www.yoojia.com/article/9172052825349813833.html">https://www.yoojia.com/article/9172052825349813833.html</a></p>
 <ul>
-<li><p><code>NCEP</code>，历史的 <code>CFSR</code> 从 1979 年到 2010 年：<a target="_blank" rel="noopener" href="http://rda.ucar.edu/datasets/ds093.1/">http://rda.ucar.edu/datasets/ds093.1/</a></p>
-<p>最新的一个是从 2011 年到现在的 CFSRR：<a target="_blank" rel="noopener" href="http://rda.ucar.edu/datasets/ds094.1/">http://rda.ucar.edu/datasets/ds094.1/</a></p>
-</li>
-<li><p><code>ECMWF</code>，最新的是 ERA-5：<a target="_blank" rel="noopener" href="https://climate.copernicus.eu/climate-reanalysis">https://climate.copernicus.eu/climate-reanalysis</a></p>
-</li>
+<li>综上所述，那些价格远低于市场价的所谓全新硬盘，必然是经过了一些处理的。不过，这并不意味着这些“翻新盘”就不能使用。我近几年购买过多块硬盘，其中有一块是在京东自营购买的正品盘，但前段时间检查时却出现了告警。因此，硬盘的质量并非完全取决于其是否经过翻新，而是存在一定的随机性。</li>
+<li>最近，市场上出现了大量高容量的企业级矿盘，这些硬盘已经使用了几千小时，但价格却直接打了五折左右。对于我们这些普通用户来说，购买这些硬盘来使用其实是非常划算的。</li>
+<li>最后，我要说的是，对于那些来路不明的硬盘，如果你想买，就不要怕；如果你怕，那就别买。在购买时，我们需要保持警惕，但也要有一定的勇气和判断力。</li>
 </ul>
-</blockquote>
-<h2 id="谱边界文件创建"><a href="#谱边界文件创建" class="headerlink" title="谱边界文件创建"></a>谱边界文件创建</h2><p><code>INOUT</code>教程，运行模型（真实强迫场）</p>
-<blockquote>
-<p>所需的最后一个输入是 <code>谱边界(spectral boundary)</code>，以迫使你的<code>&lt;font color='red'&gt;</code>网格（边界）向大海开放<code>&lt;/font&gt;</code>。</p>
+<p>…</p>
+<p>…</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Sf4y1m7TJ/?spm_id_from=333.1007.top_right_bar_window_history.content.click&amp;vd_source=82b47329a312733e46b2a3d4431a4c76">https://www.bilibili.com/video/BV1Sf4y1m7TJ/?spm_id_from=333.1007.top_right_bar_window_history.content.click&amp;vd_source=82b47329a312733e46b2a3d4431a4c76</a></p>
 <ul>
-<li>一种方法是运行 <code>多网格模型</code>来传达全球和区域网格之间的谱边界（参见 <code>TUTORIAL_MULTI</code>）。</li>
-<li>另一种方法是首先运行一个 <code>全球网格模型</code>，然后输出区域网格所需的边界点。为此我们做了近 20 年的全球后报，我们在全球海岸线上每0.5度提供一个 <code>二维谱点</code>。（请参阅我们的 <code>google-earth</code> 的 <code>kmz</code> 文件）。</li>
+<li>都三年了哈哈。各位还能遇到这种问题吗。我的经验是买硬盘还是尽量买3.5英寸的<a target="_blank" rel="noopener" href="https://search.bilibili.com/all?from_source=webcommentline_search&amp;keyword=CMR%E5%9E%82%E7%9B%B4%E7%9B%98&amp;seid=16661787687764774005"><img src="https://i0.hdslb.com/bfs/reply/9f3ad0659e84c96a711b88dd33f4bc2e945045e0.png" alt="img">CMR垂直盘</a>，哪怕是二手的，服务器拆机几万小时的。都不打紧。说实话 二手的0通电，还贼便宜的，很可能就有猫腻呢。还不如服务器拆机盘。看了那么多老视频，也希望各位看看我的新视频，一些diy nas的玩法用法教程。</li>
+<li>benchmark</li>
+<li>告诉你们一个技巧，咸鱼和并夕夕上硬盘盘写着只能分区exfat格式不能格式化ntfs分区的统统都是扩容盘和坏道盘</li>
+<li></li>
 </ul>
-<p>要可视化所有可用的谱文件，请在 <code>google-earth</code> 上打开我们的 <code>kml</code> 文件。</p>
-<pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">open the google-earth on your local machine
-google-earth $WAVE_DATA/GOOGLE-EARTH-KMZ/IOWAGA_WWATCH_MULTI_output_points.kmz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<blockquote>
-<p><code>google-earth</code> 的下载安装：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	参考网站</span>
-<span class="token comment">#	https://www.codenong.com/f-install-google-earth-ubunu/</span>
+<p>…</p>
+<p>…</p>
+<h3 id="垂直盘是什么"><a href="#垂直盘是什么" class="headerlink" title="垂直盘是什么?"></a>垂直盘是什么?</h3><p>…</p>
+<p>…</p>
+<h3 id="硬盘盒是什么"><a href="#硬盘盒是什么" class="headerlink" title="硬盘盒是什么?"></a>硬盘盒是什么?</h3><p>…</p>
+<p>…</p>
+<h3 id="拼多多-坤心电子硬盘之家"><a href="#拼多多-坤心电子硬盘之家" class="headerlink" title="拼多多: 坤心电子硬盘之家,"></a>拼多多: 坤心电子硬盘之家,</h3><p>…</p>
+<p>…</p>
+<h3 id="百度贴吧-硬盘吧"><a href="#百度贴吧-硬盘吧" class="headerlink" title="百度贴吧: 硬盘吧,"></a>百度贴吧: 硬盘吧,</h3><p>…</p>
+<p>…</p>
+<p><a target="_blank" rel="noopener" href="https://tieba.baidu.com/f?kw=%E7%A1%AC%E7%9B%98&amp;ie=utf-8&amp;tab=main">https://tieba.baidu.com/f?kw=%E7%A1%AC%E7%9B%98&amp;ie=utf-8&amp;tab=main</a></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807140912.png" alt="20240807140912"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807141100.png" alt="20240807141100"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807142533.png" alt="20240807142533"></p>
+<p>…</p>
+<p>…</p>
+<h2 id="ubuntu-如何查看移动机械硬盘的优良程度"><a href="#ubuntu-如何查看移动机械硬盘的优良程度" class="headerlink" title="ubuntu 如何查看移动机械硬盘的优良程度"></a>ubuntu 如何查看移动机械硬盘的优良程度</h2><p>…</p>
+<p>…</p>
+<h3 id="gnone-disks"><a href="#gnone-disks" class="headerlink" title="gnone disks"></a>gnone disks</h3><p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807114731.png" alt="20240807114731"></p>
+<p>…</p>
+<p>…</p>
+<h4 id="WD-Elements-2621-1026-benchmark"><a href="#WD-Elements-2621-1026-benchmark" class="headerlink" title="WD Elements 2621 (1026), (benchmark)"></a>WD Elements 2621 (1026), (benchmark)</h4><p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807114656.png" alt="20240807114656"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807131831.png" alt="20240807131831"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807131601.png" alt="20240807131601"></p>
+<p>…</p>
+<p>…</p>
+<h4 id="WD-Elements-2620-1020"><a href="#WD-Elements-2620-1020" class="headerlink" title="WD Elements 2620 (1020)"></a>WD Elements 2620 (1020)</h4><p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807132130.png" alt="20240807132130"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807132149.png" alt="20240807132149"></p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807132254.png" alt="20240807132254"></p>
+<p>…</p>
+<p>…</p>
+<h3 id="smartctl"><a href="#smartctl" class="headerlink" title="smartctl"></a>smartctl</h3><p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807114638.png" alt="20240807114638"></p>
+<p>…</p>
+<p>…</p>
+<h3 id="gsmartcontrol"><a href="#gsmartcontrol" class="headerlink" title="gsmartcontrol"></a>gsmartcontrol</h3><p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807114748.png" alt="20240807114748"></p>
+<p>…</p>
+<p>…</p>
+<h4 id="WDC-WD20SDRW-11VUUS0"><a href="#WDC-WD20SDRW-11VUUS0" class="headerlink" title="WDC WD20SDRW-11VUUS0"></a>WDC WD20SDRW-11VUUS0</h4><p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807114826.png" alt="20240807114826"></p>
+<p>…</p>
+<p>…</p>
+<pre class="line-numbers language-none"><code class="language-none">smartctl 7.1 2019-12-30 r5022 [x86_64-linux-5.15.0-117-generic] (local build)
+Copyright (C) 2002-19, Bruce Allen, Christian Franke, www.smartmontools.org
 
-<span class="token comment">##</span>
-<span class="token function">mkdir</span> google-earth <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> google-wget https://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
-<span class="token function">sudo</span> dpkg -i google-earth-stable*.deb
-<span class="token comment">#	deb包的百度网盘</span>
-<span class="token comment">#	链接: https://pan.baidu.com/s/1eW-OEXOa2PJv1JPionl0fw  密码: 11ku</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>安装完成后，在软件菜单栏有 <code>google-earth</code>的图标，点击进入软件后，打开所需 <code>kml</code> 文件即可。</p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103201741.png"></p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103200541.png" alt="未打开IOWAGA的 kml 的 google-earth"></p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103200718.png" alt="打开IOWAGA的 kml 的 google-earth"></p>
-<p>要自动查找特定网格所需的谱列表，请参阅教程 <code>GRIDGEN</code> 中的 <code>附录 D</code>。 如果没有 <code>netcdf谱数据</code>，别担心今年（2019年）应该全部重做。</p>
-<blockquote>
-<p><strong>GRIDGEN附录D–Define a polyline as domain boundaries with google-earth</strong></p>
-<blockquote>
-<p>运行 <code>create_grid</code> 程序后，您可能需要定义特定的边界区域。 这可以通过 <code>google-earth</code> 应用程序来定义多边形。</p>
-<pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">google earth
-select the polyline tool
-draw your polygon around your area, it can be an opened polygon
-save as kml file
-remove the first line of kml file<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>然后就可以将 <code>kml</code>文件转换成多边形文件了。<br>请参阅GRIDGEN附录 C 以安装 <code>gmt</code> 工具。</p>
-<pre class="line-numbers language-伪代码" data-language="伪代码"><code class="language-伪代码">run kml2gmt to create .poly file
-rename output file to fname.poly
-put it in data directory
-set SELECT_BOUND =2 in namelist file
-run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+=== START OF INFORMATION SECTION ===
+Device Model:     WDC WD20SDRW-11VUUS0
+Serial Number:    WD-WX32A301ERXS
+LU WWN Device Id: 5 0014ee 21272a87b
+Firmware Version: 01.01A01
+User Capacity:    2,000,365,379,584 bytes [2.00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    5400 rpm
+Form Factor:      2.5 inches
+Device is:        Not in smartctl database [for details use: -P showall]
+ATA Version is:   ACS-3 T13/2161-D revision 5
+SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Wed Aug  7 11:54:58 2024 CST
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+AAM feature is:   Unavailable
+APM level is:     128 (minimum power consumption without standby)
+Rd look-ahead is: Enabled
+Write cache is:   Enabled
+DSN feature is:   Unavailable
+ATA Security is:  Disabled, NOT FROZEN [SEC1]
 
-</blockquote>
-</blockquote>
-<p>例如，2016 年北半球在 19W 和 19E 之间：</p>
-<p><a href="ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST/GLOBAL/2016_ECMWF/SPEC_NW19toE19/">ftp://ftp.ifremer.fr/ifremer/ww3/HINDCAST/GLOBAL/2016_ECMWF/SPEC_NW19toE19/</a></p>
-<p>对于本教程，您只需从数据文件夹中复制谱文件：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> -r <span class="token punctuation">..</span>/data/SPECTRA_NC <span class="token builtin class-name">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220103210844.png" alt="SPECTRA_NC 文件夹内容"></p>
-</blockquote>
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		(21120) seconds.
+Offline data collection
+capabilities: 			 (0x51) SMART execute Offline immediate.
+					No Auto Offline data collection support.
+					Suspend Offline collection upon new
+					command.
+					No Offline surface scan supported.
+					Self-test supported.
+					No Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 ( 384) minutes.
+SCT capabilities: 	       (0x7035)	SCT Status supported.
+					SCT Feature Control supported.
+					SCT Data Table supported.
+
+SMART Attributes Data Structure revision number: 16
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAGS    VALUE WORST THRESH FAIL RAW_VALUE
+  1 Raw_Read_Error_Rate     POSR-K   200   200   051    -    0
+  3 Spin_Up_Time            POS--K   196   187   021    -    3175
+  4 Start_Stop_Count        -O--CK   099   099   000    -    1444
+  5 Reallocated_Sector_Ct   PO--CK   200   200   140    -    0
+  7 Seek_Error_Rate         -OSR-K   200   200   000    -    0
+  9 Power_On_Hours          -O--CK   090   090   000    -    7399
+ 10 Spin_Retry_Count        -O--CK   100   100   000    -    0
+ 11 Calibration_Retry_Count -O--CK   100   100   000    -    0
+ 12 Power_Cycle_Count       -O--CK   100   100   000    -    254
+192 Power-Off_Retract_Count -O--CK   200   200   000    -    51
+193 Load_Cycle_Count        -O--CK   197   197   000    -    11775
+194 Temperature_Celsius     -O---K   104   087   000    -    43
+196 Reallocated_Event_Count -O--CK   200   200   000    -    0
+197 Current_Pending_Sector  -O--CK   200   200   000    -    0
+198 Offline_Uncorrectable   ----CK   100   253   000    -    0
+199 UDMA_CRC_Error_Count    -O--CK   200   200   000    -    0
+200 Multi_Zone_Error_Rate   ---R--   100   253   000    -    0
+                            ||||||_ K auto-keep
+                            |||||__ C event count
+                            ||||___ R error rate
+                            |||____ S speed/performance
+                            ||_____ O updated online
+                            |______ P prefailure warning
+
+General Purpose Log Directory Version 1
+SMART           Log Directory Version 1 [multi-sector log support]
+Address    Access  R/W   Size  Description
+0x00       GPL,SL  R/O      1  Log Directory
+0x01           SL  R/O      1  Summary SMART error log
+0x02           SL  R/O      5  Comprehensive SMART error log
+0x03       GPL     R/O      6  Ext. Comprehensive SMART error log
+0x06           SL  R/O      1  SMART self-test log
+0x07       GPL     R/O      1  Extended self-test log
+0x09           SL  R/W      1  Selective self-test log
+0x10       GPL     R/O      1  NCQ Command Error log
+0x11       GPL     R/O      1  SATA Phy Event Counters log
+0x24       GPL     R/O    288  Current Device Internal Status Data log
+0x30       GPL,SL  R/O      9  IDENTIFY DEVICE data log
+0x80-0x9f  GPL,SL  R/W     16  Host vendor specific log
+0xa0-0xa7  GPL,SL  VS      16  Device vendor specific log
+0xa8-0xb6  GPL,SL  VS       1  Device vendor specific log
+0xb7       GPL,SL  VS      76  Device vendor specific log
+0xb9       GPL,SL  VS       4  Device vendor specific log
+0xbd       GPL,SL  VS       1  Device vendor specific log
+0xc0       GPL,SL  VS       1  Device vendor specific log
+0xc1       GPL     VS      93  Device vendor specific log
+0xcf       GPL     VS   65535  Device vendor specific log
+0xe0       GPL,SL  R/W      1  SCT Command/Status
+0xe1       GPL,SL  R/W      1  SCT Data Transfer
+
+SMART Extended Comprehensive Error Log Version: 1 (6 sectors)
+No Errors Logged
+
+SMART Extended Self-test Log Version: 1 (1 sectors)
+No self-tests have been logged.  [To run self-tests, use: smartctl -t]
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+
+SCT Status Version:                  3
+SCT Version (vendor specific):       258 (0x0102)
+Device State:                        Active (0)
+Current Temperature:                    43 Celsius
+Power Cycle Min/Max Temperature:     23/61 Celsius
+Lifetime    Min/Max Temperature:      8/61 Celsius
+Under/Over Temperature Limit Count:   0/1
+Vendor specific:
+01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+SCT Temperature History Version:     2
+Temperature Sampling Period:         1 minute
+Temperature Logging Interval:        1 minute
+Min/Max recommended Temperature:      0/60 Celsius
+Min/Max Temperature Limit:           -41/85 Celsius
+Temperature History Size (Index):    128 (54)
+
+Index    Estimated Time   Temperature Celsius
+  55    2024-08-07 09:47    38  *******************
+ ...    ..( 11 skipped).    ..  *******************
+  67    2024-08-07 09:59    38  *******************
+  68    2024-08-07 10:00    37  ******************
+  69    2024-08-07 10:01    38  *******************
+  70    2024-08-07 10:02    37  ******************
+ ...    ..( 33 skipped).    ..  ******************
+ 104    2024-08-07 10:36    37  ******************
+ 105    2024-08-07 10:37    38  *******************
+ ...    ..( 22 skipped).    ..  *******************
+   0    2024-08-07 11:00    38  *******************
+   1    2024-08-07 11:01    39  ********************
+ ...    ..(  3 skipped).    ..  ********************
+   5    2024-08-07 11:05    39  ********************
+   6    2024-08-07 11:06     ?  -
+   7    2024-08-07 11:07    39  ********************
+   8    2024-08-07 11:08    39  ********************
+   9    2024-08-07 11:09    40  *********************
+ ...    ..(  2 skipped).    ..  *********************
+  12    2024-08-07 11:12    40  *********************
+  13    2024-08-07 11:13    41  **********************
+ ...    ..(  6 skipped).    ..  **********************
+  20    2024-08-07 11:20    41  **********************
+  21    2024-08-07 11:21    42  ***********************
+ ...    ..( 28 skipped).    ..  ***********************
+  50    2024-08-07 11:50    42  ***********************
+  51    2024-08-07 11:51    43  ************************
+  52    2024-08-07 11:52    43  ************************
+  53    2024-08-07 11:53    42  ***********************
+  54    2024-08-07 11:54    43  ************************
+
+SCT Error Recovery Control command not supported
+
+Device Statistics (GP/SMART Log 0x04) not supported
+
+SATA Phy Event Counters (GP Log 0x11)
+ID      Size     Value  Description
+0x0001  2            0  Command failed due to ICRC error
+0x0002  2            0  R_ERR response for data FIS
+0x0003  2            0  R_ERR response for device-to-host data FIS
+0x0004  2            0  R_ERR response for host-to-device data FIS
+0x0005  2            0  R_ERR response for non-data FIS
+0x0006  2            0  R_ERR response for device-to-host non-data FIS
+0x0007  2            0  R_ERR response for host-to-device non-data FIS
+0x0008  2            0  Device-to-host non-data FIS retries
+0x0009  2          258  Transition from drive PhyRdy to drive PhyNRdy
+0x000a  2          260  Device-to-host register FISes sent due to a COMRESET
+0x000b  2            0  CRC errors within host-to-device FIS
+0x000d  2            0  Non-CRC errors within host-to-device FIS
+0x000f  2            0  R_ERR response for host-to-device data FIS, CRC
+0x0012  2            0  R_ERR response for host-to-device non-data FIS, CRC
+0x8000  4     16553794  Vendor specific<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807115208.png" alt="20240807115208"></p>
+<p>…</p>
+<p>…</p>
+<h3 id="Victoria-Windows上的？"><a href="#Victoria-Windows上的？" class="headerlink" title="Victoria? (Windows上的？)"></a>Victoria? (Windows上的？)</h3><p>…</p>
+<p>…</p>
+<p>详见，</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Sf4y1m7TJ/?spm_id_from=333.1007.top_right_bar_window_history.content.click&amp;vd_source=82b47329a312733e46b2a3d4431a4c76">https://www.bilibili.com/video/BV1Sf4y1m7TJ/?spm_id_from=333.1007.top_right_bar_window_history.content.click&amp;vd_source=82b47329a312733e46b2a3d4431a4c76</a></p>
+<ul>
+<li>都三年了哈哈。各位还能遇到这种问题吗。我的经验是买硬盘还是尽量买3.5英寸的<a target="_blank" rel="noopener" href="https://search.bilibili.com/all?from_source=webcommentline_search&amp;keyword=CMR%E5%9E%82%E7%9B%B4%E7%9B%98&amp;seid=16661787687764774005"><img src="https://i0.hdslb.com/bfs/reply/9f3ad0659e84c96a711b88dd33f4bc2e945045e0.png" alt="img">CMR垂直盘</a>，哪怕是二手的，服务器拆机几万小时的。都不打紧。说实话 二手的0通电，还贼便宜的，很可能就有猫腻呢。还不如服务器拆机盘。看了那么多老视频，也希望各位看看我的新视频，一些diy nas的玩法用法教程。</li>
+<li>benchmark</li>
+<li>告诉你们一个技巧，咸鱼和并夕夕上硬盘盘写着只能分区exfat格式不能格式化ntfs分区的统统都是扩容盘和坏道盘</li>
+<li><hr>
+</li>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/1723008465925.jpg" alt="1723008465925"></li>
+<li><hr>
+</li>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/1723008465893.jpg" alt="1723008465893"></li>
+<li><hr>
+</li>
+<li><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807133349.png" alt="20240807133349"></li>
+<li>拼多多: 坤心电子硬盘之家,</li>
+<li>…</li>
+</ul>
+<p>…</p>
+<p>…</p>
+<h2 id="硬盘序列号有什么用"><a href="#硬盘序列号有什么用" class="headerlink" title="硬盘序列号有什么用"></a>硬盘序列号有什么用</h2><p>…</p>
+<p>…</p>
+<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20240807114006.png" alt="20240807114006"></p>
+<p>…</p>
+<p>…</p>
+<h2 id="WPS-个人文件夹-文件链接目录"><a href="#WPS-个人文件夹-文件链接目录" class="headerlink" title="WPS 个人文件夹+文件链接目录,"></a>WPS 个人文件夹+文件链接目录,</h2><p>…</p>
+<p>…</p>
+<h2 id="2024-08-07-下午三点-京东上已购买希捷4T的硬盘，-856元，"><a href="#2024-08-07-下午三点-京东上已购买希捷4T的硬盘，-856元，" class="headerlink" title="2024-08-07 下午三点, 京东上已购买希捷4T的硬盘， 856元，"></a>2024-08-07 下午三点, 京东上已购买希捷4T的硬盘， 856元，</h2><p>…</p>
+<p>…</p>
+<p>…</p>
+<p>…</p>
 
                 
             </div>
@@ -688,7 +748,7 @@ run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Liu-Jincan.github.io/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-prerequisites/">https://Liu-Jincan.github.io/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-prerequisites/</a>
+                    <a href="https://Liu-Jincan.github.io/2024/08/07/yan-jiu-sheng-justtry-target/bo-er-xia-yi-dong-ying-pan-ru-he-gou-mai-xuan-qu/">https://Liu-Jincan.github.io/2024/08/07/yan-jiu-sheng-justtry-target/bo-er-xia-yi-dong-ying-pan-ru-he-gou-mai-xuan-qu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -895,56 +955,18 @@ run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><s
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
-            <div class="card">
-                <a href="/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-tutorial-datarmor-pbs-qsub-qstat-mpi/">
-                    <div class="card-image">
-                        
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIAL-DATARMOR-MPI_PBS_qsub_qstat（未实现）">
-                        
-                        <span class="card-title">06-TUTORIAL-DATARMOR-MPI_PBS_qsub_qstat（未实现）</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ~~
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/WW3/" class="post-category">
-                                    WW3
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2022/01/02/yan-jiu-sheng-justtry-function/wavewatch3/06-tutorial-inout/">
+                <a href="/2024/08/07/yan-jiu-sheng-justtry-target/bo-er-xia-yi-dong-ying-pan-ru-he-gou-mai-xuan-qu/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出">
                         
-                        <span class="card-title">06-TUTORIALS-INOUT-考虑初始条件、强迫场、谱边界、全输出</span>
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="博二下-移动硬盘如何购买选取">
+                        
+                        <span class="card-title">博二下-移动硬盘如何购买选取</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -955,14 +977,56 @@ run create_boundary program<span aria-hidden="true" class="line-numbers-rows"><s
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-08-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/WW3/" class="post-category">
-                                    WW3
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                    研究生JustTry
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/08/02/yan-jiu-sheng-justtry-target/bo-er-xia-fu-zhu-xiu-gai-ji-nan-chao-suan-huo-lao-shi-guan-yu-zhong-chi-du-wo-de-zhuan-shuo-bo-shi-lun-wen/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="博二下-辅助修改济南超算霍老师关于中尺度涡的专硕博士论文">
+                        
+                        <span class="card-title">博二下-辅助修改济南超算霍老师关于中尺度涡的专硕博士论文</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-08-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                    研究生JustTry
                                 </a>
                             
                             
