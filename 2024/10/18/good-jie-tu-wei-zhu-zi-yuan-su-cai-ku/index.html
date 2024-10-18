@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="06-TUTORIAL-DATARMOR-MPI_PBS_qsub_qstat（未实现）, Jincan">
+    <meta name="keywords" content="Good截图为主资源素材库, Jincan">
     <meta name="description" content="~~">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>06-TUTORIAL-DATARMOR-MPI_PBS_qsub_qstat（未实现） | Jincan</title>
+    <title>Good截图为主资源素材库 | Jincan</title>
     <link rel="icon" type="image/png" href="/favicon_hua.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -229,12 +229,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20241018152136.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">06-TUTORIAL-DATARMOR-MPI_PBS_qsub_qstat（未实现）</h1>
+                    <h1 class="description center-align post-title">Good截图为主资源素材库</h1>
                 </div>
             </div>
         </div>
@@ -358,8 +358,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/WW3/" class="post-category">
-                                WW3
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E5%AE%89%E6%8E%92/" class="post-category">
+                                每日安排
                             </a>
                         
                     </div>
@@ -371,21 +371,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-01-04
+                    2024-10-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2024-07-29
+                    2024-10-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.2k
+                    82
                 </div>
                 
 
@@ -405,103 +405,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="lt-center-gt-06-TUTORIALS-DATARMOR-MPI-PBS-qsub-qstat-lt-center-gt"><a href="#lt-center-gt-06-TUTORIALS-DATARMOR-MPI-PBS-qsub-qstat-lt-center-gt" class="headerlink" title="<center>06-TUTORIALS-DATARMOR-MPI_PBS_qsub_qstat</center>"></a><code>&lt;center&gt;</code>06-TUTORIALS-DATARMOR-MPI_PBS_qsub_qstat<code>&lt;/center&gt;</code></h1><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><code>waves-workshop-exercise-datarmor.pdf</code>；</p>
-<blockquote>
-<ul>
-<li>也就是 <code>COURS/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL-DATARMOR</code> 里面的内容；</li>
-<li>TUTORIAL 是会更新的，此版本为 <strong>2017</strong> 版本的；</li>
-<li>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1-TDvbPuSgVyLJDONf5HnmQ">https://pan.baidu.com/s/1-TDvbPuSgVyLJDONf5HnmQ</a><br>提取码：453w<br>–来自百度网盘</li>
-<li><code>&lt;font color='red'&gt;</code>在inout和multi都有用到qsub命令，但我不知道怎么安装这个命令，之前尝试安装PBS中的torque和openPBS，失败了；本教程包含这个命令，希望可以为我解惑；<code>&lt;/font&gt;</code></li>
-</ul>
-</blockquote>
-<p>PBS（Protable Batch System） 作业管理系统：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/2f6c799ca147">https://www.jianshu.com/p/2f6c799ca147</a></p>
-<blockquote>
-<p><strong>为什么使用PBS</strong></p>
-<blockquote>
-<p>前面我们所给出的各个例程一般都是在<strong>单台计算机上直接使用 mpiexec 或 mpirun 执行</strong>的，但是在实际应用中，对规模比较大的高性能计算任务，一般会提交到集群或超级计算机平台上进行计算。集群系统具有低成本、高性能的特性，提供了强大的批处理和并行计算能力，代表了高性能计算机发展的新方向。在集群或者超级计算机平台上，一般<strong>不能随意地直接以 mpiexec 或 mpirun 运行我们的并行计算程序</strong>，而必须通过其上提供的作业管理系统来提交计算任务。作为集群系统软件的重要组成部分，集群作业管理系统可以根据用户的需求，统一管理和调度集群的软硬件资源，保证用户作业公平合理地共享集群资源，提高系统利用率和吞吐率。下面我们将简要地介绍几个常用的<strong>集群作业管理系统</strong>：PBS，LSF 和 SLURM。下面我们首先简要介绍 PBS 作业管理系统。</p>
-</blockquote>
+                <h1 id="Good截图为主资源素材库"><a href="#Good截图为主资源素材库" class="headerlink" title="Good截图为主资源素材库"></a>Good截图为主资源素材库</h1><p>…</p>
 <p>…</p>
-</blockquote>
-<hr>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>在本教程练习中，我们将进入集群 <code>datarmor</code>，设置环境并学习如何传输数据和运行 MPI 作业。</p>
-<blockquote>
-<ul>
-<li><code>datarmor</code>是 <code>ifremer</code>中的 <code>超级计算机 supercomputer</code>。<code>waverun</code>教程有提到。</li>
-</ul>
-</blockquote>
-<h2 id="1-如何在集群datarmor-工作"><a href="#1-如何在集群datarmor-工作" class="headerlink" title="1-如何在集群datarmor 工作"></a>1-如何在集群datarmor 工作</h2><p>首先必须让 <code>datarmor</code>环境文件在你的本地机器上工作：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	保存原先的环境文件</span>
-<span class="token function">cp</span> ~/.bashrc ~/.bashrc.save_20220104
+<h2 id="为什么需要-“Good截图为主资源素材库”-？；"><a href="#为什么需要-“Good截图为主资源素材库”-？；" class="headerlink" title="为什么需要 “Good截图为主资源素材库” ？；"></a>为什么需要 “Good截图为主资源素材库” ？；</h2><p>…</p>
+<p>…</p>
+<p>详见 ” <a target="_blank" rel="noopener" href="https://www.kdocs.cn/l/cin217p7R5HI">https://www.kdocs.cn/l/cin217p7R5HI</a> “</p>
+<p>…</p>
+<p>…</p>
+<h2 id="WPS-个人文件夹-文件链接目录"><a href="#WPS-个人文件夹-文件链接目录" class="headerlink" title="WPS 个人文件夹+文件链接目录,"></a>WPS 个人文件夹+文件链接目录,</h2><p>…</p>
+<p>…</p>
+<p>WPS 个人文件夹，Good截图为主资源素材库，</p>
+<p><a target="_blank" rel="noopener" href="https://www.kdocs.cn/mine/339298139995">https://www.kdocs.cn/mine/339298139995</a></p>
+<p>…</p>
+<p>…</p>
+<table>
+<thead>
+<tr>
+<th><a target="_blank" rel="noopener" href="https://kdocs.cn/l/cin217p7R5HI">https://kdocs.cn/l/cin217p7R5HI</a></th>
+<th>Good截图为主资源素材库</th>
+</tr>
+</thead>
+</table>
+<p>…</p>
+<p>…</p>
 
-<span class="token comment">##	datarmor的环境文件</span>
-<span class="token function">cp</span> <span class="token variable">$WAVES_SHORT_COURSE</span>/TUTORIALS/TUTORIAL_DATARMOR/data/bashrc.iuem ~/.bashrc
-
-<span class="token comment">##</span>
-<span class="token builtin class-name">source</span> ~/.bashrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104231047.png" alt="source ~/.bashrc | less" style="zoom:80%;">
-</blockquote>
-<p>创建一个不必添加密码的密钥：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	回到主目录</span>
-<span class="token builtin class-name">cd</span> ~
-<span class="token comment">##</span>
-ssh-keygen -t rsa -N <span class="token string">""</span> -f ~/.ssh/id_rsa
-<span class="token comment">##</span>
-<span class="token function">cat</span> .ssh/id_rsa.pub <span class="token operator">|</span> <span class="token builtin class-name">echo</span> <span class="token variable">$datapwd</span> <span class="token operator">|</span> <span class="token function">ssh</span> <span class="token variable">$datalogin</span>@datarmor <span class="token string">'cat &gt;&gt; .ssh/authorized_keys'</span>
-<span class="token comment">##</span>
-ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p>&lt;img src=”<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232140.png&quot;">https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232140.png"</a> alt=”ssh-keygen -t rsa -N “” -f ~/.ssh/id_rsa” style=”zoom:100%;” /&gt;</p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232349.png" alt="cat .ssh/id_rsa.pub | echo <span class=">datapwd | ssh datapwd | ssh datalogin@datarmor ‘cat &gt;&gt; .ssh/authorized_keys’” /&gt;</p>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232800.png" alt="ssh-add"></p>
-</blockquote>
-<p>打开一个新终端，无需输入密码即可将您连接到 <code>caparmor</code>：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> <span class="token variable">$datalogin</span>@datarmor -X<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<blockquote>
-<p><img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220104232349.png" alt="cat .ssh/id_rsa.pub | echo <span class=">datapwd | ssh datapwd | ssh datalogin@datarmor ‘cat &gt;&gt; .ssh/authorized_keys’” /&gt;</p>
-</blockquote>
-<p>如果这是您的第一次连接，则需要复制一个 <code>cshrc</code>环境文件 :</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">##	保存原先的cshrc环境文件（可能原先没有）</span>
-<span class="token function">cp</span> ~/.cshrc ~/.cshrc.save_20220104
-
-<span class="token comment">##	datarmor的环境文件</span>
-<span class="token function">cp</span> <span class="token variable">$COURS</span>/WAVES_SHORT_COURSE/TUTORIALS/TUTORIAL_DATARMOR/data/cshrc.datarmor ~/.cshrc
-
-<span class="token comment">##</span>
-<span class="token builtin class-name">source</span> ~/.cshrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>在 datarmor 上，每个用户有 3 个可用的存储空间，一个用于脚本和程序的 <code>主目录(home)</code>，一个用于模型结果的 <code>工作目录(work)</code>和一个用于模型运行的 <code>临时目录(scratch)</code>。</p>
-<blockquote>
-<p>home : /home1/datahome/login - 50G with a back up system.<br>work : /home1/datawork/login - 500G with no back up system.<br>scratch : /home1/datascratch/login - 10T with no back up system and 2 weeks of storage lifespan.</p>
-</blockquote>
-<h2 id="2-从datarmor获取数据-输送数据到datarmor"><a href="#2-从datarmor获取数据-输送数据到datarmor" class="headerlink" title="2-从datarmor获取数据+输送数据到datarmor"></a>2-从datarmor获取数据+输送数据到datarmor</h2><h2 id="3-在datarmor运行工作"><a href="#3-在datarmor运行工作" class="headerlink" title="3-在datarmor运行工作"></a>3-在datarmor运行工作</h2><blockquote>
-<ul>
-<li>运行ww3程序不要超过几分钟的时间，如果每个人都这样做，系统将变得非常慢，甚至关闭。当你必须长时间运行代码或使用大量内存时，好的做法是使用 <code>qsub</code>工具在 <code>计算节点 computation node</code>而不是 <code>前端节点 front-end node</code>上运行你的程序。</li>
-</ul>
-</blockquote>
-<p>教程中给出了一个例子：<code>data/job_shel.pbs</code>。要运行这个程序，使用这个命令行：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">qsub -N myShelJob job_shel.pbs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111225640.png" alt="job_shel.pbs" style="zoom:67%;">
-
-<blockquote>
-<ul>
-<li><p>如果你在复制数据，运行 <code>nco</code>工具，或任何fortran可执行文件的 <code>顺序模式 sequential mode</code>，你必须在 <code>队列顺序 queue sequential </code>上运行。</p>
-</li>
-<li><p>对于 <code>MPI</code>程序，你可以使用以下更合适的 <code>mpi队列 queue</code>：mpi_1, mpi_2, mpi_3, mpi_4, mpi_6, …, mpi_18 或 big。</p>
-<ul>
-<li>每个节点有28个 <code>mpi任务 tasks</code>，因此例如mpi_2在56个mpi任务上运行。</li>
-<li>如果使用big队列，你必须用变量 <code>select</code>定义使用的处理器数量（例如：<code>#PBS -l select=36:ncpus=28:mpiprocs=28</code>）。然后使用环境变量 <code>$MPI_LAUNCH</code>调用你的MPI程序（例如：<code>$MPI_LAUNCH ww3_shel &gt;&amp; ww3_shel.out</code>）。</li>
-</ul>
-</li>
-<li><p>可以进行内存分配（<code>#PBS -l mem=60G</code>）或 <code>walltime</code>设置（<code>#PBS -l walltime=2:00:00</code>）。</p>
-<img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20220111225311.png" alt="wall-time解释（有道翻译中查到的）" style="zoom:60%;"></li>
-</ul>
-</blockquote>
-<h2 id="4-如何远程在datarmor工作"><a href="#4-如何远程在datarmor工作" class="headerlink" title="4-如何远程在datarmor工作"></a>4-如何远程在datarmor工作</h2>
                 
             </div>
             <hr/>
@@ -527,7 +454,7 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Liu-Jincan.github.io/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-tutorial-datarmor-pbs-qsub-qstat-mpi/">https://Liu-Jincan.github.io/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-tutorial-datarmor-pbs-qsub-qstat-mpi/</a>
+                    <a href="https://Liu-Jincan.github.io/2024/10/18/good-jie-tu-wei-zhu-zi-yuan-su-cai-ku/">https://Liu-Jincan.github.io/2024/10/18/good-jie-tu-wei-zhu-zi-yuan-su-cai-ku/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -734,56 +661,17 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
-            <div class="card">
-                <a href="/2022/01/05/yan-jiu-sheng-justtry-function/wavewatch3/06-tutorial-multi/">
-                    <div class="card-image">
-                        
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-TUTORIALS-MULTI-多网格运行（未实现）">
-                        
-                        <span class="card-title">06-TUTORIALS-MULTI-多网格运行（未实现）</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            ~~
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/WW3/" class="post-category">
-                                    WW3
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2022/01/04/yan-jiu-sheng-justtry-function/wavewatch3/06-prerequisites/">
+                <a href="/2024/10/18/good-jie-tu-wei-zhu-zi-yuan-su-cai-ku/">
                     <div class="card-image">
                         
-                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img/20211225220138.png" class="responsive-img" alt="06-Prerequisites-了解unix,netcdf,ldl">
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/20241018152136.png" class="responsive-img" alt="Good截图为主资源素材库">
                         
-                        <span class="card-title">06-Prerequisites-了解unix,netcdf,ldl</span>
+                        <span class="card-title">Good截图为主资源素材库</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -794,14 +682,55 @@ ssh-add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/WW3/" class="post-category">
-                                    WW3
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E5%AE%89%E6%8E%92/" class="post-category">
+                                    每日安排
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/10/17/yan-jiu-sheng-justtry-target/bo-san-shang-dissertation-simple-review/">
+                    <div class="card-image">
+                        
+                        <img src="https://raw.githubusercontent.com/Liu-Jincan/PicGo/main/img2024/11.jpg" class="responsive-img" alt="博三上-Dissertation Simple Review">
+                        
+                        <span class="card-title">博三上-Dissertation Simple Review</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A0%94%E7%A9%B6%E7%94%9FJustTry/" class="post-category">
+                                    研究生JustTry
                                 </a>
                             
                             
